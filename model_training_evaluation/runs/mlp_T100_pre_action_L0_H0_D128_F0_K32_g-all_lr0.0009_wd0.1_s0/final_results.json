@@ -1,0 +1,84 @@
+{
+  "run_name": "mlp_T100_pre_action_L0_H0_D128_F0_K32_g-all_lr0.0009_wd0.1_s0",
+  "run_config": {
+    "model_type": "mlp",
+    "encoding": "T100",
+    "possession_features": "pre_action",
+    "context_length": 32,
+    "stride": 8,
+    "seed": 0,
+    "model": {
+      "n_layers": 0,
+      "n_heads": 0,
+      "d_model": 128,
+      "d_ff": 0,
+      "hidden": 512,
+      "n_previous": 3
+    },
+    "training": {
+      "learning_rate": 0.0009,
+      "weight_decay": 0.1,
+      "max_epochs": 30
+    }
+  },
+  "training_settings": {
+    "batch_size": 256,
+    "max_epochs": 30,
+    "warmup_fraction": 0.05,
+    "min_lr_ratio": 0.1,
+    "grad_clip": 1.0,
+    "patience": 5,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08,
+    "learning_rate": 0.0009,
+    "weight_decay": 0.1
+  },
+  "run_mode": "full",
+  "best_epoch": 3,
+  "epochs_run": 8,
+  "stopped_early": true,
+  "diverged": false,
+  "runtime_seconds": 31.473045349121094,
+  "val_metrics": {
+    "n_events": 68003,
+    "nll": 0.9710412621498108,
+    "accuracy": 0.5937973324706263,
+    "top3_accuracy": 0.9399585312412687,
+    "top5_accuracy": 0.992250341896681,
+    "macro_f1": 0.5301083277159037,
+    "per_class_f1": [
+      0.5773750211509898,
+      0.4173452565319478,
+      0.31390134529147984,
+      0.7103157183859531,
+      0.014263074484944533,
+      0.5087983911513323,
+      0.5878467635402906,
+      0.5685946462715105,
+      0.7317615658362989,
+      0.8863589318981577,
+      0.998324958123953,
+      0.6923076923076923,
+      0.920844327176781,
+      0.023587223587223587,
+      0.0
+    ],
+    "ece": 0.04629857444342287
+  },
+  "train_nll": 0.8451095819473267,
+  "parameter_counts": {
+    "total": 818447
+  },
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "cuda_available": true,
+    "gpu": "Tesla T4",
+    "cuda": "12.8"
+  },
+  "finished_at": "2026-09-19T13:50:49.702754+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "learning_rate": 0.0003,
+  "weight_decay": 0.1,
+  "epoch_budget": 30,
+  "reason": "finalists not distinguishable beyond noise and share a learning rate -> starting weight decay 0.1 (tie rule)",
+  "comparison_of_finalists": {
+    "n_events": 68003,
+    "nll_a_mean": 0.9303486347198486,
+    "nll_a_seed_sd": 0.0032221737783402205,
+    "nll_b_mean": 0.9318065047264099,
+    "nll_b_seed_sd": 0.0018392931669950485,
+    "difference_a_minus_b": -0.0014593611704185605,
+    "difference_ci_low": -0.002220791215416448,
+    "difference_ci_high": -0.0007440343867783282,
+    "seeds_completely_separated": false,
+    "a_better_beyond_noise": false
+  },
+  "selection_metric": "mean validation NLL over seeds 0-2",
+  "base_encoding": "T100",
+  "run_mode": "full"
+}

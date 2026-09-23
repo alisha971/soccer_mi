@@ -1,0 +1,84 @@
+{
+  "run_name": "mlp_T100_pre_action_L0_H0_D128_F0_K32_g-all_lr0.0009_wd0.1_s2",
+  "run_config": {
+    "model_type": "mlp",
+    "encoding": "T100",
+    "possession_features": "pre_action",
+    "context_length": 32,
+    "stride": 8,
+    "seed": 2,
+    "model": {
+      "n_layers": 0,
+      "n_heads": 0,
+      "d_model": 128,
+      "d_ff": 0,
+      "hidden": 512,
+      "n_previous": 3
+    },
+    "training": {
+      "learning_rate": 0.0009,
+      "weight_decay": 0.1,
+      "max_epochs": 30
+    }
+  },
+  "training_settings": {
+    "batch_size": 256,
+    "max_epochs": 30,
+    "warmup_fraction": 0.05,
+    "min_lr_ratio": 0.1,
+    "grad_clip": 1.0,
+    "patience": 5,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08,
+    "learning_rate": 0.0009,
+    "weight_decay": 0.1
+  },
+  "run_mode": "full",
+  "best_epoch": 3,
+  "epochs_run": 8,
+  "stopped_early": true,
+  "diverged": false,
+  "runtime_seconds": 31.505249977111816,
+  "val_metrics": {
+    "n_events": 68003,
+    "nll": 0.967571496963501,
+    "accuracy": 0.5958413599400026,
+    "top3_accuracy": 0.9418260959075335,
+    "top5_accuracy": 0.9920003529256062,
+    "macro_f1": 0.5363743508483859,
+    "per_class_f1": [
+      0.5236428933192135,
+      0.4974321349963316,
+      0.30906389301634474,
+      0.735472209670131,
+      0.0141287284144427,
+      0.5379652605459057,
+      0.5730253353204173,
+      0.588692847656991,
+      0.7263181921935631,
+      0.8822322527697989,
+      0.9994416527079844,
+      0.6815286624203821,
+      0.9152073732718894,
+      0.038991916310033285,
+      0.02247191011235955
+    ],
+    "ece": 0.04165926770068454
+  },
+  "train_nll": 0.8391405940055847,
+  "parameter_counts": {
+    "total": 818447
+  },
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "cuda_available": true,
+    "gpu": "Tesla T4",
+    "cuda": "12.8"
+  },
+  "finished_at": "2026-09-19T13:51:58.663510+00:00"
+}

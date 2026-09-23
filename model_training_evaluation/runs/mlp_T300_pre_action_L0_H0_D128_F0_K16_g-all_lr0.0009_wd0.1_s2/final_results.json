@@ -1,0 +1,84 @@
+{
+  "run_name": "mlp_T300_pre_action_L0_H0_D128_F0_K16_g-all_lr0.0009_wd0.1_s2",
+  "run_config": {
+    "model_type": "mlp",
+    "encoding": "T300",
+    "possession_features": "pre_action",
+    "context_length": 16,
+    "stride": 8,
+    "seed": 2,
+    "model": {
+      "n_layers": 0,
+      "n_heads": 0,
+      "d_model": 128,
+      "d_ff": 0,
+      "hidden": 512,
+      "n_previous": 3
+    },
+    "training": {
+      "learning_rate": 0.0009,
+      "weight_decay": 0.1,
+      "max_epochs": 30
+    }
+  },
+  "training_settings": {
+    "batch_size": 256,
+    "max_epochs": 30,
+    "warmup_fraction": 0.05,
+    "min_lr_ratio": 0.1,
+    "grad_clip": 1.0,
+    "patience": 5,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08,
+    "learning_rate": 0.0009,
+    "weight_decay": 0.1
+  },
+  "run_mode": "full",
+  "best_epoch": 4,
+  "epochs_run": 9,
+  "stopped_early": true,
+  "diverged": false,
+  "runtime_seconds": 25.239389181137085,
+  "val_metrics": {
+    "n_events": 68003,
+    "nll": 0.9461051821708679,
+    "accuracy": 0.6051791832713262,
+    "top3_accuracy": 0.9420172639442378,
+    "top5_accuracy": 0.9927209093716454,
+    "macro_f1": 0.5427606713087705,
+    "per_class_f1": [
+      0.5590602750723597,
+      0.44979957117553837,
+      0.31705364291433147,
+      0.7395173814359097,
+      0.037122969837587005,
+      0.5176866928691746,
+      0.6036745406824147,
+      0.5983060417843027,
+      0.7352173913043478,
+      0.8927108927108927,
+      0.9972113775794758,
+      0.695499707773232,
+      0.918942731277533,
+      0.05635103926096998,
+      0.023255813953488372
+    ],
+    "ece": 0.028603603118497054
+  },
+  "train_nll": 0.8320704102516174,
+  "parameter_counts": {
+    "total": 646799
+  },
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "cuda_available": true,
+    "gpu": "Tesla T4",
+    "cuda": "12.8"
+  },
+  "finished_at": "2026-09-19T14:46:55.291930+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "mlp_learning_rates": {
+    "9.999999999999999e-05": 0.9802004098892212,
+    "0.0003": 0.9759686589241028,
+    "0.0009": 0.9710412621498108
+  },
+  "selected_mlp_lr": 0.0009,
+  "comparison_transformer_minus_mlp": {
+    "n_events": 68003,
+    "nll_a_mean": 0.9303486347198486,
+    "nll_a_seed_sd": 0.0032221737783402205,
+    "nll_b_mean": 0.9710860252380371,
+    "nll_b_seed_sd": 0.003544612554833293,
+    "difference_a_minus_b": -0.04074101150035858,
+    "difference_ci_low": -0.04528613112567178,
+    "difference_ci_high": -0.03643837239392616,
+    "seeds_completely_separated": true,
+    "a_better_beyond_noise": true
+  }
+}

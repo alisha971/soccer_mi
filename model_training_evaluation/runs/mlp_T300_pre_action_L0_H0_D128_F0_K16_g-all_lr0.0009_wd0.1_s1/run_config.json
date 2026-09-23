@@ -1,0 +1,21 @@
+{
+  "model_type": "mlp",
+  "encoding": "T300",
+  "possession_features": "pre_action",
+  "context_length": 16,
+  "stride": 8,
+  "seed": 1,
+  "model": {
+    "n_layers": 0,
+    "n_heads": 0,
+    "d_model": 128,
+    "d_ff": 0,
+    "hidden": 512,
+    "n_previous": 3
+  },
+  "training": {
+    "learning_rate": 0.0009,
+    "weight_decay": 0.1,
+    "max_epochs": 30
+  }
+}

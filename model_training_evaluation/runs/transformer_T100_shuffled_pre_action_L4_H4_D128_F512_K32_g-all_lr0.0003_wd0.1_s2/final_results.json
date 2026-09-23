@@ -1,0 +1,88 @@
+{
+  "run_name": "transformer_T100_shuffled_pre_action_L4_H4_D128_F512_K32_g-all_lr0.0003_wd0.1_s2",
+  "run_config": {
+    "model_type": "transformer",
+    "encoding": "T100_shuffled",
+    "possession_features": "pre_action",
+    "context_length": 32,
+    "stride": 8,
+    "seed": 2,
+    "model": {
+      "n_layers": 4,
+      "n_heads": 4,
+      "d_model": 128,
+      "d_ff": 512
+    },
+    "training": {
+      "learning_rate": 0.0003,
+      "weight_decay": 0.1,
+      "max_epochs": 30
+    }
+  },
+  "training_settings": {
+    "batch_size": 256,
+    "max_epochs": 30,
+    "warmup_fraction": 0.05,
+    "min_lr_ratio": 0.1,
+    "grad_clip": 1.0,
+    "patience": 5,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.1
+  },
+  "run_mode": "full",
+  "best_epoch": 4,
+  "epochs_run": 9,
+  "stopped_early": true,
+  "diverged": false,
+  "runtime_seconds": 83.74231576919556,
+  "val_metrics": {
+    "n_events": 68003,
+    "nll": 0.9363254308700562,
+    "accuracy": 0.6115171389497522,
+    "top3_accuracy": 0.9442818699175036,
+    "top5_accuracy": 0.9936473390879814,
+    "macro_f1": 0.5445239826992673,
+    "per_class_f1": [
+      0.5605210631368841,
+      0.4644908250455246,
+      0.3367952522255193,
+      0.7535267805941048,
+      0.048286604361370715,
+      0.5591623036649215,
+      0.6191596638655462,
+      0.5597324414715719,
+      0.7351176742039687,
+      0.893338782182264,
+      0.9988839285714286,
+      0.6955017301038062,
+      0.9219730941704036,
+      0.021369596891694997,
+      0.0
+    ],
+    "ece": 0.03342415224176529
+  },
+  "train_nll": 0.8630850911140442,
+  "parameter_counts": {
+    "embeddings (tables + projections + positions)": 289536,
+    "transformer blocks": 793088,
+    "final LayerNorm": 256,
+    "unembedding": 1935,
+    "total": 1084815,
+    "fixed zero rows (never trained)": 512,
+    "trainable": 1084303
+  },
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "cuda_available": true,
+    "gpu": "Tesla T4",
+    "cuda": "12.8"
+  },
+  "finished_at": "2026-09-19T14:07:23.937937+00:00"
+}
