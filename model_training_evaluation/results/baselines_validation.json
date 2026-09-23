@@ -1,0 +1,65 @@
+{
+  "split": "val",
+  "encoding": "T100",
+  "possession_features": "pre_action (primary); original reported for the audit",
+  "selected_alpha": {
+    "B1b zone prior": 10.0,
+    "B2 Markov": 10.0
+  },
+  "logistic_regression": {
+    "C": 1.0,
+    "max_iter": 1000
+  },
+  "table": [
+    {
+      "baseline": "B1a class prior",
+      "val NLL": 1.9746,
+      "NLL 95% CI": "[1.9483, 2.0024]",
+      "accuracy": 0.3208,
+      "top-3 acc.": 0.7351,
+      "macro-F1": 0.0324,
+      "ECE": 0.0185
+    },
+    {
+      "baseline": "B1b zone prior",
+      "val NLL": 1.7818,
+      "NLL 95% CI": "[1.7590, 1.8052]",
+      "accuracy": 0.3419,
+      "top-3 acc.": 0.7637,
+      "macro-F1": 0.1353,
+      "ECE": 0.014
+    },
+    {
+      "baseline": "B2 Markov (prev action x zone)",
+      "val NLL": 1.4109,
+      "NLL 95% CI": "[1.3929, 1.4282]",
+      "accuracy": 0.4537,
+      "top-3 acc.": 0.8508,
+      "macro-F1": 0.3588,
+      "ECE": 0.0118
+    },
+    {
+      "baseline": "B3 logistic regression",
+      "val NLL": 1.0522,
+      "NLL 95% CI": "[1.0384, 1.0650]",
+      "accuracy": 0.5786,
+      "top-3 acc.": 0.9264,
+      "macro-F1": 0.5085,
+      "ECE": 0.0121
+    },
+    {
+      "baseline": "B3 logistic regression [original possession features]",
+      "val NLL": 1.0496,
+      "NLL 95% CI": "[1.0366, 1.0615]",
+      "accuracy": 0.581,
+      "top-3 acc.": 0.9252,
+      "macro-F1": 0.5143,
+      "ECE": 0.0125
+    }
+  ],
+  "possession_feature_nll_difference_original_minus_pre_action": {
+    "mean": -0.0025659817028216864,
+    "ci_low": -0.005447124018519373,
+    "ci_high": 0.00031245767555587294
+  }
+}
