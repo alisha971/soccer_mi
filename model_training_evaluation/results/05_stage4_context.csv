@@ -1,0 +1,4 @@
+candidate,mean val NLL,is best,best beats it beyond noise,best - candidate (CI),seeds separated
+K=16,0.9074,True,False,,
+K=32,0.9166,False,True,"-0.0092 [-0.0108, -0.0077]",True
+K=64,0.9299,False,True,"-0.0225 [-0.0251, -0.0200]",True

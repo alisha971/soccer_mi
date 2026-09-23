@@ -1,0 +1,87 @@
+{
+  "comparisons": {
+    "1. T100 vs T300, band 100-299": {
+      "n_events": 20693,
+      "nll_a_mean": 0.9416857361793518,
+      "nll_a_seed_sd": 0.0040638986974954605,
+      "nll_b_mean": 0.9142112135887146,
+      "nll_b_seed_sd": 0.006693818606436253,
+      "difference_a_minus_b": 0.027475843206048012,
+      "difference_ci_low": 0.021488049871228727,
+      "difference_ci_high": 0.03321008159503394,
+      "seeds_completely_separated": false,
+      "a_better_beyond_noise": false
+    },
+    "2. T100 vs T100-shuffled, band 100-299": {
+      "n_events": 20693,
+      "nll_a_mean": 0.9416857361793518,
+      "nll_a_seed_sd": 0.0040638986974954605,
+      "nll_b_mean": 0.9525653719902039,
+      "nll_b_seed_sd": 0.0018832432106137276,
+      "difference_a_minus_b": -0.01088408287614584,
+      "difference_ci_low": -0.016833473376977607,
+      "difference_ci_high": -0.004435591106960522,
+      "seeds_completely_separated": true,
+      "a_better_beyond_noise": true
+    },
+    "3. T300 vs T100, players >= 300": {
+      "n_events": 13891,
+      "nll_a_mean": 0.9077038764953613,
+      "nll_a_seed_sd": 0.004258518107235432,
+      "nll_b_mean": 0.9183353781700134,
+      "nll_b_seed_sd": 0.003721819957718253,
+      "difference_a_minus_b": -0.010630506090819836,
+      "difference_ci_low": -0.015787447473466904,
+      "difference_ci_high": -0.006171576598574618,
+      "seeds_completely_separated": true,
+      "a_better_beyond_noise": true
+    },
+    "4. T300 vs T100, all events": {
+      "n_events": 68003,
+      "nll_a_mean": 0.9145638942718506,
+      "nll_a_seed_sd": 0.005175314843654633,
+      "nll_b_mean": 0.9303486347198486,
+      "nll_b_seed_sd": 0.0032221737783402205,
+      "difference_a_minus_b": -0.01579013466835022,
+      "difference_ci_low": -0.018705693305885337,
+      "difference_ci_high": -0.01294091187957986,
+      "seeds_completely_separated": true,
+      "a_better_beyond_noise": true
+    }
+  },
+  "gain_correlations": [
+    0.3884142884142884,
+    0.32806208100325746,
+    0.2332217861629626
+  ],
+  "mean_gain_correlation": 0.31656605186016945,
+  "eligible_players": 221,
+  "train_val_gap": [
+    {
+      "encoding": "T300",
+      "band train NLL": 0.848800003528595,
+      "band val NLL": 0.9142000079154968,
+      "gap (val - train)": 0.06539999693632126
+    },
+    {
+      "encoding": "T100",
+      "band train NLL": 0.8307999968528748,
+      "band val NLL": 0.9416999816894531,
+      "gap (val - train)": 0.11089999973773956
+    },
+    {
+      "encoding": "T100_shuffled",
+      "band train NLL": 0.8485999703407288,
+      "band val NLL": 0.9526000022888184,
+      "gap (val - train)": 0.10400000214576721
+    }
+  ],
+  "conditions": {
+    "1. T100 beats T300 on band": false,
+    "2. T100 beats T100-shuffled on band": true,
+    "3. T300 does not beat T100 on >=300 players": false,
+    "4. T300 does not beat T100 overall": false,
+    "5. per-player gains stable (mean Spearman >= 0.3, PROVISIONAL)": true
+  },
+  "decision": "T300"
+}

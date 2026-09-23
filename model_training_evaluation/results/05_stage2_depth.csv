@@ -1,0 +1,3 @@
+candidate,mean val NLL,is best,best beats it beyond noise,best - candidate (CI),seeds separated
+2 layers,0.9165,False,False,"-0.0019 [-0.0037, -0.0002]",False
+4 layers,0.9146,True,False,,
