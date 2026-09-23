@@ -1,0 +1,85 @@
+{
+  "dataset_sha256": "2fe8019fb59f8060f77ae0b81eba3df2077a3fd50c02f601ed7f401b3855fc5b",
+  "n_events": 658905,
+  "split_summary": {
+    "matches": {
+      "train": 280,
+      "val": 35,
+      "test": 35
+    },
+    "events": {
+      "train": 525893,
+      "val": 68003,
+      "test": 65009
+    }
+  },
+  "matches_in_more_than_one_split": 0,
+  "sequence_checks": {
+    "index not strictly increasing": 0,
+    "match-periods shorter than 32 events": 0,
+    "prev_action_id != previous action": 0,
+    "first event of period without END code": 0,
+    "prev_end_zone != previous end_zone": 0,
+    "same_player_as_prev mismatch": 0,
+    "dt differs from recomputation by > 1e-3": 0,
+    "new_possession != possession counter change": 0,
+    "poss_len not 0 at a new possession": 0
+  },
+  "window_counts_K32_stride8": {
+    "train": 63787,
+    "val": 8261,
+    "test": 7886
+  },
+  "window_problems": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+  },
+  "evaluation_view": [
+    {
+      "split": "train",
+      "events": 525893,
+      "events in no training window": 2013,
+      "mean appearances per event": 3.881,
+      "events scored in evaluation view": 525893,
+      "each event scored exactly once": true,
+      "evaluation windows (incl. tail)": 64298,
+      "median evaluation position": 27
+    },
+    {
+      "split": "val",
+      "events": 68003,
+      "events in no training window": 235,
+      "mean appearances per event": 3.887,
+      "events scored in evaluation view": 68003,
+      "each event scored exactly once": true,
+      "evaluation windows (incl. tail)": 8319,
+      "median evaluation position": 27
+    },
+    {
+      "split": "test",
+      "events": 65009,
+      "events in no training window": 241,
+      "mean appearances per event": 3.882,
+      "events scored in evaluation view": 65009,
+      "each event scored exactly once": true,
+      "evaluation windows (incl. tail)": 7949,
+      "median evaluation position": 27
+    }
+  ],
+  "possession_leakage_information_gain_nats": {
+    "new_possession": 0.0525,
+    "poss_len": 0.0782,
+    "play_pattern_id": 0.0444
+  },
+  "possession_feature_decision": "PROVISIONAL: replace new_possession, poss_len, play_pattern_id, t_poss with team_change, prev_poss_len, prev_play_pattern_id, t_poss_prev",
+  "coupled_events": {
+    "count": 68419,
+    "share": 0.10383742724671993,
+    "foul_won_after_same_time_foul_committed": 9104,
+    "foul_won_total": 9124
+  },
+  "score_timing": "score updated after the scoring event (see Section 8.3)",
+  "class_imbalance_ratio": 304.59665144596653,
+  "class_rebalancing": "none (natural frequencies; macro-F1 and per-class metrics reported)"
+}
