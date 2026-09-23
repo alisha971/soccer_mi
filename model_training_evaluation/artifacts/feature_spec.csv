@@ -1,0 +1,20 @@
+feature,source,pre-action?,encoding,train-derived?,leakage risk,factor group,scientific role
+player,player_id,yes,embedding; index 0 = no dedicated identity (fixed zero vector),yes (threshold on train counts),low,player,identity under study
+team,team_id,yes,embedding; index 0 = unseen team (zero),yes,low,team,identity (team habits)
+role,position_id,yes,embedding; index 0 = unseen role (zero),yes,low,role,identity; controls for position
+competition,competition_id,yes,embedding; index 0 = unseen (zero),yes,low,competition,controls league/annotation style; nested with identity
+zone,zone,yes,embedding (96 cells),no,low,space,context: where
+"x_norm, y_norm","x_norm, y_norm",yes,"linear projection, no bias",no,low,space,context: precise location
+period,period,yes,embedding (4),no,low,time,context: when
+minute_bin,minute_bin,yes,embedding (24),no,low,time,context: match clock
+dt,dt,yes,"linear projection, no bias",no,"medium (coupled events, reported separately)",time,context: tempo
+t_poss,t_poss_prev (replaces t_poss),yes,"linear projection, no bias",no,low after correction,time,context: possession age
+score_diff,score_diff_idx,yes (verified),embedding (7),no,low,state,context: score
+play_pattern,prev_play_pattern_id (replaces play_pattern_id),yes,embedding (10),no,low after correction,state,context: phase of play
+poss_len,prev_poss_len (replaces poss_len),yes,embedding (22),no,low after correction,state,context: possession length
+possession_flag,team_change (replaces new_possession),yes,embedding (2),no,low after correction,state,context: turnover of actor team
+prev_action,prev_action_id,yes,"embedding (16, incl. END)",no,low,history,context: previous action
+prev_outcome,prev_outcome,yes,embedding (3),no,low,history,context: previous success
+prev_end_zone,prev_end_zone,yes,embedding (96),no,low,history,context: where the previous action ended
+same_player_as_prev,same_player_as_prev,yes,embedding (2),no,low,history,context: same actor continues
+position in window,(window index 0–31),yes,learned positional embedding (32),no,low,position,order of events
