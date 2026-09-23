@@ -1,0 +1,6 @@
+,embeddings (tables + projections + positions),transformer blocks,final LayerNorm,unembedding,total,fixed zero rows (never trained),trainable
+"full model, T100",289536,793088,256,1935,1084815,512,1084303
+"full model, T300",117888,793088,256,1935,913167,512,912655
+B5 context-only (no player/team/role),42240,793088,256,1935,837519,128,837391
+B6 identity-only (player/team/role),251392,793088,256,1935,1046671,384,1046287
+B7 role-only (no player/team),45568,793088,256,1935,840847,256,840591

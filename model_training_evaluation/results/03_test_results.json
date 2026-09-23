@@ -1,0 +1,86 @@
+{
+  "device": "cpu",
+  "torch": "2.11.0+cpu",
+  "results": [
+    {
+      "test": "1 shapes",
+      "passed": true,
+      "detail": "observed {'logits': (8, 32, 15), 'attention_probabilities': (8, 4, 32, 32), 'resid_post': (8, 32, 128)}"
+    },
+    {
+      "test": "2 causal mask",
+      "passed": true,
+      "detail": "max change at positions <= 10: 0.0; after: 0.756"
+    },
+    {
+      "test": "3 attention vs reference",
+      "passed": true,
+      "detail": "max |ours - reference| = 7.45e-09"
+    },
+    {
+      "test": "4 attention probabilities",
+      "passed": true,
+      "detail": "max |row sum - 1| = 2.38e-07; max future weight = 0.0"
+    },
+    {
+      "test": "5 residual additions",
+      "passed": true,
+      "detail": "max reconstruction error = 0.00e+00"
+    },
+    {
+      "test": "6 LayerNorm placement",
+      "passed": true,
+      "detail": "sub-layer inputs equal LN(residual): error 0.0e+00; explicit formula (x-mean)/sqrt(var+eps)*scale+shift: error 4.8e-07"
+    },
+    {
+      "test": "7 positional embeddings",
+      "passed": true,
+      "detail": "output change when positions removed 0.188; position gradient norm 0.197"
+    },
+    {
+      "test": "8 output dimension",
+      "passed": true,
+      "detail": "classes = 15 (15 actions; END is not a target)"
+    },
+    {
+      "test": "9 determinism",
+      "passed": true,
+      "detail": "params identical True; outputs identical True; 10-step losses identical True"
+    },
+    {
+      "test": "10 gradient flow",
+      "passed": true,
+      "detail": "all parameters receive finite gradient; index-0 rows receive none"
+    },
+    {
+      "test": "11 loss",
+      "passed": true,
+      "detail": "loss 2.69291 = manual 2.69291; mean predictive entropy 2.6839 (maximum ln 15 = 2.7081)"
+    },
+    {
+      "test": "12 valid-position mask",
+      "passed": true,
+      "detail": "loss with original targets 2.687585; with randomised masked targets 2.687585"
+    },
+    {
+      "test": "13 memorise one batch",
+      "passed": true,
+      "detail": "training loss on one batch of 4 windows after 56 steps: 0.0094"
+    },
+    {
+      "test": "14 shuffled labels",
+      "passed": true,
+      "detail": "validation NLL after training on shuffled labels 1.8653; class-prior NLL 1.8618 (pass if not lower by more than 0.01)"
+    },
+    {
+      "test": "15 target-side columns",
+      "passed": true,
+      "detail": "all 19 input arrays identical after randomising action_id, action, type_name, end_zone"
+    },
+    {
+      "test": "16 index 0 stays zero",
+      "passed": true,
+      "detail": "largest |value| in any index-0 identity row after 5 AdamW steps (weight decay 0.1): 0.0"
+    }
+  ]
+}
