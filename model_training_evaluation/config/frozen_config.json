@@ -1,0 +1,32 @@
+{
+  "encoding": "T300",
+  "possession_features": "pre_action",
+  "context_length": 16,
+  "stride": 8,
+  "model": {
+    "n_layers": 2,
+    "n_heads": 2,
+    "d_model": 128,
+    "d_ff": 512
+  },
+  "training": {
+    "learning_rate": 0.0003,
+    "weight_decay": 0.1,
+    "max_epochs": 30,
+    "batch_size": 256,
+    "warmup_fraction": 0.05,
+    "min_lr_ratio": 0.1,
+    "grad_clip": 1.0,
+    "patience": 5
+  },
+  "decisions": {
+    "stage1_threshold": "T300",
+    "stage2_depth": "2 layers",
+    "stage3_heads": "2 heads x 64",
+    "stage4_context": "K=16"
+  },
+  "selection_rule": "smallest configuration within noise of the best validation NLL (notebook 04, Section 2.5); size cap <= 4 layers, <= 8 heads",
+  "dataset_sha256": "2fe8019fb59f8060f77ae0b81eba3df2077a3fd50c02f601ed7f401b3855fc5b",
+  "run_mode": "full",
+  "frozen_at": "2026-09-19T14:24:51.319122+00:00"
+}

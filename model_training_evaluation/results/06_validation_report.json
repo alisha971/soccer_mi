@@ -1,0 +1,243 @@
+{
+  "frozen_config": {
+    "encoding": "T300",
+    "possession_features": "pre_action",
+    "context_length": 16,
+    "stride": 8,
+    "model": {
+      "n_layers": 2,
+      "n_heads": 2,
+      "d_model": 128,
+      "d_ff": 512
+    },
+    "training": {
+      "learning_rate": 0.0003,
+      "weight_decay": 0.1,
+      "max_epochs": 30,
+      "batch_size": 256,
+      "warmup_fraction": 0.05,
+      "min_lr_ratio": 0.1,
+      "grad_clip": 1.0,
+      "patience": 5
+    },
+    "decisions": {
+      "stage1_threshold": "T300",
+      "stage2_depth": "2 layers",
+      "stage3_heads": "2 heads x 64",
+      "stage4_context": "K=16"
+    },
+    "selection_rule": "smallest configuration within noise of the best validation NLL (notebook 04, Section 2.5); size cap <= 4 layers, <= 8 heads",
+    "dataset_sha256": "2fe8019fb59f8060f77ae0b81eba3df2077a3fd50c02f601ed7f401b3855fc5b",
+    "run_mode": "full",
+    "frozen_at": "2026-09-19T14:24:51.319122+00:00"
+  },
+  "final_seeds": [
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "gates": {
+    "baseline improvement (all of B1-B4)": true,
+    "no divergence": true,
+    "class coverage (PROVISIONAL)": true,
+    "size cap": true
+  },
+  "baseline_comparison": [
+    {
+      "baseline": "B1a class prior",
+      "B8 - baseline NLL": -1.068113055349974,
+      "CI": "[-1.0945, -1.0419]",
+      "B8 better beyond noise": true
+    },
+    {
+      "baseline": "B1b zone prior",
+      "B8 - baseline NLL": -0.875393303265655,
+      "CI": "[-0.8969, -0.8534]",
+      "B8 better beyond noise": true
+    },
+    {
+      "baseline": "B2 Markov",
+      "B8 - baseline NLL": -0.5043983416006663,
+      "CI": "[-0.5181, -0.4892]",
+      "B8 better beyond noise": true
+    },
+    {
+      "baseline": "B3 logistic regression",
+      "B8 - baseline NLL": -0.144263184088911,
+      "CI": "[-0.1510, -0.1372]",
+      "B8 better beyond noise": true
+    },
+    {
+      "baseline": "B4 MLP",
+      "B8 - baseline NLL": -0.04095049574971199,
+      "CI": "[-0.0442, -0.0378]",
+      "B8 better beyond noise": true
+    }
+  ],
+  "coverage_failures": [],
+  "seed_summary": [
+    {
+      "run": "transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s100",
+      "seed": 100,
+      "best epoch": 8,
+      "epochs run": 13,
+      "diverged": false,
+      "val NLL": 0.9070372581481934,
+      "val accuracy": 0.6215608134935223,
+      "val macro-F1": 0.5606277762483707,
+      "train NLL": 0.8311705589294434,
+      "minutes": 1.1104466835657756
+    },
+    {
+      "run": "transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s101",
+      "seed": 101,
+      "best epoch": 7,
+      "epochs run": 12,
+      "diverged": false,
+      "val NLL": 0.9048335552215576,
+      "val accuracy": 0.622178433304413,
+      "val macro-F1": 0.5562912279054577,
+      "train NLL": 0.844818651676178,
+      "minutes": 0.9926512678464253
+    },
+    {
+      "run": "transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s102",
+      "seed": 102,
+      "best epoch": 8,
+      "epochs run": 13,
+      "diverged": false,
+      "val NLL": 0.9059664607048035,
+      "val accuracy": 0.6220754966692645,
+      "val macro-F1": 0.5617050698152953,
+      "train NLL": 0.8336564302444458,
+      "minutes": 1.0945106148719788
+    },
+    {
+      "run": "transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s103",
+      "seed": 103,
+      "best epoch": 6,
+      "epochs run": 11,
+      "diverged": false,
+      "val NLL": 0.907721757888794,
+      "val accuracy": 0.6211784774201138,
+      "val macro-F1": 0.5568216249723829,
+      "train NLL": 0.857866108417511,
+      "minutes": 0.9357389251391093
+    },
+    {
+      "run": "transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s104",
+      "seed": 104,
+      "best epoch": 7,
+      "epochs run": 12,
+      "diverged": false,
+      "val NLL": 0.906718909740448,
+      "val accuracy": 0.6199285325647398,
+      "val macro-F1": 0.5544943398721023,
+      "train NLL": 0.8456992506980896,
+      "minutes": 1.0061065793037414
+    }
+  ],
+  "primary_run": "transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s104",
+  "primary_seed": 104,
+  "replicate_runs": [
+    "transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s100",
+    "transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s101",
+    "transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s102",
+    "transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s103"
+  ],
+  "identity_value_by_player_band": [
+    {
+      "group": "all events",
+      "events": 68003,
+      "restricted NLL": 0.8863094449043274,
+      "full model NLL": 0.9064610600471497,
+      "value (restricted - full)": -0.020134039223194122,
+      "95% CI": "[-0.0229, -0.0174]"
+    },
+    {
+      "group": "100-299",
+      "events": 20693,
+      "restricted NLL": 0.8861873745918274,
+      "full model NLL": 0.9048454165458679,
+      "value (restricted - full)": -0.018660014495253563,
+      "95% CI": "[-0.0235, -0.0145]"
+    },
+    {
+      "group": "300-999",
+      "events": 10644,
+      "restricted NLL": 0.8763887286186218,
+      "full model NLL": 0.893785297870636,
+      "value (restricted - full)": -0.01739763468503952,
+      "95% CI": "[-0.0245, -0.0111]"
+    },
+    {
+      "group": "<100 train events (incl. unseen)",
+      "events": 33419,
+      "restricted NLL": 0.8860430717468262,
+      "full model NLL": 0.9093998074531555,
+      "value (restricted - full)": -0.023356769233942032,
+      "95% CI": "[-0.0271, -0.0198]"
+    },
+    {
+      "group": ">=1000",
+      "events": 3247,
+      "restricted NLL": 0.9226186871528625,
+      "full model NLL": 0.9279483556747437,
+      "value (restricted - full)": -0.005328902043402195,
+      "95% CI": "[-0.0087, -0.0019]"
+    }
+  ],
+  "identity_value_by_team_status": [
+    {
+      "group": "all events",
+      "events": 68003,
+      "restricted NLL": 0.8863094449043274,
+      "full model NLL": 0.9064610600471497,
+      "value (restricted - full)": -0.020134039223194122,
+      "95% CI": "[-0.0229, -0.0174]"
+    },
+    {
+      "group": "team seen in training",
+      "events": 58506,
+      "restricted NLL": 0.8869209289550781,
+      "full model NLL": 0.9069040417671204,
+      "value (restricted - full)": -0.019969994202256203,
+      "95% CI": "[-0.0233, -0.0167]"
+    },
+    {
+      "group": "team unseen in training",
+      "events": 9497,
+      "restricted NLL": 0.8825759887695312,
+      "full model NLL": 0.9037202000617981,
+      "value (restricted - full)": -0.021144626662135124,
+      "95% CI": "[-0.0247, -0.0167]"
+    }
+  ],
+  "b6_minus_b8": {
+    "n_events": 68003,
+    "nll_a_mean": 1.6526058912277222,
+    "nll_a_seed_sd": 0.01394802238792181,
+    "nll_b_mean": 0.9064610600471497,
+    "nll_b_seed_sd": 0.0011011420283466578,
+    "difference_a_minus_b": 0.7461508512496948,
+    "difference_ci_low": 0.6788674744866495,
+    "difference_ci_high": 0.8164881958760497,
+    "seeds_completely_separated": false,
+    "a_better_beyond_noise": false
+  },
+  "b5_minus_b8": {
+    "n_events": 68003,
+    "nll_a_mean": 0.8984611630439758,
+    "nll_a_seed_sd": 0.0015099418815225363,
+    "nll_b_mean": 0.9064610600471497,
+    "nll_b_seed_sd": 0.0011011420283466578,
+    "difference_a_minus_b": -0.007987495511770248,
+    "difference_ci_low": -0.012034881047622242,
+    "difference_ci_high": -0.004023266594975584,
+    "seeds_completely_separated": true,
+    "a_better_beyond_noise": true
+  },
+  "run_mode": "full"
+}

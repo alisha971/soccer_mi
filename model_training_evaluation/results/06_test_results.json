@@ -1,0 +1,521 @@
+{
+  "run_mode": "full",
+  "frozen_config": {
+    "encoding": "T300",
+    "possession_features": "pre_action",
+    "context_length": 16,
+    "stride": 8,
+    "model": {
+      "n_layers": 2,
+      "n_heads": 2,
+      "d_model": 128,
+      "d_ff": 512
+    },
+    "training": {
+      "learning_rate": 0.0003,
+      "weight_decay": 0.1,
+      "max_epochs": 30,
+      "batch_size": 256,
+      "warmup_fraction": 0.05,
+      "min_lr_ratio": 0.1,
+      "grad_clip": 1.0,
+      "patience": 5
+    },
+    "decisions": {
+      "stage1_threshold": "T300",
+      "stage2_depth": "2 layers",
+      "stage3_heads": "2 heads x 64",
+      "stage4_context": "K=16"
+    },
+    "selection_rule": "smallest configuration within noise of the best validation NLL (notebook 04, Section 2.5); size cap <= 4 layers, <= 8 heads",
+    "dataset_sha256": "2fe8019fb59f8060f77ae0b81eba3df2077a3fd50c02f601ed7f401b3855fc5b",
+    "run_mode": "full",
+    "frozen_at": "2026-09-19T14:24:51.319122+00:00"
+  },
+  "primary_run": "transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s104",
+  "primary_seed": 104,
+  "n_test_events": 65009,
+  "headline": [
+    {
+      "model": "B1a class prior",
+      "seeds": 1,
+      "NLL": 2.0201982525645943,
+      "NLL seed SD": 0.0,
+      "NLL 95% CI": "[1.9945, 2.0468]",
+      "accuracy": 0.2970973249857712,
+      "top-3": 0.7163315848574813,
+      "top-5": 0.8167484502145856,
+      "macro-F1": 0.030539710399297936,
+      "ECE": 0.0052303348233535
+    },
+    {
+      "model": "B1b zone prior",
+      "seeds": 1,
+      "NLL": 1.8188081982848243,
+      "NLL seed SD": 0.0,
+      "NLL 95% CI": "[1.7946, 1.8444]",
+      "accuracy": 0.3227245458321156,
+      "top-3": 0.7503576427879217,
+      "top-5": 0.8701718223630575,
+      "macro-F1": 0.1326744619018392,
+      "ECE": 0.006073911803509875
+    },
+    {
+      "model": "B2 Markov",
+      "seeds": 1,
+      "NLL": 1.4331829413686126,
+      "NLL seed SD": 0.0,
+      "NLL 95% CI": "[1.4108, 1.4564]",
+      "accuracy": 0.4489070744050824,
+      "top-3": 0.8433755326185605,
+      "top-5": 0.94589979848944,
+      "macro-F1": 0.36107301650542184,
+      "ECE": 0.004815437975861806
+    },
+    {
+      "model": "B3 logistic regression",
+      "seeds": 1,
+      "NLL": 1.0648793551207165,
+      "NLL seed SD": 0.0,
+      "NLL 95% CI": "[1.0451, 1.0843]",
+      "accuracy": 0.5753049577750773,
+      "top-3": 0.9198418680490393,
+      "top-5": 0.9830331184912858,
+      "macro-F1": 0.5089757747883397,
+      "ECE": 0.012200555075306775
+    },
+    {
+      "model": "B4 MLP",
+      "seeds": 3,
+      "NLL": 0.9523872137069702,
+      "NLL seed SD": 0.0026508769254308296,
+      "NLL 95% CI": "[0.9396, 0.9652]",
+      "accuracy": 0.6026857819686505,
+      "top-3": 0.9389981899942059,
+      "top-5": 0.9920421275002949,
+      "macro-F1": 0.5412628609610003,
+      "ECE": 0.030625891097040215
+    },
+    {
+      "model": "B6 identity-only",
+      "seeds": 3,
+      "NLL": 1.7462124427159627,
+      "NLL seed SD": 0.02453366085428814,
+      "NLL 95% CI": "[1.6718, 1.8234]",
+      "accuracy": 0.37569157091069444,
+      "top-3": 0.7777846144380008,
+      "top-5": 0.8915791146866844,
+      "macro-F1": 0.18303636182567048,
+      "ECE": 0.06943210453384727
+    },
+    {
+      "model": "B5 context-only",
+      "seeds": 3,
+      "NLL": 0.9103115002314249,
+      "NLL seed SD": 0.0013852742412324265,
+      "NLL 95% CI": "[0.8967, 0.9232]",
+      "accuracy": 0.6196526634773646,
+      "top-3": 0.9458280135570973,
+      "top-5": 0.9936419059925035,
+      "macro-F1": 0.5547463619018673,
+      "ECE": 0.01813134090811314
+    },
+    {
+      "model": "B7 role-only",
+      "seeds": 3,
+      "NLL": 0.8959659934043884,
+      "NLL seed SD": 0.0005341456498506325,
+      "NLL 95% CI": "[0.8827, 0.9093]",
+      "accuracy": 0.6238418270290781,
+      "top-3": 0.946571500356361,
+      "top-5": 0.9941597830044046,
+      "macro-F1": 0.5631504372305213,
+      "ECE": 0.02000135036551491
+    },
+    {
+      "model": "B8 Transformer (final)",
+      "seeds": 5,
+      "NLL": 0.9158470034599304,
+      "NLL seed SD": 0.0013127469047919946,
+      "NLL 95% CI": "[0.9035, 0.9283]",
+      "accuracy": 0.6160685443553969,
+      "top-3": 0.9444753803319541,
+      "top-5": 0.9936501099847712,
+      "macro-F1": 0.557987985038487,
+      "ECE": 0.023757873674580633
+    }
+  ],
+  "primary_checkpoint_metrics": {
+    "n_events": 65009,
+    "nll": 0.9152673482894897,
+    "accuracy": 0.6170530234275254,
+    "top3_accuracy": 0.9446999646202834,
+    "top5_accuracy": 0.993708563429679,
+    "macro_f1": 0.5537500660306591,
+    "per_class_f1": [
+      0.5318255888598094,
+      0.5207452773225222,
+      0.27466456195737965,
+      0.7653064469959607,
+      0.04251839738348324,
+      0.6,
+      0.6086956521739131,
+      0.6137034203912141,
+      0.7306871532223644,
+      0.9037955655768508,
+      0.9994378864530635,
+      0.6809552969993876,
+      0.9371325192220714,
+      0.04122766834631241,
+      0.05555555555555555
+    ],
+    "ece": 0.02230158329164044
+  },
+  "primary_macro_f1_ci": {
+    "mean": 0.5537500660306591,
+    "ci_low": 0.5465843976920698,
+    "ci_high": 0.5606936222294113
+  },
+  "stratified": [
+    {
+      "stratum": "zone",
+      "group": "final third",
+      "events": 13052,
+      "B8 NLL": 1.0610214471817017,
+      "B8 95% CI": "[1.034, 1.090]",
+      "B7 role-only NLL": 1.0430209636688232,
+      "B3 NLL": 1.209069395053302,
+      "identity value (B7 - B8)": -0.018000483512878418,
+      "B8 accuracy (primary)": 0.5927060986821943
+    },
+    {
+      "stratum": "zone",
+      "group": "middle third",
+      "events": 29032,
+      "B8 NLL": 0.9188721179962158,
+      "B8 95% CI": "[0.902, 0.935]",
+      "B7 role-only NLL": 0.8996834754943848,
+      "B3 NLL": 1.07065198972638,
+      "identity value (B7 - B8)": -0.019188642501831055,
+      "B8 accuracy (primary)": 0.599476439790576
+    },
+    {
+      "stratum": "zone",
+      "group": "opponent penalty box",
+      "events": 2167,
+      "B8 NLL": 1.1269546747207642,
+      "B8 95% CI": "[1.079, 1.175]",
+      "B7 role-only NLL": 1.1083824634552002,
+      "B3 NLL": 1.38796823606303,
+      "identity value (B7 - B8)": -0.018572211265563965,
+      "B8 accuracy (primary)": 0.5856022150438394
+    },
+    {
+      "stratum": "zone",
+      "group": "own third",
+      "events": 20758,
+      "B8 NLL": 0.7982965111732483,
+      "B8 95% CI": "[0.781, 0.816]",
+      "B7 role-only NLL": 0.7761281728744507,
+      "B3 NLL": 0.9324150939166647,
+      "identity value (B7 - B8)": -0.022168338298797607,
+      "B8 accuracy (primary)": 0.6602273822140862
+    },
+    {
+      "stratum": "time",
+      "group": "0-15'",
+      "events": 11318,
+      "B8 NLL": 0.9120827913284302,
+      "B8 95% CI": "[0.892, 0.932]",
+      "B7 role-only NLL": 0.892919659614563,
+      "B3 NLL": 1.064987695873532,
+      "identity value (B7 - B8)": -0.019163131713867188,
+      "B8 accuracy (primary)": 0.6103551864286977
+    },
+    {
+      "stratum": "time",
+      "group": "15-30'",
+      "events": 10300,
+      "B8 NLL": 0.9217303991317749,
+      "B8 95% CI": "[0.903, 0.941]",
+      "B7 role-only NLL": 0.9018695950508118,
+      "B3 NLL": 1.0606491697286486,
+      "identity value (B7 - B8)": -0.019860804080963135,
+      "B8 accuracy (primary)": 0.6180582524271845
+    },
+    {
+      "stratum": "time",
+      "group": "30-45'",
+      "events": 10075,
+      "B8 NLL": 0.9122453927993774,
+      "B8 95% CI": "[0.896, 0.929]",
+      "B7 role-only NLL": 0.8914139866828918,
+      "B3 NLL": 1.069066291676597,
+      "identity value (B7 - B8)": -0.020831406116485596,
+      "B8 accuracy (primary)": 0.6173697270471464
+    },
+    {
+      "stratum": "time",
+      "group": "45-60'",
+      "events": 11257,
+      "B8 NLL": 0.9302288889884949,
+      "B8 95% CI": "[0.908, 0.952]",
+      "B7 role-only NLL": 0.9072268009185791,
+      "B3 NLL": 1.06680970154411,
+      "identity value (B7 - B8)": -0.02300208806991577,
+      "B8 accuracy (primary)": 0.6126854401705606
+    },
+    {
+      "stratum": "time",
+      "group": "60-75'",
+      "events": 9631,
+      "B8 NLL": 0.9035190343856812,
+      "B8 95% CI": "[0.882, 0.925]",
+      "B7 role-only NLL": 0.8850052356719971,
+      "B3 NLL": 1.0526525089079235,
+      "identity value (B7 - B8)": -0.018513798713684082,
+      "B8 accuracy (primary)": 0.6243380749662548
+    },
+    {
+      "stratum": "time",
+      "group": "75'+",
+      "events": 12428,
+      "B8 NLL": 0.9138453006744385,
+      "B8 95% CI": "[0.896, 0.931]",
+      "B7 role-only NLL": 0.8958320021629333,
+      "B3 NLL": 1.0726189889543762,
+      "identity value (B7 - B8)": -0.018013298511505127,
+      "B8 accuracy (primary)": 0.6203733504988735
+    },
+    {
+      "stratum": "score state",
+      "group": "level",
+      "events": 32179,
+      "B8 NLL": 0.9170142412185669,
+      "B8 95% CI": "[0.904, 0.929]",
+      "B7 role-only NLL": 0.8939486145973206,
+      "B3 NLL": 1.067335631951398,
+      "identity value (B7 - B8)": -0.023065626621246338,
+      "B8 accuracy (primary)": 0.6130395599614655
+    },
+    {
+      "stratum": "score state",
+      "group": "losing",
+      "events": 16263,
+      "B8 NLL": 0.920030951499939,
+      "B8 95% CI": "[0.901, 0.937]",
+      "B7 role-only NLL": 0.9029887318611145,
+      "B3 NLL": 1.0676240548122333,
+      "identity value (B7 - B8)": -0.017042219638824463,
+      "B8 accuracy (primary)": 0.6219024780175859
+    },
+    {
+      "stratum": "score state",
+      "group": "winning",
+      "events": 16567,
+      "B8 NLL": 0.9094725251197815,
+      "B8 95% CI": "[0.884, 0.935]",
+      "B7 role-only NLL": 0.89299076795578,
+      "B3 NLL": 1.057414057648777,
+      "identity value (B7 - B8)": -0.016481757164001465,
+      "B8 accuracy (primary)": 0.6200881269994567
+    },
+    {
+      "stratum": "possession spell",
+      "group": "early in spell (0-2)",
+      "events": 18650,
+      "B8 NLL": 0.9096818566322327,
+      "B8 95% CI": "[0.891, 0.927]",
+      "B7 role-only NLL": 0.8861750364303589,
+      "B3 NLL": 1.1072328112512864,
+      "identity value (B7 - B8)": -0.02350682020187378,
+      "B8 accuracy (primary)": 0.6159249329758714
+    },
+    {
+      "stratum": "possession spell",
+      "group": "first event of period",
+      "events": 70,
+      "B8 NLL": 0.4091576039791107,
+      "B8 95% CI": "[0.303, 0.514]",
+      "B7 role-only NLL": 0.3737587332725525,
+      "B3 NLL": 0.4150999617182936,
+      "identity value (B7 - B8)": -0.03539887070655823,
+      "B8 accuracy (primary)": 0.8571428571428571
+    },
+    {
+      "stratum": "possession spell",
+      "group": "long spell (10+)",
+      "events": 20387,
+      "B8 NLL": 0.9111323952674866,
+      "B8 95% CI": "[0.893, 0.931]",
+      "B7 role-only NLL": 0.8914079070091248,
+      "B3 NLL": 1.0320696613213023,
+      "identity value (B7 - B8)": -0.019724488258361816,
+      "B8 accuracy (primary)": 0.623093147594055
+    },
+    {
+      "stratum": "possession spell",
+      "group": "mid spell (3-9)",
+      "events": 25902,
+      "B8 NLL": 0.9253661632537842,
+      "B8 95% CI": "[0.912, 0.937]",
+      "B7 role-only NLL": 0.908014714717865,
+      "B3 NLL": 1.0619638979433448,
+      "identity value (B7 - B8)": -0.01735144853591919,
+      "B8 accuracy (primary)": 0.6124623581190641
+    },
+    {
+      "stratum": "turnover of actor team",
+      "group": "acting team changed",
+      "events": 16596,
+      "B8 NLL": 0.8208476305007935,
+      "B8 95% CI": "[0.798, 0.842]",
+      "B7 role-only NLL": 0.8048478960990906,
+      "B3 NLL": 1.0758880083684876,
+      "identity value (B7 - B8)": -0.01599973440170288,
+      "B8 accuracy (primary)": 0.6748614123885274
+    },
+    {
+      "stratum": "turnover of actor team",
+      "group": "same acting team",
+      "events": 48413,
+      "B8 NLL": 0.9484127759933472,
+      "B8 95% CI": "[0.935, 0.962]",
+      "B7 role-only NLL": 0.9272013306617737,
+      "B3 NLL": 1.0611055834209666,
+      "identity value (B7 - B8)": -0.021211445331573486,
+      "B8 accuracy (primary)": 0.5972362795117014
+    },
+    {
+      "stratum": "coupled",
+      "group": "genuine sequence event",
+      "events": 58115,
+      "B8 NLL": 1.00456702709198,
+      "B8 95% CI": "[0.988, 1.021]",
+      "B7 role-only NLL": 0.9837228655815125,
+      "B3 NLL": 1.1449291658330685,
+      "identity value (B7 - B8)": -0.02084416151046753,
+      "B8 accuracy (primary)": 0.5786457885227566
+    },
+    {
+      "stratum": "coupled",
+      "group": "same-moment (coupled) event",
+      "events": 6894,
+      "B8 NLL": 0.167955219745636,
+      "B8 95% CI": "[0.145, 0.190]",
+      "B7 role-only NLL": 0.15619365870952606,
+      "B3 NLL": 0.39007593917231037,
+      "identity value (B7 - B8)": -0.011761561036109924,
+      "B8 accuracy (primary)": 0.9408181026979983
+    },
+    {
+      "stratum": "player frequency",
+      "group": "100-299",
+      "events": 21686,
+      "B8 NLL": 0.9164094924926758,
+      "B8 95% CI": "[0.896, 0.933]",
+      "B7 role-only NLL": 0.8974719047546387,
+      "B3 NLL": 1.0703222865345299,
+      "identity value (B7 - B8)": -0.01893758773803711,
+      "B8 accuracy (primary)": 0.6184174121553075
+    },
+    {
+      "stratum": "player frequency",
+      "group": "300-999",
+      "events": 10816,
+      "B8 NLL": 0.922235369682312,
+      "B8 95% CI": "[0.890, 0.954]",
+      "B7 role-only NLL": 0.8988770246505737,
+      "B3 NLL": 1.045760041141302,
+      "identity value (B7 - B8)": -0.02335834503173828,
+      "B8 accuracy (primary)": 0.6108542899408284
+    },
+    {
+      "stratum": "player frequency",
+      "group": "<100 train events (incl. unseen)",
+      "events": 29503,
+      "B8 NLL": 0.9181618094444275,
+      "B8 95% CI": "[0.899, 0.935]",
+      "B7 role-only NLL": 0.8987529873847961,
+      "B3 NLL": 1.0781612915600938,
+      "identity value (B7 - B8)": -0.019408822059631348,
+      "B8 accuracy (primary)": 0.6171914720536894
+    },
+    {
+      "stratum": "player frequency",
+      "group": ">=1000",
+      "events": 3004,
+      "B8 NLL": 0.8660517334938049,
+      "B8 95% CI": "[0.852, 0.900]",
+      "B7 role-only NLL": 0.8472437262535095,
+      "B3 NLL": 0.9639812587793227,
+      "identity value (B7 - B8)": -0.01880800724029541,
+      "B8 accuracy (primary)": 0.6281624500665779
+    },
+    {
+      "stratum": "team status",
+      "group": "team seen in training",
+      "events": 55845,
+      "B8 NLL": 0.9144873023033142,
+      "B8 95% CI": "[0.903, 0.926]",
+      "B7 role-only NLL": 0.8928547501564026,
+      "B3 NLL": 1.0612849644428712,
+      "identity value (B7 - B8)": -0.02163255214691162,
+      "B8 accuracy (primary)": 0.617566478646253
+    },
+    {
+      "stratum": "team status",
+      "group": "team unseen in training",
+      "events": 9164,
+      "B8 NLL": 0.9241328835487366,
+      "B8 95% CI": "[0.880, 0.968]",
+      "B7 role-only NLL": 0.914926290512085,
+      "B3 NLL": 1.0867834087440558,
+      "identity value (B7 - B8)": -0.009206593036651611,
+      "B8 accuracy (primary)": 0.6139240506329114
+    }
+  ],
+  "robustness_genuine_events_only": [
+    {
+      "index": "B3 logistic regression",
+      "NLL (genuine events only)": 1.1449291658330685,
+      "accuracy (genuine only)": 0.5369870085175944,
+      "macro-F1 (genuine only)": 0.41426967713075047
+    },
+    {
+      "index": "B4 MLP",
+      "NLL (genuine events only)": 1.0439226229985554,
+      "accuracy (genuine only)": 0.5631592532048525,
+      "macro-F1 (genuine only)": 0.4598161632057973
+    },
+    {
+      "index": "B7 role-only",
+      "NLL (genuine events only)": 0.9837229053179423,
+      "accuracy (genuine only)": 0.5860793254753506,
+      "macro-F1 (genuine only)": 0.48100172450709416
+    },
+    {
+      "index": "B8 Transformer (final)",
+      "NLL (genuine events only)": 1.0045670509338378,
+      "accuracy (genuine only)": 0.5774894605523531,
+      "macro-F1 (genuine only)": 0.476311737498913
+    }
+  ],
+  "per_class_f1_b8_mean": [
+    0.5228154940412225,
+    0.5268748380397278,
+    0.3483001073976283,
+    0.7671777964148896,
+    0.04342734733473903,
+    0.5888453970832568,
+    0.6057075190963573,
+    0.6097041746659303,
+    0.7320727664797,
+    0.905026589973518,
+    0.9994380127707144,
+    0.679630462641873,
+    0.9361092617623052,
+    0.057273675880798625,
+    0.04741633199464525
+  ]
+}
