@@ -1,0 +1,696 @@
+{
+  "run_mode": "full",
+  "frozen_benchmark_config": {
+    "encoding": "T300",
+    "possession_features": "pre_action",
+    "context_length": 16,
+    "stride": 8,
+    "model": {
+      "n_layers": 4,
+      "n_heads": 2,
+      "d_model": 128,
+      "d_ff": 512
+    },
+    "training": {
+      "learning_rate": 0.0003,
+      "weight_decay": 0.1,
+      "max_epochs": 30,
+      "batch_size": 256,
+      "warmup_fraction": 0.05,
+      "min_lr_ratio": 0.1,
+      "grad_clip": 1.0,
+      "patience": 5
+    },
+    "selected_configuration": "4L_2H_K16",
+    "best_predictive_configuration": "4L_2H_K16",
+    "most_stable_configuration": "4L_4H_K64",
+    "stability_comparison_conclusive": true,
+    "most_mi_accessible_configuration": "4L_2H_K16",
+    "selection_rule": "smallest configuration within noise of the best validation NLL (Track A rule, PROVISIONAL); order by head-position units = layers x heads x K, ties by parameter count (PROVISIONAL)",
+    "replacement_assessment": "The selected 4-layer configuration has lower validation NLL than the frozen Track A configuration beyond noise. The validation evidence is consistent with considering a replacement; the decision is left to the supervisor.",
+    "replacement_decision": "not decided by this benchmark; left to the supervisor",
+    "screening_seeds": [
+      0,
+      1,
+      2
+    ],
+    "dataset_sha256": "2fe8019fb59f8060f77ae0b81eba3df2077a3fd50c02f601ed7f401b3855fc5b",
+    "run_mode": "full",
+    "frozen_at": "2026-09-19T19:02:02.163882+00:00"
+  },
+  "primary_run": "transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s103",
+  "primary_seed": 103,
+  "n_test_events": 65009,
+  "headline": [
+    {
+      "model": "B1a class prior",
+      "seeds": 1,
+      "NLL": 2.0201982525645943,
+      "NLL seed SD": 0.0,
+      "NLL 95% CI": "[1.9945, 2.0468]",
+      "accuracy": 0.2970973249857712,
+      "top-3": 0.7163315848574813,
+      "top-5": 0.8167484502145856,
+      "macro-F1": 0.030539710399297936,
+      "ECE": 0.0052303348233535
+    },
+    {
+      "model": "B1b zone prior",
+      "seeds": 1,
+      "NLL": 1.8188081982848243,
+      "NLL seed SD": 0.0,
+      "NLL 95% CI": "[1.7946, 1.8444]",
+      "accuracy": 0.3227245458321156,
+      "top-3": 0.7503576427879217,
+      "top-5": 0.8701718223630575,
+      "macro-F1": 0.1326744619018392,
+      "ECE": 0.006073911803509875
+    },
+    {
+      "model": "B2 Markov",
+      "seeds": 1,
+      "NLL": 1.4331829413686126,
+      "NLL seed SD": 0.0,
+      "NLL 95% CI": "[1.4108, 1.4564]",
+      "accuracy": 0.4489070744050824,
+      "top-3": 0.8433755326185605,
+      "top-5": 0.94589979848944,
+      "macro-F1": 0.36107301650542184,
+      "ECE": 0.004815437975861806
+    },
+    {
+      "model": "B3 logistic regression",
+      "seeds": 1,
+      "NLL": 1.0648793551207165,
+      "NLL seed SD": 0.0,
+      "NLL 95% CI": "[1.0451, 1.0843]",
+      "accuracy": 0.5753049577750773,
+      "top-3": 0.9198418680490393,
+      "top-5": 0.9830331184912858,
+      "macro-F1": 0.5089757747883397,
+      "ECE": 0.012200555075306775
+    },
+    {
+      "model": "B4 MLP",
+      "seeds": 3,
+      "NLL": 0.9523872137069702,
+      "NLL seed SD": 0.0026508769254308296,
+      "NLL 95% CI": "[0.9396, 0.9652]",
+      "accuracy": 0.6026857819686505,
+      "top-3": 0.9389981899942059,
+      "top-5": 0.9920421275002949,
+      "macro-F1": 0.5412628609610003,
+      "ECE": 0.030625891097040215
+    },
+    {
+      "model": "B6 identity-only",
+      "seeds": 3,
+      "NLL": 1.7521325747172039,
+      "NLL seed SD": 0.08038450231419442,
+      "NLL 95% CI": "[1.6568, 1.8526]",
+      "accuracy": 0.3845518825598507,
+      "top-3": 0.778548611217934,
+      "top-5": 0.8852517856501919,
+      "macro-F1": 0.19681622183226696,
+      "ECE": 0.05140525827704804
+    },
+    {
+      "model": "B5 context-only",
+      "seeds": 3,
+      "NLL": 0.9077374537785848,
+      "NLL seed SD": 0.004339775079155104,
+      "NLL 95% CI": "[0.8944, 0.9205]",
+      "accuracy": 0.6204115327621303,
+      "top-3": 0.9450024868351562,
+      "top-5": 0.9937034359345116,
+      "macro-F1": 0.5611506489731214,
+      "ECE": 0.016637141930921716
+    },
+    {
+      "model": "B7 role-only",
+      "seeds": 3,
+      "NLL": 0.8915654023488363,
+      "NLL seed SD": 0.0015695880396202348,
+      "NLL 95% CI": "[0.8784, 0.9046]",
+      "accuracy": 0.6272516113153563,
+      "top-3": 0.9473816445927999,
+      "top-5": 0.9943443728304286,
+      "macro-F1": 0.5693563521579589,
+      "ECE": 0.022354785629323592
+    },
+    {
+      "model": "Frozen Track A model (2L, existing)",
+      "seeds": 5,
+      "NLL": 0.9158470034599304,
+      "NLL seed SD": 0.0013127469047919946,
+      "NLL 95% CI": "[0.9035, 0.9283]",
+      "accuracy": 0.6160685443553969,
+      "top-3": 0.9444753803319541,
+      "top-5": 0.9936501099847712,
+      "macro-F1": 0.557987985038487,
+      "ECE": 0.023757873674580633
+    },
+    {
+      "model": "Original 4L4H K32 (benchmark re-run, seeds 0-2)",
+      "seeds": 3,
+      "NLL": 0.9254735906918844,
+      "NLL seed SD": 0.006640240371815614,
+      "NLL 95% CI": "[0.9132, 0.9374]",
+      "accuracy": 0.6132227845375255,
+      "top-3": 0.9427976639132017,
+      "top-5": 0.9934060412148061,
+      "macro-F1": 0.5497488738682492,
+      "ECE": 0.029671685343781912
+    },
+    {
+      "model": "B8 Transformer 4L (selected)",
+      "seeds": 5,
+      "NLL": 0.914042067527771,
+      "NLL seed SD": 0.003281366515919037,
+      "NLL 95% CI": "[0.9017, 0.9265]",
+      "accuracy": 0.6178098417142243,
+      "top-3": 0.9442415665523237,
+      "top-5": 0.993748557891984,
+      "macro-F1": 0.5578153483027594,
+      "ECE": 0.025463847711948907
+    }
+  ],
+  "primary_checkpoint_metrics": {
+    "n_events": 65009,
+    "nll": 0.913070559501648,
+    "accuracy": 0.6178375301881278,
+    "top3_accuracy": 0.9437154855481549,
+    "top5_accuracy": 0.9941085080527312,
+    "macro_f1": 0.5590082297605916,
+    "per_class_f1": [
+      0.5185852090032155,
+      0.5342274148428501,
+      0.375,
+      0.771389028686462,
+      0.05337519623233909,
+      0.5814512253724171,
+      0.608927381745503,
+      0.6126924354856573,
+      0.7260987294313684,
+      0.8992792459804103,
+      0.9994378864530635,
+      0.6780072904009721,
+      0.9380846325167038,
+      0.036619718309859155,
+      0.05194805194805195
+    ],
+    "ece": 0.019276652265026693
+  },
+  "primary_macro_f1_ci": {
+    "mean": 0.5590082297605916,
+    "ci_low": 0.5527385725046304,
+    "ci_high": 0.5654280078568735
+  },
+  "per_class": [
+    {
+      "index": "PASS_SHORT",
+      "precision": 0.515311078165738,
+      "recall": 0.5219012115563839,
+      "F1": 0.5185852090032155,
+      "test events": 19314
+    },
+    {
+      "index": "PASS_LONG",
+      "precision": 0.5728275253639171,
+      "recall": 0.5005010406228321,
+      "F1": 0.5342274148428501,
+      "test events": 12973
+    },
+    {
+      "index": "CROSS",
+      "precision": 0.4260869565217391,
+      "recall": 0.3348519362186788,
+      "F1": 0.375,
+      "test events": 878
+    },
+    {
+      "index": "CARRY",
+      "precision": 0.7002455599337559,
+      "recall": 0.8586233457040824,
+      "F1": 0.771389028686462,
+      "test events": 14281
+    },
+    {
+      "index": "DRIBBLE",
+      "precision": 0.3269230769230769,
+      "recall": 0.02905982905982906,
+      "F1": 0.05337519623233909,
+      "test events": 1170
+    },
+    {
+      "index": "SHOT",
+      "precision": 0.5373001776198935,
+      "recall": 0.6335078534031413,
+      "F1": 0.5814512253724171,
+      "test events": 955
+    },
+    {
+      "index": "CLEARANCE",
+      "precision": 0.6695970695970695,
+      "recall": 0.5583384239462431,
+      "F1": 0.608927381745503,
+      "test events": 1637
+    },
+    {
+      "index": "RECOVERY",
+      "precision": 0.5352167182662538,
+      "recall": 0.7163947163947164,
+      "F1": 0.6126924354856573,
+      "test events": 3861
+    },
+    {
+      "index": "INTERCEPTION",
+      "precision": 0.6706425548287803,
+      "recall": 0.7915531335149864,
+      "F1": 0.7260987294313684,
+      "test events": 2202
+    },
+    {
+      "index": "DUEL",
+      "precision": 0.8866618075801749,
+      "recall": 0.9122609673790776,
+      "F1": 0.8992792459804103,
+      "test events": 2667
+    },
+    {
+      "index": "FOUL_WON",
+      "precision": 0.998876404494382,
+      "recall": 1.0,
+      "F1": 0.9994378864530635,
+      "test events": 889
+    },
+    {
+      "index": "FOUL_COMMITTED",
+      "precision": 0.7903682719546742,
+      "recall": 0.5936170212765958,
+      "F1": 0.6780072904009721,
+      "test events": 940
+    },
+    {
+      "index": "GK_ACTION",
+      "precision": 0.9590163934426229,
+      "recall": 0.9180470793374019,
+      "F1": 0.9380846325167038,
+      "test events": 1147
+    },
+    {
+      "index": "LOSS",
+      "precision": 0.4020618556701031,
+      "recall": 0.019183472700442697,
+      "F1": 0.036619718309859155,
+      "test events": 2033
+    },
+    {
+      "index": "OTHER",
+      "precision": 0.13333333333333333,
+      "recall": 0.03225806451612903,
+      "F1": 0.05194805194805195,
+      "test events": 62
+    }
+  ],
+  "stratified": [
+    {
+      "stratum": "zone",
+      "group": "final third",
+      "events": 13052,
+      "selected 4L NLL": 1.0571105480194092,
+      "frozen Track A NLL": 1.0610214471817017,
+      "4L - Track A": -0.0039108991622924805,
+      "4L B7 role-only NLL": 1.0361950397491455,
+      "identity value (B7 - full)": -0.020915508270263672
+    },
+    {
+      "stratum": "zone",
+      "group": "middle third",
+      "events": 29032,
+      "selected 4L NLL": 0.9174076914787292,
+      "frozen Track A NLL": 0.9188721179962158,
+      "4L - Track A": -0.0014644265174865723,
+      "4L B7 role-only NLL": 0.895153820514679,
+      "identity value (B7 - full)": -0.022253870964050293
+    },
+    {
+      "stratum": "zone",
+      "group": "opponent penalty box",
+      "events": 2167,
+      "selected 4L NLL": 1.1358375549316406,
+      "frozen Track A NLL": 1.1269546747207642,
+      "4L - Track A": 0.008882880210876465,
+      "4L B7 role-only NLL": 1.0958764553070068,
+      "identity value (B7 - full)": -0.03996109962463379
+    },
+    {
+      "stratum": "zone",
+      "group": "own third",
+      "events": 20758,
+      "selected 4L NLL": 0.7962237000465393,
+      "frozen Track A NLL": 0.7982965111732483,
+      "4L - Track A": -0.0020728111267089844,
+      "4L B7 role-only NLL": 0.7742792963981628,
+      "identity value (B7 - full)": -0.021944403648376465
+    },
+    {
+      "stratum": "time",
+      "group": "0-15'",
+      "events": 11318,
+      "selected 4L NLL": 0.9096230268478394,
+      "frozen Track A NLL": 0.9120827913284302,
+      "4L - Track A": -0.0024597644805908203,
+      "4L B7 role-only NLL": 0.889826774597168,
+      "identity value (B7 - full)": -0.019796252250671387
+    },
+    {
+      "stratum": "time",
+      "group": "15-30'",
+      "events": 10300,
+      "selected 4L NLL": 0.9187813997268677,
+      "frozen Track A NLL": 0.9217303991317749,
+      "4L - Track A": -0.0029489994049072266,
+      "4L B7 role-only NLL": 0.8951374888420105,
+      "identity value (B7 - full)": -0.023643910884857178
+    },
+    {
+      "stratum": "time",
+      "group": "30-45'",
+      "events": 10075,
+      "selected 4L NLL": 0.9112660884857178,
+      "frozen Track A NLL": 0.9122453927993774,
+      "4L - Track A": -0.000979304313659668,
+      "4L B7 role-only NLL": 0.8859861493110657,
+      "identity value (B7 - full)": -0.0252799391746521
+    },
+    {
+      "stratum": "time",
+      "group": "45-60'",
+      "events": 11257,
+      "selected 4L NLL": 0.9260717034339905,
+      "frozen Track A NLL": 0.9302288889884949,
+      "4L - Track A": -0.0041571855545043945,
+      "4L B7 role-only NLL": 0.90401691198349,
+      "identity value (B7 - full)": -0.02205479145050049
+    },
+    {
+      "stratum": "time",
+      "group": "60-75'",
+      "events": 9631,
+      "selected 4L NLL": 0.9027389883995056,
+      "frozen Track A NLL": 0.9035190343856812,
+      "4L - Track A": -0.0007800459861755371,
+      "4L B7 role-only NLL": 0.8836275339126587,
+      "identity value (B7 - full)": -0.019111454486846924
+    },
+    {
+      "stratum": "time",
+      "group": "75'+",
+      "events": 12428,
+      "selected 4L NLL": 0.9142520427703857,
+      "frozen Track A NLL": 0.9138453006744385,
+      "4L - Track A": 0.0004067420959472656,
+      "4L B7 role-only NLL": 0.8895844221115112,
+      "identity value (B7 - full)": -0.02466762065887451
+    },
+    {
+      "stratum": "score state",
+      "group": "level",
+      "events": 32179,
+      "selected 4L NLL": 0.9129478931427002,
+      "frozen Track A NLL": 0.9170142412185669,
+      "4L - Track A": -0.004066348075866699,
+      "4L B7 role-only NLL": 0.8901017904281616,
+      "identity value (B7 - full)": -0.022846102714538574
+    },
+    {
+      "stratum": "score state",
+      "group": "losing",
+      "events": 16263,
+      "selected 4L NLL": 0.9198998808860779,
+      "frozen Track A NLL": 0.920030951499939,
+      "4L - Track A": -0.00013107061386108398,
+      "4L B7 role-only NLL": 0.8968991041183472,
+      "identity value (B7 - full)": -0.023000776767730713
+    },
+    {
+      "stratum": "score state",
+      "group": "winning",
+      "events": 16567,
+      "selected 4L NLL": 0.9104169607162476,
+      "frozen Track A NLL": 0.9094725251197815,
+      "4L - Track A": 0.0009444355964660645,
+      "4L B7 role-only NLL": 0.8891726136207581,
+      "identity value (B7 - full)": -0.021244347095489502
+    },
+    {
+      "stratum": "possession spell",
+      "group": "early in spell (0-2)",
+      "events": 18650,
+      "selected 4L NLL": 0.9078812003135681,
+      "frozen Track A NLL": 0.9096818566322327,
+      "4L - Track A": -0.0018006563186645508,
+      "4L B7 role-only NLL": 0.880330502986908,
+      "identity value (B7 - full)": -0.027550697326660156
+    },
+    {
+      "stratum": "possession spell",
+      "group": "first event of period",
+      "events": 70,
+      "selected 4L NLL": 0.4130345284938812,
+      "frozen Track A NLL": 0.4091576039791107,
+      "4L - Track A": 0.003876924514770508,
+      "4L B7 role-only NLL": 0.3909505307674408,
+      "identity value (B7 - full)": -0.02208399772644043
+    },
+    {
+      "stratum": "possession spell",
+      "group": "long spell (10+)",
+      "events": 20387,
+      "selected 4L NLL": 0.9086255431175232,
+      "frozen Track A NLL": 0.9111323952674866,
+      "4L - Track A": -0.002506852149963379,
+      "4L B7 role-only NLL": 0.887818455696106,
+      "identity value (B7 - full)": -0.020807087421417236
+    },
+    {
+      "stratum": "possession spell",
+      "group": "mid spell (3-9)",
+      "events": 25902,
+      "selected 4L NLL": 0.9240951538085938,
+      "frozen Track A NLL": 0.9253661632537842,
+      "4L - Track A": -0.0012710094451904297,
+      "4L B7 role-only NLL": 0.9039568901062012,
+      "identity value (B7 - full)": -0.020138263702392578
+    },
+    {
+      "stratum": "turnover of actor team",
+      "group": "acting team changed",
+      "events": 16596,
+      "selected 4L NLL": 0.8168688416481018,
+      "frozen Track A NLL": 0.8208476305007935,
+      "4L - Track A": -0.00397878885269165,
+      "4L B7 role-only NLL": 0.7971246242523193,
+      "identity value (B7 - full)": -0.01974421739578247
+    },
+    {
+      "stratum": "turnover of actor team",
+      "group": "same acting team",
+      "events": 48413,
+      "selected 4L NLL": 0.9473530650138855,
+      "frozen Track A NLL": 0.9484127759933472,
+      "4L - Track A": -0.00105971097946167,
+      "4L B7 role-only NLL": 0.9239398241043091,
+      "identity value (B7 - full)": -0.023413240909576416
+    },
+    {
+      "stratum": "coupled",
+      "group": "genuine sequence event",
+      "events": 58115,
+      "selected 4L NLL": 1.0027854442596436,
+      "frozen Track A NLL": 1.00456702709198,
+      "4L - Track A": -0.0017815828323364258,
+      "4L B7 role-only NLL": 0.9789779186248779,
+      "identity value (B7 - full)": -0.023807525634765625
+    },
+    {
+      "stratum": "coupled",
+      "group": "same-moment (coupled) event",
+      "events": 6894,
+      "selected 4L NLL": 0.16595323383808136,
+      "frozen Track A NLL": 0.167955219745636,
+      "4L - Track A": -0.0020019859075546265,
+      "4L B7 role-only NLL": 0.15469609200954437,
+      "identity value (B7 - full)": -0.011257141828536987
+    },
+    {
+      "stratum": "player frequency",
+      "group": "100-299",
+      "events": 21686,
+      "selected 4L NLL": 0.9141347408294678,
+      "frozen Track A NLL": 0.9164094924926758,
+      "4L - Track A": -0.002274751663208008,
+      "4L B7 role-only NLL": 0.8946271538734436,
+      "identity value (B7 - full)": -0.01950758695602417
+    },
+    {
+      "stratum": "player frequency",
+      "group": "300-999",
+      "events": 10816,
+      "selected 4L NLL": 0.9202073812484741,
+      "frozen Track A NLL": 0.922235369682312,
+      "4L - Track A": -0.0020279884338378906,
+      "4L B7 role-only NLL": 0.8985691666603088,
+      "identity value (B7 - full)": -0.021638214588165283
+    },
+    {
+      "stratum": "player frequency",
+      "group": "<100 train events (incl. unseen)",
+      "events": 29503,
+      "selected 4L NLL": 0.9165076017379761,
+      "frozen Track A NLL": 0.9181618094444275,
+      "4L - Track A": -0.001654207706451416,
+      "4L B7 role-only NLL": 0.8914441466331482,
+      "identity value (B7 - full)": -0.02506345510482788
+    },
+    {
+      "stratum": "player frequency",
+      "group": ">=1000",
+      "events": 3004,
+      "selected 4L NLL": 0.8669599294662476,
+      "frozen Track A NLL": 0.8660517334938049,
+      "4L - Track A": 0.000908195972442627,
+      "4L B7 role-only NLL": 0.8454365730285645,
+      "identity value (B7 - full)": -0.021523356437683105
+    },
+    {
+      "stratum": "team status",
+      "group": "team seen in training",
+      "events": 55845,
+      "selected 4L NLL": 0.9124183058738708,
+      "frozen Track A NLL": 0.9144873023033142,
+      "4L - Track A": -0.0020689964294433594,
+      "4L B7 role-only NLL": 0.8895649313926697,
+      "identity value (B7 - full)": -0.022853374481201172
+    },
+    {
+      "stratum": "team status",
+      "group": "team unseen in training",
+      "events": 9164,
+      "selected 4L NLL": 0.9239375591278076,
+      "frozen Track A NLL": 0.9241328835487366,
+      "4L - Track A": -0.00019532442092895508,
+      "4L B7 role-only NLL": 0.9037561416625977,
+      "identity value (B7 - full)": -0.02018141746520996
+    }
+  ],
+  "robustness_genuine_events_only": [
+    {
+      "index": "B3 logistic regression",
+      "NLL (genuine events only)": 1.1449291658330685,
+      "accuracy (genuine only)": 0.5369870085175944,
+      "macro-F1 (genuine only)": 0.41426967713075047
+    },
+    {
+      "index": "B4 MLP",
+      "NLL (genuine events only)": 1.0439226229985554,
+      "accuracy (genuine only)": 0.5631592532048525,
+      "macro-F1 (genuine only)": 0.4598161632057973
+    },
+    {
+      "index": "B7 role-only",
+      "NLL (genuine events only)": 0.9789779186248779,
+      "accuracy (genuine only)": 0.5898075654592905,
+      "macro-F1 (genuine only)": 0.4878008243368314
+    },
+    {
+      "index": "Frozen Track A model (2L, existing)",
+      "NLL (genuine events only)": 1.0045670509338378,
+      "accuracy (genuine only)": 0.5774894605523531,
+      "macro-F1 (genuine only)": 0.476311737498913
+    },
+    {
+      "index": "Original 4L4H K32 (benchmark re-run, seeds 0-2)",
+      "NLL (genuine events only)": 1.014351765314738,
+      "accuracy (genuine only)": 0.5745332530327798,
+      "macro-F1 (genuine only)": 0.46810390104770766
+    },
+    {
+      "index": "B8 Transformer 4L (selected)",
+      "NLL (genuine events only)": 1.0027854681015014,
+      "accuracy (genuine only)": 0.5796266024262239,
+      "macro-F1 (genuine only)": 0.4770211435751463
+    }
+  ],
+  "final_comparison": [
+    {
+      "model": "Existing Track A model (frozen)",
+      "seeds": "final seeds 100-104",
+      "layers": 2,
+      "heads": 2,
+      "d_head": 64,
+      "K": 16,
+      "validation NLL (selection evidence)": 0.9064555883407592,
+      "validation NLL SD": 0.0011046606416483223,
+      "training minutes per run": 1.027890814145406,
+      "parameters": 514575,
+      "test NLL": 0.9158470034599304,
+      "test NLL seed SD": 0.0013127469047919946,
+      "test NLL 95% CI": "[0.9035, 0.9283]",
+      "test accuracy": 0.6160685443553969,
+      "test top-3": 0.9444753803319541,
+      "test top-5": 0.9936501099847712,
+      "test macro-F1": 0.557987985038487,
+      "test ECE": 0.023757873674580633,
+      "test NLL, genuine events only (robustness)": 1.0045670509338378
+    },
+    {
+      "model": "Original 4L4H model (benchmark re-run)",
+      "seeds": "screening seeds 0-2",
+      "layers": 4,
+      "heads": 4,
+      "d_head": 32,
+      "K": 32,
+      "validation NLL (selection evidence)": 0.914558986822764,
+      "validation NLL SD": 0.005175922145386114,
+      "training minutes per run": 1.7463239312171936,
+      "parameters": 913167,
+      "test NLL": 0.9254735906918844,
+      "test NLL seed SD": 0.006640240371815614,
+      "test NLL 95% CI": "[0.9132, 0.9374]",
+      "test accuracy": 0.6132227845375255,
+      "test top-3": 0.9427976639132017,
+      "test top-5": 0.9934060412148061,
+      "test macro-F1": 0.5497488738682492,
+      "test ECE": 0.029671685343781912,
+      "test NLL, genuine events only (robustness)": 1.014351765314738
+    },
+    {
+      "model": "Selected 4-layer benchmark model",
+      "seeds": "final seeds 100-104",
+      "layers": 4,
+      "heads": 2,
+      "d_head": 64,
+      "K": 16,
+      "validation NLL (selection evidence)": 0.9030778646469116,
+      "validation NLL SD": 0.0031258523507903552,
+      "training minutes per run": 1.81889225880305,
+      "parameters": 911119,
+      "test NLL": 0.914042067527771,
+      "test NLL seed SD": 0.003281366515919037,
+      "test NLL 95% CI": "[0.9017, 0.9265]",
+      "test accuracy": 0.6178098417142243,
+      "test top-3": 0.9442415665523237,
+      "test top-5": 0.993748557891984,
+      "test macro-F1": 0.5578153483027594,
+      "test ECE": 0.025463847711948907,
+      "test NLL, genuine events only (robustness)": 1.0027854681015014
+    }
+  ],
+  "paired_test_difference_selected_minus_frozen": {
+    "mean": -0.0018049339996650815,
+    "ci_low": -0.0034978358368962536,
+    "ci_high": -0.00011380672307731871
+  }
+}

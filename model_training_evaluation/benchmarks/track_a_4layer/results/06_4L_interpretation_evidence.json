@@ -1,0 +1,399 @@
+{
+  "1. depth 2 -> 4 (matched validation comparisons)": [
+    {
+      "heads": 2,
+      "K": 16,
+      "lower NLL": "4L_2H_K16",
+      "gap (higher - lower NLL)": 0.0049165892414748,
+      "95% CI of gap": "[0.0025, 0.0073]",
+      "seeds separated": true,
+      "beyond noise": true,
+      "2-layer seeds available": 3
+    },
+    {
+      "heads": 2,
+      "K": 32,
+      "lower NLL": "4L_2H_K32",
+      "gap (higher - lower NLL)": 0.004374744836241,
+      "95% CI of gap": "[0.0025, 0.0063]",
+      "seeds separated": false,
+      "beyond noise": false,
+      "2-layer seeds available": 3
+    },
+    {
+      "heads": 2,
+      "K": 64,
+      "lower NLL": "2L_2H_K64",
+      "gap (higher - lower NLL)": 0.0019888598471879,
+      "95% CI of gap": "[-0.0008, 0.0049]",
+      "seeds separated": false,
+      "beyond noise": false,
+      "2-layer seeds available": 3
+    },
+    {
+      "heads": 4,
+      "K": 32,
+      "lower NLL": "4L_4H_K32",
+      "gap (higher - lower NLL)": 0.0019483019132167,
+      "95% CI of gap": "[0.0002, 0.0037]",
+      "seeds separated": false,
+      "beyond noise": false,
+      "2-layer seeds available": 3
+    },
+    {
+      "heads": 8,
+      "K": 32,
+      "lower NLL": "4L_8H_K32",
+      "gap (higher - lower NLL)": 0.0042102141305804,
+      "95% CI of gap": "[0.0021, 0.0066]",
+      "seeds separated": true,
+      "beyond noise": true,
+      "2-layer seeds available": 3
+    }
+  ],
+  "2. head count within 4 layers": [
+    {
+      "K": 16,
+      "comparison": "4L_2H_K16 vs 4L_4H_K16",
+      "gap (higher - lower NLL)": 0.0015078092692419,
+      "95% CI of gap": "[-0.0004, 0.0035]",
+      "seeds separated": false,
+      "beyond noise": false
+    },
+    {
+      "K": 16,
+      "comparison": "4L_2H_K16 vs 4L_8H_K16",
+      "gap (higher - lower NLL)": 0.0033738545607775,
+      "95% CI of gap": "[0.0013, 0.0055]",
+      "seeds separated": false,
+      "beyond noise": false
+    },
+    {
+      "K": 32,
+      "comparison": "4L_2H_K32 vs 4L_4H_K32",
+      "gap (higher - lower NLL)": 0.002315470483154,
+      "95% CI of gap": "[0.0010, 0.0037]",
+      "seeds separated": false,
+      "beyond noise": false
+    },
+    {
+      "K": 32,
+      "comparison": "4L_2H_K32 vs 4L_8H_K32",
+      "gap (higher - lower NLL)": 0.0031397568527609,
+      "95% CI of gap": "[0.0011, 0.0052]",
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "K": 64,
+      "comparison": "4L_4H_K64 vs 4L_2H_K64",
+      "gap (higher - lower NLL)": 0.0012608100660145,
+      "95% CI of gap": "[-0.0012, 0.0039]",
+      "seeds separated": false,
+      "beyond noise": false
+    },
+    {
+      "K": 64,
+      "comparison": "4L_4H_K64 vs 4L_8H_K64",
+      "gap (higher - lower NLL)": 0.0009575345320627,
+      "95% CI of gap": "[-0.0015, 0.0037]",
+      "seeds separated": false,
+      "beyond noise": false
+    }
+  ],
+  "3. context length within 4 layers": [
+    {
+      "heads": 2,
+      "comparison": "4L_2H_K16 vs 4L_2H_K32",
+      "gap (higher - lower NLL)": 0.0097725577652454,
+      "95% CI of gap": "[0.0072, 0.0123]",
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "heads": 2,
+      "comparison": "4L_2H_K16 vs 4L_2H_K64",
+      "gap (higher - lower NLL)": 0.0294424965977668,
+      "95% CI of gap": "[0.0261, 0.0329]",
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "heads": 4,
+      "comparison": "4L_4H_K16 vs 4L_4H_K32",
+      "gap (higher - lower NLL)": 0.0105802183970808,
+      "95% CI of gap": "[0.0084, 0.0126]",
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "heads": 4,
+      "comparison": "4L_4H_K16 vs 4L_4H_K64",
+      "gap (higher - lower NLL)": 0.0266738776117563,
+      "95% CI of gap": "[0.0244, 0.0290]",
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "heads": 8,
+      "comparison": "4L_8H_K16 vs 4L_8H_K32",
+      "gap (higher - lower NLL)": 0.0095384595915675,
+      "95% CI of gap": "[0.0074, 0.0118]",
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "heads": 8,
+      "comparison": "4L_8H_K16 vs 4L_8H_K64",
+      "gap (higher - lower NLL)": 0.0257653687149286,
+      "95% CI of gap": "[0.0229, 0.0285]",
+      "seeds separated": true,
+      "beyond noise": true
+    }
+  ],
+  "2-3. two-way analysis": [
+    {
+      "source": "heads",
+      "sum of squares": 1.948046066686482e-05,
+      "df": 2,
+      "mean square": 9.74023033343241e-06,
+      "F": 1.54481160756769,
+      "p": 0.2403439304832297
+    },
+    {
+      "source": "context length K",
+      "sum of squares": 0.0034337102953561,
+      "df": 2,
+      "mean square": 0.001716855147678,
+      "F": 272.29517884622965,
+      "p": 3.513354606123632e-14
+    },
+    {
+      "source": "heads x K interaction",
+      "sum of squares": 1.6155953818557025e-05,
+      "df": 4,
+      "mean square": 4.038988454639256e-06,
+      "F": 0.6405881620830058,
+      "p": 0.6403910968221542
+    },
+    {
+      "source": "between seeds (residual)",
+      "sum of squares": 0.0001134922505391,
+      "df": 18,
+      "mean square": 6.305125029950045e-06,
+      "F": NaN,
+      "p": NaN
+    }
+  ],
+  "4. original 4L4H (validation and test)": {
+    "seeds": "screening seeds 0-2",
+    "layers": 4,
+    "heads": 4,
+    "d_head": 32,
+    "K": 32,
+    "validation NLL (selection evidence)": 0.914558986822764,
+    "validation NLL SD": 0.005175922145386114,
+    "training minutes per run": 1.7463239312171936,
+    "parameters": 913167,
+    "test NLL": 0.9254735906918844,
+    "test NLL seed SD": 0.006640240371815614,
+    "test NLL 95% CI": "[0.9132, 0.9374]",
+    "test accuracy": 0.6132227845375255,
+    "test top-3": 0.9427976639132017,
+    "test top-5": 0.9934060412148061,
+    "test macro-F1": 0.5497488738682492,
+    "test ECE": 0.029671685343781912,
+    "test NLL, genuine events only (robustness)": 1.014351765314738
+  },
+  "5. stability of the selected model (final seeds)": {
+    "validation NLL SD": 0.0031258523507903552,
+    "test NLL seed SD": 0.003281366515919037
+  },
+  "6. selected 4L vs frozen Track A": {
+    "replacement assessment (validation)": "The selected 4-layer configuration has lower validation NLL than the frozen Track A configuration beyond noise. The validation evidence is consistent with considering a replacement; the decision is left to the supervisor.",
+    "paired test difference": {
+      "mean": -0.0018049339996650815,
+      "ci_low": -0.0034978358368962536,
+      "ci_high": -0.00011380672307731871
+    }
+  },
+  "7. MI substrate": [
+    {
+      "configuration": "4L_2H_K16",
+      "layers": 4,
+      "heads": 2,
+      "d_head": 64,
+      "residual width": 128,
+      "K": 16,
+      "parameters": 911119,
+      "attention heads": 8,
+      "head-position units": 128,
+      "attention entries per window": 2048,
+      "layer-position patching sites": 64,
+      "head-pair paths": 24,
+      "cache per window (KB)": 176.0,
+      "validation windows": 8459,
+      "cache for validation split (GB)": 1.4198150634765625
+    },
+    {
+      "configuration": "4L_2H_K32",
+      "layers": 4,
+      "heads": 2,
+      "d_head": 64,
+      "residual width": 128,
+      "K": 32,
+      "parameters": 913167,
+      "attention heads": 8,
+      "head-position units": 256,
+      "attention entries per window": 8192,
+      "layer-position patching sites": 128,
+      "head-pair paths": 24,
+      "cache per window (KB)": 368.0,
+      "validation windows": 8319,
+      "cache for validation split (GB)": 2.9195709228515625
+    },
+    {
+      "configuration": "4L_2H_K64",
+      "layers": 4,
+      "heads": 2,
+      "d_head": 64,
+      "residual width": 128,
+      "K": 64,
+      "parameters": 917263,
+      "attention heads": 8,
+      "head-position units": 512,
+      "attention entries per window": 32768,
+      "layer-position patching sites": 256,
+      "head-pair paths": 24,
+      "cache per window (KB)": 800.0,
+      "validation windows": 8039,
+      "cache for validation split (GB)": 6.133270263671875
+    },
+    {
+      "configuration": "4L_4H_K16",
+      "layers": 4,
+      "heads": 4,
+      "d_head": 32,
+      "residual width": 128,
+      "K": 16,
+      "parameters": 911119,
+      "attention heads": 16,
+      "head-position units": 256,
+      "attention entries per window": 4096,
+      "layer-position patching sites": 64,
+      "head-pair paths": 96,
+      "cache per window (KB)": 184.0,
+      "validation windows": 8459,
+      "cache for validation split (GB)": 1.4843521118164062
+    },
+    {
+      "configuration": "4L_4H_K32",
+      "layers": 4,
+      "heads": 4,
+      "d_head": 32,
+      "residual width": 128,
+      "K": 32,
+      "parameters": 913167,
+      "attention heads": 16,
+      "head-position units": 512,
+      "attention entries per window": 16384,
+      "layer-position patching sites": 128,
+      "head-pair paths": 96,
+      "cache per window (KB)": 400.0,
+      "validation windows": 8319,
+      "cache for validation split (GB)": 3.173446655273437
+    },
+    {
+      "configuration": "4L_4H_K64",
+      "layers": 4,
+      "heads": 4,
+      "d_head": 32,
+      "residual width": 128,
+      "K": 64,
+      "parameters": 917263,
+      "attention heads": 16,
+      "head-position units": 1024,
+      "attention entries per window": 65536,
+      "layer-position patching sites": 256,
+      "head-pair paths": 96,
+      "cache per window (KB)": 928.0,
+      "validation windows": 8039,
+      "cache for validation split (GB)": 7.114593505859375
+    },
+    {
+      "configuration": "4L_8H_K16",
+      "layers": 4,
+      "heads": 8,
+      "d_head": 16,
+      "residual width": 128,
+      "K": 16,
+      "parameters": 911119,
+      "attention heads": 32,
+      "head-position units": 512,
+      "attention entries per window": 8192,
+      "layer-position patching sites": 64,
+      "head-pair paths": 384,
+      "cache per window (KB)": 200.0,
+      "validation windows": 8459,
+      "cache for validation split (GB)": 1.6134262084960938
+    },
+    {
+      "configuration": "4L_8H_K32",
+      "layers": 4,
+      "heads": 8,
+      "d_head": 16,
+      "residual width": 128,
+      "K": 32,
+      "parameters": 913167,
+      "attention heads": 32,
+      "head-position units": 1024,
+      "attention entries per window": 32768,
+      "layer-position patching sites": 128,
+      "head-pair paths": 384,
+      "cache per window (KB)": 464.0,
+      "validation windows": 8319,
+      "cache for validation split (GB)": 3.681198120117188
+    },
+    {
+      "configuration": "4L_8H_K64",
+      "layers": 4,
+      "heads": 8,
+      "d_head": 16,
+      "residual width": 128,
+      "K": 64,
+      "parameters": 917263,
+      "attention heads": 32,
+      "head-position units": 2048,
+      "attention entries per window": 131072,
+      "layer-position patching sites": 256,
+      "head-pair paths": 384,
+      "cache per window (KB)": 1184.0,
+      "validation windows": 8039,
+      "cache for validation split (GB)": 9.077239990234377
+    },
+    {
+      "configuration": "2L_2H_K16 (frozen Track A)",
+      "layers": 2,
+      "heads": 2,
+      "d_head": 64,
+      "residual width": 128,
+      "K": 16,
+      "parameters": 514575,
+      "attention heads": 4,
+      "head-position units": 64,
+      "attention entries per window": 1024,
+      "layer-position patching sites": 32,
+      "head-pair paths": 4,
+      "cache per window (KB)": 92.0,
+      "validation windows": 8459,
+      "cache for validation split (GB)": 0.7421760559082031
+    }
+  ],
+  "identity value of the selected architecture (validation)": {
+    "events": 68003,
+    "B7 role-only NLL": 0.8851256966590881,
+    "full 4L model NLL": 0.903082013130188,
+    "identity value (B7 - full)": -0.01793963648378849,
+    "95% CI": "[-0.0210, -0.0150]"
+  }
+}

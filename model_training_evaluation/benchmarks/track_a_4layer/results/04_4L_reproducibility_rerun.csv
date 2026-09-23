@@ -1,0 +1,4 @@
+config_id,benchmark val NLL,benchmark best epoch,Track A val NLL,Track A best epoch,difference (benchmark - Track A),max |logit difference|
+4L_4H_K32_seed0,0.9088774919509888,5,0.9088774919509888,5,0.0,0.0
+4L_4H_K32_seed1,0.9157932996749878,5,0.9157932996749878,5,0.0,0.0
+4L_4H_K32_seed2,0.9190061688423157,7,0.9190061688423157,7,0.0,0.0

@@ -1,0 +1,49 @@
+{
+  "report": [
+    [
+      "Existing best 2-layer configuration (Track A screening)",
+      "2L_2H_K16: mean validation NLL 0.9074 (SD 0.0017, seeds [0.907, 0.9059, 0.9093]), accuracy 0.6214, macro-F1 0.5593, top-3 0.9474, top-5 0.9942, ECE 0.0205, 514,575 parameters"
+    ],
+    [
+      "Original 4L4H configuration (Track A notebook 05 record)",
+      "mean validation NLL 0.9146 (SD 0.0052, seeds [0.9089, 0.9158, 0.919]), accuracy 0.6187, macro-F1 0.5490, top-3 0.9465, top-5 0.9942, ECE 0.0257, 913,167 parameters. Reported for reference; not part of the benchmark comparisons."
+    ],
+    [
+      "Original 4L4H configuration (benchmark reproducibility re-run)",
+      "mean validation NLL 0.9146 (SD 0.0052, seeds [0.9089, 0.9158, 0.919]), accuracy 0.6187, macro-F1 0.5490, top-3 0.9465, top-5 0.9942, ECE 0.0257, 913,167 parameters. This re-run is used in all benchmark comparisons."
+    ],
+    [
+      "New 4-layer head sweep (mean validation NLL)",
+      "K=16: 2H 0.9025, 4H 0.9040, 8H 0.9058 | K=32: 2H 0.9122, 4H 0.9146, 8H 0.9154 | K=64: 2H 0.9319, 4H 0.9307, 8H 0.9316"
+    ],
+    [
+      "New 4-layer context sweep (mean validation NLL)",
+      "2 heads: K16 0.9025, K32 0.9122, K64 0.9319 | 4 heads: K16 0.9040, K32 0.9146, K64 0.9307 | 8 heads: K16 0.9058, K32 0.9154, K64 0.9316"
+    ],
+    [
+      "Best predictive 4-layer configuration",
+      "4L_2H_K16 (mean 0.9025). 4L_2H_K16 had a lower mean validation NLL than 4L_4H_K16 by 0.0015 nats (95% bootstrap CI of the gap -0.0004 to 0.0035). The interval includes zero; the experiment does not provide evidence for a difference."
+    ],
+    [
+      "Most stable 4-layer configuration",
+      "4L_4H_K64 (seed SD 0.0004, 95% CI 0.0002 to 0.0023). The SD confidence intervals separate this configuration from at least one other."
+    ],
+    [
+      "Most MI-accessible 4-layer configuration",
+      "4L_2H_K16 (128 head-position units, 8 attention heads); chosen on analysis cost only."
+    ],
+    [
+      "Smallest adequate 4-layer configuration",
+      "4L_2H_K16: first configuration in the order by head-position units that the best configuration does not beat beyond noise (ordering PROVISIONAL, requires supervisor approval)."
+    ],
+    [
+      "Selected configuration for final evaluation (best 4-layer model)",
+      "4L_2H_K16"
+    ],
+    [
+      "Replacement for the existing 2-layer Track A model",
+      "4L_2H_K16 had a lower mean validation NLL than 2L_2H_K16 (frozen Track A, seeds 0-2) by 0.0049 nats (95% bootstrap CI of the gap 0.0025 to 0.0073). Both criteria of the decision rule were met, so the difference is treated as beyond noise. The selected 4-layer configuration has lower validation NLL than the frozen Track A configuration beyond noise. The validation evidence is consistent with considering a replacement; the decision is left to the supervisor."
+    ]
+  ],
+  "run_mode": "full"
+}

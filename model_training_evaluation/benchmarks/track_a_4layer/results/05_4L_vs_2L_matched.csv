@@ -1,0 +1,6 @@
+heads,K,lower NLL,gap (higher - lower NLL),95% CI of gap,seeds separated,beyond noise,2-layer seeds available
+2,16,4L_2H_K16,0.004916589241474867,"[0.0025, 0.0073]",True,True,3
+2,32,4L_2H_K32,0.004374744836241007,"[0.0025, 0.0063]",False,False,3
+2,64,2L_2H_K64,0.001988859847187996,"[-0.0008, 0.0049]",False,False,3
+4,32,4L_4H_K32,0.00194830191321671,"[0.0002, 0.0037]",False,False,3
+8,32,4L_8H_K32,0.004210214130580425,"[0.0021, 0.0066]",True,True,3

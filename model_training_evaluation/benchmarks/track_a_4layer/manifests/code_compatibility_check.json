@@ -1,0 +1,8 @@
+{
+  "existing primary run": "transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s104",
+  "checkpoint loads with strict=True": true,
+  "parameter count (current code)": 514575,
+  "parameter count (recorded)": 514575,
+  "same validation events": true,
+  "max |recomputed - stored logit|": 0.0
+}

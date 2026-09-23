@@ -1,0 +1,218 @@
+{
+  "frozen_benchmark_config": {
+    "encoding": "T300",
+    "possession_features": "pre_action",
+    "context_length": 16,
+    "stride": 8,
+    "model": {
+      "n_layers": 4,
+      "n_heads": 2,
+      "d_model": 128,
+      "d_ff": 512
+    },
+    "training": {
+      "learning_rate": 0.0003,
+      "weight_decay": 0.1,
+      "max_epochs": 30,
+      "batch_size": 256,
+      "warmup_fraction": 0.05,
+      "min_lr_ratio": 0.1,
+      "grad_clip": 1.0,
+      "patience": 5
+    },
+    "selected_configuration": "4L_2H_K16",
+    "best_predictive_configuration": "4L_2H_K16",
+    "most_stable_configuration": "4L_4H_K64",
+    "stability_comparison_conclusive": true,
+    "most_mi_accessible_configuration": "4L_2H_K16",
+    "selection_rule": "smallest configuration within noise of the best validation NLL (Track A rule, PROVISIONAL); order by head-position units = layers x heads x K, ties by parameter count (PROVISIONAL)",
+    "replacement_assessment": "The selected 4-layer configuration has lower validation NLL than the frozen Track A configuration beyond noise. The validation evidence is consistent with considering a replacement; the decision is left to the supervisor.",
+    "replacement_decision": "not decided by this benchmark; left to the supervisor",
+    "screening_seeds": [
+      0,
+      1,
+      2
+    ],
+    "dataset_sha256": "2fe8019fb59f8060f77ae0b81eba3df2077a3fd50c02f601ed7f401b3855fc5b",
+    "run_mode": "full",
+    "frozen_at": "2026-09-19T19:02:02.163882+00:00"
+  },
+  "final_seeds": [
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "gates": {
+    "baseline improvement (all of B1-B4)": true,
+    "no divergence": true,
+    "class coverage (PROVISIONAL)": true,
+    "size cap": true
+  },
+  "baseline_comparison": [
+    {
+      "baseline": "B1a class prior",
+      "4L model - baseline NLL": -1.0714907744143358,
+      "CI": "[-1.0983, -1.0451]",
+      "better beyond noise": true
+    },
+    {
+      "baseline": "B1b zone prior",
+      "4L model - baseline NLL": -0.8787710223300171,
+      "CI": "[-0.9003, -0.8566]",
+      "better beyond noise": true
+    },
+    {
+      "baseline": "B2 Markov",
+      "4L model - baseline NLL": -0.5077760606650285,
+      "CI": "[-0.5211, -0.4930]",
+      "better beyond noise": true
+    },
+    {
+      "baseline": "B3 logistic regression",
+      "4L model - baseline NLL": -0.14764090315327313,
+      "CI": "[-0.1545, -0.1404]",
+      "better beyond noise": true
+    },
+    {
+      "baseline": "B4 MLP",
+      "4L model - baseline NLL": -0.04432821646332741,
+      "CI": "[-0.0477, -0.0409]",
+      "better beyond noise": true
+    }
+  ],
+  "coverage_failures": [],
+  "seed_summary": [
+    {
+      "run": "transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s100",
+      "seed": 100,
+      "best epoch": 7,
+      "epochs run": 12,
+      "diverged": false,
+      "val NLL": 0.9069430828094482,
+      "val accuracy": 0.621090246018558,
+      "val macro-F1": 0.5456047496676107,
+      "train NLL": 0.8514730930328369,
+      "minutes": 1.7524233380953471
+    },
+    {
+      "run": "transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s101",
+      "seed": 101,
+      "best epoch": 7,
+      "epochs run": 12,
+      "diverged": false,
+      "val NLL": 0.9021181464195251,
+      "val accuracy": 0.6221637280708204,
+      "val macro-F1": 0.5643802230587709,
+      "train NLL": 0.8480287790298462,
+      "minutes": 1.6565115531285604
+    },
+    {
+      "run": "transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s102",
+      "seed": 102,
+      "best epoch": 9,
+      "epochs run": 14,
+      "diverged": false,
+      "val NLL": 0.9041260480880737,
+      "val accuracy": 0.6194579650897755,
+      "val macro-F1": 0.5596654473503175,
+      "train NLL": 0.8242968916893005,
+      "minutes": 1.9534615397453308
+    },
+    {
+      "run": "transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s103",
+      "seed": 103,
+      "best epoch": 7,
+      "epochs run": 12,
+      "diverged": false,
+      "val NLL": 0.9037757515907288,
+      "val accuracy": 0.6217519815302266,
+      "val macro-F1": 0.5578790491847115,
+      "train NLL": 0.8479970097541809,
+      "minutes": 1.6607834776242574
+    },
+    {
+      "run": "transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s104",
+      "seed": 104,
+      "best epoch": 10,
+      "epochs run": 15,
+      "diverged": false,
+      "val NLL": 0.8984262943267822,
+      "val accuracy": 0.6256341631986824,
+      "val macro-F1": 0.5611301013020544,
+      "train NLL": 0.8112298250198364,
+      "minutes": 2.071281385421753
+    }
+  ],
+  "primary_run": "transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s103",
+  "primary_seed": 103,
+  "identity_value": [
+    {
+      "group": "all events",
+      "events": 68003,
+      "B7 role-only NLL": 0.8851256966590881,
+      "full 4L model NLL": 0.903082013130188,
+      "identity value (B7 - full)": -0.01793963648378849,
+      "95% CI": "[-0.0210, -0.0150]"
+    },
+    {
+      "group": "100-299",
+      "events": 20693,
+      "B7 role-only NLL": 0.8867040276527405,
+      "full 4L model NLL": 0.9015578031539917,
+      "identity value (B7 - full)": -0.014853707514703274,
+      "95% CI": "[-0.0189, -0.0111]"
+    },
+    {
+      "group": "300-999",
+      "events": 10644,
+      "B7 role-only NLL": 0.8759292960166931,
+      "full 4L model NLL": 0.8911417722702026,
+      "identity value (B7 - full)": -0.015211580321192741,
+      "95% CI": "[-0.0214, -0.0096]"
+    },
+    {
+      "group": "<100 train events (incl. unseen)",
+      "events": 33419,
+      "B7 role-only NLL": 0.8835484385490417,
+      "full 4L model NLL": 0.9058501124382019,
+      "identity value (B7 - full)": -0.02230595052242279,
+      "95% CI": "[-0.0262, -0.0184]"
+    },
+    {
+      "group": ">=1000",
+      "events": 3247,
+      "B7 role-only NLL": 0.9217619299888611,
+      "full 4L model NLL": 0.9233714938163757,
+      "identity value (B7 - full)": -0.001609709463082254,
+      "95% CI": "[-0.0188, +0.0120]"
+    }
+  ],
+  "b6_minus_full": {
+    "n_events": 68003,
+    "nll_a_mean": 1.5752564668655396,
+    "nll_a_seed_sd": 0.0257194172590971,
+    "nll_b_mean": 0.903082013130188,
+    "nll_b_seed_sd": 0.003135943552479148,
+    "difference_a_minus_b": 0.672171950340271,
+    "difference_ci_low": 0.6184111859370943,
+    "difference_ci_high": 0.7357908320256316,
+    "seeds_completely_separated": false,
+    "a_better_beyond_noise": false
+  },
+  "b5_minus_full": {
+    "n_events": 68003,
+    "nll_a_mean": 0.8968387246131897,
+    "nll_a_seed_sd": 0.0010717754485085607,
+    "nll_b_mean": 0.903082013130188,
+    "nll_b_seed_sd": 0.003135943552479148,
+    "difference_a_minus_b": -0.006226591300219297,
+    "difference_ci_low": -0.009923763321918598,
+    "difference_ci_high": -0.0025246815698966012,
+    "seeds_completely_separated": true,
+    "a_better_beyond_noise": true
+  },
+  "b4_reused_from_track_a": true,
+  "run_mode": "full"
+}

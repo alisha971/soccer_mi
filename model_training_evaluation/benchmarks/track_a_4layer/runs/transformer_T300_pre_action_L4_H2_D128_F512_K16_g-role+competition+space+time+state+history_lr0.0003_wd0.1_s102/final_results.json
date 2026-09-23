@@ -1,0 +1,96 @@
+{
+  "run_name": "transformer_T300_pre_action_L4_H2_D128_F512_K16_g-role+competition+space+time+state+history_lr0.0003_wd0.1_s102",
+  "run_config": {
+    "model_type": "transformer",
+    "encoding": "T300",
+    "possession_features": "pre_action",
+    "context_length": 16,
+    "stride": 8,
+    "seed": 102,
+    "model": {
+      "n_layers": 4,
+      "n_heads": 2,
+      "d_model": 128,
+      "d_ff": 512,
+      "use_groups": [
+        "role",
+        "competition",
+        "space",
+        "time",
+        "state",
+        "history"
+      ]
+    },
+    "training": {
+      "learning_rate": 0.0003,
+      "weight_decay": 0.1,
+      "max_epochs": 30
+    }
+  },
+  "training_settings": {
+    "batch_size": 256,
+    "max_epochs": 30,
+    "warmup_fraction": 0.05,
+    "min_lr_ratio": 0.1,
+    "grad_clip": 1.0,
+    "patience": 5,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.1
+  },
+  "run_mode": "full",
+  "best_epoch": 11,
+  "epochs_run": 16,
+  "stopped_early": true,
+  "diverged": false,
+  "runtime_seconds": 124.90414047241211,
+  "val_metrics": {
+    "n_events": 68003,
+    "nll": 0.8874777555465698,
+    "accuracy": 0.6272958545946502,
+    "top3_accuracy": 0.9501492581209653,
+    "top5_accuracy": 0.9948531682425775,
+    "macro_f1": 0.5750167513016132,
+    "per_class_f1": [
+      0.5663889814506275,
+      0.5021946025813742,
+      0.392,
+      0.7711713845789412,
+      0.07920792079207921,
+      0.5783261802575107,
+      0.6139283299526708,
+      0.6039064274358392,
+      0.7458492975734355,
+      0.9060416245706203,
+      1.0,
+      0.715962441314554,
+      0.9298474945533769,
+      0.07609668755595345,
+      0.14432989690721648
+    ],
+    "ece": 0.01671920103497248
+  },
+  "train_nll": 0.8316752910614014,
+  "parameter_counts": {
+    "embeddings (tables + projections + positions)": 43520,
+    "transformer blocks": 793088,
+    "final LayerNorm": 256,
+    "unembedding": 1935,
+    "total": 838799,
+    "fixed zero rows (never trained)": 256,
+    "trainable": 838543
+  },
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "cuda_available": true,
+    "gpu": "Tesla T4",
+    "cuda": "12.8"
+  },
+  "finished_at": "2026-09-19T19:36:58.233296+00:00"
+}
