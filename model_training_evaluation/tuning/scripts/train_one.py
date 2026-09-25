@@ -40,7 +40,7 @@ def main():
     import src.training as training
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    events = data.load_events(REPO / "artifacts")
+    events = data.load_events(REPO / "artifacts" / "events_prepared.parquet")
     bundle = training.prepare_data(events, REPO / "artifacts", "T300", "pre_action", 16, 8,
                                    device, run_mode="smoke" if a.mode == "smoke" else "full")
     res = training.train_run(cfg, bundle, ROOT / "runs", ROOT / "manifests" / "tuning_manifest.jsonl")
