@@ -2,3 +2,7 @@ trial	lr	wd	seed	stage	val_nll	val_acc	val_macro_f1	ece	best_epoch	diverged	runt
 t2a-lr1e-4	0.0001	0.1	0	T2-lr	0.9104	0.6213	0.5592	0.0260	16	False	105	discard-seed0-worse-than-0.9070
 t2b-lr3e-4	0.0003	0.1	0	T2-lr	0.9070	0.6198	0.5562	0.0000	7	False	60	keep-reproduces-incumbent
 t2c-lr1e-3	0.001	0.1	0	T2-lr	0.9073	0.6208	0.5564	0.0000	4	False	50	keep-finalist
+t3a-lr3e-4-wd001	0.0003	0.01	0	T3-wd	0.9068	0.6206	0.5564	0.0162	7	False	60	keep-finalist
+t3b-lr3e-4-wd03	0.0003	0.3	0	T3-wd	0.9076	0.6196	0.5552	0.0144	7	False	60	discard
+t3c-lr1e-3-wd001	0.001	0.01	0	T3-wd	0.9066	0.6207	0.5584	0.0130	4	False	50	keep-finalist
+t3d-lr1e-3-wd03	0.001	0.3	0	T3-wd	0.9081	0.6193	0.5589	0.0232	6	False	60	discard
