@@ -1,0 +1,9 @@
+{"version": "2.1.0", "source": "loop", "timestamp": "2026-09-25T14:50:57Z", "status": "COMPLETE",
+ "results_tsv": "autoresearch/loop-260925-2003/loop-results.tsv",
+ "findings": ["T5 seed0 at lr3e-4/wd0.1: (128,0.05)=0.9069 (128,0.1)=0.9061 (256,0.1)=0.9063 vs ref (256,0.05)=0.9070; wu0.1 wins at both bs",
+  "T5 seeds: (128,0.1) mean 0.9057 SD 0.0003 over s0-2; (256,0.1) mean 0.9070; incumbent (256,0.05) mean 0.9074 over s0-2",
+  "aggregate (128,0.1) vs incumbent: diff -0.0016 CI [-0.0035,+0.0002] includes 0; incumbent s101 (0.9048) beats all challenger seeds -> NOT beyond noise -> keep frozen bs256/wu0.05",
+  "7 T5 trials on T4; tuning/runs now 18 dirs; sessions stopped; no auth expiry"],
+ "config": {"goal": "T5 schedule sweep batch_size/warmup at incumbent lr3e-4 wd0.1, val NLL, isolated tuning/, Colab T4",
+  "scope": "model_training_evaluation/tuning/**", "metric": "mean_val_nll",
+  "direction": "lower_is_better", "verify": "python3 model_training_evaluation/tuning/scripts/score.py --mean-nll"}}
