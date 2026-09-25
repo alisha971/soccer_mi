@@ -1,0 +1,4 @@
+# metric_direction: lower_is_better
+iteration	timestamp	commit	metric	delta	guard	guard-metric	status	description
+0	2026-09-25T14:33:46Z	449dc9c	0.9070	0.0	pass	prechecks-clean	baseline	T5 incumbent seed0 ref (T2b bs256/wu0.05 lr3e-4 wd0.1 = 0.9070)
+1	2026-09-25T14:34:25Z	1f0ad0e	0.9070	0.0000	pass	OK	keep	--bs/--wu + sched_tag dirs (no run-name collision); dry-run OK
