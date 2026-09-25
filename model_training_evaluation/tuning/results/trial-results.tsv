@@ -1,0 +1,1 @@
+trial	lr	wd	seed	stage	val_nll	val_acc	val_macro_f1	ece	best_epoch	diverged	runtime_s	status
