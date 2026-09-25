@@ -10,3 +10,7 @@ iteration	timestamp	commit	metric	delta	guard	guard-metric	status	description
 7	2026-09-25T14:15:21Z	4f260e5	0.9104	0.0036	pass	OK	discard	T2a lr=1e-4 seed0 0.9104 vs incumbent seed0 0.9070; config rejected, data retained
 8	2026-09-25T14:17:49Z	e59f49d	0.9070	-0.0034	pass	OK	keep	T2b lr=3e-4 seed0 0.9070 == incumbent seed0; stack validated; stale-cache guard added
 9	2026-09-25T14:19:06Z	be2efb6	0.9073	0.0003	pass	OK	keep	T2c lr=1e-3 seed0 0.9073 (best ep4); finalists 3e-4/1e-3 -> T3 wd
+10	2026-09-25T14:24:24Z	cf3c590	0.9068	-0.0002	pass	OK	keep	T3a (3e-4,0.01) 0.9068 finalist
+11	2026-09-25T14:24:24Z	cf3c590	0.9076	0.0006	pass	OK	discard	T3b (3e-4,0.3) 0.9076 rejected
+12	2026-09-25T14:24:24Z	cf3c590	0.9066	-0.0004	pass	OK	keep	T3c (1e-3,0.01) 0.9066 best seed0
+13	2026-09-25T14:24:24Z	cf3c590	0.9081	0.0011	pass	OK	discard	T3d (1e-3,0.3) 0.9081 rejected
