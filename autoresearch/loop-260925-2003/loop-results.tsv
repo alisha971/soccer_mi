@@ -2,3 +2,6 @@
 iteration	timestamp	commit	metric	delta	guard	guard-metric	status	description
 0	2026-09-25T14:33:46Z	449dc9c	0.9070	0.0	pass	prechecks-clean	baseline	T5 incumbent seed0 ref (T2b bs256/wu0.05 lr3e-4 wd0.1 = 0.9070)
 1	2026-09-25T14:34:25Z	1f0ad0e	0.9070	0.0000	pass	OK	keep	--bs/--wu + sched_tag dirs (no run-name collision); dry-run OK
+2	2026-09-25T14:41:49Z	534ab59	0.9069	-0.0001	pass	OK	keep	T5a (128,0.05) 0.9069 at ref noise
+3	2026-09-25T14:41:49Z	534ab59	0.9061	-0.0009	pass	OK	keep	T5b (128,0.1) 0.9061 best seed0
+4	2026-09-25T14:41:49Z	534ab59	0.9063	-0.0007	pass	OK	keep	T5c (256,0.1) 0.9063 finalist
