@@ -1,6 +1,74 @@
-{"incumbent": {"lr": 0.0003, "wd": 0.1, "mean_val_nll": 0.9068, "seeds": [0, 1, 2, 100, 101, 102, 103, 104]},
- "stages": [{"id": "T2-lr", "lr": [0.0001, 0.0003, 0.001], "wd": [0.1], "seeds": [0]},
-            {"id": "T3-wd", "note": "at best-2 LRs from T2", "wd": [0.01, 0.1, 0.3], "seeds": [0]},
-            {"id": "T4-seeds", "note": "top-2 (lr,wd) x seeds 1,2 + better_beyond_noise gate", "seeds": [1, 2]}],
- "tie_rule": "CI excludes 0 AND full seed separation else lower LR, keep wd=0.1",
- "epoch_budget": 30, "patience": 5, "k": 16, "arch": "L2-H2-D128-F512 T300"}
+{
+  "incumbent": {
+    "lr": 0.0003,
+    "wd": 0.1,
+    "mean_val_nll": 0.9068,
+    "seeds": [
+      0,
+      1,
+      2,
+      100,
+      101,
+      102,
+      103,
+      104
+    ]
+  },
+  "stages": [
+    {
+      "id": "T2-lr",
+      "lr": [
+        0.0001,
+        0.0003,
+        0.001
+      ],
+      "wd": [
+        0.1
+      ],
+      "seeds": [
+        0
+      ]
+    },
+    {
+      "id": "T3-wd",
+      "note": "at best-2 LRs from T2",
+      "wd": [
+        0.01,
+        0.1,
+        0.3
+      ],
+      "seeds": [
+        0
+      ]
+    },
+    {
+      "id": "T4-seeds",
+      "note": "top-2 (lr,wd) x seeds 1,2 + better_beyond_noise gate",
+      "seeds": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "T5-sched",
+      "bs": [
+        128,
+        256
+      ],
+      "warmup": [
+        0.05,
+        0.1
+      ],
+      "seeds": [
+        0
+      ],
+      "at": "lr3e-4_wd0.1",
+      "ref_seed0": 0.907
+    }
+  ],
+  "tie_rule": "CI excludes 0 AND full seed separation else lower LR, keep wd=0.1",
+  "epoch_budget": 30,
+  "patience": 5,
+  "k": 16,
+  "arch": "L2-H2-D128-F512 T300"
+}

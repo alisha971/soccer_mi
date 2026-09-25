@@ -10,11 +10,16 @@ ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parent
 
 
-def build_config(lr=3e-4, wd=0.1, seed=0, max_epochs=30):
+def build_config(lr=3e-4, wd=0.1, seed=0, max_epochs=30, bs=256, warmup=0.05):
     return {"model_type": "transformer", "encoding": "T300", "possession_features": "pre_action",
             "context_length": 16, "stride": 8, "seed": seed,
             "model": {"n_layers": 2, "n_heads": 2, "d_model": 128, "d_ff": 512},
-            "training": {"learning_rate": lr, "weight_decay": wd, "max_epochs": max_epochs}}
+            "training": {"learning_rate": lr, "weight_decay": wd, "max_epochs": max_epochs,
+                         "batch_size": bs, "warmup_fraction": warmup}}
+
+
+def sched_tag(bs, warmup):
+    return "" if (bs, warmup) == (256, 0.05) else f"__bs{bs}wu{warmup:g}"
 
 
 def main():
@@ -24,11 +29,14 @@ def main():
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--mode", default="full", choices=["smoke", "full"])
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--bs", type=int, default=256)
+    ap.add_argument("--wu", type=float, default=0.05)
     a = ap.parse_args()
 
-    cfg = build_config(a.lr, a.wd, a.seed, max_epochs=2 if a.mode == "smoke" else 30)
+    cfg = build_config(a.lr, a.wd, a.seed, max_epochs=2 if a.mode == "smoke" else 30,
+                       bs=a.bs, warmup=a.wu)
     if a.dry_run:
-        out = ROOT / "configs" / f"trial_lr{a.lr:g}_wd{a.wd:g}_s{a.seed}.json"
+        out = ROOT / "configs" / f"trial_lr{a.lr:g}_wd{a.wd:g}_s{a.seed}{sched_tag(a.bs, a.wu)}.json"
         out.parent.mkdir(parents=True, exist_ok=True)
         json.dump(cfg, open(out, "w"), indent=2)
         print(str(out))
@@ -40,16 +48,28 @@ def main():
     import src.training as training
 
     from pathlib import Path as _P  # ponytail: local alias, avoid touching shared training.py
-    _cached = _P(ROOT / "runs" / training.run_name_for(cfg) / "final_results.json")
-    if _cached.exists() and json.load(open(_cached)).get("run_mode") != ("smoke" if a.mode == "smoke" else "full"):
-        import shutil
-        shutil.rmtree(_cached.parent)  # stale cache from other mode with same name; retrain
+    _cached = _P(ROOT / "runs" / (training.run_name_for(cfg) + sched_tag(a.bs, a.wu)) / "final_results.json")
+    if _cached.exists():
+        _old = json.load(open(_cached))
+        _same = (_old.get("run_mode") == ("smoke" if a.mode == "smoke" else "full")
+                 and _old.get("training_settings", {}).get("batch_size") == a.bs)
+        if not _same:
+            import shutil
+            shutil.rmtree(_cached.parent)  # stale cache (other mode/schedule, same name); retrain
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     events = data.load_events(REPO / "artifacts" / "events_prepared.parquet")
     bundle = training.prepare_data(events, REPO / "artifacts", "T300", "pre_action", 16, 8,
                                    device, run_mode="smoke" if a.mode == "smoke" else "full")
     res = training.train_run(cfg, bundle, ROOT / "runs", ROOT / "manifests" / "tuning_manifest.jsonl")
+    tag = sched_tag(a.bs, a.wu)
+    if tag:  # run_name_for ignores schedule; suffix dir so trials don't collide
+        _src, _dst = _P(ROOT / "runs" / res["run_name"]), _P(ROOT / "runs" / (res["run_name"] + tag))
+        if _dst.exists():
+            import shutil
+            shutil.rmtree(_dst)
+        _src.rename(_dst)
+        res["run_name"] += tag
     print(json.dumps({"val_nll": res["val_metrics"]["nll"], "run": res["run_name"]}))
     return 0
 
