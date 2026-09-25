@@ -8,3 +8,4 @@ iteration	timestamp	commit	metric	delta	guard	guard-metric	status	description
 5	2026-09-25T14:09:50Z	e172266	0.9068	0.0000	pass	OK	keep	root-cause fix: load_events needs parquet path; dry-run OK
 6	2026-09-25T14:12:39Z	522d96f	0.9068	0.0000	pass	OK	keep	T4 session READY + 38MB payload uploaded + smoke 2ep loss 2.48->2.08 green
 7	2026-09-25T14:15:21Z	4f260e5	0.9104	0.0036	pass	OK	discard	T2a lr=1e-4 seed0 0.9104 vs incumbent seed0 0.9070; config rejected, data retained
+8	2026-09-25T14:17:49Z	e59f49d	0.9070	-0.0034	pass	OK	keep	T2b lr=3e-4 seed0 0.9070 == incumbent seed0; stack validated; stale-cache guard added
