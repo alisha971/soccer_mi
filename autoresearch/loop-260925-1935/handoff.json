@@ -1,0 +1,9 @@
+{"version": "2.1.0", "source": "loop", "timestamp": "2026-09-25T14:08:02Z", "status": "BOUNDED",
+ "results_tsv": "autoresearch/loop-260925-1935/loop-results.tsv",
+ "findings": ["incumbent T300/L2/K16 lr3e-4 wd0.1 mean val NLL 0.9068 over 8 seeds (not 0.9303 from old T100/L4/K32 search)",
+  "tuning/ isolated (scripts/score.py, train_one.py, colab_probe.py, configs/search_space.json, results/trial-results.tsv); zero writes to runs/benchmarks/results/artifacts",
+  "colab CLI auth works: CPU session READY/stop OK; exec OK python=3.13.15 torch=2.11.0+cpu matches requirements; GPU sweep (T2 3 + T3 3 + T4 6 trials on T4) pending spend approval"],
+ "config": {"goal": "Re-tune lr/wd on frozen T300 L2-H2-D128-F512 K16, val NLL only, isolated tuning/ dir, train via colab CLI GPU",
+  "scope": "model_training_evaluation/src/training.py, model.py, metrics.py, analysis.py, tuning/**",
+  "metric": "mean_val_nll", "direction": "lower_is_better",
+  "verify": "python3 model_training_evaluation/tuning/scripts/score.py --mean-nll"}}

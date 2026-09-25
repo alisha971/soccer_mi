@@ -1,0 +1,7 @@
+# metric_direction: lower_is_better
+iteration	timestamp	commit	metric	delta	guard	guard-metric	status	description
+0	2026-09-25T14:05:21Z	40a231c	0.9068	0.0	pass	py_compile-src-OK	baseline	 incumbent T300 L2 K16 lr3e-4 wd0.1 mean val NLL over 8 seeds (existing runs/)
+1	2026-09-25T14:05:51Z	f4b0622	0.9068	0.0000	pass	OK	keep	score.py added; Verify via tuning/ now outputs 0.9068 (parity, unblocks loop)
+2	2026-09-25T14:06:11Z	da24be3	0.9068	0.0000	pass	OK	keep	train_one.py added; dry-run writes tuning/configs, full mode routes to tuning/runs
+3	2026-09-25T14:07:01Z	ac6c42f	0.9068	0.0000	pass	OK	keep	search_space.json staged T2-lr/T3-wd/T4-seeds; Colab CPU probe READY/stop OK
+4	2026-09-25T14:07:52Z	6f98fcf	0.9068	0.0000	pass	OK	keep	colab exec OK torch=2.11.0; trial-results.tsv ledger ready; GPU sweep pending approval
