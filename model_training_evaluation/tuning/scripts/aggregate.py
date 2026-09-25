@@ -65,6 +65,10 @@ if __name__ == "__main__":
     out = {"wd001_lr3e4_vs_inc": compare([T(d) for d in t3], [R(d) for d in inc], "lr3e-4_wd0.01", "lr3e-4_wd0.1"),
            "wd001_lr1e3_vs_inc": compare([T(d) for d in t1], [R(d) for d in inc], "lr1e-3_wd0.01", "lr3e-4_wd0.1"),
            "lr1e3_vs_lr3e4_wd001": compare([T(d) for d in t1], [T(d) for d in t3], "lr1e-3_wd0.01", "lr3e-4_wd0.01")}
+    _t5 = [f"{base}_lr0.0003_wd0.1_s{s}__bs128wu0.1" for s in [0, 1, 2]]
+    _t5b = [f"{base}_lr0.0003_wd0.1_s{s}__bs256wu0.1" for s in [0, 1, 2]]
+    out["t5_bs128wu01_vs_inc"] = compare([T(d) for d in _t5], [R(d) for d in inc], "bs128_wu0.1", "bs256_wu0.05")
+    out["t5_bs256wu01_vs_inc"] = compare([T(d) for d in _t5b], [R(d) for d in inc], "bs256_wu0.1", "bs256_wu0.05")
     # tie rule: indistinguishable -> lower LR; same LR -> keep wd 0.1
     out["recommendation"] = {"lr": 3e-4, "wd": 0.1, "reason": "set after verdict"}
     json.dump(out, open(a.out, "w"), indent=2)

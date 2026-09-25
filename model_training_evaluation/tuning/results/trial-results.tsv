@@ -13,3 +13,7 @@ t4d-lr3e-4-wd001-s2	0.0003	0.01	2	T4-seeds	0.9100	0.6213	0.5645	0.0271	7	False	6
 t5a-bs128-wu005	0.0003	0.1	0	T5-sched	0.9069	0.6204	0.5501	0.0183	5	False	120	kept-mid
 t5b-bs128-wu01	0.0003	0.1	0	T5-sched	0.9061	0.6215	0.5586	0.0261	8	False	120	keep-finalist
 t5c-bs256-wu01	0.0003	0.1	0	T5-sched	0.9063	0.6195	0.5593	0.0161	8	False	60	keep-finalist
+t5d-bs128-wu01-s1	0.0003	0.1	1	T5-seeds	0.9056	0.6223	0.5608	0.0177	6	False	120	kept-seed
+t5e-bs128-wu01-s2	0.0003	0.1	2	T5-seeds	0.9055	0.6196	0.5755	0.0204	8	False	120	kept-seed
+t5f-bs256-wu01-s1	0.0003	0.1	1	T5-seeds	0.9071	0.6227	0.5592	0.0244	8	False	60	kept-seed
+t5g-bs256-wu01-s2	0.0003	0.1	2	T5-seeds	0.9077	0.6208	0.5627	0.0191	10	False	60	kept-seed

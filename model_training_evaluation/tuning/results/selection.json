@@ -71,10 +71,61 @@
     "separated": false,
     "a_better": false
   },
+  "t5_bs128wu01_vs_inc": {
+    "a": "bs128_wu0.1",
+    "b": "bs256_wu0.05",
+    "n_events": 68003,
+    "a_mean": 0.9057384530703226,
+    "a_sd": 0.00031645250679952053,
+    "b_mean": 0.9073875347773234,
+    "b_sd": 0.0017497855147658532,
+    "a_seeds": [
+      0.9061,
+      0.9056,
+      0.9055
+    ],
+    "b_seeds": [
+      0.907,
+      0.9059,
+      0.9093
+    ],
+    "diff": -0.0016490869854527256,
+    "ci_low": -0.0035065208056746775,
+    "ci_high": 0.0001897720324515734,
+    "separated": false,
+    "a_better": false
+  },
+  "t5_bs256wu01_vs_inc": {
+    "a": "bs256_wu0.1",
+    "b": "bs256_wu0.05",
+    "n_events": 68003,
+    "a_mean": 0.9070310990015665,
+    "a_sd": 0.0006648219070842063,
+    "b_mean": 0.9073875347773234,
+    "b_sd": 0.0017497855147658532,
+    "a_seeds": [
+      0.9063,
+      0.9071,
+      0.9077
+    ],
+    "b_seeds": [
+      0.907,
+      0.9059,
+      0.9093
+    ],
+    "diff": -0.00035638097820590777,
+    "ci_low": -0.0013916267750094255,
+    "ci_high": 0.0006380159176666079,
+    "separated": false,
+    "a_better": false
+  },
   "recommendation": {
     "lr": 0.0003,
     "wd": 0.1,
+    "batch_size": 256,
+    "warmup_fraction": 0.05,
     "epoch_budget": 30,
-    "reason": "no finalist better beyond noise (all CIs include 0, seeds overlap); tie rule -> lower LR 3e-4, keep wd 0.1. 04 selection generalizes to T300/L2/K16."
-  }
+    "reason": "T5: bs128/wu0.1 diff -0.0016 CI includes 0 and incumbent s101 (0.9048) beats all challenger seeds -> not beyond noise; keep frozen schedule. wu0.1>=wu0.05 noted."
+  },
+  "t5_bs128wu01_vs_inc_mean": "0.9057 vs 0.9074 (seeds 0-2)"
 }
