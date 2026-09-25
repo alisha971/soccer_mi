@@ -39,6 +39,12 @@ def main():
     import src.data as data
     import src.training as training
 
+    from pathlib import Path as _P  # ponytail: local alias, avoid touching shared training.py
+    _cached = _P(ROOT / "runs" / training.run_name_for(cfg) / "final_results.json")
+    if _cached.exists() and json.load(open(_cached)).get("run_mode") != ("smoke" if a.mode == "smoke" else "full"):
+        import shutil
+        shutil.rmtree(_cached.parent)  # stale cache from other mode with same name; retrain
+
     device = "cuda" if torch.cuda.is_available() else "cpu"
     events = data.load_events(REPO / "artifacts" / "events_prepared.parquet")
     bundle = training.prepare_data(events, REPO / "artifacts", "T300", "pre_action", 16, 8,
