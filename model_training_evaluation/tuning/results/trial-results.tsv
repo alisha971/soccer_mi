@@ -6,7 +6,7 @@ t3a-lr3e-4-wd001	0.0003	0.01	0	T3-wd	0.9068	0.6206	0.5564	0.0162	7	False	60	keep
 t3b-lr3e-4-wd03	0.0003	0.3	0	T3-wd	0.9076	0.6196	0.5552	0.0144	7	False	60	discard
 t3c-lr1e-3-wd001	0.001	0.01	0	T3-wd	0.9066	0.6207	0.5584	0.0130	4	False	50	keep-finalist
 t3d-lr1e-3-wd03	0.001	0.3	0	T3-wd	0.9081	0.6193	0.5589	0.0232	6	False	60	discard
-t4a-lr1e-3-wd001-s1	0.001	0.01	1	T4-seeds	0.9074	0.0000	0.0000	0.0000	0	False	60	kept-seed
-t4b-lr1e-3-wd001-s2	0.001	0.01	2	T4-seeds	0.9094	0.0000	0.0000	0.0000	0	False	60	kept-seed
-t4c-lr3e-4-wd001-s1	0.0003	0.01	1	T4-seeds	0.9060	0.0000	0.0000	0.0000	0	False	60	kept-seed
-t4d-lr3e-4-wd001-s2	0.0003	0.01	2	T4-seeds	0.9100	0.0000	0.0000	0.0000	0	False	60	kept-seed
+t4a-lr1e-3-wd001-s1	0.001	0.01	1	T4-seeds	0.9074	0.6187	0.5513	0.0132	4	False	60	kept-seed
+t4b-lr1e-3-wd001-s2	0.001	0.01	2	T4-seeds	0.9094	0.6177	0.5595	0.0163	4	False	60	kept-seed
+t4c-lr3e-4-wd001-s1	0.0003	0.01	1	T4-seeds	0.9060	0.6244	0.5596	0.0251	8	False	60	kept-seed
+t4d-lr3e-4-wd001-s2	0.0003	0.01	2	T4-seeds	0.9100	0.6213	0.5645	0.0271	7	False	60	kept-seed
