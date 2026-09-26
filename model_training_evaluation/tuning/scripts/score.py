@@ -1,4 +1,4 @@
-"""tuning metric for autoresearch Classic. Torch-free (stdlib only)."""
+"""Mean validation NLL across tuning trials. Torch-free (stdlib only)."""
 import argparse, csv, glob, json, sys
 from pathlib import Path
 

@@ -1,0 +1,19 @@
+{
+  "trial_id": "t2c",
+  "stage": "T2-lr",
+  "run_dir": "tuning/runs/transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.001_wd0.1_s0",
+  "learning_rate": 0.001,
+  "weight_decay": 0.1,
+  "batch_size": 256,
+  "warmup_fraction": 0.05,
+  "seed": 0,
+  "max_epochs": 30,
+  "model": {
+    "n_layers": 2,
+    "n_heads": 2,
+    "d_model": 128,
+    "d_ff": 512
+  },
+  "encoding": "T300",
+  "context_length": 16
+}

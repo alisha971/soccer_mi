@@ -1,0 +1,19 @@
+{
+  "trial_id": "t5e",
+  "stage": "T5-seeds",
+  "run_dir": "tuning/runs/transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s2__bs128wu0.1",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.1,
+  "batch_size": 128,
+  "warmup_fraction": 0.1,
+  "seed": 2,
+  "max_epochs": 30,
+  "model": {
+    "n_layers": 2,
+    "n_heads": 2,
+    "d_model": 128,
+    "d_ff": 512
+  },
+  "encoding": "T300",
+  "context_length": 16
+}
