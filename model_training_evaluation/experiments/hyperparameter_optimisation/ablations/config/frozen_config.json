@@ -1,0 +1,65 @@
+{
+  "purpose": "Restricted models B5-B7 at the configuration selected in notebook 12 (Track A notebook 06 protocol)",
+  "selected_config_file": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/config/frozen_config.json",
+  "selected_config_sha256": "b4cc6ee01e9e49020400924c5addfa902346dcc11cf957c1b85652bd6f372da9",
+  "context_length": 16,
+  "model": {
+    "n_layers": 4,
+    "n_heads": 2,
+    "d_model": 128,
+    "d_ff": 512
+  },
+  "training": {
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "max_epochs": 30,
+    "batch_size": 256,
+    "warmup_fraction": 0.05,
+    "min_lr_ratio": 0.1,
+    "grad_clip": 1.0,
+    "patience": 5
+  },
+  "encoding": "T300",
+  "possession_features": "pre_action",
+  "stride": 8,
+  "restricted_groups": {
+    "B5 context-only": [
+      "competition",
+      "space",
+      "time",
+      "state",
+      "history"
+    ],
+    "B6 identity-only": [
+      "player",
+      "team",
+      "role"
+    ],
+    "B7 role-only": [
+      "role",
+      "competition",
+      "space",
+      "time",
+      "state",
+      "history"
+    ]
+  },
+  "restricted_seeds": [
+    100,
+    101,
+    102
+  ],
+  "full_model_seeds": [
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "full_model_retrained": false,
+  "full_model_test_reevaluated": false,
+  "evaluate_restricted_models_on_test": true,
+  "decision_rule": "Track A notebook 04 Section 2.5 (bootstrap CI below zero and complete seed separation)",
+  "run_mode": "full",
+  "written_at": "2026-09-28T13:59:05.035085+00:00"
+}

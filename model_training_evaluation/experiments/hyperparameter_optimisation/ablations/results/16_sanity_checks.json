@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "all test sources cover the same events": true,
+    "no duplicated test events": true,
+    "B8 seeds = 5 for every architecture": true,
+    "restricted seeds = 3": true,
+    "selected model not retrained": true,
+    "selected model not re-evaluated on test": true,
+    "test accesses by this notebook = 1 if enabled, else 0": true,
+    "no restricted run diverged": true,
+    "no earlier result file modified": true
+  },
+  "modified_files": [],
+  "new_test_accesses": 1
+}

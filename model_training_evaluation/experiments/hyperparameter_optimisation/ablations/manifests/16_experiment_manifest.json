@@ -1,0 +1,118 @@
+{
+  "notebook": "16_ablations",
+  "selected_configuration": {
+    "file": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/config/frozen_config.json",
+    "sha256": "b4cc6ee01e9e49020400924c5addfa902346dcc11cf957c1b85652bd6f372da9",
+    "context_length": 16,
+    "model": {
+      "n_layers": 4,
+      "n_heads": 2,
+      "d_model": 128,
+      "d_ff": 512
+    },
+    "training": {
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "max_epochs": 30,
+      "batch_size": 256,
+      "warmup_fraction": 0.05,
+      "min_lr_ratio": 0.1,
+      "grad_clip": 1.0,
+      "patience": 5
+    }
+  },
+  "models": {
+    "B8 (selected, not retrained)": [
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s100",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s101",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s102",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s103",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s104"
+    ],
+    "B5 context-only (new)": [
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.01_s100",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.01_s101",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.01_s102"
+    ],
+    "B6 identity-only (new)": [
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-player+team+role_lr0.0003_wd0.01_s100",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-player+team+role_lr0.0003_wd0.01_s101",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-player+team+role_lr0.0003_wd0.01_s102"
+    ],
+    "B7 role-only (new)": [
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-role+competition+space+time+state+history_lr0.0003_wd0.01_s100",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-role+competition+space+time+state+history_lr0.0003_wd0.01_s101",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-role+competition+space+time+state+history_lr0.0003_wd0.01_s102"
+    ]
+  },
+  "seeds": {
+    "B8": [
+      100,
+      101,
+      102,
+      103,
+      104
+    ],
+    "B5-B7": [
+      100,
+      101,
+      102
+    ]
+  },
+  "factor_groups": {
+    "B5 context-only": [
+      "competition",
+      "space",
+      "time",
+      "state",
+      "history"
+    ],
+    "B6 identity-only": [
+      "player",
+      "team",
+      "role"
+    ],
+    "B7 role-only": [
+      "role",
+      "competition",
+      "space",
+      "time",
+      "state",
+      "history"
+    ]
+  },
+  "metrics": [
+    "NLL (primary)",
+    "accuracy",
+    "top-3",
+    "top-5",
+    "macro-F1",
+    "ECE (15 bins)"
+  ],
+  "uncertainty": "match-level bootstrap, 2000 resamples; seed SD reported separately",
+  "source_notebooks": {
+    "ablation protocol": "Track A 06",
+    "selected configuration": "12",
+    "selected model runs and test predictions": "13"
+  },
+  "result_files": [
+    "results/16_ablation_table_test.csv",
+    "results/16_identity_value_by_stratum.csv",
+    "results/16_restricted_runs.csv",
+    "results/16_sanity_checks.json",
+    "results/16_test_contrasts.csv",
+    "results/16_test_results.json",
+    "results/16_validation_report.json"
+  ],
+  "test_accesses_by_this_notebook": 1,
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "cuda_available": true,
+    "gpu": "Tesla T4",
+    "cuda": "12.8"
+  }
+}

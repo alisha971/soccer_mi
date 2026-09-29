@@ -1,0 +1,348 @@
+{
+  "run_mode": "full",
+  "evaluate_restricted_models_on_test": true,
+  "n_test_events": 65009,
+  "ablation_table": [
+    {
+      "model": "REF-2L B8 full",
+      "architecture": "REF-2L",
+      "source": "Track A nb 06 predictions",
+      "seeds": 5,
+      "test events": 65009,
+      "NLL": 0.9158470034599304,
+      "NLL seed SD": 0.0013127469047919946,
+      "NLL 95% CI": "[0.9035, 0.9283]",
+      "accuracy": 0.6160685443553969,
+      "top-3": 0.9444753803319541,
+      "top-5": 0.9936501099847712,
+      "macro-F1": 0.557987985038487,
+      "ECE": 0.023757873674580633
+    },
+    {
+      "model": "REF-2L B7 role-only",
+      "architecture": "REF-2L",
+      "source": "Track A nb 06 predictions",
+      "seeds": 3,
+      "test events": 65009,
+      "NLL": 0.8959659934043884,
+      "NLL seed SD": 0.0005341456498506325,
+      "NLL 95% CI": "[0.8827, 0.9093]",
+      "accuracy": 0.6238418270290781,
+      "top-3": 0.946571500356361,
+      "top-5": 0.9941597830044046,
+      "macro-F1": 0.5631504372305213,
+      "ECE": 0.02000135036551491
+    },
+    {
+      "model": "REF-2L B5 context-only",
+      "architecture": "REF-2L",
+      "source": "Track A nb 06 predictions",
+      "seeds": 3,
+      "test events": 65009,
+      "NLL": 0.9103115002314249,
+      "NLL seed SD": 0.0013852742412324265,
+      "NLL 95% CI": "[0.8967, 0.9232]",
+      "accuracy": 0.6196526634773646,
+      "top-3": 0.9458280135570973,
+      "top-5": 0.9936419059925035,
+      "macro-F1": 0.5547463619018673,
+      "ECE": 0.01813134090811314
+    },
+    {
+      "model": "REF-2L B6 identity-only",
+      "architecture": "REF-2L",
+      "source": "Track A nb 06 predictions",
+      "seeds": 3,
+      "test events": 65009,
+      "NLL": 1.7462124427159627,
+      "NLL seed SD": 0.02453366085428814,
+      "NLL 95% CI": "[1.6718, 1.8234]",
+      "accuracy": 0.37569157091069444,
+      "top-3": 0.7777846144380008,
+      "top-5": 0.8915791146866844,
+      "macro-F1": 0.18303636182567048,
+      "ECE": 0.06943210453384727
+    },
+    {
+      "model": "REF-4L B8 full",
+      "architecture": "REF-4L",
+      "source": "4-layer nb 06 predictions",
+      "seeds": 5,
+      "test events": 65009,
+      "NLL": 0.914042067527771,
+      "NLL seed SD": 0.003281366515919037,
+      "NLL 95% CI": "[0.9017, 0.9265]",
+      "accuracy": 0.6178098417142243,
+      "top-3": 0.9442415665523237,
+      "top-5": 0.993748557891984,
+      "macro-F1": 0.5578153483027594,
+      "ECE": 0.025463847711948907
+    },
+    {
+      "model": "REF-4L B7 role-only",
+      "architecture": "REF-4L",
+      "source": "4-layer nb 06 predictions",
+      "seeds": 3,
+      "test events": 65009,
+      "NLL": 0.8915654023488363,
+      "NLL seed SD": 0.0015695880396202348,
+      "NLL 95% CI": "[0.8784, 0.9046]",
+      "accuracy": 0.6272516113153563,
+      "top-3": 0.9473816445927999,
+      "top-5": 0.9943443728304286,
+      "macro-F1": 0.5693563521579589,
+      "ECE": 0.022354785629323592
+    },
+    {
+      "model": "REF-4L B5 context-only",
+      "architecture": "REF-4L",
+      "source": "4-layer nb 06 predictions",
+      "seeds": 3,
+      "test events": 65009,
+      "NLL": 0.9077374537785848,
+      "NLL seed SD": 0.004339775079155104,
+      "NLL 95% CI": "[0.8944, 0.9205]",
+      "accuracy": 0.6204115327621303,
+      "top-3": 0.9450024868351562,
+      "top-5": 0.9937034359345116,
+      "macro-F1": 0.5611506489731214,
+      "ECE": 0.016637141930921716
+    },
+    {
+      "model": "REF-4L B6 identity-only",
+      "architecture": "REF-4L",
+      "source": "4-layer nb 06 predictions",
+      "seeds": 3,
+      "test events": 65009,
+      "NLL": 1.7521325747172039,
+      "NLL seed SD": 0.08038450231419442,
+      "NLL 95% CI": "[1.6568, 1.8526]",
+      "accuracy": 0.3845518825598507,
+      "top-3": 0.778548611217934,
+      "top-5": 0.8852517856501919,
+      "macro-F1": 0.19681622183226696,
+      "ECE": 0.05140525827704804
+    },
+    {
+      "model": "SEL-4L B8 full",
+      "architecture": "SEL-4L",
+      "source": "nb 13 predictions (B8, not re-evaluated) / nb 16 (B5-B7)",
+      "seeds": 5,
+      "test events": 65009,
+      "NLL": 0.9148007988929748,
+      "NLL seed SD": 0.0031641295828850886,
+      "NLL 95% CI": "[0.9023, 0.9273]",
+      "accuracy": 0.6171084003753327,
+      "top-3": 0.9439800642987894,
+      "top-5": 0.9936408804934702,
+      "macro-F1": 0.5585187669242329,
+      "ECE": 0.027013200787681622
+    },
+    {
+      "model": "SEL-4L B5 context-only",
+      "architecture": "SEL-4L",
+      "source": "nb 13 predictions (B8, not re-evaluated) / nb 16 (B5-B7)",
+      "seeds": 3,
+      "test events": 65009,
+      "NLL": 0.9079874753952026,
+      "NLL seed SD": 0.0039035383371274182,
+      "NLL 95% CI": "[0.8943, 0.9211]",
+      "accuracy": 0.6206115050736565,
+      "top-3": 0.9450947817481682,
+      "top-5": 0.9935085911181529,
+      "macro-F1": 0.5592571712769671,
+      "ECE": 0.016860790173914397
+    },
+    {
+      "model": "SEL-4L B6 identity-only",
+      "architecture": "SEL-4L",
+      "source": "nb 13 predictions (B8, not re-evaluated) / nb 16 (B5-B7)",
+      "seeds": 3,
+      "test events": 65009,
+      "NLL": 1.7540661891301472,
+      "NLL seed SD": 0.07883492720357954,
+      "NLL 95% CI": "[1.6586, 1.8538]",
+      "accuracy": 0.38435703774349195,
+      "top-3": 0.778153794090049,
+      "top-5": 0.8857081327200849,
+      "macro-F1": 0.19688154637175137,
+      "ECE": 0.05122619743570627
+    },
+    {
+      "model": "SEL-4L B7 role-only",
+      "architecture": "SEL-4L",
+      "source": "nb 13 predictions (B8, not re-evaluated) / nb 16 (B5-B7)",
+      "seeds": 3,
+      "test events": 65009,
+      "NLL": 0.8931890726089478,
+      "NLL seed SD": 0.0018429069435694527,
+      "NLL 95% CI": "[0.8798, 0.9063]",
+      "accuracy": 0.6274310736462131,
+      "top-3": 0.9471406523199352,
+      "top-5": 0.9943289903449265,
+      "macro-F1": 0.574157711014083,
+      "ECE": 0.02143702029416605
+    }
+  ],
+  "test_contrasts": [
+    {
+      "architecture": "REF-2L",
+      "contrast": "identity value (B7 - B8)",
+      "events": 65009,
+      "difference": -0.019880957901477814,
+      "ci_low": -0.022947074102132183,
+      "ci_high": -0.016807720875265345,
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "architecture": "REF-2L",
+      "contrast": "removing role (B5 - B7)",
+      "events": 65009,
+      "difference": 0.014345443807542324,
+      "ci_low": 0.012359077221051154,
+      "ci_high": 0.01628854334103084,
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "architecture": "REF-2L",
+      "contrast": "context-only vs full (B5 - B8)",
+      "events": 65009,
+      "difference": -0.005535514559596777,
+      "ci_low": -0.008489953117388649,
+      "ci_high": -0.002599491055373855,
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "architecture": "REF-2L",
+      "contrast": "removing context (B6 - B8)",
+      "events": 65009,
+      "difference": 0.8303654789924622,
+      "ci_low": 0.7596740688033359,
+      "ci_high": 0.9054446246404791,
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "architecture": "REF-4L",
+      "contrast": "identity value (B7 - B8)",
+      "events": 65009,
+      "difference": -0.022476617246866226,
+      "ci_low": -0.02539201402835705,
+      "ci_high": -0.019439436981376228,
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "architecture": "REF-4L",
+      "contrast": "removing role (B5 - B7)",
+      "events": 65009,
+      "difference": 0.016172025352716446,
+      "ci_low": 0.013397007388020405,
+      "ci_high": 0.018653167216385057,
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "architecture": "REF-4L",
+      "contrast": "context-only vs full (B5 - B8)",
+      "events": 65009,
+      "difference": -0.00630459189414978,
+      "ci_low": -0.009750107028947467,
+      "ci_high": -0.002771781639797611,
+      "seeds separated": false,
+      "beyond noise": false
+    },
+    {
+      "architecture": "REF-4L",
+      "contrast": "removing context (B6 - B8)",
+      "events": 65009,
+      "difference": 0.8380904793739319,
+      "ci_low": 0.7452268596780177,
+      "ci_high": 0.9339350336841876,
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "architecture": "SEL-4L",
+      "contrast": "identity value (B7 - B8)",
+      "events": 65009,
+      "difference": -0.021611670032143593,
+      "ci_low": -0.02458743232824076,
+      "ci_high": -0.018685555291293482,
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "architecture": "SEL-4L",
+      "contrast": "removing role (B5 - B7)",
+      "events": 65009,
+      "difference": 0.014798310585319996,
+      "ci_low": 0.012204329149115874,
+      "ci_high": 0.01736408535056761,
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "architecture": "SEL-4L",
+      "contrast": "context-only vs full (B5 - B8)",
+      "events": 65009,
+      "difference": -0.006813358515501022,
+      "ci_low": -0.01027358611138471,
+      "ci_high": -0.003308890804299924,
+      "seeds separated": true,
+      "beyond noise": true
+    },
+    {
+      "architecture": "SEL-4L",
+      "contrast": "removing context (B6 - B8)",
+      "events": 65009,
+      "difference": 0.8392654061317444,
+      "ci_low": 0.7459460188030462,
+      "ci_high": 0.9351007463915463,
+      "seeds separated": true,
+      "beyond noise": true
+    }
+  ],
+  "robustness_genuine_events_only": [
+    {
+      "model": "REF-2L B7 role-only",
+      "NLL (genuine events only)": 0.9837229053179423,
+      "accuracy (genuine only)": 0.5860793254753506,
+      "macro-F1 (genuine only)": 0.48100172450709416
+    },
+    {
+      "model": "REF-2L B8 full",
+      "NLL (genuine events only)": 1.0045670509338378,
+      "accuracy (genuine only)": 0.5774894605523531,
+      "macro-F1 (genuine only)": 0.476311737498913
+    },
+    {
+      "model": "REF-4L B7 role-only",
+      "NLL (genuine events only)": 0.9789779186248779,
+      "accuracy (genuine only)": 0.5898075654592905,
+      "macro-F1 (genuine only)": 0.4878008243368314
+    },
+    {
+      "model": "REF-4L B8 full",
+      "NLL (genuine events only)": 1.0027854681015014,
+      "accuracy (genuine only)": 0.5796266024262239,
+      "macro-F1 (genuine only)": 0.4770211435751463
+    },
+    {
+      "model": "SEL-4L B7 role-only",
+      "NLL (genuine events only)": 0.9818525910377502,
+      "accuracy (genuine only)": 0.5895666637987897,
+      "macro-F1 (genuine only)": 0.49264496695638305
+    },
+    {
+      "model": "SEL-4L B8 full",
+      "NLL (genuine events only)": 1.003529155254364,
+      "accuracy (genuine only)": 0.5788591585649144,
+      "macro-F1 (genuine only)": 0.4773475869660257
+    }
+  ],
+  "written_at": "2026-09-28T14:16:41.667179+00:00"
+}

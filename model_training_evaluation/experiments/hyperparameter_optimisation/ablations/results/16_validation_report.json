@@ -1,0 +1,318 @@
+{
+  "plan": {
+    "purpose": "Restricted models B5-B7 at the configuration selected in notebook 12 (Track A notebook 06 protocol)",
+    "selected_config_file": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/config/frozen_config.json",
+    "selected_config_sha256": "b4cc6ee01e9e49020400924c5addfa902346dcc11cf957c1b85652bd6f372da9",
+    "context_length": 16,
+    "model": {
+      "n_layers": 4,
+      "n_heads": 2,
+      "d_model": 128,
+      "d_ff": 512
+    },
+    "training": {
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "max_epochs": 30,
+      "batch_size": 256,
+      "warmup_fraction": 0.05,
+      "min_lr_ratio": 0.1,
+      "grad_clip": 1.0,
+      "patience": 5
+    },
+    "encoding": "T300",
+    "possession_features": "pre_action",
+    "stride": 8,
+    "restricted_groups": {
+      "B5 context-only": [
+        "competition",
+        "space",
+        "time",
+        "state",
+        "history"
+      ],
+      "B6 identity-only": [
+        "player",
+        "team",
+        "role"
+      ],
+      "B7 role-only": [
+        "role",
+        "competition",
+        "space",
+        "time",
+        "state",
+        "history"
+      ]
+    },
+    "restricted_seeds": [
+      100,
+      101,
+      102
+    ],
+    "full_model_seeds": [
+      100,
+      101,
+      102,
+      103,
+      104
+    ],
+    "full_model_retrained": false,
+    "full_model_test_reevaluated": false,
+    "evaluate_restricted_models_on_test": true,
+    "decision_rule": "Track A notebook 04 Section 2.5 (bootstrap CI below zero and complete seed separation)",
+    "run_mode": "full",
+    "written_at": "2026-09-28T13:59:05.035085+00:00"
+  },
+  "full_model_runs": [
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s100",
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s101",
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s102",
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s103",
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s104"
+  ],
+  "restricted_runs": {
+    "B5 context-only": [
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.01_s100",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.01_s101",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.01_s102"
+    ],
+    "B6 identity-only": [
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-player+team+role_lr0.0003_wd0.01_s100",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-player+team+role_lr0.0003_wd0.01_s101",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-player+team+role_lr0.0003_wd0.01_s102"
+    ],
+    "B7 role-only": [
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-role+competition+space+time+state+history_lr0.0003_wd0.01_s100",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-role+competition+space+time+state+history_lr0.0003_wd0.01_s101",
+      "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-role+competition+space+time+state+history_lr0.0003_wd0.01_s102"
+    ]
+  },
+  "restricted_summary": [
+    {
+      "model": "B5 context-only",
+      "seed": 100,
+      "parameters": 835471,
+      "val_nll": 0.8976058959960938,
+      "val_accuracy": 0.6232372101230828,
+      "val_macro_f1": 0.5590051170819291,
+      "best_epoch": 12,
+      "epochs_run": 17,
+      "diverged": false,
+      "run_dir": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.01_s100"
+    },
+    {
+      "model": "B5 context-only",
+      "seed": 101,
+      "parameters": 835471,
+      "val_nll": 0.8966938257217407,
+      "val_accuracy": 0.6238695351675662,
+      "val_macro_f1": 0.5625833151395726,
+      "best_epoch": 11,
+      "epochs_run": 16,
+      "diverged": false,
+      "run_dir": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.01_s101"
+    },
+    {
+      "model": "B5 context-only",
+      "seed": 102,
+      "parameters": 835471,
+      "val_nll": 0.8976711630821228,
+      "val_accuracy": 0.6237813037660104,
+      "val_macro_f1": 0.5576369389146987,
+      "best_epoch": 13,
+      "epochs_run": 18,
+      "diverged": false,
+      "run_dir": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.01_s102"
+    },
+    {
+      "model": "B6 identity-only",
+      "seed": 100,
+      "parameters": 872975,
+      "val_nll": 1.5921638011932373,
+      "val_accuracy": 0.40284987427025276,
+      "val_macro_f1": 0.2048418930127416,
+      "best_epoch": 3,
+      "epochs_run": 8,
+      "diverged": false,
+      "run_dir": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-player+team+role_lr0.0003_wd0.01_s100"
+    },
+    {
+      "model": "B6 identity-only",
+      "seed": 101,
+      "parameters": 872975,
+      "val_nll": 1.5450986623764038,
+      "val_accuracy": 0.40886431480964075,
+      "val_macro_f1": 0.2203947233288233,
+      "best_epoch": 4,
+      "epochs_run": 9,
+      "diverged": false,
+      "run_dir": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-player+team+role_lr0.0003_wd0.01_s101"
+    },
+    {
+      "model": "B6 identity-only",
+      "seed": 102,
+      "parameters": 872975,
+      "val_nll": 1.592218041419983,
+      "val_accuracy": 0.4060409099598547,
+      "val_macro_f1": 0.2223061554925847,
+      "best_epoch": 5,
+      "epochs_run": 10,
+      "diverged": false,
+      "run_dir": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-player+team+role_lr0.0003_wd0.01_s102"
+    },
+    {
+      "model": "B7 role-only",
+      "seed": 100,
+      "parameters": 838799,
+      "val_nll": 0.8869198560714722,
+      "val_accuracy": 0.6281340529094305,
+      "val_macro_f1": 0.5735021239578448,
+      "best_epoch": 13,
+      "epochs_run": 18,
+      "diverged": false,
+      "run_dir": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-role+competition+space+time+state+history_lr0.0003_wd0.01_s100"
+    },
+    {
+      "model": "B7 role-only",
+      "seed": 101,
+      "parameters": 838799,
+      "val_nll": 0.8836299180984497,
+      "val_accuracy": 0.6303839536491037,
+      "val_macro_f1": 0.5651002062117697,
+      "best_epoch": 10,
+      "epochs_run": 15,
+      "diverged": false,
+      "run_dir": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-role+competition+space+time+state+history_lr0.0003_wd0.01_s101"
+    },
+    {
+      "model": "B7 role-only",
+      "seed": 102,
+      "parameters": 838799,
+      "val_nll": 0.8870463371276855,
+      "val_accuracy": 0.6259135626369425,
+      "val_macro_f1": 0.5759141499395053,
+      "best_epoch": 10,
+      "epochs_run": 15,
+      "diverged": false,
+      "run_dir": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/ablations/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-role+competition+space+time+state+history_lr0.0003_wd0.01_s102"
+    }
+  ],
+  "identity_value_by_player_band": [
+    {
+      "group": "all events",
+      "events": 68003,
+      "B7 role-only NLL": 0.885844886302948,
+      "B8 full NLL": 0.903331458568573,
+      "difference (a - b)": -0.017465688288211823,
+      "95% CI": "[-0.0209, -0.0144]",
+      "a better beyond noise": true
+    },
+    {
+      "group": "100-299",
+      "events": 20693,
+      "B7 role-only NLL": 0.8863787651062012,
+      "B8 full NLL": 0.9018104672431946,
+      "difference (a - b)": -0.015433547087013721,
+      "95% CI": "[-0.0197, -0.0112]",
+      "a better beyond noise": true
+    },
+    {
+      "group": "300-999",
+      "events": 10644,
+      "B7 role-only NLL": 0.8781617283821106,
+      "B8 full NLL": 0.8908787965774536,
+      "difference (a - b)": -0.0127171715721488,
+      "95% CI": "[-0.0190, -0.0070]",
+      "a better beyond noise": true
+    },
+    {
+      "group": "<100 train events (incl. unseen)",
+      "events": 33419,
+      "B7 role-only NLL": 0.8846893310546875,
+      "B8 full NLL": 0.9061716794967651,
+      "difference (a - b)": -0.021484289318323135,
+      "95% CI": "[-0.0256, -0.0176]",
+      "a better beyond noise": true
+    },
+    {
+      "group": ">=1000",
+      "events": 3247,
+      "B7 role-only NLL": 0.9200029373168945,
+      "B8 full NLL": 0.9246245622634888,
+      "difference (a - b)": -0.00462205009534955,
+      "95% CI": "[-0.0220, +0.0123]",
+      "a better beyond noise": false
+    }
+  ],
+  "identity_value_by_team_status": [
+    {
+      "group": "all events",
+      "events": 68003,
+      "B7 role-only NLL": 0.885844886302948,
+      "B8 full NLL": 0.903331458568573,
+      "difference (a - b)": -0.017465688288211823,
+      "95% CI": "[-0.0209, -0.0144]",
+      "a better beyond noise": true
+    },
+    {
+      "group": "team seen in training",
+      "events": 58506,
+      "B7 role-only NLL": 0.8856003880500793,
+      "B8 full NLL": 0.9039196968078613,
+      "difference (a - b)": -0.01830442249774933,
+      "95% CI": "[-0.0218, -0.0147]",
+      "a better beyond noise": true
+    },
+    {
+      "group": "team unseen in training",
+      "events": 9497,
+      "B7 role-only NLL": 0.8873980641365051,
+      "B8 full NLL": 0.8996962308883667,
+      "difference (a - b)": -0.01229869481176138,
+      "95% CI": "[-0.0166, -0.0070]",
+      "a better beyond noise": true
+    }
+  ],
+  "other_contrasts": {
+    "B5 context-only - B7 role-only (removing role)": {
+      "n_events": 68003,
+      "nll_a_mean": 0.8973068594932556,
+      "nll_a_seed_sd": 0.0005397177301347256,
+      "nll_b_mean": 0.885844886302948,
+      "nll_b_seed_sd": 0.0019397734431549907,
+      "difference_a_minus_b": 0.011458268389105797,
+      "difference_ci_low": 0.008899594523503519,
+      "difference_ci_high": 0.013957575946762318,
+      "seeds_completely_separated": false,
+      "a_better_beyond_noise": false
+    },
+    "B5 context-only - B8 full": {
+      "n_events": 68003,
+      "nll_a_mean": 0.8973068594932556,
+      "nll_a_seed_sd": 0.0005397177301347256,
+      "nll_b_mean": 0.903331458568573,
+      "nll_b_seed_sd": 0.003424533875659108,
+      "difference_a_minus_b": -0.006007419899106026,
+      "difference_ci_low": -0.00984503314312149,
+      "difference_ci_high": -0.0021716260686934896,
+      "seeds_completely_separated": true,
+      "a_better_beyond_noise": true
+    },
+    "B6 identity-only - B8 full (removing context)": {
+      "n_events": 68003,
+      "nll_a_mean": 1.5764936208724976,
+      "nll_a_seed_sd": 0.027192318812012672,
+      "nll_b_mean": 0.903331458568573,
+      "nll_b_seed_sd": 0.003424533875659108,
+      "difference_a_minus_b": 0.6731624007225037,
+      "difference_ci_low": 0.6191956371064243,
+      "difference_ci_high": 0.7373287755930723,
+      "seeds_completely_separated": false,
+      "a_better_beyond_noise": false
+    }
+  },
+  "written_before_test_side_steps": true,
+  "run_mode": "full",
+  "written_at": "2026-09-28T14:16:07.002893+00:00"
+}

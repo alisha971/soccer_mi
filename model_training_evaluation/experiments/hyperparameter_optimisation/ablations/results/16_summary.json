@@ -1,0 +1,17 @@
+{
+  "lines": [
+    "WHAT WAS RUN",
+    "- B5, B6, B7 at the selected configuration, seeds [100, 101, 102].",
+    "- B5-B7 evaluated once on test.",
+    "WHAT WAS REUSED",
+    "- The selected model's runs and test predictions (nb 13); REF-2L and REF-4L predictions.",
+    "WHAT CHANGED RELATIVE TO THE REFERENCE-MODEL ABLATIONS",
+    "- Architecture and training setting: 4 layers, 2 heads, K = 16, weight decay 0.01.",
+    "WHAT REMAINED IDENTICAL",
+    "- Data, splits, windows, evaluation view, factor-group definitions, seeds 100-102, metrics, bootstrap, decision rule.",
+    "RESULT",
+    "- Identity value (B7 - B8) on validation: -0.0175 [-0.0209, -0.0144].",
+    "WHAT THIS DOES NOT SHOW",
+    "- How the selected model uses identity internally (mechanistic analysis)."
+  ]
+}
