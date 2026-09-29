@@ -1,6 +1,0 @@
-{
- "byte_identical": true,
- "note": "identity cols not in input constructor; check confirms data loading",
- "per_player_err_mean": 0.4237820366608245,
- "per_player_err_std": 0.3329801808835783
-}
