@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "all test sources cover the same events": true,
+    "no duplicated test events": true,
+    "metric code identical for every row (src/metrics.py, one import)": true,
+    "B4 has 5 seeds (final seed policy)": true,
+    "Transformer rows have 5 seeds": true,
+    "validation record written before the unlock": true,
+    "exactly one test access by this notebook": true,
+    "selected model not retrained or re-evaluated": true,
+    "all correctness tests pass at the final configuration": false,
+    "all notebook 06 gates pass against the re-run baselines": true,
+    "no earlier result file modified": true
+  },
+  "modified_files": [],
+  "new_test_accesses": 1
+}

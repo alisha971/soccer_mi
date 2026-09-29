@@ -1,0 +1,138 @@
+{
+  "notebook": "15_final_benchmark",
+  "baseline_models": {
+    "B1a class prior": {
+      "fitted_on": "train",
+      "hyperparameters": "none"
+    },
+    "B1b zone prior": {
+      "alpha": 10.0,
+      "alpha_selected_in": "notebook 02 (validation)"
+    },
+    "B2 Markov": {
+      "alpha": 10.0,
+      "alpha_selected_in": "notebook 02 (validation)"
+    },
+    "B3 logistic regression": {
+      "C": 1.0,
+      "max_iter": 1000,
+      "fixed_in": "notebook 02 (before training)"
+    },
+    "B4 MLP": {
+      "learning_rate": 0.0009,
+      "learning_rate_selected_in": "notebook 04 (validation)",
+      "weight_decay": 0.01,
+      "weight_decay_rule": "notebook 04: B4 uses the weight decay selected for the Transformer",
+      "max_epochs": 30,
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "n_previous": 3,
+      "hidden": 512
+    }
+  },
+  "final_transformer_configurations": {
+    "SEL-4L": {
+      "config_file": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/config/frozen_config.json",
+      "sha256": "b4cc6ee01e9e49020400924c5addfa902346dcc11cf957c1b85652bd6f372da9",
+      "context_length": 16,
+      "model": {
+        "n_layers": 4,
+        "n_heads": 2,
+        "d_model": 128,
+        "d_ff": 512
+      },
+      "training": {
+        "learning_rate": 0.0003,
+        "weight_decay": 0.01,
+        "max_epochs": 30,
+        "batch_size": 256,
+        "warmup_fraction": 0.05,
+        "min_lr_ratio": 0.1,
+        "grad_clip": 1.0,
+        "patience": 5
+      }
+    },
+    "REF-2L": {
+      "config_file": "/content/drive/MyDrive/soccer_mi/track_a/config/frozen_config.json"
+    },
+    "REF-4L": {
+      "config_file": "/content/drive/MyDrive/soccer_mi/track_a/benchmarks/track_a_4layer/config/frozen_config.json"
+    }
+  },
+  "seeds": {
+    "B4": [
+      100,
+      101,
+      102,
+      103,
+      104
+    ],
+    "Transformers": [
+      100,
+      101,
+      102,
+      103,
+      104
+    ],
+    "B1a-B3": "deterministic, one fit"
+  },
+  "dataset": {
+    "events": 658905,
+    "encoding": "T300",
+    "possession_features": "pre_action",
+    "splits": "match-level 280/35/35",
+    "validation events": 68003,
+    "test events": 65009
+  },
+  "metrics": [
+    "NLL (primary)",
+    "accuracy",
+    "top-3",
+    "top-5",
+    "macro-F1",
+    "ECE (15 bins)"
+  ],
+  "uncertainty": "match-level bootstrap, 2000 resamples; seed SD reported separately",
+  "source_notebooks": {
+    "data": "Track A 01-02",
+    "baseline definitions": "Track A 02 (B1-B3), 04 (B4)",
+    "tests": "Track A 03",
+    "decision rule": "Track A 04",
+    "gates and refit": "Track A 06",
+    "selected configuration": "12",
+    "selected model results": "13 (loaded by 14)",
+    "REF-4L": "4-layer 06"
+  },
+  "result_files": [
+    "results/15_b4_runs.csv",
+    "results/15_baseline_validation.csv",
+    "results/15_correctness_final_config.json",
+    "results/15_original_vs_rerun_baselines.csv",
+    "results/15_sanity_checks.json",
+    "results/15_scoring_positions_K16.csv",
+    "results/15_sel4l_per_class_f1_test.csv",
+    "results/15_sel4l_primary_reliability_test.csv",
+    "results/15_selected_vs_baselines_test.csv",
+    "results/15_test_results.json",
+    "results/15_validation_report.json",
+    "results/baseline_final_benchmark.csv",
+    "results/combined_final_benchmark.csv",
+    "results/correctness_tests_final_configuration.csv"
+  ],
+  "test_accesses_by_this_notebook": 1,
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "cuda_available": true,
+    "gpu": "Tesla T4",
+    "cuda": "12.8"
+  }
+}

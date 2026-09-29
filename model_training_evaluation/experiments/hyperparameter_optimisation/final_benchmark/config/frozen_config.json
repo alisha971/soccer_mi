@@ -1,0 +1,47 @@
+{
+  "purpose": "Baselines B1a, B1b, B2, B3, B4 under the final benchmark conditions of the selected model",
+  "selected_config_file": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/config/frozen_config.json",
+  "selected_config_sha256": "b4cc6ee01e9e49020400924c5addfa902346dcc11cf957c1b85652bd6f372da9",
+  "encoding": "T300",
+  "possession_features": "pre_action",
+  "context_length": 16,
+  "stride": 8,
+  "baselines": {
+    "B1a class prior": {
+      "fitted_on": "train",
+      "hyperparameters": "none"
+    },
+    "B1b zone prior": {
+      "alpha": 10.0,
+      "alpha_selected_in": "notebook 02 (validation)"
+    },
+    "B2 Markov": {
+      "alpha": 10.0,
+      "alpha_selected_in": "notebook 02 (validation)"
+    },
+    "B3 logistic regression": {
+      "C": 1.0,
+      "max_iter": 1000,
+      "fixed_in": "notebook 02 (before training)"
+    },
+    "B4 MLP": {
+      "learning_rate": 0.0009,
+      "learning_rate_selected_in": "notebook 04 (validation)",
+      "weight_decay": 0.01,
+      "weight_decay_rule": "notebook 04: B4 uses the weight decay selected for the Transformer",
+      "max_epochs": 30,
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "n_previous": 3,
+      "hidden": 512
+    }
+  },
+  "test_policy": "baselines evaluated once on test after the validation record is written; selected model not re-evaluated",
+  "run_mode": "full",
+  "written_at": "2026-09-28T13:41:23.214315+00:00"
+}

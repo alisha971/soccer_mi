@@ -1,0 +1,28 @@
+{
+  "lines": [
+    "WHAT WAS RE-RUN",
+    "- B1a, B1b, B2, B3 refit from scratch on the training split (B3 converged: True).",
+    "- B4 trained with the final training setting (weight decay 0.01) and final seeds [100, 101, 102, 103, 104].",
+    "- All five baselines evaluated once on test, after their validation results were written.",
+    "- The 16 correctness tests at the selected configuration: 14 of 16 passed.",
+    "WHAT WAS REUSED",
+    "- Baseline definitions (nb 02, 04), smoothing strengths and the B4 learning rate, all selected on validation earlier; none re-tuned.",
+    "- The selected model's runs and test results (nb 13, loaded by nb 14); REF-2L and REF-4L results.",
+    "WHAT CHANGED FROM THE ORIGINAL BASELINE BENCHMARK",
+    "- B4: weight decay 0.1 -> 0.01, seeds 0-2 -> [100, 101, 102, 103, 104]; test NLL 0.9524 -> 0.9559.",
+    "- B1a-B3: no setting changed; largest logit difference from the original fits 0.00e+00.",
+    "WHAT REMAINED IDENTICAL",
+    "- Data, preprocessing, splits, windows, evaluation view, metric code, bootstrap, decision rule, test events.",
+    "WHY THE COMPARISON IS SCIENTIFICALLY VALID",
+    "- Every row is scored on the same 65,009 test events with the same metric code, checked row by row.",
+    "- The baselines use the same training setup as the selected model wherever a baseline has a training setup.",
+    "- No test result was used for any decision; the baselines were frozen and their validation record written before the unlock.",
+    "WHAT EVIDENCE WAS ADDED FOR CORRECTNESS ON THE FINAL CONFIGURATION",
+    "- The unchanged test module (sha256 recorded) executed at 4L_2H_K16, T300: 14/16 passed; the tested model has the recorded parameter count (911,119).",
+    "RESULTS",
+    "- Gates: baseline improvement (all of B1-B4): pass, no divergence: pass, class coverage (PROVISIONAL): pass, size cap: pass",
+    "- Selected model on test: NLL 0.9148 [0.9023, 0.9273] (recorded in nb 13).",
+    "WHAT THIS DOES NOT SHOW",
+    "- Anything about the model's internal computation, or about data outside this study."
+  ]
+}

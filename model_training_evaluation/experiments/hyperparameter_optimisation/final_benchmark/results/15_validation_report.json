@@ -1,0 +1,156 @@
+{
+  "plan": {
+    "purpose": "Baselines B1a, B1b, B2, B3, B4 under the final benchmark conditions of the selected model",
+    "selected_config_file": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/config/frozen_config.json",
+    "selected_config_sha256": "b4cc6ee01e9e49020400924c5addfa902346dcc11cf957c1b85652bd6f372da9",
+    "encoding": "T300",
+    "possession_features": "pre_action",
+    "context_length": 16,
+    "stride": 8,
+    "baselines": {
+      "B1a class prior": {
+        "fitted_on": "train",
+        "hyperparameters": "none"
+      },
+      "B1b zone prior": {
+        "alpha": 10.0,
+        "alpha_selected_in": "notebook 02 (validation)"
+      },
+      "B2 Markov": {
+        "alpha": 10.0,
+        "alpha_selected_in": "notebook 02 (validation)"
+      },
+      "B3 logistic regression": {
+        "C": 1.0,
+        "max_iter": 1000,
+        "fixed_in": "notebook 02 (before training)"
+      },
+      "B4 MLP": {
+        "learning_rate": 0.0009,
+        "learning_rate_selected_in": "notebook 04 (validation)",
+        "weight_decay": 0.01,
+        "weight_decay_rule": "notebook 04: B4 uses the weight decay selected for the Transformer",
+        "max_epochs": 30,
+        "seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ],
+        "n_previous": 3,
+        "hidden": 512
+      }
+    },
+    "test_policy": "baselines evaluated once on test after the validation record is written; selected model not re-evaluated",
+    "run_mode": "full",
+    "written_at": "2026-09-28T13:41:23.214315+00:00"
+  },
+  "selected_model_runs": [
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s100",
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s101",
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s102",
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s103",
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/runs/base/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.01_s104"
+  ],
+  "b4_runs": [
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/final_benchmark/runs/mlp_T300_pre_action_L0_H0_D128_F0_K16_g-all_lr0.0009_wd0.01_s100",
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/final_benchmark/runs/mlp_T300_pre_action_L0_H0_D128_F0_K16_g-all_lr0.0009_wd0.01_s101",
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/final_benchmark/runs/mlp_T300_pre_action_L0_H0_D128_F0_K16_g-all_lr0.0009_wd0.01_s102",
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/final_benchmark/runs/mlp_T300_pre_action_L0_H0_D128_F0_K16_g-all_lr0.0009_wd0.01_s103",
+    "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/final_benchmark/runs/mlp_T300_pre_action_L0_H0_D128_F0_K16_g-all_lr0.0009_wd0.01_s104"
+  ],
+  "b3_fitted_from_scratch_in_this_notebook": true,
+  "b3_iterations": 418,
+  "b3_converged": true,
+  "baseline_validation": [
+    {
+      "model": "B1a class prior",
+      "seeds": 1,
+      "val NLL": 1.9745686424938735,
+      "val NLL seed SD": 0.0,
+      "val accuracy": 0.3207799655897534,
+      "val macro-F1": 0.032382882230906546,
+      "val ECE": 0.01845230578062873
+    },
+    {
+      "model": "B1b zone prior",
+      "seeds": 1,
+      "val NLL": 1.7818488904095544,
+      "val NLL seed SD": 0.0,
+      "val accuracy": 0.34188197579518553,
+      "val macro-F1": 0.1352646812447886,
+      "val ECE": 0.014032202331081885
+    },
+    {
+      "model": "B2 Markov",
+      "seeds": 1,
+      "val NLL": 1.4108539287445656,
+      "val NLL seed SD": 0.0,
+      "val accuracy": 0.4536858667999941,
+      "val macro-F1": 0.358849312027246,
+      "val ECE": 0.011768577609142582
+    },
+    {
+      "model": "B3 logistic regression",
+      "seeds": 1,
+      "val NLL": 1.0507187712328105,
+      "val NLL seed SD": 0.0,
+      "val accuracy": 0.5796361925209182,
+      "val macro-F1": 0.507326485987472,
+      "val ECE": 0.01179262001827539
+    },
+    {
+      "model": "B4 MLP",
+      "seeds": 5,
+      "val NLL": 0.9482621312141418,
+      "val NLL seed SD": 0.0017616548546467406,
+      "val accuracy": 0.603799832360337,
+      "val macro-F1": 0.542734528163465,
+      "val ECE": NaN
+    }
+  ],
+  "gates": {
+    "baseline improvement (all of B1-B4)": true,
+    "no divergence": true,
+    "class coverage (PROVISIONAL)": true,
+    "size cap": true
+  },
+  "baseline_comparison": [
+    {
+      "baseline": "B1a class prior",
+      "selected - baseline NLL": -1.0712376194326638,
+      "CI": "[-1.0981, -1.0448]",
+      "better beyond noise": true
+    },
+    {
+      "baseline": "B1b zone prior",
+      "selected - baseline NLL": -0.8785178673483449,
+      "CI": "[-0.9000, -0.8562]",
+      "better beyond noise": true
+    },
+    {
+      "baseline": "B2 Markov",
+      "selected - baseline NLL": -0.5075229056833563,
+      "CI": "[-0.5210, -0.4926]",
+      "better beyond noise": true
+    },
+    {
+      "baseline": "B3 logistic regression",
+      "selected - baseline NLL": -0.14738774817160094,
+      "CI": "[-0.1542, -0.1400]",
+      "better beyond noise": true
+    },
+    {
+      "baseline": "B4 MLP",
+      "selected - baseline NLL": -0.044931117445230484,
+      "CI": "[-0.0479, -0.0418]",
+      "better beyond noise": true
+    }
+  ],
+  "coverage_failures": [],
+  "correctness_tests_passed": 14,
+  "written_before_test_unlock": true,
+  "run_mode": "full",
+  "written_at": "2026-09-28T13:48:35.268641+00:00"
+}

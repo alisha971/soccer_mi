@@ -1,0 +1,6 @@
+baseline,selected - baseline NLL,95% CI,seeds separated,beyond noise
+B1a class prior,-1.105397481926439,"[-1.1270, -1.0840]",True,True
+B1b zone prior,-0.9040074276466693,"[-0.9232, -0.8844]",True,True
+B2 Markov,-0.5183821707304574,"[-0.5362, -0.5002]",True,True
+B3 logistic regression,-0.1500785844825615,"[-0.1629, -0.1373]",True,True
+B4 MLP,-0.04107530415058136,"[-0.0438, -0.0381]",True,True
