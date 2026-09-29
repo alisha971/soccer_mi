@@ -1,0 +1,11 @@
+{
+  "configurations_analysed": 23,
+  "frontier_points": 6,
+  "seed_noise_reference_nats": 0.0011670040884182626,
+  "best_configuration": "L6-H2-K16-D128-F512",
+  "best_val_nll": 0.9019999504089355,
+  "smallest_configuration_within_seed_noise_of_best": "L4-H2-K16-D128-F512",
+  "frontier_steps_below_seed_noise": 2,
+  "saturation_point_supported": false,
+  "test_split_touched": false
+}

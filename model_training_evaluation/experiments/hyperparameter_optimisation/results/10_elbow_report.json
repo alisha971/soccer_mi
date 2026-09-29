@@ -1,0 +1,18 @@
+{
+  "enough_frontier_points": true,
+  "n_frontier_points": 6,
+  "seed_noise_reference": 0.0011670040884182626,
+  "single_line_slope_per_log_parameter": -0.005185287794686928,
+  "single_line_residual_sd": 0.0007395177229215237,
+  "two_segment_residual_sd": 0.0009986683980647102,
+  "slope_before_break": -0.0063803776474454605,
+  "slope_after_break": -0.0009793797900470495,
+  "slope_ratio": 6.514712384598978,
+  "breakpoint_architecture": "L4-H2-K16-D128-F512",
+  "breakpoint_parameters": 911119,
+  "residual_condition_met": true,
+  "slope_condition_met": false,
+  "slope_ratio_threshold": 10.0,
+  "slope_ratio_threshold_origin": "provisional convention adopted in notebook 10; no theoretical basis",
+  "saturation_point_supported": false
+}
