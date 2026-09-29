@@ -1,0 +1,10 @@
+{
+  "runs_recorded": 46,
+  "configurations": 23,
+  "any_diverged": false,
+  "sweep_gpu_hours": 1.8223664838737912,
+  "best_architecture_by_val_nll": "L6-H2-K16-D128-F512",
+  "best_val_nll": 0.9019999504089355,
+  "track_a_reference_val_nll": 0.9064347743988038,
+  "test_split_touched": false
+}

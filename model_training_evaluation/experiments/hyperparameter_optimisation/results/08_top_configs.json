@@ -1,0 +1,87 @@
+{
+  "shortlist_size": 5,
+  "shortlist_size_origin": "compute budget for notebook 09; provisional",
+  "screening_seeds": [
+    0,
+    1
+  ],
+  "stage_a_best": {
+    "n_layers": 6,
+    "context_length": 16
+  },
+  "stage_b_best_heads": 2,
+  "configurations": [
+    {
+      "architecture": "L6-H2-K16-D128-F512",
+      "n_layers": 6,
+      "n_heads": 2,
+      "context_length": 16,
+      "d_model": 128,
+      "d_ff": 512,
+      "parameters": 1307663,
+      "screening_val_nll": 0.9019999504089355,
+      "screening_val_nll_sd": 0.001983009222437564,
+      "is_track_a_reference": false
+    },
+    {
+      "architecture": "L8-H2-K16-D128-F512",
+      "n_layers": 8,
+      "n_heads": 2,
+      "context_length": 16,
+      "d_model": 128,
+      "d_ff": 512,
+      "parameters": 1704207,
+      "screening_val_nll": 0.9024162292480469,
+      "screening_val_nll_sd": 0.0013553583544133304,
+      "is_track_a_reference": false
+    },
+    {
+      "architecture": "L6-H1-K16-D128-F512",
+      "n_layers": 6,
+      "n_heads": 1,
+      "context_length": 16,
+      "d_model": 128,
+      "d_ff": 512,
+      "parameters": 1307663,
+      "screening_val_nll": 0.9026373028755188,
+      "screening_val_nll_sd": 6.0269993370578464e-05,
+      "is_track_a_reference": false
+    },
+    {
+      "architecture": "L4-H2-K16-D128-F512",
+      "n_layers": 4,
+      "n_heads": 2,
+      "context_length": 16,
+      "d_model": 128,
+      "d_ff": 512,
+      "parameters": 911119,
+      "screening_val_nll": 0.9026724994182587,
+      "screening_val_nll_sd": 0.001384144651946271,
+      "is_track_a_reference": false
+    },
+    {
+      "architecture": "L6-H8-K16-D128-F512",
+      "n_layers": 6,
+      "n_heads": 8,
+      "context_length": 16,
+      "d_model": 128,
+      "d_ff": 512,
+      "parameters": 1307663,
+      "screening_val_nll": 0.9029861390590668,
+      "screening_val_nll_sd": 0.000974055815935272,
+      "is_track_a_reference": false
+    },
+    {
+      "architecture": "L2-H2-K16-D128-F512",
+      "n_layers": 2,
+      "n_heads": 2,
+      "context_length": 16,
+      "d_model": 128,
+      "d_ff": 512,
+      "parameters": 514575,
+      "screening_val_nll": 0.9064347743988038,
+      "screening_val_nll_sd": 0.0008227907766296733,
+      "is_track_a_reference": true
+    }
+  ]
+}
