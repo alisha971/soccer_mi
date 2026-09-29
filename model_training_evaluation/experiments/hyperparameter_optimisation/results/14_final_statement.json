@@ -1,0 +1,8 @@
+{
+  "statement": [
+    "The experiment trained 119 runs covering 60 configurations, using 4.6 GPU-hours.",
+    "The best configuration found, L6-H2-K16-D128-F512, reached a validation NLL of 0.9001 against 0.9064 for the Track A architecture, a difference of 0.0063 nats. The reference scale for that difference is the median seed standard deviation of 0.0015 nats.",
+    "On the locked test split the difference between the two models was -0.0010 nats (95% interval [-0.0027, +0.0006]), which does not satisfy the Track A decision rule. The test data do not establish that the optimised model predicts held-out events better.",
+    "The frontier does not support a distinct saturation point under the conditions stated in notebook 10. The relationship between size and validation NLL is better described as a steady decline over the range tested than as a curve with a knee, so the experiment provides no evidence for a particular point at which additional capacity stops paying."
+  ]
+}

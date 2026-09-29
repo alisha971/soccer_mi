@@ -1,0 +1,48 @@
+{
+  "question": "How much predictive performance can be obtained from the Track A model family before additional capacity or training compute produces diminishing returns?",
+  "runs_performed": 119,
+  "configurations_tested": 60,
+  "gpu_hours": 4.609618648886681,
+  "seed_noise_reference_nats": 0.0014612384329675365,
+  "best_configuration_by_val_nll": "L6-H2-K16-D128-F512",
+  "best_val_nll": 0.9001492857933044,
+  "track_a_val_nll_in_this_experiment": 0.9064347743988038,
+  "validation_gain_over_track_a_nats": 0.006285488605499379,
+  "selected_configuration": "4L_2H_K16",
+  "selected_architecture": "L4-H2-K16-D128-F512",
+  "selected_parameters": 911119,
+  "selected_training": {
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "max_epochs": 30,
+    "batch_size": 256,
+    "warmup_fraction": 0.05,
+    "min_lr_ratio": 0.1,
+    "grad_clip": 1.0,
+    "patience": 5
+  },
+  "roles": {
+    "frozen_track_a_reference": "Track A reference",
+    "best_predictive_configuration": "8L_2H_K16",
+    "within_noise_of_best": [
+      "6L_1H_K16",
+      "6L_2H_K16",
+      "4L_2H_K16"
+    ],
+    "beaten_beyond_noise_by_best": [
+      "6L_8H_K16",
+      "2L_2H_K16"
+    ],
+    "smallest_adequate_configuration_frozen": "4L_2H_K16",
+    "replaces_track_a": false
+  },
+  "replaces_track_a_on_validation": false,
+  "test_nll_difference": -0.0010462162317708135,
+  "test_nll_ci": [
+    -0.0026757738903439706,
+    0.000591473072087664
+  ],
+  "better_beyond_noise_on_test": false,
+  "saturation_point_supported": false,
+  "saturation_point": null
+}
