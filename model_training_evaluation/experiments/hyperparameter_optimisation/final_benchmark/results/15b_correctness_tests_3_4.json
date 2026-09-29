@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "test": "3 attention vs reference",
+      "original code at final config": "FAIL",
+      "original detail": "ERROR: RuntimeError('The size of tensor a (16) must match the size of tensor b (32) at non-singleton dimension 3')",
+      "length read from model": "PASS",
+      "detail": "max |ours - reference| = 1.12e-08 (T = 16)"
+    },
+    {
+      "test": "4 attention probabilities",
+      "original code at final config": "FAIL",
+      "original detail": "ERROR: IndexError('The shape of the mask [32, 32] at index 0 does not match the shape of the indexed tensor [8, 2, 16, 16] at index 2')",
+      "length read from model": "PASS",
+      "detail": "max |row sum - 1| = 2.38e-07; max future weight = 0.0 (T = 16)"
+    }
+  ],
+  "all_16_pass_at_final_config": true,
+  "test_module_sha256": "a540e66d16b25e1434b65a5b9ea891c55450e36d103c8f94f31e105f03235092",
+  "tested_parameters": 911119,
+  "device": "cpu",
+  "torch": "2.11.0+cpu",
+  "written_at": "2026-09-28T16:49:29.138292+00:00"
+}
