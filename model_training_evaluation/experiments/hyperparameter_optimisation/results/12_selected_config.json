@@ -1,0 +1,139 @@
+{
+  "experiment": "hyperparameter_optimisation",
+  "encoding": "T300",
+  "possession_features": "pre_action",
+  "context_length": 16,
+  "stride": 8,
+  "model": {
+    "n_layers": 4,
+    "n_heads": 2,
+    "d_model": 128,
+    "d_ff": 512
+  },
+  "training": {
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "max_epochs": 30,
+    "batch_size": 256,
+    "warmup_fraction": 0.05,
+    "min_lr_ratio": 0.1,
+    "grad_clip": 1.0,
+    "patience": 5
+  },
+  "seed_policy": {
+    "screening_seeds": [
+      0,
+      1
+    ],
+    "fine_search_seeds": [
+      0,
+      1
+    ],
+    "stability_seeds": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "final_seeds": [
+      100,
+      101,
+      102,
+      103,
+      104
+    ],
+    "primary_checkpoint": "median validation NLL among the final seeds, as in Track A notebook 06"
+  },
+  "parameter_counts": {
+    "embeddings (tables + projections + positions)": 115840,
+    "transformer blocks": 793088,
+    "final LayerNorm": 256,
+    "unembedding": 1935,
+    "total": 911119,
+    "fixed zero rows (never trained)": 512,
+    "trainable": 910607
+  },
+  "validation_metrics_over_stability_seeds": {
+    "n_seeds": 5,
+    "nll_mean": 0.9035958170890808,
+    "nll_sd": 0.0017176062406221,
+    "accuracy_mean": 0.6216255165213299,
+    "macro_f1_mean": 0.5589759944269674,
+    "top3_mean": 0.948166992632678,
+    "top5_mean": 0.9943826007676132,
+    "ece_mean": 0.0196240381886131
+  },
+  "selection": {
+    "primary_metric": "mean validation NLL over the stability seeds",
+    "candidate_set": "benchmark candidates: notebook 08 shortlist trained with the notebook 09 setting",
+    "best_candidate": "8L_2H_K16",
+    "selected_candidate": "4L_2H_K16",
+    "rule": "smallest candidate the best one does not beat beyond noise; ordered by parameters, then head-position units, then mean validation NLL; 'beyond noise' = 95% match-level bootstrap interval below zero and complete seed separation (Track A notebook 04)",
+    "replaces_track_a": false,
+    "replacement_statement": "The selected configuration does not beat the Track A reference beyond noise (-0.0033 nats, 95% interval [-0.0048, -0.0020], seeds separated: False). The Track A model is retained. The selected configuration is reported as the best configuration found in this experiment, not as a replacement.",
+    "replacement_comparison": {
+      "n_events": 68003,
+      "nll_a_mean": 0.9036005139350891,
+      "nll_a_seed_sd": 0.0017180177383124828,
+      "nll_b_mean": 0.9069368243217468,
+      "nll_b_seed_sd": 0.0018102063331753016,
+      "difference_a_minus_b": -0.0033352698665112257,
+      "difference_ci_low": -0.004789083483955497,
+      "difference_ci_high": -0.0020112312252673435,
+      "seeds_completely_separated": false,
+      "a_better_beyond_noise": false
+    },
+    "saturation_point_supported": false
+  },
+  "roles": {
+    "frozen_track_a_reference": "Track A reference",
+    "best_predictive_configuration": "8L_2H_K16",
+    "within_noise_of_best": [
+      "6L_1H_K16",
+      "6L_2H_K16",
+      "4L_2H_K16"
+    ],
+    "beaten_beyond_noise_by_best": [
+      "6L_8H_K16",
+      "2L_2H_K16"
+    ],
+    "smallest_adequate_configuration_frozen": "4L_2H_K16",
+    "replaces_track_a": false
+  },
+  "dataset_sha256": "2fe8019fb59f8060f77ae0b81eba3df2077a3fd50c02f601ed7f401b3855fc5b",
+  "track_a_frozen_config": {
+    "encoding": "T300",
+    "possession_features": "pre_action",
+    "context_length": 16,
+    "stride": 8,
+    "model": {
+      "n_layers": 2,
+      "n_heads": 2,
+      "d_model": 128,
+      "d_ff": 512
+    },
+    "training": {
+      "learning_rate": 0.0003,
+      "weight_decay": 0.1,
+      "max_epochs": 30,
+      "batch_size": 256,
+      "warmup_fraction": 0.05,
+      "min_lr_ratio": 0.1,
+      "grad_clip": 1.0,
+      "patience": 5
+    },
+    "decisions": {
+      "stage1_threshold": "T300",
+      "stage2_depth": "2 layers",
+      "stage3_heads": "2 heads x 64",
+      "stage4_context": "K=16"
+    },
+    "selection_rule": "smallest configuration within noise of the best validation NLL (notebook 04, Section 2.5); size cap <= 4 layers, <= 8 heads",
+    "dataset_sha256": "2fe8019fb59f8060f77ae0b81eba3df2077a3fd50c02f601ed7f401b3855fc5b",
+    "run_mode": "full",
+    "frozen_at": "2026-09-19T14:24:51.319122+00:00"
+  },
+  "run_mode": "full",
+  "frozen_at": "2026-09-28T09:23:26.121934+00:00"
+}

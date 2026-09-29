@@ -1,0 +1,16 @@
+{
+  "selected_candidate": "4L_2H_K16",
+  "selected_architecture": "L4-H2-K16-D128-F512",
+  "parameters": 911119,
+  "trainable_parameters": 910607,
+  "best_candidate_by_mean_nll": "8L_2H_K16",
+  "selected_equals_best": false,
+  "within_noise_of_best": [
+    "6L_1H_K16",
+    "6L_2H_K16",
+    "4L_2H_K16"
+  ],
+  "replaces_track_a": false,
+  "frozen_config_written": "/content/drive/MyDrive/soccer_mi/track_a/experiments/hyperparameter_optimisation/config/frozen_config.json",
+  "test_split_touched": false
+}
