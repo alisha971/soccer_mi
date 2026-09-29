@@ -1,0 +1,26 @@
+{
+  "selected_training": {
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "batch_size": 256,
+    "warmup_fraction": 0.05,
+    "source": "notebook 09 stage 3, lowest mean validation NLL over seeds [0, 1]",
+    "tuned_on": [
+      "L6-H2-K16-D128-F512",
+      "L8-H2-K16-D128-F512"
+    ]
+  },
+  "hyperparameter_comparison_vs_track_a": {
+    "n_events": 68003,
+    "nll_a_mean": 0.9013789892196655,
+    "nll_a_seed_sd": 0.0015697593335062265,
+    "nll_b_mean": 0.9020106792449951,
+    "nll_b_seed_sd": 0.0019823769107460976,
+    "difference_a_minus_b": -0.000628442969173193,
+    "difference_ci_low": -0.0013299887157004284,
+    "difference_ci_high": 0.0001060391268750855,
+    "seeds_completely_separated": false,
+    "a_better_beyond_noise": false
+  },
+  "test_split_touched": false
+}

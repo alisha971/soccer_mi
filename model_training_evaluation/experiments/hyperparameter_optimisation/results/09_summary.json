@@ -1,0 +1,15 @@
+{
+  "runs_in_this_notebook": 36,
+  "diverged_runs": 0,
+  "gpu_hours": 1.5295613847838507,
+  "best_val_nll_in_search": 0.9001492857933044,
+  "best_setting": {
+    "architecture": "L6-H2-K16-D128-F512",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "batch_size": 128,
+    "warmup_fraction": 0.05,
+    "seed": 0
+  },
+  "test_split_touched": false
+}
