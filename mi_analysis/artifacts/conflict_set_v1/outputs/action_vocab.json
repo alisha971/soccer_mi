@@ -1,0 +1,17 @@
+{
+ "0": "PASS_SHORT",
+ "1": "PASS_LONG",
+ "2": "CROSS",
+ "3": "CARRY",
+ "4": "DRIBBLE",
+ "5": "SHOT",
+ "6": "CLEARANCE",
+ "7": "RECOVERY",
+ "8": "INTERCEPTION",
+ "9": "DUEL",
+ "10": "FOUL_WON",
+ "11": "FOUL_COMMITTED",
+ "12": "GK_ACTION",
+ "13": "LOSS",
+ "14": "OTHER"
+}
