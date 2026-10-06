@@ -1,0 +1,5 @@
+{
+  "enabled": false,
+  "decision": "User explicitly selected: Keep adjacency edits disabled for this rerun.",
+  "reason": "Source-confirmed zone/ordinal category codebook absent; no guessed adjacency mappings."
+}

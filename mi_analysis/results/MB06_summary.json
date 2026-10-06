@@ -1,0 +1,1984 @@
+{
+  "candidates": {
+    "rule": "discovery half; denoising change in Delta aligned by the sign of each event's clean-minus-corrupted difference; match-bootstrap p-value; Benjamini-Hochberg q = 0.05 within each contrast x direction; a site-position passing for the primary identity contrast (player removal) or the context contrast is a candidate",
+    "q": 0.05,
+    "candidates": [
+      {
+        "contrast": "context",
+        "site": "embedding",
+        "offset": -9,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 0.00772866904674193,
+        "pooled_recovery": 0.001117070682218159
+      },
+      {
+        "contrast": "context",
+        "site": "embedding",
+        "offset": 0,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 6.718747008794418,
+        "pooled_recovery": 0.9711006202198696
+      },
+      {
+        "contrast": "context",
+        "site": "L0 head 0",
+        "offset": -13,
+        "q": 0.0335832083958021,
+        "mean_aligned_change": 0.001210283770347152,
+        "pooled_recovery": 0.00017492953946439093
+      },
+      {
+        "contrast": "context",
+        "site": "L0 mlp_out",
+        "offset": -8,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 0.0072594756011957,
+        "pooled_recovery": 0.0010492553521608365
+      },
+      {
+        "contrast": "context",
+        "site": "L0 mlp_out",
+        "offset": -7,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 0.009389848357812184,
+        "pooled_recovery": 0.0013571708463060758
+      },
+      {
+        "contrast": "context",
+        "site": "L0 mlp_out",
+        "offset": 0,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 4.457502829957342,
+        "pooled_recovery": 0.6442694980384621
+      },
+      {
+        "contrast": "context",
+        "site": "L0 resid_post",
+        "offset": 0,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 6.864261222460125,
+        "pooled_recovery": 0.9921326583300425
+      },
+      {
+        "contrast": "context",
+        "site": "L1 attn_out",
+        "offset": -15,
+        "q": 0.04579528417609377,
+        "mean_aligned_change": 0.0003900259941865428,
+        "pooled_recovery": 5.6372785634085804e-05
+      },
+      {
+        "contrast": "context",
+        "site": "L1 attn_out",
+        "offset": -3,
+        "q": 0.0335832083958021,
+        "mean_aligned_change": -0.004031061214783046,
+        "pooled_recovery": -0.0005826333452794332
+      },
+      {
+        "contrast": "context",
+        "site": "L1 attn_out",
+        "offset": -2,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": -0.002586139826321916,
+        "pooled_recovery": -0.0003737902299385958
+      },
+      {
+        "contrast": "context",
+        "site": "L1 attn_out",
+        "offset": -1,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": -0.005267254550998058,
+        "pooled_recovery": -0.0007613077489946989
+      },
+      {
+        "contrast": "context",
+        "site": "L1 attn_out",
+        "offset": 0,
+        "q": 0.0335832083958021,
+        "mean_aligned_change": 0.05952661995096301,
+        "pooled_recovery": 0.00860373779192873
+      },
+      {
+        "contrast": "context",
+        "site": "L1 head 0",
+        "offset": -3,
+        "q": 0.0335832083958021,
+        "mean_aligned_change": -0.002646381305484638,
+        "pooled_recovery": -0.0003824972906005479
+      },
+      {
+        "contrast": "context",
+        "site": "L1 head 1",
+        "offset": -13,
+        "q": 0.04579528417609377,
+        "mean_aligned_change": -0.0013381456327202685,
+        "pooled_recovery": -0.00019341017784688612
+      },
+      {
+        "contrast": "context",
+        "site": "L1 head 1",
+        "offset": -1,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": -0.004482129723741941,
+        "pooled_recovery": -0.0006478289700348046
+      },
+      {
+        "contrast": "context",
+        "site": "L1 mlp_out",
+        "offset": 0,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 2.8767613656389264,
+        "pooled_recovery": 0.415795496204849
+      },
+      {
+        "contrast": "context",
+        "site": "L1 resid_post",
+        "offset": 0,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 6.878591141526939,
+        "pooled_recovery": 0.9942038470911714
+      },
+      {
+        "contrast": "context",
+        "site": "L2 mlp_out",
+        "offset": 0,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 2.9173856760072945,
+        "pooled_recovery": 0.42166717033442835
+      },
+      {
+        "contrast": "context",
+        "site": "L2 resid_post",
+        "offset": 0,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 6.896516440408626,
+        "pooled_recovery": 0.9967946975635659
+      },
+      {
+        "contrast": "context",
+        "site": "L3 head 1",
+        "offset": 0,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 0.09297711354307524,
+        "pooled_recovery": 0.013438537350751484
+      },
+      {
+        "contrast": "context",
+        "site": "L3 mlp_out",
+        "offset": 0,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 4.983285676485428,
+        "pooled_recovery": 0.7202640320931103
+      },
+      {
+        "contrast": "context",
+        "site": "L3 resid_post",
+        "offset": 0,
+        "q": 0.020989505247376312,
+        "mean_aligned_change": 6.918692943758194,
+        "pooled_recovery": 1.0
+      },
+      {
+        "contrast": "identity removal",
+        "site": "embedding",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": 0.4900738906958466,
+        "pooled_recovery": 1.0
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L0 attn_out",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": 0.024609600859904976,
+        "pooled_recovery": 0.050216102769650245
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L0 head 0",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": 0.008973109624022809,
+        "pooled_recovery": 0.01830970756528584
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L0 head 1",
+        "offset": 0,
+        "q": 0.0029985007496251873,
+        "mean_aligned_change": 0.01561981380721669,
+        "pooled_recovery": 0.031872364767358684
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L0 mlp_out",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": 0.3069044446503675,
+        "pooled_recovery": 0.6262411658262382
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L0 resid_post",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": 0.4900738906958466,
+        "pooled_recovery": 1.0
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L1 mlp_out",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": 0.2627107070306692,
+        "pooled_recovery": 0.5360634631191048
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L1 resid_post",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": 0.4900738906958466,
+        "pooled_recovery": 1.0
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L2 attn_out",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": -0.007955909805533326,
+        "pooled_recovery": -0.016234102564078413
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L2 head 0",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": -0.004646018871064049,
+        "pooled_recovery": -0.00948024157024006
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L2 mlp_out",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": 0.20951016542842849,
+        "pooled_recovery": 0.427507299217571
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L2 resid_post",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": 0.4900738906958466,
+        "pooled_recovery": 1.0
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L3 mlp_out",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": 0.2841418073378473,
+        "pooled_recovery": 0.5797938081018756
+      },
+      {
+        "contrast": "identity removal",
+        "site": "L3 resid_post",
+        "offset": 0,
+        "q": 0.0016145773267212547,
+        "mean_aligned_change": 0.4900738906958466,
+        "pooled_recovery": 1.0
+      }
+    ],
+    "sensitivity": {
+      "0.01": [
+        {
+          "contrast": "identity removal",
+          "site": "embedding",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L0 attn_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.024609600859904976,
+          "pooled_recovery": 0.050216102769650245
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L0 head 0",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.008973109624022809,
+          "pooled_recovery": 0.01830970756528584
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L0 head 1",
+          "offset": 0,
+          "q": 0.0029985007496251873,
+          "mean_aligned_change": 0.01561981380721669,
+          "pooled_recovery": 0.031872364767358684
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L0 mlp_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.3069044446503675,
+          "pooled_recovery": 0.6262411658262382
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L0 resid_post",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L1 mlp_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.2627107070306692,
+          "pooled_recovery": 0.5360634631191048
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L1 resid_post",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L2 attn_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": -0.007955909805533326,
+          "pooled_recovery": -0.016234102564078413
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L2 head 0",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": -0.004646018871064049,
+          "pooled_recovery": -0.00948024157024006
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L2 mlp_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.20951016542842849,
+          "pooled_recovery": 0.427507299217571
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L2 resid_post",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L3 mlp_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.2841418073378473,
+          "pooled_recovery": 0.5797938081018756
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L3 resid_post",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        }
+      ],
+      "0.1": [
+        {
+          "contrast": "context",
+          "site": "embedding",
+          "offset": -9,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 0.00772866904674193,
+          "pooled_recovery": 0.001117070682218159
+        },
+        {
+          "contrast": "context",
+          "site": "embedding",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 6.718747008794418,
+          "pooled_recovery": 0.9711006202198696
+        },
+        {
+          "contrast": "context",
+          "site": "L0 head 0",
+          "offset": -15,
+          "q": 0.0559720139930035,
+          "mean_aligned_change": -0.0004936309939455947,
+          "pooled_recovery": -7.134743483462891e-05
+        },
+        {
+          "contrast": "context",
+          "site": "L0 head 0",
+          "offset": -13,
+          "q": 0.0335832083958021,
+          "mean_aligned_change": 0.001210283770347152,
+          "pooled_recovery": 0.00017492953946439093
+        },
+        {
+          "contrast": "context",
+          "site": "L0 head 0",
+          "offset": -12,
+          "q": 0.09403298350824589,
+          "mean_aligned_change": 0.001341255286576524,
+          "pooled_recovery": 0.00019385963468527073
+        },
+        {
+          "contrast": "context",
+          "site": "L0 mlp_out",
+          "offset": -8,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 0.0072594756011957,
+          "pooled_recovery": 0.0010492553521608365
+        },
+        {
+          "contrast": "context",
+          "site": "L0 mlp_out",
+          "offset": -7,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 0.009389848357812184,
+          "pooled_recovery": 0.0013571708463060758
+        },
+        {
+          "contrast": "context",
+          "site": "L0 mlp_out",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 4.457502829957342,
+          "pooled_recovery": 0.6442694980384621
+        },
+        {
+          "contrast": "context",
+          "site": "L0 resid_post",
+          "offset": -8,
+          "q": 0.095952023988006,
+          "mean_aligned_change": 0.010331583333614435,
+          "pooled_recovery": 0.001493285425093945
+        },
+        {
+          "contrast": "context",
+          "site": "L0 resid_post",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 6.864261222460125,
+          "pooled_recovery": 0.9921326583300425
+        },
+        {
+          "contrast": "context",
+          "site": "L1 attn_out",
+          "offset": -15,
+          "q": 0.04579528417609377,
+          "mean_aligned_change": 0.0003900259941865428,
+          "pooled_recovery": 5.6372785634085804e-05
+        },
+        {
+          "contrast": "context",
+          "site": "L1 attn_out",
+          "offset": -5,
+          "q": 0.095952023988006,
+          "mean_aligned_change": -0.0019155989172431154,
+          "pooled_recovery": -0.00027687294880911033
+        },
+        {
+          "contrast": "context",
+          "site": "L1 attn_out",
+          "offset": -3,
+          "q": 0.0335832083958021,
+          "mean_aligned_change": -0.004031061214783046,
+          "pooled_recovery": -0.0005826333452794332
+        },
+        {
+          "contrast": "context",
+          "site": "L1 attn_out",
+          "offset": -2,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": -0.002586139826321916,
+          "pooled_recovery": -0.0003737902299385958
+        },
+        {
+          "contrast": "context",
+          "site": "L1 attn_out",
+          "offset": -1,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": -0.005267254550998058,
+          "pooled_recovery": -0.0007613077489946989
+        },
+        {
+          "contrast": "context",
+          "site": "L1 attn_out",
+          "offset": 0,
+          "q": 0.0335832083958021,
+          "mean_aligned_change": 0.05952661995096301,
+          "pooled_recovery": 0.00860373779192873
+        },
+        {
+          "contrast": "context",
+          "site": "L1 head 0",
+          "offset": -3,
+          "q": 0.0335832083958021,
+          "mean_aligned_change": -0.002646381305484638,
+          "pooled_recovery": -0.0003824972906005479
+        },
+        {
+          "contrast": "context",
+          "site": "L1 head 1",
+          "offset": -13,
+          "q": 0.04579528417609377,
+          "mean_aligned_change": -0.0013381456327202685,
+          "pooled_recovery": -0.00019341017784688612
+        },
+        {
+          "contrast": "context",
+          "site": "L1 head 1",
+          "offset": -1,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": -0.004482129723741941,
+          "pooled_recovery": -0.0006478289700348046
+        },
+        {
+          "contrast": "context",
+          "site": "L1 mlp_out",
+          "offset": -7,
+          "q": 0.0559720139930035,
+          "mean_aligned_change": 0.006297859834289237,
+          "pooled_recovery": 0.0009102672839341638
+        },
+        {
+          "contrast": "context",
+          "site": "L1 mlp_out",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 2.8767613656389264,
+          "pooled_recovery": 0.415795496204849
+        },
+        {
+          "contrast": "context",
+          "site": "L1 resid_post",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 6.878591141526939,
+          "pooled_recovery": 0.9942038470911714
+        },
+        {
+          "contrast": "context",
+          "site": "L2 head 1",
+          "offset": -9,
+          "q": 0.095952023988006,
+          "mean_aligned_change": 0.0008559068465448879,
+          "pooled_recovery": 0.00012370932681975104
+        },
+        {
+          "contrast": "context",
+          "site": "L2 mlp_out",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 2.9173856760072945,
+          "pooled_recovery": 0.42166717033442835
+        },
+        {
+          "contrast": "context",
+          "site": "L2 resid_post",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 6.896516440408626,
+          "pooled_recovery": 0.9967946975635659
+        },
+        {
+          "contrast": "context",
+          "site": "L3 head 1",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 0.09297711354307524,
+          "pooled_recovery": 0.013438537350751484
+        },
+        {
+          "contrast": "context",
+          "site": "L3 mlp_out",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 4.983285676485428,
+          "pooled_recovery": 0.7202640320931103
+        },
+        {
+          "contrast": "context",
+          "site": "L3 resid_post",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 6.918692943758194,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "embedding",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L0 attn_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.024609600859904976,
+          "pooled_recovery": 0.050216102769650245
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L0 head 0",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.008973109624022809,
+          "pooled_recovery": 0.01830970756528584
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L0 head 1",
+          "offset": 0,
+          "q": 0.0029985007496251873,
+          "mean_aligned_change": 0.01561981380721669,
+          "pooled_recovery": 0.031872364767358684
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L0 mlp_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.3069044446503675,
+          "pooled_recovery": 0.6262411658262382
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L0 resid_post",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L1 mlp_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.2627107070306692,
+          "pooled_recovery": 0.5360634631191048
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L1 resid_post",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L2 attn_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": -0.007955909805533326,
+          "pooled_recovery": -0.016234102564078413
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L2 head 0",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": -0.004646018871064049,
+          "pooled_recovery": -0.00948024157024006
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L2 mlp_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.20951016542842849,
+          "pooled_recovery": 0.427507299217571
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L2 resid_post",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L3 mlp_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.2841418073378473,
+          "pooled_recovery": 0.5797938081018756
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L3 resid_post",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        }
+      ],
+      "q 0.05 and pooled recovery >= 0.10 (provisional)": [
+        {
+          "contrast": "context",
+          "site": "embedding",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 6.718747008794418,
+          "pooled_recovery": 0.9711006202198696
+        },
+        {
+          "contrast": "context",
+          "site": "L0 mlp_out",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 4.457502829957342,
+          "pooled_recovery": 0.6442694980384621
+        },
+        {
+          "contrast": "context",
+          "site": "L0 resid_post",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 6.864261222460125,
+          "pooled_recovery": 0.9921326583300425
+        },
+        {
+          "contrast": "context",
+          "site": "L1 mlp_out",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 2.8767613656389264,
+          "pooled_recovery": 0.415795496204849
+        },
+        {
+          "contrast": "context",
+          "site": "L1 resid_post",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 6.878591141526939,
+          "pooled_recovery": 0.9942038470911714
+        },
+        {
+          "contrast": "context",
+          "site": "L2 mlp_out",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 2.9173856760072945,
+          "pooled_recovery": 0.42166717033442835
+        },
+        {
+          "contrast": "context",
+          "site": "L2 resid_post",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 6.896516440408626,
+          "pooled_recovery": 0.9967946975635659
+        },
+        {
+          "contrast": "context",
+          "site": "L3 mlp_out",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 4.983285676485428,
+          "pooled_recovery": 0.7202640320931103
+        },
+        {
+          "contrast": "context",
+          "site": "L3 resid_post",
+          "offset": 0,
+          "q": 0.020989505247376312,
+          "mean_aligned_change": 6.918692943758194,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "embedding",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L0 mlp_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.3069044446503675,
+          "pooled_recovery": 0.6262411658262382
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L0 resid_post",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L1 mlp_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.2627107070306692,
+          "pooled_recovery": 0.5360634631191048
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L1 resid_post",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L2 mlp_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.20951016542842849,
+          "pooled_recovery": 0.427507299217571
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L2 resid_post",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L3 mlp_out",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.2841418073378473,
+          "pooled_recovery": 0.5797938081018756
+        },
+        {
+          "contrast": "identity removal",
+          "site": "L3 resid_post",
+          "offset": 0,
+          "q": 0.0016145773267212547,
+          "mean_aligned_change": 0.4900738906958466,
+          "pooled_recovery": 1.0
+        }
+      ]
+    },
+    "discovery_matches": [
+      18236,
+      68337,
+      69308,
+      266299,
+      2275080,
+      3754126,
+      3788765,
+      3825635,
+      3825886,
+      3893820,
+      3895158,
+      3895202,
+      3900511,
+      3911634,
+      3912500,
+      3913182,
+      3922237,
+      3929018
+    ],
+    "written_at": "2026-10-05T18:19:11.962720+00:00"
+  },
+  "estimates": [
+    {
+      "contrast": "context",
+      "site": "embedding",
+      "offset": -9,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": -0.0028105209366812486,
+      "R CI low": -0.004648484875269728,
+      "R CI high": -0.00013420914693844282,
+      "mean aligned change": -0.01830089821819998,
+      "CI low": -0.03008349959337871,
+      "CI high": -0.0008650634695377872
+    },
+    {
+      "contrast": "context",
+      "site": "embedding",
+      "offset": -9,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.0006553849488815508,
+      "R CI low": -0.00023782760475821478,
+      "R CI high": 0.001274400597210405,
+      "mean aligned change": 0.004267583666316503,
+      "CI low": -0.001582766990716497,
+      "CI high": 0.008444832765157458
+    },
+    {
+      "contrast": "context",
+      "site": "embedding",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.9795623616753848,
+      "R CI low": 0.9644783118854527,
+      "R CI high": 0.9941181628599799,
+      "mean aligned change": 6.378486936507017,
+      "CI low": 5.994478890624395,
+      "CI high": 6.835442590654027
+    },
+    {
+      "contrast": "context",
+      "site": "embedding",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 1.0037716583302823,
+      "R CI low": 0.9850805129478474,
+      "R CI high": 1.0202551403017854,
+      "mean aligned change": 6.536127418110636,
+      "CI low": 6.13775293221408,
+      "CI high": 6.970929153744497
+    },
+    {
+      "contrast": "context",
+      "site": "L0 head 0",
+      "offset": -13,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": -8.836205819717426e-05,
+      "R CI low": -0.000307446090300708,
+      "R CI high": 0.00012877395499656213,
+      "mean aligned change": -0.0005753755513120914,
+      "CI low": -0.002033371597589391,
+      "CI high": 0.000835390305465136
+    },
+    {
+      "contrast": "context",
+      "site": "L0 head 0",
+      "offset": -13,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.0001127950874927036,
+      "R CI low": -0.00014871429527971394,
+      "R CI high": 0.00039571776371379557,
+      "mean aligned change": 0.0007344728832208818,
+      "CI low": -0.0009714500098070021,
+      "CI high": 0.002546767490049634
+    },
+    {
+      "contrast": "context",
+      "site": "L0 mlp_out",
+      "offset": -8,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.0006967535521964752,
+      "R CI low": -0.0006147519159038791,
+      "R CI high": 0.0021362511579398986,
+      "mean aligned change": 0.004536958140213683,
+      "CI low": -0.0039749625575240385,
+      "CI high": 0.013724026281967491
+    },
+    {
+      "contrast": "context",
+      "site": "L0 mlp_out",
+      "offset": -8,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.000728117111483272,
+      "R CI low": -0.0011082139257697036,
+      "R CI high": 0.0019649571570762,
+      "mean aligned change": 0.004741184089494788,
+      "CI low": -0.007285594149138856,
+      "CI high": 0.012627211863900296
+    },
+    {
+      "contrast": "context",
+      "site": "L0 mlp_out",
+      "offset": -7,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 7.790929187600095e-05,
+      "R CI low": -0.0007756919608388554,
+      "R CI high": 0.0011548893183850831,
+      "mean aligned change": 0.0005073116525359776,
+      "CI low": -0.0051195113627978085,
+      "CI high": 0.007426188782567496
+    },
+    {
+      "contrast": "context",
+      "site": "L0 mlp_out",
+      "offset": -7,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": -0.0005203712681336836,
+      "R CI low": -0.0021449906874448656,
+      "R CI high": 0.0010041226151047869,
+      "mean aligned change": -0.0033884329020639,
+      "CI low": -0.014303484980707966,
+      "CI high": 0.006454391873289599
+    },
+    {
+      "contrast": "context",
+      "site": "L0 mlp_out",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.6237601235915127,
+      "R CI low": 0.5946643501432005,
+      "R CI high": 0.6561306578674149,
+      "mean aligned change": 4.061656465687013,
+      "CI low": 3.714863021571102,
+      "CI high": 4.460512361194919
+    },
+    {
+      "contrast": "context",
+      "site": "L0 mlp_out",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.7761206714985515,
+      "R CI low": 0.6899279156576702,
+      "R CI high": 0.8359541474021266,
+      "mean aligned change": 5.053762535179044,
+      "CI low": 4.39259436420186,
+      "CI high": 5.637605318824137
+    },
+    {
+      "contrast": "context",
+      "site": "L0 resid_post",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.9894619228114485,
+      "R CI low": 0.9747509713363975,
+      "R CI high": 1.0058427119100035,
+      "mean aligned change": 6.442948602097697,
+      "CI low": 6.067945242312378,
+      "CI high": 6.8902432856810325
+    },
+    {
+      "contrast": "context",
+      "site": "L0 resid_post",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.9932597407293864,
+      "R CI low": 0.9774558610665499,
+      "R CI high": 1.0082795440353216,
+      "mean aligned change": 6.467678351753826,
+      "CI low": 6.076876814963141,
+      "CI high": 6.90790795104242
+    },
+    {
+      "contrast": "context",
+      "site": "L1 attn_out",
+      "offset": -15,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": -0.00010451501421069567,
+      "R CI low": -0.00019973971261169645,
+      "R CI high": -1.7967342724273714e-05,
+      "mean aligned change": -0.0006805566229306457,
+      "CI low": -0.0013189337345829335,
+      "CI high": -0.00011150601974636313
+    },
+    {
+      "contrast": "context",
+      "site": "L1 attn_out",
+      "offset": -15,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 5.9444213975012e-05,
+      "R CI low": -5.090063347249335e-05,
+      "R CI high": 0.00021636795095127914,
+      "mean aligned change": 0.00038707504200349456,
+      "CI low": -0.00033125636786595654,
+      "CI high": 0.0013642030181839034
+    },
+    {
+      "contrast": "context",
+      "site": "L1 attn_out",
+      "offset": -3,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": -0.0006228307958832257,
+      "R CI low": -0.0010508870527973974,
+      "R CI high": -0.0002622265074477829,
+      "mean aligned change": -0.004055605085112422,
+      "CI low": -0.006564383692256219,
+      "CI high": -0.0017402594227257854
+    },
+    {
+      "contrast": "context",
+      "site": "L1 attn_out",
+      "offset": -3,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.0004742972948328274,
+      "R CI low": 5.365794881718336e-06,
+      "R CI high": 0.0009656225294914768,
+      "mean aligned change": 0.003088419091498694,
+      "CI low": 3.509566817963687e-05,
+      "CI high": 0.006268668331492007
+    },
+    {
+      "contrast": "context",
+      "site": "L1 attn_out",
+      "offset": -2,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": -0.001165294154283928,
+      "R CI low": -0.00167169567057318,
+      "R CI high": -0.0003713022842385848,
+      "mean aligned change": -0.007587892135397473,
+      "CI low": -0.011143237277604917,
+      "CI high": -0.002374714261694128
+    },
+    {
+      "contrast": "context",
+      "site": "L1 attn_out",
+      "offset": -2,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.0001456181031408146,
+      "R CI low": -0.0004835323624963968,
+      "R CI high": 0.0006373949117520936,
+      "mean aligned change": 0.0009482021818539596,
+      "CI low": -0.0032182266620969873,
+      "CI high": 0.004206719388992409
+    },
+    {
+      "contrast": "context",
+      "site": "L1 attn_out",
+      "offset": -1,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": -0.0014448621740564692,
+      "R CI low": -0.002298111831655309,
+      "R CI high": -0.00044687402643229244,
+      "mean aligned change": -0.009408318309116905,
+      "CI low": -0.014921842791502847,
+      "CI high": -0.002953732588025463
+    },
+    {
+      "contrast": "context",
+      "site": "L1 attn_out",
+      "offset": -1,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.001225363790847681,
+      "R CI low": 0.0005669221412177387,
+      "R CI high": 0.0022755959870823564,
+      "mean aligned change": 0.007979039659121537,
+      "CI low": 0.0037689851194898467,
+      "CI high": 0.01452773016926141
+    },
+    {
+      "contrast": "context",
+      "site": "L1 attn_out",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.011139928636392519,
+      "R CI low": 0.0043742979169779156,
+      "R CI high": 0.020536981780685217,
+      "mean aligned change": 0.07253840292446555,
+      "CI low": 0.029026560204262083,
+      "CI high": 0.12870227259966222
+    },
+    {
+      "contrast": "context",
+      "site": "L1 attn_out",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.016435108108703727,
+      "R CI low": 0.0027175262921180746,
+      "R CI high": 0.03217068809376893,
+      "mean aligned change": 0.10701832417504323,
+      "CI low": 0.017934610609489098,
+      "CI high": 0.20971167992268208
+    },
+    {
+      "contrast": "context",
+      "site": "L1 head 0",
+      "offset": -3,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": -0.0002933204644616266,
+      "R CI low": -0.0006411949959535287,
+      "R CI high": 7.826745520212154e-05,
+      "mean aligned change": -0.0019099761525940128,
+      "CI low": -0.004120976096097411,
+      "CI high": 0.0005157557188892316
+    },
+    {
+      "contrast": "context",
+      "site": "L1 head 0",
+      "offset": -3,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 7.534078546579678e-05,
+      "R CI low": -0.00021649581066850493,
+      "R CI high": 0.0003416462219043121,
+      "mean aligned change": 0.000490586648365951,
+      "CI low": -0.0014358878949037388,
+      "CI high": 0.0022185972596060043
+    },
+    {
+      "contrast": "context",
+      "site": "L1 head 1",
+      "offset": -13,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": -7.083786222235727e-05,
+      "R CI low": -0.00016845844800656982,
+      "R CI high": 4.210588984069567e-05,
+      "mean aligned change": -0.0004612655574297409,
+      "CI low": -0.0010957979965605603,
+      "CI high": 0.00028043417026137193
+    },
+    {
+      "contrast": "context",
+      "site": "L1 head 1",
+      "offset": -13,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 3.661691998935306e-05,
+      "R CI low": -5.895948147194803e-05,
+      "R CI high": 0.0001350707636060902,
+      "mean aligned change": 0.00023843356476839638,
+      "CI low": -0.00037765341695729767,
+      "CI high": 0.000893223117873945
+    },
+    {
+      "contrast": "context",
+      "site": "L1 head 1",
+      "offset": -1,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": -0.0012320327257410578,
+      "R CI low": -0.002015922672344605,
+      "R CI high": -0.00012630438189197273,
+      "mean aligned change": -0.008022464882223277,
+      "CI low": -0.012879592869483389,
+      "CI high": -0.000826516279905596
+    },
+    {
+      "contrast": "context",
+      "site": "L1 head 1",
+      "offset": -1,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.0011934978858286801,
+      "R CI low": 0.0005856284936457372,
+      "R CI high": 0.0021433229497480463,
+      "mean aligned change": 0.007771542651441463,
+      "CI low": 0.0037873597807745376,
+      "CI high": 0.01396128594047229
+    },
+    {
+      "contrast": "context",
+      "site": "L1 mlp_out",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.4320035731973036,
+      "R CI low": 0.39119080630911685,
+      "R CI high": 0.4786923886652853,
+      "mean aligned change": 2.8130206467411245,
+      "CI low": 2.560222412908919,
+      "CI high": 3.130825861080346
+    },
+    {
+      "contrast": "context",
+      "site": "L1 mlp_out",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.520397954947622,
+      "R CI low": 0.45630844485387995,
+      "R CI high": 0.5871841678690819,
+      "mean aligned change": 3.3886066750677863,
+      "CI low": 2.949525708902557,
+      "CI high": 3.9022752768099145
+    },
+    {
+      "contrast": "context",
+      "site": "L1 resid_post",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.9940035728663185,
+      "R CI low": 0.9855751985527965,
+      "R CI high": 1.002170015360504,
+      "mean aligned change": 6.472521865300285,
+      "CI low": 6.112944165776061,
+      "CI high": 6.893640913962679
+    },
+    {
+      "contrast": "context",
+      "site": "L1 resid_post",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.9978578693871619,
+      "R CI low": 0.9908993607296482,
+      "R CI high": 1.0045304793279626,
+      "mean aligned change": 6.497619379220252,
+      "CI low": 6.134482207777511,
+      "CI high": 6.91007432261454
+    },
+    {
+      "contrast": "context",
+      "site": "L2 mlp_out",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.42481547485100685,
+      "R CI low": 0.4074407255308967,
+      "R CI high": 0.449166728733171,
+      "mean aligned change": 2.7662148555082275,
+      "CI low": 2.5952050790371635,
+      "CI high": 3.0096110033344745
+    },
+    {
+      "contrast": "context",
+      "site": "L2 mlp_out",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.485298700153558,
+      "R CI low": 0.45994612860728107,
+      "R CI high": 0.5134722581011664,
+      "mean aligned change": 3.16005549043248,
+      "CI low": 2.9043603033209955,
+      "CI high": 3.472907303879123
+    },
+    {
+      "contrast": "context",
+      "site": "L2 resid_post",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.9926980170044482,
+      "R CI low": 0.9884997771497176,
+      "R CI high": 0.9968815018965812,
+      "mean aligned change": 6.464020649516965,
+      "CI low": 6.1187509177995425,
+      "CI high": 6.873726143138527
+    },
+    {
+      "contrast": "context",
+      "site": "L2 resid_post",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 1.0008184456870308,
+      "R CI low": 0.997764308230699,
+      "R CI high": 1.003172313860881,
+      "mean aligned change": 6.516897373140872,
+      "CI low": 6.178376826266967,
+      "CI high": 6.920064631398959
+    },
+    {
+      "contrast": "context",
+      "site": "L3 head 1",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.01697164846854651,
+      "R CI low": 0.007018925594446904,
+      "R CI high": 0.024168321726086066,
+      "mean aligned change": 0.1105120432174048,
+      "CI low": 0.046457925281351425,
+      "CI high": 0.15591153318147552
+    },
+    {
+      "contrast": "context",
+      "site": "L3 head 1",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.01711914771260665,
+      "R CI low": 0.007714495126620785,
+      "R CI high": 0.02318218466717498,
+      "mean aligned change": 0.1114724945762883,
+      "CI low": 0.050328803739384906,
+      "CI high": 0.15029483472063213
+    },
+    {
+      "contrast": "context",
+      "site": "L3 mlp_out",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.705515939436775,
+      "R CI low": 0.6850664819382799,
+      "R CI high": 0.7221761573031781,
+      "mean aligned change": 4.594015020644733,
+      "CI low": 4.323904759933601,
+      "CI high": 4.880214770779994
+    },
+    {
+      "contrast": "context",
+      "site": "L3 mlp_out",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.592606799046664,
+      "R CI low": 0.5732670582821905,
+      "R CI high": 0.6175224878129464,
+      "mean aligned change": 3.8587994742258283,
+      "CI low": 3.6101770607955994,
+      "CI high": 4.162780636854563
+    },
+    {
+      "contrast": "context",
+      "site": "L3 resid_post",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 1.0,
+      "R CI low": 1.0,
+      "R CI high": 1.0,
+      "mean aligned change": 6.511568008388599,
+      "CI low": 6.180271534412191,
+      "CI high": 6.9108449025673435
+    },
+    {
+      "contrast": "context",
+      "site": "L3 resid_post",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 1.0,
+      "R CI low": 1.0,
+      "R CI high": 1.0,
+      "mean aligned change": 6.511568008388599,
+      "CI low": 6.180271534412191,
+      "CI high": 6.9108449025673435
+    },
+    {
+      "contrast": "identity removal",
+      "site": "embedding",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 1.0,
+      "R CI low": 1.0,
+      "R CI high": 1.0,
+      "mean aligned change": 0.46866178140748427,
+      "CI low": 0.3799003002210824,
+      "CI high": 0.5463604546102286
+    },
+    {
+      "contrast": "identity removal",
+      "site": "embedding",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 1.0,
+      "R CI low": 1.0,
+      "R CI high": 1.0,
+      "mean aligned change": 0.46866178140748427,
+      "CI low": 0.3799003002210824,
+      "CI high": 0.5463604546102286
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L0 attn_out",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.05190403797609862,
+      "R CI low": 0.014218085194642837,
+      "R CI high": 0.07701891757338164,
+      "mean aligned change": 0.02432543890012009,
+      "CI low": 0.006318158530799548,
+      "CI high": 0.03696571974417002
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L0 attn_out",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.06300933524158947,
+      "R CI low": 0.022733778695846314,
+      "R CI high": 0.08635796628884121,
+      "mean aligned change": 0.029530067299624697,
+      "CI low": 0.009281347014333006,
+      "CI high": 0.04499144894400955
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L0 head 0",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.03307725271412328,
+      "R CI low": 0.0033363703106383635,
+      "R CI high": 0.05748704761581284,
+      "mean aligned change": 0.01550204418106656,
+      "CI low": 0.0014208282522608082,
+      "CI high": 0.02852665060954096
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L0 head 0",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.04388227186495138,
+      "R CI low": 0.009750599638566013,
+      "R CI high": 0.06831072769263904,
+      "mean aligned change": 0.02056594370443564,
+      "CI low": 0.004053287209075914,
+      "CI high": 0.03525557504273023
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L0 head 1",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.01799337708427373,
+      "R CI low": -0.006456489630897073,
+      "R CI high": 0.041216420491821164,
+      "mean aligned change": 0.008432808157852332,
+      "CI low": -0.0031031308601472407,
+      "CI high": 0.017457040481796707
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L0 head 1",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.020238247193275726,
+      "R CI low": -0.0029185265509139606,
+      "R CI high": 0.038827081469208886,
+      "mean aligned change": 0.00948489298216562,
+      "CI low": -0.0013214795496948608,
+      "CI high": 0.01724439050901346
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L0 mlp_out",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.5983501976561966,
+      "R CI low": 0.5331153556747801,
+      "R CI high": 0.6573745809466572,
+      "mean aligned change": 0.2804238695390734,
+      "CI low": 0.21913863115931914,
+      "CI high": 0.32899248936292175
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L0 mlp_out",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.6336988436863594,
+      "R CI low": 0.5702539809627901,
+      "R CI high": 0.674749827690125,
+      "mean aligned change": 0.2969904289579121,
+      "CI low": 0.22680353541946768,
+      "CI high": 0.3531879845628708
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L0 resid_post",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 1.0,
+      "R CI low": 1.0,
+      "R CI high": 1.0,
+      "mean aligned change": 0.46866178140748427,
+      "CI low": 0.3799003002210824,
+      "CI high": 0.5463604546102286
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L0 resid_post",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 1.0,
+      "R CI low": 1.0,
+      "R CI high": 1.0,
+      "mean aligned change": 0.46866178140748427,
+      "CI low": 0.3799003002210824,
+      "CI high": 0.5463604546102286
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L1 mlp_out",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.47853337900121823,
+      "R CI low": 0.42398860616192535,
+      "R CI high": 0.5115064498441358,
+      "mean aligned change": 0.22427030586565375,
+      "CI low": 0.16482387205131915,
+      "CI high": 0.2771810754371017
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L1 mlp_out",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.5030486017122267,
+      "R CI low": 0.447010791871502,
+      "R CI high": 0.538496819521582,
+      "mean aligned change": 0.23575965381299616,
+      "CI low": 0.1726183796034926,
+      "CI high": 0.2925346514381428
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L1 resid_post",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 1.0,
+      "R CI low": 1.0,
+      "R CI high": 1.0,
+      "mean aligned change": 0.46866178140748427,
+      "CI low": 0.3799003002210824,
+      "CI high": 0.5463604546102286
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L1 resid_post",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 1.0,
+      "R CI low": 1.0,
+      "R CI high": 1.0,
+      "mean aligned change": 0.46866178140748427,
+      "CI low": 0.3799003002210824,
+      "CI high": 0.5463604546102286
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L2 attn_out",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": -0.013819724251702553,
+      "R CI low": -0.030995838581261526,
+      "R CI high": 0.0010471119016342049,
+      "mean aligned change": -0.006476776586363131,
+      "CI low": -0.014225860462008568,
+      "CI high": 0.00047795350430051957
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L2 attn_out",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": -0.013563263369176173,
+      "R CI low": -0.029508905735288124,
+      "R CI high": 0.0016115695753962092,
+      "mean aligned change": -0.006356583172296982,
+      "CI low": -0.014098524143422619,
+      "CI high": 0.00070811394755682
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L2 head 0",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": -0.005161871787626303,
+      "R CI low": -0.012434342443639715,
+      "R CI high": 0.006649148563019185,
+      "mean aligned change": -0.0024191720273859783,
+      "CI low": -0.006079468606089784,
+      "CI high": 0.0028975882158990478
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L2 head 0",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": -0.008005027208542901,
+      "R CI low": -0.016385029332233222,
+      "R CI high": 0.003649003243953698,
+      "mean aligned change": -0.0037516503117710973,
+      "CI low": -0.008127813902973353,
+      "CI high": 0.0015936945091798347
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L2 mlp_out",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.41341997419645915,
+      "R CI low": 0.37591605667078926,
+      "R CI high": 0.46138533020474537,
+      "mean aligned change": 0.1937541415763487,
+      "CI low": 0.1523153286078365,
+      "CI high": 0.2343945440683161
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L2 mlp_out",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.43345214382389485,
+      "R CI low": 0.3968111584035022,
+      "R CI high": 0.47886418726811736,
+      "mean aligned change": 0.20314245387939966,
+      "CI low": 0.1575992288773449,
+      "CI high": 0.24776212411052506
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L2 resid_post",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 1.0,
+      "R CI low": 1.0,
+      "R CI high": 1.0,
+      "mean aligned change": 0.46866178140748427,
+      "CI low": 0.3799003002210824,
+      "CI high": 0.5463604546102286
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L2 resid_post",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 1.0,
+      "R CI low": 1.0,
+      "R CI high": 1.0,
+      "mean aligned change": 0.46866178140748427,
+      "CI low": 0.3799003002210824,
+      "CI high": 0.5463604546102286
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L3 mlp_out",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 0.5717091920745846,
+      "R CI low": 0.5488408926682162,
+      "R CI high": 0.5978127079889461,
+      "mean aligned change": 0.26793824840470837,
+      "CI low": 0.21927822226421212,
+      "CI high": 0.3116389827643729
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L3 mlp_out",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 0.5893079288150447,
+      "R CI low": 0.5687361839710452,
+      "R CI high": 0.6138303473238925,
+      "mean aligned change": 0.27618610371601376,
+      "CI low": 0.22379459580125263,
+      "CI high": 0.3244272899352732
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L3 resid_post",
+      "offset": 0,
+      "direction": "denoise",
+      "n": 529,
+      "pooled recovery": 1.0,
+      "R CI low": 1.0,
+      "R CI high": 1.0,
+      "mean aligned change": 0.46866178140748427,
+      "CI low": 0.3799003002210824,
+      "CI high": 0.5463604546102286
+    },
+    {
+      "contrast": "identity removal",
+      "site": "L3 resid_post",
+      "offset": 0,
+      "direction": "noise",
+      "n": 529,
+      "pooled recovery": 1.0,
+      "R CI low": 1.0,
+      "R CI high": 1.0,
+      "mean aligned change": 0.46866178140748427,
+      "CI low": 0.3799003002210824,
+      "CI high": 0.5463604546102286
+    }
+  ],
+  "controls": [
+    {
+      "index": "embedding",
+      "conflict events (own activation)": 1.0,
+      "matched controls": 1.0,
+      "same-player transfer": 0.9999999444092468
+    },
+    {
+      "index": "L0 attn_out",
+      "conflict events (own activation)": 0.050712303073867766,
+      "matched controls": 0.05030803376150082,
+      "same-player transfer": 0.023518847151149786
+    },
+    {
+      "index": "L0 head 0",
+      "conflict events (own activation)": 0.02265090524124251,
+      "matched controls": 0.039205436608610734,
+      "same-player transfer": 0.0010770775604949203
+    },
+    {
+      "index": "L0 head 1",
+      "conflict events (own activation)": 0.027792375272342115,
+      "matched controls": 0.011301512937830776,
+      "same-player transfer": 0.0218450320731206
+    },
+    {
+      "index": "L0 mlp_out",
+      "conflict events (own activation)": 0.6180420910998949,
+      "matched controls": 0.6159574299906585,
+      "same-player transfer": 0.4295959977527684
+    },
+    {
+      "index": "L0 resid_post",
+      "conflict events (own activation)": 1.0,
+      "matched controls": 1.0,
+      "same-player transfer": 0.7969890972547043
+    },
+    {
+      "index": "L1 attn_out",
+      "conflict events (own activation)": 0.0015326326599926934,
+      "matched controls": -0.013111229203708033,
+      "same-player transfer": -0.01877704919492157
+    },
+    {
+      "index": "L1 head 0",
+      "conflict events (own activation)": -0.003255467332190617,
+      "matched controls": -0.01734935882577338,
+      "same-player transfer": -0.013212878401452858
+    },
+    {
+      "index": "L1 head 1",
+      "conflict events (own activation)": 0.00463510906720313,
+      "matched controls": 0.0040180016681676724,
+      "same-player transfer": -0.0055464369896730675
+    },
+    {
+      "index": "L1 mlp_out",
+      "conflict events (own activation)": 0.5191514127442446,
+      "matched controls": 0.5387040401027882,
+      "same-player transfer": 0.26409776281974084
+    },
+    {
+      "index": "L1 resid_post",
+      "conflict events (own activation)": 1.0,
+      "matched controls": 1.0,
+      "same-player transfer": 0.6443380261795983
+    },
+    {
+      "index": "L2 attn_out",
+      "conflict events (own activation)": -0.015524350644383662,
+      "matched controls": -0.0014101487659266005,
+      "same-player transfer": -0.02306213257732673
+    },
+    {
+      "index": "L2 head 0",
+      "conflict events (own activation)": -0.008210775543540275,
+      "matched controls": -0.0014522389576770082,
+      "same-player transfer": -0.01886024744744994
+    },
+    {
+      "index": "L2 head 1",
+      "conflict events (own activation)": -0.007101777672213245,
+      "matched controls": -3.698325663459789e-05,
+      "same-player transfer": -0.004046425314518984
+    },
+    {
+      "index": "L2 mlp_out",
+      "conflict events (own activation)": 0.42336606504318886,
+      "matched controls": 0.4349437885978168,
+      "same-player transfer": 0.0986846764997219
+    },
+    {
+      "index": "L2 resid_post",
+      "conflict events (own activation)": 1.0,
+      "matched controls": 1.0,
+      "same-player transfer": 0.4680823350977136
+    },
+    {
+      "index": "L3 attn_out",
+      "conflict events (own activation)": 0.004036247161757335,
+      "matched controls": -0.005628115519487637,
+      "same-player transfer": -0.0010954531414186803
+    },
+    {
+      "index": "L3 head 0",
+      "conflict events (own activation)": 0.0005324127781683434,
+      "matched controls": -0.0034966134418757976,
+      "same-player transfer": 0.008607748040662135
+    },
+    {
+      "index": "L3 head 1",
+      "conflict events (own activation)": 0.003669991346667977,
+      "matched controls": -0.0024177461474113797,
+      "same-player transfer": -0.009425976193960925
+    },
+    {
+      "index": "L3 mlp_out",
+      "conflict events (own activation)": 0.5774171831479684,
+      "matched controls": 0.5168990092588662,
+      "same-player transfer": 0.1869536285356515
+    },
+    {
+      "index": "L3 resid_post",
+      "conflict events (own activation)": 1.0,
+      "matched controls": 1.0,
+      "same-player transfer": 0.38360957154109915
+    }
+  ],
+  "run_mode": "full"
+}

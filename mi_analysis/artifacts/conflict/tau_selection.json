@@ -1,0 +1,69 @@
+{
+ "tau": 0.3470991477370262,
+ "percentile": 75,
+ "sweep": [
+  {
+   "percentile": 50,
+   "tau": 0.21479392051696777,
+   "n_conflicts": 21381,
+   "conflict_rate": 0.3144,
+   "top_pair_share": 0.151
+  },
+  {
+   "percentile": 75,
+   "tau": 0.3470991477370262,
+   "n_conflicts": 10691,
+   "conflict_rate": 0.1572,
+   "top_pair_share": 0.176
+  },
+  {
+   "percentile": 80,
+   "tau": 0.38128824234008796,
+   "n_conflicts": 8553,
+   "conflict_rate": 0.1258,
+   "top_pair_share": 0.219
+  },
+  {
+   "percentile": 85,
+   "tau": 0.43295799344778063,
+   "n_conflicts": 6415,
+   "conflict_rate": 0.0943,
+   "top_pair_share": 0.287
+  },
+  {
+   "percentile": 90,
+   "tau": 0.5267283916473389,
+   "n_conflicts": 4277,
+   "conflict_rate": 0.0629,
+   "top_pair_share": 0.301
+  },
+  {
+   "percentile": 95,
+   "tau": 0.5837718099355697,
+   "n_conflicts": 2139,
+   "conflict_rate": 0.0315,
+   "top_pair_share": 0.344
+  }
+ ],
+ "disagreement_rate_val": 0.6288251988882844,
+ "rule": "first percentile with conflict rate in [0.10, 0.25] and top-pair share < 0.45, else p80",
+ "status_of_band_and_limit": "design choices, not derived",
+ "convention": "JSD in nats (0 .. ln 2), computed directly",
+ "references": {
+  "id_full": {
+   "T": 1.011001593540816,
+   "seed": 0,
+   "epochs": 25
+  },
+  "id_player": {
+   "T": 0.9764904022602229,
+   "seed": 0,
+   "epochs": 25
+  },
+  "ctx": {
+   "T": 1.0092583760631286,
+   "seed": 0,
+   "epochs": 25
+  }
+ }
+}

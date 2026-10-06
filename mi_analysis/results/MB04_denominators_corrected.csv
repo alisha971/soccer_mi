@@ -1,0 +1,5 @@
+population,rows,estimation,discovery
+P-player (dedicated player vector),1744,529,1215
+"P-player with a swap partner (C2, C3)",1717,529,1188
+index-0 (no dedicated player vector),8947,4651,4296
+matched non-conflict controls,252,65,187

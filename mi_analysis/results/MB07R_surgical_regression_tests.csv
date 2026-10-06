@@ -1,0 +1,5 @@
+test,passed,detail
+R09 canonical graph control size,True,Aliases preserve the graph; all 100 random controls match actual connection count
+R10/R12 donor masks and coupled node controls,True,Actual wrong-class donor mask matches every draw; changing one node preserves all other donors and branch modes
+R15 bounded continuous shifts,True,"Support, clipped counts and boundary no-ops agree for both shift directions"
+R03 one-cluster uncertainty,True,One-match points remain descriptive; no artificial CI or inferential p-value

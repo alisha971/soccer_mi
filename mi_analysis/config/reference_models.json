@@ -1,0 +1,4 @@
+{
+  "REF-2L": "/home/aayush/code/soccer_mi/model_training_evaluation/runs/transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s0",
+  "REF-4L": "/home/aayush/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s0"
+}

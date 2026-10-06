@@ -1,0 +1,21 @@
+test,passed,detail
+test_receiver_gradients_match_finite_differences,True,29 receiver sites; largest relative error vs finite difference 3.24e-08; internal sites with non-zero gradient 28/28
+test_legacy_gradients_zero_internal,True,"legacy: 28 internal receiver sites all exactly zero, final_resid non-zero"
+test_eap_predicts_small_exact_path_patch,True,4 edges incl. internal receivers: largest relative gap between EAP and a small exact path patch 2.03e-04
+test_no_state_left_after_interventions,True,plain runs unchanged; registered module hooks 0; parameters frozen with no grad: True
+test_patching_endpoints,True,denoise -> clean 0.0e+00; noise -> corrupt 0.0e+00; zero patch -> corrupt 0.0e+00
+test_steering_beta_zero_is_noop,True,largest |change| at beta = 0: 0.0
+test_steering_batch_invariant,True,regrouped + reordered: repaired max per-event difference 3.3e-06; legacy batch-mean rule 0.629
+test_calibration_models_pass_origin_and_rule,True,"origin respected; tanh curve: linear regime |beta| <= 0.25, line PASS=False, piecewise PASS=True"
+test_resample_other_never_noop_and_batch_free,True,possession_flag: realised no-op rate 0.000 (only rows with no other value); same draws for a subset; zone draws for repeat 1 differ from repeat 0 on 0.97 of rows
+test_two_draw_noop_formula,True,"expected unchanged share 0.429, simulated 0.431 (0.75^3 + 0.25^3 = 0.438)"
+test_ordinal_and_grid_steps_respect_special_codes,True,"special codes never edited or produced; boundaries skipped, not flipped; grid neighbours follow the declared layout"
+test_code_zero_is_not_removal_for_context,True,player code 0 max |w| 0.0; zone code 0 max |w| 0.077; factor mean-ablation sets the group vector exactly (error 0.0e+00)
+test_signed_nonadditivity,True,"additive +1/-1: old statistic -2.0, signed non-additivity 0.0; factorial contrast example 1.0"
+test_self_scrub_three_invariants,True,"paired self-scrub errors {'clean run vs intact clean': 0.0, 'counterfactual run vs intact counterfactual': 0.0, 'effect vs intact effect': 0.0}; original same-donor design counterfactual-run error 3.237 (must be > 0)"
+test_paired_scrub_preserves_effect_under_true_abstraction,True,"max |effect error|: paired, true abstraction 4.8e-07; original same-donor design 3.237; false abstraction 3.237"
+test_wrong_class_control_preserves_classes_and_scoring,True,"scoring table unchanged; joint class-tuple counts preserved; diagnostics {'L0MLP': {'classes': 8, 'class sizes preserved': True, ""share of donors that share the recipient's true class"": 0.2, 'share of rows that are their own donor (singleton)': 0.1}, 'L0H0': {'classes': 2, 'class sizes preserved': True, ""share of donors that share the recipient's true class"": 0.6333333333333333, 'share of rows that are their own donor (singleton)': 0.0}}"
+test_recovery_noise_check,True,floor-vs-floor recovered share: noisy floor 0.97; low-noise floor 0.002
+test_random_circuit_space,True,distinct sets 8; enumerated 8; 100 draws contain 8 distinct sets; warning raised: True
+test_graph_endpoints,True,all edges vs clean 9.5e-07; no edges vs corrupted 0.0e+00; all-component graph vs clean 9.5e-07
+test_statistics,True,"BH [0.04, 0.0533, 0.0533, 0.2]; review example: mean log-odds 2.297560 vs aggregate 1.072121; calibrated simulation: predicted - realised -0.0033 [-0.0089, 0.0022]; calibrated simulation aggregate log-odds model-data -0.010 [-0.042, 0.023] while mean Delta - data = 0.257; F20: a tiny positive magnitude gets the floor p = 0.000500"

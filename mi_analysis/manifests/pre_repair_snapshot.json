@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-05T17:35:12.784949+00:00",
+  "files": {
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/results/MB02_instrumentation_tests.csv": "1e49a730cd7a154a14606381bec24454dd25b46a70de72c77faf593a7b89e292",
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/results/MB02_verification.csv": "ea03fc47d8160f0af5454dc9373312847a928fe5d43da7a9580da266e2ee53a3",
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/config/benchmark_final_runs.csv": "c6ce8e5d4ca66dc6ef0725ea6fc0e0597c4dad4a51a28c1707326836c79b7b22",
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/config/benchmark_restricted_runs.csv": "c6971976a3253cd2ce36eeb272ee6485e21a16bbe084a8becf2b411e0f0dec61",
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/config/analysis_plan.json": "c0f26fea237cd4a0a953a74f492002b65b14877fd38d0658e76a71ecdf3e7fa9",
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/config/mi_config.json": "eae4a9eb568021f0d68324b3f695caebdc1cc18f6a45426c9dfabf1b74f767d8",
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/config/preregistration.json": "7eb899fc3704458b4116116b6c14e4f05476051324cb6a93b712f6fa74ee6d94",
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/config/reference_models.json": "a500b291682f56974a6b32d3c87669c3098cc32e5d94aa1b521d1e1c7da7e0a5",
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/artifacts/populations/context_donors.parquet": "0e486fe5a97c9afbadd74641cf4992ad5fd74f022360150c861816534d3e206d",
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/artifacts/populations/matched_controls.parquet": "d7eba4acfee36ba779d89a9611e45b15561eac3aa5acb9b3b80a2394149f7514",
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/artifacts/populations/swap_partners.parquet": "d74c2beb6f86f3b44d389966437734214e5b31b5340bc724c13f57e722c84572",
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/artifacts/populations/val_conflicts.parquet": "88a422e92e0479d7d26caf59a52aa13d5cd95eae8182ce8545c631d9f7730cda",
+    "/home/aayush/code/soccer_mi/.mi_analysis_rerun/artifacts/populations/reference_means.pt": "1290c11e14fe0d629485d095e9145fecb7cb1a2cec6c037a21866d2a0aa21b4a"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "model": {
+    "primary_seed": 103,
+    "replicate_seeds": [
+      100,
+      101,
+      102,
+      104
+    ],
+    "run_dirs": {
+      "100": "/home/aayush/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s100",
+      "101": "/home/aayush/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s101",
+      "102": "/home/aayush/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s102",
+      "103": "/home/aayush/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s103",
+      "104": "/home/aayush/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s104"
+    }
+  },
+  "conflict_set_sha256": "00baf9354b513a4f7d894fe7516e5b70ec2e288d9ab59b2fc516865ff25b2699",
+  "populations": {
+    "P-all (val)": "b2bd5d9e7bfd77117bb9bd5b4ad9da90e841ca4bc6bbdc5336292120d28ec43e",
+    "P-player (val)": "ae1f0925c69b5d0ec23ffb7983a73d6121ae67a6a91bc2d55730ced2d7c83394",
+    "matched controls": "ef881847524009f03736da2e57c434eceb16322ad7538068f2b72fe7b166f2d0"
+  },
+  "discovery_matches": [
+    18236,
+    68337,
+    69308,
+    266299,
+    2275080,
+    3754126,
+    3788765,
+    3825635,
+    3825886,
+    3893820,
+    3895158,
+    3895202,
+    3900511,
+    3911634,
+    3912500,
+    3913182,
+    3922237,
+    3929018
+  ],
+  "analysis_id": "benchmark_4L_2H_K16_wd0.1_2026-10-05",
+  "status": "EXPLORATORY rerun plan; historical test outcomes already seen",
+  "arbitration_metric": "Delta = logit(a_ctx) - logit(a_id), benchmark wd0.1 raw logits",
+  "confirmatory_tests": {
+    "C1": "mean Delta on P-all > 0; decided by the lower end of the 95% match-bootstrap CI (estimation half; test in MB12)",
+    "C2": "on P-player, |change in Delta| under a matched player swap exceeds that under a norm-matched random vector; one-sided paired match-bootstrap CI above 0",
+    "C3": "the model's swap-induced change in centred log-probabilities correlates positively with the player-only reference's change; CI of mean r above 0",
+    "C4": "the identity x context interaction exceeds the direct-path (LayerNorm-only) floor; paired CI above 0"
+  },
+  "provisional_numbers": {
+    "floating_point_tolerance": 1e-05,
+    "bh_q": 0.05,
+    "bh_q_sensitivity": [
+      0.01,
+      0.1
+    ],
+    "recovery": "pooled over events, sign-aligned: sum(sign(d) * (m_patched - m_corrupted)) / sum(|d|), d = m_clean - m_corrupted; no per-event cut-off",
+    "random_draws": 5,
+    "display_min_pair_count": 30
+  },
+  "candidate_rule_MB06": "discovery half; denoising change in Delta aligned by the sign of each event's clean-minus-corrupted difference; match-bootstrap p-value; Benjamini-Hochberg q = 0.05 within each contrast x direction; a site-position passing for the primary identity contrast (player removal) or the context contrast is a candidate",
+  "fallback_rule_MB04": "NEW BENCHMARK PLAN: retain player regardless of C2; report failed C2 without outcome-dependent identity switching",
+  "settings": {
+    "reference_epochs": 25,
+    "batch_windows": 256,
+    "n_bootstrap": 2000,
+    "n_draws": 5,
+    "n_permutations": 1000,
+    "n_random_circuits": 100,
+    "probe_train_events": 20000,
+    "max_events": 100000,
+    "probe_seeds": 3,
+    "scrub_draws": 5
+  },
+  "run_mode": "full",
+  "written_at": "2026-10-05T17:23:42.186895+00:00"
+}

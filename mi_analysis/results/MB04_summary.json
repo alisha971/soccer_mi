@@ -1,0 +1,241 @@
+{
+  "identity_variable": "player",
+  "E5": [
+    {
+      "rows": "identity population",
+      "intervention": "I0 no-op",
+      "n": 1744,
+      "mean |change in delta|": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "mean KL": 0.0
+    },
+    {
+      "rows": "identity population",
+      "intervention": "I1 identity -> 0",
+      "n": 1744,
+      "mean |change in delta|": 0.4835790479128514,
+      "CI low": 0.4394440157140016,
+      "CI high": 0.5311775454987018,
+      "mean KL": 0.02405129861875683
+    },
+    {
+      "rows": "identity population",
+      "intervention": "I1-all every occurrence -> 0",
+      "n": 1744,
+      "mean |change in delta|": 0.4819892424782482,
+      "CI low": 0.4379480241801175,
+      "CI high": 0.5289090282440749,
+      "mean KL": 0.024023830171485697
+    },
+    {
+      "rows": "identity population",
+      "intervention": "I2 matched swap",
+      "n": 1717,
+      "mean |change in delta|": 0.63019257254495,
+      "CI low": 0.5740482078716062,
+      "CI high": 0.6941606425102896,
+      "mean KL": 0.04059807559721936
+    },
+    {
+      "rows": "identity population",
+      "intervention": "I3 random player (mean |.|)",
+      "n": 1744,
+      "mean |change in delta|": 0.6866433237905725,
+      "CI low": 0.6547925031074353,
+      "CI high": 0.7182439672960791,
+      "mean KL": 0.04833830922617895
+    },
+    {
+      "rows": "identity population",
+      "intervention": "I4 norm-matched vector (mean |.|)",
+      "n": 1744,
+      "mean |change in delta|": 0.7720790629129891,
+      "CI low": 0.7184732191998435,
+      "CI high": 0.8338882964314879,
+      "mean KL": 0.06617526331559308
+    },
+    {
+      "rows": "identity population",
+      "intervention": "I5 team -> 0",
+      "n": 1744,
+      "mean |change in delta|": 0.31922775652652624,
+      "CI low": 0.2781568065459773,
+      "CI high": 0.3600163794209197,
+      "mean KL": 0.0139281641074981
+    },
+    {
+      "rows": "identity population",
+      "intervention": "I6 role -> 0",
+      "n": 1744,
+      "mean |change in delta|": 0.7025821497236643,
+      "CI low": 0.5758297705419345,
+      "CI high": 0.8342515777992455,
+      "mean KL": 0.2283361334241196
+    },
+    {
+      "rows": "identity population",
+      "intervention": "I7 player+team -> 0",
+      "n": 1744,
+      "mean |change in delta|": 0.5558264157777533,
+      "CI low": 0.522160580686462,
+      "CI high": 0.589878285612759,
+      "mean KL": 0.031784170302262764
+    },
+    {
+      "rows": "identity population",
+      "intervention": "I8 random role (mean |.|)",
+      "n": 1744,
+      "mean |change in delta|": 0.671787925004754,
+      "CI low": 0.5604571747838124,
+      "CI high": 0.8002075267129163,
+      "mean KL": 0.3056976032704961
+    },
+    {
+      "rows": "index-0 control",
+      "intervention": "I0 no-op",
+      "n": 8947,
+      "mean |change in delta|": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "mean KL": 0.0
+    },
+    {
+      "rows": "index-0 control",
+      "intervention": "I1 identity -> 0",
+      "n": 8947,
+      "mean |change in delta|": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "mean KL": 0.0
+    },
+    {
+      "rows": "index-0 control",
+      "intervention": "I1-all every occurrence -> 0",
+      "n": 8947,
+      "mean |change in delta|": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "mean KL": 0.0
+    },
+    {
+      "rows": "index-0 control",
+      "intervention": "I3 random player (mean |.|)",
+      "n": 8947,
+      "mean |change in delta|": 0.4770713170757803,
+      "CI low": 0.4601683541216061,
+      "CI high": 0.4939004654061176,
+      "mean KL": 0.021826005821111216
+    },
+    {
+      "rows": "index-0 control",
+      "intervention": "I4 norm-matched vector (mean |.|)",
+      "n": 8947,
+      "mean |change in delta|": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "mean KL": 0.0
+    },
+    {
+      "rows": "index-0 control",
+      "intervention": "I5 team -> 0",
+      "n": 8947,
+      "mean |change in delta|": 0.29801851160915066,
+      "CI low": 0.2547462882200328,
+      "CI high": 0.3443375987503463,
+      "mean KL": 0.010021916584326973
+    },
+    {
+      "rows": "index-0 control",
+      "intervention": "I6 role -> 0",
+      "n": 8947,
+      "mean |change in delta|": 0.9222702835443447,
+      "CI low": 0.8544227287126717,
+      "CI high": 0.9977270700189423,
+      "mean KL": 0.41571733996188037
+    },
+    {
+      "rows": "index-0 control",
+      "intervention": "I7 player+team -> 0",
+      "n": 8947,
+      "mean |change in delta|": 0.29801851160915066,
+      "CI low": 0.2547462882200328,
+      "CI high": 0.3443375987503463,
+      "mean KL": 0.010021916584326973
+    },
+    {
+      "rows": "index-0 control",
+      "intervention": "I8 random role (mean |.|)",
+      "n": 8947,
+      "mean |change in delta|": 0.8966083625103348,
+      "CI low": 0.8216627646723005,
+      "CI high": 0.9767004285459687,
+      "mean KL": 0.5041669553386564
+    }
+  ],
+  "C2": [
+    {
+      "half": "estimation",
+      "n": 529,
+      "mean paired difference |dd|(I2) - |dd|(I4)": -0.08824572165713193,
+      "CI low": -0.17336138916540758,
+      "CI high": 0.02876657769024491,
+      "one-sided p": 0.9445277361319341,
+      "mean paired KL difference": -0.025640755957455068
+    },
+    {
+      "half": "discovery",
+      "n": 1188,
+      "mean paired difference |dd|(I2) - |dd|(I4)": -0.16873338589639175,
+      "CI low": -0.22470671725871538,
+      "CI high": -0.11478316963186723,
+      "one-sided p": 1.0,
+      "mean paired KL difference": -0.02617682815534072
+    }
+  ],
+  "C3": [
+    {
+      "half": "estimation",
+      "n": 529,
+      "mean r (matched swap)": 0.07580055730494747,
+      "CI low": 0.01870195743190506,
+      "CI high": 0.13005369727867505,
+      "null mean r (random reference player)": 0.03444136033040505,
+      "null 95th percentile": 0.04873599040058554,
+      "mean r (random-player swap, I3)": 0.07129722143570923
+    },
+    {
+      "half": "discovery",
+      "n": 1188,
+      "mean r (matched swap)": 0.09338465426842212,
+      "CI low": 0.03873658424775501,
+      "CI high": 0.1404654085344665,
+      "null mean r (random reference player)": 0.05026271860986152,
+      "null 95th percentile": 0.06032277452104561,
+      "mean r (random-player swap, I3)": 0.07200750685615127
+    }
+  ],
+  "C4": [
+    {
+      "half": "estimation",
+      "units": 529,
+      "mean |I|": 0.8307399749755859,
+      "mean |I_floor|": 0.04380124434828758,
+      "mean paired difference": 0.7869387166204885,
+      "CI low": 0.7171013424044391,
+      "CI high": 0.8792951248841955,
+      "one-sided p": 0.0004997501249375312
+    },
+    {
+      "half": "discovery",
+      "units": 1187,
+      "mean |I|": 0.7682788968086243,
+      "mean |I_floor|": 0.04147638380527496,
+      "mean paired difference": 0.7268024953529427,
+      "CI low": 0.6472327286809899,
+      "CI high": 0.8361146896353014,
+      "one-sided p": 0.0004997501249375312
+    }
+  ],
+  "run_mode": "full"
+}

@@ -1,0 +1,5 @@
+half,coherent swap (post-hoc),n,matches,mean |dd|(I2) - |dd|(I4),CI low,CI high,uncertainty
+estimation,True,16,1,-0.4067054893821478,,,descriptive only: one match
+estimation,False,513,12,-0.07831325326804761,-0.1616548543889553,0.03129993072741252,match bootstrap
+discovery,True,285,5,-0.13213125860743355,-0.1608458882437484,-0.07149219553684816,match bootstrap
+discovery,False,903,15,-0.18028555231649482,-0.25656069423258093,-0.10970893118677111,match bootstrap

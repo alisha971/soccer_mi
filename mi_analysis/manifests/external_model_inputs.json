@@ -1,0 +1,142 @@
+{
+  "analysis_id": "benchmark_4L_2H_K16_wd0.1_2026-10-05",
+  "repository_relative_paths": true,
+  "inputs": {
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s0/best.pt": {
+      "sha256": "ae86de3b82bc2e432e209b24ee55eace15e6a99f0cd3787241133c92323a942a",
+      "bytes": 3669331
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s0/run_config.json": {
+      "sha256": "b8edb9aa923cd5bf95765d097a72458a99c5b32231a97ff7a23653ccb13d5fa0",
+      "bytes": 333
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s0/final_results.json": {
+      "sha256": "2de3e3bb4d63c942ca9e1534bd75aa636701b2fce2f0d36353154058fa804bae",
+      "bytes": 2178
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s0/val_predictions.npz": {
+      "sha256": "845f8d2f8e2090bf37399233b504412855e4e44afa33a626b770bb181ca566c3",
+      "bytes": 3811037
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s100/best.pt": {
+      "sha256": "d9712d0a305481eeac0d110f561677fa50838809d1cf84f0203cabc20a96358f",
+      "bytes": 3669331
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s100/run_config.json": {
+      "sha256": "34221829850ac359c9cca439eb160fff74d0a212722e1b06d6c641948c51df96",
+      "bytes": 335
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s100/final_results.json": {
+      "sha256": "5287845421416bde1c76501e85548ea5fe8198fe14ab08989aa292162f3a6893",
+      "bytes": 2179
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s100/val_predictions.npz": {
+      "sha256": "de14b4827454856a24e60cf88f5ca658ee34365200411a57c7441267d4489298",
+      "bytes": 3814958
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s101/best.pt": {
+      "sha256": "1b04a5520e2180258456ad3574f71d3eb37d3049da29960e88ea59623ac290a3",
+      "bytes": 3669331
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s101/run_config.json": {
+      "sha256": "80a3cd4fc8b74deca76d4e14c8e3cf81f2d479becabb8d11c9e778cb4b8f9b70",
+      "bytes": 335
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s101/final_results.json": {
+      "sha256": "a8691b962fd276f648ea48728ca57951b8b2d7974d7a15e9351b68322e6403a1",
+      "bytes": 2196
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s101/val_predictions.npz": {
+      "sha256": "3968bf2049b06c96219c82a8d7f75aa76647f43686042fc863de097226be9300",
+      "bytes": 3810055
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s102/best.pt": {
+      "sha256": "56134ec75d1d09b3451bab2a0857ee5cc922c7d5c2ea8d5534db2cb3736b19a9",
+      "bytes": 3669331
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s102/run_config.json": {
+      "sha256": "58b0ff39635138b7fb0e8fdb759859bc5bbbd30c4ac6e427a39875cacd444dae",
+      "bytes": 335
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s102/final_results.json": {
+      "sha256": "0af98a7839f18ea4bdad661e3ba3450e05e7c6e2448fab683b890833a3805d7f",
+      "bytes": 2197
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s102/val_predictions.npz": {
+      "sha256": "e86b58c5c51c4a22fb982a116afe61f041d124e4c6f78e2bd9568c456e799065",
+      "bytes": 3810949
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s103/best.pt": {
+      "sha256": "364652fec05af19d4b26fd10af56f98e4f3ae7ef68f60340d67b7bed2bd19d48",
+      "bytes": 3669331
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s103/run_config.json": {
+      "sha256": "23f92f2e7a9d0227e3e9ae70476368d50d21c97b4bc6ebf03aa37cf63da57fd0",
+      "bytes": 335
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s103/final_results.json": {
+      "sha256": "00b77a9727907826b48578ec102d5ddb1d5f4ce1c0c109c635da9fa82de6b197",
+      "bytes": 2178
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s103/val_predictions.npz": {
+      "sha256": "3a623ab046cad8ecc47f3f05abb8f5271778ddb9c304731fbad86590dfb6ac35",
+      "bytes": 3813851
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s104/best.pt": {
+      "sha256": "e0b89ecde7df3a6b6ad0bbc48e7f48d85638949173f0c5b318d9644bb244a446",
+      "bytes": 3669331
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s104/run_config.json": {
+      "sha256": "e54b1c77cee79914f78287c92406bd969b813bbcfb6adfa940889408cd389849",
+      "bytes": 335
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s104/final_results.json": {
+      "sha256": "9a41fb6678381998ffd0049fa1e4a182ebdd15abea9e913277086ee3584494a9",
+      "bytes": 2197
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s104/val_predictions.npz": {
+      "sha256": "4a08b69f7d3522aa39edd75207cbb8ebeef3107e7410d709ac5ede39c6a2e3a1",
+      "bytes": 3807381
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.1_s100/best.pt": {
+      "sha256": "77ec1483451bbabf0ef9e8fa0ab47d4700b97eec50ba2f5770817aadae897342",
+      "bytes": 3365797
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.1_s100/run_config.json": {
+      "sha256": "1e1fd1ecba006e8ed968f09ebc1bc12be4b29e39d3545183149314cb68af202e",
+      "bytes": 443
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.1_s100/final_results.json": {
+      "sha256": "aab041cbce58da83f617d78d0724b570710afd32e793b4ea885e59d5dcc9a564",
+      "bytes": 2353
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-competition+space+time+state+history_lr0.0003_wd0.1_s100/val_predictions.npz": {
+      "sha256": "6bb6310aaaa271c9bec5f023e54d57a91980c296a8ca8c8eea35243d792b0d47",
+      "bytes": 3803638
+    },
+    "model_training_evaluation/runs/transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s0/best.pt": {
+      "sha256": "eac24389372168a9febe29a9954354855f2e4fd75ded0847d3ca64da5d81053a",
+      "bytes": 2074323
+    },
+    "model_training_evaluation/runs/transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s0/run_config.json": {
+      "sha256": "d2e529fc226e8b97055d046771cb63746a95f70094d2b3aa874cf3c5f6313c2e",
+      "bytes": 333
+    },
+    "model_training_evaluation/runs/transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s0/final_results.json": {
+      "sha256": "ebc42b95fcb3a3fef3305fe996b92c052deadaef2f1fb63fa4333fbfa6480be0",
+      "bytes": 2192
+    },
+    "model_training_evaluation/runs/transformer_T300_pre_action_L2_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s0/val_predictions.npz": {
+      "sha256": "566ae248822f054ece0adbb9541ef356598a533bd231434bc5b6a12406f742cf",
+      "bytes": 3816257
+    },
+    "frozen_config.json": {
+      "sha256": "6f1dc7a3e04f4c3307b971c56d721baaabd05bc9396283536d0bf9a7c83e29ef",
+      "bytes": 866
+    },
+    "model_training_evaluation/benchmarks/track_a_4layer/config/frozen_config.json": {
+      "sha256": "167d4aa3ce85ca3e1fec869af8e67ebd5f590aa991c3fe4efb5820b3a4c9693b",
+      "bytes": 1383
+    }
+  }
+}

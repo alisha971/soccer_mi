@@ -1,0 +1,11 @@
+test,passed,detail
+1 no-op: instrumented forward equals model(inputs),True,max |difference| = 0.00e+00 (must be exactly 0)
+2 self-patch leaves logits unchanged,True,replacing each of 51 sites by its own value: max change 0.00e+00
+3 residual arithmetic,True,max reconstruction error 0.00e+00
+4 head split of the attention output,True,sum of head contributions + bias vs attention output: max error 1.19e-07
+5 causal locality of a patch,True,change at positions < 9: 0.0; at >= 9: 5.3
+6 frozen-LayerNorm decomposition sums to Delta,True,sum of 25 component terms + constant vs Delta: max error 2.62e-06
+7 intervention scope,True,player removal and swap change only the player at the target; a team change is caught
+7b norm-matched random vector,True,random vector has the original norm at the target and nothing else changes
+8 index-0 player removal is a no-op,True,10 index-0 targets: removal changes nothing (exactly)
+9 CPU and GPU agree,True,skipped: no GPU in this session (recorded as not applicable)

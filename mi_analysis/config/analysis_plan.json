@@ -1,0 +1,41 @@
+{
+  "analysis_id": "benchmark_4L_2H_K16_wd0.1_2026-10-05",
+  "status": "NEW EXPLORATORY BENCHMARK ANALYSIS; not replication of historical SEL-4L wd0.01; test split previously accessed",
+  "model_family": "benchmark_wd0.1",
+  "primary_seed": 103,
+  "seeds": [
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "reference_policy": "reuse hash-verified frozen MB01 references and conflict definitions; regenerate all full-model-dependent outputs",
+  "identity_policy": "retain player as the scientific variable; C2 is reported as a diagnostic, without outcome-dependent fallback",
+  "test_policy": "validation-only rerun; no new held-out confirmation; MB12 audits validation and provenance",
+  "controls_policy": "non-conflict controls from same match as partner, hence same discovery/estimation half; no event reuse",
+  "source_baseline": "current local Track A source; historical data.py hash mismatch disclosed",
+  "settings": {
+    "n_bootstrap": 2000,
+    "n_draws": 5,
+    "scrub_draws": 5
+  },
+  "checkpoint_hashes": {
+    "100": "d9712d0a305481eeac0d110f561677fa50838809d1cf84f0203cabc20a96358f",
+    "101": "1b04a5520e2180258456ad3574f71d3eb37d3049da29960e88ea59623ac290a3",
+    "102": "56134ec75d1d09b3451bab2a0857ee5cc922c7d5c2ea8d5534db2cb3736b19a9",
+    "103": "364652fec05af19d4b26fd10af56f98e4f3ae7ef68f60340d67b7bed2bd19d48",
+    "104": "e0b89ecde7df3a6b6ad0bbc48e7f48d85638949173f0c5b318d9644bb244a446"
+  },
+  "track_a_source_hashes": {
+    "model_training_evaluation/src/analysis.py": "b8075c97883dccae30e1ec5f1a138bfe466e5ee3b3f61550065721d2b04e9902",
+    "model_training_evaluation/src/baselines.py": "0fd32a7c0cd798fef73f9c74a5c678d8f5ddf711535728d718783176a62a1d70",
+    "model_training_evaluation/src/batching.py": "b4d6b7691f840f175a8f0914b910e09ca4630c448c63b1b8fd6f288c078b653d",
+    "model_training_evaluation/src/data.py": "0b0e0eedf2d596bbd0c43a6ce0f8622289d4c03ddcc61b2afb6af9e2ffefe5b4",
+    "model_training_evaluation/src/evaluation.py": "fdf20e7d2b258f63c1715501cbc066bf0b9fe586159e8431b4b62a1cf2f1b630",
+    "model_training_evaluation/src/metrics.py": "f7cd09c0d62a5081a0af4998b9a4cd401a446ed1331794b98b6246b06a52c446",
+    "model_training_evaluation/src/mlp_baseline.py": "272e1a102aa95688f49bda0a0714bc22bee57b9b5a91bed3c23bfe9d42b4ffaf",
+    "model_training_evaluation/src/model.py": "c4e79355e13e912cd1980fdce8cae9b2430de6bba0531c1f66bde8ef72872e3f",
+    "model_training_evaluation/src/training.py": "3c1cbc83893b2ea42d60531e30ff3ba49baa7936bddcd3e4c92734e26f9239be"
+  }
+}

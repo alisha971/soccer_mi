@@ -1,0 +1,18 @@
+{
+  "python": "3.12",
+  "device": "cpu",
+  "threads": 4,
+  "packages": {
+    "torch": "2.10.0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.0",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "pyarrow": "23.0.1",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.4",
+    "ipykernel": "7.1.0",
+    "threadpoolctl": "3.6.0"
+  }
+}

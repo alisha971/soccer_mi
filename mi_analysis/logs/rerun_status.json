@@ -1,0 +1,79 @@
+{
+  "analysis_id": "benchmark_4L_2H_K16_wd0.1_2026-10-05",
+  "notebooks": {
+    "MB01": {
+      "state": "completed",
+      "started_at": "2026-10-05T17:22:55Z",
+      "cell": 2,
+      "total_cells": 2,
+      "elapsed_seconds": 2.26
+    },
+    "MB02": {
+      "state": "completed",
+      "started_at": "2026-10-05T17:22:58Z",
+      "cell": 31,
+      "total_cells": 31,
+      "elapsed_seconds": 47.06
+    },
+    "MB07R": {
+      "state": "completed",
+      "started_at": "2026-10-05T17:35:06Z",
+      "cell": 16,
+      "total_cells": 16,
+      "elapsed_seconds": 13.22
+    },
+    "MB03": {
+      "state": "completed",
+      "started_at": "2026-10-05T17:35:19Z",
+      "cell": 25,
+      "total_cells": 25,
+      "elapsed_seconds": 50.78
+    },
+    "MB04": {
+      "state": "completed",
+      "started_at": "2026-10-05T17:36:10Z",
+      "cell": 30,
+      "total_cells": 30,
+      "elapsed_seconds": 149.85
+    },
+    "MB05": {
+      "state": "completed",
+      "started_at": "2026-10-05T18:04:23Z",
+      "cell": 18,
+      "total_cells": 18,
+      "previous_attempts": [
+        {
+          "state": "failed",
+          "started_at": "2026-10-05T17:38:40Z",
+          "elapsed_seconds": 1485.68,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        }
+      ],
+      "elapsed_seconds": 336.89
+    },
+    "MB06": {
+      "state": "completed",
+      "started_at": "2026-10-05T18:10:00Z",
+      "cell": 21,
+      "total_cells": 21,
+      "previous_attempts": [],
+      "elapsed_seconds": 577.09
+    },
+    "MB07": {
+      "state": "failed",
+      "started_at": "2026-10-05T21:02:51Z",
+      "cell": 23,
+      "total_cells": 31,
+      "previous_attempts": [
+        {
+          "state": "failed",
+          "started_at": "2026-10-05T18:19:37Z",
+          "elapsed_seconds": 9534.95,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        }
+      ],
+      "elapsed_seconds": 491.97,
+      "error": ""
+    }
+  }
+}

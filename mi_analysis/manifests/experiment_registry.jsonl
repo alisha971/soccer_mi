@@ -1,0 +1,5 @@
+{"notebook": "MB02", "experiment": "E1 verification + pre-registration", "primary_seed": 103, "tests_passed": true, "run_mode": "full", "rerun": false, "rerun_differences": [], "time": "2026-10-05T17:23:42.193599+00:00"}
+{"notebook": "MB03", "experiment": "E3/E4 behaviour", "population": "P-all val", "n": 10691, "C1_mean": 6.209261320440753, "seed": 103, "run_mode": "full", "time": "2026-10-05T17:36:08.825476+00:00"}
+{"notebook": "MB04", "experiment": "E5-E8 counterfactuals", "identity_variable": "player", "n": 1744, "seed": 103, "run_mode": "full", "time": "2026-10-05T17:38:39.126305+00:00"}
+{"notebook": "MB05", "experiment": "E9-E11 representations", "identity_variable": "player", "seed": 103, "run_mode": "full", "time": "2026-10-05T18:09:58.592658+00:00"}
+{"notebook": "MB06", "experiment": "E12 activation patching", "n_candidates": 36, "identity_variable": "player", "seed": 103, "run_mode": "full", "time": "2026-10-05T18:19:36.051547+00:00"}

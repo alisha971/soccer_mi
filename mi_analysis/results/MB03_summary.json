@@ -1,0 +1,342 @@
+{
+  "C1": {
+    "n": 5180,
+    "mean_delta": 6.209261320440753,
+    "ci_low": 6.076762764462256,
+    "ci_high": 6.337996146161156
+  },
+  "behaviour": [
+    {
+      "subset": "P-all",
+      "n": 10691,
+      "matches": 35,
+      "mean delta": 6.249915223095133,
+      "CI low": 6.12978722229389,
+      "CI high": 6.366756338613022,
+      "share delta > 0": 0.9832569450940043,
+      "empirical log-odds": 3.788211194875977,
+      "prior-adjusted delta": 7.962237925338179,
+      "model top = a_ctx": 0.930689364886353,
+      "model top = a_id": 0.005799270414367225,
+      "model top = realised": 0.8869142269198391,
+      "realised = a_ctx": 0.8739126367973061,
+      "realised = a_id": 0.01973622673276588
+    },
+    {
+      "subset": "P-all, estimation half (C1)",
+      "n": 5180,
+      "matches": 17,
+      "mean delta": 6.209261320440753,
+      "CI low": 6.076762764462256,
+      "CI high": 6.337996146161156,
+      "share delta > 0": 0.9808880308880309,
+      "empirical log-odds": 3.853009778917176,
+      "prior-adjusted delta": 7.918534849018949,
+      "model top = a_ctx": 0.9277992277992279,
+      "model top = a_id": 0.007335907335907336,
+      "model top = realised": 0.8893822393822394,
+      "realised = a_ctx": 0.877992277992278,
+      "realised = a_id": 0.018532818532818532
+    },
+    {
+      "subset": "P-all, discovery half",
+      "n": 5511,
+      "matches": 18,
+      "mean delta": 6.288127383456172,
+      "CI low": 6.1013066266844405,
+      "CI high": 6.499055574474749,
+      "share delta > 0": 0.9854835782979495,
+      "empirical log-odds": 3.7261627272061575,
+      "prior-adjusted delta": 8.003316120826042,
+      "model top = a_ctx": 0.9334059154418436,
+      "model top = a_id": 0.004354926510615134,
+      "model top = realised": 0.884594447468699,
+      "realised = a_ctx": 0.8700780257666485,
+      "realised = a_id": 0.020867356196697513
+    },
+    {
+      "subset": "P-player",
+      "n": 1744,
+      "matches": 27,
+      "mean delta": 5.963331335078959,
+      "CI low": 5.7281017932136225,
+      "CI high": 6.187487350497908,
+      "share delta > 0": 0.981651376146789,
+      "empirical log-odds": 3.8046704572390793,
+      "prior-adjusted delta": 7.719078622985342,
+      "model top = a_ctx": 0.930045871559633,
+      "model top = a_id": 0.005160550458715597,
+      "model top = realised": 0.8583715596330275,
+      "realised = a_ctx": 0.8623853211009175,
+      "realised = a_id": 0.018922018348623854
+    },
+    {
+      "subset": "index-0",
+      "n": 8947,
+      "matches": 35,
+      "mean delta": 6.305777780455165,
+      "CI low": 6.186695720362293,
+      "CI high": 6.4266888192337595,
+      "share delta > 0": 0.9835699117022466,
+      "empirical log-odds": 3.7823417345808115,
+      "prior-adjusted delta": 8.009635916095231,
+      "model top = a_ctx": 0.9308147982563988,
+      "model top = a_id": 0.005923773331843076,
+      "model top = realised": 0.8924779255616407,
+      "realised = a_ctx": 0.8761596065720353,
+      "realised = a_id": 0.019894936850340897
+    },
+    {
+      "subset": "genuine",
+      "n": 5632,
+      "matches": 35,
+      "mean delta": 5.091785100787423,
+      "CI low": 4.938765268911273,
+      "CI high": 5.285685180925945,
+      "share delta > 0": 0.9698153409090909,
+      "empirical log-odds": 3.0727162902556064,
+      "prior-adjusted delta": 7.160537691158259,
+      "model top = a_ctx": 0.8810369318181818,
+      "model top = a_id": 0.010120738636363636,
+      "model top = realised": 0.8032670454545454,
+      "realised = a_ctx": 0.7727272727272727,
+      "realised = a_id": 0.035688920454545456
+    },
+    {
+      "subset": "coupled",
+      "n": 5059,
+      "matches": 35,
+      "mean delta": 7.539219205865843,
+      "CI low": 7.384498608122787,
+      "CI high": 7.691303930318183,
+      "share delta > 0": 0.9982209922909666,
+      "empirical log-odds": 6.164116487613002,
+      "prior-adjusted delta": 8.854741526623277,
+      "model top = a_ctx": 0.9859656058509587,
+      "model top = a_id": 0.0009883376161296698,
+      "model top = realised": 0.9800355801541807,
+      "realised = a_ctx": 0.9865586084206365,
+      "realised = a_id": 0.0019766752322593396
+    },
+    {
+      "subset": "B5 agrees with a_ctx",
+      "n": 10095,
+      "matches": 35,
+      "mean delta": 6.437364824367166,
+      "CI low": 6.312506260435112,
+      "CI high": 6.560849446494222,
+      "share delta > 0": 0.9900941059930659,
+      "empirical log-odds": 3.9509697384706692,
+      "prior-adjusted delta": 8.14252139718163,
+      "model top = a_ctx": 0.961961367013373,
+      "model top = a_id": 0.003863298662704309,
+      "model top = realised": 0.9047052996532937,
+      "realised = a_ctx": 0.9037147102526003,
+      "realised = a_id": 0.01733531451213472
+    },
+    {
+      "subset": "B5 disagrees",
+      "n": 596,
+      "matches": 35,
+      "mean delta": 3.0749089733616217,
+      "CI low": 2.804150502103611,
+      "CI high": 3.3512718817498572,
+      "share delta > 0": 0.8674496644295302,
+      "empirical log-odds": 1.7985854342984549,
+      "prior-adjusted delta": 4.908610998728053,
+      "model top = a_ctx": 0.401006711409396,
+      "model top = a_id": 0.03859060402684564,
+      "model top = realised": 0.5855704697986577,
+      "realised = a_ctx": 0.3691275167785235,
+      "realised = a_id": 0.06040268456375839
+    },
+    {
+      "subset": "a_id margin < 0.02",
+      "n": 1211,
+      "matches": 30,
+      "mean delta": 6.547331187384962,
+      "CI low": 6.257663773016124,
+      "CI high": 6.840892351806225,
+      "share delta > 0": 0.985962014863749,
+      "empirical log-odds": 4.165019519892037,
+      "prior-adjusted delta": 8.208517540707872,
+      "model top = a_ctx": 0.9331131296449215,
+      "model top = a_id": 0.006606110652353427,
+      "model top = realised": 0.8893476465730801,
+      "realised = a_ctx": 0.8769611890999174,
+      "realised = a_id": 0.013212221304706853
+    },
+    {
+      "subset": "a_id margin 0.02 to 0.05",
+      "n": 2303,
+      "matches": 35,
+      "mean delta": 6.31907405300188,
+      "CI low": 6.124405843169902,
+      "CI high": 6.5141647036673165,
+      "share delta > 0": 0.9895788102475033,
+      "empirical log-odds": 3.9043392397767622,
+      "prior-adjusted delta": 8.124318760084224,
+      "model top = a_ctx": 0.9305254016500217,
+      "model top = a_id": 0.0034737299174989146,
+      "model top = realised": 0.873643074250977,
+      "realised = a_ctx": 0.8723404255319149,
+      "realised = a_id": 0.017368649587494574
+    },
+    {
+      "subset": "a_id margin > 0.05",
+      "n": 7177,
+      "matches": 35,
+      "mean delta": 6.177539088494294,
+      "CI low": 6.057852631914554,
+      "CI high": 6.288259599270708,
+      "share delta > 0": 0.9807719102689146,
+      "empirical log-odds": 3.6972845466212885,
+      "prior-adjusted delta": 7.868672817823502,
+      "model top = a_ctx": 0.9303330082207051,
+      "model top = a_id": 0.006409363243695137,
+      "model top = realised": 0.8907621568900654,
+      "realised = a_ctx": 0.8739027448794761,
+      "realised = a_id": 0.02159676745158144
+    }
+  ],
+  "paired_conflict_minus_control": {
+    "n": 252,
+    "n_matches": 25,
+    "mean": 1.8973168886843181,
+    "sd": 2.478494161489854,
+    "ci_low": 1.5249926264198232,
+    "ci_high": 2.266276867173735
+  },
+  "seed_agreement": [
+    {
+      "seed a": 100,
+      "seed b": 101,
+      "spearman": 0.8919567276960048,
+      "CI low": 0.8805572896310548,
+      "CI high": 0.9022890384328521
+    },
+    {
+      "seed a": 100,
+      "seed b": 102,
+      "spearman": 0.8705899728982484,
+      "CI low": 0.860000103962318,
+      "CI high": 0.8808174024731146
+    },
+    {
+      "seed a": 100,
+      "seed b": 103,
+      "spearman": 0.8749434441127967,
+      "CI low": 0.8637285491434776,
+      "CI high": 0.8867665862647406
+    },
+    {
+      "seed a": 100,
+      "seed b": 104,
+      "spearman": 0.9009508705658117,
+      "CI low": 0.8937325435277423,
+      "CI high": 0.9076890215711964
+    },
+    {
+      "seed a": 101,
+      "seed b": 102,
+      "spearman": 0.8844333268142888,
+      "CI low": 0.8711450341813076,
+      "CI high": 0.8974132622708315
+    },
+    {
+      "seed a": 101,
+      "seed b": 103,
+      "spearman": 0.8944709548117131,
+      "CI low": 0.8845460111502528,
+      "CI high": 0.9044400793517394
+    },
+    {
+      "seed a": 101,
+      "seed b": 104,
+      "spearman": 0.8969178004178062,
+      "CI low": 0.8852670238087396,
+      "CI high": 0.9072000825211088
+    },
+    {
+      "seed a": 102,
+      "seed b": 103,
+      "spearman": 0.8755155339685294,
+      "CI low": 0.8624064005823472,
+      "CI high": 0.8872080773016883
+    },
+    {
+      "seed a": 102,
+      "seed b": 104,
+      "spearman": 0.8840728098318651,
+      "CI low": 0.8723287587751563,
+      "CI high": 0.8942110582665822
+    },
+    {
+      "seed a": 103,
+      "seed b": 104,
+      "spearman": 0.8676017812883543,
+      "CI low": 0.8563192719369305,
+      "CI high": 0.8793778856974809
+    }
+  ],
+  "seed_means": {
+    "100": 6.419584274291992,
+    "101": 6.161360263824463,
+    "102": 6.462651252746582,
+    "103": 6.24991512298584,
+    "104": 6.649374485015869
+  },
+  "tau_sensitivity": [
+    {
+      "percentile": 75,
+      "tau": 0.3470991477370262,
+      "n": 10691,
+      "mean delta": 6.249915223095133,
+      "CI low": 6.12978722229389,
+      "CI high": 6.366756338613022,
+      "share delta > 0": 0.9832569450940043,
+      "realised = a_ctx": 0.8739126367973061
+    },
+    {
+      "percentile": 80,
+      "tau": 0.38128824234008796,
+      "n": 8553,
+      "mean delta": 6.53435449835924,
+      "CI low": 6.41202093293498,
+      "CI high": 6.65826926140357,
+      "share delta > 0": 0.984332982579212,
+      "realised = a_ctx": 0.889278615690401
+    },
+    {
+      "percentile": 85,
+      "tau": 0.43295799344778063,
+      "n": 6415,
+      "mean delta": 6.901223859991167,
+      "CI low": 6.756611730482773,
+      "CI high": 7.0546398902278975,
+      "share delta > 0": 0.9875292283710054,
+      "realised = a_ctx": 0.9005455962587685
+    },
+    {
+      "percentile": 90,
+      "tau": 0.5267283916473389,
+      "n": 4277,
+      "mean delta": 7.7400944972476555,
+      "CI low": 7.591344575892164,
+      "CI high": 7.884183094249112,
+      "share delta > 0": 0.9936871638999298,
+      "realised = a_ctx": 0.9462239887771803
+    },
+    {
+      "percentile": 95,
+      "tau": 0.5837718099355697,
+      "n": 2139,
+      "mean delta": 8.783940848281809,
+      "CI low": 8.62733841196377,
+      "CI high": 8.935916543685606,
+      "share delta > 0": 0.9939223936418887,
+      "realised = a_ctx": 0.9710144927536232
+    }
+  ],
+  "run_mode": "full"
+}
