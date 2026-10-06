@@ -1,0 +1,15 @@
+group,input,kind,distinct values,vocabulary size,most common share,spread (SD)
+space,zone,categorical,96,96.0,0.06307339449541284,27.818445538123466
+time,period,categorical,2,5.0,0.5252293577981652,0.4993630738301464
+time,minute_bin,categorical,20,24.0,0.07396788990825688,5.373857585495915
+state,score_diff,categorical,7,7.0,0.38589449541284404,1.123995965470101
+state,poss_len,categorical,21,22.0,0.1313073394495413,6.703469656582828
+state,possession_flag,categorical,2,2.0,0.6490825688073395,0.4772571504732065
+history,prev_action,categorical,15,16.0,0.1680045871559633,4.439988407868964
+history,prev_outcome,categorical,3,3.0,0.4455275229357798,0.6770133178542159
+history,prev_end_zone,categorical,96,96.0,0.04529816513761468,28.619007893096487
+history,same_player_as_prev,categorical,2,2.0,0.7545871559633027,0.43033170928775044
+space,x_norm,continuous,820,,,0.2881871539307047
+space,y_norm,continuous,653,,,0.2591866094456851
+time,dt,continuous,757,,,0.7373349926083989
+time,t_poss,continuous,1556,,,1.147823616370901

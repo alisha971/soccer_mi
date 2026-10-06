@@ -1,0 +1,125 @@
+{
+  "nodes": {
+    "L0H0": {
+      "computes": "",
+      "class_keys": [
+        "a_ctx",
+        "team_change",
+        "player"
+      ],
+      "selected_by": [
+        "context",
+        "identity removal"
+      ]
+    },
+    "L0H1": {
+      "computes": "",
+      "class_keys": [
+        "player"
+      ],
+      "selected_by": [
+        "identity removal"
+      ]
+    },
+    "L0MLP": {
+      "computes": "",
+      "class_keys": [
+        "a_ctx",
+        "team_change",
+        "player"
+      ],
+      "selected_by": [
+        "context",
+        "identity removal"
+      ]
+    },
+    "L1H0": {
+      "computes": "",
+      "class_keys": [
+        "a_ctx",
+        "team_change"
+      ],
+      "selected_by": [
+        "context"
+      ]
+    },
+    "L1H1": {
+      "computes": "",
+      "class_keys": [
+        "a_ctx",
+        "team_change"
+      ],
+      "selected_by": [
+        "context"
+      ]
+    },
+    "L1MLP": {
+      "computes": "",
+      "class_keys": [
+        "a_ctx",
+        "team_change",
+        "player"
+      ],
+      "selected_by": [
+        "context",
+        "identity removal"
+      ]
+    },
+    "L2H0": {
+      "computes": "",
+      "class_keys": [
+        "player"
+      ],
+      "selected_by": [
+        "identity removal"
+      ]
+    },
+    "L2H1": {
+      "computes": "",
+      "class_keys": [
+        "player"
+      ],
+      "selected_by": [
+        "identity removal"
+      ]
+    },
+    "L2MLP": {
+      "computes": "",
+      "class_keys": [
+        "a_ctx",
+        "team_change",
+        "player"
+      ],
+      "selected_by": [
+        "context",
+        "identity removal"
+      ]
+    },
+    "L3H1": {
+      "computes": "",
+      "class_keys": [
+        "a_ctx",
+        "team_change"
+      ],
+      "selected_by": [
+        "context"
+      ]
+    },
+    "L3MLP": {
+      "computes": "",
+      "class_keys": [
+        "a_ctx",
+        "team_change",
+        "player"
+      ],
+      "selected_by": [
+        "context",
+        "identity removal"
+      ]
+    }
+  },
+  "outside_circuit": "resampled without restriction: the hypothesis claims these carry nothing about the identity-context arbitration",
+  "scrub_scope": "target",
+  "note": "DEFAULT written by MB11b. Fill in every 'computes' sentence and choose 'class_keys' that express it before reading Section 5 as a result.",
+  "written_at": "2026-10-06T12:17:48.921043+00:00"
+}

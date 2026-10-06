@@ -1,0 +1,208 @@
+{
+  "status": "POST-HOC. Written 2026-10-04 by the repair, after MB12's test access and after MB16. Paraphrases MB16_plan.json. NOT pre-registered; validation estimation half only; must not be read against MB12's test results.",
+  "hypotheses": {
+    "H0 default (historical)": {
+      "computes": "NOT STATED: historical default class keys of config/mechanism_hypothesis.json",
+      "spec": {
+        "L0H0": [
+          "a_ctx",
+          "team_change",
+          "player"
+        ],
+        "L0H1": [
+          "player"
+        ],
+        "L0MLP": [
+          "a_ctx",
+          "team_change",
+          "player"
+        ],
+        "L1H0": [
+          "a_ctx",
+          "team_change"
+        ],
+        "L1H1": [
+          "a_ctx",
+          "team_change"
+        ],
+        "L1MLP": [
+          "a_ctx",
+          "team_change",
+          "player"
+        ],
+        "L2H0": [
+          "player"
+        ],
+        "L2H1": [
+          "player"
+        ],
+        "L2MLP": [
+          "a_ctx",
+          "team_change",
+          "player"
+        ],
+        "L3H1": [
+          "a_ctx",
+          "team_change"
+        ],
+        "L3MLP": [
+          "a_ctx",
+          "team_change",
+          "player"
+        ]
+      },
+      "free": [
+        "L3H0"
+      ]
+    },
+    "H1 shared output-key hypothesis": {
+      "computes": "each MLP output at the scored event is a function of (player, role, previous action, possession change, coupled flag) only; head outputs carry nothing about the behaviour",
+      "spec": {
+        "L0MLP": [
+          "player",
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L1MLP": [
+          "player",
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L2MLP": [
+          "player",
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L3MLP": [
+          "player",
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L0H0": null,
+        "L0H1": null,
+        "L1H0": null,
+        "L1H1": null,
+        "L2H0": null,
+        "L2H1": null,
+        "L3H0": null,
+        "L3H1": null
+      }
+    },
+    "H2 player-blind output-key hypothesis": {
+      "computes": "each MLP output is a function of (role, previous action, possession change, coupled flag) only and does not read the player; heads carry nothing",
+      "spec": {
+        "L0MLP": [
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L1MLP": [
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L2MLP": [
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L3MLP": [
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L0H0": null,
+        "L0H1": null,
+        "L1H0": null,
+        "L1H1": null,
+        "L2H0": null,
+        "L2H1": null,
+        "L3H0": null,
+        "L3H1": null
+      }
+    },
+    "H3 heads matter": {
+      "computes": "each head output is a function of H1's keys only; MLP outputs carry nothing about the behaviour",
+      "spec": {
+        "L0H0": [
+          "player",
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L0H1": [
+          "player",
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L1H0": [
+          "player",
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L1H1": [
+          "player",
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L2H0": [
+          "player",
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L2H1": [
+          "player",
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L3H0": [
+          "player",
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L3H1": [
+          "player",
+          "role",
+          "prev_action_id",
+          "team_change",
+          "coupled_with_prev"
+        ],
+        "L0MLP": null,
+        "L1MLP": null,
+        "L2MLP": null,
+        "L3MLP": null
+      }
+    }
+  },
+  "discriminating_predictions": {
+    "H1 vs H2": "identity effect: H1 above its wrong-class control, H2 not; both keep Delta",
+    "H1 vs H3": "Delta: H1 keeps it, H3 does not"
+  },
+  "scrub": "src/scrub.py, branch_rule 'hypothesis' (paired counterfactual donors), at the scored position",
+  "written_at": "2026-10-06T12:18:04.968485+00:00"
+}

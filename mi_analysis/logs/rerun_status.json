@@ -60,9 +60,9 @@
       "elapsed_seconds": 577.09
     },
     "MB07": {
-      "state": "failed",
-      "started_at": "2026-10-05T21:02:51Z",
-      "cell": 23,
+      "state": "completed",
+      "started_at": "2026-10-06T12:05:14Z",
+      "cell": 31,
       "total_cells": 31,
       "previous_attempts": [
         {
@@ -70,10 +70,157 @@
           "started_at": "2026-10-05T18:19:37Z",
           "elapsed_seconds": 9534.95,
           "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-05T21:02:51Z",
+          "elapsed_seconds": 491.97,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-06T11:46:58Z",
+          "elapsed_seconds": 4.44,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-06T11:48:15Z",
+          "elapsed_seconds": 2.07,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-06T11:52:10Z",
+          "elapsed_seconds": 2.07,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-06T11:52:52Z",
+          "elapsed_seconds": 2.07,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-06T11:53:04Z",
+          "elapsed_seconds": 2.07,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-06T11:53:18Z",
+          "elapsed_seconds": 2.07,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-06T11:53:41Z",
+          "elapsed_seconds": 3.07,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-06T11:54:08Z",
+          "elapsed_seconds": 1.07,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-06T11:54:31Z",
+          "elapsed_seconds": 1.07,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-06T11:54:55Z",
+          "elapsed_seconds": 2.07,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-06T11:55:24Z",
+          "elapsed_seconds": 2.07,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "failed",
+          "started_at": "2026-10-06T11:55:55Z",
+          "elapsed_seconds": 1.39,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        },
+        {
+          "state": "completed",
+          "started_at": "2026-10-06T11:57:17Z",
+          "elapsed_seconds": 405.36,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
         }
       ],
-      "elapsed_seconds": 491.97,
-      "error": ""
+      "elapsed_seconds": 88.14
+    },
+    "MB08": {
+      "state": "completed",
+      "started_at": "2026-10-06T12:07:00Z",
+      "cell": 20,
+      "total_cells": 20,
+      "previous_attempts": [],
+      "elapsed_seconds": 405.7
+    },
+    "MB09": {
+      "state": "completed",
+      "started_at": "2026-10-06T12:14:06Z",
+      "cell": 17,
+      "total_cells": 17,
+      "previous_attempts": [],
+      "elapsed_seconds": 13.78
+    },
+    "MB10": {
+      "state": "completed",
+      "started_at": "2026-10-06T12:14:41Z",
+      "cell": 34,
+      "total_cells": 34,
+      "previous_attempts": [],
+      "elapsed_seconds": 44.43
+    },
+    "MB11": {
+      "state": "completed",
+      "started_at": "2026-10-06T12:15:48Z",
+      "cell": 29,
+      "total_cells": 29,
+      "previous_attempts": [],
+      "elapsed_seconds": 89.13
+    },
+    "MB11b": {
+      "state": "completed",
+      "started_at": "2026-10-06T12:17:39Z",
+      "cell": 38,
+      "total_cells": 38,
+      "previous_attempts": [],
+      "elapsed_seconds": 34.1
+    },
+    "MB11c": {
+      "state": "completed",
+      "started_at": "2026-10-06T12:18:36Z",
+      "cell": 28,
+      "total_cells": 28,
+      "previous_attempts": [],
+      "elapsed_seconds": 38.14
+    },
+    "MB12": {
+      "state": "completed",
+      "started_at": "2026-10-06T12:19:36Z",
+      "cell": 10,
+      "total_cells": 10,
+      "previous_attempts": [],
+      "elapsed_seconds": 27.69
+    },
+    "MB13": {
+      "state": "completed",
+      "started_at": "2026-10-06T12:20:27Z",
+      "cell": 33,
+      "total_cells": 33,
+      "previous_attempts": [],
+      "elapsed_seconds": 31.11
     }
   }
 }

@@ -1,0 +1,80 @@
+{
+  "analysis_id": "benchmark_4L_2H_K16_wd0.1_2026-10-05",
+  "status": "RETROSPECTIVE BENCHMARK DIAGNOSTICS AND PROVENANCE AUDIT COMPLETE; FRESH HELD-OUT CONFIRMATION UNAVAILABLE",
+  "reason": "Historical test outcomes were accessed before repairs; rerunning on another checkpoint does not restore unseen data.",
+  "new_test_accesses": 1,
+  "historical_test_log_sha256": null,
+  "verified_manifest_entries": 76,
+  "track_a_changed": [],
+  "checkpoint_hashes": {
+    "100": "d9712d0a305481eeac0d110f561677fa50838809d1cf84f0203cabc20a96358f",
+    "101": "1b04a5520e2180258456ad3574f71d3eb37d3049da29960e88ea59623ac290a3",
+    "102": "56134ec75d1d09b3451bab2a0857ee5cc922c7d5c2ea8d5534db2cb3736b19a9",
+    "103": "364652fec05af19d4b26fd10af56f98e4f3ae7ef68f60340d67b7bed2bd19d48",
+    "104": "e0b89ecde7df3a6b6ad0bbc48e7f48d85638949173f0c5b318d9644bb244a446"
+  },
+  "config_hashes": {
+    "config/analysis_plan.json": "0be22a397ce1ac6a0d3644cfa8d4dbf5f4532db95172eaf90a0ac41fde531f3a",
+    "config/locked_predictions.json": "193dad20b64521720122bfa245643cad0b41fc0f3aec40a2e5c41fd3a3a0bc34",
+    "config/mechanism_hypotheses_posthoc.json": "7e3d28c65251ee63a77373f478e7ed59b1ec1c0e0338321ce2c41ea2980eb409",
+    "config/circuit.json": "1c6be0701587d066293a988be66528e37f18d429b67aecad744df2a86d413245",
+    "config/execution_environment.json": "2c54fcc0ef46db34122aa5d178dad8ae793321e35a33506a6223a0098ea828ec",
+    "config/mi_config.json": "eae4a9eb568021f0d68324b3f695caebdc1cc18f6a45426c9dfabf1b74f767d8",
+    "config/preregistration.json": "7eb899fc3704458b4116116b6c14e4f05476051324cb6a93b712f6fa74ee6d94",
+    "config/adjacency_policy.json": "6aefbb75b3ef0c923b5c166ccc48d6d322f3743e239a11d55a8a86e26fa26876",
+    "config/reference_models.json": "a500b291682f56974a6b32d3c87669c3098cc32e5d94aa1b521d1e1c7da7e0a5",
+    "config/mechanism_hypothesis.json": "d68145b04bb19ad6052722ef94357915a17ce4cfeac9f16c94ff1a41c8b2e2b4",
+    "config/circuit_corrected_screen.json": "858591227b6b76b207f7a1f88005a0ce25fc87fb301668986fa43957933c9f32",
+    "config/candidates.json": "c1ae072776178168f4b9cbf22389f5f0c42e1e5b947b38f0276da444e49a30a1",
+    "config/MB11c_steering_corrected_plan.json": "05eb463a118b2a9f240a7f5c4337588bf45fe6d87d72c3100f816786958bec2a",
+    "config/identity_subspace.json": "991e4cf5f233e6b6b60d49375ba2e8d65a59ef0852d7a8cb007b3387e8027fe7"
+  },
+  "source_hashes": {
+    "src/paths.py": "94f75d86163ffa2b5035d02e92c4a60390544f9891674ed2e5390ff9ce8af6fb",
+    "src/hooks.py": "6128ac3d881da09cf4af62e42e85fc8fe490389270f489eced07378501fa6230",
+    "src/patching.py": "4c54c8739b12b15da204fe1da11606699d120192ba54b0c7369aca7e194aae92",
+    "src/context_edits.py": "abeb45274fa062f73d7e9f304f428b94e5563d8da9b6992d38aa15124978312c",
+    "src/probing.py": "0da611637ac359d24505e59ae67bd43ece5e3f3b851426b54b70bb27b6631431",
+    "src/conflict.py": "b2d5d4f66e05e3b4b82789f16a73e821fb7871b2bb11c5fd14b6c9cb49bd7c72",
+    "src/circuits.py": "9bf4e6e56c0af2e199f0285a63e09568a6161f961222f25df4f32e8f984aa2b1",
+    "src/attention.py": "892b4463d3ae9cd1bc6dbd0a470ede95793a4ed1eaef796e0f8cb1ba3576c667",
+    "src/attribution.py": "79105533b1c177519848ed5606b1fb203d9e072333b830d5eb39b25d319a23cc",
+    "src/twotoken.py": "f96b165ef75a7fdef2c0804b1c46a6d6d510bb940bbb2c915ebcb20c3a72b2aa",
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/mi_metrics.py": "8b5228a3f5863c72e8baaaadf445402ee7742ea555276cf00b7421e9470c178f",
+    "src/interventions.py": "4d0c5daf47a289ae7a04115a907bf8c1a16412bab831779981b2c2581dada7de",
+    "src/steering.py": "5c30d143685229576e68aeda51b4d4a1c161c47864fbf3b11039086974da6cc1",
+    "src/mi_setup.py": "8ac48f677516d661d5e526261a3e922c9217c3680e24b4b014d1898c0a6125b2",
+    "src/scrub.py": "e5017eb84ec6bc8ddece696584fe97601b1790645cd8165890d74c784ffad887",
+    "src/fingerprint.py": "75ad0136c38b92e38237c5f3e193b9c78ad9c98f77b60265bde9ca65e7f6afd7",
+    "src/graph.py": "7f448309b105b4bea2cc719868b89cec5b4b9f1b2b90b047f7360458bf20b7d8"
+  },
+  "validation_outputs": {
+    "MB03_summary_corrected.json": {
+      "sha256": "319f202f044b88d9e8fda458b8ec302e94bdb4e90db9a48566158e61ae8fb713",
+      "status": "new benchmark exploratory validation"
+    },
+    "MB04_summary.json": {
+      "sha256": "f54163a8612fbd25ab962a5b49d16cb84b3e59842d0b1689dea1219ffac57d47",
+      "status": "new benchmark exploratory validation"
+    },
+    "MB10_summary_corrected.json": {
+      "sha256": "e74caad9ebb0432ec5505e1311ce57adb5b28f55d244e6c43bfc861ae931a7c3",
+      "status": "new benchmark exploratory validation"
+    },
+    "MB11_summary_corrected.json": {
+      "sha256": "8aa80a2709ea3b739e62c55ff11ad6ab05fa5222879a4a8379f5822163e79e8b",
+      "status": "new benchmark exploratory validation"
+    },
+    "MB11b_summary_corrected.json": {
+      "sha256": "272e948e9144348944b8cc42b2d50b5e7cd64aecff1e07faad850a0c9f7b467e",
+      "status": "new benchmark exploratory validation"
+    },
+    "MB11c_summary_corrected.json": {
+      "sha256": "ce49391dc14cf7b60d247cca808a60397d4ef54f92a357a39b9651ebb1627c8f",
+      "status": "new benchmark exploratory validation"
+    }
+  },
+  "M4": "output-equivalence resampling only; no serial computation established",
+  "steering": "exploratory population transfer and unseen-dose interpolation, not locked test confirmation"
+}

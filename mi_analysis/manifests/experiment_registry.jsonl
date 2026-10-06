@@ -3,3 +3,16 @@
 {"notebook": "MB04", "experiment": "E5-E8 counterfactuals", "identity_variable": "player", "n": 1744, "seed": 103, "run_mode": "full", "time": "2026-10-05T17:38:39.126305+00:00"}
 {"notebook": "MB05", "experiment": "E9-E11 representations", "identity_variable": "player", "seed": 103, "run_mode": "full", "time": "2026-10-05T18:09:58.592658+00:00"}
 {"notebook": "MB06", "experiment": "E12 activation patching", "n_candidates": 36, "identity_variable": "player", "seed": 103, "run_mode": "full", "time": "2026-10-05T18:19:36.051547+00:00"}
+{"notebook": "MB07", "experiment": "E13-E14 attention heads", "seed": 103, "n_units": 36, "run_mode": "full", "time": "2026-10-06T12:04:00.184191+00:00"}
+{"notebook": "MB07", "experiment": "E13-E14 attention heads", "seed": 103, "n_units": 36, "run_mode": "full", "time": "2026-10-06T12:06:39.229034+00:00"}
+{"notebook": "MB08", "experiment": "E15 MLPs", "seed": 103, "qualifying_mlps": ["L0MLP", "L1MLP", "L2MLP", "L3MLP"], "run_mode": "full", "time": "2026-10-06T12:13:45.151931+00:00"}
+{"notebook": "MB09", "experiment": "E16-E17 logit decomposition and routes", "seed": 103, "largest_reconstruction_error": 6.67572021484375e-06, "run_mode": "full", "time": "2026-10-06T12:14:19.235963+00:00"}
+{"notebook": "MB10", "experiment": "E18 path patching (exhaustive screen + exact)", "seed": 103, "edges_screened": 4048, "edges_tested": 624, "completeness_edges": 18, "circuit_components": ["L0H0", "L0H1", "L0MLP", "L1H0", "L1H1", "L1MLP", "L2H0", "L2H1", "L2MLP", "L3H1", "L3MLP"], "circuit_source": "discovery-selected MB06 candidates + estimation-half exact edges passing BH; exploratory benchmark", "run_mode": "full", "time": "2026-10-06T12:15:20.182885+00:00"}
+{"notebook": "MB10", "experiment": "R: corrected EAP screen (F01) + dependent exact patching", "seed": 103, "edges_screened": 4048, "edges_tested": 624, "completeness_edges": 18, "run_mode": "full", "time": "2026-10-06T12:15:24.451545+00:00"}
+{"notebook": "MB11", "experiment": "E19-E20 faithfulness and replication", "seed": 103, "circuit": ["L0H0", "L0H1", "L0MLP", "L1H0", "L1H1", "L1MLP", "L2H0", "L2H1", "L2MLP", "L3H1", "L3MLP"], "skipped": false, "run_mode": "full", "time": "2026-10-06T12:16:55.695464+00:00"}
+{"notebook": "MB11", "experiment": "R: distinct random-circuit space (F08) + edge-graph faithfulness (F09)", "seed": 103, "run_mode": "full", "time": "2026-10-06T12:17:14.782149+00:00"}
+{"notebook": "MB11b", "experiment": "R: corrected paired causal scrub (F02-F04) + post-hoc hypotheses (F07)", "seed": 103, "run_mode": "full", "time": "2026-10-06T12:18:11.582433+00:00"}
+{"notebook": "MB11c", "experiment": "M7 identity subspace + M8 steering", "seed": 103, "skipped": false, "run_mode": "full", "time": "2026-10-06T12:19:08.022462+00:00"}
+{"notebook": "MB11c", "experiment": "R: batch-invariant steering + pre-specified calibration (F05, F06)", "seed": 103, "run_mode": "full", "time": "2026-10-06T12:19:13.131455+00:00"}
+{"notebook": "MB12", "event": "test evaluated", "seconds": 9, "time": "2026-10-06T12:20:02.808510+00:00"}
+{"notebook": "MB13", "experiment": "R: corrected context survey (F14-F21)", "seed": 103, "run_mode": "full", "time": "2026-10-06T12:20:57.628445+00:00"}

@@ -1,0 +1,583 @@
+{
+  "status": "REPAIRED 2026-10-04 (F14-F21); side study; not pre-registered; no discovery/estimation split",
+  "adjacency_confirmed": false,
+  "special_prev_action_codes": [
+    14,
+    15
+  ],
+  "single_inputs": [
+    {
+      "edit": "[reference] whole-window donor swap (player written back)",
+      "n rows scored": 1743,
+      "share of rows actually changed": NaN,
+      "mean |change in delta|": 6.795130611338016,
+      "CI low": 6.454668738061552,
+      "CI high": 7.145228469313481,
+      "as a share of the whole-window reference": 1.0,
+      "mean KL": 5.952521344337423,
+      "mean change in log p(a_ctx)": -6.122005677622743,
+      "mean change in log p(a_id)": 0.37342576024339663
+    },
+    {
+      "edit": "dt resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 5.894607847716026,
+      "CI low": 5.480531888967312,
+      "CI high": 6.251021938628413,
+      "as a share of the whole-window reference": 0.8674752826502815,
+      "mean KL": 2.9083072753747654,
+      "mean change in log p(a_ctx)": -3.0086083133268136,
+      "mean change in log p(a_id)": 2.538105459526553
+    },
+    {
+      "edit": "[reference] norm-matched random factor vector, history",
+      "n rows scored": 1744,
+      "share of rows actually changed": NaN,
+      "mean |change in delta|": 5.160139855474465,
+      "CI low": 4.800790207175784,
+      "CI high": 5.523058516376387,
+      "as a share of the whole-window reference": 0.7593878838567889,
+      "mean KL": 2.3473474098268055,
+      "mean change in log p(a_ctx)": -2.4790367009703576,
+      "mean change in log p(a_id)": 2.4655017551777942
+    },
+    {
+      "edit": "possession_flag resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 4.437641089386464,
+      "CI low": 4.123248907620575,
+      "CI high": 4.7410247397050105,
+      "as a share of the whole-window reference": 0.6530619267247103,
+      "mean KL": 2.607950716305709,
+      "mean change in log p(a_ctx)": -2.6389969354790086,
+      "mean change in log p(a_id)": 1.478974185826228
+    },
+    {
+      "edit": "prev_action resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 0.9994266055045872,
+      "mean |change in delta|": 4.031866349891278,
+      "CI low": 3.6584319108795174,
+      "CI high": 4.427312955743667,
+      "as a share of the whole-window reference": 0.5933464094367673,
+      "mean KL": 1.850600071427097,
+      "mean change in log p(a_ctx)": -1.890634289229928,
+      "mean change in log p(a_id)": 1.8161988853589657
+    },
+    {
+      "edit": "dt +/- 1 SD (bounded stored units)",
+      "n rows scored": 1744,
+      "share of rows actually changed": 0.7637614678899083,
+      "mean |change in delta|": 3.8334999206484457,
+      "CI low": 3.630128295859223,
+      "CI high": 4.026865687487055,
+      "as a share of the whole-window reference": 0.5641539714118311,
+      "mean KL": 1.7555607881643596,
+      "mean change in log p(a_ctx)": -1.8201920064150408,
+      "mean change in log p(a_id)": 1.6599550941959318
+    },
+    {
+      "edit": "[reference] norm-matched random factor vector, time",
+      "n rows scored": 1744,
+      "share of rows actually changed": NaN,
+      "mean |change in delta|": 3.481791360020064,
+      "CI low": 3.1816310478318224,
+      "CI high": 3.791765274826218,
+      "as a share of the whole-window reference": 0.5123950603996515,
+      "mean KL": 1.3929504367735737,
+      "mean change in log p(a_ctx)": -1.45172460766987,
+      "mean change in log p(a_id)": 1.4863499551790045
+    },
+    {
+      "edit": "prev_outcome resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 2.9464050137142905,
+      "CI low": 2.727556696738804,
+      "CI high": 3.150528605472415,
+      "as a share of the whole-window reference": 0.4336053539277179,
+      "mean KL": 1.355815823538538,
+      "mean change in log p(a_ctx)": -1.4266289558737333,
+      "mean change in log p(a_id)": 1.22515371629116
+    },
+    {
+      "edit": "same_player_as_prev resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 2.8314137604852143,
+      "CI low": 2.6678799705609033,
+      "CI high": 2.985533946370023,
+      "as a share of the whole-window reference": 0.4166827574676576,
+      "mean KL": 0.7779835875814808,
+      "mean change in log p(a_ctx)": -0.8351672868266006,
+      "mean change in log p(a_id)": 1.8216537091313618
+    },
+    {
+      "edit": "[reference] norm-matched random factor vector, state",
+      "n rows scored": 1744,
+      "share of rows actually changed": NaN,
+      "mean |change in delta|": 2.4897271428727756,
+      "CI low": 2.286219558267157,
+      "CI high": 2.6947905539229584,
+      "as a share of the whole-window reference": 0.36639871774039795,
+      "mean KL": 0.8401659906138751,
+      "mean change in log p(a_ctx)": -0.8438227719549016,
+      "mean change in log p(a_id)": 1.1421637459124407
+    },
+    {
+      "edit": "[reference] norm-matched random factor vector, space",
+      "n rows scored": 1744,
+      "share of rows actually changed": NaN,
+      "mean |change in delta|": 1.4704641746287286,
+      "CI low": 1.3846780195658286,
+      "CI high": 1.5630903115653751,
+      "as a share of the whole-window reference": 0.21639969247613658,
+      "mean KL": 0.33346322999124567,
+      "mean change in log p(a_ctx)": -0.45760303508934413,
+      "mean change in log p(a_id)": 0.649861841748915
+    },
+    {
+      "edit": "zone resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 0.9765001631945545,
+      "CI low": 0.9143469620428273,
+      "CI high": 1.043759326057676,
+      "as a share of the whole-window reference": 0.14370587101964089,
+      "mean KL": 0.13648544828203166,
+      "mean change in log p(a_ctx)": -0.2030122988505935,
+      "mean change in log p(a_id)": 0.20221195034597425
+    },
+    {
+      "edit": "prev_end_zone resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 0.7110591389249327,
+      "CI low": 0.6755616020789408,
+      "CI high": 0.7431368162566758,
+      "as a share of the whole-window reference": 0.10464245348551429,
+      "mean KL": 0.06476976765677919,
+      "mean change in log p(a_ctx)": -0.08992072710447832,
+      "mean change in log p(a_id)": 0.13748814220394123
+    },
+    {
+      "edit": "x_norm resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 0.38629054403368956,
+      "CI low": 0.35817943789057505,
+      "CI high": 0.41476789349795856,
+      "as a share of the whole-window reference": 0.056848141136410894,
+      "mean KL": 0.04406060039099482,
+      "mean change in log p(a_ctx)": -0.08702210491723059,
+      "mean change in log p(a_id)": 0.11661639980248567
+    },
+    {
+      "edit": "poss_len resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 0.37310043552728805,
+      "CI low": 0.3477054527229605,
+      "CI high": 0.3988853056781877,
+      "as a share of the whole-window reference": 0.05490702929311635,
+      "mean KL": 0.03704837242698383,
+      "mean change in log p(a_ctx)": -0.04204480872503055,
+      "mean change in log p(a_id)": 0.06583525724170021
+    },
+    {
+      "edit": "x_norm +/- 1 SD (bounded stored units)",
+      "n rows scored": 1744,
+      "share of rows actually changed": 0.9954128440366973,
+      "mean |change in delta|": 0.24523109739321633,
+      "CI low": 0.22973193773715278,
+      "CI high": 0.2602905382771123,
+      "as a share of the whole-window reference": 0.036089239695265896,
+      "mean KL": 0.009582354525063091,
+      "mean change in log p(a_ctx)": -0.018334470438493868,
+      "mean change in log p(a_id)": 0.03272762049105677
+    },
+    {
+      "edit": "t_poss resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 0.23739355232893508,
+      "CI low": 0.2218155998073714,
+      "CI high": 0.25603064371563694,
+      "as a share of the whole-window reference": 0.034935833600141845,
+      "mean KL": 0.009689029552669612,
+      "mean change in log p(a_ctx)": -0.005235035916121548,
+      "mean change in log p(a_id)": 0.037987420715863945
+    },
+    {
+      "edit": "minute_bin resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 0.22954414278189997,
+      "CI low": 0.21425939920896586,
+      "CI high": 0.24355635277240434,
+      "as a share of the whole-window reference": 0.033780681477835625,
+      "mean KL": 0.005997475166875772,
+      "mean change in log p(a_ctx)": -0.0025466439335463617,
+      "mean change in log p(a_id)": 0.015577106979906106
+    },
+    {
+      "edit": "t_poss +/- 1 SD (bounded stored units)",
+      "n rows scored": 1744,
+      "share of rows actually changed": 0.9690366972477065,
+      "mean |change in delta|": 0.2101432142924483,
+      "CI low": 0.19931698534037295,
+      "CI high": 0.22204021058304366,
+      "as a share of the whole-window reference": 0.030925559244117225,
+      "mean KL": 0.005244449425040058,
+      "mean change in log p(a_ctx)": -0.0048495793605137566,
+      "mean change in log p(a_id)": 0.045017570894157734
+    },
+    {
+      "edit": "score_diff resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 0.21006719304534727,
+      "CI low": 0.18959777523772306,
+      "CI high": 0.23245214549413584,
+      "as a share of the whole-window reference": 0.030914371637660594,
+      "mean KL": 0.0063573663074493626,
+      "mean change in log p(a_ctx)": -0.002176166010212887,
+      "mean change in log p(a_id)": 0.019283715795520757
+    },
+    {
+      "edit": "period resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 0.13443926816985222,
+      "CI low": 0.12438663873750341,
+      "CI high": 0.14543694148039557,
+      "as a share of the whole-window reference": 0.01978464813399371,
+      "mean KL": 0.0022332650244105837,
+      "mean change in log p(a_ctx)": -0.0026104521631845,
+      "mean change in log p(a_id)": 0.02638097236667147
+    },
+    {
+      "edit": "y_norm resample-other",
+      "n rows scored": 1744,
+      "share of rows actually changed": 1.0,
+      "mean |change in delta|": 0.05080474174533573,
+      "CI low": 0.04750197859835144,
+      "CI high": 0.05380376320959951,
+      "as a share of the whole-window reference": 0.007476639471883803,
+      "mean KL": 0.00030433745858002005,
+      "mean change in log p(a_ctx)": -0.0005121879617426499,
+      "mean change in log p(a_id)": 0.001765378670513277
+    },
+    {
+      "edit": "y_norm +/- 1 SD (bounded stored units)",
+      "n rows scored": 1744,
+      "share of rows actually changed": 0.9974197247706422,
+      "mean |change in delta|": 0.03891256021404075,
+      "CI low": 0.03592851358434505,
+      "CI high": 0.0414937753584654,
+      "as a share of the whole-window reference": 0.005726536021119769,
+      "mean KL": 0.000137057061077165,
+      "mean change in log p(a_ctx)": -0.00015900258006748297,
+      "mean change in log p(a_id)": 0.0017978163413748883
+    },
+    {
+      "edit": "no-op",
+      "n rows scored": 1744,
+      "share of rows actually changed": NaN,
+      "mean |change in delta|": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "as a share of the whole-window reference": 0.0,
+      "mean KL": 0.0,
+      "mean change in log p(a_ctx)": 0.0,
+      "mean change in log p(a_id)": 0.0
+    }
+  ],
+  "noop_rates": [
+    {
+      "input": "zone",
+      "original rule: expected unchanged share": 0.0006261061980803132,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    },
+    {
+      "input": "period",
+      "original rule: expected unchanged share": 0.2519095614847235,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    },
+    {
+      "input": "minute_bin",
+      "original rule: expected unchanged share": 0.002935217208456336,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    },
+    {
+      "input": "score_diff",
+      "original rule: expected unchanged share": 0.08363957810923056,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    },
+    {
+      "input": "poss_len",
+      "original rule: expected unchanged share": 0.006160785208526219,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    },
+    {
+      "input": "possession_flag",
+      "original rule: expected unchanged share": 0.31667683696658533,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    },
+    {
+      "input": "prev_action",
+      "original rule: expected unchanged share": 0.012687417225550546,
+      "corrected rule: realised unchanged share": 0.0005733944954128267,
+      "of which: rows whose own code is special (never edited)": 0.0005733944954128441
+    },
+    {
+      "input": "prev_outcome",
+      "original rule: expected unchanged share": 0.17256148317914113,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    },
+    {
+      "input": "prev_end_zone",
+      "original rule: expected unchanged share": 0.0003820585141095296,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    },
+    {
+      "input": "same_player_as_prev",
+      "original rule: expected unchanged share": 0.4444438599444491,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    },
+    {
+      "input": "x_norm",
+      "original rule: expected unchanged share": NaN,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    },
+    {
+      "input": "y_norm",
+      "original rule: expected unchanged share": NaN,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    },
+    {
+      "input": "dt",
+      "original rule: expected unchanged share": NaN,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    },
+    {
+      "input": "t_poss",
+      "original rule: expected unchanged share": NaN,
+      "corrected rule: realised unchanged share": 0.0,
+      "of which: rows whose own code is special (never edited)": 0.0
+    }
+  ],
+  "groups": [
+    {
+      "group": "space",
+      "quantity": "|change| under set-to-code-0 (literal)",
+      "mean": 1.1140842706375165,
+      "CI low": 1.044265315066687,
+      "CI high": 1.180261423313582
+    },
+    {
+      "group": "space",
+      "quantity": "|change| under group factor mean-ablation",
+      "mean": 0.9986033116749257,
+      "CI low": 0.9155634460677494,
+      "CI high": 1.0862023949635284
+    },
+    {
+      "group": "space",
+      "quantity": "|change| under joint donor edit (same endpoint as singles)",
+      "mean": 1.1617600038955245,
+      "CI low": 1.0661982500878924,
+      "CI high": 1.2609877284029463
+    },
+    {
+      "group": "space",
+      "quantity": "signed non-additivity: joint - sum(single), mean",
+      "mean": -0.12423620349941177,
+      "CI low": -0.13632287462280804,
+      "CI high": -0.11010054965913615
+    },
+    {
+      "group": "space",
+      "quantity": "|joint - sum(single)|, mean",
+      "mean": 0.22532478517451143,
+      "CI low": 0.21046835203191494,
+      "CI high": 0.23945315940271192
+    },
+    {
+      "group": "space",
+      "quantity": "|joint - sum(single)| / |joint| (ratio of means)",
+      "mean": 0.19395123297322137,
+      "CI low": NaN,
+      "CI high": NaN
+    },
+    {
+      "group": "space",
+      "quantity": "for reference: original statistic on these endpoints, |joint| - sum|single|",
+      "mean": -0.14956646331440693,
+      "CI low": NaN,
+      "CI high": NaN
+    },
+    {
+      "group": "time",
+      "quantity": "|change| under set-to-code-0 (literal)",
+      "mean": 1.8787116326665112,
+      "CI low": 1.6091043872575197,
+      "CI high": 2.2384729880861522
+    },
+    {
+      "group": "time",
+      "quantity": "|change| under group factor mean-ablation",
+      "mean": 6.0474625700281575,
+      "CI low": 5.583185794334121,
+      "CI high": 6.448093533569045
+    },
+    {
+      "group": "time",
+      "quantity": "|change| under joint donor edit (same endpoint as singles)",
+      "mean": 3.8854665814668214,
+      "CI low": 3.6906849075716943,
+      "CI high": 4.075459084361871
+    },
+    {
+      "group": "time",
+      "quantity": "signed non-additivity: joint - sum(single), mean",
+      "mean": 0.05177597632341155,
+      "CI low": 0.023913610456978006,
+      "CI high": 0.07620119491396826
+    },
+    {
+      "group": "time",
+      "quantity": "|joint - sum(single)|, mean",
+      "mean": 0.30115029192743226,
+      "CI low": 0.2834867492753122,
+      "CI high": 0.31907112141099414
+    },
+    {
+      "group": "time",
+      "quantity": "|joint - sum(single)| / |joint| (ratio of means)",
+      "mean": 0.07750685422540517,
+      "CI low": NaN,
+      "CI high": NaN
+    },
+    {
+      "group": "time",
+      "quantity": "for reference: original statistic on these endpoints, |joint| - sum|single|",
+      "mean": -0.3929039681364497,
+      "CI low": NaN,
+      "CI high": NaN
+    },
+    {
+      "group": "state",
+      "quantity": "|change| under set-to-code-0 (literal)",
+      "mean": 2.8825449307679856,
+      "CI low": 2.620962930656292,
+      "CI high": 3.1373621096982958
+    },
+    {
+      "group": "state",
+      "quantity": "|change| under group factor mean-ablation",
+      "mean": 1.4380724592510303,
+      "CI low": 1.2157232705034315,
+      "CI high": 1.7124860989238855
+    },
+    {
+      "group": "state",
+      "quantity": "|change| under joint donor edit (same endpoint as singles)",
+      "mean": 2.3678214665878254,
+      "CI low": 2.113552196514587,
+      "CI high": 2.5998685115011564
+    },
+    {
+      "group": "state",
+      "quantity": "signed non-additivity: joint - sum(single), mean",
+      "mean": 0.0019033172022585474,
+      "CI low": -0.029522429787783924,
+      "CI high": 0.03557580172866955
+    },
+    {
+      "group": "state",
+      "quantity": "|joint - sum(single)|, mean",
+      "mean": 0.27109394297687284,
+      "CI low": 0.2385988567623765,
+      "CI high": 0.3020295092689434
+    },
+    {
+      "group": "state",
+      "quantity": "|joint - sum(single)| / |joint| (ratio of means)",
+      "mean": 0.1144908713778728,
+      "CI low": NaN,
+      "CI high": NaN
+    },
+    {
+      "group": "state",
+      "quantity": "for reference: original statistic on these endpoints, |joint| - sum|single|",
+      "mean": -0.23956500108293977,
+      "CI low": NaN,
+      "CI high": NaN
+    },
+    {
+      "group": "history",
+      "quantity": "|change| under set-to-code-0 (literal)",
+      "mean": 4.971005621707973,
+      "CI low": 4.5785740261262395,
+      "CI high": 5.335796998278901
+    },
+    {
+      "group": "history",
+      "quantity": "|change| under group factor mean-ablation",
+      "mean": 3.9734115022995056,
+      "CI low": 3.6219449049707566,
+      "CI high": 4.313063231007469
+    },
+    {
+      "group": "history",
+      "quantity": "|change| under joint donor edit (same endpoint as singles)",
+      "mean": 5.188009460824071,
+      "CI low": 4.920655806884938,
+      "CI high": 5.450661661282087
+    },
+    {
+      "group": "history",
+      "quantity": "signed non-additivity: joint - sum(single), mean",
+      "mean": 1.747825808267733,
+      "CI low": 1.5515345788043784,
+      "CI high": 1.951909107770653
+    },
+    {
+      "group": "history",
+      "quantity": "|joint - sum(single)|, mean",
+      "mean": 2.691790026561314,
+      "CI low": 2.564407892393005,
+      "CI high": 2.830276086440444
+    },
+    {
+      "group": "history",
+      "quantity": "|joint - sum(single)| / |joint| (ratio of means)",
+      "mean": 0.5188483264897027,
+      "CI low": NaN,
+      "CI high": NaN
+    },
+    {
+      "group": "history",
+      "quantity": "for reference: original statistic on these endpoints, |joint| - sum|single|",
+      "mean": -2.482999848654716,
+      "CI low": NaN,
+      "CI high": NaN
+    }
+  ],
+  "run_mode": "full"
+}

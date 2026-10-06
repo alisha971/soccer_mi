@@ -1,0 +1,29 @@
+{
+  "status": "REPAIR 2026-10-04 (F05, F06); validation only; not part of the MB12 lock",
+  "scale": "reference_scale = mean norm of resid_post_{L-1} at the target over the DISCOVERY half, frozen",
+  "betas": [
+    -2.0,
+    -1.0,
+    -0.5,
+    -0.25,
+    -0.1,
+    -0.05,
+    0.0,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "linearity_tolerance": 0.1,
+  "models": [
+    "line through 0 (linear regime)",
+    "quadratic through 0",
+    "piecewise-linear through measured points"
+  ],
+  "selection": "lowest discovery leave-one-beta-out RMSE",
+  "pass_rule": "on the estimation half, at every evaluated beta, the model's prediction (fitted on the discovery half only) lies inside the 95% match-bootstrap interval of the measured mean change in Delta",
+  "direction": "stored v1 from config/steering_prediction.json (fixes the SVD sign), else recomputed v1",
+  "written_at": "2026-10-06T12:19:08.048775+00:00"
+}

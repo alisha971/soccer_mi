@@ -1,0 +1,934 @@
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_mi_notebooks.py", line 54, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 693, in async_execute
+    async with self.async_setup_kernel(**kwargs):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 651, in async_setup_kernel
+    await self.async_start_new_kernel_client()
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 566, in async_start_new_kernel_client
+    await ensure_async(self.kc.wait_for_ready(timeout=self.startup_timeout))
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 214, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_client/client.py", line 207, in _async_wait_for_ready
+    raise RuntimeError(msg)
+RuntimeError: Kernel died before replying to kernel_info
+Exception ignored in atexit callback: <bound method run_sync.<locals>.wrapped of <__main__.LoggedNotebookClient object at 0x792e5eef40b0>>
+Traceback (most recent call last):
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 504, in _async_cleanup_kernel
+    assert self.km is not None
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_mi_notebooks.py", line 54, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 693, in async_execute
+    async with self.async_setup_kernel(**kwargs):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 651, in async_setup_kernel
+    await self.async_start_new_kernel_client()
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 566, in async_start_new_kernel_client
+    await ensure_async(self.kc.wait_for_ready(timeout=self.startup_timeout))
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 214, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_client/client.py", line 207, in _async_wait_for_ready
+    raise RuntimeError(msg)
+RuntimeError: Kernel died before replying to kernel_info
+Exception ignored in atexit callback: <bound method run_sync.<locals>.wrapped of <__main__.LoggedNotebookClient object at 0x7e939539fe30>>
+Traceback (most recent call last):
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 504, in _async_cleanup_kernel
+    assert self.km is not None
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_mi_notebooks.py", line 54, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 693, in async_execute
+    async with self.async_setup_kernel(**kwargs):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 651, in async_setup_kernel
+    await self.async_start_new_kernel_client()
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 566, in async_start_new_kernel_client
+    await ensure_async(self.kc.wait_for_ready(timeout=self.startup_timeout))
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 214, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_client/client.py", line 207, in _async_wait_for_ready
+    raise RuntimeError(msg)
+RuntimeError: Kernel died before replying to kernel_info
+Exception ignored in atexit callback: <bound method run_sync.<locals>.wrapped of <__main__.LoggedNotebookClient object at 0x78d04681b0b0>>
+Traceback (most recent call last):
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 504, in _async_cleanup_kernel
+    assert self.km is not None
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_mi_notebooks.py", line 54, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 693, in async_execute
+    async with self.async_setup_kernel(**kwargs):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 651, in async_setup_kernel
+    await self.async_start_new_kernel_client()
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 566, in async_start_new_kernel_client
+    await ensure_async(self.kc.wait_for_ready(timeout=self.startup_timeout))
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 214, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_client/client.py", line 207, in _async_wait_for_ready
+    raise RuntimeError(msg)
+RuntimeError: Kernel died before replying to kernel_info
+Exception ignored in atexit callback: <bound method run_sync.<locals>.wrapped of <__main__.LoggedNotebookClient object at 0x7ac4e1db4800>>
+Traceback (most recent call last):
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 504, in _async_cleanup_kernel
+    assert self.km is not None
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_mi_notebooks.py", line 54, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 693, in async_execute
+    async with self.async_setup_kernel(**kwargs):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 651, in async_setup_kernel
+    await self.async_start_new_kernel_client()
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 566, in async_start_new_kernel_client
+    await ensure_async(self.kc.wait_for_ready(timeout=self.startup_timeout))
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 214, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_client/client.py", line 207, in _async_wait_for_ready
+    raise RuntimeError(msg)
+RuntimeError: Kernel died before replying to kernel_info
+Exception ignored in atexit callback: <bound method run_sync.<locals>.wrapped of <__main__.LoggedNotebookClient object at 0x7b1e16823d40>>
+Traceback (most recent call last):
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 504, in _async_cleanup_kernel
+    assert self.km is not None
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_mi_notebooks.py", line 54, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 693, in async_execute
+    async with self.async_setup_kernel(**kwargs):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 651, in async_setup_kernel
+    await self.async_start_new_kernel_client()
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 566, in async_start_new_kernel_client
+    await ensure_async(self.kc.wait_for_ready(timeout=self.startup_timeout))
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 214, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_client/client.py", line 207, in _async_wait_for_ready
+    raise RuntimeError(msg)
+RuntimeError: Kernel died before replying to kernel_info
+Exception ignored in atexit callback: <bound method run_sync.<locals>.wrapped of <__main__.LoggedNotebookClient object at 0x7f5a040ceea0>>
+Traceback (most recent call last):
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 504, in _async_cleanup_kernel
+    assert self.km is not None
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_mi_notebooks.py", line 54, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 693, in async_execute
+    async with self.async_setup_kernel(**kwargs):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 651, in async_setup_kernel
+    await self.async_start_new_kernel_client()
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 566, in async_start_new_kernel_client
+    await ensure_async(self.kc.wait_for_ready(timeout=self.startup_timeout))
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 214, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_client/client.py", line 207, in _async_wait_for_ready
+    raise RuntimeError(msg)
+RuntimeError: Kernel died before replying to kernel_info
+Exception ignored in atexit callback: <bound method run_sync.<locals>.wrapped of <__main__.LoggedNotebookClient object at 0x7e125b57c680>>
+Traceback (most recent call last):
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 504, in _async_cleanup_kernel
+    assert self.km is not None
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_mi_notebooks.py", line 54, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 693, in async_execute
+    async with self.async_setup_kernel(**kwargs):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 651, in async_setup_kernel
+    await self.async_start_new_kernel_client()
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 566, in async_start_new_kernel_client
+    await ensure_async(self.kc.wait_for_ready(timeout=self.startup_timeout))
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 214, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_client/client.py", line 207, in _async_wait_for_ready
+    raise RuntimeError(msg)
+RuntimeError: Kernel died before replying to kernel_info
+Exception ignored in atexit callback: <bound method run_sync.<locals>.wrapped of <__main__.LoggedNotebookClient object at 0x7ec512aa2ed0>>
+Traceback (most recent call last):
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 504, in _async_cleanup_kernel
+    assert self.km is not None
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_mi_notebooks.py", line 54, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 693, in async_execute
+    async with self.async_setup_kernel(**kwargs):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 651, in async_setup_kernel
+    await self.async_start_new_kernel_client()
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 566, in async_start_new_kernel_client
+    await ensure_async(self.kc.wait_for_ready(timeout=self.startup_timeout))
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 214, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_client/client.py", line 207, in _async_wait_for_ready
+    raise RuntimeError(msg)
+RuntimeError: Kernel died before replying to kernel_info
+Exception ignored in atexit callback: <bound method run_sync.<locals>.wrapped of <__main__.LoggedNotebookClient object at 0x7c7c83a9f230>>
+Traceback (most recent call last):
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 504, in _async_cleanup_kernel
+    assert self.km is not None
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_mi_notebooks.py", line 54, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 693, in async_execute
+    async with self.async_setup_kernel(**kwargs):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 651, in async_setup_kernel
+    await self.async_start_new_kernel_client()
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 566, in async_start_new_kernel_client
+    await ensure_async(self.kc.wait_for_ready(timeout=self.startup_timeout))
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 214, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_client/client.py", line 207, in _async_wait_for_ready
+    raise RuntimeError(msg)
+RuntimeError: Kernel died before replying to kernel_info
+Exception ignored in atexit callback: <bound method run_sync.<locals>.wrapped of <__main__.LoggedNotebookClient object at 0x7c92f209ba40>>
+Traceback (most recent call last):
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 504, in _async_cleanup_kernel
+    assert self.km is not None
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_mi_notebooks.py", line 54, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 693, in async_execute
+    async with self.async_setup_kernel(**kwargs):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 651, in async_setup_kernel
+    await self.async_start_new_kernel_client()
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 566, in async_start_new_kernel_client
+    await ensure_async(self.kc.wait_for_ready(timeout=self.startup_timeout))
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 214, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_client/client.py", line 207, in _async_wait_for_ready
+    raise RuntimeError(msg)
+RuntimeError: Kernel died before replying to kernel_info
+Exception ignored in atexit callback: <bound method run_sync.<locals>.wrapped of <__main__.LoggedNotebookClient object at 0x79c91b277fe0>>
+Traceback (most recent call last):
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 504, in _async_cleanup_kernel
+    assert self.km is not None
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 
+MB07 cell 1/31 15a768a2
+MB07 cell 2/31 a9a7a176
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_mi_notebooks.py", line 54, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import os
+for _thread_var in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "NUMEXPR_NUM_THREADS"):
+    os.environ[_thread_var] = os.environ.get("MI_CPU_THREADS", "4")
+import sys
+import json
+import time
+import importlib
+import importlib.util
+from pathlib import Path
+
+IN_COLAB = "google.colab" in sys.modules
+if IN_COLAB:
+    from google.colab import drive
+    drive.mount("/content/drive")
+
+
+def find_root(start):
+    """`start` (or one of its ancestors) holding both project folders directly, else None."""
+    start = Path(start).resolve()
+    for candidate in [start, *start.parents]:
+        if (candidate / "model_training_evaluation").is_dir() and (candidate / "mi_analysis").is_dir():
+            return candidate
+    return None
+
+
+def search_root(bases, max_depth=6):
+    """Breadth-first search under each base (e.g. a mounted Drive) for the project root."""
+    for base in bases:
+        base = Path(base)
+        if not base.is_dir():
+            continue
+        found = find_root(base)
+        if found is not None:
+            return found
+        frontier = [(base, 0)]
+        while frontier:
+            folder, depth = frontier.pop(0)
+            if depth >= max_depth:
+                continue
+            try:
+                children = [c for c in folder.iterdir() if c.is_dir() and not c.name.startswith(".")]
+            except PermissionError:
+                continue
+            for child in children:
+                if child.name == "model_training_evaluation" and (child.parent / "mi_analysis").is_dir():
+                    return child.parent
+                frontier.append((child, depth + 1))
+    return None
+
+
+if "SOCCER_MI_ROOT" in os.environ:
+    ROOT = Path(os.environ["SOCCER_MI_ROOT"])
+elif IN_COLAB:
+    ROOT = search_root(["/content", "/content/drive/MyDrive", "/content/drive/My Drive"])
+    if ROOT is None:
+        raise RuntimeError(
+            "BLOCKED: could not find a folder holding both model_training_evaluation/ and mi_analysis/ "
+            "under /content or the mounted Drive. Upload or sync the project there, or set "
+            "SOCCER_MI_ROOT to its exact path in a cell ABOVE this one, for example: "
+            "import os; os.environ['SOCCER_MI_ROOT'] = '/content/drive/MyDrive/.../soccer_mi'")
+else:
+    ROOT = find_root(Path.cwd())
+    if ROOT is None:
+        raise RuntimeError(f"BLOCKED: no ancestor of {Path.cwd()} holds both model_training_evaluation/ "
+                           "and mi_analysis/. Run this notebook from inside the project, or set SOCCER_MI_ROOT.")
+TRACK_A_DIR = ROOT / "model_training_evaluation"
+MI_DIR = Path(os.environ.get("MI_ANALYSIS_DIR", ROOT / "mi_analysis")).resolve()
+assert (TRACK_A_DIR / "src" / "data.py").exists(), (
+    f"BLOCKED: {TRACK_A_DIR / 'src' / 'data.py'} not found -- ROOT resolved to {ROOT}, which is wrong. "
+    "Set SOCCER_MI_ROOT explicitly.")
+assert (TRACK_A_DIR / "artifacts" / "events_prepared.parquet").exists(), (
+    f"BLOCKED: {TRACK_A_DIR / 'artifacts' / 'events_prepared.parquet'} not found -- ROOT is wrong.")
+RUN_MODE = os.environ.get("MI_RUN_MODE", "full")
+assert RUN_MODE in ("full", "smoke")
+
+for folder in [MI_DIR, MI_DIR / "src", MI_DIR / "notebooks", MI_DIR / "tests"]:
+    folder.mkdir(parents=True, exist_ok=True)
+(MI_DIR / "src" / "__init__.py").touch()
+os.chdir(MI_DIR)
+
+sys.path[:] = [entry for entry in sys.path if entry not in ("", ".", str(MI_DIR))]
+if str(TRACK_A_DIR) not in sys.path:
+    sys.path.insert(0, str(TRACK_A_DIR))
+spec = importlib.util.spec_from_file_location("mi_src", MI_DIR / "src" / "__init__.py",
+                                              submodule_search_locations=[str(MI_DIR / "src")])
+mi_src = importlib.util.module_from_spec(spec)
+sys.modules["mi_src"] = mi_src
+spec.loader.exec_module(mi_src)
+
+print("Colab:", IN_COLAB, "| RUN_MODE:", RUN_MODE)
+print("ROOT:", ROOT)
+print("Track A (read only):", TRACK_A_DIR, "| exists:", TRACK_A_DIR.exists())
+print("Track B:", MI_DIR)
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mImportError[39m                               Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 13[39m
+[32m      9[39m [38;5;28;01mfrom[39;00m pathlib [38;5;28;01mimport[39;00m Path
+[32m     10[39m 
+[32m     11[39m IN_COLAB = [33m"google.colab"[39m [38;5;28;01min[39;00m sys.modules
+[32m     12[39m [38;5;28;01mif[39;00m IN_COLAB:
+[32m---> [39m[32m13[39m     [38;5;28;01mfrom[39;00m google.colab [38;5;28;01mimport[39;00m drive
+[32m     14[39m     drive.mount([33m"/content/drive"[39m)
+[32m     15[39m 
+[32m     16[39m 
+
+[31mImportError[39m: cannot import name 'drive' from 'google.colab' (/content/mi-venv/lib/python3.12/site-packages/google/colab/__init__.py)
+
+MB07 cell 1/31 15a768a2
+MB07 cell 2/31 a9a7a176
+Colab: True | RUN_MODE: full
+ROOT: /content/soccer_mi
+Track A (read only): /content/soccer_mi/model_training_evaluation | exists: True
+Track B: /content/soccer_mi/.mi_analysis_rerun
+MB07 cell 3/31 119b9fd4
+MB07 cell 4/31 rd5352b0f0
+MB07 cell 5/31 a5e6371e
+MB07 cell 6/31 35c0c3c1
+Device: cuda | outputs: /content/soccer_mi/.mi_analysis_rerun
+Settings: {'reference_epochs': 25, 'batch_windows': 256, 'n_bootstrap': 2000, 'n_draws': 5, 'n_permutations': 1000, 'n_random_circuits': 100, 'probe_train_events': 20000, 'max_events': 100000, 'probe_seeds': 3, 'scrub_draws': 5}
+MB07 cell 7/31 bbbbdea0
+/content/soccer_mi/model_training_evaluation/src/batching.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  self.tensors[name] = torch.as_tensor(np.asarray(values), device=device)
+verified files: 51 | primary seed 103 | identity variable: player
+half        discovery  estimation
+population                       
+P-player         1215         529
+index-0          4296        4651
+P-player rows: 1,744 | matched controls: 252 | index-0 rows: 8,947 | scored events for NLL: 68,003 | heads: ['L0H0', 'L0H1', 'L1H0', 'L1H1', 'L2H0', 'L2H1', 'L3H0', 'L3H1']
+MB07 cell 8/31 94c948c3
+MB07 cell 9/31 b454a1b3
+MB07 cell 10/31 18b585c3
+relation  after a team change (earlier)  first position  previous event  same player (earlier)  same team (earlier)   self
+head                                                                                                                      
+L0H0                              0.028          -0.066           0.183                  0.019               -0.120  0.138
+L0H1                              0.056          -0.067           0.130                  0.030               -0.076  0.224
+L1H0                             -0.024          -0.035           0.028                  0.000               -0.072  0.183
+L1H1                              0.070          -0.032           0.056                  0.039               -0.008  0.166
+L2H0                              0.038          -0.024           0.012                  0.021               -0.023  0.159
+L2H1                             -0.029          -0.030          -0.001                 -0.019               -0.102  0.258
+L3H0                             -0.033          -0.036           0.008                 -0.032               -0.134  0.307
+L3H1                              0.024          -0.029           0.028                  0.027               -0.048  0.188
+MB07 cell 11/31 dd75b0cc
+MB07 cell 12/31 3f4d856c
+MB07 cell 13/31 e5c11786
+MB07 cell 14/31 209f327a
+contrast head  mean KL  mean KL (I4)  mean difference  CI low  CI high  p (greater)   n  q-value (BH over heads)
+      I1 L0H0   0.0275        0.0422          -0.0147 -0.0168  -0.0132       1.0000 529                   1.0000
+      I1 L0H1   0.0246        0.0388          -0.0142 -0.0161  -0.0123       1.0000 529                   1.0000
+      I1 L1H0   0.0214        0.0353          -0.0139 -0.0150  -0.0123       1.0000 529                   1.0000
+      I1 L1H1   0.0153        0.0293          -0.0140 -0.0155  -0.0123       1.0000 529                   1.0000
+      I1 L2H0   0.0208        0.0400          -0.0192 -0.0215  -0.0174       1.0000 529                   1.0000
+      I1 L2H1   0.0312        0.0557          -0.0245 -0.0293  -0.0202       1.0000 529                   1.0000
+      I1 L3H0   0.0439        0.0726          -0.0287 -0.0344  -0.0221       1.0000 529                   1.0000
+      I1 L3H1   0.0242        0.0466          -0.0224 -0.0271  -0.0166       1.0000 529                   1.0000
+      I2 L0H0   0.0418        0.0422          -0.0004 -0.0120   0.0106       0.5267 529                   0.9955
+      I2 L0H1   0.0273        0.0388          -0.0114 -0.0166  -0.0034       0.9955 529                   0.9955
+      I2 L1H0   0.0313        0.0353          -0.0041 -0.0105   0.0033       0.8476 529                   0.9955
+      I2 L1H1   0.0287        0.0293          -0.0006 -0.0050   0.0068       0.5987 529                   0.9955
+      I2 L2H0   0.0315        0.0400          -0.0085 -0.0146  -0.0014       0.9885 529                   0.9955
+      I2 L2H1   0.0479        0.0557          -0.0078 -0.0184   0.0084       0.8636 529                   0.9955
+      I2 L3H0   0.0683        0.0726          -0.0042 -0.0155   0.0112       0.7441 529                   0.9955
+      I2 L3H1   0.0418        0.0466          -0.0048 -0.0163   0.0103       0.7606 529                   0.9955
+MB07 cell 15/31 433eb231
+MB07 cell 16/31 49f2ba55
+head                      relation  mean score change  CI low  CI high    n
+L0H0                          self            -0.0351 -0.1091   0.0369 1744
+L0H1                          self            -0.1000 -0.1746  -0.0326 1744
+L0H0                previous event            -0.0765 -0.0988  -0.0559 1744
+L0H1                previous event            -0.0572 -0.0719  -0.0423 1744
+L0H0         same player (earlier)             0.0075 -0.0126   0.0253  894
+L0H1         same player (earlier)            -0.0126 -0.0269   0.0016  894
+L0H0           same team (earlier)             0.0392  0.0188   0.0575 1558
+L0H1           same team (earlier)             0.0352  0.0158   0.0539 1558
+L0H0 after a team change (earlier)             0.0050 -0.0156   0.0238 1592
+L0H1 after a team change (earlier)            -0.0009 -0.0123   0.0119 1592
+L0H0                first position             0.1205  0.0814   0.1578 1744
+L0H1                first position             0.1098  0.0754   0.1463 1744
+MB07 cell 17/31 3e444c70
+MB07 cell 18/31 d208804c
+head  mean direct write  CI low  CI high  mean change under I1  I1 CI low  I1 CI high
+L0H0             0.0086  0.0041   0.0126               -0.0001    -0.0008      0.0006
+L0H1             0.0236  0.0177   0.0286               -0.0023    -0.0032     -0.0014
+L1H0             0.0238  0.0197   0.0285               -0.0026    -0.0040     -0.0012
+L1H1            -0.0040 -0.0142   0.0061                0.0007    -0.0002      0.0017
+L2H0            -0.0168 -0.0234  -0.0099                0.0009    -0.0002      0.0022
+L2H1            -0.0170 -0.0222  -0.0124               -0.0024    -0.0045     -0.0007
+L3H0             0.0293  0.0141   0.0440               -0.0024    -0.0046     -0.0002
+L3H1             0.0062 -0.0094   0.0223               -0.0017    -0.0053      0.0016
+MB07 cell 19/31 b0d273ad
+MB07 cell 20/31 1591f584
+MB07 cell 21/31 1d1f3753
+      context pooled recovery (denoise, estimation)  context pooled recovery (noise, estimation)  context offset (denoise, estimation)  context offset (noise, estimation)
+head                                                                                                                                                                      
+L0H0                                          0.001                                        0.016                                   0.0                                 0.0
+L0H1                                         -0.004                                        0.012                                   0.0                                 0.0
+L1H0                                          0.002                                        0.016                                   0.0                                 0.0
+L1H1                                          0.010                                       -0.001                                   0.0                                 0.0
+L2H0                                          0.003                                        0.000                                   0.0                                 0.0
+L2H1                                         -0.002                                        0.004                                   0.0                                 0.0
+L3H0                                         -0.009                                        0.013                                   0.0                                 0.0
+L3H1                                          0.017                                        0.017                                   0.0                                 0.0
+
+contrast  identity removal                                 identity swap                                
+direction          denoise                noise                  denoise                noise           
+half             discovery estimation discovery estimation     discovery estimation discovery estimation
+head                                                                                                    
+L0H0                 0.018      0.033     0.020      0.044         0.010     -0.006     0.014      0.003
+L0H1                 0.032      0.018     0.037      0.020         0.027      0.014     0.038      0.017
+L1H0                -0.006      0.004    -0.004      0.003        -0.012     -0.001    -0.014     -0.001
+L1H1                 0.007     -0.001     0.004     -0.006         0.002      0.004     0.004      0.004
+L2H0                -0.009     -0.005    -0.012     -0.008        -0.004     -0.013    -0.007     -0.017
+L2H1                -0.007     -0.008    -0.005     -0.006        -0.013     -0.004    -0.014     -0.003
+L3H0                 0.001     -0.001    -0.002     -0.005        -0.002      0.013    -0.006      0.006
+L3H1                 0.001      0.011     0.002      0.012        -0.003      0.003    -0.004     -0.001
+MB07 cell 22/31 8af947cd
+MB07 cell 23/31 408d2c31
+Resuming after 0 of 8 heads; batch=512
+Completed L0H0: 315,784 rows in 38s; elapsed 38s
+Completed L0H1: 315,784 rows in 38s; elapsed 75s
+Completed L1H0: 315,784 rows in 37s; elapsed 112s
+Completed L1H1: 315,784 rows in 38s; elapsed 150s
+Completed L2H0: 315,784 rows in 38s; elapsed 189s
+Completed L2H1: 315,784 rows in 38s; elapsed 226s
+Completed L3H0: 315,784 rows in 39s; elapsed 265s
+Completed L3H1: 315,784 rows in 39s; elapsed 303s
+28 pairs done; 4,736,760 rows stored; 356 s
+MB07 cell 24/31 e2bcaa05
+Single heads (estimation half; q-values: BH within each method x scope; mean/all-positions over 36 units):
+unit   method         scope  P-player: mean change  P-player: CI low  P-player: CI high  P-player: q  matched controls: mean change  index-0: mean change  NLL (scored events): mean change  specificity: mean  specificity: CI low  specificity: q
+L0H0     mean        target                -0.0305           -0.0795             0.0190       0.3198                         0.0258               -0.0179                            0.0165            -0.1066              -0.2382          0.9935
+L0H0 resample        target                -0.1353           -0.1943            -0.0694       0.0016                        -0.0779               -0.1268                            0.0350            -0.1878              -0.3253          1.0000
+L0H0     mean all positions                -0.0231           -0.0735             0.0278       0.4016                         0.0442               -0.0168                            0.0122            -0.0873              -0.1949          1.0000
+L0H0 resample all positions                -0.1095           -0.1598            -0.0647       0.0013                         0.0115               -0.1045                            0.0273            -0.1283              -0.2630          1.0000
+L0H1     mean        target                -0.0985           -0.1496            -0.0549       0.0020                         0.0998               -0.1184                            0.0149            -0.0024              -0.0595          0.8742
+L0H1 resample        target                -0.1794           -0.2327            -0.1264       0.0016                         0.0569               -0.1979                            0.0298            -0.0430              -0.1099          1.0000
+L0H1     mean all positions                -0.1011           -0.1418            -0.0655       0.0017                         0.1028               -0.1264                            0.0120            -0.0319              -0.0816          1.0000
+L0H1 resample all positions                -0.1828           -0.2233            -0.1356       0.0013                         0.1051               -0.1953                            0.0250            -0.0163              -0.0773          1.0000
+L1H0     mean        target                -0.0191           -0.0696             0.0175       0.3861                        -0.0159               -0.0029                            0.0062            -0.0626              -0.1415          0.9935
+L1H0 resample        target                -0.0608           -0.1117            -0.0269       0.0016                        -0.0676               -0.0419                            0.0122            -0.1045              -0.1766          1.0000
+L1H0     mean all positions                -0.0273           -0.0710             0.0068       0.1613                        -0.0203               -0.0128                            0.0054            -0.0611              -0.1255          1.0000
+L1H0 resample all positions                -0.0597           -0.1032            -0.0266       0.0013                        -0.0449               -0.0491                            0.0112            -0.1095              -0.1774          1.0000
+L1H1     mean        target                 0.1495            0.1027             0.2003       0.0020                         0.2157                0.1212                            0.0031            -0.0207              -0.1369          0.8742
+L1H1 resample        target                 0.1150            0.0654             0.1703       0.0027                         0.1903                0.0925                            0.0094            -0.0246              -0.1475          1.0000
+L1H1     mean all positions                 0.1395            0.1002             0.1820       0.0017                         0.2150                0.1067                            0.0026            -0.0132              -0.1126          1.0000
+L1H1 resample all positions                 0.1113            0.0744             0.1533       0.0013                         0.1974                0.0783                            0.0086             0.0105              -0.0950          0.8886
+L2H0     mean        target                 0.0314           -0.0231             0.0786       0.3198                         0.0206                0.0227                            0.0021             0.0199              -0.0432          0.6583
+L2H0 resample        target                 0.0151           -0.0422             0.0642       0.5797                         0.0163                0.0092                            0.0041             0.0123              -0.0467          0.8769
+L2H0     mean all positions                 0.0368           -0.0154             0.0822       0.1919                         0.0304                0.0276                            0.0020             0.0312              -0.0301          1.0000
+L2H0 resample all positions                 0.0291           -0.0267             0.0781       0.2999                         0.0245                0.0144                            0.0037             0.0253              -0.0452          0.6157
+L2H1     mean        target                 0.0010           -0.0297             0.0344       0.9635                         0.0033                0.0058                            0.0033            -0.0233              -0.1395          0.8742
+L2H1 resample        target                -0.0142           -0.0455             0.0198       0.5026                        -0.0071               -0.0119                            0.0051            -0.0216              -0.1552          1.0000
+L2H1     mean all positions                 0.0024           -0.0298             0.0371       0.9055                         0.0031                0.0059                            0.0026            -0.0303              -0.1495          1.0000
+L2H1 resample all positions                -0.0208           -0.0520             0.0130       0.2776                        -0.0126               -0.0118                            0.0041            -0.0410              -0.1527          1.0000
+L3H0     mean        target                -0.1847           -0.2133            -0.1655       0.0020                        -0.1394               -0.1693                            0.0104             0.0207              -0.0254          0.6583
+L3H0 resample        target                -0.2109           -0.2394            -0.1904       0.0016                        -0.1690               -0.2046                            0.0141             0.0211              -0.0468          0.8769
+L3H0     mean all positions                -0.1847           -0.2133            -0.1655       0.0017                        -0.1394               -0.1693                            0.0104             0.0207              -0.0254          1.0000
+L3H0 resample all positions                -0.2170           -0.2489            -0.1928       0.0013                        -0.1604               -0.2016                            0.0139             0.0508              -0.0012          0.1159
+L3H1     mean        target                -0.1916           -0.2274            -0.1341       0.0020                         0.0024               -0.1523                            0.0019             0.0418               0.0104          0.0160
+L3H1 resample        target                -0.1981           -0.2393            -0.1344       0.0016                         0.0056               -0.1650                            0.0033             0.0547               0.0137          0.0160
+L3H1     mean all positions                -0.1916           -0.2274            -0.1341       0.0017                         0.0024               -0.1523                            0.0019             0.0418               0.0104          0.0720
+L3H1 resample all positions                -0.2180           -0.2569            -0.1536       0.0013                         0.0112               -0.1653                            0.0030             0.0606               0.0133          0.0080
+MB07 cell 25/31 79b26223
+Pair interaction = pair effect - (effect of a + effect of b); P-player, estimation half, mean ablation at every position
+head a head b  mean pair change  mean sum of singles  mean interaction  CI low  CI high
+  L0H0   L0H1           -0.1662              -0.1242           -0.0420 -0.0539  -0.0311
+  L0H0   L1H0           -0.0625              -0.0504           -0.0121 -0.0300   0.0018
+  L0H0   L1H1            0.1051               0.1164           -0.0113 -0.0189  -0.0017
+  L0H0   L2H0            0.0249               0.0137            0.0111 -0.0013   0.0238
+  L0H0   L2H1           -0.0225              -0.0206           -0.0019 -0.0117   0.0083
+  L0H0   L3H0           -0.2205              -0.2078           -0.0127 -0.0210  -0.0052
+  L0H0   L3H1           -0.1995              -0.2147            0.0152 -0.0003   0.0324
+  L0H1   L1H0           -0.1567              -0.1285           -0.0283 -0.0411  -0.0141
+  L0H1   L1H1            0.0723               0.0384            0.0339  0.0144   0.0468
+  L0H1   L2H0           -0.0628              -0.0643            0.0015 -0.0088   0.0113
+  L0H1   L2H1           -0.1052              -0.0987           -0.0065 -0.0173   0.0013
+  L0H1   L3H0           -0.3153              -0.2859           -0.0295 -0.0368  -0.0204
+  L0H1   L3H1           -0.3194              -0.2927           -0.0267 -0.0408  -0.0115
+  L1H0   L1H1            0.1142               0.1121            0.0020 -0.0040   0.0093
+  L1H0   L2H0            0.0077               0.0094           -0.0017 -0.0080   0.0045
+  L1H0   L2H1           -0.0205              -0.0249            0.0044 -0.0094   0.0140
+  L1H0   L3H0           -0.2052              -0.2121            0.0069  0.0001   0.0136
+  L1H0   L3H1           -0.2166              -0.2189            0.0023 -0.0102   0.0114
+  L1H1   L2H0            0.1835               0.1763            0.0072 -0.0033   0.0149
+  L1H1   L2H1            0.1449               0.1419            0.0030 -0.0082   0.0115
+  L1H1   L3H0           -0.0442              -0.0453            0.0011 -0.0035   0.0054
+  L1H1   L3H1           -0.0357              -0.0521            0.0165  0.0068   0.0275
+  L2H0   L2H1            0.0419               0.0392            0.0027 -0.0009   0.0063
+  L2H0   L3H0           -0.1402              -0.1479            0.0078  0.0035   0.0113
+  L2H0   L3H1           -0.1652              -0.1548           -0.0103 -0.0215  -0.0001
+  L2H1   L3H0           -0.2264              -0.1823           -0.0441 -0.0570  -0.0325
+  L2H1   L3H1           -0.1891              -0.1892            0.0001 -0.0027   0.0033
+  L3H0   L3H1           -0.3668              -0.3763            0.0095  0.0061   0.0131
+MB07 cell 26/31 bba19ecb
+MB07 cell 27/31 1e602841
+MB07 cell 28/31 ce146ac1
+MB07 cell 29/31 d97aa977
+      mean |change| (head)  pseudo-head median  pseudo-head 95th percentile  percentile of head in pseudo-head distribution
+head                                                                                                                       
+L0H0                0.3324              0.3475                       0.4266                                            33.0
+L0H1                0.2984              0.3475                       0.4266                                             5.0
+L1H0                0.2172              0.1828                       0.2063                                            98.0
+L1H1                0.2137              0.1828                       0.2063                                            97.0
+L2H0                0.1636              0.1257                       0.1428                                           100.0
+L2H1                0.1403              0.1257                       0.1428                                            91.0
+L3H0                0.2373              0.1939                       0.2278                                            97.0
+L3H1                0.2791              0.1939                       0.2278                                           100.0
+MB07 cell 30/31 36677e17
+MB07 cell 31/31 0628678a
+saved
+COMPLETED MB07: 405.36 seconds; promoted to mi_analysis/
+MB07 cell 1/31 15a768a2
+MB07 cell 2/31 a9a7a176
+Colab: True | RUN_MODE: full
+ROOT: /content/soccer_mi
+Track A (read only): /content/soccer_mi/model_training_evaluation | exists: True
+Track B: /content/soccer_mi/.mi_analysis_rerun
+MB07 cell 3/31 119b9fd4
+MB07 cell 4/31 rd5352b0f0
+MB07 cell 5/31 a5e6371e
+MB07 cell 6/31 35c0c3c1
+Device: cuda | outputs: /content/soccer_mi/.mi_analysis_rerun
+Settings: {'reference_epochs': 25, 'batch_windows': 256, 'n_bootstrap': 2000, 'n_draws': 5, 'n_permutations': 1000, 'n_random_circuits': 100, 'probe_train_events': 20000, 'max_events': 100000, 'probe_seeds': 3, 'scrub_draws': 5}
+MB07 cell 7/31 bbbbdea0
+/content/soccer_mi/model_training_evaluation/src/batching.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  self.tensors[name] = torch.as_tensor(np.asarray(values), device=device)
+verified files: 53 | primary seed 103 | identity variable: player
+half        discovery  estimation
+population                       
+P-player         1215         529
+index-0          4296        4651
+P-player rows: 1,744 | matched controls: 252 | index-0 rows: 8,947 | scored events for NLL: 68,003 | heads: ['L0H0', 'L0H1', 'L1H0', 'L1H1', 'L2H0', 'L2H1', 'L3H0', 'L3H1']
+MB07 cell 8/31 94c948c3
+MB07 cell 9/31 b454a1b3
+MB07 cell 10/31 18b585c3
+relation  after a team change (earlier)  first position  previous event  same player (earlier)  same team (earlier)   self
+head                                                                                                                      
+L0H0                              0.028          -0.066           0.183                  0.019               -0.120  0.138
+L0H1                              0.056          -0.067           0.130                  0.030               -0.076  0.224
+L1H0                             -0.024          -0.035           0.028                  0.000               -0.072  0.183
+L1H1                              0.070          -0.032           0.056                  0.039               -0.008  0.166
+L2H0                              0.038          -0.024           0.012                  0.021               -0.023  0.159
+L2H1                             -0.029          -0.030          -0.001                 -0.019               -0.102  0.258
+L3H0                             -0.033          -0.036           0.008                 -0.032               -0.134  0.307
+L3H1                              0.024          -0.029           0.028                  0.027               -0.048  0.188
+MB07 cell 11/31 dd75b0cc
+MB07 cell 12/31 3f4d856c
+MB07 cell 13/31 e5c11786
+MB07 cell 14/31 209f327a
+contrast head  mean KL  mean KL (I4)  mean difference  CI low  CI high  p (greater)   n  q-value (BH over heads)
+      I1 L0H0   0.0275        0.0422          -0.0147 -0.0168  -0.0132       1.0000 529                   1.0000
+      I1 L0H1   0.0246        0.0388          -0.0142 -0.0161  -0.0123       1.0000 529                   1.0000
+      I1 L1H0   0.0214        0.0353          -0.0139 -0.0150  -0.0123       1.0000 529                   1.0000
+      I1 L1H1   0.0153        0.0293          -0.0140 -0.0155  -0.0123       1.0000 529                   1.0000
+      I1 L2H0   0.0208        0.0400          -0.0192 -0.0215  -0.0174       1.0000 529                   1.0000
+      I1 L2H1   0.0312        0.0557          -0.0245 -0.0293  -0.0202       1.0000 529                   1.0000
+      I1 L3H0   0.0439        0.0726          -0.0287 -0.0344  -0.0221       1.0000 529                   1.0000
+      I1 L3H1   0.0242        0.0466          -0.0224 -0.0271  -0.0166       1.0000 529                   1.0000
+      I2 L0H0   0.0418        0.0422          -0.0004 -0.0120   0.0106       0.5267 529                   0.9955
+      I2 L0H1   0.0273        0.0388          -0.0114 -0.0166  -0.0034       0.9955 529                   0.9955
+      I2 L1H0   0.0313        0.0353          -0.0041 -0.0105   0.0033       0.8476 529                   0.9955
+      I2 L1H1   0.0287        0.0293          -0.0006 -0.0050   0.0068       0.5987 529                   0.9955
+      I2 L2H0   0.0315        0.0400          -0.0085 -0.0146  -0.0014       0.9885 529                   0.9955
+      I2 L2H1   0.0479        0.0557          -0.0078 -0.0184   0.0084       0.8636 529                   0.9955
+      I2 L3H0   0.0683        0.0726          -0.0042 -0.0155   0.0112       0.7441 529                   0.9955
+      I2 L3H1   0.0418        0.0466          -0.0048 -0.0163   0.0103       0.7606 529                   0.9955
+MB07 cell 15/31 433eb231
+MB07 cell 16/31 49f2ba55
+head                      relation  mean score change  CI low  CI high    n
+L0H0                          self            -0.0351 -0.1091   0.0369 1744
+L0H1                          self            -0.1000 -0.1746  -0.0326 1744
+L0H0                previous event            -0.0765 -0.0988  -0.0559 1744
+L0H1                previous event            -0.0572 -0.0719  -0.0423 1744
+L0H0         same player (earlier)             0.0075 -0.0126   0.0253  894
+L0H1         same player (earlier)            -0.0126 -0.0269   0.0016  894
+L0H0           same team (earlier)             0.0392  0.0188   0.0575 1558
+L0H1           same team (earlier)             0.0352  0.0158   0.0539 1558
+L0H0 after a team change (earlier)             0.0050 -0.0156   0.0238 1592
+L0H1 after a team change (earlier)            -0.0009 -0.0123   0.0119 1592
+L0H0                first position             0.1205  0.0814   0.1578 1744
+L0H1                first position             0.1098  0.0754   0.1463 1744
+MB07 cell 17/31 3e444c70
+MB07 cell 18/31 d208804c
+head  mean direct write  CI low  CI high  mean change under I1  I1 CI low  I1 CI high
+L0H0             0.0086  0.0041   0.0126               -0.0001    -0.0008      0.0006
+L0H1             0.0236  0.0177   0.0286               -0.0023    -0.0032     -0.0014
+L1H0             0.0238  0.0197   0.0285               -0.0026    -0.0040     -0.0012
+L1H1            -0.0040 -0.0142   0.0061                0.0007    -0.0002      0.0017
+L2H0            -0.0168 -0.0234  -0.0099                0.0009    -0.0002      0.0022
+L2H1            -0.0170 -0.0222  -0.0124               -0.0024    -0.0045     -0.0007
+L3H0             0.0293  0.0141   0.0440               -0.0024    -0.0046     -0.0002
+L3H1             0.0062 -0.0094   0.0223               -0.0017    -0.0053      0.0016
+MB07 cell 19/31 b0d273ad
+MB07 cell 20/31 1591f584
+MB07 cell 21/31 1d1f3753
+      context pooled recovery (denoise, estimation)  context pooled recovery (noise, estimation)  context offset (denoise, estimation)  context offset (noise, estimation)
+head                                                                                                                                                                      
+L0H0                                          0.001                                        0.016                                   0.0                                 0.0
+L0H1                                         -0.004                                        0.012                                   0.0                                 0.0
+L1H0                                          0.002                                        0.016                                   0.0                                 0.0
+L1H1                                          0.010                                       -0.001                                   0.0                                 0.0
+L2H0                                          0.003                                        0.000                                   0.0                                 0.0
+L2H1                                         -0.002                                        0.004                                   0.0                                 0.0
+L3H0                                         -0.009                                        0.013                                   0.0                                 0.0
+L3H1                                          0.017                                        0.017                                   0.0                                 0.0
+
+contrast  identity removal                                 identity swap                                
+direction          denoise                noise                  denoise                noise           
+half             discovery estimation discovery estimation     discovery estimation discovery estimation
+head                                                                                                    
+L0H0                 0.018      0.033     0.020      0.044         0.010     -0.006     0.014      0.003
+L0H1                 0.032      0.018     0.037      0.020         0.027      0.014     0.038      0.017
+L1H0                -0.006      0.004    -0.004      0.003        -0.012     -0.001    -0.014     -0.001
+L1H1                 0.007     -0.001     0.004     -0.006         0.002      0.004     0.004      0.004
+L2H0                -0.009     -0.005    -0.012     -0.008        -0.004     -0.013    -0.007     -0.017
+L2H1                -0.007     -0.008    -0.005     -0.006        -0.013     -0.004    -0.014     -0.003
+L3H0                 0.001     -0.001    -0.002     -0.005        -0.002      0.013    -0.006      0.006
+L3H1                 0.001      0.011     0.002      0.012        -0.003      0.003    -0.004     -0.001
+MB07 cell 22/31 8af947cd
+MB07 cell 23/31 408d2c31
+Resuming after 8 of 8 heads; batch=512
+28 pairs done; 4,736,760 rows stored; 51 s
+MB07 cell 24/31 e2bcaa05
+Single heads (estimation half; q-values: BH within each method x scope; mean/all-positions over 36 units):
+unit   method         scope  P-player: mean change  P-player: CI low  P-player: CI high  P-player: q  matched controls: mean change  index-0: mean change  NLL (scored events): mean change  specificity: mean  specificity: CI low  specificity: q
+L0H0     mean        target                -0.0305           -0.0795             0.0190       0.3198                         0.0258               -0.0179                            0.0165            -0.1066              -0.2382          0.9935
+L0H0 resample        target                -0.1353           -0.1943            -0.0694       0.0016                        -0.0779               -0.1268                            0.0350            -0.1878              -0.3253          1.0000
+L0H0     mean all positions                -0.0231           -0.0735             0.0278       0.4016                         0.0442               -0.0168                            0.0122            -0.0873              -0.1949          1.0000
+L0H0 resample all positions                -0.1095           -0.1598            -0.0647       0.0013                         0.0115               -0.1045                            0.0273            -0.1283              -0.2630          1.0000
+L0H1     mean        target                -0.0985           -0.1496            -0.0549       0.0020                         0.0998               -0.1184                            0.0149            -0.0024              -0.0595          0.8742
+L0H1 resample        target                -0.1794           -0.2327            -0.1264       0.0016                         0.0569               -0.1979                            0.0298            -0.0430              -0.1099          1.0000
+L0H1     mean all positions                -0.1011           -0.1418            -0.0655       0.0017                         0.1028               -0.1264                            0.0120            -0.0319              -0.0816          1.0000
+L0H1 resample all positions                -0.1828           -0.2233            -0.1356       0.0013                         0.1051               -0.1953                            0.0250            -0.0163              -0.0773          1.0000
+L1H0     mean        target                -0.0191           -0.0696             0.0175       0.3861                        -0.0159               -0.0029                            0.0062            -0.0626              -0.1415          0.9935
+L1H0 resample        target                -0.0608           -0.1117            -0.0269       0.0016                        -0.0676               -0.0419                            0.0122            -0.1045              -0.1766          1.0000
+L1H0     mean all positions                -0.0273           -0.0710             0.0068       0.1613                        -0.0203               -0.0128                            0.0054            -0.0611              -0.1255          1.0000
+L1H0 resample all positions                -0.0597           -0.1032            -0.0266       0.0013                        -0.0449               -0.0491                            0.0112            -0.1095              -0.1774          1.0000
+L1H1     mean        target                 0.1495            0.1027             0.2003       0.0020                         0.2157                0.1212                            0.0031            -0.0207              -0.1369          0.8742
+L1H1 resample        target                 0.1150            0.0654             0.1703       0.0027                         0.1903                0.0925                            0.0094            -0.0246              -0.1475          1.0000
+L1H1     mean all positions                 0.1395            0.1002             0.1820       0.0017                         0.2150                0.1067                            0.0026            -0.0132              -0.1126          1.0000
+L1H1 resample all positions                 0.1113            0.0744             0.1533       0.0013                         0.1974                0.0783                            0.0086             0.0105              -0.0950          0.8886
+L2H0     mean        target                 0.0314           -0.0231             0.0786       0.3198                         0.0206                0.0227                            0.0021             0.0199              -0.0432          0.6583
+L2H0 resample        target                 0.0151           -0.0422             0.0642       0.5797                         0.0163                0.0092                            0.0041             0.0123              -0.0467          0.8769
+L2H0     mean all positions                 0.0368           -0.0154             0.0822       0.1919                         0.0304                0.0276                            0.0020             0.0312              -0.0301          1.0000
+L2H0 resample all positions                 0.0291           -0.0267             0.0781       0.2999                         0.0245                0.0144                            0.0037             0.0253              -0.0452          0.6157
+L2H1     mean        target                 0.0010           -0.0297             0.0344       0.9635                         0.0033                0.0058                            0.0033            -0.0233              -0.1395          0.8742
+L2H1 resample        target                -0.0142           -0.0455             0.0198       0.5026                        -0.0071               -0.0119                            0.0051            -0.0216              -0.1552          1.0000
+L2H1     mean all positions                 0.0024           -0.0298             0.0371       0.9055                         0.0031                0.0059                            0.0026            -0.0303              -0.1495          1.0000
+L2H1 resample all positions                -0.0208           -0.0520             0.0130       0.2776                        -0.0126               -0.0118                            0.0041            -0.0410              -0.1527          1.0000
+L3H0     mean        target                -0.1847           -0.2133            -0.1655       0.0020                        -0.1394               -0.1693                            0.0104             0.0207              -0.0254          0.6583
+L3H0 resample        target                -0.2109           -0.2394            -0.1904       0.0016                        -0.1690               -0.2046                            0.0141             0.0211              -0.0468          0.8769
+L3H0     mean all positions                -0.1847           -0.2133            -0.1655       0.0017                        -0.1394               -0.1693                            0.0104             0.0207              -0.0254          1.0000
+L3H0 resample all positions                -0.2170           -0.2489            -0.1928       0.0013                        -0.1604               -0.2016                            0.0139             0.0508              -0.0012          0.1159
+L3H1     mean        target                -0.1916           -0.2274            -0.1341       0.0020                         0.0024               -0.1523                            0.0019             0.0418               0.0104          0.0160
+L3H1 resample        target                -0.1981           -0.2393            -0.1344       0.0016                         0.0056               -0.1650                            0.0033             0.0547               0.0137          0.0160
+L3H1     mean all positions                -0.1916           -0.2274            -0.1341       0.0017                         0.0024               -0.1523                            0.0019             0.0418               0.0104          0.0720
+L3H1 resample all positions                -0.2180           -0.2569            -0.1536       0.0013                         0.0112               -0.1653                            0.0030             0.0606               0.0133          0.0080
+MB07 cell 25/31 79b26223
+Pair interaction = pair effect - (effect of a + effect of b); P-player, estimation half, mean ablation at every position
+head a head b  mean pair change  mean sum of singles  mean interaction  CI low  CI high
+  L0H0   L0H1           -0.1662              -0.1242           -0.0420 -0.0539  -0.0311
+  L0H0   L1H0           -0.0625              -0.0504           -0.0121 -0.0300   0.0018
+  L0H0   L1H1            0.1051               0.1164           -0.0113 -0.0189  -0.0017
+  L0H0   L2H0            0.0249               0.0137            0.0111 -0.0013   0.0238
+  L0H0   L2H1           -0.0225              -0.0206           -0.0019 -0.0117   0.0083
+  L0H0   L3H0           -0.2205              -0.2078           -0.0127 -0.0210  -0.0052
+  L0H0   L3H1           -0.1995              -0.2147            0.0152 -0.0003   0.0324
+  L0H1   L1H0           -0.1567              -0.1285           -0.0283 -0.0411  -0.0141
+  L0H1   L1H1            0.0723               0.0384            0.0339  0.0144   0.0468
+  L0H1   L2H0           -0.0628              -0.0643            0.0015 -0.0088   0.0113
+  L0H1   L2H1           -0.1052              -0.0987           -0.0065 -0.0173   0.0013
+  L0H1   L3H0           -0.3153              -0.2859           -0.0295 -0.0368  -0.0204
+  L0H1   L3H1           -0.3194              -0.2927           -0.0267 -0.0408  -0.0115
+  L1H0   L1H1            0.1142               0.1121            0.0020 -0.0040   0.0093
+  L1H0   L2H0            0.0077               0.0094           -0.0017 -0.0080   0.0045
+  L1H0   L2H1           -0.0205              -0.0249            0.0044 -0.0094   0.0140
+  L1H0   L3H0           -0.2052              -0.2121            0.0069  0.0001   0.0136
+  L1H0   L3H1           -0.2166              -0.2189            0.0023 -0.0102   0.0114
+  L1H1   L2H0            0.1835               0.1763            0.0072 -0.0033   0.0149
+  L1H1   L2H1            0.1449               0.1419            0.0030 -0.0082   0.0115
+  L1H1   L3H0           -0.0442              -0.0453            0.0011 -0.0035   0.0054
+  L1H1   L3H1           -0.0357              -0.0521            0.0165  0.0068   0.0275
+  L2H0   L2H1            0.0419               0.0392            0.0027 -0.0009   0.0063
+  L2H0   L3H0           -0.1402              -0.1479            0.0078  0.0035   0.0113
+  L2H0   L3H1           -0.1652              -0.1548           -0.0103 -0.0215  -0.0001
+  L2H1   L3H0           -0.2264              -0.1823           -0.0441 -0.0570  -0.0325
+  L2H1   L3H1           -0.1891              -0.1892            0.0001 -0.0027   0.0033
+  L3H0   L3H1           -0.3668              -0.3763            0.0095  0.0061   0.0131
+MB07 cell 26/31 bba19ecb
+MB07 cell 27/31 1e602841
+MB07 cell 28/31 ce146ac1
+MB07 cell 29/31 d97aa977
+      mean |change| (head)  pseudo-head median  pseudo-head 95th percentile  percentile of head in pseudo-head distribution
+head                                                                                                                       
+L0H0                0.3324              0.3475                       0.4266                                            33.0
+L0H1                0.2984              0.3475                       0.4266                                             5.0
+L1H0                0.2172              0.1828                       0.2063                                            98.0
+L1H1                0.2137              0.1828                       0.2063                                            97.0
+L2H0                0.1636              0.1257                       0.1428                                           100.0
+L2H1                0.1403              0.1257                       0.1428                                            91.0
+L3H0                0.2373              0.1939                       0.2278                                            97.0
+L3H1                0.2791              0.1939                       0.2278                                           100.0
+MB07 cell 30/31 36677e17
+MB07 cell 31/31 0628678a
+saved
+COMPLETED MB07: 88.14 seconds; promoted to mi_analysis/

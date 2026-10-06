@@ -1,0 +1,39 @@
+{
+  "status": "RETROSPECTIVE DIAGNOSTIC PLAN; test data and historical outcomes previously accessed",
+  "mechanism_statement": "Target-output equivalence-class resampling and component sufficiency; no serial computation established.",
+  "analysis_id": "benchmark_4L_2H_K16_wd0.1_2026-10-05",
+  "checkpoint_hashes": {
+    "100": "d9712d0a305481eeac0d110f561677fa50838809d1cf84f0203cabc20a96358f",
+    "101": "1b04a5520e2180258456ad3574f71d3eb37d3049da29960e88ea59623ac290a3",
+    "102": "56134ec75d1d09b3451bab2a0857ee5cc922c7d5c2ea8d5534db2cb3736b19a9",
+    "103": "364652fec05af19d4b26fd10af56f98e4f3ae7ef68f60340d67b7bed2bd19d48",
+    "104": "e0b89ecde7df3a6b6ad0bbc48e7f48d85638949173f0c5b318d9644bb244a446"
+  },
+  "thresholds": {
+    "C1-C4/M1/M3": "descriptive directional diagnostics; lower match-bootstrap interval > 0",
+    "M2": "component F above distinct size-matched alternative 95th percentile",
+    "M4": "report paired output-resampling recovery, including the >=0.80 hypothesis-preservation bar"
+  },
+  "source_hashes": {
+    "paths.py": "94f75d86163ffa2b5035d02e92c4a60390544f9891674ed2e5390ff9ce8af6fb",
+    "hooks.py": "6128ac3d881da09cf4af62e42e85fc8fe490389270f489eced07378501fa6230",
+    "patching.py": "4c54c8739b12b15da204fe1da11606699d120192ba54b0c7369aca7e194aae92",
+    "context_edits.py": "abeb45274fa062f73d7e9f304f428b94e5563d8da9b6992d38aa15124978312c",
+    "probing.py": "0da611637ac359d24505e59ae67bd43ece5e3f3b851426b54b70bb27b6631431",
+    "conflict.py": "b2d5d4f66e05e3b4b82789f16a73e821fb7871b2bb11c5fd14b6c9cb49bd7c72",
+    "circuits.py": "9bf4e6e56c0af2e199f0285a63e09568a6161f961222f25df4f32e8f984aa2b1",
+    "attention.py": "892b4463d3ae9cd1bc6dbd0a470ede95793a4ed1eaef796e0f8cb1ba3576c667",
+    "attribution.py": "79105533b1c177519848ed5606b1fb203d9e072333b830d5eb39b25d319a23cc",
+    "twotoken.py": "f96b165ef75a7fdef2c0804b1c46a6d6d510bb940bbb2c915ebcb20c3a72b2aa",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mi_metrics.py": "8b5228a3f5863c72e8baaaadf445402ee7742ea555276cf00b7421e9470c178f",
+    "interventions.py": "4d0c5daf47a289ae7a04115a907bf8c1a16412bab831779981b2c2581dada7de",
+    "steering.py": "5c30d143685229576e68aeda51b4d4a1c161c47864fbf3b11039086974da6cc1",
+    "mi_setup.py": "8ac48f677516d661d5e526261a3e922c9217c3680e24b4b014d1898c0a6125b2",
+    "scrub.py": "e5017eb84ec6bc8ddece696584fe97601b1790645cd8165890d74c784ffad887",
+    "fingerprint.py": "75ad0136c38b92e38237c5f3e193b9c78ad9c98f77b60265bde9ca65e7f6afd7",
+    "graph.py": "7f448309b105b4bea2cc719868b89cec5b4b9f1b2b90b047f7360458bf20b7d8"
+  },
+  "implementation_notebook_code_sha256": "ba520bd1be4b9ad19c5624224cf377c294225499e3909870ac76821c5e99963d",
+  "written_at": "2026-10-06T12:19:49.098391+00:00"
+}

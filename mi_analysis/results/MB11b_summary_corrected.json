@@ -1,0 +1,728 @@
+{
+  "status": "REPAIRED 2026-10-04 (F02, F03, F04, F07); validation estimation half; not part of the MB12 lock",
+  "self_scrub": {
+    "errors": {
+      "clean run vs intact clean": 0.0,
+      "counterfactual run vs intact counterfactual": 0.0,
+      "effect vs intact effect": 0.0
+    },
+    "passed": true,
+    "original design (same donor in both runs): counterfactual-run error": 3.43700909614563,
+    "original design: effect error": 3.43700909614563
+  },
+  "scrub": [
+    {
+      "behaviour": "identity effect",
+      "run": "hypothesis (paired donors, corrected)",
+      "recovered share": 0.7536236583155739,
+      "CI low": 0.6646569762384511,
+      "CI high": 0.8206167893643055,
+      "mean value": -0.1629424842070992,
+      "mean full": -0.16719821765878023,
+      "mean floor": -0.009665593018998275,
+      "n": 529
+    },
+    {
+      "behaviour": "identity effect",
+      "run": "hypothesis, original same-donor rule, identical donors",
+      "recovered share": -3.369274632893811e-05,
+      "CI low": -0.010335949906578079,
+      "CI high": 0.010803048786044697,
+      "mean value": -0.010005246590125739,
+      "mean full": -0.16719821765878023,
+      "mean floor": -0.009665593018998275,
+      "n": 529
+    },
+    {
+      "behaviour": "identity effect",
+      "run": "circuit scrubbed",
+      "recovered share": 0.003864523261383033,
+      "CI low": 0.00092523873905251,
+      "CI high": 0.007488460749439954,
+      "mean value": -0.008280258612365698,
+      "mean full": -0.16719821765878023,
+      "mean floor": -0.009665593018998275,
+      "n": 529
+    },
+    {
+      "behaviour": "identity effect",
+      "run": "floor, second independent draw (noise check)",
+      "recovered share": 0.0014293543997964534,
+      "CI low": -0.0018685827498208724,
+      "CI high": 0.005614984582083785,
+      "mean value": -0.009905939683008297,
+      "mean full": -0.16719821765878023,
+      "mean floor": -0.009665593018998275,
+      "n": 529
+    },
+    {
+      "behaviour": "arbitration",
+      "run": "hypothesis (paired donors, corrected)",
+      "recovered share": 0.9756535044485348,
+      "CI low": 0.9617924327451677,
+      "CI high": 0.9852456608875524,
+      "mean value": 5.849663639885491,
+      "mean full": 5.8937205555082945,
+      "mean floor": -0.30991528551666403,
+      "n": 529
+    },
+    {
+      "behaviour": "arbitration",
+      "run": "hypothesis, original same-donor rule, identical donors",
+      "recovered share": 0.9756535044485348,
+      "CI low": 0.9617924327451677,
+      "CI high": 0.9852456608875524,
+      "mean value": 5.849663639885491,
+      "mean full": 5.8937205555082945,
+      "mean floor": -0.30991528551666403,
+      "n": 529
+    },
+    {
+      "behaviour": "arbitration",
+      "run": "circuit scrubbed",
+      "recovered share": -0.02758956209014487,
+      "CI low": -0.06007576558038438,
+      "CI high": 0.003215034222737893,
+      "mean value": -0.5405067450509518,
+      "mean full": 5.8937205555082945,
+      "mean floor": -0.30991528551666403,
+      "n": 529
+    },
+    {
+      "behaviour": "arbitration",
+      "run": "floor, second independent draw (noise check)",
+      "recovered share": -0.014710911326031473,
+      "CI low": -0.034330655779730206,
+      "CI high": 0.004025590947335027,
+      "mean value": -0.47281822949394386,
+      "mean full": 5.8937205555082945,
+      "mean floor": -0.30991528551666403,
+      "n": 529
+    }
+  ],
+  "noise_check": {
+    "recovered share of floor draw 2 vs floor draw 1": 0.0014293543997964534,
+    "CI low": -0.0018685827498208724,
+    "CI high": 0.005614984582083785,
+    "SD of floor draw difference": 0.014925428047401212,
+    "mean |full - floor|": 0.45775018864379935
+  },
+  "controls": [
+    {
+      "control": "wrong class (complete labels permuted)",
+      "recovered share": 0.1977950958501777,
+      "CI low": 0.16230418972728652,
+      "CI high": 0.24086478820408183,
+      "hypothesis minus this (aligned mean)": 0.2544306293221469,
+      "difference CI low": 0.183729992672538,
+      "difference CI high": 0.31695285758867664,
+      "one-sided p (hypothesis greater)": 0.0004997501249375312
+    },
+    {
+      "control": "team-keyed invariant-branch sensitivity (team; classes and branch rule both changed)",
+      "recovered share": -0.0002588890060414124,
+      "CI low": -0.0037092047669920803,
+      "CI high": 0.0026272529301211056,
+      "hypothesis minus this (aligned mean)": 0.34508987825173737,
+      "difference CI low": 0.25542682727191945,
+      "difference CI high": 0.4216277774322643,
+      "one-sided p (hypothesis greater)": 0.0004997501249375312
+    }
+  ],
+  "wrong_class_diagnostics_first_draw": {
+    "L0H0": {
+      "classes": 243,
+      "class sizes preserved": true,
+      "share of donors that share the recipient's true class": 0.23440453686200377,
+      "share of rows that are their own donor (singleton)": 0.22873345935727787
+    },
+    "L0H1": {
+      "classes": 42,
+      "class sizes preserved": true,
+      "share of donors that share the recipient's true class": 0.026465028355387523,
+      "share of rows that are their own donor (singleton)": 0.0
+    },
+    "L0MLP": {
+      "classes": 243,
+      "class sizes preserved": true,
+      "share of donors that share the recipient's true class": 0.23440453686200377,
+      "share of rows that are their own donor (singleton)": 0.22873345935727787
+    },
+    "L1H0": {
+      "classes": 20,
+      "class sizes preserved": true,
+      "share of donors that share the recipient's true class": 0.10964083175803403,
+      "share of rows that are their own donor (singleton)": 0.005671077504725898
+    },
+    "L1H1": {
+      "classes": 20,
+      "class sizes preserved": true,
+      "share of donors that share the recipient's true class": 0.12098298676748583,
+      "share of rows that are their own donor (singleton)": 0.005671077504725898
+    },
+    "L1MLP": {
+      "classes": 243,
+      "class sizes preserved": true,
+      "share of donors that share the recipient's true class": 0.22873345935727787,
+      "share of rows that are their own donor (singleton)": 0.22873345935727787
+    },
+    "L2H0": {
+      "classes": 42,
+      "class sizes preserved": true,
+      "share of donors that share the recipient's true class": 0.026465028355387523,
+      "share of rows that are their own donor (singleton)": 0.0
+    },
+    "L2H1": {
+      "classes": 42,
+      "class sizes preserved": true,
+      "share of donors that share the recipient's true class": 0.026465028355387523,
+      "share of rows that are their own donor (singleton)": 0.0
+    },
+    "L2MLP": {
+      "classes": 243,
+      "class sizes preserved": true,
+      "share of donors that share the recipient's true class": 0.23440453686200377,
+      "share of rows that are their own donor (singleton)": 0.22873345935727787
+    },
+    "L3H1": {
+      "classes": 20,
+      "class sizes preserved": true,
+      "share of donors that share the recipient's true class": 0.13799621928166353,
+      "share of rows that are their own donor (singleton)": 0.005671077504725898
+    },
+    "L3MLP": {
+      "classes": 243,
+      "class sizes preserved": true,
+      "share of donors that share the recipient's true class": 0.23251417769376181,
+      "share of rows that are their own donor (singleton)": 0.22873345935727787
+    }
+  },
+  "per_node": [
+    {
+      "node scrubbed freely": "L0H0",
+      "class keys it loses": "a_ctx, team_change, player",
+      "recovered share without its class": 0.7546246599500758,
+      "recovery CI low": 0.6649124195177679,
+      "recovery CI high": 0.8209343897004985,
+      "drop from the full hypothesis": -0.0010010016345019693,
+      "paired drop CI low": -0.0034688099710433623,
+      "paired drop CI high": 0.0014018894430894188,
+      "draw-level drop SD (Monte Carlo diagnostic)": 0.0007066440988142968,
+      "unaffected donors held fixed": true,
+      "branch rule preserved": true,
+      "share of events in a singleton class": 0.22873345935727787
+    },
+    {
+      "node scrubbed freely": "L0H1",
+      "class keys it loses": "player",
+      "recovered share without its class": 0.7528782766509277,
+      "recovery CI low": 0.663187144199479,
+      "recovery CI high": 0.8190926295278725,
+      "drop from the full hypothesis": 0.0007453816646460976,
+      "paired drop CI low": -0.00043628234479939506,
+      "paired drop CI high": 0.0024812121173469616,
+      "draw-level drop SD (Monte Carlo diagnostic)": 0.001108486257117878,
+      "unaffected donors held fixed": true,
+      "branch rule preserved": true,
+      "share of events in a singleton class": 0.0
+    },
+    {
+      "node scrubbed freely": "L0MLP",
+      "class keys it loses": "a_ctx, team_change, player",
+      "recovered share without its class": 0.7040116027937824,
+      "recovery CI low": 0.6079295641931474,
+      "recovery CI high": 0.7762112893435738,
+      "drop from the full hypothesis": 0.049612055521791404,
+      "paired drop CI low": 0.029580086747266875,
+      "paired drop CI high": 0.07081490517986133,
+      "draw-level drop SD (Monte Carlo diagnostic)": 0.002933416941551064,
+      "unaffected donors held fixed": true,
+      "branch rule preserved": true,
+      "share of events in a singleton class": 0.22873345935727787
+    },
+    {
+      "node scrubbed freely": "L1H0",
+      "class keys it loses": "a_ctx, team_change",
+      "recovered share without its class": 0.7563783725143618,
+      "recovery CI low": 0.6673136896053098,
+      "recovery CI high": 0.8236338248963139,
+      "drop from the full hypothesis": -0.002754714198788001,
+      "paired drop CI low": -0.003297566776342446,
+      "paired drop CI high": -0.002022185955133236,
+      "draw-level drop SD (Monte Carlo diagnostic)": 0.000577239748765525,
+      "unaffected donors held fixed": true,
+      "branch rule preserved": true,
+      "share of events in a singleton class": 0.005671077504725898
+    },
+    {
+      "node scrubbed freely": "L1H1",
+      "class keys it loses": "a_ctx, team_change",
+      "recovered share without its class": 0.7545705632861381,
+      "recovery CI low": 0.6660105602417605,
+      "recovery CI high": 0.8212473660837555,
+      "drop from the full hypothesis": -0.0009469049705641811,
+      "paired drop CI low": -0.0016728753260593376,
+      "paired drop CI high": -4.172126969746221e-05,
+      "draw-level drop SD (Monte Carlo diagnostic)": 0.001138789150579535,
+      "unaffected donors held fixed": true,
+      "branch rule preserved": true,
+      "share of events in a singleton class": 0.005671077504725898
+    },
+    {
+      "node scrubbed freely": "L1MLP",
+      "class keys it loses": "a_ctx, team_change, player",
+      "recovered share without its class": 0.6679101965810257,
+      "recovery CI low": 0.5922594437767014,
+      "recovery CI high": 0.7346869364343838,
+      "drop from the full hypothesis": 0.08571346173454816,
+      "paired drop CI low": 0.052971726846058574,
+      "paired drop CI high": 0.10671014122118794,
+      "draw-level drop SD (Monte Carlo diagnostic)": 0.011237830944055623,
+      "unaffected donors held fixed": true,
+      "branch rule preserved": true,
+      "share of events in a singleton class": 0.22873345935727787
+    },
+    {
+      "node scrubbed freely": "L2H0",
+      "class keys it loses": "player",
+      "recovered share without its class": 0.755201721691834,
+      "recovery CI low": 0.6621622219246512,
+      "recovery CI high": 0.8227107884125295,
+      "drop from the full hypothesis": -0.0015780633762600904,
+      "paired drop CI low": -0.005292339777833049,
+      "paired drop CI high": 0.0032707473274381747,
+      "draw-level drop SD (Monte Carlo diagnostic)": 0.001929449409220737,
+      "unaffected donors held fixed": true,
+      "branch rule preserved": true,
+      "share of events in a singleton class": 0.0
+    },
+    {
+      "node scrubbed freely": "L2H1",
+      "class keys it loses": "player",
+      "recovered share without its class": 0.7543834638332149,
+      "recovery CI low": 0.6645470508293126,
+      "recovery CI high": 0.82154295494753,
+      "drop from the full hypothesis": -0.0007598055176410351,
+      "paired drop CI low": -0.0024328884132211316,
+      "paired drop CI high": 0.0016988567473959202,
+      "draw-level drop SD (Monte Carlo diagnostic)": 0.001927306750974067,
+      "unaffected donors held fixed": true,
+      "branch rule preserved": true,
+      "share of events in a singleton class": 0.0
+    },
+    {
+      "node scrubbed freely": "L2MLP",
+      "class keys it loses": "a_ctx, team_change, player",
+      "recovered share without its class": 0.7148207950963922,
+      "recovery CI low": 0.6247336741067767,
+      "recovery CI high": 0.780834414294411,
+      "drop from the full hypothesis": 0.03880286321918167,
+      "paired drop CI low": 0.015650717564927388,
+      "paired drop CI high": 0.06861251110187183,
+      "draw-level drop SD (Monte Carlo diagnostic)": 0.009574497056842868,
+      "unaffected donors held fixed": true,
+      "branch rule preserved": true,
+      "share of events in a singleton class": 0.22873345935727787
+    },
+    {
+      "node scrubbed freely": "L3H1",
+      "class keys it loses": "a_ctx, team_change",
+      "recovered share without its class": 0.7580858294210551,
+      "recovery CI low": 0.6656892848724673,
+      "recovery CI high": 0.828002914014193,
+      "drop from the full hypothesis": -0.004462171105481256,
+      "paired drop CI low": -0.0091247143413081,
+      "paired drop CI high": 0.00021422735456203467,
+      "draw-level drop SD (Monte Carlo diagnostic)": 0.002179735151858095,
+      "unaffected donors held fixed": true,
+      "branch rule preserved": true,
+      "share of events in a singleton class": 0.005671077504725898
+    },
+    {
+      "node scrubbed freely": "L3MLP",
+      "class keys it loses": "a_ctx, team_change, player",
+      "recovered share without its class": 0.4431221397898272,
+      "recovery CI low": 0.29999156909942387,
+      "recovery CI high": 0.5622785977669919,
+      "drop from the full hypothesis": 0.3105015185257467,
+      "paired drop CI low": 0.23276887268558305,
+      "paired drop CI high": 0.40073508509687533,
+      "draw-level drop SD (Monte Carlo diagnostic)": 0.034459623444388764,
+      "unaffected donors held fixed": true,
+      "branch rule preserved": true,
+      "share of events in a singleton class": 0.22873345935727787
+    }
+  ],
+  "posthoc": [
+    {
+      "hypothesis": "H0 default (historical)",
+      "donors": "right class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "identity effect",
+      "recovered share": 0.7629434047548146,
+      "CI low": 0.6776552826021338,
+      "CI high": 0.8233289663729054
+    },
+    {
+      "hypothesis": "H0 default (historical)",
+      "donors": "right class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "arbitration",
+      "recovered share": 0.977929910079625,
+      "CI low": 0.9602372846975921,
+      "CI high": 0.9906688342431789
+    },
+    {
+      "hypothesis": "H0 default (historical)",
+      "donors": "right class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 99,
+      "behaviour": "identity effect",
+      "recovered share": 0.7687522756374194,
+      "CI low": 0.5703971600771487,
+      "CI high": 0.9071160276847535
+    },
+    {
+      "hypothesis": "H0 default (historical)",
+      "donors": "right class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 99,
+      "behaviour": "arbitration",
+      "recovered share": 0.9790836008307999,
+      "CI low": 0.9156550595970214,
+      "CI high": 1.0452987120282413
+    },
+    {
+      "hypothesis": "H0 default (historical)",
+      "donors": "wrong class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "identity effect",
+      "recovered share": 0.24183914565342504,
+      "CI low": 0.18030528631216527,
+      "CI high": 0.29551317608447536
+    },
+    {
+      "hypothesis": "H0 default (historical)",
+      "donors": "wrong class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "arbitration",
+      "recovered share": 0.2301043930879182,
+      "CI low": 0.20568043244367396,
+      "CI high": 0.26183808731176583
+    },
+    {
+      "hypothesis": "H0 default (historical)",
+      "donors": "wrong class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 99,
+      "behaviour": "identity effect",
+      "recovered share": 0.015388838020370098,
+      "CI low": -0.14411268518712136,
+      "CI high": 0.15455007058298956
+    },
+    {
+      "hypothesis": "H0 default (historical)",
+      "donors": "wrong class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 99,
+      "behaviour": "arbitration",
+      "recovered share": -0.03458374043427482,
+      "CI low": -0.10575083710861405,
+      "CI high": 0.06162996827518606
+    },
+    {
+      "hypothesis": "H1 shared output-key hypothesis",
+      "donors": "right class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "identity effect",
+      "recovered share": 0.8698220647780031,
+      "CI low": 0.8347850398195262,
+      "CI high": 0.8978104771990785
+    },
+    {
+      "hypothesis": "H1 shared output-key hypothesis",
+      "donors": "right class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "arbitration",
+      "recovered share": 0.9349308271510698,
+      "CI low": 0.9155085940156384,
+      "CI high": 0.9551901242454665
+    },
+    {
+      "hypothesis": "H1 shared output-key hypothesis",
+      "donors": "right class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 16,
+      "behaviour": "identity effect",
+      "recovered share": 0.9428424787370989,
+      "CI low": 0.7204062406916549,
+      "CI high": 1.2687725941945964
+    },
+    {
+      "hypothesis": "H1 shared output-key hypothesis",
+      "donors": "right class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 16,
+      "behaviour": "arbitration",
+      "recovered share": 1.0278056363210577,
+      "CI low": 0.9532140338800297,
+      "CI high": 1.1197765613549395
+    },
+    {
+      "hypothesis": "H1 shared output-key hypothesis",
+      "donors": "wrong class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "identity effect",
+      "recovered share": 0.4863323539084223,
+      "CI low": 0.4393054453189615,
+      "CI high": 0.5383764225229125
+    },
+    {
+      "hypothesis": "H1 shared output-key hypothesis",
+      "donors": "wrong class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "arbitration",
+      "recovered share": 0.41744119332374374,
+      "CI low": 0.3908918907488007,
+      "CI high": 0.4373883681768817
+    },
+    {
+      "hypothesis": "H1 shared output-key hypothesis",
+      "donors": "wrong class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 16,
+      "behaviour": "identity effect",
+      "recovered share": 0.15851061901196217,
+      "CI low": -0.15386489407589726,
+      "CI high": 0.4550820699880144
+    },
+    {
+      "hypothesis": "H1 shared output-key hypothesis",
+      "donors": "wrong class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 16,
+      "behaviour": "arbitration",
+      "recovered share": -0.10171922294182147,
+      "CI low": -0.28367146578254715,
+      "CI high": 0.07574948828568133
+    },
+    {
+      "hypothesis": "H2 player-blind output-key hypothesis",
+      "donors": "right class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "identity effect",
+      "recovered share": -0.001516108447941695,
+      "CI low": -0.010045970077663256,
+      "CI high": 0.00643502423550008
+    },
+    {
+      "hypothesis": "H2 player-blind output-key hypothesis",
+      "donors": "right class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "arbitration",
+      "recovered share": 0.9144367622736356,
+      "CI low": 0.8902399359399997,
+      "CI high": 0.9390282699558886
+    },
+    {
+      "hypothesis": "H2 player-blind output-key hypothesis",
+      "donors": "right class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 151,
+      "behaviour": "identity effect",
+      "recovered share": -0.007709309572526971,
+      "CI low": -0.021867268062297898,
+      "CI high": 0.005319881045254743
+    },
+    {
+      "hypothesis": "H2 player-blind output-key hypothesis",
+      "donors": "right class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 151,
+      "behaviour": "arbitration",
+      "recovered share": 0.8788079125251389,
+      "CI low": 0.8166769434080536,
+      "CI high": 0.9194520673138697
+    },
+    {
+      "hypothesis": "H2 player-blind output-key hypothesis",
+      "donors": "wrong class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "identity effect",
+      "recovered share": 0.0006345839164783201,
+      "CI low": -0.0024936218454880026,
+      "CI high": 0.004344698422424671
+    },
+    {
+      "hypothesis": "H2 player-blind output-key hypothesis",
+      "donors": "wrong class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "arbitration",
+      "recovered share": 0.18824913597404552,
+      "CI low": 0.16969112075130593,
+      "CI high": 0.2036273864752592
+    },
+    {
+      "hypothesis": "H2 player-blind output-key hypothesis",
+      "donors": "wrong class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 151,
+      "behaviour": "identity effect",
+      "recovered share": -0.0013385852372463883,
+      "CI low": -0.005979708945532535,
+      "CI high": 0.004271062157186518
+    },
+    {
+      "hypothesis": "H2 player-blind output-key hypothesis",
+      "donors": "wrong class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 151,
+      "behaviour": "arbitration",
+      "recovered share": -0.0339730483284847,
+      "CI low": -0.07014192484837219,
+      "CI high": -0.0035691071572187738
+    },
+    {
+      "hypothesis": "H3 heads matter",
+      "donors": "right class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "identity effect",
+      "recovered share": 0.010116604854068699,
+      "CI low": -0.004444047075909234,
+      "CI high": 0.027248654727751932
+    },
+    {
+      "hypothesis": "H3 heads matter",
+      "donors": "right class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "arbitration",
+      "recovered share": 0.015448303734673704,
+      "CI low": -0.010129176649434753,
+      "CI high": 0.03330476782783749
+    },
+    {
+      "hypothesis": "H3 heads matter",
+      "donors": "right class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 15,
+      "behaviour": "identity effect",
+      "recovered share": -0.02095429192763616,
+      "CI low": -0.07340373054052537,
+      "CI high": 0.011218564026773313
+    },
+    {
+      "hypothesis": "H3 heads matter",
+      "donors": "right class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 15,
+      "behaviour": "arbitration",
+      "recovered share": 0.03261536401670693,
+      "CI low": -0.05417967679541935,
+      "CI high": 0.1418493471321389
+    },
+    {
+      "hypothesis": "H3 heads matter",
+      "donors": "wrong class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "identity effect",
+      "recovered share": 0.0096798751541266,
+      "CI low": 0.0047997807423450466,
+      "CI high": 0.0172864822080004
+    },
+    {
+      "hypothesis": "H3 heads matter",
+      "donors": "wrong class",
+      "events": "all estimation events",
+      "n": 529,
+      "behaviour": "arbitration",
+      "recovered share": -0.010516647001497395,
+      "CI low": -0.03611828346091722,
+      "CI high": 0.010533679757894892
+    },
+    {
+      "hypothesis": "H3 heads matter",
+      "donors": "wrong class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 15,
+      "behaviour": "identity effect",
+      "recovered share": 0.018451220360680132,
+      "CI low": -0.008933705260137342,
+      "CI high": 0.053871153976597724
+    },
+    {
+      "hypothesis": "H3 heads matter",
+      "donors": "wrong class",
+      "events": "common events: actual non-self donor at every keyed node in all draws of both variants",
+      "n": 15,
+      "behaviour": "arbitration",
+      "recovered share": 0.01194800612723454,
+      "CI low": -0.10499966902470688,
+      "CI high": 0.12969666279050168
+    }
+  ],
+  "class_keys": {
+    "L0H0": [
+      "a_ctx",
+      "team_change",
+      "player"
+    ],
+    "L0H1": [
+      "player"
+    ],
+    "L0MLP": [
+      "a_ctx",
+      "team_change",
+      "player"
+    ],
+    "L1H0": [
+      "a_ctx",
+      "team_change"
+    ],
+    "L1H1": [
+      "a_ctx",
+      "team_change"
+    ],
+    "L1MLP": [
+      "a_ctx",
+      "team_change",
+      "player"
+    ],
+    "L2H0": [
+      "player"
+    ],
+    "L2H1": [
+      "player"
+    ],
+    "L2MLP": [
+      "a_ctx",
+      "team_change",
+      "player"
+    ],
+    "L3H1": [
+      "a_ctx",
+      "team_change"
+    ],
+    "L3MLP": [
+      "a_ctx",
+      "team_change",
+      "player"
+    ]
+  },
+  "draws": 5,
+  "run_mode": "full"
+}

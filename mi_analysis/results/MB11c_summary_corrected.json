@@ -1,0 +1,292 @@
+{
+  "plan": {
+    "status": "REPAIR 2026-10-04 (F05, F06); validation only; not part of the MB12 lock",
+    "scale": "reference_scale = mean norm of resid_post_{L-1} at the target over the DISCOVERY half, frozen",
+    "betas": [
+      -2.0,
+      -1.0,
+      -0.5,
+      -0.25,
+      -0.1,
+      -0.05,
+      0.0,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "linearity_tolerance": 0.1,
+    "models": [
+      "line through 0 (linear regime)",
+      "quadratic through 0",
+      "piecewise-linear through measured points"
+    ],
+    "selection": "lowest discovery leave-one-beta-out RMSE",
+    "pass_rule": "on the estimation half, at every evaluated beta, the model's prediction (fitted on the discovery half only) lies inside the 95% match-bootstrap interval of the measured mean change in Delta",
+    "direction": "stored v1 from config/steering_prediction.json (fixes the SVD sign), else recomputed v1"
+  },
+  "scale": 5.01949405670166,
+  "identity_unit": 1.0022872865103423,
+  "batch_dependence": [
+    {
+      "regrouping": "batch 64",
+      "beta": -1.0,
+      "mean change (as run)": -5.511961816051281,
+      "mean change (regrouped)": -5.52252718879505,
+      "largest per-event difference": 0.4901089668273926
+    },
+    {
+      "regrouping": "batch 64",
+      "beta": 0.5,
+      "mean change (as run)": 1.3550562224225873,
+      "mean change (regrouped)": 1.3599257988605247,
+      "largest per-event difference": 0.17071819305419922
+    },
+    {
+      "regrouping": "batch 64",
+      "beta": 1.0,
+      "mean change (as run)": 1.427700764853472,
+      "mean change (regrouped)": 1.434578485434808,
+      "largest per-event difference": 0.2951500415802002
+    },
+    {
+      "regrouping": "batch 256, shuffled order",
+      "beta": -1.0,
+      "mean change (as run)": -5.511961816051281,
+      "mean change (regrouped)": -5.51165925960685,
+      "largest per-event difference": 0.7944679260253906
+    },
+    {
+      "regrouping": "batch 256, shuffled order",
+      "beta": 0.5,
+      "mean change (as run)": 1.3550562224225873,
+      "mean change (regrouped)": 1.3527281826295114,
+      "largest per-event difference": 0.31049537658691406
+    },
+    {
+      "regrouping": "batch 256, shuffled order",
+      "beta": 1.0,
+      "mean change (as run)": 1.427700764853472,
+      "mean change (regrouped)": 1.4242819104843645,
+      "largest per-event difference": 0.3605766296386719
+    }
+  ],
+  "slope_at_0": 4.55801962530662,
+  "linear_range": 0.1,
+  "linearity": [
+    {
+      "beta": -2.0,
+      "secant slope y/beta": 4.255259452140871,
+      "relative difference from slope at 0": 0.06642362211096925,
+      "within tolerance": true
+    },
+    {
+      "beta": -1.0,
+      "secant slope y/beta": 5.543497398213595,
+      "relative difference from slope at 0": 0.21620744400385986,
+      "within tolerance": false
+    },
+    {
+      "beta": -0.5,
+      "secant slope y/beta": 5.595307338384934,
+      "relative difference from slope at 0": 0.22757420949203042,
+      "within tolerance": false
+    },
+    {
+      "beta": -0.25,
+      "secant slope y/beta": 5.217199771590685,
+      "relative difference from slope at 0": 0.14461985697126561,
+      "within tolerance": false
+    },
+    {
+      "beta": -0.1,
+      "secant slope y/beta": 4.85263695147793,
+      "relative difference from slope at 0": 0.06463713419213088,
+      "within tolerance": true
+    },
+    {
+      "beta": -0.05,
+      "secant slope y/beta": 4.7113652744410945,
+      "relative difference from slope at 0": 0.03364304275547284,
+      "within tolerance": true
+    },
+    {
+      "beta": 0.05,
+      "secant slope y/beta": 4.404673976172145,
+      "relative difference from slope at 0": 0.03364304275547284,
+      "within tolerance": true
+    },
+    {
+      "beta": 0.1,
+      "secant slope y/beta": 4.241530075117394,
+      "relative difference from slope at 0": 0.0694357585544479,
+      "within tolerance": true
+    },
+    {
+      "beta": 0.25,
+      "secant slope y/beta": 3.7287048175011153,
+      "relative difference from slope at 0": 0.18194630036278442,
+      "within tolerance": false
+    },
+    {
+      "beta": 0.5,
+      "secant slope y/beta": 2.875298697958267,
+      "relative difference from slope at 0": 0.3691780785685308,
+      "within tolerance": false
+    },
+    {
+      "beta": 1.0,
+      "secant slope y/beta": 1.5321024394329683,
+      "relative difference from slope at 0": 0.663866642669424,
+      "within tolerance": false
+    },
+    {
+      "beta": 2.0,
+      "secant slope y/beta": 0.39587199212101754,
+      "relative difference from slope at 0": 0.9131482475584147,
+      "within tolerance": false
+    }
+  ],
+  "calibration": [
+    {
+      "model (fitted on discovery)": "line through 0 (linear regime)",
+      "chosen a priori (discovery LOO)": false,
+      "discovery leave-one-beta-out RMSE": 2.589881573501671,
+      "estimation RMSE": 2.5207993183915307,
+      "estimation largest error": 8.393346582364556,
+      "share of betas inside the estimation CI": 0.6923076923076923,
+      "PASS (pre-specified rule)": false,
+      "meaning": "same-grid population transfer"
+    },
+    {
+      "model (fitted on discovery)": "quadratic through 0",
+      "chosen a priori (discovery LOO)": false,
+      "discovery leave-one-beta-out RMSE": 2.0937437695914394,
+      "estimation RMSE": 0.6932413525859293,
+      "estimation largest error": 1.7845280691136067,
+      "share of betas inside the estimation CI": 0.38461538461538464,
+      "PASS (pre-specified rule)": false,
+      "meaning": "same-grid population transfer"
+    },
+    {
+      "model (fitted on discovery)": "piecewise-linear through measured points",
+      "chosen a priori (discovery LOO)": true,
+      "discovery leave-one-beta-out RMSE": 0.9253408999847812,
+      "estimation RMSE": 0.05800060079252759,
+      "estimation largest error": 0.10440154680696856,
+      "share of betas inside the estimation CI": 1.0,
+      "PASS (pre-specified rule)": true,
+      "meaning": "same-grid population transfer"
+    }
+  ],
+  "chosen_model": "piecewise-linear through measured points",
+  "per_beta": [
+    {
+      "beta": -2.0,
+      "predicted": -8.510518904281742,
+      "observed (estimation)": -8.4746387324847,
+      "CI low": -9.227583165768571,
+      "CI high": -7.248734720995948,
+      "inside": true
+    },
+    {
+      "beta": -1.0,
+      "predicted": -5.543497398213595,
+      "observed (estimation)": -5.490562442457744,
+      "CI low": -6.031060813569676,
+      "CI high": -4.547929735735391,
+      "inside": true
+    },
+    {
+      "beta": -0.5,
+      "predicted": -2.797653669192467,
+      "observed (estimation)": -2.7216831530199608,
+      "CI low": -3.024654287523026,
+      "CI high": -2.162276561419462,
+      "inside": true
+    },
+    {
+      "beta": -0.25,
+      "predicted": -1.3042999428976711,
+      "observed (estimation)": -1.249942067102133,
+      "CI low": -1.4026681547251654,
+      "CI high": -0.9547112319029041,
+      "inside": true
+    },
+    {
+      "beta": -0.1,
+      "predicted": -0.485263695147793,
+      "observed (estimation)": -0.4607183190171795,
+      "CI low": -0.5220810564202388,
+      "CI high": -0.3370454905215417,
+      "inside": true
+    },
+    {
+      "beta": -0.05,
+      "predicted": -0.23556826372205475,
+      "observed (estimation)": -0.22302928183840443,
+      "CI low": -0.253661355685467,
+      "CI high": -0.16059690642903637,
+      "inside": true
+    },
+    {
+      "beta": 0.0,
+      "predicted": 0.0,
+      "observed (estimation)": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "inside": true
+    },
+    {
+      "beta": 0.05,
+      "predicted": 0.22023369880860724,
+      "observed (estimation)": 0.20754172282543434,
+      "CI low": 0.14443133487693077,
+      "CI high": 0.23844143461632988,
+      "inside": true
+    },
+    {
+      "beta": 0.1,
+      "predicted": 0.4241530075117394,
+      "observed (estimation)": 0.3990123810243066,
+      "CI low": 0.27169317390920245,
+      "CI high": 0.4612088810113883,
+      "inside": true
+    },
+    {
+      "beta": 0.25,
+      "predicted": 0.9321762043752788,
+      "observed (estimation)": 0.874592935205182,
+      "CI low": 0.550300275027035,
+      "CI high": 1.0329027461581666,
+      "inside": true
+    },
+    {
+      "beta": 0.5,
+      "predicted": 1.4376493489791335,
+      "observed (estimation)": 1.3501392862071162,
+      "CI low": 0.7253765611667509,
+      "CI high": 1.6678943591868807,
+      "inside": true
+    },
+    {
+      "beta": 1.0,
+      "predicted": 1.5321024394329683,
+      "observed (estimation)": 1.4277008926259998,
+      "CI low": 0.37308419637822415,
+      "CI high": 1.9740621821068862,
+      "inside": true
+    },
+    {
+      "beta": 2.0,
+      "predicted": 0.7917439842420351,
+      "observed (estimation)": 0.7051948890343506,
+      "CI low": -0.6788725377198693,
+      "CI high": 1.4229452864996883,
+      "inside": true
+    }
+  ],
+  "run_mode": "full"
+}

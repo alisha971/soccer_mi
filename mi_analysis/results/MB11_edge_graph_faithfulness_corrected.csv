@@ -1,0 +1,6 @@
+graph,edges,R_graph,CI low,CI high,"random graphs, same size: median","random graphs, same size: 95th percentile",jointly faithful (rule)
+all identity-contrast edges (check: R = 1),175,1.0000000021036475,0.9999998684842305,1.0000002370571772,,,
+no edges (check: R = 0),0,0.0,0.0,0.0,,,
+component-induced graph of the circuit,143,1.0049110000089065,0.9937431441160648,1.0223624677398082,,,
+discovery-selected edges (circuit.json),32,0.9294031353503016,0.8807252101371875,1.0016052363184076,0.00030109806449158663,0.05742687840656222,True
+corrected-screen selected edges (circuit_corrected_screen.json),32,0.9294031353503016,0.8807252101371875,1.0016052363184076,0.00030109806449158663,0.05742687840656222,True

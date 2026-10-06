@@ -1,0 +1,1587 @@
+{
+  "gradient_check": [
+    {
+      "receiver site": "attn_in_q_0.0",
+      "finite difference": -14.97142896198511,
+      "repaired gradient": -14.971429105986056,
+      "relative error": 9.618383565386628e-09,
+      "|gradient| sum": 413.67681744523645
+    },
+    {
+      "receiver site": "attn_in_k_0.0",
+      "finite difference": 5.954554877973805,
+      "repaired gradient": 5.9545550754768675,
+      "relative error": 3.3168400802514475e-08,
+      "|gradient| sum": 1185.680137746399
+    },
+    {
+      "receiver site": "attn_in_v_0.0",
+      "finite difference": -15.271904172209359,
+      "repaired gradient": -15.27190421571643,
+      "relative error": 2.848830848627308e-09,
+      "|gradient| sum": 1804.1601976716815
+    },
+    {
+      "receiver site": "attn_in_q_0.1",
+      "finite difference": -16.294179542342135,
+      "repaired gradient": -16.294179694930314,
+      "relative error": 9.364581882776002e-09,
+      "|gradient| sum": 465.1010486102569
+    },
+    {
+      "receiver site": "attn_in_k_0.1",
+      "finite difference": -27.43183373894453,
+      "repaired gradient": -27.43183385315183,
+      "relative error": 4.163312620814008e-09,
+      "|gradient| sum": 1213.6747920652786
+    },
+    {
+      "receiver site": "attn_in_v_0.1",
+      "finite difference": 3.779524229230446,
+      "repaired gradient": 3.7795242940395877,
+      "relative error": 1.7147433824517687e-08,
+      "|gradient| sum": 1633.9411427327025
+    },
+    {
+      "receiver site": "mlp_in_0",
+      "finite difference": 130.45169843479698,
+      "repaired gradient": 130.4516990943543,
+      "relative error": 5.055950388868689e-09,
+      "|gradient| sum": 7618.508823847698
+    },
+    {
+      "receiver site": "attn_in_q_1.0",
+      "finite difference": -2.423321262767786,
+      "repaired gradient": -2.4233212751710433,
+      "relative error": 5.118288574743121e-09,
+      "|gradient| sum": 196.25024553226856
+    },
+    {
+      "receiver site": "attn_in_k_1.0",
+      "finite difference": 4.396516540339235,
+      "repaired gradient": 4.396516552099556,
+      "relative error": 2.6749180851549464e-09,
+      "|gradient| sum": 362.41248080628947
+    },
+    {
+      "receiver site": "attn_in_v_1.0",
+      "finite difference": -8.659107943742583,
+      "repaired gradient": -8.659107938968173,
+      "relative error": 5.51374371533913e-10,
+      "|gradient| sum": 729.7244361689518
+    },
+    {
+      "receiver site": "attn_in_q_1.1",
+      "finite difference": 6.0016172227506095,
+      "repaired gradient": 6.001617247964351,
+      "relative error": 4.201157851495891e-09,
+      "|gradient| sum": 279.2362507289379
+    },
+    {
+      "receiver site": "attn_in_k_1.1",
+      "finite difference": -1.0093189672488734,
+      "repaired gradient": -1.009318956691164,
+      "relative error": 1.0460230824942199e-08,
+      "|gradient| sum": 387.3360682393068
+    },
+    {
+      "receiver site": "attn_in_v_1.1",
+      "finite difference": -11.316224585300459,
+      "repaired gradient": -11.316224596467178,
+      "relative error": 9.867883957918694e-10,
+      "|gradient| sum": 587.1821466924896
+    },
+    {
+      "receiver site": "mlp_in_1",
+      "finite difference": 65.87644621021127,
+      "repaired gradient": 65.87644626876447,
+      "relative error": 8.888335849056688e-10,
+      "|gradient| sum": 2090.7955433677153
+    },
+    {
+      "receiver site": "attn_in_q_2.0",
+      "finite difference": -4.183290026560371,
+      "repaired gradient": -4.183290035755622,
+      "relative error": 2.1980906713712778e-09,
+      "|gradient| sum": 96.81510832044532
+    },
+    {
+      "receiver site": "attn_in_k_2.0",
+      "finite difference": -1.3293154353277714,
+      "repaired gradient": -1.3293154430709961,
+      "relative error": 5.824971652544397e-09,
+      "|gradient| sum": 164.97478421179477
+    },
+    {
+      "receiver site": "attn_in_v_2.0",
+      "finite difference": -5.318970913492649,
+      "repaired gradient": -5.318970926835664,
+      "relative error": 2.508570886797998e-09,
+      "|gradient| sum": 336.3089671146025
+    },
+    {
+      "receiver site": "attn_in_q_2.1",
+      "finite difference": 3.5621141947217434,
+      "repaired gradient": 3.562114198291992,
+      "relative error": 1.0022835726439486e-09,
+      "|gradient| sum": 91.72087217422455
+    },
+    {
+      "receiver site": "attn_in_k_2.1",
+      "finite difference": 1.6344311106308849,
+      "repaired gradient": 1.6344311160062963,
+      "relative error": 3.288857764839241e-09,
+      "|gradient| sum": 143.25684676750544
+    },
+    {
+      "receiver site": "attn_in_v_2.1",
+      "finite difference": -3.1038070915201383,
+      "repaired gradient": -3.10380710281306,
+      "relative error": 3.638409661388165e-09,
+      "|gradient| sum": 337.5706659356182
+    },
+    {
+      "receiver site": "mlp_in_2",
+      "finite difference": -25.305501091565926,
+      "repaired gradient": -25.30550108700466,
+      "relative error": 1.8024796769924345e-10,
+      "|gradient| sum": 1199.7381342187919
+    },
+    {
+      "receiver site": "attn_in_q_3.0",
+      "finite difference": -0.6881923738433214,
+      "repaired gradient": -0.6881923960032345,
+      "relative error": 3.2200172303463694e-08,
+      "|gradient| sum": 99.27351932717625
+    },
+    {
+      "receiver site": "attn_in_k_3.0",
+      "finite difference": 2.441429049326871,
+      "repaired gradient": 2.441429047193981,
+      "relative error": 8.73623530167115e-10,
+      "|gradient| sum": 156.04033047057086
+    },
+    {
+      "receiver site": "attn_in_v_3.0",
+      "finite difference": -4.551362134463943,
+      "repaired gradient": -4.551362143087351,
+      "relative error": 1.894687241066048e-09,
+      "|gradient| sum": 242.65117537423623
+    },
+    {
+      "receiver site": "attn_in_q_3.1",
+      "finite difference": -3.6730368734083636,
+      "repaired gradient": -3.6730368736463923,
+      "relative error": 6.480433386836323e-11,
+      "|gradient| sum": 68.9816726339837
+    },
+    {
+      "receiver site": "attn_in_k_3.1",
+      "finite difference": 0.378891816410487,
+      "repaired gradient": 0.3788918171753297,
+      "relative error": 2.0186307965913454e-09,
+      "|gradient| sum": 79.98508637851774
+    },
+    {
+      "receiver site": "attn_in_v_3.1",
+      "finite difference": -0.30300261073534784,
+      "repaired gradient": -0.30300261022805763,
+      "relative error": 1.674210689498539e-09,
+      "|gradient| sum": 187.9220233892645
+    },
+    {
+      "receiver site": "mlp_in_3",
+      "finite difference": -13.25089340866725,
+      "repaired gradient": -13.250893395774252,
+      "relative error": 9.729908973727549e-10,
+      "|gradient| sum": 726.5146469775812
+    },
+    {
+      "receiver site": "final_resid",
+      "finite difference": 0.04934946673529338,
+      "repaired gradient": 0.04934946634177795,
+      "relative error": 7.9740564903327e-09,
+      "|gradient| sum": 608.2697019366714
+    }
+  ],
+  "screen_comparison": [
+    {
+      "screen": "first corrected discovery screen",
+      "edges": 4048,
+      "internal-receiver edges": 4012,
+      "internal edges with EAP mean exactly 0": 739,
+      "edges passing BH": 237,
+      "internal edges passing BH": 223
+    },
+    {
+      "screen": "corrected",
+      "edges": 4048,
+      "internal-receiver edges": 4012,
+      "internal edges with EAP mean exactly 0": 739,
+      "edges passing BH": 237,
+      "internal edges passing BH": 223
+    }
+  ],
+  "screen_calibration": [
+    {
+      "screen": "original screen",
+      "edges": "all exactly tested edges",
+      "n": 624,
+      "Spearman(EAP mean, exact mean aligned change)": 0.5104880327090638
+    },
+    {
+      "screen": "original screen",
+      "edges": "internal receivers only",
+      "n": 592,
+      "Spearman(EAP mean, exact mean aligned change)": 0.47747429153107
+    },
+    {
+      "screen": "corrected screen",
+      "edges": "all exactly tested edges",
+      "n": 624,
+      "Spearman(EAP mean, exact mean aligned change)": 0.5104880327090638
+    },
+    {
+      "screen": "corrected screen",
+      "edges": "internal receivers only",
+      "n": 592,
+      "Spearman(EAP mean, exact mean aligned change)": 0.47747429153107
+    }
+  ],
+  "candidate_edge_status_changes": 0,
+  "completeness_original": 18,
+  "completeness_corrected": 18,
+  "circuit_corrected": {
+    "status": "REPAIRED 2026-10-04 (F01): edges and completeness from the corrected screen; NOT pre-registered; config/circuit.json remains the pre-registered circuit used by MB11-MB14 and MB12's lock",
+    "components": [
+      "L0H0",
+      "L0H1",
+      "L0MLP",
+      "L1H0",
+      "L1H1",
+      "L1MLP",
+      "L2H0",
+      "L2H1",
+      "L2MLP",
+      "L3H1",
+      "L3MLP"
+    ],
+    "components_unchanged_from_circuit_json": true,
+    "edges": [
+      {
+        "contrast": "identity removal",
+        "sender": "factor_player",
+        "offset": 0,
+        "receiver": "L0H0.v",
+        "R": 0.023448450533035823,
+        "R CI low": 0.008308797069250832,
+        "R CI high": 0.03751732889807598,
+        "q": 0.014174730816409976
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "factor_player",
+        "offset": 0,
+        "receiver": "L0MLP",
+        "R": 0.5696633012534021,
+        "R CI low": 0.5033907890502185,
+        "R CI high": 0.6306282382100041,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "factor_player",
+        "offset": 0,
+        "receiver": "L1MLP",
+        "R": 0.1562463554758739,
+        "R CI low": 0.12384919794996092,
+        "R CI high": 0.1856587261695311,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "factor_player",
+        "offset": 0,
+        "receiver": "L2MLP",
+        "R": 0.07885018011455898,
+        "R CI low": 0.06435062077990492,
+        "R CI high": 0.10519297442743675,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "factor_player",
+        "offset": 0,
+        "receiver": "L3H0.v",
+        "R": 0.0031876637702460938,
+        "R CI low": 0.0013084508136676706,
+        "R CI high": 0.006566020760204093,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "factor_player",
+        "offset": 0,
+        "receiver": "L3H1.q",
+        "R": -0.0024334134192157335,
+        "R CI low": -0.00371060596182091,
+        "R CI high": -0.0010207529697552978,
+        "q": 0.020118972771678675
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "factor_player",
+        "offset": 0,
+        "receiver": "L3MLP",
+        "R": 0.053568264033106244,
+        "R CI low": 0.0385838858617996,
+        "R CI high": 0.0817043793504264,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "factor_player",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.03066481103420373,
+        "R CI low": 0.02154016390689679,
+        "R CI high": 0.04550917813098573,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L0H0.v",
+        "R": 0.023448418377281968,
+        "R CI low": 0.008308772614081927,
+        "R CI high": 0.03751729781036832,
+        "q": 0.014174730816409976
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L0MLP",
+        "R": 0.5696634620922756,
+        "R CI low": 0.5033909749620621,
+        "R CI high": 0.6306283568170583,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L1MLP",
+        "R": 0.15624627511654138,
+        "R CI low": 0.12384901634179692,
+        "R CI high": 0.1856586312739886,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L2MLP",
+        "R": 0.07885026065420415,
+        "R CI low": 0.06435061122810753,
+        "R CI high": 0.10519313991727575,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L3H0.v",
+        "R": 0.0031877100504899576,
+        "R CI low": 0.0013085546347733953,
+        "R CI high": 0.006566046778016344,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L3H1.q",
+        "R": -0.0024333649752202088,
+        "R CI low": -0.003710557203013833,
+        "R CI high": -0.00102073430559921,
+        "q": 0.020118972771678675
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L3MLP",
+        "R": 0.05356825483716168,
+        "R CI low": 0.03858382570933654,
+        "R CI high": 0.08170430252854642,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.030664762590208207,
+        "R CI low": 0.02154015991154611,
+        "R CI high": 0.045509115856109186,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L0ATTN",
+        "offset": 0,
+        "receiver": "L2MLP",
+        "R": 0.012461430603733349,
+        "R CI low": 0.005623592038546546,
+        "R CI high": 0.017372602458061444,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L0H0",
+        "offset": 0,
+        "receiver": "L2MLP",
+        "R": 0.007930526871841764,
+        "R CI low": 0.002551027069551124,
+        "R CI high": 0.011902750055204324,
+        "q": 0.045775277498865244
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L0H1",
+        "offset": 0,
+        "receiver": "L2H1.q",
+        "R": -0.0003510717723364434,
+        "R CI low": -0.0005663864597106934,
+        "R CI high": -0.00012076374952370993,
+        "q": 0.041579210394802606
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L1H1.v",
+        "R": -0.006897110543678297,
+        "R CI low": -0.011188282031589687,
+        "R CI high": -0.002657645005453679,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L1MLP",
+        "R": 0.29987457646406435,
+        "R CI low": 0.24377735067717451,
+        "R CI high": 0.3342946797935787,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L2H0.v",
+        "R": -0.004751334549974349,
+        "R CI low": -0.006674395093936882,
+        "R CI high": -0.0024056236601989705,
+        "q": 0.014174730816409976
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L2H1.q",
+        "R": 0.0035082051869563488,
+        "R CI low": 0.0006012781958019301,
+        "R CI high": 0.006643246097047222,
+        "q": 0.045775277498865244
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L2MLP",
+        "R": 0.14030505449402067,
+        "R CI low": 0.10097353223417299,
+        "R CI high": 0.17835764928424802,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L3MLP",
+        "R": 0.09564915126381895,
+        "R CI low": 0.08142112127095594,
+        "R CI high": 0.11660673764551316,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.06313279016502284,
+        "R CI low": 0.04565266559506357,
+        "R CI high": 0.07910687622834756,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "L2H0.v",
+        "R": -0.005320903708075892,
+        "R CI low": -0.007506010915562821,
+        "R CI high": -0.0015694941653726366,
+        "q": 0.04923853862542413
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "L2H1.k",
+        "R": 0.003957015485057535,
+        "R CI low": 0.0022782800244649315,
+        "R CI high": 0.0052403567232901455,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "L2H1.v",
+        "R": -0.0222196989992851,
+        "R CI low": -0.03152729077906542,
+        "R CI high": -0.014913145041155334,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "L2MLP",
+        "R": 0.18833253155034696,
+        "R CI low": 0.15228527251797006,
+        "R CI high": 0.22215411077827377,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "L3H1.k",
+        "R": 0.0019418755170618172,
+        "R CI low": 0.0006387878541572089,
+        "R CI high": 0.0031412343260685065,
+        "q": 0.020118972771678675
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "L3MLP",
+        "R": 0.15963483938185563,
+        "R CI low": 0.1279053731756316,
+        "R CI high": 0.18894033082698009,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.1345920579484699,
+        "R CI low": 0.10963491479776954,
+        "R CI high": 0.1499836475110837,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L2ATTN",
+        "offset": 0,
+        "receiver": "L2MLP",
+        "R": -0.013878239203733772,
+        "R CI low": -0.02585568148002931,
+        "R CI high": -0.005792495020040362,
+        "q": 0.014174730816409976
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L2MLP",
+        "offset": 0,
+        "receiver": "L3H0.v",
+        "R": -0.011074485382909565,
+        "R CI low": -0.016902078702794376,
+        "R CI high": -0.006694434419907106,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L2MLP",
+        "offset": 0,
+        "receiver": "L3H1.k",
+        "R": 0.0022939768144594782,
+        "R CI low": 0.0006455266105669287,
+        "R CI high": 0.003910400131721427,
+        "q": 0.045775277498865244
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L2MLP",
+        "offset": 0,
+        "receiver": "L3MLP",
+        "R": 0.24360422710995738,
+        "R CI low": 0.22089076265713548,
+        "R CI high": 0.2715867968848312,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L2MLP",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.1692238144049379,
+        "R CI low": 0.15289311785691748,
+        "R CI high": 0.19639309101561994,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "identity removal",
+        "sender": "L3MLP",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.571709255389117,
+        "R CI low": 0.5488409668901688,
+        "R CI high": 0.5978128195934556,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": -9,
+        "receiver": "L2H1.v",
+        "R": -0.0003181813178643492,
+        "R CI low": -0.00041691173923629024,
+        "R CI high": -0.00018484923065928356,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L0H0.v",
+        "R": 0.007287483593963438,
+        "R CI low": 0.0035124288001981956,
+        "R CI high": 0.012662372992382294,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L0MLP",
+        "R": 0.5838535871752163,
+        "R CI low": 0.5509762777125387,
+        "R CI high": 0.6182968573138172,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L1H1.k",
+        "R": 0.0018787986128882034,
+        "R CI low": 0.0007709142584260224,
+        "R CI high": 0.0032533950592843063,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L1MLP",
+        "R": 0.06926628890691508,
+        "R CI low": 0.0410284050066989,
+        "R CI high": 0.10681334196986399,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L2H0.q",
+        "R": 0.0019682450123648058,
+        "R CI low": 0.001028549596543567,
+        "R CI high": 0.0029472738638183244,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L2H1.v",
+        "R": -0.004305777994441544,
+        "R CI low": -0.00585368350619773,
+        "R CI high": -0.002032716931912082,
+        "q": 0.024947526236881557
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L2MLP",
+        "R": 0.03573347882186442,
+        "R CI low": 0.02527345877419258,
+        "R CI high": 0.052252969491339,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L3H0.q",
+        "R": -0.0024306855021245188,
+        "R CI low": -0.003962141021307623,
+        "R CI high": -0.0009989443156597718,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L3H0.k",
+        "R": -0.0011039493482526601,
+        "R CI low": -0.0019526693407953485,
+        "R CI high": -0.00039247401374809443,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L3H0.v",
+        "R": -0.002324527544257363,
+        "R CI low": -0.0034166399737914554,
+        "R CI high": -0.000779516118236952,
+        "q": 0.024947526236881557
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L3H1.k",
+        "R": -0.0010537641462911196,
+        "R CI low": -0.0014729637442231962,
+        "R CI high": -0.0006576777360533115,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "L3H1.v",
+        "R": -0.0009429228546461127,
+        "R CI low": -0.0013184229937102932,
+        "R CI high": -0.000565511910237332,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "embedding",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.009462239298882754,
+        "R CI low": 0.0038421342888710973,
+        "R CI high": 0.015286143595298195,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L0MLP",
+        "offset": -8,
+        "receiver": "L3H0.k",
+        "R": -0.00013408930574341423,
+        "R CI low": -0.0002695544596505628,
+        "R CI high": -5.098041374752734e-05,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L0MLP",
+        "offset": -7,
+        "receiver": "L1H0.k",
+        "R": -0.0004937548311665997,
+        "R CI low": -0.0008210533061646882,
+        "R CI high": -0.00017691842649359763,
+        "q": 0.024947526236881557
+      },
+      {
+        "contrast": "context",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L1H1.k",
+        "R": 0.00315089464195981,
+        "R CI low": 0.0022792003784671963,
+        "R CI high": 0.004258234907660844,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L1MLP",
+        "R": 0.18723552627835904,
+        "R CI low": 0.1489120082972601,
+        "R CI high": 0.22794366192894094,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L2H0.q",
+        "R": 0.0032413765529550587,
+        "R CI low": 0.001420718437003767,
+        "R CI high": 0.00526880533764902,
+        "q": 0.014174730816409976
+      },
+      {
+        "contrast": "context",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L2H0.v",
+        "R": -0.0026297782909024308,
+        "R CI low": -0.0034446073369938284,
+        "R CI high": -0.0017264967082176532,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L2H1.v",
+        "R": -0.006451394209651142,
+        "R CI low": -0.008183386086019588,
+        "R CI high": -0.003798630211938691,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L2MLP",
+        "R": 0.074882126629828,
+        "R CI low": 0.04926073108196455,
+        "R CI high": 0.09890033176949424,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L3H0.k",
+        "R": -0.0026751001444193945,
+        "R CI low": -0.00362875840225743,
+        "R CI high": -0.0015148628656177028,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L3H1.k",
+        "R": -0.002030151748245943,
+        "R CI low": -0.0026608892489172874,
+        "R CI high": -0.0013480940094937912,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "L3MLP",
+        "R": 0.07630242238615417,
+        "R CI low": 0.06902839813171495,
+        "R CI high": 0.08635924250384182,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L0MLP",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.059784963926428125,
+        "R CI low": 0.04882301401785469,
+        "R CI high": 0.07077375209401368,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": -3,
+        "receiver": "L1MLP",
+        "R": -0.0002762195412967297,
+        "R CI low": -0.00043154579828829026,
+        "R CI high": -0.00010800927122547042,
+        "q": 0.014174730816409976
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": -3,
+        "receiver": "L2MLP",
+        "R": -9.66636344633345e-05,
+        "R CI low": -0.00020285089344197307,
+        "R CI high": -2.6426221826174502e-05,
+        "q": 0.03027612407388539
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": -3,
+        "receiver": "L3H1.v",
+        "R": -0.00012116041947144944,
+        "R CI low": -0.00019992036774186072,
+        "R CI high": -3.138462667765387e-05,
+        "q": 0.04923853862542413
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": -2,
+        "receiver": "L2H0.v",
+        "R": -0.0002737345143748427,
+        "R CI low": -0.0003267005239373242,
+        "R CI high": -0.00019819641683974811,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": -2,
+        "receiver": "L3H1.v",
+        "R": -0.00022881095947614946,
+        "R CI low": -0.0003296790611600779,
+        "R CI high": -8.144660365836594e-05,
+        "q": 0.035982008995502246
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": -1,
+        "receiver": "L2H0.v",
+        "R": -0.0007231993913967593,
+        "R CI low": -0.0010703317312156168,
+        "R CI high": -0.00043792524520998804,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": -1,
+        "receiver": "L2H1.k",
+        "R": 8.821170728587357e-05,
+        "R CI low": 4.528385000283851e-05,
+        "R CI high": 0.00012751494874299236,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": -1,
+        "receiver": "L3H1.v",
+        "R": -0.00042788532198167296,
+        "R CI low": -0.0006241991077631288,
+        "R CI high": -0.00019246151673327452,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": 0,
+        "receiver": "L2H1.k",
+        "R": -0.0003710297596672433,
+        "R CI low": -0.0005324999746657143,
+        "R CI high": -0.00015925769298446774,
+        "q": 0.020118972771678675
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": 0,
+        "receiver": "L2MLP",
+        "R": 0.005307575480094646,
+        "R CI low": 0.002657163251021317,
+        "R CI high": 0.009069241073515161,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": 0,
+        "receiver": "L3H0.v",
+        "R": -0.000532474885896842,
+        "R CI low": -0.0006561368615963273,
+        "R CI high": -0.0003666324356280279,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": 0,
+        "receiver": "L3MLP",
+        "R": 0.002321778281258459,
+        "R CI low": 0.0008038238805051643,
+        "R CI high": 0.004592577549969875,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1ATTN",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.0026641560027976675,
+        "R CI low": 0.0013073831182961566,
+        "R CI high": 0.004655362950599348,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1H0",
+        "offset": -3,
+        "receiver": "L2MLP",
+        "R": -6.644968261715293e-05,
+        "R CI low": -0.00011376957858101439,
+        "R CI high": -2.4789807585445206e-05,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1H1",
+        "offset": -1,
+        "receiver": "L2H0.v",
+        "R": -0.0006354095114286568,
+        "R CI low": -0.0009123896499005324,
+        "R CI high": -0.0004026485897517724,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1H1",
+        "offset": -1,
+        "receiver": "L2H1.k",
+        "R": 6.514024278923491e-05,
+        "R CI low": 3.046649359858507e-05,
+        "R CI high": 0.00010239116649630882,
+        "q": 0.020118972771678675
+      },
+      {
+        "contrast": "context",
+        "sender": "L1H1",
+        "offset": -1,
+        "receiver": "L3H1.v",
+        "R": -0.00038721131236377725,
+        "R CI low": -0.0005118210787092518,
+        "R CI high": -0.0002062225756256758,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "L2H0.v",
+        "R": -0.003129769440858324,
+        "R CI low": -0.004393971130213883,
+        "R CI high": -0.0016181675231506617,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "L2H1.v",
+        "R": -0.004510213562983009,
+        "R CI low": -0.006763627716835765,
+        "R CI high": -0.002185628627378308,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "L2MLP",
+        "R": 0.12484791490752196,
+        "R CI low": 0.11163172864783431,
+        "R CI high": 0.14016398030591576,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "L3H1.q",
+        "R": -0.0030515236973064986,
+        "R CI low": -0.005529049413341084,
+        "R CI high": -0.0008472033282399809,
+        "q": 0.045775277498865244
+      },
+      {
+        "contrast": "context",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "L3H1.k",
+        "R": -0.0018742193154145698,
+        "R CI low": -0.0024641858055398334,
+        "R CI high": -0.0012379144312929457,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "L3MLP",
+        "R": 0.10131714829880456,
+        "R CI low": 0.07713848103997624,
+        "R CI high": 0.12673840527832173,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L1MLP",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.0994222934811876,
+        "R CI low": 0.08424010574085662,
+        "R CI high": 0.11429291591379227,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L2MLP",
+        "offset": 0,
+        "receiver": "L3H1.k",
+        "R": -0.003660053220399352,
+        "R CI low": -0.005161085265184916,
+        "R CI high": -0.002105469753341027,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L2MLP",
+        "offset": 0,
+        "receiver": "L3H1.v",
+        "R": -0.002915531832975995,
+        "R CI low": -0.004729258951886051,
+        "R CI high": -0.0008523019882628295,
+        "q": 0.024947526236881557
+      },
+      {
+        "contrast": "context",
+        "sender": "L2MLP",
+        "offset": 0,
+        "receiver": "L3MLP",
+        "R": 0.19248969121043927,
+        "R CI low": 0.1773942624257793,
+        "R CI high": 0.20997718177570338,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L2MLP",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.17831044765194975,
+        "R CI low": 0.1708608654255216,
+        "R CI high": 0.1871596525929699,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L3H1",
+        "offset": 0,
+        "receiver": "L3MLP",
+        "R": 0.009218487838008774,
+        "R CI low": 0.004100971706083981,
+        "R CI high": 0.013523157672300343,
+        "q": 0.007605953121000476
+      },
+      {
+        "contrast": "context",
+        "sender": "L3H1",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.00870825755953511,
+        "R CI low": 0.0027769438773883478,
+        "R CI high": 0.012941380852363028,
+        "q": 0.024947526236881557
+      },
+      {
+        "contrast": "context",
+        "sender": "L3MLP",
+        "offset": 0,
+        "receiver": "logits",
+        "R": 0.7055159398725226,
+        "R CI low": 0.6850664828949061,
+        "R CI high": 0.7221761693212357,
+        "q": 0.007605953121000476
+      }
+    ],
+    "edge_semantics": "each edge passed an individual single-edge exact path patch; the set has not been validated jointly (see MB11 R2)",
+    "completeness_only": {
+      "components": [
+        "L3H0"
+      ],
+      "edges": [
+        {
+          "contrast": "identity removal",
+          "sender": "L2H1",
+          "offset": 0,
+          "receiver": "L2MLP",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": -0.009340241371604255,
+          "R CI low": -0.020363552056041963,
+          "R CI high": -0.003647176672311468,
+          "mean aligned change": -0.004377414041070271,
+          "CI low": -0.008733055776438061,
+          "CI high": -0.0017971480217297776,
+          "p": 0.0009995002498750624,
+          "n": 529,
+          "q": 0.007605953121000476,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "identity removal",
+          "sender": "L2H1",
+          "offset": 0,
+          "receiver": "L3H1.k",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": -0.00033134466812910024,
+          "R CI low": -0.0005549902804623157,
+          "R CI high": -0.00011043617150061209,
+          "mean aligned change": -0.00015528857820651482,
+          "CI low": -0.0002793743408133701,
+          "CI high": -4.846924486357162e-05,
+          "p": 0.0009995002498750624,
+          "n": 529,
+          "q": 0.007605953121000476,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L3ATTN",
+          "offset": 0,
+          "receiver": "logits",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": 0.009652949615352638,
+          "R CI low": 0.006213462599835536,
+          "R CI high": 0.012102655257573482,
+          "mean aligned change": 0.06285583726456125,
+          "CI low": 0.041057113077434496,
+          "CI high": 0.07807514330353754,
+          "p": 0.0009995002498750624,
+          "n": 529,
+          "q": 0.007605953121000476,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L0H1",
+          "offset": 0,
+          "receiver": "L1MLP",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": 0.0015994915321669025,
+          "R CI low": 0.0008332118543755888,
+          "R CI high": 0.0027893249631070005,
+          "mean aligned change": 0.01041519778493672,
+          "CI low": 0.005330914058407229,
+          "CI high": 0.01817652517477501,
+          "p": 0.0009995002498750624,
+          "n": 529,
+          "q": 0.007605953121000476,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L1H1",
+          "offset": 0,
+          "receiver": "L1MLP",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": 0.005671360301559198,
+          "R CI low": 0.003175333026161748,
+          "R CI high": 0.007940892148796857,
+          "mean aligned change": 0.03692944792921467,
+          "CI low": 0.021744690741194152,
+          "CI high": 0.05039871604701328,
+          "p": 0.0009995002498750624,
+          "n": 529,
+          "q": 0.007605953121000476,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "embedding",
+          "offset": -1,
+          "receiver": "L0H0.v",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": -0.009655703180482752,
+          "R CI low": -0.01431127270366092,
+          "R CI high": -0.0052669644303923475,
+          "mean aligned change": -0.0628737672909897,
+          "CI low": -0.09465975160296217,
+          "CI high": -0.03437352479134855,
+          "p": 0.0009995002498750624,
+          "n": 529,
+          "q": 0.007605953121000476,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L1H0",
+          "offset": 0,
+          "receiver": "L3MLP",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": 0.0027702320839052257,
+          "R CI low": 0.0012781820935743185,
+          "R CI high": 0.005176828413120766,
+          "mean aligned change": 0.018038554430458632,
+          "CI low": 0.008276723567137422,
+          "CI high": 0.03376789468994336,
+          "p": 0.0009995002498750624,
+          "n": 529,
+          "q": 0.007605953121000476,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L1H0",
+          "offset": 0,
+          "receiver": "logits",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": 0.002052850101815586,
+          "R CI low": 0.00045136537213586716,
+          "R CI high": 0.004064336140862867,
+          "mean aligned change": 0.013367272913455963,
+          "CI low": 0.0030315872989934304,
+          "CI high": 0.0265389981154863,
+          "p": 0.008995502248875561,
+          "n": 529,
+          "q": 0.04923853862542413,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L1MLP",
+          "offset": -1,
+          "receiver": "L2H0.v",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": 0.0021624365143464923,
+          "R CI low": 0.0013616395247535234,
+          "R CI high": 0.0029199537079164567,
+          "mean aligned change": 0.014080852284210616,
+          "CI low": 0.009054961950244914,
+          "CI high": 0.01874806634288547,
+          "p": 0.0009995002498750624,
+          "n": 529,
+          "q": 0.007605953121000476,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "embedding",
+          "offset": -1,
+          "receiver": "L0H1.v",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": -0.007022011395037399,
+          "R CI low": -0.011001421022714735,
+          "R CI high": -0.0032630965111394715,
+          "mean aligned change": -0.045724304290822866,
+          "CI low": -0.07292626551691693,
+          "CI high": -0.020988050195773152,
+          "p": 0.0009995002498750624,
+          "n": 529,
+          "q": 0.007605953121000476,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L1H1",
+          "offset": 0,
+          "receiver": "L2MLP",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": 0.0030184735054376655,
+          "R CI low": 0.0019873785221636493,
+          "R CI high": 0.00448029060310794,
+          "mean aligned change": 0.019654995312875522,
+          "CI low": 0.013194621984403925,
+          "CI high": 0.029128133808900333,
+          "p": 0.0009995002498750624,
+          "n": 529,
+          "q": 0.007605953121000476,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L1H0",
+          "offset": 0,
+          "receiver": "L3H0.v",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": -0.0007523454002736316,
+          "R CI low": -0.0012227355682365051,
+          "R CI high": -0.0002595567561203306,
+          "mean aligned change": -0.0048989481900049295,
+          "CI low": -0.00815363762492698,
+          "CI high": -0.0016957894126949185,
+          "p": 0.0009995002498750624,
+          "n": 529,
+          "q": 0.007605953121000476,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L0H0",
+          "offset": 0,
+          "receiver": "logits",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": 0.0012451217615526966,
+          "R CI low": 0.00041163289385860995,
+          "R CI high": 0.002155557347409651,
+          "mean aligned change": 0.00810769494686325,
+          "CI low": 0.0026950319415417895,
+          "CI high": 0.014314886996522117,
+          "p": 0.008995502248875561,
+          "n": 529,
+          "q": 0.04923853862542413,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L2MLP",
+          "offset": -1,
+          "receiver": "L3H1.k",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": -0.0011127686047599698,
+          "R CI low": -0.0020356320130289645,
+          "R CI high": -0.0002335275026900135,
+          "mean aligned change": -0.007245868374021382,
+          "CI low": -0.013253466290614984,
+          "CI high": -0.0015393833107998718,
+          "p": 0.008995502248875561,
+          "n": 529,
+          "q": 0.04923853862542413,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "embedding",
+          "offset": -2,
+          "receiver": "L0H1.v",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": -0.002131097218848215,
+          "R CI low": -0.004398775066428107,
+          "R CI high": -0.0004796014518422965,
+          "mean aligned change": -0.01387678433230784,
+          "CI low": -0.02898876218324992,
+          "CI high": -0.003078978387684026,
+          "p": 0.004997501249375313,
+          "n": 529,
+          "q": 0.03027612407388539,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L0MLP",
+          "offset": -1,
+          "receiver": "L3H0.v",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": -0.0011472235971207753,
+          "R CI low": -0.0017340636287440188,
+          "R CI high": -0.000376873784771886,
+          "mean aligned change": -0.007470224397732314,
+          "CI low": -0.011398580773577971,
+          "CI high": -0.002458153516715751,
+          "p": 0.00399800099950025,
+          "n": 529,
+          "q": 0.024947526236881557,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L1MLP",
+          "offset": -9,
+          "receiver": "L2H0.v",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": 0.0004701339419040431,
+          "R CI low": 0.00017091942958898584,
+          "R CI high": 0.0008265509159304452,
+          "mean aligned change": 0.0030613091047184226,
+          "CI low": 0.001138893201441446,
+          "CI high": 0.005234067544972536,
+          "p": 0.004997501249375313,
+          "n": 529,
+          "q": 0.03027612407388539,
+          "passes BH (q < 0.05)": true
+        },
+        {
+          "contrast": "context",
+          "sender": "L1MLP",
+          "offset": -2,
+          "receiver": "L2H0.v",
+          "sender_is_MB06_candidate": false,
+          "kind": "tested",
+          "control sender": null,
+          "R": 0.0007197032079071709,
+          "R CI low": 0.00022570175934833752,
+          "R CI high": 0.0012980930145988748,
+          "mean aligned change": 0.004686396336623085,
+          "CI low": 0.001465955218007522,
+          "CI high": 0.008792023709263111,
+          "p": 0.00399800099950025,
+          "n": 529,
+          "q": 0.024947526236881557,
+          "passes BH (q < 0.05)": true
+        }
+      ]
+    },
+    "screened_edges": 4048,
+    "exactly_tested_edges": 624,
+    "written_at": "2026-10-06T12:15:24.437351+00:00"
+  },
+  "run_mode": "full"
+}

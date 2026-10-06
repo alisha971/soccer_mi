@@ -12,7 +12,7 @@
   ],
   "reference_policy": "reuse hash-verified frozen MB01 references and conflict definitions; regenerate all full-model-dependent outputs",
   "identity_policy": "retain player as the scientific variable; C2 is reported as a diagnostic, without outcome-dependent fallback",
-  "test_policy": "validation-only rerun; no new held-out confirmation; MB12 audits validation and provenance",
+  "test_policy": "Retrospective known-test diagnostics on the new wd0.1 benchmark; no fresh held-out confirmation.",
   "controls_policy": "non-conflict controls from same match as partner, hence same discovery/estimation half; no event reuse",
   "source_baseline": "current local Track A source; historical data.py hash mismatch disclosed",
   "settings": {

@@ -1,0 +1,1012 @@
+{
+  "largest_reconstruction_error": 6.67572021484375e-06,
+  "components": [
+    {
+      "stratum": "P-player",
+      "component": "player",
+      "mean": -0.018372366307215615,
+      "CI low": -0.0298363905464134,
+      "CI high": -0.006318176971498199,
+      "mean |term|": 0.055762387812137604,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "team",
+      "mean": -0.031283445526254366,
+      "CI low": -0.05091757149429603,
+      "CI high": -0.00881919050520471,
+      "mean |term|": 0.06040986627340317,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "role",
+      "mean": -0.002973464322922405,
+      "CI low": -0.008827488347350724,
+      "CI high": 0.003539728450900645,
+      "mean |term|": 0.043540969491004944,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "competition",
+      "mean": 0.007214226855375348,
+      "CI low": -0.012069849224274645,
+      "CI high": 0.02317099379107111,
+      "mean |term|": 0.03844285383820534,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "space",
+      "mean": -0.016164986077495613,
+      "CI low": -0.026236670118863267,
+      "CI high": -0.0062157413340103666,
+      "mean |term|": 0.09020749479532242,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "time",
+      "mean": 0.030845903686899497,
+      "CI low": 0.01521858125184395,
+      "CI high": 0.044429559462899886,
+      "mean |term|": 0.09985968470573425,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "state",
+      "mean": 0.0024546638002877876,
+      "CI low": -0.0045425934818114095,
+      "CI high": 0.010681757053837154,
+      "mean |term|": 0.05857391655445099,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "history",
+      "mean": 0.035974596549453335,
+      "CI low": 0.025444990909861468,
+      "CI high": 0.045379682348678375,
+      "mean |term|": 0.13787344098091125,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "position",
+      "mean": 0.021376355737875784,
+      "CI low": 0.018192390761992975,
+      "CI high": 0.02415876682308934,
+      "mean |term|": 0.04732388257980347,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L0 head 0",
+      "mean": 0.008566030242742093,
+      "CI low": 0.004127886758682533,
+      "CI high": 0.012589789465974962,
+      "mean |term|": 0.03236718475818634,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L0 head 1",
+      "mean": 0.02356252802480721,
+      "CI low": 0.017675561434774095,
+      "CI high": 0.028641215844893327,
+      "mean |term|": 0.040327124297618866,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L0 attn bias",
+      "mean": 0.0009331290115736619,
+      "CI low": 0.00013286450027280325,
+      "CI high": 0.0016000408136562546,
+      "mean |term|": 0.004214671440422535,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L0 mlp",
+      "mean": 0.564237406106592,
+      "CI low": 0.5332309064276215,
+      "CI high": 0.5932233159864504,
+      "mean |term|": 0.626846432685852,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L1 head 0",
+      "mean": 0.023791265555946208,
+      "CI low": 0.01970859046375704,
+      "CI high": 0.02848737716948011,
+      "mean |term|": 0.0493353046476841,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L1 head 1",
+      "mean": -0.003986288633830245,
+      "CI low": -0.014182109731510873,
+      "CI high": 0.0060508190302976834,
+      "mean |term|": 0.04455981403589249,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L1 attn bias",
+      "mean": 0.002037809858714546,
+      "CI low": 0.0012380127550655688,
+      "CI high": 0.0027930614410739993,
+      "mean |term|": 0.006417917553335428,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L1 mlp",
+      "mean": 0.918536353514643,
+      "CI low": 0.8483291583293588,
+      "CI high": 0.998943829491378,
+      "mean |term|": 0.9572947025299072,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L2 head 0",
+      "mean": -0.01681128748603425,
+      "CI low": -0.0234189644339432,
+      "CI high": -0.009869612956834415,
+      "mean |term|": 0.06091837212443352,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L2 head 1",
+      "mean": -0.016965089388902743,
+      "CI low": -0.022231622509686563,
+      "CI high": -0.012371035877807763,
+      "mean |term|": 0.06438405811786652,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L2 attn bias",
+      "mean": -0.04213303016349695,
+      "CI low": -0.04603087671700357,
+      "CI high": -0.0365106578087944,
+      "mean |term|": 0.04479947313666344,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L2 mlp",
+      "mean": 0.6965571701464028,
+      "CI low": 0.6279998923568914,
+      "CI high": 0.787457853125962,
+      "mean |term|": 0.8158857226371765,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L3 head 0",
+      "mean": 0.029331558414039612,
+      "CI low": 0.014077309972273386,
+      "CI high": 0.04404836260159123,
+      "mean |term|": 0.13366635143756866,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L3 head 1",
+      "mean": 0.006246399931575871,
+      "CI low": -0.009360382861310398,
+      "CI high": 0.022325868958729362,
+      "mean |term|": 0.1428612321615219,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L3 attn bias",
+      "mean": -0.06901705615035415,
+      "CI low": -0.07595862040032994,
+      "CI high": -0.05936586019088869,
+      "mean |term|": 0.07412071526050568,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "L3 mlp",
+      "mean": 4.306207673030066,
+      "CI low": 4.104257576060751,
+      "CI high": 4.491895657686302,
+      "mean |term|": 4.3407769203186035,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "constant",
+      "mean": -0.49683469864582525,
+      "CI low": -0.5381764743469302,
+      "CI high": -0.43215152152821407,
+      "mean |term|": 0.5248299837112427,
+      "n": 1744
+    },
+    {
+      "stratum": "P-player",
+      "component": "delta",
+      "mean": 5.96333131128324,
+      "CI low": 5.72810180533745,
+      "CI high": 6.187487286774763,
+      "mean |term|": 6.008204460144043,
+      "n": 1744
+    },
+    {
+      "stratum": "index-0",
+      "component": "player",
+      "mean": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "mean |term|": 0.0,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "team",
+      "mean": -0.011442730518402744,
+      "CI low": -0.022873723575794133,
+      "CI high": -0.00013298108556585142,
+      "mean |term|": 0.044772952795028687,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "role",
+      "mean": -0.014841094425345059,
+      "CI low": -0.018067693050007053,
+      "CI high": -0.011262057984793851,
+      "mean |term|": 0.046051185578107834,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "competition",
+      "mean": -0.006516669561462723,
+      "CI low": -0.019123762334993858,
+      "CI high": 0.006956854012930144,
+      "mean |term|": 0.04050477594137192,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "space",
+      "mean": -0.012159820273208983,
+      "CI low": -0.016519875615980277,
+      "CI high": -0.00815338851489561,
+      "mean |term|": 0.08888186514377594,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "time",
+      "mean": 0.02749033295170263,
+      "CI low": 0.02094032422269457,
+      "CI high": 0.03320935102764661,
+      "mean |term|": 0.09158988296985626,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "state",
+      "mean": 0.00028184387109353654,
+      "CI low": -0.003095045227189795,
+      "CI high": 0.0035818689215339865,
+      "mean |term|": 0.058299701660871506,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "history",
+      "mean": 0.034040477371339695,
+      "CI low": 0.029636096421124327,
+      "CI high": 0.038581237528337135,
+      "mean |term|": 0.13285037875175476,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "position",
+      "mean": 0.02145323681261245,
+      "CI low": 0.0199150011946818,
+      "CI high": 0.022916487034855135,
+      "mean |term|": 0.04636746272444725,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L0 head 0",
+      "mean": 0.011072668627316944,
+      "CI low": 0.006678946292515876,
+      "CI high": 0.01546411581567421,
+      "mean |term|": 0.03205570578575134,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L0 head 1",
+      "mean": 0.02362000914984007,
+      "CI low": 0.02131734869554722,
+      "CI high": 0.026050991687158385,
+      "mean |term|": 0.03944094851613045,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L0 attn bias",
+      "mean": 0.0014079285587072726,
+      "CI low": 0.0011103852627732194,
+      "CI high": 0.00167479026368343,
+      "mean |term|": 0.00422538910061121,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L0 mlp",
+      "mean": 0.572546251217036,
+      "CI low": 0.5474001112973141,
+      "CI high": 0.5967745625548809,
+      "mean |term|": 0.639371931552887,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L1 head 0",
+      "mean": 0.02713144676821996,
+      "CI low": 0.02426073176719709,
+      "CI high": 0.029944922523755718,
+      "mean |term|": 0.04918559640645981,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L1 head 1",
+      "mean": 0.0025938921059360225,
+      "CI low": -0.005253098788315718,
+      "CI high": 0.010799415547145922,
+      "mean |term|": 0.04322780296206474,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L1 attn bias",
+      "mean": 0.002409674526985686,
+      "CI low": 0.001978802496072355,
+      "CI high": 0.0028435231704742837,
+      "mean |term|": 0.006697528064250946,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L1 mlp",
+      "mean": 0.9788000119720905,
+      "CI low": 0.9444860956940884,
+      "CI high": 1.0137336056097364,
+      "mean |term|": 1.015693187713623,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L2 head 0",
+      "mean": -0.011497373565917401,
+      "CI low": -0.016697649030395452,
+      "CI high": -0.006266085777431857,
+      "mean |term|": 0.05589604005217552,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L2 head 1",
+      "mean": -0.013375879323951255,
+      "CI low": -0.017697946419519557,
+      "CI high": -0.009180011300086605,
+      "mean |term|": 0.062056127935647964,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L2 attn bias",
+      "mean": -0.04064991980199009,
+      "CI low": -0.0428223493222846,
+      "CI high": -0.03802613311689768,
+      "mean |term|": 0.04298211261630058,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L2 mlp",
+      "mean": 0.748736278666025,
+      "CI low": 0.7053787915204369,
+      "CI high": 0.7939732645491332,
+      "mean |term|": 0.8446463346481323,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L3 head 0",
+      "mean": 0.025568907747216305,
+      "CI low": 0.019011258457037713,
+      "CI high": 0.03248659134563328,
+      "mean |term|": 0.1257908046245575,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L3 head 1",
+      "mean": 0.00704179959283916,
+      "CI low": -1.8627485733584522e-05,
+      "CI high": 0.013634124914767494,
+      "mean |term|": 0.13984593749046326,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L3 attn bias",
+      "mean": -0.06691522601653797,
+      "CI low": -0.07091755656105805,
+      "CI high": -0.062077532434815064,
+      "mean |term|": 0.07126949727535248,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "L3 mlp",
+      "mean": 4.490442952055881,
+      "CI low": 4.401654619869102,
+      "CI high": 4.576775760344152,
+      "mean |term|": 4.546370983123779,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "constant",
+      "mean": -0.49146127300962555,
+      "CI low": -0.5136371307765527,
+      "CI high": -0.46492183472005844,
+      "mean |term|": 0.5187297463417053,
+      "n": 8947
+    },
+    {
+      "stratum": "index-0",
+      "component": "delta",
+      "mean": 6.305777724247709,
+      "CI low": 6.1866956619266045,
+      "CI high": 6.426688784079477,
+      "mean |term|": 6.378361701965332,
+      "n": 8947
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "player",
+      "mean": -0.02628349156330171,
+      "CI low": -0.042638581901050056,
+      "CI high": -0.009952642901807834,
+      "mean |term|": 0.0635518729686737,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "team",
+      "mean": -0.028393519604914867,
+      "CI low": -0.0521668073845745,
+      "CI high": -0.0018539009395147044,
+      "mean |term|": 0.06343385577201843,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "role",
+      "mean": 0.001248510843019319,
+      "CI low": -0.008466991721785907,
+      "CI high": 0.012749148007688999,
+      "mean |term|": 0.04910508170723915,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "competition",
+      "mean": 0.011712777609734376,
+      "CI low": -0.008262950621950453,
+      "CI high": 0.02840864415028502,
+      "mean |term|": 0.03927459195256233,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "space",
+      "mean": 0.005987442921983008,
+      "CI low": -0.005936451684830278,
+      "CI high": 0.01748616498794953,
+      "mean |term|": 0.09788448363542557,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "time",
+      "mean": 0.08392924995860085,
+      "CI low": 0.055471736740208534,
+      "CI high": 0.10663132652147313,
+      "mean |term|": 0.1291065514087677,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "state",
+      "mean": -0.0042144136685922364,
+      "CI low": -0.011447284178349644,
+      "CI high": 0.00556447726377901,
+      "mean |term|": 0.06065722182393074,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "history",
+      "mean": 0.025588178021686316,
+      "CI low": 0.014470750105934153,
+      "CI high": 0.037914581061616916,
+      "mean |term|": 0.1181834265589714,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "position",
+      "mean": 0.015423616393867239,
+      "CI low": 0.0097205003518978,
+      "CI high": 0.01988332597943998,
+      "mean |term|": 0.04747910797595978,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L0 head 0",
+      "mean": 0.00367145877821096,
+      "CI low": -0.0007894599018404331,
+      "CI high": 0.007597397772654107,
+      "mean |term|": 0.03282106667757034,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L0 head 1",
+      "mean": 0.014609102409875455,
+      "CI low": 0.0065843581744825215,
+      "CI high": 0.021532828054497154,
+      "mean |term|": 0.036386772990226746,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L0 attn bias",
+      "mean": 0.0009143681626696102,
+      "CI low": -0.00045188792351786027,
+      "CI high": 0.0018973311827706397,
+      "mean |term|": 0.004474440589547157,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L0 mlp",
+      "mean": 0.44541759238233464,
+      "CI low": 0.41327970995538027,
+      "CI high": 0.4819590953262266,
+      "mean |term|": 0.531092643737793,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L1 head 0",
+      "mean": 0.0007280535909870692,
+      "CI low": -0.004848968483695942,
+      "CI high": 0.006704132978461288,
+      "mean |term|": 0.03657502681016922,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L1 head 1",
+      "mean": -0.00949835968244561,
+      "CI low": -0.020422644837233873,
+      "CI high": 0.0024514692753943167,
+      "mean |term|": 0.0467093400657177,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L1 attn bias",
+      "mean": 0.0023248405185583125,
+      "CI low": 0.0007723490400003771,
+      "CI high": 0.0035443103419639087,
+      "mean |term|": 0.0062173535116016865,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L1 mlp",
+      "mean": 1.0866859143855194,
+      "CI low": 0.9941599926608756,
+      "CI high": 1.1720230519536436,
+      "mean |term|": 1.1004269123077393,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L2 head 0",
+      "mean": -0.022080050948986893,
+      "CI low": -0.031270740029522744,
+      "CI high": -0.01232093424199128,
+      "mean |term|": 0.07520381361246109,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L2 head 1",
+      "mean": -0.04569795292605242,
+      "CI low": -0.052689232869461505,
+      "CI high": -0.039272645988281805,
+      "mean |term|": 0.07835039496421814,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L2 attn bias",
+      "mean": -0.039941986183395416,
+      "CI low": -0.046319485089193105,
+      "CI high": -0.03005251107889007,
+      "mean |term|": 0.04496688395738602,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L2 mlp",
+      "mean": 0.5990431898476554,
+      "CI low": 0.48227899714544625,
+      "CI high": 0.7683099076985506,
+      "mean |term|": 0.7508466839790344,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L3 head 0",
+      "mean": 0.031858519798871214,
+      "CI low": 0.016994521897483583,
+      "CI high": 0.047422738999111466,
+      "mean |term|": 0.13158734142780304,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L3 head 1",
+      "mean": -0.04099155473718274,
+      "CI low": -0.059504353064523674,
+      "CI high": -0.021449133596988943,
+      "mean |term|": 0.11338512599468231,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L3 attn bias",
+      "mean": -0.05978013192555924,
+      "CI low": -0.07083861192480147,
+      "CI high": -0.04289567188901514,
+      "mean |term|": 0.06942430883646011,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "L3 mlp",
+      "mean": 3.1410116473660157,
+      "CI low": 2.9345371007909993,
+      "CI high": 3.370653236931139,
+      "mean |term|": 3.2011280059814453,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "constant",
+      "mean": -0.507082150478723,
+      "CI low": -0.5739477992832316,
+      "CI high": -0.3959353318583628,
+      "mean |term|": 0.5594808459281921,
+      "n": 914
+    },
+    {
+      "stratum": "genuine (P-player)",
+      "component": "delta",
+      "mean": 4.686190751485151,
+      "CI low": 4.356349262992483,
+      "CI high": 5.102203736314283,
+      "mean |term|": 4.7570881843566895,
+      "n": 914
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "player",
+      "mean": -0.009660597049308757,
+      "CI low": -0.01826257384779703,
+      "CI high": 0.0002692093475265293,
+      "mean |term|": 0.047184575349092484,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "team",
+      "mean": -0.034465845878187254,
+      "CI low": -0.05581265343649687,
+      "CI high": -0.011410657020654505,
+      "mean |term|": 0.057079825550317764,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "role",
+      "mean": -0.007622723722525701,
+      "CI low": -0.014664082392334625,
+      "CI high": -0.0008329718109589495,
+      "mean |term|": 0.037413738667964935,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "competition",
+      "mean": 0.0022604010849125145,
+      "CI low": -0.016818440420612195,
+      "CI high": 0.018164509387640804,
+      "mean |term|": 0.0375269390642643,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "space",
+      "mean": -0.04055934765041544,
+      "CI low": -0.050335150025490036,
+      "CI high": -0.03062022241303629,
+      "mean |term|": 0.08175355195999146,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "time",
+      "mean": -0.027609733050853555,
+      "CI low": -0.038484321048282547,
+      "CI high": -0.017389239565529197,
+      "mean |term|": 0.0676528811454773,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "state",
+      "mean": 0.00979868404915085,
+      "CI low": 0.001544080604118983,
+      "CI high": 0.018212703308435635,
+      "mean |term|": 0.05627975985407829,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "history",
+      "mean": 0.04741217068725943,
+      "CI low": 0.03171373649539929,
+      "CI high": 0.061355222171342295,
+      "mean |term|": 0.15955619513988495,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "position",
+      "mean": 0.02793154099139845,
+      "CI low": 0.02317424916147663,
+      "CI high": 0.03229216903543411,
+      "mean |term|": 0.04715294763445854,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L0 head 0",
+      "mean": 0.01395595592777999,
+      "CI low": 0.009218907299746918,
+      "CI high": 0.018423489066242957,
+      "mean |term|": 0.0318673737347126,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L0 head 1",
+      "mean": 0.03342208346100917,
+      "CI low": 0.027056776774291448,
+      "CI high": 0.03935364054614779,
+      "mean |term|": 0.044666264206171036,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L0 attn bias",
+      "mean": 0.0009537885488005332,
+      "CI low": 0.00032821040847967056,
+      "CI high": 0.001627503018419564,
+      "mean |term|": 0.003928611520677805,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L0 mlp",
+      "mean": 0.6950823576053526,
+      "CI low": 0.6549531323283178,
+      "CI high": 0.7313336959969626,
+      "mean |term|": 0.7322909832000732,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L1 head 0",
+      "mean": 0.04918858571976868,
+      "CI low": 0.042623631864778515,
+      "CI high": 0.05686699449560351,
+      "mean |term|": 0.06338698416948318,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L1 head 1",
+      "mean": 0.0020836305691028178,
+      "CI low": -0.008735402668243679,
+      "CI high": 0.012404005462934794,
+      "mean |term|": 0.04219274967908859,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L1 attn bias",
+      "mean": 0.0017217303128143021,
+      "CI low": 0.0010476494291049717,
+      "CI high": 0.0024786233263260995,
+      "mean |term|": 0.006638778373599052,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L1 mlp",
+      "mean": 0.7333692467243044,
+      "CI low": 0.673014280880171,
+      "CI high": 0.8049866384718575,
+      "mean |term|": 0.7996767163276672,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L2 head 0",
+      "mean": -0.01100929976899965,
+      "CI low": -0.01755686635266474,
+      "CI high": -0.0040845010405371465,
+      "mean |term|": 0.045187175273895264,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L2 head 1",
+      "mean": 0.014675678409837994,
+      "CI low": 0.008125380665616492,
+      "CI high": 0.020249694747022227,
+      "mean |term|": 0.049004267901182175,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L2 attn bias",
+      "mean": -0.044545818353632846,
+      "CI low": -0.04629125510198648,
+      "CI high": -0.04257725359243333,
+      "mean |term|": 0.04461512714624405,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L2 mlp",
+      "mean": 0.8039400351982766,
+      "CI low": 0.7545504768204064,
+      "CI high": 0.8609825153019707,
+      "mean |term|": 0.8875069618225098,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L3 head 0",
+      "mean": 0.0265488563589359,
+      "CI low": 0.003248935182357769,
+      "CI high": 0.048022931517843113,
+      "mean |term|": 0.13595575094223022,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L3 head 1",
+      "mean": 0.05826506326560644,
+      "CI low": 0.03761782003247426,
+      "CI high": 0.08207748597015228,
+      "mean |term|": 0.17532049119472504,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L3 attn bias",
+      "mean": -0.07918880162199578,
+      "CI low": -0.08268360762100649,
+      "CI high": -0.07530264824163083,
+      "mean |term|": 0.0792924091219902,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "L3 mlp",
+      "mean": 5.589327151893851,
+      "CI low": 5.315159485407922,
+      "CI high": 5.846133966936824,
+      "mean |term|": 5.595763206481934,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "constant",
+      "mean": -0.48555015530212814,
+      "CI low": -0.5071094203592695,
+      "CI high": -0.46165443214376656,
+      "mean |term|": 0.4866722822189331,
+      "n": 830
+    },
+    {
+      "stratum": "coupled (P-player)",
+      "component": "delta",
+      "mean": 7.369724650627159,
+      "CI low": 7.049533855628387,
+      "CI high": 7.66311312406776,
+      "mean |term|": 7.385939121246338,
+      "n": 830
+    }
+  ],
+  "routes": [
+    {
+      "contrast": "I1",
+      "n": 529,
+      "mean full effect": -0.16719821765878023,
+      "full CI low": -0.2646787413409533,
+      "full CI high": -0.055820892709930375,
+      "direct share": 0.029699040254535437,
+      "direct CI low": 0.020282225641211307,
+      "direct CI high": 0.0445538816003407,
+      "indirect share": 0.9693352374097918,
+      "indirect CI low": 0.9544908841438908,
+      "indirect CI high": 0.9784598400884539,
+      "remainder share": 0.000965722816506473,
+      "remainder CI low": -0.00011085353118497382,
+      "remainder CI high": 0.002495672427312093
+    },
+    {
+      "contrast": "I2",
+      "n": 529,
+      "mean full effect": -0.03292941731631418,
+      "full CI low": -0.1985076065691972,
+      "full CI high": 0.1603058312921405,
+      "direct share": 0.04714938748400112,
+      "direct CI low": 0.029789661692984512,
+      "direct CI high": 0.07145653499664424,
+      "indirect share": 0.953304376415018,
+      "indirect CI low": 0.9293652641008733,
+      "indirect CI high": 0.9698015756393313,
+      "remainder share": -0.00045376478631146185,
+      "remainder CI low": -0.002782718433315851,
+      "remainder CI high": 0.0018181934097566018
+    }
+  ],
+  "run_mode": "full"
+}

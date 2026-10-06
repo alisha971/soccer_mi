@@ -1,0 +1,33 @@
+hypothesis,donors,events,n,behaviour,recovered share,CI low,CI high
+H0 default (historical),right class,all estimation events,529,identity effect,0.7629434047548146,0.6776552826021338,0.8233289663729054
+H0 default (historical),right class,all estimation events,529,arbitration,0.977929910079625,0.9602372846975921,0.9906688342431789
+H0 default (historical),right class,common events: actual non-self donor at every keyed node in all draws of both variants,99,identity effect,0.7687522756374194,0.5703971600771487,0.9071160276847535
+H0 default (historical),right class,common events: actual non-self donor at every keyed node in all draws of both variants,99,arbitration,0.9790836008307999,0.9156550595970214,1.0452987120282413
+H0 default (historical),wrong class,all estimation events,529,identity effect,0.24183914565342504,0.18030528631216527,0.29551317608447536
+H0 default (historical),wrong class,all estimation events,529,arbitration,0.2301043930879182,0.20568043244367396,0.26183808731176583
+H0 default (historical),wrong class,common events: actual non-self donor at every keyed node in all draws of both variants,99,identity effect,0.015388838020370098,-0.14411268518712136,0.15455007058298956
+H0 default (historical),wrong class,common events: actual non-self donor at every keyed node in all draws of both variants,99,arbitration,-0.03458374043427482,-0.10575083710861405,0.06162996827518606
+H1 shared output-key hypothesis,right class,all estimation events,529,identity effect,0.8698220647780031,0.8347850398195262,0.8978104771990785
+H1 shared output-key hypothesis,right class,all estimation events,529,arbitration,0.9349308271510698,0.9155085940156384,0.9551901242454665
+H1 shared output-key hypothesis,right class,common events: actual non-self donor at every keyed node in all draws of both variants,16,identity effect,0.9428424787370989,0.7204062406916549,1.2687725941945964
+H1 shared output-key hypothesis,right class,common events: actual non-self donor at every keyed node in all draws of both variants,16,arbitration,1.0278056363210577,0.9532140338800297,1.1197765613549395
+H1 shared output-key hypothesis,wrong class,all estimation events,529,identity effect,0.4863323539084223,0.4393054453189615,0.5383764225229125
+H1 shared output-key hypothesis,wrong class,all estimation events,529,arbitration,0.41744119332374374,0.3908918907488007,0.4373883681768817
+H1 shared output-key hypothesis,wrong class,common events: actual non-self donor at every keyed node in all draws of both variants,16,identity effect,0.15851061901196217,-0.15386489407589726,0.4550820699880144
+H1 shared output-key hypothesis,wrong class,common events: actual non-self donor at every keyed node in all draws of both variants,16,arbitration,-0.10171922294182147,-0.28367146578254715,0.07574948828568133
+H2 player-blind output-key hypothesis,right class,all estimation events,529,identity effect,-0.001516108447941695,-0.010045970077663256,0.00643502423550008
+H2 player-blind output-key hypothesis,right class,all estimation events,529,arbitration,0.9144367622736356,0.8902399359399997,0.9390282699558886
+H2 player-blind output-key hypothesis,right class,common events: actual non-self donor at every keyed node in all draws of both variants,151,identity effect,-0.007709309572526971,-0.021867268062297898,0.005319881045254743
+H2 player-blind output-key hypothesis,right class,common events: actual non-self donor at every keyed node in all draws of both variants,151,arbitration,0.8788079125251389,0.8166769434080536,0.9194520673138697
+H2 player-blind output-key hypothesis,wrong class,all estimation events,529,identity effect,0.0006345839164783201,-0.0024936218454880026,0.004344698422424671
+H2 player-blind output-key hypothesis,wrong class,all estimation events,529,arbitration,0.18824913597404552,0.16969112075130593,0.2036273864752592
+H2 player-blind output-key hypothesis,wrong class,common events: actual non-self donor at every keyed node in all draws of both variants,151,identity effect,-0.0013385852372463883,-0.005979708945532535,0.004271062157186518
+H2 player-blind output-key hypothesis,wrong class,common events: actual non-self donor at every keyed node in all draws of both variants,151,arbitration,-0.0339730483284847,-0.07014192484837219,-0.0035691071572187738
+H3 heads matter,right class,all estimation events,529,identity effect,0.010116604854068699,-0.004444047075909234,0.027248654727751932
+H3 heads matter,right class,all estimation events,529,arbitration,0.015448303734673704,-0.010129176649434753,0.03330476782783749
+H3 heads matter,right class,common events: actual non-self donor at every keyed node in all draws of both variants,15,identity effect,-0.02095429192763616,-0.07340373054052537,0.011218564026773313
+H3 heads matter,right class,common events: actual non-self donor at every keyed node in all draws of both variants,15,arbitration,0.03261536401670693,-0.05417967679541935,0.1418493471321389
+H3 heads matter,wrong class,all estimation events,529,identity effect,0.0096798751541266,0.0047997807423450466,0.0172864822080004
+H3 heads matter,wrong class,all estimation events,529,arbitration,-0.010516647001497395,-0.03611828346091722,0.010533679757894892
+H3 heads matter,wrong class,common events: actual non-self donor at every keyed node in all draws of both variants,15,identity effect,0.018451220360680132,-0.008933705260137342,0.053871153976597724
+H3 heads matter,wrong class,common events: actual non-self donor at every keyed node in all draws of both variants,15,arbitration,0.01194800612723454,-0.10499966902470688,0.12969666279050168

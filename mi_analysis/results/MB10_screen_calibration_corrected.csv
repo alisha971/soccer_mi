@@ -1,0 +1,5 @@
+screen,edges,n,"Spearman(EAP mean, exact mean aligned change)"
+original screen,all exactly tested edges,624,0.5104880327090638
+original screen,internal receivers only,592,0.47747429153107
+corrected screen,all exactly tested edges,624,0.5104880327090638
+corrected screen,internal receivers only,592,0.47747429153107

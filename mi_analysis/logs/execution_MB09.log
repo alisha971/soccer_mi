@@ -1,0 +1,93 @@
+MB09 cell 1/17 46c02f90
+MB09 cell 2/17 30b9b402
+Colab: True | RUN_MODE: full
+ROOT: /content/soccer_mi
+Track A (read only): /content/soccer_mi/model_training_evaluation | exists: True
+Track B: /content/soccer_mi/.mi_analysis_rerun
+MB09 cell 3/17 4f238432
+Device: cuda | outputs: /content/soccer_mi/.mi_analysis_rerun
+Settings: {'reference_epochs': 25, 'batch_windows': 256, 'n_bootstrap': 2000, 'n_draws': 5, 'n_permutations': 1000, 'n_random_circuits': 100, 'probe_train_events': 20000, 'max_events': 100000, 'probe_seeds': 3, 'scrub_draws': 5}
+MB09 cell 4/17 1de73c9e
+/content/soccer_mi/model_training_evaluation/src/batching.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  self.tensors[name] = torch.as_tensor(np.asarray(values), device=device)
+verified files: 55 | primary seed 103 | identity variable: player
+half        discovery  estimation
+population                       
+P-player         1215         529
+index-0          4296        4651
+MB09 cell 5/17 3ab30c98
+MB09 cell 6/17 87d8606f
+MB09 cell 7/17 29c49e9e
+rows: 10,691 | components: 26 | largest reconstruction error: 6.68e-06
+MB09 cell 8/17 7756e3a3
+stratum       P-player  coupled (P-player)  genuine (P-player)  index-0
+component                                                              
+player          -0.018              -0.010              -0.026    0.000
+team            -0.031              -0.034              -0.028   -0.011
+role            -0.003              -0.008               0.001   -0.015
+competition      0.007               0.002               0.012   -0.007
+space           -0.016              -0.041               0.006   -0.012
+time             0.031              -0.028               0.084    0.027
+state            0.002               0.010              -0.004    0.000
+history          0.036               0.047               0.026    0.034
+position         0.021               0.028               0.015    0.021
+L0 head 0        0.009               0.014               0.004    0.011
+L0 head 1        0.024               0.033               0.015    0.024
+L0 attn bias     0.001               0.001               0.001    0.001
+L0 mlp           0.564               0.695               0.445    0.573
+L1 head 0        0.024               0.049               0.001    0.027
+L1 head 1       -0.004               0.002              -0.009    0.003
+L1 attn bias     0.002               0.002               0.002    0.002
+L1 mlp           0.919               0.733               1.087    0.979
+L2 head 0       -0.017              -0.011              -0.022   -0.011
+L2 head 1       -0.017               0.015              -0.046   -0.013
+L2 attn bias    -0.042              -0.045              -0.040   -0.041
+L2 mlp           0.697               0.804               0.599    0.749
+L3 head 0        0.029               0.027               0.032    0.026
+L3 head 1        0.006               0.058              -0.041    0.007
+L3 attn bias    -0.069              -0.079              -0.060   -0.067
+L3 mlp           4.306               5.589               3.141    4.490
+constant        -0.497              -0.486              -0.507   -0.491
+delta            5.963               7.370               4.686    6.306
+MB09 cell 9/17 e8d0677d
+MB09 cell 10/17 10c1e01a
+MB09 cell 11/17 06d8e0b5
+pairs with at least 30 rows
+                                n  player   team   role  competition  space   time  state  history  position  L0 head 0  L0 head 1  L0 attn bias  L0 mlp  L1 head 0  L1 head 1  L1 attn bias  L1 mlp  L2 head 0  L2 head 1  L2 attn bias  L2 mlp  L3 head 0  L3 head 1  L3 attn bias  L3 mlp  constant   delta
+pair                                                                                                                                                                                                                                                                                                          
+PASS_SHORT -> DUEL            295  -0.010 -0.009 -0.006        0.012 -0.053 -0.019  0.055    0.101     0.028     -0.004      0.022         0.005   0.893     -0.000      0.006         0.011   0.199     -0.013      0.005        -0.055   0.372     -0.071      0.301        -0.083   5.680    -0.652   6.716
+PASS_SHORT -> CARRY           275  -0.007 -0.059 -0.015       -0.006 -0.050 -0.003 -0.006   -0.106     0.015      0.025      0.033         0.001   0.251      0.101     -0.008        -0.006   0.827     -0.002      0.047        -0.036   1.324     -0.048     -0.057        -0.072   4.379    -0.286   6.237
+PASS_SHORT -> INTERCEPTION    225  -0.022 -0.067 -0.006        0.002 -0.034  0.098 -0.029   -0.060     0.004      0.015      0.028         0.000   0.725     -0.017     -0.022        -0.000   1.345     -0.034     -0.125        -0.047   0.719      0.024     -0.098        -0.071   2.906    -0.586   4.648
+PASS_SHORT -> FOUL_WON        136  -0.016 -0.036 -0.021        0.003 -0.090  0.057 -0.057    0.177     0.064      0.021      0.023        -0.007   0.936      0.012      0.002        -0.001   1.220     -0.049      0.005        -0.062   0.608      0.341     -0.159        -0.120   8.827    -0.764  10.915
+PASS_SHORT -> CLEARANCE       102  -0.023 -0.041  0.003        0.017  0.102  0.085 -0.040    0.080     0.022     -0.025      0.015        -0.003   0.399     -0.012     -0.042        -0.007   1.899     -0.091      0.017        -0.050   0.058      0.088     -0.026        -0.080   0.874    -0.608   2.611
+PASS_SHORT -> FOUL_COMMITTED   97  -0.022 -0.035 -0.018        0.031 -0.094  0.146 -0.075   -0.060    -0.001      0.023      0.004         0.005   0.412      0.021     -0.027         0.007   0.644      0.034     -0.083        -0.048   0.938     -0.200     -0.145        -0.067   5.229    -0.525   6.094
+PASS_LONG -> CARRY             91   0.011 -0.037  0.012       -0.000  0.007 -0.066  0.012   -0.142     0.010      0.037      0.057         0.005   0.066      0.122      0.006         0.001   1.436      0.013      0.016        -0.022   1.295     -0.028     -0.022        -0.046   4.610    -0.210   7.144
+PASS_SHORT -> RECOVERY         63  -0.042 -0.021 -0.012        0.007 -0.062  0.173 -0.001    0.045     0.032     -0.006      0.035         0.002  -0.023     -0.023     -0.006         0.002   0.614      0.000     -0.040        -0.034   0.382      0.140     -0.004        -0.046   1.144    -0.522   1.733
+PASS_LONG -> DUEL              62  -0.023 -0.013  0.010       -0.000  0.010 -0.098  0.064    0.168     0.025      0.005      0.029         0.009   0.790      0.010      0.018         0.018   0.548     -0.010      0.014        -0.044   0.194     -0.058      0.226        -0.063   6.322    -0.576   7.574
+PASS_SHORT -> SHOT             55  -0.013 -0.071 -0.013        0.009  0.156  0.162  0.018    0.195     0.067      0.019      0.029        -0.010   0.736      0.026      0.001        -0.005   0.514      0.035      0.036        -0.063  -0.103      0.089     -0.112        -0.110   1.578    -0.649   2.520
+PASS_LONG -> CLEARANCE         54   0.007 -0.005  0.030        0.012  0.058  0.044 -0.008    0.128     0.010     -0.016      0.011         0.001   0.203     -0.004      0.016         0.000   1.724     -0.067      0.021        -0.035   0.383      0.116     -0.053        -0.053   1.434    -0.532   3.427
+PASS_LONG -> GK_ACTION         49  -0.037 -0.020 -0.081        0.062  0.098 -0.082  0.033    0.201     0.028      0.011      0.067         0.012   1.030      0.054     -0.012         0.015   1.702      0.002     -0.030        -0.047   0.325      0.078     -0.052        -0.082   4.318    -0.675   6.919
+PASS_LONG -> INTERCEPTION      42  -0.016 -0.027  0.027       -0.001 -0.007 -0.002 -0.003    0.032     0.003      0.002      0.026         0.004   0.561      0.002      0.014         0.007   1.713     -0.050     -0.095        -0.034   0.687      0.104     -0.027        -0.047   3.395    -0.510   5.758
+MB09 cell 12/17 6dd34280
+MB09 cell 13/17 15b75ab2
+MB09 cell 14/17 b1278954
+                       0      1
+contrast              I1     I2
+n                    529    529
+mean full effect  -0.167 -0.033
+full CI low       -0.265 -0.199
+full CI high      -0.056   0.16
+direct share        0.03  0.047
+direct CI low       0.02   0.03
+direct CI high     0.045  0.071
+indirect share     0.969  0.953
+indirect CI low    0.954  0.929
+indirect CI high   0.978   0.97
+remainder share    0.001   -0.0
+remainder CI low    -0.0 -0.003
+remainder CI high  0.002  0.002
+MB09 cell 15/17 2c1bd1d7
+MB09 cell 16/17 01c29e7f
+MB09 cell 17/17 0142d783
+saved
+COMPLETED MB09: 13.78 seconds; promoted to mi_analysis/

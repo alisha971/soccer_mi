@@ -2,7 +2,7 @@
 
 Last updated: 2026-10-06. Project root: `/home/aayush/code/soccer_mi`.
 
-**Current state: stopped at the user's request. Seven of the 16 notebooks in the execution sequence completed and were promoted to `mi_analysis/`. MB07 stopped at cell 23/31; MB08–MB13 have not executed in this benchmark rerun.** This document records the work and the information needed to continue. It does not authorize restarting computation.
+**Current state: completed. All 16 notebooks in the execution sequence completed and were promoted to `mi_analysis/`; `finalize_mi_rerun.py` passed and wrote `mi_analysis/RERUN_REPORT.md`.** MB01–MB06 ran locally on CPU; MB07–MB13 ran on a Colab Tesla T4 (see §6 and the environment variant note in §3). This document records the work and the information needed to continue. The earlier stop-state text below is retained as history.
 
 ## 1. Requested work and how the scope evolved
 
@@ -12,7 +12,7 @@ The user then asked which issues were critical, whether they affected results, a
 
 The historical requested SEL-4L weight-decay-0.01 checkpoints were unavailable in the checkout. The available benchmark uses weight decay 0.1. The user explicitly selected: **“Use the available 0.1 checkpoints as a clearly labelled new benchmark analysis.”** The user also explicitly selected: **“Keep adjacency edits disabled for this rerun.”** Missing category-ordering and zone-topology source definitions must not be replaced by assumed semantics.
 
-After execution had resumed, the user requested all background work be stopped and a short progress note written. The runner and kernel were terminated, and [mi_analysis/PAUSE_HANDOFF.md](mi_analysis/PAUSE_HANDOFF.md) was created. This longer root document supplements that note. No new execution was started to write it.
+After execution had resumed, the user requested all background work be stopped and a short progress note written. The runner and kernel were terminated, and [mi_analysis/PAUSE_HANDOFF.md](mi_analysis/PAUSE_HANDOFF.md) was created. This longer root document supplements that note. (Historical: the run later resumed on Colab and completed; see §5–§6.)
 
 ## 2. Directory and evidence map
 
@@ -43,7 +43,9 @@ Paths in this document are relative to the project root unless explicitly absolu
 - Player remains the declared identity variable irrespective of the C2 diagnostic. There is no outcome-dependent fallback to another identity variable.
 - Matched non-conflict controls now come from the same match as their conflict partner, without event reuse; context donors are restricted to the recipient's discovery/estimation half.
 - Full mode uses 2,000 bootstrap draws, 5 intervention resampling draws and 5 scrubbing draws, as recorded in the plan. Smoke mode changes scientific sample sizes and is not an equivalent completed run.
-- Python environment used: `/home/aayush/code/ML_DL/.venv/bin/python` (Python 3.12). CPU execution, four numerical-library threads; CUDA was unavailable for these runs. Packages and versions are recorded in `mi_analysis/config/execution_environment.json`, with dependencies in `requirements-rerun.txt`.
+- Python environment used locally: `/home/aayush/code/ML_DL/.venv/bin/python` (Python 3.12). CPU execution, four numerical-library threads; CUDA was unavailable for these runs. Packages and versions are recorded in `mi_analysis/config/execution_environment.json`, with dependencies in `requirements-rerun.txt`.
+- Colab execution environment for MB07–MB13 (environment variant, not the recorded baseline): Tesla T4 GPU, Python 3.12.15 (uv build), **torch 2.11.0+cu130 instead of the pinned 2.10.0**; other package versions were not captured (`pip freeze` output missing from the env note). All full-model measurements for MB07–MB13 were generated inside this run, so results are self-consistent, but they are not bit-identical to a pinned-env run. `mi_analysis/config/execution_environment.json` still describes the local CPU baseline and was not rewritten by the Colab run; the Colab env note is preserved out-of-band (delivery `ENV_NOTES_COLAB.txt`).
+- Colab startup required isolating the venv kernel from VM Jupyter config (`JUPYTER_CONFIG_DIR`/`JUPYTER_CONFIG_PATH`/`IPYTHONDIR` overrides plus a `google.colab` mock in the venv) after `kernel_class google.colab._kernel.Kernel` import failures. MB07's status history records 15 previous attempts from those retries; the resume-checkpoint path was exercised and all 8 head checkpoints exist. These affect environment setup only, not analysis inputs.
 - Important package versions include Torch 2.10.0, NumPy 2.4.6, pandas 3.0.0, SciPy 1.17.0, scikit-learn 1.8.0, PyArrow 23.0.1 and nbclient 0.10.4.
 
 The current Track A source is the execution baseline. A historical `data.py` hash mismatch was disclosed; current source hashes and source snapshots are recorded. This run cannot establish immutable historical reproduction. Changing the checkpoint family also means a difference from historical results cannot be attributed solely to a code fix.
@@ -94,17 +96,17 @@ The required execution sequence contains **16 notebooks** because it includes MB
 | MB04 | Completed and promoted | 149.85 | Input counterfactuals, denominators and coherence diagnostics. |
 | MB05 | Completed and promoted | 336.89 | Representation/probe analysis; convergence and selectivity limitations disclosed. |
 | MB06 | Completed and promoted | 577.09 | Full activation-patching sweep. |
-| MB07 | Interrupted; machine status `failed` | — | Last reached cell 23/31, all-event head ablation. Not promoted. |
-| MB08 | Not executed in this benchmark | — | Staged MLP analysis. |
-| MB09 | Not executed in this benchmark | — | Staged logit decomposition. |
-| MB10 | Not executed in this benchmark | — | Staged path patching and corrected edge screening. |
-| MB11 | Not executed in this benchmark | — | Staged component/edge graph faithfulness and replication. |
-| MB11b | Not executed in this benchmark | — | Staged causal scrubbing. |
-| MB11c | Not executed in this benchmark | — | Staged identity subspace/steering. |
-| MB12 | Not executed in this benchmark | — | Staged retrospective diagnostics and provenance. |
-| MB13 | Not executed in this benchmark | — | Staged context survey with category adjacency disabled. |
+| MB07 | Completed and promoted (Colab T4) | 88.14 | Full attention-head ablation; 8/8 per-head checkpoints. An earlier 405.36-second completion is also in the log history; the final promoted state is the 88.14-second run. |
+| MB08 | Completed and promoted (Colab T4) | 405.70 | Staged MLP analysis. |
+| MB09 | Completed and promoted (Colab T4) | 13.78 | Staged logit decomposition. |
+| MB10 | Completed and promoted (Colab T4) | 44.43 | Staged path patching and corrected edge screening (624 tested edges: 370 context, 254 identity-removal). |
+| MB11 | Completed and promoted (Colab T4) | 89.13 | Staged component/edge graph faithfulness and replication. |
+| MB11b | Completed and promoted (Colab T4) | 34.10 | Staged causal scrubbing. |
+| MB11c | Completed and promoted (Colab T4) | 38.14 | Staged identity subspace/steering. |
+| MB12 | Completed and promoted (Colab T4) | 27.69 | Retrospective diagnostics and provenance (`MB12_retrospective_diagnostics.csv`, `MB12_validation_audit.json`); no fresh confirmation claim. |
+| MB13 | Completed and promoted (Colab T4) | 31.11 | Context survey with category adjacency disabled. |
 
-The live status at shutdown is [mi_analysis/logs/rerun_status.json](mi_analysis/logs/rerun_status.json). MB07's `failed` state records interruption, not a demonstrated numerical or scientific failure; its last attempt has an empty error string and cleanup traceback in the log.
+The live status at shutdown is [mi_analysis/logs/rerun_status.json](mi_analysis/logs/rerun_status.json). MB07's `failed` state records interruption, not a demonstrated numerical or scientific failure; its last attempt has an empty error string and cleanup traceback in the log. (Historical: MB07 later completed twice on Colab — 405.36 s, then 88.14 s with head checkpoints present; the promoted state is the latter. Final `rerun_status.json` records all 16 notebooks `completed`.)
 
 ### Verified numerical evidence from completed notebooks
 
@@ -162,13 +164,15 @@ The resumed code path has not yet been exercised with a completed saved head. Th
 - The runner saves the staging notebook after each executed cell, updates staging/published status, and copies the notebook into `mi_analysis/notebooks/` only on full success. Shared directories are copied during each successful promotion.
 - Final audit/report code is an implementation awaiting execution. Its existence does not prove that all inputs, notebook outputs or final locks have been verified in the completed package.
 
-The finalizer requires all 16 notebooks to be completed; checks notebook error outputs and completion hashes, the final dependency snapshot, external inputs, Track A snapshot, MB12 code lock, regression results and control-match consistency; then writes `mi_analysis/RERUN_REPORT.md`. That report has not been generated for this unfinished run.
+The finalizer requires all 16 notebooks to be completed; checks notebook error outputs and completion hashes, the final dependency snapshot, external inputs, Track A snapshot, MB12 code lock, regression results and control-match consistency; then writes `mi_analysis/RERUN_REPORT.md`. That report has now been generated for the completed run (`mi_analysis/RERUN_REPORT.md`).
 
-## 8. Remaining work and resume instructions
+## 8. Remaining work and resume instructions (completed 2026-10-06)
 
-**The stop request remains in effect. Resume only after the user asks to continue.** Do not rerun preparation/fix initialization over the staged execution tree without checking its overwrite guards and existing results.
+**The queue completed on Colab: MB07, MB08, MB09, MB10, MB11, MB11b, MB11c, MB12, MB13 all show `completed` in `mi_analysis/logs/rerun_status.json`, and `scripts/finalize_mi_rerun.py` passed, writing `mi_analysis/RERUN_REPORT.md`.** The instructions below are retained as the historical resume procedure.
 
-On resumption, inspect current status/logs and staged sources first. Confirm the expected Python environment, external model/data paths and hashes are still available. Then the existing remaining queue is:
+**The historical stop request is lifted.** Do not rerun preparation/fix initialization over the staged execution tree without checking its overwrite guards and existing results.
+
+On resumption, inspect current status/logs and staged sources first. Confirm the expected Python environment, external model/data paths and hashes are still available. The historical remaining queue was (now completed):
 
 ```sh
 /home/aayush/code/ML_DL/.venv/bin/python scripts/run_mi_notebooks.py MB07 MB08 MB09 MB10 MB11 MB11b MB11c MB12 MB13

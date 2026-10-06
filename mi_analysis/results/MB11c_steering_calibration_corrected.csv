@@ -1,0 +1,4 @@
+model (fitted on discovery),chosen a priori (discovery LOO),discovery leave-one-beta-out RMSE,estimation RMSE,estimation largest error,share of betas inside the estimation CI,PASS (pre-specified rule),meaning
+line through 0 (linear regime),False,2.589881573501671,2.5207993183915307,8.393346582364556,0.6923076923076923,False,same-grid population transfer
+quadratic through 0,False,2.0937437695914394,0.6932413525859293,1.7845280691136067,0.38461538461538464,False,same-grid population transfer
+piecewise-linear through measured points,True,0.9253408999847812,0.05800060079252759,0.10440154680696856,1.0,True,same-grid population transfer
