@@ -1,0 +1,864 @@
+{
+  "plan": "MB15_ext",
+  "N1": [
+    {
+      "half": "estimation",
+      "n": 529,
+      "mean removal effect": -0.16719821095466614,
+      "mean |removal effect|": 0.46866175532341003,
+      "mean player-specific part": 0.06501960754394531,
+      "mean role part": -0.23221781849861145,
+      "player-specific share (pooled, sign-aligned)": 0.46281911220617866,
+      "CI low": 0.07624506638471823,
+      "CI high": 0.8074052310411668,
+      "reading (plan rule)": "undecided"
+    },
+    {
+      "half": "discovery",
+      "n": 1215,
+      "mean removal effect": -0.11702516674995422,
+      "mean |removal effect|": 0.4900738298892975,
+      "mean player-specific part": -0.1441793292760849,
+      "mean role part": 0.027154160663485527,
+      "player-specific share (pooled, sign-aligned)": 0.6235348388473241,
+      "CI low": 0.5410232388190874,
+      "CI high": 0.7079209005865718,
+      "reading (plan rule)": "mostly player-specific"
+    }
+  ],
+  "N4": [
+    {
+      "half": "estimation",
+      "edit": "removed",
+      "n": 529,
+      "mean |change in Delta|": 0.46866176642181745,
+      "CI low": 0.3799000763904372,
+      "CI high": 0.5463604346830582
+    },
+    {
+      "half": "estimation",
+      "edit": "partner",
+      "n": 529,
+      "mean |change in Delta|": 0.634932669439478,
+      "CI low": 0.5495522023897585,
+      "CI high": 0.7469178297255407
+    },
+    {
+      "half": "estimation",
+      "edit": "same role and team",
+      "n": 145,
+      "mean |change in Delta|": 0.4486900568008423,
+      "CI low": 0.37802731150807195,
+      "CI high": 0.5072620441226173
+    },
+    {
+      "half": "estimation",
+      "edit": "role centroid",
+      "n": 529,
+      "mean |change in Delta|": 0.5852790345879719,
+      "CI low": 0.4213199604800562,
+      "CI high": 0.744367452442102
+    },
+    {
+      "half": "estimation",
+      "edit": "distribution-matched deviation",
+      "n": 529,
+      "mean |change in Delta|": 0.7991892529760676,
+      "CI low": 0.6281536181897364,
+      "CI high": 0.9608193598546413
+    },
+    {
+      "half": "estimation",
+      "edit": "shuffled coordinates",
+      "n": 529,
+      "mean |change in Delta|": 0.9070709651100163,
+      "CI low": 0.7071441481613361,
+      "CI high": 1.085214990330738
+    },
+    {
+      "half": "estimation",
+      "edit": "norm-matched random vector",
+      "n": 529,
+      "mean |change in Delta|": 0.7231783502099645,
+      "CI low": 0.6535122841599625,
+      "CI high": 0.7797235118913675
+    },
+    {
+      "half": "estimation",
+      "edit": "C2: |partner| - |norm-matched random vector| (paired)",
+      "n": 529,
+      "mean |change in Delta|": -0.08824568070006505,
+      "CI low": -0.17336133808900486,
+      "CI high": 0.028766596096943365
+    },
+    {
+      "half": "estimation",
+      "edit": "C2: |partner| - |distribution-matched deviation| (paired)",
+      "n": 529,
+      "mean |change in Delta|": -0.16425658333588863,
+      "CI low": -0.32508298364517835,
+      "CI high": -0.017987422981595606
+    },
+    {
+      "half": "estimation",
+      "edit": "C2: |partner| - |shuffled coordinates| (paired)",
+      "n": 529,
+      "mean |change in Delta|": -0.27213829500857734,
+      "CI low": -0.42302051194960344,
+      "CI high": -0.10963735826192321
+    },
+    {
+      "half": "estimation",
+      "edit": "C2: |partner| - |role centroid| (paired)",
+      "n": 529,
+      "mean |change in Delta|": 0.049653634851506166,
+      "CI low": -0.10842524574723081,
+      "CI high": 0.17983041185472842
+    },
+    {
+      "half": "discovery",
+      "edit": "removed",
+      "n": 1215,
+      "mean |change in Delta|": 0.4900738129154645,
+      "CI low": 0.4397030699800155,
+      "CI high": 0.5471944394274373
+    },
+    {
+      "half": "discovery",
+      "edit": "partner",
+      "n": 1188,
+      "mean |change in Delta|": 0.6280819030999134,
+      "CI low": 0.5611666435213325,
+      "CI high": 0.7036977668259717
+    },
+    {
+      "half": "discovery",
+      "edit": "same role and team",
+      "n": 573,
+      "mean |change in Delta|": 0.4912157128410606,
+      "CI low": 0.44074937621092897,
+      "CI high": 0.5680552463745683
+    },
+    {
+      "half": "discovery",
+      "edit": "role centroid",
+      "n": 1215,
+      "mean |change in Delta|": 0.46429170486613064,
+      "CI low": 0.414806350020933,
+      "CI high": 0.507593008423719
+    },
+    {
+      "half": "discovery",
+      "edit": "distribution-matched deviation",
+      "n": 1188,
+      "mean |change in Delta|": 0.6777371684315078,
+      "CI low": 0.6128068500609023,
+      "CI high": 0.7388978045783071
+    },
+    {
+      "half": "discovery",
+      "edit": "shuffled coordinates",
+      "n": 1215,
+      "mean |change in Delta|": 0.7930854756707026,
+      "CI low": 0.7161558140858171,
+      "CI high": 0.884861806567353
+    },
+    {
+      "half": "discovery",
+      "edit": "norm-matched random vector",
+      "n": 1215,
+      "mean |change in Delta|": 0.7933700430479069,
+      "CI low": 0.7255487654803948,
+      "CI high": 0.8865827273668754
+    },
+    {
+      "half": "discovery",
+      "edit": "C2: |partner| - |norm-matched random vector| (paired)",
+      "n": 1188,
+      "mean |change in Delta|": -0.16873342732613536,
+      "CI low": -0.22470671949200233,
+      "CI high": -0.11478324369575904
+    },
+    {
+      "half": "discovery",
+      "edit": "C2: |partner| - |distribution-matched deviation| (paired)",
+      "n": 1188,
+      "mean |change in Delta|": -0.049655265610677624,
+      "CI low": -0.09668012723549453,
+      "CI high": 0.002121405231209551
+    },
+    {
+      "half": "discovery",
+      "edit": "C2: |partner| - |shuffled coordinates| (paired)",
+      "n": 1188,
+      "mean |change in Delta|": -0.16263641005613988,
+      "CI low": -0.23586650315919824,
+      "CI high": -0.09007127959718762
+    },
+    {
+      "half": "discovery",
+      "edit": "C2: |partner| - |role centroid| (paired)",
+      "n": 1188,
+      "mean |change in Delta|": 0.15323811403227977,
+      "CI low": 0.10587627742385218,
+      "CI high": 0.2148533875130249
+    }
+  ],
+  "N2": [
+    {
+      "measure": "Delta",
+      "events": 1744,
+      "mean pairwise correlation (per event)": 0.9175700812950291,
+      "CI low": 0.9031664994499448,
+      "CI high": 0.9299157096028172,
+      "lowest pair": 0.906057190867964,
+      "shared variance across seeds": 0.9161858511861725,
+      "mean |value| (seed average)": 6.191549777984619,
+      "mean per-event SD across seeds": 0.769464910030365,
+      "players with >= 5 events": 104,
+      "mean pairwise correlation (player means)": 0.9045315177152198,
+      "reading (plan rule)": ""
+    },
+    {
+      "measure": "removal effect",
+      "events": 1744,
+      "mean pairwise correlation (per event)": 0.5655229442964885,
+      "CI low": 0.5171617888236248,
+      "CI high": 0.6063517897552129,
+      "lowest pair": 0.5079276039446049,
+      "shared variance across seeds": 0.5619940516839786,
+      "mean |value| (seed average)": 0.40734121203422546,
+      "mean per-event SD across seeds": 0.378778874874115,
+      "players with >= 5 events": 104,
+      "mean pairwise correlation (player means)": 0.6242198795573565,
+      "reading (plan rule)": "reproducible"
+    },
+    {
+      "measure": "partner change",
+      "events": 1717,
+      "mean pairwise correlation (per event)": 0.5298038184942183,
+      "CI low": 0.4758459384970769,
+      "CI high": 0.5782763309119031,
+      "lowest pair": 0.49093528048538854,
+      "shared variance across seeds": 0.5252817134104292,
+      "mean |value| (seed average)": 0.5346779823303223,
+      "mean per-event SD across seeds": 0.528775155544281,
+      "players with >= 5 events": 104,
+      "mean pairwise correlation (player means)": 0.5924176249746185,
+      "reading (plan rule)": "partly reproducible"
+    }
+  ],
+  "N3": [
+    {
+      "half": "estimation",
+      "metric": "Delta (a_id)",
+      "n": 529,
+      "C1 mean": 5.8937205541562045,
+      "C1 CI low": 5.6122578444926585,
+      "C1 CI high": 6.234135088078001,
+      "share > 0": 0.9810964083175804,
+      "removal effect": -0.16719821270111604,
+      "removal CI low": -0.2646787412309816,
+      "removal CI high": -0.05582088935041974,
+      "mean |removal effect|": 0.46866175532341003,
+      "C2 vs random vector": -0.08824568070006505,
+      "C2 CI low": -0.17336133808900486,
+      "C2 CI high": 0.028766596096943365,
+      "C2 vs distribution-matched": -0.16425658333588863,
+      "C2d CI low": -0.32508298364517835,
+      "C2d CI high": -0.017987422981595606
+    },
+    {
+      "half": "estimation",
+      "metric": "Delta' (a_lift)",
+      "n": 529,
+      "C1 mean": 7.374062177589575,
+      "C1 CI low": 6.919388109372415,
+      "C1 CI high": 7.66061868930967,
+      "share > 0": 0.9810964083175804,
+      "removal effect": -0.13504922975889902,
+      "removal CI low": -0.19697376216614718,
+      "removal CI high": -0.08405784751834544,
+      "mean |removal effect|": 0.327925443649292,
+      "C2 vs random vector": -0.06946563534790717,
+      "C2 CI low": -0.11409887585059551,
+      "C2 CI high": -0.016332529383931635,
+      "C2 vs distribution-matched": -0.10142458926724351,
+      "C2d CI low": -0.14384269408680492,
+      "C2d CI high": -0.05279664791670594
+    },
+    {
+      "half": "discovery",
+      "metric": "Delta (a_id)",
+      "n": 1215,
+      "C1 mean": 5.993639204715505,
+      "C1 CI low": 5.670191849189349,
+      "C1 CI high": 6.305923186734272,
+      "share > 0": 0.9818930041152263,
+      "removal effect": -0.11702517405949503,
+      "removal CI low": -0.20654304815764982,
+      "removal CI high": -0.013931319844062831,
+      "mean |removal effect|": 0.4900738298892975,
+      "C2 vs random vector": -0.16873342732613536,
+      "C2 CI low": -0.22470671949200233,
+      "C2 CI high": -0.11478324369575904,
+      "C2 vs distribution-matched": -0.049655265610677624,
+      "C2d CI low": -0.09668012723549453,
+      "C2d CI high": 0.002121405231209551
+    },
+    {
+      "half": "discovery",
+      "metric": "Delta' (a_lift)",
+      "n": 1215,
+      "C1 mean": 7.149210856186509,
+      "C1 CI low": 6.724441674203909,
+      "C1 CI high": 7.555308568574763,
+      "share > 0": 0.9860082304526749,
+      "removal effect": -0.10763988911860274,
+      "removal CI low": -0.16841512970039751,
+      "removal CI high": -0.035600752327694135,
+      "mean |removal effect|": 0.37058866024017334,
+      "C2 vs random vector": -0.07588278844024396,
+      "C2 CI low": -0.132448802915454,
+      "C2 CI high": -0.027538819017760598,
+      "C2 vs distribution-matched": 0.0055936395413295585,
+      "C2d CI low": -0.02938349940185831,
+      "C2d CI high": 0.0526418421870045
+    }
+  ],
+  "N3_C4": [
+    {
+      "half": "estimation",
+      "metric": "Delta (a_id)",
+      "player B": "partner",
+      "units": 529,
+      "C4 |I| - |I_floor|": 0.7869386840013115,
+      "CI low": 0.7171015229168997,
+      "CI high": 0.8792952398983049
+    },
+    {
+      "half": "estimation",
+      "metric": "Delta (a_id)",
+      "player B": "random vector",
+      "units": 529,
+      "C4 |I| - |I_floor|": 0.9311094798837808,
+      "CI low": 0.8314223672305062,
+      "CI high": 0.9939209178731536
+    },
+    {
+      "half": "estimation",
+      "metric": "Delta (a_id)",
+      "player B": "partner minus random vector (paired)",
+      "units": 529,
+      "C4 |I| - |I_floor|": -0.14417079491065446,
+      "CI low": -0.24274815948286876,
+      "CI high": -0.015237190928165764
+    },
+    {
+      "half": "estimation",
+      "metric": "Delta' (a_lift)",
+      "player B": "partner",
+      "units": 529,
+      "C4 |I| - |I_floor|": 0.5855559077120909,
+      "CI low": 0.5346995652458298,
+      "CI high": 0.6360309687036886
+    },
+    {
+      "half": "estimation",
+      "metric": "Delta' (a_lift)",
+      "player B": "random vector",
+      "units": 529,
+      "C4 |I| - |I_floor|": 0.6403275609072756,
+      "CI low": 0.5752123940188522,
+      "CI high": 0.6963127834811097
+    },
+    {
+      "half": "estimation",
+      "metric": "Delta' (a_lift)",
+      "player B": "partner minus random vector (paired)",
+      "units": 529,
+      "C4 |I| - |I_floor|": -0.05477165364588141,
+      "CI low": -0.13325468880592312,
+      "CI high": 0.037930134735379
+    },
+    {
+      "half": "discovery",
+      "metric": "Delta (a_id)",
+      "player B": "partner",
+      "units": 1187,
+      "C4 |I| - |I_floor|": 0.7268024365768376,
+      "CI low": 0.647232690168616,
+      "CI high": 0.83611465503427
+    },
+    {
+      "half": "discovery",
+      "metric": "Delta (a_id)",
+      "player B": "random vector",
+      "units": 1187,
+      "C4 |I| - |I_floor|": 0.8220991156085158,
+      "CI low": 0.7651962158596634,
+      "CI high": 0.9017268224514235
+    },
+    {
+      "half": "discovery",
+      "metric": "Delta (a_id)",
+      "player B": "partner minus random vector (paired)",
+      "units": 1187,
+      "C4 |I| - |I_floor|": -0.09529667878060553,
+      "CI low": -0.16554764225057192,
+      "CI high": -0.011540874722784342
+    },
+    {
+      "half": "discovery",
+      "metric": "Delta' (a_lift)",
+      "player B": "partner",
+      "units": 1187,
+      "C4 |I| - |I_floor|": 0.6035439030415588,
+      "CI low": 0.5374680421217222,
+      "CI high": 0.6927915681192094
+    },
+    {
+      "half": "discovery",
+      "metric": "Delta' (a_lift)",
+      "player B": "random vector",
+      "units": 1187,
+      "C4 |I| - |I_floor|": 0.6452414095778373,
+      "CI low": 0.5957459121449259,
+      "CI high": 0.7014541264731142
+    },
+    {
+      "half": "discovery",
+      "metric": "Delta' (a_lift)",
+      "player B": "partner minus random vector (paired)",
+      "units": 1187,
+      "C4 |I| - |I_floor|": -0.041697506649261175,
+      "CI low": -0.10208011395269546,
+      "CI high": 0.026904303606338522
+    }
+  ],
+  "N3_profile": [
+    {
+      "site": "resid_pre_0",
+      "recovery Delta": 1.0,
+      "recovery Delta'": 1.0,
+      "difference": 0.0
+    },
+    {
+      "site": "attn_out_0",
+      "recovery Delta": 0.051903855897173695,
+      "recovery Delta'": 0.0702027267050395,
+      "difference": 0.01829887080786581
+    },
+    {
+      "site": "mlp_out_0",
+      "recovery Delta": 0.5983501153327965,
+      "recovery Delta'": 0.5481806079052719,
+      "difference": -0.05016950742752457
+    },
+    {
+      "site": "resid_post_0",
+      "recovery Delta": 1.0,
+      "recovery Delta'": 1.0,
+      "difference": 0.0
+    },
+    {
+      "site": "attn_out_1",
+      "recovery Delta": 0.0027740724505426317,
+      "recovery Delta'": 0.0034533796157058404,
+      "difference": 0.0006793071651632087
+    },
+    {
+      "site": "mlp_out_1",
+      "recovery Delta": 0.4785334198468248,
+      "recovery Delta'": 0.44196267982494575,
+      "difference": -0.036570740021879045
+    },
+    {
+      "site": "resid_post_1",
+      "recovery Delta": 1.0,
+      "recovery Delta'": 1.0,
+      "difference": 0.0
+    },
+    {
+      "site": "attn_out_2",
+      "recovery Delta": -0.013819796037295284,
+      "recovery Delta'": -0.0013572443966698075,
+      "difference": 0.012462551640625477
+    },
+    {
+      "site": "mlp_out_2",
+      "recovery Delta": 0.4134198705130508,
+      "recovery Delta'": 0.4159739757191782,
+      "difference": 0.0025541052061274216
+    },
+    {
+      "site": "resid_post_2",
+      "recovery Delta": 1.0,
+      "recovery Delta'": 1.0,
+      "difference": 0.0
+    },
+    {
+      "site": "attn_out_3",
+      "recovery Delta": 0.00940151393530822,
+      "recovery Delta'": 0.011086684918055922,
+      "difference": 0.0016851709827477024
+    },
+    {
+      "site": "mlp_out_3",
+      "recovery Delta": 0.5717091366073689,
+      "recovery Delta'": 0.5392681041931793,
+      "difference": -0.03244103241418961
+    },
+    {
+      "site": "resid_post_3",
+      "recovery Delta": 1.0,
+      "recovery Delta'": 1.0,
+      "difference": 0.0
+    }
+  ],
+  "N6": [
+    {
+      "band": "< 1000 training events",
+      "events": 497,
+      "players": 40,
+      "removal effect": -0.17627140261997398,
+      "removal effect CI low": -0.26595211315831463,
+      "removal effect CI high": -0.06440344455771439,
+      "|removal effect|": 0.47277449961879126,
+      "|removal effect| CI low": 0.37817740667575367,
+      "|removal effect| CI high": 0.5486793363222822,
+      "C2 vs random vector": -0.09279857596880953,
+      "C2 vs random vector CI low": -0.1851161400910956,
+      "C2 vs random vector CI high": 0.029265917611233108,
+      "C2 vs distribution-matched": -0.17679211151012234,
+      "C2 vs distribution-matched CI low": -0.33991413619756344,
+      "C2 vs distribution-matched CI high": -0.02886448253215508,
+      "player-specific part": 0.06353969431259263,
+      "player-specific part CI low": -0.1217256523400096,
+      "player-specific part CI high": 0.24151573531804876,
+      "C4 (partner)": 0.8027295724187099,
+      "C4 CI low": 0.7247465308193265,
+      "C4 CI high": 0.8927757325085368
+    },
+    {
+      "band": ">= 1000 training events",
+      "events": 32,
+      "players": 2,
+      "removal effect": -0.026280231773853302,
+      "removal effect CI low": -0.3469777743021647,
+      "removal effect CI high": 0.2566881881040685,
+      "|removal effect|": 0.4047858789563179,
+      "|removal effect| CI low": 0.36963927044587974,
+      "|removal effect| CI high": 0.44461870193481445,
+      "C2 vs random vector": -0.017533526057377458,
+      "C2 vs random vector CI low": -0.04169302652863895,
+      "C2 vs random vector CI high": 0.009847241143385569,
+      "C2 vs distribution-matched": 0.0304358386201784,
+      "C2 vs distribution-matched CI low": -0.1499900064047645,
+      "C2 vs distribution-matched CI high": 0.23491846298178037,
+      "player-specific part": 0.08800447732210159,
+      "player-specific part CI low": -0.15610305468241373,
+      "player-specific part CI high": 0.3033934761496151,
+      "C4 (partner)": 0.5416864482685924,
+      "C4 CI low": 0.32461973674157085,
+      "C4 CI high": 0.7876953879992167
+    }
+  ],
+  "N6_profiles": [
+    {
+      "subset": "< 1000 training events",
+      "site": "resid_pre_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "subset": "< 1000 training events",
+      "site": "attn_out_0",
+      "recovery": 0.05716715853385683,
+      "CI low": 0.016411538105347904,
+      "CI high": 0.08712277422622695
+    },
+    {
+      "subset": "< 1000 training events",
+      "site": "mlp_out_0",
+      "recovery": 0.6076009377765886,
+      "CI low": 0.5449575274699363,
+      "CI high": 0.6705036382793648
+    },
+    {
+      "subset": "< 1000 training events",
+      "site": "resid_post_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "subset": "< 1000 training events",
+      "site": "attn_out_1",
+      "recovery": 0.004702555266628152,
+      "CI low": -0.02097137116858341,
+      "CI high": 0.03244972269232789
+    },
+    {
+      "subset": "< 1000 training events",
+      "site": "mlp_out_1",
+      "recovery": 0.4847898851711284,
+      "CI low": 0.43107451219496234,
+      "CI high": 0.5142776926170731
+    },
+    {
+      "subset": "< 1000 training events",
+      "site": "resid_post_1",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "subset": "< 1000 training events",
+      "site": "attn_out_2",
+      "recovery": -0.012915341373433005,
+      "CI low": -0.03024865585598603,
+      "CI high": 0.0027401681898366805
+    },
+    {
+      "subset": "< 1000 training events",
+      "site": "mlp_out_2",
+      "recovery": 0.41897849410349536,
+      "CI low": 0.3784064650913233,
+      "CI high": 0.4660638468612777
+    },
+    {
+      "subset": "< 1000 training events",
+      "site": "resid_post_2",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "subset": "< 1000 training events",
+      "site": "attn_out_3",
+      "recovery": 0.00989987060098963,
+      "CI low": -0.01046100557705563,
+      "CI high": 0.028494612994488817
+    },
+    {
+      "subset": "< 1000 training events",
+      "site": "mlp_out_3",
+      "recovery": 0.572163679140894,
+      "CI low": 0.5480193693781621,
+      "CI high": 0.6011326189468206
+    },
+    {
+      "subset": "< 1000 training events",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "resid_pre_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "attn_out_0",
+      "recovery": -0.04357197417142576,
+      "CI low": -0.0802801940215699,
+      "CI high": -0.008985095980086505
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "mlp_out_0",
+      "recovery": 0.4305410394338495,
+      "CI low": 0.319551610321242,
+      "CI high": 0.5483378623320719
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "resid_post_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "attn_out_1",
+      "recovery": -0.03220843004808387,
+      "CI low": -0.06570429379888817,
+      "CI high": -0.000648268204435779
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "mlp_out_1",
+      "recovery": 0.36504170915360606,
+      "CI low": 0.3570292628710767,
+      "CI high": 0.37354558851645087
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "resid_post_1",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "attn_out_2",
+      "recovery": -0.030226521196858994,
+      "CI low": -0.04628908100278161,
+      "CI high": -0.01317878495856669
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "mlp_out_2",
+      "recovery": 0.3125869452623302,
+      "CI low": 0.23553838868518376,
+      "CI high": 0.3851829210963862
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "resid_post_2",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "attn_out_3",
+      "recovery": 0.0003613694460798888,
+      "CI low": -0.05036079446637631,
+      "CI high": 0.05419451200011716
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "mlp_out_3",
+      "recovery": 0.5634637764817054,
+      "CI low": 0.5108287910234955,
+      "CI high": 0.6130570239363042
+    },
+    {
+      "subset": ">= 1000 training events",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    }
+  ],
+  "N11": [
+    {
+      "rows": "estimation",
+      "(player, previous action) training count": "0",
+      "events": 10,
+      "mean Delta": 6.975104331970215,
+      "mean removal effect": -0.009524226188659668,
+      "mean |removal effect|": 0.08972795009613037,
+      "CI low": 0.053371758063634235,
+      "CI high": 0.2012199878692627,
+      "mean |partner change|": 0.1501077115535736
+    },
+    {
+      "rows": "estimation",
+      "(player, previous action) training count": "1-9",
+      "events": 156,
+      "mean Delta": 6.137124061584473,
+      "mean removal effect": -0.18188835680484772,
+      "mean |removal effect|": 0.4773548268354856,
+      "CI low": 0.3720080090271804,
+      "CI high": 0.5739196639583586,
+      "mean |partner change|": 0.6537610292434692
+    },
+    {
+      "rows": "estimation",
+      "(player, previous action) training count": "10-49",
+      "events": 191,
+      "mean Delta": 6.268855094909668,
+      "mean removal effect": -0.14430315792560577,
+      "mean |removal effect|": 0.47475745228572663,
+      "CI low": 0.36026515371784446,
+      "CI high": 0.5914808611241015,
+      "mean |partner change|": 0.7122254967689514
+    },
+    {
+      "rows": "estimation",
+      "(player, previous action) training count": ">= 50",
+      "events": 172,
+      "mean Delta": 5.193514347076416,
+      "mean removal effect": -0.18846583366394043,
+      "mean |removal effect|": 0.4760393521120382,
+      "CI low": 0.3903827647216282,
+      "CI high": 0.5863865373803557,
+      "mean |partner change|": 0.560212254524231
+    },
+    {
+      "rows": "estimation",
+      "(player, previous action) training count": "rare (0-9) minus common (>= 50), |removal effect|",
+      "events": 338,
+      "mean Delta": NaN,
+      "mean removal effect": NaN,
+      "mean |removal effect|": -0.022035541947598047,
+      "CI low": -0.16328187953653941,
+      "CI high": 0.10843130226243251,
+      "mean |partner change|": NaN
+    },
+    {
+      "rows": "all validation",
+      "(player, previous action) training count": "0",
+      "events": 17,
+      "mean Delta": 7.550203323364258,
+      "mean removal effect": -0.04607454314827919,
+      "mean |removal effect|": 0.1741781935972326,
+      "CI low": 0.09110412228675116,
+      "CI high": 0.3089673572903745,
+      "mean |partner change|": 0.26374122500419617
+    },
+    {
+      "rows": "all validation",
+      "(player, previous action) training count": "1-9",
+      "events": 463,
+      "mean Delta": 6.191115379333496,
+      "mean removal effect": -0.17656905949115753,
+      "mean |removal effect|": 0.5256569513620619,
+      "CI low": 0.44797801506927093,
+      "CI high": 0.5957978359194727,
+      "mean |partner change|": 0.6973308324813843
+    },
+    {
+      "rows": "all validation",
+      "(player, previous action) training count": "10-49",
+      "events": 577,
+      "mean Delta": 6.3793535232543945,
+      "mean removal effect": -0.07615487277507782,
+      "mean |removal effect|": 0.4811020137119128,
+      "CI low": 0.42178611744647765,
+      "CI high": 0.54406411254996,
+      "mean |partner change|": 0.6742063760757446
+    },
+    {
+      "rows": "all validation",
+      "(player, previous action) training count": ">= 50",
+      "events": 687,
+      "mean Delta": 5.421140193939209,
+      "mean removal effect": -0.15161186456680298,
+      "mean |removal effect|": 0.4649573470827794,
+      "CI low": 0.4110106562288141,
+      "CI high": 0.5219351823106012,
+      "mean |partner change|": 0.5575852394104004
+    },
+    {
+      "rows": "all validation",
+      "(player, previous action) training count": "rare (0-9) minus common (>= 50), |removal effect|",
+      "events": 1167,
+      "mean Delta": NaN,
+      "mean removal effect": NaN,
+      "mean |removal effect|": 0.048251398275111546,
+      "CI low": -0.04023490918200684,
+      "CI high": 0.12315488152991878,
+      "mean |partner change|": NaN
+    }
+  ],
+  "run_mode": "full"
+}

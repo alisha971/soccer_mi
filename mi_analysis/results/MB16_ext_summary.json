@@ -1,0 +1,1034 @@
+{
+  "plan": "MB16_ext",
+  "wrong_class": [
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H1 shared chain",
+      "n": 529,
+      "recovered share": 0.9943095186461419,
+      "CI low": 0.8642777751684924,
+      "CI high": 1.0952992653303875
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H2 player-blind chain",
+      "n": 529,
+      "recovered share": 0.9247748744143253,
+      "CI low": 0.8856599242290444,
+      "CI high": 0.9544980042709477
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H1c shared chain, coarse",
+      "n": 529,
+      "recovered share": 0.852012916763745,
+      "CI low": 0.7159880078863824,
+      "CI high": 1.0264167768789794
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H2c player-blind chain, coarse",
+      "n": 529,
+      "recovered share": 0.9885161482054714,
+      "CI low": 0.9163950666323373,
+      "CI high": 1.0818102989584413
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H1 + a_ctx, a_id keys",
+      "n": 529,
+      "recovered share": 1.0075996479925893,
+      "CI low": 0.9262378095318301,
+      "CI high": 1.0610375679112791
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H1 shared chain: WRONG class",
+      "n": 529,
+      "recovered share": 0.9489360199773519,
+      "CI low": 0.862082812923283,
+      "CI high": 1.0395928465071462
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H2 player-blind chain: WRONG class",
+      "n": 529,
+      "recovered share": 0.9625222211568878,
+      "CI low": 0.8716955258677571,
+      "CI high": 1.0647902617523126
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H1c shared chain, coarse: WRONG class",
+      "n": 529,
+      "recovered share": 0.8958818793945592,
+      "CI low": 0.8296755615843929,
+      "CI high": 0.9660089284251001
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H2c player-blind chain, coarse: WRONG class",
+      "n": 529,
+      "recovered share": 0.9291868536468612,
+      "CI low": 0.8298000159811201,
+      "CI high": 1.0208410623276925
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H1 + a_ctx, a_id keys: WRONG class",
+      "n": 529,
+      "recovered share": 0.9865379058972792,
+      "CI low": 0.8936114984094939,
+      "CI high": 1.0944011325031215
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H1 shared chain",
+      "n": 529,
+      "recovered share": 0.8928268468776616,
+      "CI low": 0.86601603805911,
+      "CI high": 0.9224964136155651
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H2 player-blind chain",
+      "n": 529,
+      "recovered share": 0.8863308804395416,
+      "CI low": 0.8581708996677083,
+      "CI high": 0.9156166085941114
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H1c shared chain, coarse",
+      "n": 529,
+      "recovered share": 0.633769052303834,
+      "CI low": 0.5550393345523871,
+      "CI high": 0.6950817472883664
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H2c player-blind chain, coarse",
+      "n": 529,
+      "recovered share": 0.581387765799569,
+      "CI low": 0.5395143760493648,
+      "CI high": 0.6184331160625337
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H1 + a_ctx, a_id keys",
+      "n": 529,
+      "recovered share": 0.9259566605689863,
+      "CI low": 0.8989355350226358,
+      "CI high": 0.9481105996255031
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H1 shared chain: WRONG class",
+      "n": 529,
+      "recovered share": -0.00797524857033276,
+      "CI low": -0.033195034999098746,
+      "CI high": 0.0193566686114343
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H2 player-blind chain: WRONG class",
+      "n": 529,
+      "recovered share": 0.005951514831817705,
+      "CI low": -0.019403145858006655,
+      "CI high": 0.035819414495335336
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H1c shared chain, coarse: WRONG class",
+      "n": 529,
+      "recovered share": 0.009193636624737298,
+      "CI low": -0.013842039244822066,
+      "CI high": 0.03214658239222824
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H2c player-blind chain, coarse: WRONG class",
+      "n": 529,
+      "recovered share": 0.014155219753054251,
+      "CI low": -0.010627172054143886,
+      "CI high": 0.03827145727893766
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H1 + a_ctx, a_id keys: WRONG class",
+      "n": 529,
+      "recovered share": -0.0009755353043045083,
+      "CI low": -0.024879579363587766,
+      "CI high": 0.019676132744585302
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H1 shared chain",
+      "n": 311,
+      "recovered share": 1.0211730378906634,
+      "CI low": 0.9325389461153664,
+      "CI high": 1.0870402203774052
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H2 player-blind chain",
+      "n": 311,
+      "recovered share": 0.9013570867674597,
+      "CI low": 0.8408389566059203,
+      "CI high": 0.9597272575015444
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H1c shared chain, coarse",
+      "n": 311,
+      "recovered share": 0.8370546758477009,
+      "CI low": 0.639749462360581,
+      "CI high": 1.0769753018900952
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H2c player-blind chain, coarse",
+      "n": 311,
+      "recovered share": 1.036346028402394,
+      "CI low": 0.9503523209765953,
+      "CI high": 1.1640845244858504
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H1 + a_ctx, a_id keys",
+      "n": 311,
+      "recovered share": 0.9976671236863787,
+      "CI low": 0.9300991283715881,
+      "CI high": 1.0480059823792076
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H1 shared chain: WRONG class",
+      "n": 311,
+      "recovered share": 0.9140131373755453,
+      "CI low": 0.8163240976117715,
+      "CI high": 1.034318058510419
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H2 player-blind chain: WRONG class",
+      "n": 311,
+      "recovered share": 0.9445363281828674,
+      "CI low": 0.822554984190724,
+      "CI high": 1.062505444345961
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H1c shared chain, coarse: WRONG class",
+      "n": 311,
+      "recovered share": 0.9079009917450437,
+      "CI low": 0.760886559355604,
+      "CI high": 1.005947204848098
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H2c player-blind chain, coarse: WRONG class",
+      "n": 311,
+      "recovered share": 0.8920062777321416,
+      "CI low": 0.7735611592954641,
+      "CI high": 1.0113332644616548
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H1 + a_ctx, a_id keys: WRONG class",
+      "n": 311,
+      "recovered share": 0.9733562429241222,
+      "CI low": 0.8204607449699834,
+      "CI high": 1.1827663573828033
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H1 shared chain",
+      "n": 311,
+      "recovered share": 0.9120146730067505,
+      "CI low": 0.882163804015169,
+      "CI high": 0.9441207565552556
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H2 player-blind chain",
+      "n": 311,
+      "recovered share": 0.91453833225444,
+      "CI low": 0.8867846398594735,
+      "CI high": 0.9426622531362965
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H1c shared chain, coarse",
+      "n": 311,
+      "recovered share": 0.7524278225061628,
+      "CI low": 0.7030641237988032,
+      "CI high": 0.8096700319325854
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H2c player-blind chain, coarse",
+      "n": 311,
+      "recovered share": 0.6489484674555285,
+      "CI low": 0.5886893830044178,
+      "CI high": 0.7070501087690458
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H1 + a_ctx, a_id keys",
+      "n": 311,
+      "recovered share": 0.9689130319903303,
+      "CI low": 0.9441773667891664,
+      "CI high": 0.9836764427319018
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H1 shared chain: WRONG class",
+      "n": 311,
+      "recovered share": -0.009983584471096367,
+      "CI low": -0.04654300634152714,
+      "CI high": 0.030578098107809593
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H2 player-blind chain: WRONG class",
+      "n": 311,
+      "recovered share": 0.003671414667005111,
+      "CI low": -0.03883325198129655,
+      "CI high": 0.05850949612098441
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H1c shared chain, coarse: WRONG class",
+      "n": 311,
+      "recovered share": 0.01739780044594983,
+      "CI low": -0.01060686001986514,
+      "CI high": 0.04747669095984582
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H2c player-blind chain, coarse: WRONG class",
+      "n": 311,
+      "recovered share": 0.019305039998324627,
+      "CI low": -0.007187911995464185,
+      "CI high": 0.05031889910032082
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H1 + a_ctx, a_id keys: WRONG class",
+      "n": 311,
+      "recovered share": -0.00017714138554470623,
+      "CI low": -0.03156952560215648,
+      "CI high": 0.037260571619421166
+    }
+  ],
+  "identity_unit": 1.0022872865103423,
+  "residual_norm": 5.01949405670166,
+  "real_swap_along_v1_identity_units": {
+    "median": 0.22852228787504142,
+    "p90": 0.8203627767198292
+  },
+  "steering_summaries": [
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "stratum": "all",
+      "slope at 0": 0.9101428386605817,
+      "y(-3)": -3.3921338119992503,
+      "y(+3)": 1.5346461779909368,
+      "asymmetry |y(+3)| / |y(-3)|": 0.4524132192433911,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "stratum": "coupled",
+      "slope at 0": 0.991160796805066,
+      "y(-3)": -4.183465368751801,
+      "y(+3)": 1.5530094512535408,
+      "asymmetry |y(+3)| / |y(-3)|": 0.3712256023089548,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "stratum": "genuine",
+      "slope at 0": 0.8354063361317297,
+      "y(-3)": -2.6621554930328943,
+      "y(+3)": 1.5177066395224272,
+      "asymmetry |y(+3)| / |y(-3)|": 0.5701044298480705,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "stratum": "no possession change",
+      "slope at 0": 0.9279625651277141,
+      "y(-3)": -3.583273340007405,
+      "y(+3)": 1.4539500513194519,
+      "asymmetry |y(+3)| / |y(-3)|": 0.4057602960639467,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "stratum": "pair a_ctx=3, a_id=0",
+      "slope at 0": 1.0865363422193024,
+      "y(-3)": -4.340098712946239,
+      "y(+3)": 1.780780505506616,
+      "asymmetry |y(+3)| / |y(-3)|": 0.41030875638719017,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "stratum": "pair a_ctx=8, a_id=0",
+      "slope at 0": 0.8202887380908349,
+      "y(-3)": -2.2852134561824227,
+      "y(+3)": 1.7878058085184612,
+      "asymmetry |y(+3)| / |y(-3)|": 0.7823364612534232,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "stratum": "pair a_ctx=9, a_id=0",
+      "slope at 0": 1.3569653983018837,
+      "y(-3)": -5.332270871619789,
+      "y(+3)": 2.652437776327133,
+      "asymmetry |y(+3)| / |y(-3)|": 0.4974311771077375,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "stratum": "possession change",
+      "slope at 0": 0.9012329754270154,
+      "y(-3)": -3.2965640479951728,
+      "y(+3)": 1.5749942413266793,
+      "asymmetry |y(+3)| / |y(-3)|": 0.4777684335556964,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "random unit direction",
+      "stratum": "all",
+      "slope at 0": -0.051996172210316605,
+      "y(-3)": -0.777237754508301,
+      "y(+3)": -1.0725250393642811,
+      "asymmetry |y(+3)| / |y(-3)|": 1.3799188641354483,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "random unit direction",
+      "stratum": "coupled",
+      "slope at 0": -0.019469433337910097,
+      "y(-3)": -1.0356838083594373,
+      "y(+3)": -1.0903375059826297,
+      "asymmetry |y(+3)| / |y(-3)|": 1.0527706402109018,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "random unit direction",
+      "stratum": "genuine",
+      "slope at 0": -0.0820010594929321,
+      "y(-3)": -0.5388294485032181,
+      "y(+3)": -1.056093602594507,
+      "asymmetry |y(+3)| / |y(-3)|": 1.9599775133452073,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "random unit direction",
+      "stratum": "no possession change",
+      "slope at 0": -0.024672043176344884,
+      "y(-3)": -0.9188403997892215,
+      "y(+3)": -0.9131216755619755,
+      "asymmetry |y(+3)| / |y(-3)|": 0.993776150647536,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "random unit direction",
+      "stratum": "pair a_ctx=3, a_id=0",
+      "slope at 0": -6.554503189890037e-05,
+      "y(-3)": -1.0950154420576597,
+      "y(+3)": -0.8768492761411165,
+      "asymmetry |y(+3)| / |y(-3)|": 0.8007643020023683,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "random unit direction",
+      "stratum": "pair a_ctx=8, a_id=0",
+      "slope at 0": -0.22138469661781174,
+      "y(-3)": -0.08467878838499149,
+      "y(+3)": -1.4544598806404068,
+      "asymmetry |y(+3)| / |y(-3)|": 17.176200892574368,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "random unit direction",
+      "stratum": "pair a_ctx=9, a_id=0",
+      "slope at 0": -0.03590340152078745,
+      "y(-3)": -0.7140782974204238,
+      "y(+3)": -0.9790655672550201,
+      "asymmetry |y(+3)| / |y(-3)|": 1.3710899362042666,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "random unit direction",
+      "stratum": "possession change",
+      "slope at 0": -0.06565823672730246,
+      "y(-3)": -0.7064364318678409,
+      "y(+3)": -1.1522267212654338,
+      "asymmetry |y(+3)| / |y(-3)|": 1.6310409108133181,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "stratum": "all",
+      "slope at 0": 0.7956697984610075,
+      "y(-3)": -3.123735353105353,
+      "y(+3)": 1.236738114163218,
+      "asymmetry |y(+3)| / |y(-3)|": 0.3959164187624787,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "stratum": "coupled",
+      "slope at 0": 0.9035719369328861,
+      "y(-3)": -4.063164250775022,
+      "y(+3)": 1.36050576176079,
+      "asymmetry |y(+3)| / |y(-3)|": 0.334838977159558,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "stratum": "genuine",
+      "slope at 0": 0.6961334903453347,
+      "y(-3)": -2.257141923767668,
+      "y(+3)": 1.122566375952167,
+      "asymmetry |y(+3)| / |y(-3)|": 0.4973397393099482,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "stratum": "no possession change",
+      "slope at 0": 0.9048727989196776,
+      "y(-3)": -3.8342156332952007,
+      "y(+3)": 1.4264789781452698,
+      "asymmetry |y(+3)| / |y(-3)|": 0.3720393203131681,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "stratum": "pair a_ctx=3, a_id=0",
+      "slope at 0": 1.1770097305900173,
+      "y(-3)": -5.155350957418743,
+      "y(+3)": 2.0074751621798463,
+      "asymmetry |y(+3)| / |y(-3)|": 0.38939641137157005,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "stratum": "pair a_ctx=8, a_id=0",
+      "slope at 0": 0.729218831319295,
+      "y(-3)": -2.1112177500467815,
+      "y(+3)": 1.4289549160860255,
+      "asymmetry |y(+3)| / |y(-3)|": 0.6768391920039333,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "stratum": "pair a_ctx=9, a_id=0",
+      "slope at 0": 1.1038865520029653,
+      "y(-3)": -4.168622837991131,
+      "y(+3)": 2.0693306600560946,
+      "asymmetry |y(+3)| / |y(-3)|": 0.4964063050264605,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "stratum": "possession change",
+      "slope at 0": 0.7410682982316723,
+      "y(-3)": -2.768495213010429,
+      "y(+3)": 1.1418676821721925,
+      "asymmetry |y(+3)| / |y(-3)|": 0.41245066157457394,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "v1 without its read-out component",
+      "stratum": "all",
+      "slope at 0": 0.00024709794746995487,
+      "y(-3)": -1.0396473253337444,
+      "y(+3)": -0.8831753253814124,
+      "asymmetry |y(+3)| / |y(-3)|": 0.849495116142292,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "v1 without its read-out component",
+      "stratum": "coupled",
+      "slope at 0": 0.12723399517262166,
+      "y(-3)": -1.6705713647307499,
+      "y(+3)": -0.49386189006409553,
+      "asymmetry |y(+3)| / |y(-3)|": 0.2956245392986803,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "v1 without its read-out component",
+      "stratum": "genuine",
+      "slope at 0": -0.1168942961700355,
+      "y(-3)": -0.4576398649406207,
+      "y(+3)": -1.2423046494162158,
+      "asymmetry |y(+3)| / |y(-3)|": 2.714590105862841,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "v1 without its read-out component",
+      "stratum": "no possession change",
+      "slope at 0": 0.0913310745616018,
+      "y(-3)": -1.470984764010818,
+      "y(+3)": -0.4726044676921986,
+      "asymmetry |y(+3)| / |y(-3)|": 0.3212844070550298,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "v1 without its read-out component",
+      "stratum": "pair a_ctx=3, a_id=0",
+      "slope at 0": 0.23689518853237754,
+      "y(-3)": -2.0419572293758392,
+      "y(+3)": -0.06939395415155511,
+      "asymmetry |y(+3)| / |y(-3)|": 0.033984039015727385,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "v1 without its read-out component",
+      "stratum": "pair a_ctx=8, a_id=0",
+      "slope at 0": -0.30468618941164305,
+      "y(-3)": 0.23573052454851345,
+      "y(+3)": -1.8865612102839762,
+      "asymmetry |y(+3)| / |y(-3)|": 8.003041667587352,
+      "monotone": false
+    },
+    {
+      "half": "discovery",
+      "direction": "v1 without its read-out component",
+      "stratum": "pair a_ctx=9, a_id=0",
+      "slope at 0": 0.3833181991869089,
+      "y(-3)": -2.2406044225303496,
+      "y(+3)": 0.4357402136131209,
+      "asymmetry |y(+3)| / |y(-3)|": 0.19447440575924269,
+      "monotone": true
+    },
+    {
+      "half": "discovery",
+      "direction": "v1 without its read-out component",
+      "stratum": "possession change",
+      "slope at 0": -0.04529489035959597,
+      "y(-3)": -0.8239786059952077,
+      "y(+3)": -1.0884607542260194,
+      "asymmetry |y(+3)| / |y(-3)|": 1.3209818147054537,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "stratum": "all",
+      "slope at 0": 0.8597611674232608,
+      "y(-3)": -3.3163846189223074,
+      "y(+3)": 1.4415865966976251,
+      "asymmetry |y(+3)| / |y(-3)|": 0.4346861906403616,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "stratum": "coupled",
+      "slope at 0": 0.9525632105375591,
+      "y(-3)": -4.150554999648801,
+      "y(+3)": 1.4590502866366615,
+      "asymmetry |y(+3)| / |y(-3)|": 0.35153137032520204,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "stratum": "genuine",
+      "slope at 0": 0.7784771083834323,
+      "y(-3)": -2.5857460230377547,
+      "y(+3)": 1.4262903860063418,
+      "asymmetry |y(+3)| / |y(-3)|": 0.5515972463261202,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "stratum": "no possession change",
+      "slope at 0": 0.9294923342368453,
+      "y(-3)": -3.7203174339976286,
+      "y(+3)": 1.4767248545579865,
+      "asymmetry |y(+3)| / |y(-3)|": 0.39693517576299586,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "stratum": "pair a_ctx=3, a_id=0",
+      "slope at 0": 1.0494171927956972,
+      "y(-3)": -4.405030149572036,
+      "y(+3)": 1.6205212845521815,
+      "asymmetry |y(+3)| / |y(-3)|": 0.3678797260240366,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "stratum": "pair a_ctx=8, a_id=0",
+      "slope at 0": 0.8374529049314301,
+      "y(-3)": -2.3297293720574213,
+      "y(+3)": 1.820996354366171,
+      "asymmetry |y(+3)| / |y(-3)|": 0.7816342860278316,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "stratum": "pair a_ctx=9, a_id=0",
+      "slope at 0": 1.336857061193447,
+      "y(-3)": -5.323004187959613,
+      "y(+3)": 2.6145552011451336,
+      "asymmetry |y(+3)| / |y(-3)|": 0.4911803764985072,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "stratum": "possession change",
+      "slope at 0": 0.8149339887573852,
+      "y(-3)": -3.056713523516744,
+      "y(+3)": 1.418997716644536,
+      "asymmetry |y(+3)| / |y(-3)|": 0.46422332538771294,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "random unit direction",
+      "stratum": "all",
+      "slope at 0": -0.03239159970517871,
+      "y(-3)": -0.8078304405248458,
+      "y(+3)": -1.0114505824497382,
+      "asymmetry |y(+3)| / |y(-3)|": 1.2520580207309355,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "random unit direction",
+      "stratum": "coupled",
+      "slope at 0": -0.008350704363000538,
+      "y(-3)": -1.0497014445331898,
+      "y(+3)": -1.0339848983143023,
+      "asymmetry |y(+3)| / |y(-3)|": 0.9850276035145624,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "random unit direction",
+      "stratum": "genuine",
+      "slope at 0": -0.053448695980065256,
+      "y(-3)": -0.5959788873686013,
+      "y(+3)": -0.9917130788378682,
+      "asymmetry |y(+3)| / |y(-3)|": 1.6640070644390346,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "random unit direction",
+      "stratum": "no possession change",
+      "slope at 0": -0.0036610762278238927,
+      "y(-3)": -0.9781292884246163,
+      "y(+3)": -0.8990049989903031,
+      "asymmetry |y(+3)| / |y(-3)|": 0.9191065124307324,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "random unit direction",
+      "stratum": "pair a_ctx=3, a_id=0",
+      "slope at 0": 0.00016091851627125786,
+      "y(-3)": -1.1723101980545942,
+      "y(+3)": -0.950554103009841,
+      "asymmetry |y(+3)| / |y(-3)|": 0.810838380991013,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "random unit direction",
+      "stratum": "pair a_ctx=8, a_id=0",
+      "slope at 0": -0.19695757997447047,
+      "y(-3)": -0.14366280210429225,
+      "y(+3)": -1.4247033760465424,
+      "asymmetry |y(+3)| / |y(-3)|": 9.916995597874227,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "random unit direction",
+      "stratum": "pair a_ctx=9, a_id=0",
+      "slope at 0": -0.01822688483228587,
+      "y(-3)": -0.7384972066590281,
+      "y(+3)": -0.9349020099399066,
+      "asymmetry |y(+3)| / |y(-3)|": 1.2659519921130327,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "random unit direction",
+      "stratum": "possession change",
+      "slope at 0": -0.05086122194062109,
+      "y(-3)": -0.6983526097321362,
+      "y(+3)": -1.083737028959375,
+      "asymmetry |y(+3)| / |y(-3)|": 1.5518478972607535,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "stratum": "all",
+      "slope at 0": 0.7279008982988296,
+      "y(-3)": -3.0110137540924526,
+      "y(+3)": 1.077143534595439,
+      "asymmetry |y(+3)| / |y(-3)|": 0.3577345115516086,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "stratum": "coupled",
+      "slope at 0": 0.8683764992455238,
+      "y(-3)": -4.0545953827107,
+      "y(+3)": 1.2826935781641045,
+      "asymmetry |y(+3)| / |y(-3)|": 0.3163555070460716,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "stratum": "genuine",
+      "slope at 0": 0.6048602123632498,
+      "y(-3)": -2.0969546680332076,
+      "y(+3)": 0.897105021256927,
+      "asymmetry |y(+3)| / |y(-3)|": 0.42781326412666176,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "stratum": "no possession change",
+      "slope at 0": 0.8763728798299596,
+      "y(-3)": -3.8593190702551228,
+      "y(+3)": 1.3551498925052403,
+      "asymmetry |y(+3)| / |y(-3)|": 0.35113704460192696,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "stratum": "pair a_ctx=3, a_id=0",
+      "slope at 0": 1.130486712736242,
+      "y(-3)": -5.22024680446176,
+      "y(+3)": 1.8444856559529024,
+      "asymmetry |y(+3)| / |y(-3)|": 0.3533330367400283,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "stratum": "pair a_ctx=8, a_id=0",
+      "slope at 0": 0.7373698826493889,
+      "y(-3)": -2.148374586269773,
+      "y(+3)": 1.4248510866329587,
+      "asymmetry |y(+3)| / |y(-3)|": 0.6632228363429538,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "stratum": "pair a_ctx=9, a_id=0",
+      "slope at 0": 1.079496080225164,
+      "y(-3)": -4.144330649664908,
+      "y(+3)": 2.0109530566918727,
+      "asymmetry |y(+3)| / |y(-3)|": 0.48522987828069886,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "stratum": "possession change",
+      "slope at 0": 0.632454624457389,
+      "y(-3)": -2.465674622273593,
+      "y(+3)": 0.8984251616534239,
+      "asymmetry |y(+3)| / |y(-3)|": 0.3643729604618261,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "v1 without its read-out component",
+      "stratum": "all",
+      "slope at 0": -0.06342713706660136,
+      "y(-3)": -0.88121828679101,
+      "y(+3)": -0.9948607478818956,
+      "asymmetry |y(+3)| / |y(-3)|": 1.1289606250736341,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "v1 without its read-out component",
+      "stratum": "coupled",
+      "slope at 0": 0.11147027411441571,
+      "y(-3)": -1.6541186556642355,
+      "y(+3)": -0.44727618202024144,
+      "asymmetry |y(+3)| / |y(-3)|": 0.27040150988481,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "v1 without its read-out component",
+      "stratum": "genuine",
+      "slope at 0": -0.21661742274642837,
+      "y(-3)": -0.2042452686644615,
+      "y(+3)": -1.4744826903210042,
+      "asymmetry |y(+3)| / |y(-3)|": 7.219176727874739,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "v1 without its read-out component",
+      "stratum": "no possession change",
+      "slope at 0": 0.038532088920114116,
+      "y(-3)": -1.3616937548641996,
+      "y(+3)": -0.6256437841892818,
+      "asymmetry |y(+3)| / |y(-3)|": 0.45945997912847636,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "v1 without its read-out component",
+      "stratum": "pair a_ctx=3, a_id=0",
+      "slope at 0": 0.20943472806145164,
+      "y(-3)": -2.066546417685116,
+      "y(+3)": -0.17785477077259737,
+      "asymmetry |y(+3)| / |y(-3)|": 0.08606376767081042,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "v1 without its read-out component",
+      "stratum": "pair a_ctx=8, a_id=0",
+      "slope at 0": -0.26450855156470987,
+      "y(-3)": 0.14842677938527074,
+      "y(+3)": -1.7921475172042847,
+      "asymmetry |y(+3)| / |y(-3)|": 12.074286895038092,
+      "monotone": false
+    },
+    {
+      "half": "estimation",
+      "direction": "v1 without its read-out component",
+      "stratum": "pair a_ctx=9, a_id=0",
+      "slope at 0": 0.36285775960093797,
+      "y(-3)": -2.180136791383377,
+      "y(+3)": 0.41062617181527494,
+      "asymmetry |y(+3)| / |y(-3)|": 0.18834881069766155,
+      "monotone": true
+    },
+    {
+      "half": "estimation",
+      "direction": "v1 without its read-out component",
+      "stratum": "possession change",
+      "slope at 0": -0.12897235377234703,
+      "y(-3)": -0.572341200172531,
+      "y(+3)": -1.232214510255719,
+      "asymmetry |y(+3)| / |y(-3)|": 2.152936936715845,
+      "monotone": false
+    }
+  ],
+  "steering_models": [
+    {
+      "calibration model": "straight line through 0 (|beta| <= 0.5)",
+      "RMSE over the grid": 0.4222913177317538,
+      "largest error": 1.2836177544861838,
+      "share of grid points inside the estimation interval": 0.6666666666666666
+    },
+    {
+      "calibration model": "isotonic",
+      "RMSE over the grid": 0.053176136796743635,
+      "largest error": 0.09305958129331171,
+      "share of grid points inside the estimation interval": 1.0
+    },
+    {
+      "calibration model": "logistic",
+      "RMSE over the grid": 0.05469600947800679,
+      "largest error": 0.1223203819094647,
+      "share of grid points inside the estimation interval": 0.9333333333333333
+    }
+  ],
+  "run_mode": "full"
+}

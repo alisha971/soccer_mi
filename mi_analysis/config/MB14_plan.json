@@ -1,0 +1,23 @@
+{
+  "status": "follow-up after MB12; exploratory; not part of the MB12 lock",
+  "circuits_named": [
+    "effect-size circuit from candidates.json sensitivity list (q 0.05 and R >= 0.10)",
+    "pre-registered circuit from circuit.json",
+    "all 8 heads",
+    "all 4 MLPs"
+  ],
+  "subset_space": "all 2**12 subsets of the 12 heads and MLPs; complement mean-ablated at every position",
+  "behaviours": [
+    "identity effect (player -> 0 at the target)",
+    "arbitration (Delta)",
+    "context effect (own window vs MB02 donor window with the event's player written in)"
+  ],
+  "selection": "best subset of each size and composition is chosen on the DISCOVERY half only",
+  "estimate": "every reported F is computed on the ESTIMATION half; intervals from 2,000 match resamples",
+  "rank_rule": "a named circuit's rank is its percentile among all circuits with the same number of components (primary) and among circuits with the same numbers of heads and MLPs (secondary; not read when that class has a single member), estimation half",
+  "reading_rule": "the effect-size circuit is called sufficient for a behaviour if its estimation-half F CI lies above 0.8, and distinctive if it also ranks above the 95th percentile of all circuits of its size",
+  "specificity": "F of the circuit for Delta on matched controls vs on their conflict partners (paired by match)",
+  "replication": "F and class rank of the effect-size circuit for seeds 100-104 (estimation half)",
+  "robustness": "resample ablation (n_draws draws) for the effect-size circuit and the discovery-selected best subsets",
+  "written_at": "2026-10-07T17:35:51.111886+00:00"
+}

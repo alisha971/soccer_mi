@@ -1,0 +1,4343 @@
+{
+  "status": "follow-up after the deep MI audit; exploratory; not part of the MB12 lock",
+  "choices": [
+    {
+      "run": "intact",
+      "top-1 = a_ctx": 0.9289044289044289,
+      "top-1 = a_id": 0.005244755244755245,
+      "top-1 other": 0.06585081585081586,
+      "changed vs intact": 0.0,
+      "changed vs intact (count)": 0
+    },
+    {
+      "run": "player removal",
+      "top-1 = a_ctx": 0.9382284382284383,
+      "top-1 = a_id": 0.0011655011655011655,
+      "top-1 other": 0.06060606060606061,
+      "changed vs intact": 0.023892773892773892,
+      "changed vs intact (count)": 41
+    },
+    {
+      "run": "partner swap",
+      "top-1 = a_ctx": 0.9335664335664335,
+      "top-1 = a_id": 0.004662004662004662,
+      "top-1 other": 0.06177156177156177,
+      "changed vs intact": 0.033216783216783216,
+      "changed vs intact (count)": 57
+    },
+    {
+      "run": "whole-context swap",
+      "top-1 = a_ctx": 0.17365967365967366,
+      "top-1 = a_id": 0.03671328671328671,
+      "top-1 other": 0.7896270396270396,
+      "changed vs intact": 0.8205128205128205,
+      "changed vs intact (count)": 1408
+    }
+  ],
+  "flip_patching": [
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "embedding (resid_pre_0)",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "embedding (resid_pre_0)",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L0H0",
+      "measure": "restores",
+      "rate": 0.09090909090909091,
+      "CI low": 0.0,
+      "CI high": 0.375
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L0H0",
+      "measure": "produces",
+      "rate": 0.09090909090909091,
+      "CI low": 0.0,
+      "CI high": 0.3
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L0H1",
+      "measure": "restores",
+      "rate": 0.09090909090909091,
+      "CI low": 0.0,
+      "CI high": 0.375
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L0H1",
+      "measure": "produces",
+      "rate": 0.18181818181818182,
+      "CI low": 0.0,
+      "CI high": 0.5
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L0MLP",
+      "measure": "restores",
+      "rate": 0.5454545454545454,
+      "CI low": 0.09090909090909091,
+      "CI high": 0.875
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L0MLP",
+      "measure": "produces",
+      "rate": 0.45454545454545453,
+      "CI low": 0.14285714285714285,
+      "CI high": 0.75
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "resid_post_0",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "resid_post_0",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L1H0",
+      "measure": "restores",
+      "rate": 0.09090909090909091,
+      "CI low": 0.0,
+      "CI high": 0.375
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L1H0",
+      "measure": "produces",
+      "rate": 0.18181818181818182,
+      "CI low": 0.0,
+      "CI high": 0.5
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L1H1",
+      "measure": "restores",
+      "rate": 0.09090909090909091,
+      "CI low": 0.0,
+      "CI high": 0.1875
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L1H1",
+      "measure": "produces",
+      "rate": 0.18181818181818182,
+      "CI low": 0.0,
+      "CI high": 0.5
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L1MLP",
+      "measure": "restores",
+      "rate": 0.45454545454545453,
+      "CI low": 0.14285714285714285,
+      "CI high": 0.75
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L1MLP",
+      "measure": "produces",
+      "rate": 0.45454545454545453,
+      "CI low": 0.14285714285714285,
+      "CI high": 0.75
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "resid_post_1",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "resid_post_1",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L2H0",
+      "measure": "restores",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L2H0",
+      "measure": "produces",
+      "rate": 0.09090909090909091,
+      "CI low": 0.0,
+      "CI high": 0.375
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L2H1",
+      "measure": "restores",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L2H1",
+      "measure": "produces",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L2MLP",
+      "measure": "restores",
+      "rate": 0.5454545454545454,
+      "CI low": 0.18181818181818182,
+      "CI high": 0.8125
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L2MLP",
+      "measure": "produces",
+      "rate": 0.2727272727272727,
+      "CI low": 0.1,
+      "CI high": 0.5
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "resid_post_2",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "resid_post_2",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L3H0",
+      "measure": "restores",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L3H0",
+      "measure": "produces",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L3H1",
+      "measure": "restores",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L3H1",
+      "measure": "produces",
+      "rate": 0.18181818181818182,
+      "CI low": 0.0,
+      "CI high": 0.6
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L3MLP",
+      "measure": "restores",
+      "rate": 0.6363636363636364,
+      "CI low": 0.18181818181818182,
+      "CI high": 0.9375
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "L3MLP",
+      "measure": "produces",
+      "rate": 0.6363636363636364,
+      "CI low": 0.2857142857142857,
+      "CI high": 0.8888888888888888
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "resid_post_3",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "estimation",
+      "flips": 11,
+      "site": "resid_post_3",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "embedding (resid_pre_0)",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "embedding (resid_pre_0)",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L0H0",
+      "measure": "restores",
+      "rate": 0.0975609756097561,
+      "CI low": 0.022727272727272728,
+      "CI high": 0.19444444444444445
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L0H0",
+      "measure": "produces",
+      "rate": 0.07317073170731707,
+      "CI low": 0.0,
+      "CI high": 0.16216216216216217
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L0H1",
+      "measure": "restores",
+      "rate": 0.07317073170731707,
+      "CI low": 0.0,
+      "CI high": 0.1621778755499685
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L0H1",
+      "measure": "produces",
+      "rate": 0.12195121951219512,
+      "CI low": 0.023255813953488372,
+      "CI high": 0.25
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L0MLP",
+      "measure": "restores",
+      "rate": 0.6341463414634146,
+      "CI low": 0.4704901960784314,
+      "CI high": 0.7857522796352582
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L0MLP",
+      "measure": "produces",
+      "rate": 0.5365853658536586,
+      "CI low": 0.38461538461538464,
+      "CI high": 0.6905219780219778
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "resid_post_0",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "resid_post_0",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L1H0",
+      "measure": "restores",
+      "rate": 0.07317073170731707,
+      "CI low": 0.0,
+      "CI high": 0.19047619047619047
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L1H0",
+      "measure": "produces",
+      "rate": 0.04878048780487805,
+      "CI low": 0.0,
+      "CI high": 0.1316228070175436
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L1H1",
+      "measure": "restores",
+      "rate": 0.04878048780487805,
+      "CI low": 0.0,
+      "CI high": 0.11627906976744186
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L1H1",
+      "measure": "produces",
+      "rate": 0.04878048780487805,
+      "CI low": 0.0,
+      "CI high": 0.1316228070175436
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L1MLP",
+      "measure": "restores",
+      "rate": 0.5121951219512195,
+      "CI low": 0.37209302325581395,
+      "CI high": 0.6428571428571429
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L1MLP",
+      "measure": "produces",
+      "rate": 0.5365853658536586,
+      "CI low": 0.3611111111111111,
+      "CI high": 0.7096986417657045
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "resid_post_1",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "resid_post_1",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L2H0",
+      "measure": "restores",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L2H0",
+      "measure": "produces",
+      "rate": 0.024390243902439025,
+      "CI low": 0.0,
+      "CI high": 0.08571428571428572
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L2H1",
+      "measure": "restores",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L2H1",
+      "measure": "produces",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L2MLP",
+      "measure": "restores",
+      "rate": 0.4878048780487805,
+      "CI low": 0.3499709302325581,
+      "CI high": 0.6046664626682985
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L2MLP",
+      "measure": "produces",
+      "rate": 0.43902439024390244,
+      "CI low": 0.26666666666666666,
+      "CI high": 0.6222916666666662
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "resid_post_2",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "resid_post_2",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L3H0",
+      "measure": "restores",
+      "rate": 0.07317073170731707,
+      "CI low": 0.0,
+      "CI high": 0.19047619047619047
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L3H0",
+      "measure": "produces",
+      "rate": 0.024390243902439025,
+      "CI low": 0.0,
+      "CI high": 0.075
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L3H1",
+      "measure": "restores",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L3H1",
+      "measure": "produces",
+      "rate": 0.04878048780487805,
+      "CI low": 0.0,
+      "CI high": 0.17142857142857143
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L3MLP",
+      "measure": "restores",
+      "rate": 0.6341463414634146,
+      "CI low": 0.4650737379466818,
+      "CI high": 0.7837837837837838
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "L3MLP",
+      "measure": "produces",
+      "rate": 0.6097560975609756,
+      "CI low": 0.4418604651162791,
+      "CI high": 0.7714285714285715
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "resid_post_3",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "player removal",
+      "events": "all validation",
+      "flips": 41,
+      "site": "resid_post_3",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "embedding (resid_pre_0)",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "embedding (resid_pre_0)",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L0H0",
+      "measure": "restores",
+      "rate": 0.08695652173913043,
+      "CI low": 0.0,
+      "CI high": 0.16666666666666666
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L0H0",
+      "measure": "produces",
+      "rate": 0.08695652173913043,
+      "CI low": 0.0,
+      "CI high": 0.18524305555555523
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L0H1",
+      "measure": "restores",
+      "rate": 0.08695652173913043,
+      "CI low": 0.0,
+      "CI high": 0.15151515151515152
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L0H1",
+      "measure": "produces",
+      "rate": 0.043478260869565216,
+      "CI low": 0.0,
+      "CI high": 0.13636363636363635
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L0MLP",
+      "measure": "restores",
+      "rate": 0.6956521739130435,
+      "CI low": 0.5833333333333334,
+      "CI high": 0.8181818181818182
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L0MLP",
+      "measure": "produces",
+      "rate": 0.5217391304347826,
+      "CI low": 0.29411764705882354,
+      "CI high": 0.75
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "resid_post_0",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "resid_post_0",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L1H0",
+      "measure": "restores",
+      "rate": 0.08695652173913043,
+      "CI low": 0.0,
+      "CI high": 0.22736013986013937
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L1H0",
+      "measure": "produces",
+      "rate": 0.043478260869565216,
+      "CI low": 0.0,
+      "CI high": 0.13636363636363635
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L1H1",
+      "measure": "restores",
+      "rate": 0.13043478260869565,
+      "CI low": 0.0,
+      "CI high": 0.29035618279569875
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L1H1",
+      "measure": "produces",
+      "rate": 0.08695652173913043,
+      "CI low": 0.0,
+      "CI high": 0.18524305555555523
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L1MLP",
+      "measure": "restores",
+      "rate": 0.5652173913043478,
+      "CI low": 0.4782091097308489,
+      "CI high": 0.7272727272727273
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L1MLP",
+      "measure": "produces",
+      "rate": 0.391304347826087,
+      "CI low": 0.21428571428571427,
+      "CI high": 0.6818181818181818
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "resid_post_1",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "resid_post_1",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L2H0",
+      "measure": "restores",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L2H0",
+      "measure": "produces",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L2H1",
+      "measure": "restores",
+      "rate": 0.08695652173913043,
+      "CI low": 0.0,
+      "CI high": 0.21436335403726664
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L2H1",
+      "measure": "produces",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L2MLP",
+      "measure": "restores",
+      "rate": 0.6086956521739131,
+      "CI low": 0.5,
+      "CI high": 0.75
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L2MLP",
+      "measure": "produces",
+      "rate": 0.21739130434782608,
+      "CI low": 0.043478260869565216,
+      "CI high": 0.44
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "resid_post_2",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "resid_post_2",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L3H0",
+      "measure": "restores",
+      "rate": 0.043478260869565216,
+      "CI low": 0.0,
+      "CI high": 0.2
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L3H0",
+      "measure": "produces",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L3H1",
+      "measure": "restores",
+      "rate": 0.043478260869565216,
+      "CI low": 0.0,
+      "CI high": 0.13636363636363635
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L3H1",
+      "measure": "produces",
+      "rate": 0.13043478260869565,
+      "CI low": 0.0,
+      "CI high": 0.29411764705882354
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L3MLP",
+      "measure": "restores",
+      "rate": 0.6521739130434783,
+      "CI low": 0.4,
+      "CI high": 0.8888888888888888
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "L3MLP",
+      "measure": "produces",
+      "rate": 0.4782608695652174,
+      "CI low": 0.26666666666666666,
+      "CI high": 0.625
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "resid_post_3",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "estimation",
+      "flips": 23,
+      "site": "resid_post_3",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "embedding (resid_pre_0)",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "embedding (resid_pre_0)",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L0H0",
+      "measure": "restores",
+      "rate": 0.07017543859649122,
+      "CI low": 0.018510101010101008,
+      "CI high": 0.13045260156806832
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L0H0",
+      "measure": "produces",
+      "rate": 0.08771929824561403,
+      "CI low": 0.029839771729587357,
+      "CI high": 0.16003225806451596
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L0H1",
+      "measure": "restores",
+      "rate": 0.07017543859649122,
+      "CI low": 0.017543859649122806,
+      "CI high": 0.12769389155799568
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L0H1",
+      "measure": "produces",
+      "rate": 0.05263157894736842,
+      "CI low": 0.0,
+      "CI high": 0.11865415657788533
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L0MLP",
+      "measure": "restores",
+      "rate": 0.6666666666666666,
+      "CI low": 0.5599830508474577,
+      "CI high": 0.7656333111702127
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L0MLP",
+      "measure": "produces",
+      "rate": 0.5789473684210527,
+      "CI low": 0.4444444444444444,
+      "CI high": 0.7111217948717948
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "resid_post_0",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "resid_post_0",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L1H0",
+      "measure": "restores",
+      "rate": 0.03508771929824561,
+      "CI low": 0.0,
+      "CI high": 0.08771929824561403
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L1H0",
+      "measure": "produces",
+      "rate": 0.03508771929824561,
+      "CI low": 0.0,
+      "CI high": 0.08695652173913043
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L1H1",
+      "measure": "restores",
+      "rate": 0.10526315789473684,
+      "CI low": 0.03388418079096045,
+      "CI high": 0.19047619047619047
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L1H1",
+      "measure": "produces",
+      "rate": 0.05263157894736842,
+      "CI low": 0.0,
+      "CI high": 0.11291083384053556
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L1MLP",
+      "measure": "restores",
+      "rate": 0.543859649122807,
+      "CI low": 0.43281037991858884,
+      "CI high": 0.656745875883739
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L1MLP",
+      "measure": "produces",
+      "rate": 0.543859649122807,
+      "CI low": 0.39622641509433965,
+      "CI high": 0.6923076923076923
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "resid_post_1",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "resid_post_1",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L2H0",
+      "measure": "restores",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L2H0",
+      "measure": "produces",
+      "rate": 0.017543859649122806,
+      "CI low": 0.0,
+      "CI high": 0.06521739130434782
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L2H1",
+      "measure": "restores",
+      "rate": 0.03508771929824561,
+      "CI low": 0.0,
+      "CI high": 0.08771929824561403
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L2H1",
+      "measure": "produces",
+      "rate": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L2MLP",
+      "measure": "restores",
+      "rate": 0.47368421052631576,
+      "CI low": 0.3269230769230769,
+      "CI high": 0.6065573770491803
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L2MLP",
+      "measure": "produces",
+      "rate": 0.38596491228070173,
+      "CI low": 0.24,
+      "CI high": 0.5294340463458109
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "resid_post_2",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "resid_post_2",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L3H0",
+      "measure": "restores",
+      "rate": 0.05263157894736842,
+      "CI low": 0.0,
+      "CI high": 0.12727272727272726
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L3H0",
+      "measure": "produces",
+      "rate": 0.03508771929824561,
+      "CI low": 0.0,
+      "CI high": 0.09615384615384616
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L3H1",
+      "measure": "restores",
+      "rate": 0.017543859649122806,
+      "CI low": 0.0,
+      "CI high": 0.058823529411764705
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L3H1",
+      "measure": "produces",
+      "rate": 0.05263157894736842,
+      "CI low": 0.0,
+      "CI high": 0.13559322033898305
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L3MLP",
+      "measure": "restores",
+      "rate": 0.5964912280701754,
+      "CI low": 0.4313640973630832,
+      "CI high": 0.7377405559515323
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "L3MLP",
+      "measure": "produces",
+      "rate": 0.543859649122807,
+      "CI low": 0.42102631578947364,
+      "CI high": 0.6716417910447762
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "resid_post_3",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "partner swap",
+      "events": "all validation",
+      "flips": 57,
+      "site": "resid_post_3",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "embedding (resid_pre_0)",
+      "measure": "restores",
+      "rate": 0.9439252336448598,
+      "CI low": 0.9143626677190214,
+      "CI high": 0.9692313915857605
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "embedding (resid_pre_0)",
+      "measure": "produces",
+      "rate": 0.9836448598130841,
+      "CI low": 0.9640874950348464,
+      "CI high": 0.996101743030716
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L0H0",
+      "measure": "restores",
+      "rate": 0.007009345794392523,
+      "CI low": 0.001398852223816358,
+      "CI high": 0.015209125475285171
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L0H0",
+      "measure": "produces",
+      "rate": 0.04906542056074766,
+      "CI low": 0.020361071257771403,
+      "CI high": 0.08012645086355713
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L0H1",
+      "measure": "restores",
+      "rate": 0.011682242990654205,
+      "CI low": 0.0023847056943012896,
+      "CI high": 0.025363181504485847
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L0H1",
+      "measure": "produces",
+      "rate": 0.03271028037383177,
+      "CI low": 0.013926609408851749,
+      "CI high": 0.04591881805725824
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L0MLP",
+      "measure": "restores",
+      "rate": 0.5747663551401869,
+      "CI low": 0.5527626149918923,
+      "CI high": 0.5919399085092214
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L0MLP",
+      "measure": "produces",
+      "rate": 0.8714953271028038,
+      "CI low": 0.8238265772630297,
+      "CI high": 0.90664615220765
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "resid_post_0",
+      "measure": "restores",
+      "rate": 0.969626168224299,
+      "CI low": 0.9441171903544026,
+      "CI high": 0.9866921205938641
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "resid_post_0",
+      "measure": "produces",
+      "rate": 0.9953271028037384,
+      "CI low": 0.9869404146421593,
+      "CI high": 1.0
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L1H0",
+      "measure": "restores",
+      "rate": 0.002336448598130841,
+      "CI low": 0.0,
+      "CI high": 0.007921184975640419
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L1H0",
+      "measure": "produces",
+      "rate": 0.02102803738317757,
+      "CI low": 0.005595978441127695,
+      "CI high": 0.04140481770587232
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L1H1",
+      "measure": "restores",
+      "rate": 0.004672897196261682,
+      "CI low": 0.0,
+      "CI high": 0.01012800020624403
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L1H1",
+      "measure": "produces",
+      "rate": 0.007009345794392523,
+      "CI low": 0.0,
+      "CI high": 0.01632724585161167
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L1MLP",
+      "measure": "restores",
+      "rate": 0.2757009345794392,
+      "CI low": 0.2354021269524759,
+      "CI high": 0.3352276797343058
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L1MLP",
+      "measure": "produces",
+      "rate": 0.6355140186915887,
+      "CI low": 0.5772344082501228,
+      "CI high": 0.6952223670100007
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "resid_post_1",
+      "measure": "restores",
+      "rate": 0.9602803738317757,
+      "CI low": 0.9362288647342994,
+      "CI high": 0.9772390344273814
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "resid_post_1",
+      "measure": "produces",
+      "rate": 0.9976635514018691,
+      "CI low": 0.9908665326127938,
+      "CI high": 1.0
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L2H0",
+      "measure": "restores",
+      "rate": 0.004672897196261682,
+      "CI low": 0.0,
+      "CI high": 0.01125809563180377
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L2H0",
+      "measure": "produces",
+      "rate": 0.016355140186915886,
+      "CI low": 0.005746714751506768,
+      "CI high": 0.027255387153314766
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L2H1",
+      "measure": "restores",
+      "rate": 0.007009345794392523,
+      "CI low": 0.0,
+      "CI high": 0.01577411851615221
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L2H1",
+      "measure": "produces",
+      "rate": 0.018691588785046728,
+      "CI low": 0.0,
+      "CI high": 0.03817310840383917
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L2MLP",
+      "measure": "restores",
+      "rate": 0.3177570093457944,
+      "CI low": 0.2951794283149791,
+      "CI high": 0.33544405879951
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L2MLP",
+      "measure": "produces",
+      "rate": 0.5630841121495327,
+      "CI low": 0.528431832264331,
+      "CI high": 0.5964548878336334
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "resid_post_2",
+      "measure": "restores",
+      "rate": 0.969626168224299,
+      "CI low": 0.9467579893765239,
+      "CI high": 0.9861513566863699
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "resid_post_2",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L3H0",
+      "measure": "restores",
+      "rate": 0.002336448598130841,
+      "CI low": 0.0,
+      "CI high": 0.006013853264337996
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L3H0",
+      "measure": "produces",
+      "rate": 0.02336448598130841,
+      "CI low": 0.009574190177638452,
+      "CI high": 0.03768115942028986
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L3H1",
+      "measure": "restores",
+      "rate": 0.004672897196261682,
+      "CI low": 0.0,
+      "CI high": 0.014327676777657013
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L3H1",
+      "measure": "produces",
+      "rate": 0.014018691588785047,
+      "CI low": 0.0028405078325629174,
+      "CI high": 0.026549849369233658
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L3MLP",
+      "measure": "restores",
+      "rate": 0.7570093457943925,
+      "CI low": 0.7113383911717729,
+      "CI high": 0.8034646983009751
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "L3MLP",
+      "measure": "produces",
+      "rate": 0.866822429906542,
+      "CI low": 0.8388396427619301,
+      "CI high": 0.8992088940285954
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "resid_post_3",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "estimation",
+      "flips": 428,
+      "site": "resid_post_3",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "embedding (resid_pre_0)",
+      "measure": "restores",
+      "rate": 0.9424715909090909,
+      "CI low": 0.9294210948067988,
+      "CI high": 0.9552846142509763
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "embedding (resid_pre_0)",
+      "measure": "produces",
+      "rate": 0.9893465909090909,
+      "CI low": 0.9827576897296492,
+      "CI high": 0.9945251623670652
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L0H0",
+      "measure": "restores",
+      "rate": 0.005681818181818182,
+      "CI low": 0.0028278748029536213,
+      "CI high": 0.00891067144815431
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L0H0",
+      "measure": "produces",
+      "rate": 0.048295454545454544,
+      "CI low": 0.03763381387382244,
+      "CI high": 0.06033410342989158
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L0H1",
+      "measure": "restores",
+      "rate": 0.004971590909090909,
+      "CI low": 0.001583220290596026,
+      "CI high": 0.009282780276758636
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L0H1",
+      "measure": "produces",
+      "rate": 0.026988636363636364,
+      "CI low": 0.018578232157988605,
+      "CI high": 0.03535172524659166
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L0MLP",
+      "measure": "restores",
+      "rate": 0.5930397727272727,
+      "CI low": 0.571312373101863,
+      "CI high": 0.6180125877511498
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L0MLP",
+      "measure": "produces",
+      "rate": 0.8700284090909091,
+      "CI low": 0.8471951463097973,
+      "CI high": 0.8900951900826797
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "resid_post_0",
+      "measure": "restores",
+      "rate": 0.9701704545454546,
+      "CI low": 0.9601298507533568,
+      "CI high": 0.9780295453598367
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "resid_post_0",
+      "measure": "produces",
+      "rate": 0.9950284090909091,
+      "CI low": 0.9919897872701076,
+      "CI high": 0.997703084998188
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L1H0",
+      "measure": "restores",
+      "rate": 0.0035511363636363635,
+      "CI low": 0.001415378151890947,
+      "CI high": 0.006114902063513359
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L1H0",
+      "measure": "produces",
+      "rate": 0.019176136363636364,
+      "CI low": 0.01278182679868325,
+      "CI high": 0.027212958354073325
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L1H1",
+      "measure": "restores",
+      "rate": 0.0035511363636363635,
+      "CI low": 0.0012818877551020408,
+      "CI high": 0.006149139700466951
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L1H1",
+      "measure": "produces",
+      "rate": 0.014914772727272728,
+      "CI low": 0.009759668204790156,
+      "CI high": 0.020508803637964743
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L1MLP",
+      "measure": "restores",
+      "rate": 0.2897727272727273,
+      "CI low": 0.2683916669238127,
+      "CI high": 0.31326676248729174
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L1MLP",
+      "measure": "produces",
+      "rate": 0.5866477272727273,
+      "CI low": 0.5519068181818182,
+      "CI high": 0.6223034405334738
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "resid_post_1",
+      "measure": "restores",
+      "rate": 0.9715909090909091,
+      "CI low": 0.9611468094785734,
+      "CI high": 0.9801196134451569
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "resid_post_1",
+      "measure": "produces",
+      "rate": 0.9978693181818182,
+      "CI low": 0.9953701556380128,
+      "CI high": 1.0
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L2H0",
+      "measure": "restores",
+      "rate": 0.0014204545454545455,
+      "CI low": 0.0,
+      "CI high": 0.003599906812649792
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L2H0",
+      "measure": "produces",
+      "rate": 0.014914772727272728,
+      "CI low": 0.010211247898714543,
+      "CI high": 0.020059808216000043
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L2H1",
+      "measure": "restores",
+      "rate": 0.005681818181818182,
+      "CI low": 0.002741732664890493,
+      "CI high": 0.008764296772486975
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L2H1",
+      "measure": "produces",
+      "rate": 0.020596590909090908,
+      "CI low": 0.012861736334405145,
+      "CI high": 0.029611299116375257
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L2MLP",
+      "measure": "restores",
+      "rate": 0.3096590909090909,
+      "CI low": 0.2854541354264292,
+      "CI high": 0.3333333333333333
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L2MLP",
+      "measure": "produces",
+      "rate": 0.5390625,
+      "CI low": 0.5126256510968863,
+      "CI high": 0.562501311922754
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "resid_post_2",
+      "measure": "restores",
+      "rate": 0.9786931818181818,
+      "CI low": 0.9681175405569717,
+      "CI high": 0.9872021821218503
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "resid_post_2",
+      "measure": "produces",
+      "rate": 0.9985795454545454,
+      "CI low": 0.9968630892717584,
+      "CI high": 1.0
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L3H0",
+      "measure": "restores",
+      "rate": 0.002130681818181818,
+      "CI low": 0.0,
+      "CI high": 0.004417296596144382
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L3H0",
+      "measure": "produces",
+      "rate": 0.020596590909090908,
+      "CI low": 0.013130939332436692,
+      "CI high": 0.029434547316074297
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L3H1",
+      "measure": "restores",
+      "rate": 0.004971590909090909,
+      "CI low": 0.002202281687697009,
+      "CI high": 0.008182190760059611
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L3H1",
+      "measure": "produces",
+      "rate": 0.014914772727272728,
+      "CI low": 0.00910619103461768,
+      "CI high": 0.021535142760661933
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L3MLP",
+      "measure": "restores",
+      "rate": 0.7563920454545454,
+      "CI low": 0.7349217329932617,
+      "CI high": 0.7779934978987112
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "L3MLP",
+      "measure": "produces",
+      "rate": 0.8693181818181818,
+      "CI low": 0.8511479846240322,
+      "CI high": 0.8878844715154764
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "resid_post_3",
+      "measure": "restores",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    },
+    {
+      "edit": "whole-context swap",
+      "events": "all validation",
+      "flips": 1408,
+      "site": "resid_post_3",
+      "measure": "produces",
+      "rate": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0
+    }
+  ],
+  "logit_lens": [
+    {
+      "point": "resid_pre_0",
+      "mean lens Delta": -0.34182159608979984,
+      "share of events whose sign is fixed from here": 0.34782608695652173,
+      "mean increase from the previous point": -0.34182159608979984
+    },
+    {
+      "point": "resid_post_0",
+      "mean lens Delta": 1.3585211189009516,
+      "share of events whose sign is fixed from here": 0.4102079395085066,
+      "mean increase from the previous point": 1.7003427149907515
+    },
+    {
+      "point": "resid_post_1",
+      "mean lens Delta": 3.2597743634465512,
+      "share of events whose sign is fixed from here": 0.19659735349716445,
+      "mean increase from the previous point": 1.9012532445455994
+    },
+    {
+      "point": "resid_post_2",
+      "mean lens Delta": 3.970851990304507,
+      "share of events whose sign is fixed from here": 0.02835538752362949,
+      "mean increase from the previous point": 0.7110776268579558
+    },
+    {
+      "point": "resid_post_3",
+      "mean lens Delta": 5.893720604606071,
+      "share of events whose sign is fixed from here": 0.017013232514177693,
+      "mean increase from the previous point": 1.9228686143015643
+    }
+  ],
+  "causal_decision_layer": [
+    {
+      "edit": "player removal",
+      "flips": 11,
+      "components restored": "layers 0..0",
+      "share of flips restored": 0.5454545454545454,
+      "CI low": 0.09090909090909091,
+      "CI high": 0.875,
+      "share first restored at this layer": 0.5454545454545454
+    },
+    {
+      "edit": "player removal",
+      "flips": 11,
+      "components restored": "layers 0..1",
+      "share of flips restored": 0.7272727272727273,
+      "CI low": 0.3,
+      "CI high": 1.0,
+      "share first restored at this layer": 0.18181818181818182
+    },
+    {
+      "edit": "player removal",
+      "flips": 11,
+      "components restored": "layers 0..2",
+      "share of flips restored": 0.8181818181818182,
+      "CI low": 0.5,
+      "CI high": 1.0,
+      "share first restored at this layer": 0.09090909090909091
+    },
+    {
+      "edit": "player removal",
+      "flips": 11,
+      "components restored": "layers 0..3",
+      "share of flips restored": 0.9090909090909091,
+      "CI low": 0.7,
+      "CI high": 1.0,
+      "share first restored at this layer": 0.09090909090909091
+    },
+    {
+      "edit": "player removal",
+      "flips": 11,
+      "components restored": "never (embedding path needed)",
+      "share of flips restored": NaN,
+      "CI low": NaN,
+      "CI high": NaN,
+      "share first restored at this layer": 0.09090909090909091
+    },
+    {
+      "edit": "partner swap",
+      "flips": 23,
+      "components restored": "layers 0..0",
+      "share of flips restored": 0.7391304347826086,
+      "CI low": 0.5833333333333334,
+      "CI high": 0.9130434782608695,
+      "share first restored at this layer": 0.7391304347826086
+    },
+    {
+      "edit": "partner swap",
+      "flips": 23,
+      "components restored": "layers 0..1",
+      "share of flips restored": 0.8260869565217391,
+      "CI low": 0.6428571428571429,
+      "CI high": 0.967741935483871,
+      "share first restored at this layer": 0.08695652173913043
+    },
+    {
+      "edit": "partner swap",
+      "flips": 23,
+      "components restored": "layers 0..2",
+      "share of flips restored": 0.8695652173913043,
+      "CI low": 0.7036111111111111,
+      "CI high": 1.0,
+      "share first restored at this layer": 0.08695652173913043
+    },
+    {
+      "edit": "partner swap",
+      "flips": 23,
+      "components restored": "layers 0..3",
+      "share of flips restored": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "share first restored at this layer": 0.08695652173913043
+    },
+    {
+      "edit": "partner swap",
+      "flips": 23,
+      "components restored": "never (embedding path needed)",
+      "share of flips restored": NaN,
+      "CI low": NaN,
+      "CI high": NaN,
+      "share first restored at this layer": 0.0
+    },
+    {
+      "edit": "whole-context swap",
+      "flips": 428,
+      "components restored": "layers 0..0",
+      "share of flips restored": 0.5957943925233645,
+      "CI low": 0.565440777972028,
+      "CI high": 0.635573868981641,
+      "share first restored at this layer": 0.5957943925233645
+    },
+    {
+      "edit": "whole-context swap",
+      "flips": 428,
+      "components restored": "layers 0..1",
+      "share of flips restored": 0.8808411214953271,
+      "CI low": 0.8533333333333334,
+      "CI high": 0.9098594571722178,
+      "share first restored at this layer": 0.29205607476635514
+    },
+    {
+      "edit": "whole-context swap",
+      "flips": 428,
+      "components restored": "layers 0..2",
+      "share of flips restored": 0.9228971962616822,
+      "CI low": 0.8807750392069547,
+      "CI high": 0.9565217391304348,
+      "share first restored at this layer": 0.04906542056074766
+    },
+    {
+      "edit": "whole-context swap",
+      "flips": 428,
+      "components restored": "layers 0..3",
+      "share of flips restored": 0.969626168224299,
+      "CI low": 0.9499960815047022,
+      "CI high": 0.9852518219677252,
+      "share first restored at this layer": 0.0397196261682243
+    },
+    {
+      "edit": "whole-context swap",
+      "flips": 428,
+      "components restored": "never (embedding path needed)",
+      "share of flips restored": NaN,
+      "CI low": NaN,
+      "CI high": NaN,
+      "share first restored at this layer": 0.02336448598130841
+    }
+  ],
+  "self_repair": [
+    {
+      "MLP": "L0MLP",
+      "measure": "Delta",
+      "total change": -7.510950777165606,
+      "total CI low": -8.229120630048483,
+      "total CI high": -6.47313710793218,
+      "direct change": -0.5484247226514528,
+      "direct CI low": -0.6056339723908347,
+      "direct CI high": -0.46444691847265906,
+      "direct - total (compensation)": 6.962526054514153,
+      "comp CI low": 5.98924952039632,
+      "comp CI high": 7.6600659621865965,
+      "total / direct": 13.695499978288057
+    },
+    {
+      "MLP": "L0MLP",
+      "measure": "identity effect",
+      "total change": 0.09540935819845343,
+      "total CI low": -0.010943991192441124,
+      "total CI high": 0.21356357700120532,
+      "direct change": -0.00469765881171524,
+      "direct CI low": -0.016844671441856324,
+      "direct CI high": 0.006796924309922195,
+      "direct - total (compensation)": -0.10010701701016868,
+      "comp CI low": -0.22816496578530526,
+      "comp CI high": 0.01135416045536076,
+      "total / direct": -20.309980358836864
+    },
+    {
+      "MLP": "L1MLP",
+      "measure": "Delta",
+      "total change": -5.419480100076906,
+      "total CI low": -5.814296724553429,
+      "total CI high": -5.030850678536491,
+      "direct change": -1.1213019376441076,
+      "direct CI low": -1.2239471385111131,
+      "direct CI high": -1.0043029846325686,
+      "direct - total (compensation)": 4.298178162432799,
+      "comp CI low": 3.875976855093862,
+      "comp CI high": 4.72764258024445,
+      "total / direct": 4.833203188307524
+    },
+    {
+      "MLP": "L1MLP",
+      "measure": "identity effect",
+      "total change": -0.0668514109373318,
+      "total CI low": -0.21158393693730584,
+      "total CI high": 0.055126615844634526,
+      "direct change": -0.012198430603979215,
+      "direct CI low": -0.03328743678228023,
+      "direct CI high": 0.010706249731613651,
+      "direct - total (compensation)": 0.054652980333352585,
+      "comp CI low": -0.07264346402467566,
+      "comp CI high": 0.20123034925927968,
+      "total / direct": 5.480328831442004
+    },
+    {
+      "MLP": "L2MLP",
+      "measure": "Delta",
+      "total change": -4.711469212191317,
+      "total CI low": -5.024971381360991,
+      "total CI high": -4.336120891934748,
+      "direct change": -1.528990660757108,
+      "direct CI low": -1.5750489700669836,
+      "direct CI high": -1.485128615104748,
+      "direct - total (compensation)": 3.1824785514342087,
+      "comp CI low": 2.8146124111869555,
+      "comp CI high": 3.4728818822123007,
+      "total / direct": 3.0814244541286775
+    },
+    {
+      "MLP": "L2MLP",
+      "measure": "identity effect",
+      "total change": -0.10208143588218888,
+      "total CI low": -0.21684496829612546,
+      "total CI high": 0.0002555623977582769,
+      "direct change": -0.05248250486945385,
+      "direct CI low": -0.07622382360743135,
+      "direct CI high": -0.03566405269115686,
+      "direct - total (compensation)": 0.04959893101273503,
+      "comp CI low": -0.040532971817359965,
+      "comp CI high": 0.14921892217319144,
+      "total / direct": 1.945056474269064
+    },
+    {
+      "MLP": "L3MLP",
+      "measure": "Delta",
+      "total change": -5.8393465796298925,
+      "total CI low": -5.994600473735464,
+      "total CI high": -5.613065696673107,
+      "direct change": -5.8393465796298925,
+      "direct CI low": -5.994600473735464,
+      "direct CI high": -5.613065696673107,
+      "direct - total (compensation)": 0.0,
+      "comp CI low": 0.0,
+      "comp CI high": 0.0,
+      "total / direct": 1.0
+    },
+    {
+      "MLP": "L3MLP",
+      "measure": "identity effect",
+      "total change": -0.014645290186026597,
+      "total CI low": -0.048013691335658554,
+      "total CI high": 0.025236115516922456,
+      "direct change": -0.014645290186026597,
+      "direct CI low": -0.048013691335658554,
+      "direct CI high": 0.025236115516922456,
+      "direct - total (compensation)": 0.0,
+      "comp CI low": 0.0,
+      "comp CI high": 0.0,
+      "total / direct": 1.0
+    }
+  ],
+  "redundancy": [
+    {
+      "pair": "L0MLP+L1MLP",
+      "measure": "Delta",
+      "joint change": -11.421696017392417,
+      "sum of single changes": -12.930430877242513,
+      "joint - sum": 1.5087348598500956,
+      "CI low": 0.6918059816678146,
+      "CI high": 2.266336627554216
+    },
+    {
+      "pair": "L0MLP+L1MLP",
+      "measure": "identity effect",
+      "joint change": 0.16708937642254315,
+      "sum of single changes": 0.02855794726112164,
+      "joint - sum": 0.13853142916142153,
+      "CI low": -0.011648665653108611,
+      "CI high": 0.30783272783940835
+    },
+    {
+      "pair": "L0MLP+L2MLP",
+      "measure": "Delta",
+      "joint change": -11.544026951877742,
+      "sum of single changes": -12.222419989356922,
+      "joint - sum": 0.6783930374791807,
+      "CI low": 0.03576369508493835,
+      "CI high": 1.2592835521328298
+    },
+    {
+      "pair": "L0MLP+L2MLP",
+      "measure": "identity effect",
+      "joint change": 0.1285019647646942,
+      "sum of single changes": -0.006672077683735435,
+      "joint - sum": 0.13517404244842962,
+      "CI low": -0.012838869725720176,
+      "CI high": 0.28220408532365
+    },
+    {
+      "pair": "L0MLP+L3MLP",
+      "measure": "Delta",
+      "joint change": -11.104779397748368,
+      "sum of single changes": -13.3502973567955,
+      "joint - sum": 2.24551795904713,
+      "CI low": 1.7440383282546172,
+      "CI high": 2.642414500161135
+    },
+    {
+      "pair": "L0MLP+L3MLP",
+      "measure": "identity effect",
+      "joint change": 0.1180181208441636,
+      "sum of single changes": 0.08076406801242685,
+      "joint - sum": 0.037254052831736766,
+      "CI low": -0.05159506994826859,
+      "CI high": 0.10753375826224915
+    },
+    {
+      "pair": "L1MLP+L2MLP",
+      "measure": "Delta",
+      "joint change": -9.974550433555487,
+      "sum of single changes": -10.130949312268223,
+      "joint - sum": 0.15639887871273525,
+      "CI low": -0.28451898650394714,
+      "CI high": 0.6075051986080949
+    },
+    {
+      "pair": "L1MLP+L2MLP",
+      "measure": "identity effect",
+      "joint change": 0.040247812050276756,
+      "sum of single changes": -0.16893284681952067,
+      "joint - sum": 0.20918065886979742,
+      "CI low": 0.06651597529210772,
+      "CI high": 0.38687629883008934
+    },
+    {
+      "pair": "L1MLP+L3MLP",
+      "measure": "Delta",
+      "joint change": -9.540467814822279,
+      "sum of single changes": -11.258826679706798,
+      "joint - sum": 1.7183588648845207,
+      "CI low": 1.4024986117537732,
+      "CI high": 2.0173583620751785
+    },
+    {
+      "pair": "L1MLP+L3MLP",
+      "measure": "identity effect",
+      "joint change": 0.05653518877768562,
+      "sum of single changes": -0.0814967011233584,
+      "joint - sum": 0.138031889901044,
+      "CI low": 0.04749496770372083,
+      "CI high": 0.24765255381534534
+    },
+    {
+      "pair": "L2MLP+L3MLP",
+      "measure": "Delta",
+      "joint change": -9.601353729168386,
+      "sum of single changes": -10.55081579182121,
+      "joint - sum": 0.9494620626528232,
+      "CI low": 0.6188293440871329,
+      "CI high": 1.2522331988605842
+    },
+    {
+      "pair": "L2MLP+L3MLP",
+      "measure": "identity effect",
+      "joint change": 0.047044874688290016,
+      "sum of single changes": -0.11672672606821546,
+      "joint - sum": 0.1637716007565055,
+      "CI low": 0.03695411127279489,
+      "CI high": 0.295086993366907
+    }
+  ],
+  "cross_model_behaviour": [
+    {
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C1 mean Delta",
+      "mean": 6.016054401635448,
+      "CI low": 5.631219136025684,
+      "CI high": 6.475320376520987
+    },
+    {
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C1 share Delta > 0",
+      "mean": 0.9829867674858223,
+      "CI low": 0.9699693546005022,
+      "CI high": 0.9939396231605006
+    },
+    {
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads",
+      "measure": "identity removal effect",
+      "mean": -0.16681946235196576,
+      "CI low": -0.28532257324568033,
+      "CI high": -0.04697231529217914
+    },
+    {
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C2 |partner| - |random vector|",
+      "mean": -0.08469378011607492,
+      "CI low": -0.18385664193074291,
+      "CI high": 0.03577835048974535
+    },
+    {
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C3 mean r",
+      "mean": 0.05953279306654566,
+      "CI low": -0.008380675160500565,
+      "CI high": 0.12411407020538989
+    },
+    {
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C4 |I| - |I_floor|",
+      "mean": 0.7204182987965798,
+      "CI low": 0.6367669867479797,
+      "CI high": 0.8244801080619786
+    },
+    {
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C1 mean Delta",
+      "mean": 5.957347679904368,
+      "CI low": 5.584924247091091,
+      "CI high": 6.406661986056881
+    },
+    {
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C1 share Delta > 0",
+      "mean": 0.9848771266540642,
+      "CI low": 0.9799172024420552,
+      "CI high": 0.9901960784313726
+    },
+    {
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads",
+      "measure": "identity removal effect",
+      "mean": -0.08124950522511128,
+      "CI low": -0.17063350355177004,
+      "CI high": 0.05049100571383329
+    },
+    {
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C2 |partner| - |random vector|",
+      "mean": 0.004077313823488124,
+      "CI low": -0.10597932859720625,
+      "CI high": 0.1287574712716588
+    },
+    {
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C3 mean r",
+      "mean": 0.08895189850657864,
+      "CI low": 0.04944791005131454,
+      "CI high": 0.1421167383036063
+    },
+    {
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C4 |I| - |I_floor|",
+      "mean": 0.7594880494931695,
+      "CI low": 0.6873174032745509,
+      "CI high": 0.8509711769440718
+    },
+    {
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C1 mean Delta",
+      "mean": 6.24676479596384,
+      "CI low": 5.875741899785981,
+      "CI high": 6.637507364013156
+    },
+    {
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C1 share Delta > 0",
+      "mean": 0.9754253308128544,
+      "CI low": 0.9587222629745094,
+      "CI high": 0.9926338560285993
+    },
+    {
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads",
+      "measure": "identity removal effect",
+      "mean": -0.15178521915509705,
+      "CI low": -0.26218256345042795,
+      "CI high": -0.021742521884835105
+    },
+    {
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C2 |partner| - |random vector|",
+      "mean": -0.06939975535655517,
+      "CI low": -0.21606004792419228,
+      "CI high": 0.11028157616347652
+    },
+    {
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C3 mean r",
+      "mean": 0.08511437049103408,
+      "CI low": 0.028765763360474605,
+      "CI high": 0.14515595150663615
+    },
+    {
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C4 |I| - |I_floor|",
+      "mean": 0.9343773001815511,
+      "CI low": 0.8042241439017012,
+      "CI high": 1.0697051738220373
+    },
+    {
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C1 mean Delta",
+      "mean": 5.8937205555082945,
+      "CI low": 5.612257845861797,
+      "CI high": 6.2341350915817415
+    },
+    {
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C1 share Delta > 0",
+      "mean": 0.9810964083175804,
+      "CI low": 0.9694240305652227,
+      "CI high": 0.9920640155798467
+    },
+    {
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads",
+      "measure": "identity removal effect",
+      "mean": -0.16719821765878023,
+      "CI low": -0.2646787413409533,
+      "CI high": -0.055820892709930375
+    },
+    {
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C2 |partner| - |random vector|",
+      "mean": -0.08412091400199667,
+      "CI low": -0.17654079794445243,
+      "CI high": 0.03188585656755304
+    },
+    {
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C3 mean r",
+      "mean": 0.07580058304272502,
+      "CI low": 0.01870197330302603,
+      "CI high": 0.13005370247916104
+    },
+    {
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C4 |I| - |I_floor|",
+      "mean": 0.786938710254397,
+      "CI low": 0.7171015077435017,
+      "CI high": 0.8792952216868746
+    },
+    {
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C1 mean Delta",
+      "mean": 6.40420899296528,
+      "CI low": 5.970098479219798,
+      "CI high": 6.872529322501268
+    },
+    {
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C1 share Delta > 0",
+      "mean": 0.9754253308128544,
+      "CI low": 0.9600599078341013,
+      "CI high": 0.9908511586452763
+    },
+    {
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads",
+      "measure": "identity removal effect",
+      "mean": -0.17571199047317576,
+      "CI low": -0.2810240296526897,
+      "CI high": -0.033120050490997276
+    },
+    {
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C2 |partner| - |random vector|",
+      "mean": -0.061248010774415926,
+      "CI low": -0.21187934360070831,
+      "CI high": 0.098942774500818
+    },
+    {
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C3 mean r",
+      "mean": 0.091833002127884,
+      "CI low": 0.01452534096003378,
+      "CI high": 0.17477791892701577
+    },
+    {
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C4 |I| - |I_floor|",
+      "mean": 0.7986439328168876,
+      "CI low": 0.6666815574534914,
+      "CI high": 0.9416737078181487
+    },
+    {
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads",
+      "measure": "C1 mean Delta",
+      "mean": 5.983107551030941,
+      "CI low": 5.681552572567983,
+      "CI high": 6.39057855998957
+    },
+    {
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads",
+      "measure": "C1 share Delta > 0",
+      "mean": 0.9829867674858223,
+      "CI low": 0.9742326753290022,
+      "CI high": 0.9901385523924894
+    },
+    {
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads",
+      "measure": "identity removal effect",
+      "mean": -0.0596900468512609,
+      "CI low": -0.16158546958540282,
+      "CI high": 0.0509879874604681
+    },
+    {
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads",
+      "measure": "C2 |partner| - |random vector|",
+      "mean": -0.2008652445668309,
+      "CI low": -0.30065548672242426,
+      "CI high": -0.08121626878871255
+    },
+    {
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads",
+      "measure": "C3 mean r",
+      "mean": 0.08059167063438472,
+      "CI low": 0.026394081100739385,
+      "CI high": 0.12938336416377044
+    },
+    {
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads",
+      "measure": "C4 |I| - |I_floor|",
+      "mean": 0.8435075330937066,
+      "CI low": 0.7250208934340083,
+      "CI high": 0.9438326801681226
+    },
+    {
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C1 mean Delta",
+      "mean": 6.198246774128119,
+      "CI low": 5.771154703663918,
+      "CI high": 6.702967197736074
+    },
+    {
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C1 share Delta > 0",
+      "mean": 0.9848771266540642,
+      "CI low": 0.974757281553398,
+      "CI high": 0.9950988349885409
+    },
+    {
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads",
+      "measure": "identity removal effect",
+      "mean": -0.12270009050071803,
+      "CI low": -0.19626440213066368,
+      "CI high": -0.01589996153230659
+    },
+    {
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C2 |partner| - |random vector|",
+      "mean": -0.1207236079164624,
+      "CI low": -0.2696324488404229,
+      "CI high": 0.058269981632456294
+    },
+    {
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C3 mean r",
+      "mean": 0.05781259876791608,
+      "CI low": -0.003453177867903794,
+      "CI high": 0.11507314459582667
+    },
+    {
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads",
+      "measure": "C4 |I| - |I_floor|",
+      "mean": 0.8381545980283128,
+      "CI low": 0.6980030636649047,
+      "CI high": 0.9699647633562312
+    }
+  ],
+  "cross_model_profile": [
+    {
+      "contrast": "removal",
+      "site": "resid_pre_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_0",
+      "recovery": 0.048560094623404604,
+      "CI low": 0.024618124315455292,
+      "CI high": 0.08435881472310738,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_0",
+      "recovery": 0.661022485365212,
+      "CI low": 0.593720277209081,
+      "CI high": 0.7090883055825334,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_1",
+      "recovery": 0.00630851721800494,
+      "CI low": -0.01613287196935656,
+      "CI high": 0.02652817721212348,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_1",
+      "recovery": 0.5065545760751535,
+      "CI low": 0.46410068372034047,
+      "CI high": 0.5583571799113315,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_1",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_2",
+      "recovery": -0.0211014543848699,
+      "CI low": -0.031399910202894656,
+      "CI high": -0.011406488784570606,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_2",
+      "recovery": 0.40254357318806633,
+      "CI low": 0.32584057745841394,
+      "CI high": 0.48157845786596126,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_2",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_3",
+      "recovery": -0.009392769945892495,
+      "CI low": -0.022352504482114233,
+      "CI high": 0.005745159111042258,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_3",
+      "recovery": 0.4664577909770554,
+      "CI low": 0.4206430923636043,
+      "CI high": 0.5254403309374731,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_pre_0",
+      "recovery": 0.98246831005147,
+      "CI low": 0.9663532409104261,
+      "CI high": 0.9956101441300805,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_0",
+      "recovery": -0.006537950033932223,
+      "CI low": -0.016791997962296534,
+      "CI high": 0.008292256811480212,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_0",
+      "recovery": 0.575399875674258,
+      "CI low": 0.5390868097045728,
+      "CI high": 0.611128087987168,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_0",
+      "recovery": 0.9833646010904855,
+      "CI low": 0.9720351409256099,
+      "CI high": 0.9914286645241142,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_1",
+      "recovery": 0.0014904995430513584,
+      "CI low": -0.005867727392368837,
+      "CI high": 0.008844647539796656,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_1",
+      "recovery": 0.45856264808501057,
+      "CI low": 0.42902935652390684,
+      "CI high": 0.49630638657180604,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_1",
+      "recovery": 0.992267360974639,
+      "CI low": 0.987222163027003,
+      "CI high": 0.997829444215693,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_2",
+      "recovery": 0.009949638657232284,
+      "CI low": -0.004006158035286052,
+      "CI high": 0.021797229107572647,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_2",
+      "recovery": 0.4302962433776777,
+      "CI low": 0.38416832343308993,
+      "CI high": 0.4741458229264518,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_2",
+      "recovery": 0.9941927667977909,
+      "CI low": 0.99037989258186,
+      "CI high": 0.9971899295314088,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_3",
+      "recovery": 0.015660117165302374,
+      "CI low": 0.003987050838131006,
+      "CI high": 0.025056174028525814,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_3",
+      "recovery": 0.6640878891343373,
+      "CI low": 0.6333025276693985,
+      "CI high": 0.6915269742330111,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 100",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_pre_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_0",
+      "recovery": 0.043819672707525056,
+      "CI low": 0.01983978115862142,
+      "CI high": 0.06821325921548212,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_0",
+      "recovery": 0.6565342986263157,
+      "CI low": 0.5959832847813006,
+      "CI high": 0.6964603644625826,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_1",
+      "recovery": -0.0026465193250881733,
+      "CI low": -0.0192703892289973,
+      "CI high": 0.012185269787490842,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_1",
+      "recovery": 0.3826223677255081,
+      "CI low": 0.3130249830245105,
+      "CI high": 0.44760050737015183,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_1",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_2",
+      "recovery": -0.009716155417348197,
+      "CI low": -0.025390792993386556,
+      "CI high": 0.0030011682737791446,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_2",
+      "recovery": 0.3936419041896409,
+      "CI low": 0.3349844570413838,
+      "CI high": 0.4661140551340282,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_2",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_3",
+      "recovery": 0.00897855306287508,
+      "CI low": -0.016506705473400548,
+      "CI high": 0.026102259559904743,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_3",
+      "recovery": 0.492591272941499,
+      "CI low": 0.46839803873250363,
+      "CI high": 0.5337939644278,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_pre_0",
+      "recovery": 0.9816758198469712,
+      "CI low": 0.9714985743985455,
+      "CI high": 0.9892966515561267,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_0",
+      "recovery": -0.008162279209633975,
+      "CI low": -0.014888425603735047,
+      "CI high": 0.001157411463875121,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_0",
+      "recovery": 0.6684338647764907,
+      "CI low": 0.6330335224359138,
+      "CI high": 0.7064137331498199,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_0",
+      "recovery": 0.9894444113390015,
+      "CI low": 0.9803361299234127,
+      "CI high": 0.9972910986320535,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_1",
+      "recovery": 0.0014763378889338396,
+      "CI low": -0.006920980458985434,
+      "CI high": 0.008882379009180636,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_1",
+      "recovery": 0.43518123705780654,
+      "CI low": 0.3813217004426657,
+      "CI high": 0.49264675264657065,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_1",
+      "recovery": 0.9969691723448313,
+      "CI low": 0.9913158988678064,
+      "CI high": 1.00173873851707,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_2",
+      "recovery": 0.012770910861493763,
+      "CI low": 0.008232488659822224,
+      "CI high": 0.015899891668814656,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_2",
+      "recovery": 0.44585700087238234,
+      "CI low": 0.40662136029096996,
+      "CI high": 0.4783320010597977,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_2",
+      "recovery": 0.9953265638765523,
+      "CI low": 0.9907526758054304,
+      "CI high": 0.9987466201207637,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_3",
+      "recovery": -0.007686260505630037,
+      "CI low": -0.01601505784351619,
+      "CI high": 0.003436830068838591,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_3",
+      "recovery": 0.6718263234997005,
+      "CI low": 0.6381580534052729,
+      "CI high": 0.6966810534849438,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 101",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_pre_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_0",
+      "recovery": 0.03195313318064726,
+      "CI low": 0.00822318383381109,
+      "CI high": 0.07562608953605227,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_0",
+      "recovery": 0.6102349273730222,
+      "CI low": 0.5410687709885683,
+      "CI high": 0.6990090636463475,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_1",
+      "recovery": 0.0014011178163066856,
+      "CI low": -0.014671485025672448,
+      "CI high": 0.016053074256325062,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_1",
+      "recovery": 0.44732146100397147,
+      "CI low": 0.39151773964413955,
+      "CI high": 0.5189843579197068,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_1",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_2",
+      "recovery": -0.0286102642555003,
+      "CI low": -0.06138167512916011,
+      "CI high": 0.0041536691343463375,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_2",
+      "recovery": 0.46873806713770494,
+      "CI low": 0.414892842451044,
+      "CI high": 0.5108387993472047,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_2",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_3",
+      "recovery": 0.0170289030557899,
+      "CI low": -0.008039763331165734,
+      "CI high": 0.044559781463554854,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_3",
+      "recovery": 0.567828138073371,
+      "CI low": 0.5406209944702847,
+      "CI high": 0.5977589053586593,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_pre_0",
+      "recovery": 0.9779393616255436,
+      "CI low": 0.9716167819066923,
+      "CI high": 0.9857702405868825,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_0",
+      "recovery": 0.005575330284475694,
+      "CI low": -0.00044810347225681513,
+      "CI high": 0.012465959477401437,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_0",
+      "recovery": 0.6085156177635092,
+      "CI low": 0.5598084966300005,
+      "CI high": 0.6565194572978627,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_0",
+      "recovery": 0.9889320079071375,
+      "CI low": 0.9830125606545207,
+      "CI high": 0.9960297239897977,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_1",
+      "recovery": 0.01835211453669418,
+      "CI low": 0.009567331156949252,
+      "CI high": 0.027014053401746164,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_1",
+      "recovery": 0.23553823664843015,
+      "CI low": 0.1582301436691849,
+      "CI high": 0.31410770586137915,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_1",
+      "recovery": 0.9954228702258677,
+      "CI low": 0.9903215902183996,
+      "CI high": 1.0013899897629341,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_2",
+      "recovery": 0.011419180594695346,
+      "CI low": 0.0016665386520428995,
+      "CI high": 0.023105369750849362,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_2",
+      "recovery": 0.5574003040650349,
+      "CI low": 0.5130525006751201,
+      "CI high": 0.5968125750287601,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_2",
+      "recovery": 0.9972928119753842,
+      "CI low": 0.9924292775350161,
+      "CI high": 1.0015653799315762,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_3",
+      "recovery": 0.00047173211344465064,
+      "CI low": -0.008022985354594354,
+      "CI high": 0.006885382252793039,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_3",
+      "recovery": 0.7001009135755909,
+      "CI low": 0.6771766950572298,
+      "CI high": 0.7192596174504144,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 102",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_pre_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_0",
+      "recovery": 0.051903876804285376,
+      "CI low": 0.014217648149995462,
+      "CI high": 0.07701870410069275,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_0",
+      "recovery": 0.5983501076473904,
+      "CI low": 0.5331155169221607,
+      "CI high": 0.6573746623322401,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_1",
+      "recovery": 0.0027740666671995265,
+      "CI low": -0.020386047683137,
+      "CI high": 0.02748702462292029,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_1",
+      "recovery": 0.4785333819641808,
+      "CI low": 0.4239886252152217,
+      "CI high": 0.5115064774395147,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_1",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_2",
+      "recovery": -0.013819777699164353,
+      "CI low": -0.030995629783604893,
+      "CI high": 0.00104679833116356,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_2",
+      "recovery": 0.4134198800651976,
+      "CI low": 0.3759159946885615,
+      "CI high": 0.46138512254832037,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_2",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_3",
+      "recovery": 0.009401516775104788,
+      "CI low": -0.012071302593384813,
+      "CI high": 0.028701208101976138,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_3",
+      "recovery": 0.5717091607850859,
+      "CI low": 0.5488408555354258,
+      "CI high": 0.5978126846775262,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_pre_0",
+      "recovery": 0.9769228511317394,
+      "CI low": 0.9601888037566957,
+      "CI high": 0.9914126813567581,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_0",
+      "recovery": -0.000332877855193906,
+      "CI low": -0.010856529180629501,
+      "CI high": 0.01496475708250807,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_0",
+      "recovery": 0.6203508541712381,
+      "CI low": 0.5887208381970396,
+      "CI high": 0.6491736400955692,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_0",
+      "recovery": 0.9877742192946848,
+      "CI low": 0.9734572026968015,
+      "CI high": 1.0036839242003797,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_1",
+      "recovery": 0.0118441968056986,
+      "CI low": 0.005790871860839508,
+      "CI high": 0.020515663697036807,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_1",
+      "recovery": 0.4291649395272229,
+      "CI low": 0.38006329676578543,
+      "CI high": 0.48617684758960544,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_1",
+      "recovery": 0.9927470492634531,
+      "CI low": 0.9847534743408318,
+      "CI high": 1.000838188141114,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_2",
+      "recovery": 0.004179747708220106,
+      "CI low": -0.0025777760044646066,
+      "CI high": 0.012019453319635413,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_2",
+      "recovery": 0.4234811194409264,
+      "CI low": 0.4023111083579161,
+      "CI high": 0.44572558845506016,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_2",
+      "recovery": 0.9931784452463429,
+      "CI low": 0.9891478026746372,
+      "CI high": 0.9972176998474657,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_3",
+      "recovery": 0.007254422768027122,
+      "CI low": -0.001667211885200028,
+      "CI high": 0.015350757145269714,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_3",
+      "recovery": 0.7072066069531115,
+      "CI low": 0.6830728296700348,
+      "CI high": 0.7257240952639898,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 103",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_pre_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_0",
+      "recovery": 0.05297895215403144,
+      "CI low": 0.008519524864190572,
+      "CI high": 0.08512638641215615,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_0",
+      "recovery": 0.626821355406972,
+      "CI low": 0.5446517676440359,
+      "CI high": 0.694855104041647,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_1",
+      "recovery": -0.014216633332251804,
+      "CI low": -0.027837947491828014,
+      "CI high": -0.004729901014825381,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_1",
+      "recovery": 0.3212693599256802,
+      "CI low": 0.27321640309515965,
+      "CI high": 0.360657557823058,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_1",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_2",
+      "recovery": 0.017627918623666916,
+      "CI low": 0.0016775622414612627,
+      "CI high": 0.031949631823693335,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_2",
+      "recovery": 0.4164582058699531,
+      "CI low": 0.3663312150981511,
+      "CI high": 0.4903171698827193,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_2",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_3",
+      "recovery": -0.008513612787200139,
+      "CI low": -0.0333828669165089,
+      "CI high": 0.014756262355468983,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_3",
+      "recovery": 0.5666844958788565,
+      "CI low": 0.5376495797246673,
+      "CI high": 0.6035214902870828,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_pre_0",
+      "recovery": 0.9815173352562045,
+      "CI low": 0.9693088015435648,
+      "CI high": 0.991593454875829,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_0",
+      "recovery": 0.0048920015582955625,
+      "CI low": -0.003508262845760411,
+      "CI high": 0.013174148828692606,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_0",
+      "recovery": 0.5603843296126917,
+      "CI low": 0.5025911023652331,
+      "CI high": 0.6046969204872261,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_0",
+      "recovery": 0.9919755356586465,
+      "CI low": 0.9824542402209041,
+      "CI high": 1.003236566882974,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_1",
+      "recovery": 0.0002367603346835315,
+      "CI low": -0.008949484275925004,
+      "CI high": 0.008886335437299702,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_1",
+      "recovery": 0.27172689160276353,
+      "CI low": 0.23053019293660398,
+      "CI high": 0.31402303121098096,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_1",
+      "recovery": 0.9971780342187363,
+      "CI low": 0.9887528109605942,
+      "CI high": 1.00741148184584,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_2",
+      "recovery": 0.01342189695598479,
+      "CI low": -0.0009568851865285805,
+      "CI high": 0.024695746047641375,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_2",
+      "recovery": 0.3708198138401006,
+      "CI low": 0.34087788299609584,
+      "CI high": 0.39448810468476175,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_2",
+      "recovery": 0.9957182237500243,
+      "CI low": 0.9900810581436374,
+      "CI high": 1.001418780329046,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_3",
+      "recovery": -0.02112584772645638,
+      "CI low": -0.02906161029789218,
+      "CI high": -0.01378095792564402,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_3",
+      "recovery": 0.7076064879786735,
+      "CI low": 0.6789297975678883,
+      "CI high": 0.7290271545033795,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "SEL-4L seed 104",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_pre_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_0",
+      "recovery": 0.07532634180732431,
+      "CI low": 0.05546897198783405,
+      "CI high": 0.10890404745032142,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_0",
+      "recovery": 0.7987990074278627,
+      "CI low": 0.738724042692438,
+      "CI high": 0.8444929605926408,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_1",
+      "recovery": 0.05930046758829587,
+      "CI low": -0.013606317059751271,
+      "CI high": 0.1174004119709102,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_1",
+      "recovery": 0.7282922079339631,
+      "CI low": 0.6921034626644148,
+      "CI high": 0.7612220018019967,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_1",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_pre_0",
+      "recovery": 0.9776710425896468,
+      "CI low": 0.9658610493395089,
+      "CI high": 0.9904206990080028,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_0",
+      "recovery": 0.005517698360001264,
+      "CI low": -0.010892710642725172,
+      "CI high": 0.024642324832079728,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_0",
+      "recovery": 0.7125807610204565,
+      "CI low": 0.6792570859103355,
+      "CI high": 0.7425833841287761,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_0",
+      "recovery": 0.9967797032854192,
+      "CI low": 0.992684199115488,
+      "CI high": 1.000275257372964,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_1",
+      "recovery": 0.04378180325432301,
+      "CI low": 0.03071329755833454,
+      "CI high": 0.05514773023579253,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_1",
+      "recovery": 0.787003914691919,
+      "CI low": 0.7597512091520757,
+      "CI high": 0.8058117458411739,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_1",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "REF-2L",
+      "architecture": "2 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_pre_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_0",
+      "recovery": 0.04129985949320575,
+      "CI low": 0.029190263810205088,
+      "CI high": 0.055170357691317354,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_0",
+      "recovery": 0.6099530895977269,
+      "CI low": 0.556243750385841,
+      "CI high": 0.6763301969719375,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_0",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_1",
+      "recovery": 0.005445381134693296,
+      "CI low": -0.006409594915632498,
+      "CI high": 0.0215850162487398,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_1",
+      "recovery": 0.4302220436701774,
+      "CI low": 0.3720840326525363,
+      "CI high": 0.4983924336323445,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_1",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_2",
+      "recovery": 0.004202437588615948,
+      "CI low": -0.0035138834439004977,
+      "CI high": 0.013083979457345182,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_2",
+      "recovery": 0.4281816203168442,
+      "CI low": 0.381904218539463,
+      "CI high": 0.4886222568953025,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_2",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "attn_out_3",
+      "recovery": 0.027588729317952383,
+      "CI low": 0.001570130412587752,
+      "CI high": 0.057410724121566614,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "mlp_out_3",
+      "recovery": 0.517456149668709,
+      "CI low": 0.4850321998017781,
+      "CI high": 0.5460813068152958,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "removal",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_pre_0",
+      "recovery": 0.9750795512304993,
+      "CI low": 0.9682806720862274,
+      "CI high": 0.9832170484822772,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_0",
+      "recovery": 0.020467683245078794,
+      "CI low": 0.010353806460981793,
+      "CI high": 0.033250133190062155,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_0",
+      "recovery": 0.6223285654045642,
+      "CI low": 0.5856310113164145,
+      "CI high": 0.6515416193573509,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_0",
+      "recovery": 0.9934781481344582,
+      "CI low": 0.9877855165588331,
+      "CI high": 0.9985242150658673,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_1",
+      "recovery": 0.0003604766933192889,
+      "CI low": -0.006122136908607847,
+      "CI high": 0.007352170697604568,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_1",
+      "recovery": 0.4091755760606428,
+      "CI low": 0.36843209359945256,
+      "CI high": 0.4571791772683724,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_1",
+      "recovery": 0.9975856342028453,
+      "CI low": 0.9922931819123156,
+      "CI high": 1.002508241656469,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_2",
+      "recovery": 0.0069213379530544865,
+      "CI low": -0.0005152462882669223,
+      "CI high": 0.01585111080224775,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_2",
+      "recovery": 0.4289241239749009,
+      "CI low": 0.3902120103530935,
+      "CI high": 0.47079894107970605,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_2",
+      "recovery": 0.9984728493278063,
+      "CI low": 0.9945487650999913,
+      "CI high": 1.002650861291494,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "attn_out_3",
+      "recovery": 0.012722942439073558,
+      "CI low": 0.0028617482676206733,
+      "CI high": 0.01960692676042107,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "mlp_out_3",
+      "recovery": 0.641074530113313,
+      "CI low": 0.6051061322319313,
+      "CI high": 0.672114304732749,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    },
+    {
+      "contrast": "context",
+      "site": "resid_post_3",
+      "recovery": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "model": "REF-4L",
+      "architecture": "4 layers x 2 heads"
+    }
+  ],
+  "run_mode": "full"
+}

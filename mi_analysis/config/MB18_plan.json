@@ -1,0 +1,16 @@
+{
+  "status": "follow-up after the deep MI audit; exploratory; not part of the MB12 lock",
+  "decision": "the model's top-1 action at the scored position (over all 15 actions); a flip is a change of top-1 between the intact and the edited run",
+  "edits": [
+    "player removal",
+    "partner swap",
+    "whole-context swap with all four identity inputs written back"
+  ],
+  "flip_patching": "on flip events: denoising (copy one site's intact activation into the edited run; restored if top-1 returns) and noising (copy one site's edited activation into the intact run; produced if top-1 changes); sites: each head, each MLP, each residual point, at the scored position; rates with match-resampled CIs; estimation half and all validation",
+  "decision_layer": "logit lens (final LayerNorm and unembedding applied to resid_pre_0 and each resid_post): first layer from which the sign of Delta equals the final sign and stays; causal: on flip events, restore all attention and MLP outputs of layers 0..l at the scored position (embedding left edited); first l at which the intact top-1 returns",
+  "concentration_reading": "the decision is called concentrated in one layer if one layer holds >= 60 per cent of events' decision layers",
+  "self_repair": "mean-ablate one MLP at the scored position; total effect = change with everything downstream recomputed; direct effect = change with every later attention and MLP output frozen at the run's own unablated values; for Delta and the identity effect",
+  "redundancy": "all 6 pairs of MLPs mean-ablated together at the scored position; interaction = joint change - sum of single changes (identity effect and Delta)",
+  "cross_model": "SEL-4L seeds 100-104 and REF-2L, REF-4L (paths from config/reference_models.json): identity-removal and context-swap denoising profile at the scored position; C1 mean Delta and share > 0; C2 |partner change| - |random vector change|; C3 correlation with the player-only reference's habit change; C4 |I| - |I_floor| with the partner; estimation half",
+  "written_at": "2026-10-07T18:45:29.312224+00:00"
+}

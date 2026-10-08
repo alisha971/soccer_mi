@@ -1,0 +1,923 @@
+{
+  "status": "follow-up after the deep MI audit; exploratory; not part of the MB12 lock",
+  "effect_size_circuit": [
+    "L0MLP",
+    "L1MLP",
+    "L2MLP",
+    "L3MLP"
+  ],
+  "preregistered_circuit": [
+    "L0H0",
+    "L0H1",
+    "L0MLP",
+    "L1H0",
+    "L1H1",
+    "L1MLP",
+    "L2H0",
+    "L2H1",
+    "L2MLP",
+    "L3H1",
+    "L3MLP"
+  ],
+  "named": [
+    {
+      "circuit": "effect-size circuit",
+      "components": 4,
+      "behaviour": "identity effect",
+      "F": 0.9007976482516035,
+      "F CI low": 0.8309676064733708,
+      "F CI high": 1.0120404124814768,
+      "same-size circuits": 495,
+      "percentile among same size": 99.79797979797979,
+      "same-size median F": 0.11364706823345141,
+      "same-size 95th percentile F": 0.5988458862534071,
+      "class (heads, MLPs)": "(0, 4)",
+      "class size": 1,
+      "percentile in class": NaN
+    },
+    {
+      "circuit": "effect-size circuit",
+      "components": 4,
+      "behaviour": "arbitration",
+      "F": 0.9645250715174298,
+      "F CI low": 0.9531416578581318,
+      "F CI high": 0.9739269747006915,
+      "same-size circuits": 495,
+      "percentile among same size": 99.79797979797979,
+      "same-size median F": 0.11995126453767464,
+      "same-size 95th percentile F": 0.4921809818568112,
+      "class (heads, MLPs)": "(0, 4)",
+      "class size": 1,
+      "percentile in class": NaN
+    },
+    {
+      "circuit": "effect-size circuit",
+      "components": 4,
+      "behaviour": "context effect",
+      "F": 0.9600091973293108,
+      "F CI low": 0.9406453544691643,
+      "F CI high": 0.9831919017768191,
+      "same-size circuits": 495,
+      "percentile among same size": 99.79797979797979,
+      "same-size median F": 0.09530929502849216,
+      "same-size 95th percentile F": 0.4348773898527138,
+      "class (heads, MLPs)": "(0, 4)",
+      "class size": 1,
+      "percentile in class": NaN
+    },
+    {
+      "circuit": "pre-registered circuit (MB10)",
+      "components": 11,
+      "behaviour": "identity effect",
+      "F": 1.0113551670123098,
+      "F CI low": 0.9978536608896668,
+      "F CI high": 1.0272102233816074,
+      "same-size circuits": 12,
+      "percentile among same size": 75.0,
+      "same-size median F": 0.9806095119853634,
+      "same-size 95th percentile F": 1.0402882805135953,
+      "class (heads, MLPs)": "(7, 4)",
+      "class size": 8,
+      "percentile in class": 62.5
+    },
+    {
+      "circuit": "pre-registered circuit (MB10)",
+      "components": 11,
+      "behaviour": "arbitration",
+      "F": 0.986409223832788,
+      "F CI low": 0.984196992541293,
+      "F CI high": 0.9878645514569584,
+      "same-size circuits": 12,
+      "percentile among same size": 41.66666666666667,
+      "same-size median F": 0.9894849245375936,
+      "same-size 95th percentile F": 1.0061061037820875,
+      "class (heads, MLPs)": "(7, 4)",
+      "class size": 8,
+      "percentile in class": 12.5
+    },
+    {
+      "circuit": "pre-registered circuit (MB10)",
+      "components": 11,
+      "behaviour": "context effect",
+      "F": 0.9943901955031684,
+      "F CI low": 0.9885227168253385,
+      "F CI high": 0.999877913914146,
+      "same-size circuits": 12,
+      "percentile among same size": 50.0,
+      "same-size median F": 0.993430784510178,
+      "same-size 95th percentile F": 1.0052946319107354,
+      "class (heads, MLPs)": "(7, 4)",
+      "class size": 8,
+      "percentile in class": 25.0
+    },
+    {
+      "circuit": "all heads, no MLP",
+      "components": 8,
+      "behaviour": "identity effect",
+      "F": 0.005625895407167263,
+      "F CI low": -0.0023576946340628283,
+      "F CI high": 0.01795710880649128,
+      "same-size circuits": 495,
+      "percentile among same size": 1.0101010101010102,
+      "same-size median F": 0.5862048191613719,
+      "same-size 95th percentile F": 0.9876428150318862,
+      "class (heads, MLPs)": "(8, 0)",
+      "class size": 1,
+      "percentile in class": NaN
+    },
+    {
+      "circuit": "all heads, no MLP",
+      "components": 8,
+      "behaviour": "arbitration",
+      "F": 0.009957881288811631,
+      "F CI low": 0.008704718602614448,
+      "F CI high": 0.01192478127138578,
+      "same-size circuits": 495,
+      "percentile among same size": 0.0,
+      "same-size median F": 0.48541215590208525,
+      "same-size 95th percentile F": 0.9910471764683962,
+      "class (heads, MLPs)": "(8, 0)",
+      "class size": 1,
+      "percentile in class": NaN
+    },
+    {
+      "circuit": "all heads, no MLP",
+      "components": 8,
+      "behaviour": "context effect",
+      "F": 0.007282984932015495,
+      "F CI low": 0.004899943486844198,
+      "F CI high": 0.010245003350723196,
+      "same-size circuits": 495,
+      "percentile among same size": 0.0,
+      "same-size median F": 0.38046761611288016,
+      "same-size 95th percentile F": 0.9909168768622567,
+      "class (heads, MLPs)": "(8, 0)",
+      "class size": 1,
+      "percentile in class": NaN
+    },
+    {
+      "circuit": "all MLPs, no head",
+      "components": 4,
+      "behaviour": "identity effect",
+      "F": 0.9007976482516035,
+      "F CI low": 0.8309676064733708,
+      "F CI high": 1.0120404124814768,
+      "same-size circuits": 495,
+      "percentile among same size": 99.79797979797979,
+      "same-size median F": 0.11364706823345141,
+      "same-size 95th percentile F": 0.5988458862534071,
+      "class (heads, MLPs)": "(0, 4)",
+      "class size": 1,
+      "percentile in class": NaN
+    },
+    {
+      "circuit": "all MLPs, no head",
+      "components": 4,
+      "behaviour": "arbitration",
+      "F": 0.9645250715174298,
+      "F CI low": 0.9531416578581318,
+      "F CI high": 0.9739269747006915,
+      "same-size circuits": 495,
+      "percentile among same size": 99.79797979797979,
+      "same-size median F": 0.11995126453767464,
+      "same-size 95th percentile F": 0.4921809818568112,
+      "class (heads, MLPs)": "(0, 4)",
+      "class size": 1,
+      "percentile in class": NaN
+    },
+    {
+      "circuit": "all MLPs, no head",
+      "components": 4,
+      "behaviour": "context effect",
+      "F": 0.9600091973293108,
+      "F CI low": 0.9406453544691643,
+      "F CI high": 0.9831919017768191,
+      "same-size circuits": 495,
+      "percentile among same size": 99.79797979797979,
+      "same-size median F": 0.09530929502849216,
+      "same-size 95th percentile F": 0.4348773898527138,
+      "class (heads, MLPs)": "(0, 4)",
+      "class size": 1,
+      "percentile in class": NaN
+    }
+  ],
+  "best_by_size": [
+    {
+      "behaviour": "identity effect",
+      "size": 0,
+      "best subset (chosen on discovery)": "(none)",
+      "F discovery": 0.0,
+      "F estimation": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "heads in it": 0,
+      "MLPs in it": 0
+    },
+    {
+      "behaviour": "identity effect",
+      "size": 1,
+      "best subset (chosen on discovery)": "L0MLP",
+      "F discovery": 0.10289970914589835,
+      "F estimation": 0.14482724731051538,
+      "CI low": 0.10853744682075991,
+      "CI high": 0.17313331129216983,
+      "heads in it": 0,
+      "MLPs in it": 1
+    },
+    {
+      "behaviour": "identity effect",
+      "size": 2,
+      "best subset (chosen on discovery)": "L0MLP+L1MLP",
+      "F discovery": 0.3201063801104609,
+      "F estimation": 0.421736035743589,
+      "CI low": 0.32565911281694454,
+      "CI high": 0.5214043628570549,
+      "heads in it": 0,
+      "MLPs in it": 2
+    },
+    {
+      "behaviour": "identity effect",
+      "size": 3,
+      "best subset (chosen on discovery)": "L0MLP+L1MLP+L3MLP",
+      "F discovery": 0.8102933298297806,
+      "F estimation": 0.8261041786529452,
+      "CI low": 0.6326802981356708,
+      "CI high": 0.9908228368205116,
+      "heads in it": 0,
+      "MLPs in it": 3
+    },
+    {
+      "behaviour": "identity effect",
+      "size": 4,
+      "best subset (chosen on discovery)": "L0MLP+L1MLP+L2MLP+L3MLP",
+      "F discovery": 0.9575358957362086,
+      "F estimation": 0.9007976482516035,
+      "CI low": 0.8309676064733708,
+      "CI high": 1.0120404124814768,
+      "heads in it": 0,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "identity effect",
+      "size": 5,
+      "best subset (chosen on discovery)": "L0MLP+L1H1+L1MLP+L2MLP+L3MLP",
+      "F discovery": 1.0228448870761684,
+      "F estimation": 0.9607352599114706,
+      "CI low": 0.8807596884976292,
+      "CI high": 1.0969109596318083,
+      "heads in it": 1,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "identity effect",
+      "size": 6,
+      "best subset (chosen on discovery)": "L0H0+L0MLP+L1H1+L1MLP+L2MLP+L3MLP",
+      "F discovery": 1.0458083258942923,
+      "F estimation": 1.0179326781416382,
+      "CI low": 0.9479143238687279,
+      "CI high": 1.1165218429409882,
+      "heads in it": 2,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "identity effect",
+      "size": 7,
+      "best subset (chosen on discovery)": "L0H0+L0MLP+L1H1+L1MLP+L2MLP+L3H0+L3MLP",
+      "F discovery": 1.0681588554613757,
+      "F estimation": 1.0096823456210715,
+      "CI low": 0.9417742781537931,
+      "CI high": 1.1054931542349697,
+      "heads in it": 3,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "identity effect",
+      "size": 8,
+      "best subset (chosen on discovery)": "L0H0+L0MLP+L1H1+L1MLP+L2H0+L2MLP+L3H0+L3MLP",
+      "F discovery": 1.089723578616603,
+      "F estimation": 1.0347149995223428,
+      "CI low": 0.9658406365649613,
+      "CI high": 1.1459858251793913,
+      "heads in it": 4,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "identity effect",
+      "size": 9,
+      "best subset (chosen on discovery)": "L0H0+L0MLP+L1H1+L1MLP+L2H0+L2H1+L2MLP+L3H0+L3MLP",
+      "F discovery": 1.0851315473166314,
+      "F estimation": 1.0173477670347528,
+      "CI low": 0.9522303017061143,
+      "CI high": 1.12000295527093,
+      "heads in it": 5,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "identity effect",
+      "size": 10,
+      "best subset (chosen on discovery)": "L0H0+L0MLP+L1H0+L1H1+L1MLP+L2H0+L2H1+L2MLP+L3H0+L3MLP",
+      "F discovery": 1.0608385967081309,
+      "F estimation": 1.0434919187351968,
+      "CI low": 0.9957771508335821,
+      "CI high": 1.111145226273284,
+      "heads in it": 6,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "identity effect",
+      "size": 11,
+      "best subset (chosen on discovery)": "L0H0+L0H1+L0MLP+L1H0+L1H1+L1MLP+L2H0+L2H1+L2MLP+L3H0+L3MLP",
+      "F discovery": 1.0478261383098955,
+      "F estimation": 1.06811235604899,
+      "CI low": 1.034008786946485,
+      "CI high": 1.0982942823057738,
+      "heads in it": 7,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "identity effect",
+      "size": 12,
+      "best subset (chosen on discovery)": "L0H0+L0H1+L0MLP+L1H0+L1H1+L1MLP+L2H0+L2H1+L2MLP+L3H0+L3H1+L3MLP",
+      "F discovery": 1.0,
+      "F estimation": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "heads in it": 8,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 0,
+      "best subset (chosen on discovery)": "(none)",
+      "F discovery": 0.0,
+      "F estimation": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "heads in it": 0,
+      "MLPs in it": 0
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 1,
+      "best subset (chosen on discovery)": "L0MLP",
+      "F discovery": 0.12696139169886447,
+      "F estimation": 0.12137290048987893,
+      "CI low": 0.11008314086341525,
+      "CI high": 0.12885783527526676,
+      "heads in it": 0,
+      "MLPs in it": 1
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 2,
+      "best subset (chosen on discovery)": "L0MLP+L1MLP",
+      "F discovery": 0.2884512117852158,
+      "F estimation": 0.2895195568231688,
+      "CI low": 0.27000191834127013,
+      "CI high": 0.30608850319301467,
+      "heads in it": 0,
+      "MLPs in it": 2
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 3,
+      "best subset (chosen on discovery)": "L0MLP+L1MLP+L3MLP",
+      "F discovery": 0.6387050015575152,
+      "F estimation": 0.6319699943335244,
+      "CI low": 0.606880560424388,
+      "CI high": 0.655890230107906,
+      "heads in it": 0,
+      "MLPs in it": 3
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 4,
+      "best subset (chosen on discovery)": "L0MLP+L1MLP+L2MLP+L3MLP",
+      "F discovery": 0.9684043037707721,
+      "F estimation": 0.9645250715174298,
+      "CI low": 0.9531416578581318,
+      "CI high": 0.9739269747006915,
+      "heads in it": 0,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 5,
+      "best subset (chosen on discovery)": "L0MLP+L1MLP+L2MLP+L3H0+L3MLP",
+      "F discovery": 0.9852287608730067,
+      "F estimation": 0.982927851822033,
+      "CI low": 0.972814297355777,
+      "CI high": 0.9914441823522572,
+      "heads in it": 1,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 6,
+      "best subset (chosen on discovery)": "L0H1+L0MLP+L1MLP+L2MLP+L3H0+L3MLP",
+      "F discovery": 0.998859888270407,
+      "F estimation": 0.9959540957551853,
+      "CI low": 0.9874963816808525,
+      "CI high": 1.0026138954255575,
+      "heads in it": 2,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 7,
+      "best subset (chosen on discovery)": "L0H1+L0MLP+L1MLP+L2MLP+L3H0+L3H1+L3MLP",
+      "F discovery": 1.0098392600267112,
+      "F estimation": 1.008708224602882,
+      "CI low": 0.9999597536711022,
+      "CI high": 1.0145359150434297,
+      "heads in it": 3,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 8,
+      "best subset (chosen on discovery)": "L0H0+L0H1+L0MLP+L1MLP+L2MLP+L3H0+L3H1+L3MLP",
+      "F discovery": 1.013344874147369,
+      "F estimation": 1.0121252687853424,
+      "CI low": 1.0035416165732776,
+      "CI high": 1.0177256464046749,
+      "heads in it": 4,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 9,
+      "best subset (chosen on discovery)": "L0H0+L0H1+L0MLP+L1H0+L1MLP+L2MLP+L3H0+L3H1+L3MLP",
+      "F discovery": 1.0135088722504775,
+      "F estimation": 1.0140696056777414,
+      "CI low": 1.0085964017311935,
+      "CI high": 1.0195595624875606,
+      "heads in it": 5,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 10,
+      "best subset (chosen on discovery)": "L0H0+L0H1+L0MLP+L1H0+L1MLP+L2H1+L2MLP+L3H0+L3H1+L3MLP",
+      "F discovery": 1.0120650136563154,
+      "F estimation": 1.0134967194728934,
+      "CI low": 1.0079687168873182,
+      "CI high": 1.0188286835120546,
+      "heads in it": 6,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 11,
+      "best subset (chosen on discovery)": "L0H0+L0H1+L0MLP+L1H0+L1MLP+L2H0+L2H1+L2MLP+L3H0+L3H1+L3MLP",
+      "F discovery": 1.0086520686907756,
+      "F estimation": 1.010261045060956,
+      "CI low": 1.0074454783297926,
+      "CI high": 1.0135465969433113,
+      "heads in it": 7,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "arbitration",
+      "size": 12,
+      "best subset (chosen on discovery)": "L0H0+L0H1+L0MLP+L1H0+L1H1+L1MLP+L2H0+L2H1+L2MLP+L3H0+L3H1+L3MLP",
+      "F discovery": 1.0,
+      "F estimation": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "heads in it": 8,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "context effect",
+      "size": 0,
+      "best subset (chosen on discovery)": "(none)",
+      "F discovery": 0.0,
+      "F estimation": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "heads in it": 0,
+      "MLPs in it": 0
+    },
+    {
+      "behaviour": "context effect",
+      "size": 1,
+      "best subset (chosen on discovery)": "L0MLP",
+      "F discovery": 0.10467964058162793,
+      "F estimation": 0.09461529661783627,
+      "CI low": 0.07843059628024812,
+      "CI high": 0.11343675268791296,
+      "heads in it": 0,
+      "MLPs in it": 1
+    },
+    {
+      "behaviour": "context effect",
+      "size": 2,
+      "best subset (chosen on discovery)": "L0MLP+L3MLP",
+      "F discovery": 0.2707453790676642,
+      "F estimation": 0.251179499285526,
+      "CI low": 0.21764216088145302,
+      "CI high": 0.29644550035694545,
+      "heads in it": 0,
+      "MLPs in it": 2
+    },
+    {
+      "behaviour": "context effect",
+      "size": 3,
+      "best subset (chosen on discovery)": "L0MLP+L1MLP+L3MLP",
+      "F discovery": 0.6467563473201928,
+      "F estimation": 0.6430952389578101,
+      "CI low": 0.5977231205425151,
+      "CI high": 0.6881430099413636,
+      "heads in it": 0,
+      "MLPs in it": 3
+    },
+    {
+      "behaviour": "context effect",
+      "size": 4,
+      "best subset (chosen on discovery)": "L0MLP+L1MLP+L2MLP+L3MLP",
+      "F discovery": 0.9467975801070945,
+      "F estimation": 0.9600091973293108,
+      "CI low": 0.9406453544691643,
+      "CI high": 0.9831919017768191,
+      "heads in it": 0,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "context effect",
+      "size": 5,
+      "best subset (chosen on discovery)": "L0H0+L0MLP+L1MLP+L2MLP+L3MLP",
+      "F discovery": 0.9623189832750795,
+      "F estimation": 0.9636983393560798,
+      "CI low": 0.944721021070617,
+      "CI high": 0.9832881809671162,
+      "heads in it": 1,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "context effect",
+      "size": 6,
+      "best subset (chosen on discovery)": "L0H0+L0MLP+L1H0+L1MLP+L2MLP+L3MLP",
+      "F discovery": 0.9716062110887812,
+      "F estimation": 0.9740730452723902,
+      "CI low": 0.9628840526462078,
+      "CI high": 0.9861641666832216,
+      "heads in it": 2,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "context effect",
+      "size": 7,
+      "best subset (chosen on discovery)": "L0H0+L0MLP+L1H0+L1MLP+L2MLP+L3H0+L3MLP",
+      "F discovery": 0.9804618062840514,
+      "F estimation": 0.9800404824578928,
+      "CI low": 0.9710745447165146,
+      "CI high": 0.9881931211214728,
+      "heads in it": 3,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "context effect",
+      "size": 8,
+      "best subset (chosen on discovery)": "L0H0+L0MLP+L1H0+L1MLP+L2MLP+L3H0+L3H1+L3MLP",
+      "F discovery": 0.988052597232077,
+      "F estimation": 0.9884571810180746,
+      "CI low": 0.9735421550495453,
+      "CI high": 0.9991239164206653,
+      "heads in it": 4,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "context effect",
+      "size": 9,
+      "best subset (chosen on discovery)": "L0H0+L0MLP+L1H0+L1MLP+L2H0+L2MLP+L3H0+L3H1+L3MLP",
+      "F discovery": 0.9936507415193623,
+      "F estimation": 0.9955252833311882,
+      "CI low": 0.9817243071983525,
+      "CI high": 1.0053972339113515,
+      "heads in it": 5,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "context effect",
+      "size": 10,
+      "best subset (chosen on discovery)": "L0H0+L0MLP+L1H0+L1H1+L1MLP+L2H0+L2MLP+L3H0+L3H1+L3MLP",
+      "F discovery": 0.9969206218563992,
+      "F estimation": 1.0002164852266224,
+      "CI low": 0.9910916662291088,
+      "CI high": 1.0079177399431236,
+      "heads in it": 6,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "context effect",
+      "size": 11,
+      "best subset (chosen on discovery)": "L0H0+L0H1+L0MLP+L1H0+L1MLP+L2H0+L2H1+L2MLP+L3H0+L3H1+L3MLP",
+      "F discovery": 0.9986981581704699,
+      "F estimation": 0.9970095674199312,
+      "CI low": 0.9922773227775802,
+      "CI high": 1.0004944694572564,
+      "heads in it": 7,
+      "MLPs in it": 4
+    },
+    {
+      "behaviour": "context effect",
+      "size": 12,
+      "best subset (chosen on discovery)": "L0H0+L0H1+L0MLP+L1H0+L1H1+L1MLP+L2H0+L2H1+L2MLP+L3H0+L3H1+L3MLP",
+      "F discovery": 1.0,
+      "F estimation": 1.0,
+      "CI low": 1.0,
+      "CI high": 1.0,
+      "heads in it": 8,
+      "MLPs in it": 4
+    }
+  ],
+  "minimality": [
+    {
+      "dropped": "L0MLP",
+      "behaviour": "identity effect",
+      "F without it": 0.5063883395919678,
+      "CI low": 0.4184274679084133,
+      "CI high": 0.6111102778153602
+    },
+    {
+      "dropped": "L0MLP",
+      "behaviour": "arbitration",
+      "F without it": 0.4399586378590566,
+      "CI low": 0.3919297125900006,
+      "CI high": 0.5075263909470776
+    },
+    {
+      "dropped": "L0MLP",
+      "behaviour": "context effect",
+      "F without it": 0.36440565803334524,
+      "CI low": 0.30530143283322936,
+      "CI high": 0.43899677334091586
+    },
+    {
+      "dropped": "L1MLP",
+      "behaviour": "identity effect",
+      "F without it": 0.728599795276014,
+      "CI low": 0.5730825557542888,
+      "CI high": 0.9609124933049623
+    },
+    {
+      "dropped": "L1MLP",
+      "behaviour": "arbitration",
+      "F without it": 0.5636607610690408,
+      "CI low": 0.5261685290329585,
+      "CI high": 0.5953358135739334
+    },
+    {
+      "dropped": "L1MLP",
+      "behaviour": "context effect",
+      "F without it": 0.569274458993132,
+      "CI low": 0.5051571243505172,
+      "CI high": 0.6459793012166297
+    },
+    {
+      "dropped": "L2MLP",
+      "behaviour": "identity effect",
+      "F without it": 0.8261041786529452,
+      "CI low": 0.6326802981356708,
+      "CI high": 0.9908228368205116
+    },
+    {
+      "dropped": "L2MLP",
+      "behaviour": "arbitration",
+      "F without it": 0.6319699943335244,
+      "CI low": 0.606880560424388,
+      "CI high": 0.655890230107906
+    },
+    {
+      "dropped": "L2MLP",
+      "behaviour": "context effect",
+      "F without it": 0.6430952389578101,
+      "CI low": 0.5977231205425151,
+      "CI high": 0.6881430099413636
+    },
+    {
+      "dropped": "L3MLP",
+      "behaviour": "identity effect",
+      "F without it": 0.710311751432433,
+      "CI low": 0.6220690743676385,
+      "CI high": 0.7874166228998609
+    },
+    {
+      "dropped": "L3MLP",
+      "behaviour": "arbitration",
+      "F without it": 0.5482061240207277,
+      "CI low": 0.528017374738187,
+      "CI high": 0.5634522323771962
+    },
+    {
+      "dropped": "L3MLP",
+      "behaviour": "context effect",
+      "F without it": 0.5684176014733153,
+      "CI low": 0.541987222489464,
+      "CI high": 0.5890686722841593
+    }
+  ],
+  "resample_check": [
+    {
+      "circuit": "effect-size circuit",
+      "components": "L0MLP+L1MLP+L2MLP+L3MLP",
+      "behaviour": "identity effect",
+      "F (resample ablation)": 0.9770246683583371,
+      "CI low": 0.8898309205038377,
+      "CI high": 1.0832926330588788
+    },
+    {
+      "circuit": "effect-size circuit",
+      "components": "L0MLP+L1MLP+L2MLP+L3MLP",
+      "behaviour": "arbitration",
+      "F (resample ablation)": 0.9082216831493495,
+      "CI low": 0.8931264515243689,
+      "CI high": 0.9201876536961443
+    },
+    {
+      "circuit": "best size-4 subset for identity effect",
+      "components": "L0MLP+L1MLP+L2MLP+L3MLP",
+      "behaviour": "identity effect",
+      "F (resample ablation)": 0.9770246683583371,
+      "CI low": 0.8898309205038377,
+      "CI high": 1.0832926330588788
+    },
+    {
+      "circuit": "best size-4 subset for identity effect",
+      "components": "L0MLP+L1MLP+L2MLP+L3MLP",
+      "behaviour": "arbitration",
+      "F (resample ablation)": 0.9082216831493495,
+      "CI low": 0.8931264515243689,
+      "CI high": 0.9201876536961443
+    },
+    {
+      "circuit": "best size-4 subset for arbitration",
+      "components": "L0MLP+L1MLP+L2MLP+L3MLP",
+      "behaviour": "identity effect",
+      "F (resample ablation)": 0.9770246683583371,
+      "CI low": 0.8898309205038377,
+      "CI high": 1.0832926330588788
+    },
+    {
+      "circuit": "best size-4 subset for arbitration",
+      "components": "L0MLP+L1MLP+L2MLP+L3MLP",
+      "behaviour": "arbitration",
+      "F (resample ablation)": 0.9082216831493495,
+      "CI low": 0.8931264515243689,
+      "CI high": 0.9201876536961443
+    }
+  ],
+  "specificity": [
+    {
+      "pairs": 65,
+      "F on conflicts": 1.004120092311592,
+      "F on controls": 1.0078190341465332,
+      "difference": -0.0036989418349411274,
+      "CI low": -0.0433567667448076,
+      "CI high": 0.02068473532681092,
+      "mean Delta full, conflicts": 4.992587247261635,
+      "mean Delta full, controls": 2.7841339386426487,
+      "mean Delta empty, conflicts": -6.7224730234879715,
+      "mean Delta empty, controls": -6.776311287513146
+    }
+  ],
+  "replication": [
+    {
+      "seed": 100,
+      "behaviour": "identity effect",
+      "F": 0.9543871785757717,
+      "CI low": 0.8743752129235127,
+      "CI high": 1.0181845916403502,
+      "percentile among same size": 97.77777777777777,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 100,
+      "behaviour": "arbitration",
+      "F": 0.9705401523012517,
+      "CI low": 0.9578091837835826,
+      "CI high": 0.9784124617977207,
+      "percentile among same size": 99.79797979797979,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 100,
+      "behaviour": "context effect",
+      "F": 0.9547856564185085,
+      "CI low": 0.9378074028365556,
+      "CI high": 0.9703498830420195,
+      "percentile among same size": 99.79797979797979,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 101,
+      "behaviour": "identity effect",
+      "F": 0.9122210306429681,
+      "CI low": 0.8158288902250493,
+      "CI high": 1.0592031460018136,
+      "percentile among same size": 98.18181818181819,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 101,
+      "behaviour": "arbitration",
+      "F": 0.9653966386346915,
+      "CI low": 0.9478838019819623,
+      "CI high": 0.9755366557027314,
+      "percentile among same size": 99.79797979797979,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 101,
+      "behaviour": "context effect",
+      "F": 0.9554884369833245,
+      "CI low": 0.926423260939673,
+      "CI high": 0.9798624081038708,
+      "percentile among same size": 99.79797979797979,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 102,
+      "behaviour": "identity effect",
+      "F": 0.9887623580026409,
+      "CI low": 0.9398342395746713,
+      "CI high": 1.0322216855226825,
+      "percentile among same size": 99.5959595959596,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 102,
+      "behaviour": "arbitration",
+      "F": 0.9575264161647448,
+      "CI low": 0.9519684620239041,
+      "CI high": 0.9643397874881176,
+      "percentile among same size": 99.79797979797979,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 102,
+      "behaviour": "context effect",
+      "F": 0.9231356963040941,
+      "CI low": 0.9048710942055359,
+      "CI high": 0.9444696755734567,
+      "percentile among same size": 99.79797979797979,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 103,
+      "behaviour": "identity effect",
+      "F": 0.9007976482516035,
+      "CI low": 0.8309676064733708,
+      "CI high": 1.0120404124814768,
+      "percentile among same size": 99.79797979797979,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 103,
+      "behaviour": "arbitration",
+      "F": 0.9645250715174298,
+      "CI low": 0.9531416578581318,
+      "CI high": 0.9739269747006915,
+      "percentile among same size": 99.79797979797979,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 103,
+      "behaviour": "context effect",
+      "F": 0.9600091973293108,
+      "CI low": 0.9406453544691643,
+      "CI high": 0.9831919017768191,
+      "percentile among same size": 99.79797979797979,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 104,
+      "behaviour": "identity effect",
+      "F": 0.9588357436113926,
+      "CI low": 0.828680301128857,
+      "CI high": 1.0929977809192684,
+      "percentile among same size": 99.39393939393939,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 104,
+      "behaviour": "arbitration",
+      "F": 0.9744165266374671,
+      "CI low": 0.9661371373647927,
+      "CI high": 0.9817701276143309,
+      "percentile among same size": 99.79797979797979,
+      "same-size circuits": 495
+    },
+    {
+      "seed": 104,
+      "behaviour": "context effect",
+      "F": 0.9505028722741028,
+      "CI low": 0.9377916985916614,
+      "CI high": 0.9640507273992643,
+      "percentile among same size": 99.79797979797979,
+      "same-size circuits": 495
+    }
+  ],
+  "run_mode": "full"
+}

@@ -1,0 +1,61 @@
+{
+  "status": "follow-up after MB12; exploratory; not part of the MB12 lock",
+  "scrub_design": "per-run donors from a dataset of every P-player validation event, as recorded and with the player removed; at the scored position",
+  "hypotheses": {
+    "H1 shared chain": {
+      "MLP class keys": [
+        "player",
+        "role",
+        "prev_action_id",
+        "team_change",
+        "coupled_with_prev"
+      ],
+      "heads": "free"
+    },
+    "H2 player-blind chain": {
+      "MLP class keys": [
+        "role",
+        "prev_action_id",
+        "team_change",
+        "coupled_with_prev"
+      ],
+      "heads": "free"
+    },
+    "H3 heads matter": {
+      "MLP class keys": "free",
+      "head class keys": [
+        "player",
+        "role",
+        "prev_action_id",
+        "team_change",
+        "coupled_with_prev"
+      ]
+    },
+    "H1c shared chain, coarse": {
+      "MLP class keys": [
+        "player",
+        "team_change",
+        "coupled_with_prev"
+      ],
+      "heads": "free"
+    },
+    "H2c player-blind chain, coarse": {
+      "MLP class keys": [
+        "role",
+        "team_change",
+        "coupled_with_prev"
+      ],
+      "heads": "free"
+    }
+  },
+  "why_coarse": "the fine classes may leave many events without a donor; the coarse pair drops the previous action and is read on all events",
+  "controls": [
+    "floor: every component free",
+    "H1 with class labels permuted across the dataset"
+  ],
+  "measure": "recovered share = pooled sign-aligned (scrub - floor) / (full - floor), for the identity effect and for Delta; estimation half; scrub_draws draws",
+  "reading_rule": "an abstraction is supported for a behaviour if its recovered share CI lies above that of its permuted-label control, on the events where H1 found a donor for every component (primary) and on all events (secondary)",
+  "steering": "v1 = leading direction of player-swap contributions at the final residual (discovery half, as MB11c); compare v1, v1 with its component along the mean output-gradient direction removed, the mean output-gradient direction, and the leading direction of random-vector contributions; beta grid -2..2",
+  "calibration": "fit a straight line and a monotone piecewise-linear interpolation to the discovery-half response; predict the estimation-half response at beta -1, 0.5, 1",
+  "written_at": "2026-10-07T18:25:07.299114+00:00"
+}

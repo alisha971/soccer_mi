@@ -1,0 +1,26 @@
+point,rank,verdict (plan rule)
+resid_post_0,1,MIXED
+resid_post_0,2,MIXED
+resid_post_0,4,MIXED
+resid_post_0,8,MIXED
+resid_post_0,r90,SHARED
+resid_post_1,1,MIXED
+resid_post_1,2,MIXED
+resid_post_1,4,MIXED
+resid_post_1,8,MIXED
+resid_post_1,r90,SHARED
+resid_post_2,1,MIXED
+resid_post_2,2,MIXED
+resid_post_2,4,MIXED
+resid_post_2,8,SHARED
+resid_post_2,r90,SHARED
+resid_post_3,1,MIXED
+resid_post_3,2,SEPARABLE
+resid_post_3,4,SHARED
+resid_post_3,8,SHARED
+resid_post_3,r90,SHARED
+resid_pre_0,1,SHARED
+resid_pre_0,2,MIXED
+resid_pre_0,4,MIXED
+resid_pre_0,8,SHARED
+resid_pre_0,r90,SHARED

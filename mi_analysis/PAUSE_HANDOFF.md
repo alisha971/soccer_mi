@@ -1,4 +1,14 @@
-# Notebook rerun handoff — COMPLETED 2026-10-06
+# Notebook rerun handoff — through MB21 completed 2026-10-08
+
+MB14–MB21 delivered, verified and integrated: all 24 notebooks completed;
+no error outputs; notebook/dependency/manifest hashes match; prior scientific
+baseline and test-access log unchanged. See `FOLLOWUP_RERUN_REPORT.md`.
+Actual follow-up venv versions are in `config/followup_execution_environment.json`
+(Python 3.12.15, Torch 2.10.0/CUDA 12.8, Tesla T4).
+MB22–MB23 remain pending, a separate training phase. MB16 legacy scrub is
+invalidated; use Section R. No fresh held-out claim or adjacency edits.
+Earlier Torch 2.11 provenance below came from the Colab controller, not a
+verified analysis interpreter; it is retained as historical context only.
 
 This note supersedes the earlier stop-state version. The full 16-notebook
 sequence completed: MB01, MB02, MB07R, MB03, MB04, MB05, MB06 ran locally on

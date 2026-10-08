@@ -1,0 +1,205 @@
+edit,events,flips,site,measure,rate,CI low,CI high
+player removal,estimation,11,embedding (resid_pre_0),restores,1.0,1.0,1.0
+player removal,estimation,11,embedding (resid_pre_0),produces,1.0,1.0,1.0
+player removal,estimation,11,L0H0,restores,0.09090909090909091,0.0,0.375
+player removal,estimation,11,L0H0,produces,0.09090909090909091,0.0,0.3
+player removal,estimation,11,L0H1,restores,0.09090909090909091,0.0,0.375
+player removal,estimation,11,L0H1,produces,0.18181818181818182,0.0,0.5
+player removal,estimation,11,L0MLP,restores,0.5454545454545454,0.09090909090909091,0.875
+player removal,estimation,11,L0MLP,produces,0.45454545454545453,0.14285714285714285,0.75
+player removal,estimation,11,resid_post_0,restores,1.0,1.0,1.0
+player removal,estimation,11,resid_post_0,produces,1.0,1.0,1.0
+player removal,estimation,11,L1H0,restores,0.09090909090909091,0.0,0.375
+player removal,estimation,11,L1H0,produces,0.18181818181818182,0.0,0.5
+player removal,estimation,11,L1H1,restores,0.09090909090909091,0.0,0.1875
+player removal,estimation,11,L1H1,produces,0.18181818181818182,0.0,0.5
+player removal,estimation,11,L1MLP,restores,0.45454545454545453,0.14285714285714285,0.75
+player removal,estimation,11,L1MLP,produces,0.45454545454545453,0.14285714285714285,0.75
+player removal,estimation,11,resid_post_1,restores,1.0,1.0,1.0
+player removal,estimation,11,resid_post_1,produces,1.0,1.0,1.0
+player removal,estimation,11,L2H0,restores,0.0,0.0,0.0
+player removal,estimation,11,L2H0,produces,0.09090909090909091,0.0,0.375
+player removal,estimation,11,L2H1,restores,0.0,0.0,0.0
+player removal,estimation,11,L2H1,produces,0.0,0.0,0.0
+player removal,estimation,11,L2MLP,restores,0.5454545454545454,0.18181818181818182,0.8125
+player removal,estimation,11,L2MLP,produces,0.2727272727272727,0.1,0.5
+player removal,estimation,11,resid_post_2,restores,1.0,1.0,1.0
+player removal,estimation,11,resid_post_2,produces,1.0,1.0,1.0
+player removal,estimation,11,L3H0,restores,0.0,0.0,0.0
+player removal,estimation,11,L3H0,produces,0.0,0.0,0.0
+player removal,estimation,11,L3H1,restores,0.0,0.0,0.0
+player removal,estimation,11,L3H1,produces,0.18181818181818182,0.0,0.6
+player removal,estimation,11,L3MLP,restores,0.6363636363636364,0.18181818181818182,0.9375
+player removal,estimation,11,L3MLP,produces,0.6363636363636364,0.2857142857142857,0.8888888888888888
+player removal,estimation,11,resid_post_3,restores,1.0,1.0,1.0
+player removal,estimation,11,resid_post_3,produces,1.0,1.0,1.0
+player removal,all validation,41,embedding (resid_pre_0),restores,1.0,1.0,1.0
+player removal,all validation,41,embedding (resid_pre_0),produces,1.0,1.0,1.0
+player removal,all validation,41,L0H0,restores,0.0975609756097561,0.022727272727272728,0.19444444444444445
+player removal,all validation,41,L0H0,produces,0.07317073170731707,0.0,0.16216216216216217
+player removal,all validation,41,L0H1,restores,0.07317073170731707,0.0,0.1621778755499685
+player removal,all validation,41,L0H1,produces,0.12195121951219512,0.023255813953488372,0.25
+player removal,all validation,41,L0MLP,restores,0.6341463414634146,0.4704901960784314,0.7857522796352582
+player removal,all validation,41,L0MLP,produces,0.5365853658536586,0.38461538461538464,0.6905219780219778
+player removal,all validation,41,resid_post_0,restores,1.0,1.0,1.0
+player removal,all validation,41,resid_post_0,produces,1.0,1.0,1.0
+player removal,all validation,41,L1H0,restores,0.07317073170731707,0.0,0.19047619047619047
+player removal,all validation,41,L1H0,produces,0.04878048780487805,0.0,0.1316228070175436
+player removal,all validation,41,L1H1,restores,0.04878048780487805,0.0,0.11627906976744186
+player removal,all validation,41,L1H1,produces,0.04878048780487805,0.0,0.1316228070175436
+player removal,all validation,41,L1MLP,restores,0.5121951219512195,0.37209302325581395,0.6428571428571429
+player removal,all validation,41,L1MLP,produces,0.5365853658536586,0.3611111111111111,0.7096986417657045
+player removal,all validation,41,resid_post_1,restores,1.0,1.0,1.0
+player removal,all validation,41,resid_post_1,produces,1.0,1.0,1.0
+player removal,all validation,41,L2H0,restores,0.0,0.0,0.0
+player removal,all validation,41,L2H0,produces,0.024390243902439025,0.0,0.08571428571428572
+player removal,all validation,41,L2H1,restores,0.0,0.0,0.0
+player removal,all validation,41,L2H1,produces,0.0,0.0,0.0
+player removal,all validation,41,L2MLP,restores,0.4878048780487805,0.3499709302325581,0.6046664626682985
+player removal,all validation,41,L2MLP,produces,0.43902439024390244,0.26666666666666666,0.6222916666666662
+player removal,all validation,41,resid_post_2,restores,1.0,1.0,1.0
+player removal,all validation,41,resid_post_2,produces,1.0,1.0,1.0
+player removal,all validation,41,L3H0,restores,0.07317073170731707,0.0,0.19047619047619047
+player removal,all validation,41,L3H0,produces,0.024390243902439025,0.0,0.075
+player removal,all validation,41,L3H1,restores,0.0,0.0,0.0
+player removal,all validation,41,L3H1,produces,0.04878048780487805,0.0,0.17142857142857143
+player removal,all validation,41,L3MLP,restores,0.6341463414634146,0.4650737379466818,0.7837837837837838
+player removal,all validation,41,L3MLP,produces,0.6097560975609756,0.4418604651162791,0.7714285714285715
+player removal,all validation,41,resid_post_3,restores,1.0,1.0,1.0
+player removal,all validation,41,resid_post_3,produces,1.0,1.0,1.0
+partner swap,estimation,23,embedding (resid_pre_0),restores,1.0,1.0,1.0
+partner swap,estimation,23,embedding (resid_pre_0),produces,1.0,1.0,1.0
+partner swap,estimation,23,L0H0,restores,0.08695652173913043,0.0,0.16666666666666666
+partner swap,estimation,23,L0H0,produces,0.08695652173913043,0.0,0.18524305555555523
+partner swap,estimation,23,L0H1,restores,0.08695652173913043,0.0,0.15151515151515152
+partner swap,estimation,23,L0H1,produces,0.043478260869565216,0.0,0.13636363636363635
+partner swap,estimation,23,L0MLP,restores,0.6956521739130435,0.5833333333333334,0.8181818181818182
+partner swap,estimation,23,L0MLP,produces,0.5217391304347826,0.29411764705882354,0.75
+partner swap,estimation,23,resid_post_0,restores,1.0,1.0,1.0
+partner swap,estimation,23,resid_post_0,produces,1.0,1.0,1.0
+partner swap,estimation,23,L1H0,restores,0.08695652173913043,0.0,0.22736013986013937
+partner swap,estimation,23,L1H0,produces,0.043478260869565216,0.0,0.13636363636363635
+partner swap,estimation,23,L1H1,restores,0.13043478260869565,0.0,0.29035618279569875
+partner swap,estimation,23,L1H1,produces,0.08695652173913043,0.0,0.18524305555555523
+partner swap,estimation,23,L1MLP,restores,0.5652173913043478,0.4782091097308489,0.7272727272727273
+partner swap,estimation,23,L1MLP,produces,0.391304347826087,0.21428571428571427,0.6818181818181818
+partner swap,estimation,23,resid_post_1,restores,1.0,1.0,1.0
+partner swap,estimation,23,resid_post_1,produces,1.0,1.0,1.0
+partner swap,estimation,23,L2H0,restores,0.0,0.0,0.0
+partner swap,estimation,23,L2H0,produces,0.0,0.0,0.0
+partner swap,estimation,23,L2H1,restores,0.08695652173913043,0.0,0.21436335403726664
+partner swap,estimation,23,L2H1,produces,0.0,0.0,0.0
+partner swap,estimation,23,L2MLP,restores,0.6086956521739131,0.5,0.75
+partner swap,estimation,23,L2MLP,produces,0.21739130434782608,0.043478260869565216,0.44
+partner swap,estimation,23,resid_post_2,restores,1.0,1.0,1.0
+partner swap,estimation,23,resid_post_2,produces,1.0,1.0,1.0
+partner swap,estimation,23,L3H0,restores,0.043478260869565216,0.0,0.2
+partner swap,estimation,23,L3H0,produces,0.0,0.0,0.0
+partner swap,estimation,23,L3H1,restores,0.043478260869565216,0.0,0.13636363636363635
+partner swap,estimation,23,L3H1,produces,0.13043478260869565,0.0,0.29411764705882354
+partner swap,estimation,23,L3MLP,restores,0.6521739130434783,0.4,0.8888888888888888
+partner swap,estimation,23,L3MLP,produces,0.4782608695652174,0.26666666666666666,0.625
+partner swap,estimation,23,resid_post_3,restores,1.0,1.0,1.0
+partner swap,estimation,23,resid_post_3,produces,1.0,1.0,1.0
+partner swap,all validation,57,embedding (resid_pre_0),restores,1.0,1.0,1.0
+partner swap,all validation,57,embedding (resid_pre_0),produces,1.0,1.0,1.0
+partner swap,all validation,57,L0H0,restores,0.07017543859649122,0.018510101010101008,0.13045260156806832
+partner swap,all validation,57,L0H0,produces,0.08771929824561403,0.029839771729587357,0.16003225806451596
+partner swap,all validation,57,L0H1,restores,0.07017543859649122,0.017543859649122806,0.12769389155799568
+partner swap,all validation,57,L0H1,produces,0.05263157894736842,0.0,0.11865415657788533
+partner swap,all validation,57,L0MLP,restores,0.6666666666666666,0.5599830508474577,0.7656333111702127
+partner swap,all validation,57,L0MLP,produces,0.5789473684210527,0.4444444444444444,0.7111217948717948
+partner swap,all validation,57,resid_post_0,restores,1.0,1.0,1.0
+partner swap,all validation,57,resid_post_0,produces,1.0,1.0,1.0
+partner swap,all validation,57,L1H0,restores,0.03508771929824561,0.0,0.08771929824561403
+partner swap,all validation,57,L1H0,produces,0.03508771929824561,0.0,0.08695652173913043
+partner swap,all validation,57,L1H1,restores,0.10526315789473684,0.03388418079096045,0.19047619047619047
+partner swap,all validation,57,L1H1,produces,0.05263157894736842,0.0,0.11291083384053556
+partner swap,all validation,57,L1MLP,restores,0.543859649122807,0.43281037991858884,0.656745875883739
+partner swap,all validation,57,L1MLP,produces,0.543859649122807,0.39622641509433965,0.6923076923076923
+partner swap,all validation,57,resid_post_1,restores,1.0,1.0,1.0
+partner swap,all validation,57,resid_post_1,produces,1.0,1.0,1.0
+partner swap,all validation,57,L2H0,restores,0.0,0.0,0.0
+partner swap,all validation,57,L2H0,produces,0.017543859649122806,0.0,0.06521739130434782
+partner swap,all validation,57,L2H1,restores,0.03508771929824561,0.0,0.08771929824561403
+partner swap,all validation,57,L2H1,produces,0.0,0.0,0.0
+partner swap,all validation,57,L2MLP,restores,0.47368421052631576,0.3269230769230769,0.6065573770491803
+partner swap,all validation,57,L2MLP,produces,0.38596491228070173,0.24,0.5294340463458109
+partner swap,all validation,57,resid_post_2,restores,1.0,1.0,1.0
+partner swap,all validation,57,resid_post_2,produces,1.0,1.0,1.0
+partner swap,all validation,57,L3H0,restores,0.05263157894736842,0.0,0.12727272727272726
+partner swap,all validation,57,L3H0,produces,0.03508771929824561,0.0,0.09615384615384616
+partner swap,all validation,57,L3H1,restores,0.017543859649122806,0.0,0.058823529411764705
+partner swap,all validation,57,L3H1,produces,0.05263157894736842,0.0,0.13559322033898305
+partner swap,all validation,57,L3MLP,restores,0.5964912280701754,0.4313640973630832,0.7377405559515323
+partner swap,all validation,57,L3MLP,produces,0.543859649122807,0.42102631578947364,0.6716417910447762
+partner swap,all validation,57,resid_post_3,restores,1.0,1.0,1.0
+partner swap,all validation,57,resid_post_3,produces,1.0,1.0,1.0
+whole-context swap,estimation,428,embedding (resid_pre_0),restores,0.9439252336448598,0.9143626677190214,0.9692313915857605
+whole-context swap,estimation,428,embedding (resid_pre_0),produces,0.9836448598130841,0.9640874950348464,0.996101743030716
+whole-context swap,estimation,428,L0H0,restores,0.007009345794392523,0.001398852223816358,0.015209125475285171
+whole-context swap,estimation,428,L0H0,produces,0.04906542056074766,0.020361071257771403,0.08012645086355713
+whole-context swap,estimation,428,L0H1,restores,0.011682242990654205,0.0023847056943012896,0.025363181504485847
+whole-context swap,estimation,428,L0H1,produces,0.03271028037383177,0.013926609408851749,0.04591881805725824
+whole-context swap,estimation,428,L0MLP,restores,0.5747663551401869,0.5527626149918923,0.5919399085092214
+whole-context swap,estimation,428,L0MLP,produces,0.8714953271028038,0.8238265772630297,0.90664615220765
+whole-context swap,estimation,428,resid_post_0,restores,0.969626168224299,0.9441171903544026,0.9866921205938641
+whole-context swap,estimation,428,resid_post_0,produces,0.9953271028037384,0.9869404146421593,1.0
+whole-context swap,estimation,428,L1H0,restores,0.002336448598130841,0.0,0.007921184975640419
+whole-context swap,estimation,428,L1H0,produces,0.02102803738317757,0.005595978441127695,0.04140481770587232
+whole-context swap,estimation,428,L1H1,restores,0.004672897196261682,0.0,0.01012800020624403
+whole-context swap,estimation,428,L1H1,produces,0.007009345794392523,0.0,0.01632724585161167
+whole-context swap,estimation,428,L1MLP,restores,0.2757009345794392,0.2354021269524759,0.3352276797343058
+whole-context swap,estimation,428,L1MLP,produces,0.6355140186915887,0.5772344082501228,0.6952223670100007
+whole-context swap,estimation,428,resid_post_1,restores,0.9602803738317757,0.9362288647342994,0.9772390344273814
+whole-context swap,estimation,428,resid_post_1,produces,0.9976635514018691,0.9908665326127938,1.0
+whole-context swap,estimation,428,L2H0,restores,0.004672897196261682,0.0,0.01125809563180377
+whole-context swap,estimation,428,L2H0,produces,0.016355140186915886,0.005746714751506768,0.027255387153314766
+whole-context swap,estimation,428,L2H1,restores,0.007009345794392523,0.0,0.01577411851615221
+whole-context swap,estimation,428,L2H1,produces,0.018691588785046728,0.0,0.03817310840383917
+whole-context swap,estimation,428,L2MLP,restores,0.3177570093457944,0.2951794283149791,0.33544405879951
+whole-context swap,estimation,428,L2MLP,produces,0.5630841121495327,0.528431832264331,0.5964548878336334
+whole-context swap,estimation,428,resid_post_2,restores,0.969626168224299,0.9467579893765239,0.9861513566863699
+whole-context swap,estimation,428,resid_post_2,produces,1.0,1.0,1.0
+whole-context swap,estimation,428,L3H0,restores,0.002336448598130841,0.0,0.006013853264337996
+whole-context swap,estimation,428,L3H0,produces,0.02336448598130841,0.009574190177638452,0.03768115942028986
+whole-context swap,estimation,428,L3H1,restores,0.004672897196261682,0.0,0.014327676777657013
+whole-context swap,estimation,428,L3H1,produces,0.014018691588785047,0.0028405078325629174,0.026549849369233658
+whole-context swap,estimation,428,L3MLP,restores,0.7570093457943925,0.7113383911717729,0.8034646983009751
+whole-context swap,estimation,428,L3MLP,produces,0.866822429906542,0.8388396427619301,0.8992088940285954
+whole-context swap,estimation,428,resid_post_3,restores,1.0,1.0,1.0
+whole-context swap,estimation,428,resid_post_3,produces,1.0,1.0,1.0
+whole-context swap,all validation,1408,embedding (resid_pre_0),restores,0.9424715909090909,0.9294210948067988,0.9552846142509763
+whole-context swap,all validation,1408,embedding (resid_pre_0),produces,0.9893465909090909,0.9827576897296492,0.9945251623670652
+whole-context swap,all validation,1408,L0H0,restores,0.005681818181818182,0.0028278748029536213,0.00891067144815431
+whole-context swap,all validation,1408,L0H0,produces,0.048295454545454544,0.03763381387382244,0.06033410342989158
+whole-context swap,all validation,1408,L0H1,restores,0.004971590909090909,0.001583220290596026,0.009282780276758636
+whole-context swap,all validation,1408,L0H1,produces,0.026988636363636364,0.018578232157988605,0.03535172524659166
+whole-context swap,all validation,1408,L0MLP,restores,0.5930397727272727,0.571312373101863,0.6180125877511498
+whole-context swap,all validation,1408,L0MLP,produces,0.8700284090909091,0.8471951463097973,0.8900951900826797
+whole-context swap,all validation,1408,resid_post_0,restores,0.9701704545454546,0.9601298507533568,0.9780295453598367
+whole-context swap,all validation,1408,resid_post_0,produces,0.9950284090909091,0.9919897872701076,0.997703084998188
+whole-context swap,all validation,1408,L1H0,restores,0.0035511363636363635,0.001415378151890947,0.006114902063513359
+whole-context swap,all validation,1408,L1H0,produces,0.019176136363636364,0.01278182679868325,0.027212958354073325
+whole-context swap,all validation,1408,L1H1,restores,0.0035511363636363635,0.0012818877551020408,0.006149139700466951
+whole-context swap,all validation,1408,L1H1,produces,0.014914772727272728,0.009759668204790156,0.020508803637964743
+whole-context swap,all validation,1408,L1MLP,restores,0.2897727272727273,0.2683916669238127,0.31326676248729174
+whole-context swap,all validation,1408,L1MLP,produces,0.5866477272727273,0.5519068181818182,0.6223034405334738
+whole-context swap,all validation,1408,resid_post_1,restores,0.9715909090909091,0.9611468094785734,0.9801196134451569
+whole-context swap,all validation,1408,resid_post_1,produces,0.9978693181818182,0.9953701556380128,1.0
+whole-context swap,all validation,1408,L2H0,restores,0.0014204545454545455,0.0,0.003599906812649792
+whole-context swap,all validation,1408,L2H0,produces,0.014914772727272728,0.010211247898714543,0.020059808216000043
+whole-context swap,all validation,1408,L2H1,restores,0.005681818181818182,0.002741732664890493,0.008764296772486975
+whole-context swap,all validation,1408,L2H1,produces,0.020596590909090908,0.012861736334405145,0.029611299116375257
+whole-context swap,all validation,1408,L2MLP,restores,0.3096590909090909,0.2854541354264292,0.3333333333333333
+whole-context swap,all validation,1408,L2MLP,produces,0.5390625,0.5126256510968863,0.562501311922754
+whole-context swap,all validation,1408,resid_post_2,restores,0.9786931818181818,0.9681175405569717,0.9872021821218503
+whole-context swap,all validation,1408,resid_post_2,produces,0.9985795454545454,0.9968630892717584,1.0
+whole-context swap,all validation,1408,L3H0,restores,0.002130681818181818,0.0,0.004417296596144382
+whole-context swap,all validation,1408,L3H0,produces,0.020596590909090908,0.013130939332436692,0.029434547316074297
+whole-context swap,all validation,1408,L3H1,restores,0.004971590909090909,0.002202281687697009,0.008182190760059611
+whole-context swap,all validation,1408,L3H1,produces,0.014914772727272728,0.00910619103461768,0.021535142760661933
+whole-context swap,all validation,1408,L3MLP,restores,0.7563920454545454,0.7349217329932617,0.7779934978987112
+whole-context swap,all validation,1408,L3MLP,produces,0.8693181818181818,0.8511479846240322,0.8878844715154764
+whole-context swap,all validation,1408,resid_post_3,restores,1.0,1.0,1.0
+whole-context swap,all validation,1408,resid_post_3,produces,1.0,1.0,1.0

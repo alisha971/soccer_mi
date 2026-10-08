@@ -1,0 +1,4 @@
+calibration model,RMSE over the grid,largest error,share of grid points inside the estimation interval
+straight line through 0 (|beta| <= 0.5),0.4222913177317538,1.2836177544861838,0.6666666666666666
+isotonic,0.053176136796743635,0.09305958129331171,1.0
+logistic,0.05469600947800679,0.1223203819094647,0.9333333333333333

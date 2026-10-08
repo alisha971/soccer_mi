@@ -1,0 +1,321 @@
+MB17 cell 1/29 benchmark-next-17
+MB17 cell 2/29 c000
+MB17 cell 3/29 c001
+Colab: False | RUN_MODE: full
+ROOT: /content/soccer_mi
+Track A (read only): /content/soccer_mi/model_training_evaluation | exists: True
+Track B: /content/soccer_mi/.mi_analysis_rerun
+MB17 cell 4/29 c002
+Device: cuda | outputs: /content/soccer_mi/.mi_analysis_rerun
+Settings: {'reference_epochs': 25, 'batch_windows': 256, 'n_bootstrap': 2000, 'n_draws': 5, 'n_permutations': 1000, 'n_random_circuits': 100, 'probe_train_events': 20000, 'max_events': 100000, 'probe_seeds': 3, 'scrub_draws': 5}
+MB17 cell 5/29 c003
+/content/soccer_mi/model_training_evaluation/src/batching.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  self.tensors[name] = torch.as_tensor(np.asarray(values), device=device)
+verified files: 91 | primary seed 103 | seeds [100, 101, 102, 103, 104]
+P-player rows: 1,744 (discovery 1,215, estimation 529) | index-0: 8,947 | matched controls: 252
+components: ['L0H0', 'L0H1', 'L0MLP', 'L1H0', 'L1H1', 'L1MLP', 'L2H0', 'L2H1', 'L2MLP', 'L3H0', 'L3H1', 'L3MLP']
+identity inputs: ['player', 'team', 'role', 'competition'] | context inputs (15): ['zone', 'period', 'minute_bin', 'score_diff', 'play_pattern', 'poss_len', 'possession_flag', 'prev_action', 'prev_outcome', 'prev_end_zone', 'same_player_as_prev', 'x_norm', 'y_norm', 'dt', 't_poss']
+MB17 cell 6/29 c004
+players with training events: 350 | roles: 23 | frequency bands: {'< 1000 training events': 333, '>= 1000 training events': 17}
+MB17 cell 7/29 c005
+MB17 cell 8/29 c006
+MB17 cell 9/29 c007
+plan written: MB17_plan.json
+{
+ "status": "follow-up after the deep MI audit; exploratory; not part of the MB12 lock",
+ "points": "resid_pre_0, resid_post_0..3 and mlp_hidden_0..3, at the scored position",
+ "edits": [
+  "player removal",
+  "player swap (matched partner)",
+  "role swap (a role value of another role, seed 0)",
+  "previous action, possession change and time gap: each set to the MB02 donor's value",
+  "whole context with all four identity inputs written back",
+  "norm-matched random player vector",
+  "distribution-matched player vector"
+ ],
+ "identity_subspace": "top-r uncentred SVD of the stacked player-removal and player-swap difference vectors (discovery)",
+ "context_subspace": "top-r uncentred SVD of the whole-context difference vectors (discovery)",
+ "overlap_baselines": [
+  "norm-matched random-vector subspace vs the context subspace",
+  "random r-dimensional subspaces (200 draws)"
+ ],
+ "overlap_reading": "(rank 4, the only rank with match-resampled intervals) identity and context overlap beyond chance at a point if the identity-context overlap CI low exceeds the 95th percentile of random subspaces AND the random-vector-context overlap",
+ "projection_ranks": [
+  1,
+  2,
+  4,
+  8,
+  "r90: for each subspace, the smallest rank holding 90 per cent of its edit's squared change (capped at half the width); random controls get the larger of the two ranks"
+ ],
+ "projection_subspaces": [
+  "identity",
+  "context",
+  "random-vector perturbation",
+  "random (seed 0)"
+ ],
+ "projection_reading": "at a point and rank: SEPARABLE if removing the identity subspace retains <= 0.5 of the identity effect and >= 0.8 of the context effect, removing the context subspace retains <= 0.5 of the context effect and >= 0.8 of the identity effect, and the random subspace retains >= 0.8 of both; SHARED if either subspace retains <= 0.5 of both effects; otherwise MIXED",
+ "units": "eta-squared of every MLP hidden unit for identity variables (player within role, role, team) and context variables (previous action, previous outcome, possession change, time gap quintile, x third, coupled flag, score difference, minute bin); threshold per variable = 99th percentile of eta-squared with labels shuffled (20 shuffles); all P-player validation events",
+ "unit_classes": {
+  "A": "identity only",
+  "B": "context only",
+  "C": "identity and context",
+  "D": "neither beyond the shuffled threshold",
+  "E": "identity and at least 3 context variables (broadly mixed)"
+ },
+ "top_units": "20 per layer with the largest |mean attribution| of the identity effect: (h - h_removed) x dDelta/dh, discovery half",
+ "identity_conditioned_context": "cosine and norm ratio of the context-induced difference vector with player A vs with partner B, and vs a fixed norm-matched random vector",
+ "mlp_split": "each MLP's output at the scored position split into its part in the rank-4 identity subspace of that layer and the rest; direct logit attribution of each part to Delta (final LayerNorm scale frozen); random rank-4 split as baseline",
+ "sae_rule": "an SAE is justified only if ALL hold: (i) more than half of the top identity-effect units are class C or E; (ii) identity and context overlap beyond chance (overlap_reading) at one or more resid_post points; (iii) projection is not SEPARABLE at any resid_post point and rank"
+}
+MB17 cell 10/29 c008
+MB17 cell 11/29 c009
+single context inputs available: ['prev_action', 'possession_flag', 'dt']
+events with a donor and a partner: discovery 1187, estimation 529
+point                        mlp_hidden_0  mlp_hidden_1  mlp_hidden_2  mlp_hidden_3  resid_post_0  resid_post_1  resid_post_2  resid_post_3  resid_pre_0
+edit                                                                                                                                                    
+distribution-matched player         47.09         26.48         17.47         12.29         26.99         20.66         17.00          9.53        44.61
+dt                                   1.99          1.98          2.62          4.74          1.33          1.99          4.00          4.17         1.00
+identity (removal + swap)           42.03         25.39         17.96         12.75         24.89         19.43         16.20          9.92        34.21
+player removal                      39.49         23.57         15.93         12.15         23.91         18.18         15.23          9.53        31.58
+player swap                         36.72         24.04         18.15         12.76         22.16         18.29         15.74          9.89        28.94
+possession_flag                      1.78          2.15          2.46          3.68          1.17          2.12          2.83          2.56         1.00
+prev_action                          8.01          5.89          6.18          5.52          4.71          4.56          6.02          4.36         6.58
+random player vector                65.54         23.50         10.43          8.66         37.69         20.38         13.32          6.98        69.58
+role swap                            7.97          5.92          4.14          2.90          4.28          3.67          3.45          2.23         7.35
+whole context                       13.80          7.82          7.02          6.46          9.21          9.06          7.77          5.44        13.51
+
+point                        mlp_hidden_0  mlp_hidden_1  mlp_hidden_2  mlp_hidden_3  resid_post_0  resid_post_1  resid_post_2  resid_post_3  resid_pre_0
+edit                                                                                                                                                    
+distribution-matched player         0.212         0.307         0.396         0.489         0.295         0.358         0.402         0.556        0.198
+dt                                  0.836         0.833         0.819         0.769         0.971         0.903         0.809         0.833        1.000
+identity (removal + swap)           0.217         0.313         0.382         0.479         0.301         0.372         0.416         0.559        0.236
+player removal                      0.221         0.330         0.412         0.496         0.304         0.386         0.432         0.571        0.239
+player swap                         0.236         0.326         0.383         0.476         0.327         0.386         0.422         0.559        0.261
+possession_flag                     0.857         0.876         0.832         0.791         0.973         0.931         0.893         0.892        1.000
+prev_action                         0.604         0.666         0.684         0.728         0.769         0.762         0.732         0.814        0.678
+random player vector                0.157         0.322         0.454         0.561         0.228         0.348         0.434         0.641        0.136
+role swap                           0.579         0.644         0.711         0.765         0.752         0.747         0.765         0.863        0.610
+whole context                       0.468         0.602         0.651         0.699         0.578         0.582         0.597         0.764        0.457
+MB17 cell 12/29 c010
+MB17 cell 13/29 c011
+                                              2             6             10            14            18            22            26            30            34
+point                                resid_pre_0  resid_post_0  resid_post_1  resid_post_2  resid_post_3  mlp_hidden_0  mlp_hidden_1  mlp_hidden_2  mlp_hidden_3
+rank                                           4             4             4             4             4             4             4             4             4
+dimension                                    128           128           128           128           128           512           512           512           512
+overlap identity vs context                0.021         0.132         0.283         0.358         0.636         0.093         0.283         0.486         0.513
+CI low                                     0.019         0.079         0.161         0.265         0.574         0.047         0.223         0.381         0.436
+CI high                                    0.054         0.171         0.324         0.396         0.667          0.15         0.385         0.505         0.596
+overlap random-vector vs context           0.031         0.303         0.363         0.386         0.592         0.204          0.45         0.538         0.487
+overlap identity vs random-vector          0.617         0.437         0.754         0.744          0.92         0.702          0.65         0.769          0.93
+random subspaces: expected (r/d)           0.031         0.031         0.031         0.031         0.031         0.008         0.008         0.008         0.008
+random subspaces: 95th percentile          0.048         0.052         0.052         0.051         0.054         0.013         0.013         0.012         0.012
+overlap identity vs prev_action            0.076         0.198         0.316         0.407           0.7         0.208         0.335         0.458          0.62
+overlap identity vs possession_flag        0.033         0.252         0.247         0.379         0.722         0.083         0.277         0.369          0.56
+overlap identity vs dt                     0.006         0.073         0.278         0.354         0.533         0.066         0.256         0.417         0.566
+overlap beyond chance (plan rule)          False         False         False         False         False         False         False         False         False
+MB17 cell 14/29 c012
+MB17 cell 15/29 c013
+intact identity effect  mean -0.1672 [-0.2647, -0.0558] | mean |.| 0.4687
+intact context effect   mean +6.2668 [+5.9813, +6.6267] | mean |.| 6.5276
+intact interaction      mean -0.1116 [-0.2035, -0.0152] | mean |.| 0.6178
+projection ablations in 20 s
+       point rank  dimensions removed           subspace removed  mean |change in Delta| (own window, player present)  identity effect retained  identity effect CI low  identity effect CI high  context effect retained  context effect CI low  context effect CI high  interaction retained  interaction CI low  interaction CI high
+ resid_pre_0    1                   1                   identity                                                0.139                     0.995                   0.981                    1.024                    1.002                  0.994                   1.009                 0.997               0.980                1.016
+ resid_pre_0    1                   1                    context                                                5.367                     0.357                   0.258                    0.523                    0.477                  0.410                   0.540                 0.260               0.169                0.358
+ resid_pre_0    1                   1 random-vector perturbation                                                0.110                     0.988                   0.968                    1.017                    1.003                  0.996                   1.010                 0.992               0.977                1.011
+ resid_pre_0    1                   1                     random                                                0.126                     1.034                   1.001                    1.065                    0.997                  0.994                   1.000                 1.039               1.018                1.060
+ resid_pre_0    2                   2                   identity                                                0.226                     0.986                   0.919                    1.031                    1.002                  0.993                   1.011                 0.982               0.942                1.013
+ resid_pre_0    2                   2                    context                                                5.633                     0.533                   0.453                    0.644                    0.352                  0.291                   0.414                 0.219               0.101                0.334
+ resid_pre_0    2                   2 random-vector perturbation                                                0.249                     0.946                   0.861                    0.995                    1.007                  0.998                   1.015                 0.957               0.901                1.000
+ resid_pre_0    2                   2                     random                                                0.119                     0.996                   0.978                    1.011                    0.998                  0.995                   1.003                 1.001               0.984                1.015
+ resid_pre_0    4                   4                   identity                                                0.302                     0.933                   0.873                    0.982                    0.999                  0.989                   1.007                 0.935               0.897                0.975
+ resid_pre_0    4                   4                    context                                                6.692                     0.520                   0.342                    0.656                    0.202                  0.165                   0.244                 0.189               0.062                0.279
+ resid_pre_0    4                   4 random-vector perturbation                                                0.335                     0.960                   0.888                    1.009                    1.005                  0.995                   1.015                 0.953               0.891                1.012
+ resid_pre_0    4                   4                     random                                                0.379                     1.142                   1.031                    1.249                    0.985                  0.975                   0.993                 1.094               1.008                1.184
+ resid_pre_0    8                   8                   identity                                                0.490                     0.856                   0.771                    0.911                    0.978                  0.969                   0.990                 0.878               0.793                0.965
+ resid_pre_0    8                   8                    context                                                8.444                     0.284                   0.159                    0.397                    0.032                  0.013                   0.049                 0.083               0.030                0.116
+ resid_pre_0    8                   8 random-vector perturbation                                                0.602                     0.799                   0.669                    0.891                    0.987                  0.971                   1.008                 0.808               0.716                0.905
+ resid_pre_0    8                   8                     random                                                0.564                     1.109                   1.038                    1.157                    0.978                  0.967                   0.993                 1.032               0.966                1.090
+ resid_pre_0  r90                  47                   identity                                                2.297                     0.384                   0.133                    0.611                    0.750                  0.692                   0.813                 0.471               0.269                0.733
+ resid_pre_0  r90                  40                    context                                                8.845                     0.027                  -0.110                    0.209                    0.014                  0.002                   0.034                 0.017              -0.036                0.090
+ resid_pre_0  r90                  47 random-vector perturbation                                                2.146                     0.598                   0.381                    0.858                    0.791                  0.719                   0.861                 0.706               0.574                0.902
+ resid_pre_0  r90                  47                     random                                                2.509                     1.169                   0.733                    1.492                    0.781                  0.735                   0.839                 0.869               0.729                1.018
+resid_post_0    1                   1                   identity                                                0.271                     0.989                   0.896                    1.084                    0.997                  0.988                   1.006                 0.996               0.935                1.047
+resid_post_0    1                   1                    context                                                3.601                     0.628                   0.501                    0.852                    0.658                  0.617                   0.712                 0.482               0.376                0.612
+resid_post_0    1                   1 random-vector perturbation                                                1.025                     1.054                   0.872                    1.236                    0.955                  0.923                   0.983                 0.979               0.941                1.026
+resid_post_0    1                   1                     random                                                0.064                     1.004                   0.999                    1.010                    0.999                  0.997                   1.002                 1.014               1.006                1.022
+resid_post_0    2                   2                   identity                                                0.363                     0.897                   0.838                    0.947                    1.001                  0.992                   1.009                 0.927               0.896                0.974
+resid_post_0    2                   2                    context                                                4.242                     0.753                   0.647                    0.908                    0.418                  0.367                   0.476                 0.473               0.343                0.616
+resid_post_0    2                   2 random-vector perturbation                                                1.511                     1.054                   0.822                    1.230                    0.933                  0.887                   0.972                 0.975               0.879                1.140
+resid_post_0    2                   2                     random                                                0.129                     0.989                   0.969                    1.010                    0.997                  0.994                   1.002                 0.989               0.974                1.002
+resid_post_0    4                   4                   identity                                                1.021                     0.839                   0.704                    0.967                    0.970                  0.941                   1.002                 0.840               0.762                0.913
+resid_post_0    4                   4                    context                                                5.733                     0.846                   0.492                    1.066                    0.259                  0.193                   0.316                 0.358               0.170                0.530
+resid_post_0    4                   4 random-vector perturbation                                                3.490                     0.668                   0.543                    0.841                    0.686                  0.643                   0.733                 0.530               0.418                0.679
+resid_post_0    4                   4                     random                                                0.143                     1.006                   0.992                    1.026                    1.002                  0.996                   1.006                 0.992               0.963                1.019
+resid_post_0    8                   8                   identity                                                1.789                     0.686                   0.506                    0.913                    0.869                  0.828                   0.917                 0.665               0.565                0.818
+resid_post_0    8                   8                    context                                                6.591                     0.799                   0.477                    1.029                    0.068                 -0.003                   0.139                 0.333               0.172                0.531
+resid_post_0    8                   8 random-vector perturbation                                                4.390                     0.362                   0.219                    0.509                    0.544                  0.502                   0.602                 0.303               0.179                0.456
+resid_post_0    8                   8                     random                                                0.195                     0.977                   0.956                    1.000                    0.999                  0.996                   1.004                 0.989               0.969                1.010
+resid_post_0  r90                  38                   identity                                                5.103                     0.287                   0.060                    0.420                    0.300                  0.243                   0.349                 0.134              -0.031                0.286
+resid_post_0  r90                  18                    context                                                6.907                     0.275                   0.026                    0.509                    0.009                 -0.043                   0.053                 0.070              -0.027                0.176
+resid_post_0  r90                  38 random-vector perturbation                                                6.467                     0.123                   0.012                    0.188                    0.129                  0.073                   0.180                 0.065               0.011                0.128
+resid_post_0  r90                  38                     random                                                0.916                     1.056                   0.967                    1.133                    0.950                  0.914                   0.988                 1.029               0.954                1.099
+resid_post_1    1                   1                   identity                                                0.296                     0.943                   0.909                    0.965                    0.993                  0.979                   1.003                 0.941               0.895                0.984
+resid_post_1    1                   1                    context                                                2.432                     0.925                   0.790                    1.085                    0.612                  0.554                   0.655                 0.835               0.738                0.950
+resid_post_1    1                   1 random-vector perturbation                                                1.223                     0.908                   0.752                    1.078                    0.884                  0.839                   0.916                 0.907               0.811                1.023
+resid_post_1    1                   1                     random                                                0.059                     1.022                   1.017                    1.028                    0.999                  0.998                   1.001                 1.016               1.012                1.020
+resid_post_1    2                   2                   identity                                                0.447                     0.814                   0.765                    0.876                    0.996                  0.979                   1.008                 0.869               0.819                0.924
+resid_post_1    2                   2                    context                                                2.792                     0.852                   0.666                    1.036                    0.540                  0.460                   0.594                 0.752               0.608                0.916
+resid_post_1    2                   2 random-vector perturbation                                                1.715                     0.632                   0.483                    0.806                    0.864                  0.820                   0.891                 0.695               0.631                0.792
+resid_post_1    2                   2                     random                                                0.103                     0.984                   0.966                    1.001                    0.996                  0.993                   1.001                 0.993               0.981                1.002
+resid_post_1    4                   4                   identity                                                1.266                     0.585                   0.444                    0.827                    0.835                  0.789                   0.874                 0.633               0.531                0.799
+resid_post_1    4                   4                    context                                                4.006                     0.853                   0.658                    1.138                    0.405                  0.340                   0.474                 0.671               0.516                0.866
+resid_post_1    4                   4 random-vector perturbation                                                1.855                     0.620                   0.496                    0.791                    0.818                  0.772                   0.846                 0.636               0.573                0.747
+resid_post_1    4                   4                     random                                                0.120                     0.985                   0.978                    0.997                    0.996                  0.993                   1.000                 0.980               0.960                1.000
+resid_post_1    8                   8                   identity                                                2.593                     0.387                   0.288                    0.521                    0.519                  0.482                   0.553                 0.318               0.186                0.436
+resid_post_1    8                   8                    context                                                5.386                     0.908                   0.634                    1.225                    0.127                  0.083                   0.164                 0.545               0.376                0.682
+resid_post_1    8                   8 random-vector perturbation                                                2.715                     0.411                   0.289                    0.577                    0.525                  0.491                   0.554                 0.350               0.271                0.438
+resid_post_1    8                   8                     random                                                0.165                     0.953                   0.937                    0.965                    0.996                  0.992                   1.000                 0.982               0.967                0.997
+resid_post_1  r90                  33                   identity                                                4.900                     0.084                  -0.073                    0.167                    0.187                  0.158                   0.218                 0.039              -0.020                0.080
+resid_post_1  r90                  15                    context                                                5.875                     0.321                   0.117                    0.529                    0.010                 -0.027                   0.057                 0.192               0.089                0.284
+resid_post_1  r90                  33 random-vector perturbation                                                5.731                     0.101                   0.026                    0.168                    0.089                  0.055                   0.128                 0.076               0.038                0.116
+resid_post_1  r90                  33                     random                                                0.502                     0.980                   0.917                    1.036                    0.958                  0.942                   0.973                 1.010               0.949                1.060
+resid_post_2    1                   1                   identity                                                1.008                     0.897                   0.830                    0.962                    0.906                  0.885                   0.926                 0.869               0.806                0.911
+resid_post_2    1                   1                    context                                                2.165                     1.043                   0.983                    1.127                    0.689                  0.641                   0.724                 0.886               0.803                0.957
+resid_post_2    1                   1 random-vector perturbation                                                1.062                     0.890                   0.816                    0.962                    0.902                  0.877                   0.926                 0.861               0.793                0.902
+resid_post_2    1                   1                     random                                                0.055                     1.024                   1.019                    1.030                    0.998                  0.997                   1.000                 1.018               1.011                1.024
+resid_post_2    2                   2                   identity                                                1.488                     0.632                   0.555                    0.706                    0.889                  0.863                   0.922                 0.559               0.480                0.635
+resid_post_2    2                   2                    context                                                2.879                     1.102                   0.969                    1.257                    0.617                  0.550                   0.672                 0.901               0.825                0.977
+resid_post_2    2                   2 random-vector perturbation                                                1.686                     0.652                   0.593                    0.721                    0.855                  0.825                   0.899                 0.557               0.486                0.617
+resid_post_2    2                   2                     random                                                0.103                     0.976                   0.968                    0.984                    0.998                  0.996                   1.000                 0.980               0.974                0.984
+resid_post_2    4                   4                   identity                                                1.636                     0.543                   0.412                    0.646                    0.788                  0.765                   0.816                 0.479               0.380                0.550
+resid_post_2    4                   4                    context                                                4.958                     1.226                   1.003                    1.446                    0.301                  0.246                   0.354                 0.822               0.641                0.978
+resid_post_2    4                   4 random-vector perturbation                                                2.170                     0.452                   0.382                    0.537                    0.778                  0.743                   0.830                 0.374               0.321                0.434
+resid_post_2    4                   4                     random                                                0.090                     0.991                   0.983                    1.004                    0.996                  0.992                   0.999                 0.992               0.984                1.002
+resid_post_2    8                   8                   identity                                                3.539                     0.326                   0.195                    0.446                    0.490                  0.457                   0.539                 0.231               0.152                0.289
+resid_post_2    8                   8                    context                                                6.773                     0.571                   0.384                    0.720                    0.061                  0.023                   0.092                 0.272               0.185                0.391
+resid_post_2    8                   8 random-vector perturbation                                                4.113                     0.319                   0.239                    0.423                    0.420                  0.372                   0.477                 0.177               0.084                0.270
+resid_post_2    8                   8                     random                                                0.153                     0.961                   0.935                    0.979                    0.992                  0.990                   0.995                 0.980               0.967                0.989
+resid_post_2  r90                  29                   identity                                                6.691                     0.092                   0.004                    0.163                    0.089                  0.070                   0.111                 0.011              -0.016                0.036
+resid_post_2  r90                  13                    context                                                7.288                     0.152                   0.043                    0.263                    0.015                 -0.006                   0.037                 0.075               0.023                0.143
+resid_post_2  r90                  29 random-vector perturbation                                                6.909                     0.067                   0.004                    0.107                    0.056                  0.034                   0.085                 0.013              -0.004                0.031
+resid_post_2  r90                  29                     random                                                0.655                     0.985                   0.933                    1.034                    0.933                  0.923                   0.946                 0.949               0.913                0.987
+resid_post_3    1                   1                   identity                                                1.953                     0.575                   0.520                    0.661                    0.841                  0.808                   0.881                 0.494               0.421                0.563
+resid_post_3    1                   1                    context                                                2.108                     1.192                   1.105                    1.248                    0.703                  0.661                   0.762                 1.129               1.025                1.209
+resid_post_3    1                   1 random-vector perturbation                                                1.657                     0.686                   0.632                    0.759                    0.850                  0.820                   0.882                 0.616               0.572                0.654
+resid_post_3    1                   1                     random                                                0.047                     1.003                   1.001                    1.004                    0.993                  0.992                   0.995                 1.000               0.998                1.003
+resid_post_3    2                   2                   identity                                                1.979                     0.359                   0.307                    0.414                    0.804                  0.767                   0.851                 0.294               0.226                0.361
+resid_post_3    2                   2                    context                                                3.524                     1.197                   1.097                    1.283                    0.480                  0.418                   0.556                 1.109               0.965                1.205
+resid_post_3    2                   2 random-vector perturbation                                                3.195                     0.554                   0.473                    0.656                    0.644                  0.585                   0.715                 0.514               0.466                0.555
+resid_post_3    2                   2                     random                                                0.140                     0.978                   0.972                    0.985                    0.993                  0.989                   0.995                 0.984               0.979                0.988
+resid_post_3    4                   4                   identity                                                3.763                     0.297                   0.221                    0.348                    0.473                  0.415                   0.550                 0.193               0.141                0.232
+resid_post_3    4                   4                    context                                                4.922                     0.807                   0.700                    0.942                    0.233                  0.182                   0.282                 0.710               0.599                0.813
+resid_post_3    4                   4 random-vector perturbation                                                4.023                     0.278                   0.228                    0.331                    0.472                  0.407                   0.561                 0.199               0.156                0.237
+resid_post_3    4                   4                     random                                                0.169                     0.971                   0.966                    0.978                    0.985                  0.979                   0.989                 0.975               0.966                0.983
+resid_post_3    8                   8                   identity                                                4.515                     0.119                   0.096                    0.152                    0.279                  0.245                   0.325                 0.095               0.054                0.137
+resid_post_3    8                   8                    context                                                5.785                     0.583                   0.451                    0.712                    0.058                  0.031                   0.082                 0.533               0.430                0.631
+resid_post_3    8                   8 random-vector perturbation                                                4.852                     0.158                   0.114                    0.203                    0.210                  0.178                   0.247                 0.091               0.048                0.128
+resid_post_3    8                   8                     random                                                0.290                     0.954                   0.931                    0.972                    0.958                  0.954                   0.962                 0.965               0.960                0.969
+resid_post_3  r90                  15                   identity                                                5.935                     0.014                  -0.003                    0.039                    0.048                  0.042                   0.057                 0.015               0.007                0.026
+resid_post_3  r90                   7                    context                                                5.553                     0.636                   0.518                    0.762                    0.095                  0.061                   0.126                 0.559               0.456                0.657
+resid_post_3  r90                  15 random-vector perturbation                                                5.960                     0.016                   0.001                    0.036                    0.045                  0.040                   0.052                 0.014               0.008                0.022
+resid_post_3  r90                  15                     random                                                0.509                     0.895                   0.878                    0.909                    0.928                  0.922                   0.932                 0.890               0.880                0.901
+
+rank               1          2       4       8     r90
+point                                                  
+resid_pre_0   SHARED      MIXED   MIXED  SHARED  SHARED
+resid_post_0   MIXED      MIXED   MIXED   MIXED  SHARED
+resid_post_1   MIXED      MIXED   MIXED   MIXED  SHARED
+resid_post_2   MIXED      MIXED   MIXED  SHARED  SHARED
+resid_post_3   MIXED  SEPARABLE  SHARED  SHARED  SHARED
+MB17 cell 16/29 c014
+MB17 cell 17/29 c015
+share of ALL hidden units in each class (A identity only, B context only, C both, D neither, E identity + >= 3 context variables):
+class             B      E
+point                     
+mlp_hidden_0  0.000  1.000
+mlp_hidden_1  0.004  0.996
+mlp_hidden_2  0.000  1.000
+mlp_hidden_3  0.008  0.992
+MB17 cell 18/29 c016
+MB17 cell 19/29 c017
+class counts among the top-20 identity-effect units per layer:
+class         B   E
+point              
+mlp_hidden_0  0  20
+mlp_hidden_1  1  19
+mlp_hidden_2  0  20
+mlp_hidden_3  0  20
+share of top identity-effect units that are class C or E: 0.988
+share of each layer's |attribution| held by its top 20 units: {'mlp_hidden_0': 0.25999999046325684, 'mlp_hidden_1': 0.3089999854564667, 'mlp_hidden_2': 0.28600001335144043, 'mlp_hidden_3': 0.27000001072883606}
+MB17 cell 20/29 c018
+MB17 cell 21/29 c019
+       point      player B  mean cosine (A vs B)  CI low  CI high  mean log norm ratio B/A  ratio CI low  ratio CI high
+resid_post_0       partner                0.9954  0.9947   0.9959                   0.0039       -0.0028         0.0118
+resid_post_1       partner                0.9891  0.9876   0.9903                   0.0081       -0.0008         0.0182
+resid_post_2       partner                0.9827  0.9790   0.9854                   0.0089       -0.0061         0.0250
+resid_post_3       partner                0.9789  0.9722   0.9837                   0.0085       -0.0063         0.0233
+mlp_hidden_0       partner                0.9827  0.9814   0.9834                   0.0047       -0.0056         0.0163
+mlp_hidden_1       partner                0.9819  0.9793   0.9834                   0.0105       -0.0026         0.0247
+mlp_hidden_2       partner                0.9785  0.9743   0.9814                   0.0107       -0.0065         0.0287
+mlp_hidden_3       partner                0.9720  0.9649   0.9772                   0.0086       -0.0047         0.0213
+resid_post_0 random vector                0.9952  0.9945   0.9957                   0.0026        0.0008         0.0056
+resid_post_1 random vector                0.9887  0.9876   0.9899                   0.0041       -0.0000         0.0087
+resid_post_2 random vector                0.9819  0.9800   0.9838                   0.0048       -0.0049         0.0147
+resid_post_3 random vector                0.9774  0.9741   0.9802                   0.0012       -0.0116         0.0142
+mlp_hidden_0 random vector                0.9825  0.9816   0.9832                   0.0021       -0.0015         0.0064
+mlp_hidden_1 random vector                0.9826  0.9809   0.9838                   0.0081        0.0009         0.0170
+mlp_hidden_2 random vector                0.9770  0.9748   0.9793                   0.0041       -0.0084         0.0179
+mlp_hidden_3 random vector                0.9700  0.9672   0.9734                   0.0003       -0.0118         0.0130
+MB17 cell 22/29 c020
+MB17 cell 23/29 c021
+MLP           what is split subspace  mean DLA total  mean DLA of the part in the subspace  part CI low  part CI high  mean DLA of the rest  share of events: part towards a_id AND rest towards a_ctx
+ L0                   write identity          0.5405                                0.0350       0.0120        0.0568                0.5055                                                     0.2911
+ L0                   write   random          0.5405                               -0.0031      -0.0060       -0.0003                0.5437                                                     0.4669
+ L0 identity-induced change identity         -0.0194                               -0.0072      -0.0122        0.0006               -0.0122                                                     0.2136
+ L0 identity-induced change   random         -0.0194                                0.0014      -0.0004        0.0035               -0.0208                                                     0.1229
+ L1                   write identity          0.9339                                0.3539       0.2838        0.4026                0.5800                                                     0.1550
+ L1                   write   random          0.9339                                0.0656       0.0589        0.0740                0.8682                                                     0.1078
+ L1 identity-induced change identity         -0.0392                               -0.0208      -0.0432        0.0000               -0.0184                                                     0.2060
+ L1 identity-induced change   random         -0.0392                               -0.0034      -0.0049       -0.0012               -0.0358                                                     0.1777
+ L2                   write identity          0.6961                                0.3315       0.3014        0.3729                0.3646                                                     0.2457
+ L2                   write   random          0.6961                                0.0121       0.0048        0.0249                0.6840                                                     0.3724
+ L2 identity-induced change identity         -0.0398                               -0.0112      -0.0437        0.0163               -0.0286                                                     0.1871
+ L2 identity-induced change   random         -0.0398                               -0.0019      -0.0034       -0.0000               -0.0379                                                     0.2325
+ L3                   write identity          4.2006                                3.2500       2.8734        3.4998                0.9506                                                     0.0945
+ L3                   write   random          4.2006                                0.1000       0.0811        0.1236                4.1006                                                     0.2098
+ L3 identity-induced change identity         -0.2274                               -0.1898      -0.2828       -0.0979               -0.0375                                                     0.2439
+ L3 identity-induced change   random         -0.2274                               -0.0033      -0.0055       -0.0012               -0.2240                                                     0.1191
+MB17 cell 24/29 c022
+MB17 cell 25/29 c023
+{
+ "(i) more than half of the top identity-effect units are class C or E": true,
+ "share of top units in C or E": 0.9875,
+ "(ii) identity-context overlap beyond chance at a resid_post point": false,
+ "(iii) projection not SEPARABLE at any resid_post point and rank": false,
+ "reference: verdicts at the embedding (before any layer)": {
+  "1": "SHARED",
+  "2": "MIXED",
+  "4": "MIXED",
+  "8": "SHARED",
+  "r90": "SHARED"
+ },
+ "SAE justified": false
+}
+NOTE: identity and context are not SEPARABLE by projection even at the embedding (r90). Condition (iii) then says little about what the layers do; compare the later verdicts with the embedding's rather than reading them alone.
+MB17 cell 26/29 c024
+MB17 cell 27/29 c025
+rank               1          2       4       8     r90
+point                                                  
+resid_pre_0   SHARED      MIXED   MIXED  SHARED  SHARED
+resid_post_0   MIXED      MIXED   MIXED   MIXED  SHARED
+resid_post_1   MIXED      MIXED   MIXED   MIXED  SHARED
+resid_post_2   MIXED      MIXED   MIXED  SHARED  SHARED
+resid_post_3   MIXED  SEPARABLE  SHARED  SHARED  SHARED
+SAE justified: False
+MB17 cell 28/29 c026
+manifest entries verified at the end: 93
+earlier entries whose fingerprint changed during this notebook: none
+test accesses recorded so far: 1 (MB12 recorded exactly one; this notebook adds none)
+MB17 cell 29/29 c027
+COMPLETED MB17: 817.15 seconds; promoted to mi_analysis/

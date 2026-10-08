@@ -1,0 +1,782 @@
+{
+  "plan": "MB14_ext",
+  "interaction_named": [
+    {
+      "circuit": "effect-size circuit",
+      "components": 4,
+      "F (interaction)": 0.8558361110114088,
+      "CI low": 0.7616214031633256,
+      "CI high": 0.9414930934395341,
+      "percentile among same size": 99.79797979797979
+    },
+    {
+      "circuit": "pre-registered circuit (MB10)",
+      "components": 11,
+      "F (interaction)": 0.994755744892905,
+      "CI low": 0.9748334533465463,
+      "CI high": 1.011324181090338,
+      "percentile among same size": 75.0
+    },
+    {
+      "circuit": "all heads, no MLP",
+      "components": 8,
+      "F (interaction)": -0.002543531409530729,
+      "CI low": -0.008511693127430766,
+      "CI high": 0.001508269159331496,
+      "percentile among same size": 2.0202020202020203
+    },
+    {
+      "circuit": "all MLPs, no head",
+      "components": 4,
+      "F (interaction)": 0.8558361110114088,
+      "CI low": 0.7616214031633256,
+      "CI high": 0.9414930934395341,
+      "percentile among same size": 99.79797979797979
+    }
+  ],
+  "shapley_selectivity": [
+    {
+      "component": "L0H0",
+      "Shapley identity": 0.01192115177562511,
+      "Shapley context": -0.0020960391119863447,
+      "identity - context": 0.014017190887611455,
+      "CI low": -0.011088356068007007,
+      "CI high": 0.038287760688236555,
+      "Shapley arbitration": 0.0007482454364693691,
+      "Shapley interaction": 0.016274164140833346,
+      "reading (plan rule)": "shared / not separable"
+    },
+    {
+      "component": "L0H1",
+      "Shapley identity": 0.010933579740508306,
+      "Shapley context": 0.00076812141650082,
+      "identity - context": 0.010165458324007486,
+      "CI low": -0.007220336466656681,
+      "CI high": 0.019305805278522523,
+      "Shapley arbitration": 0.006177718047647392,
+      "Shapley interaction": 0.012084617395999881,
+      "reading (plan rule)": "shared / not separable"
+    },
+    {
+      "component": "L0MLP",
+      "Shapley identity": 0.3818316016474148,
+      "Shapley context": 0.35613587660554546,
+      "identity - context": 0.025695725041869344,
+      "CI low": -0.029801303061315988,
+      "CI high": 0.08748387656056868,
+      "Shapley arbitration": 0.32566121879456605,
+      "Shapley interaction": 0.34566484531818126,
+      "reading (plan rule)": "shared / not separable"
+    },
+    {
+      "component": "L1H0",
+      "Shapley identity": 0.0070471918347773665,
+      "Shapley context": 0.005476993030128493,
+      "identity - context": 0.0015701988046488737,
+      "CI low": -0.016231286029378282,
+      "CI high": 0.01139460943541717,
+      "Shapley arbitration": 0.003919916577002325,
+      "Shapley interaction": 0.01045541481717329,
+      "reading (plan rule)": "shared / not separable"
+    },
+    {
+      "component": "L1H1",
+      "Shapley identity": 0.005657859254799593,
+      "Shapley context": -0.0009082986490633244,
+      "identity - context": 0.006566157903862918,
+      "CI low": 0.0002404567480352288,
+      "CI high": 0.0159699755335324,
+      "Shapley arbitration": -0.004206823640850534,
+      "Shapley interaction": 0.004665541783288992,
+      "reading (plan rule)": "shared / not separable"
+    },
+    {
+      "component": "L1MLP",
+      "Shapley identity": 0.2972537035577582,
+      "Shapley context": 0.2307724820178367,
+      "identity - context": 0.0664812215399215,
+      "CI low": 0.00415971489858382,
+      "CI high": 0.10914246498416277,
+      "Shapley arbitration": 0.22035864346774006,
+      "Shapley interaction": 0.2786969665377078,
+      "reading (plan rule)": "shared / not separable"
+    },
+    {
+      "component": "L2H0",
+      "Shapley identity": 0.00277255469840704,
+      "Shapley context": 0.004304200552672855,
+      "identity - context": -0.0015316458542658147,
+      "CI low": -0.007560034727909916,
+      "CI high": 0.003043435007553448,
+      "Shapley arbitration": 0.0006093343139690932,
+      "Shapley interaction": 0.0016730384692632634,
+      "reading (plan rule)": "shared / not separable"
+    },
+    {
+      "component": "L2H1",
+      "Shapley identity": -0.005346657192188742,
+      "Shapley context": 0.0014373284544308353,
+      "identity - context": -0.006783985646619577,
+      "CI low": -0.013263275346884951,
+      "CI high": 0.0005518374737490402,
+      "Shapley arbitration": 0.00499277741924078,
+      "Shapley interaction": -0.0026885538170947024,
+      "reading (plan rule)": "shared / not separable"
+    },
+    {
+      "component": "L2MLP",
+      "Shapley identity": 0.12660279000063096,
+      "Shapley context": 0.1961853073096322,
+      "identity - context": -0.06958251730900125,
+      "CI low": -0.1456519611839617,
+      "CI high": 0.0016641140765513804,
+      "Shapley arbitration": 0.21477102275163956,
+      "Shapley interaction": 0.17906192749615704,
+      "reading (plan rule)": "shared / not separable"
+    },
+    {
+      "component": "L3H0",
+      "Shapley identity": 0.006638486314509347,
+      "Shapley context": 0.0028641058447440295,
+      "identity - context": 0.0037743804697653177,
+      "CI low": -0.008363440265091187,
+      "CI high": 0.01875449604433498,
+      "Shapley arbitration": 0.004867163092477104,
+      "Shapley interaction": 0.0047311990086514304,
+      "reading (plan rule)": "shared / not separable"
+    },
+    {
+      "component": "L3H1",
+      "Shapley identity": -0.010953989165238197,
+      "Shapley context": 0.004533022706653889,
+      "identity - context": -0.015487011871892086,
+      "CI low": -0.025686573458198754,
+      "CI high": -0.0037127432642559545,
+      "Shapley arbitration": 0.005288941527910447,
+      "Shapley interaction": -0.005857467439617594,
+      "reading (plan rule)": "shared / not separable"
+    },
+    {
+      "component": "L3MLP",
+      "Shapley identity": 0.16564172753299655,
+      "Shapley context": 0.20052689982290411,
+      "identity - context": -0.03488517228990756,
+      "CI low": -0.06271728035791381,
+      "CI high": 0.0005495691025837556,
+      "Shapley arbitration": 0.21681184221218863,
+      "Shapley interaction": 0.1552383062894555,
+      "reading (plan rule)": "shared / not separable"
+    }
+  ],
+  "separability": [
+    {
+      "circuit": "S_id (identity without context)",
+      "components (chosen on discovery)": "L0H0+L0H1+L0MLP+L1H0+L1H1+L1MLP+L2H0+L3H0+L3MLP",
+      "size": 9,
+      "gap on discovery": 0.27524254059297537,
+      "F own (estimation)": 0.980002063231346,
+      "F own CI low": 0.7648308720136638,
+      "F other (estimation)": 0.6793034802715678,
+      "gap (estimation)": 0.30069858295977814,
+      "gap CI low": 0.06372329694081166,
+      "gap CI high": 0.5497097684618464,
+      "separation found (plan rule)": false,
+      "best gap if chosen on estimation (optimistic)": 0.3092835541075244,
+      "that subset": "L0H0+L0H1+L0MLP+L1H0+L1H1+L1MLP+L2H0+L3H0+L3H1+L3MLP"
+    },
+    {
+      "circuit": "S_ctx (context without identity)",
+      "components (chosen on discovery)": "L0H0+L0MLP+L1H0+L1H1+L2H0+L2H1+L2MLP+L3H1+L3MLP",
+      "size": 9,
+      "gap on discovery": 0.09632311257453297,
+      "F own (estimation)": 0.6159852181891318,
+      "F own CI low": 0.5401949274438029,
+      "F other (estimation)": 0.687744519137398,
+      "gap (estimation)": -0.07175930094826621,
+      "gap CI low": -0.22405459729518581,
+      "gap CI high": 0.03427653117133006,
+      "separation found (plan rule)": false,
+      "best gap if chosen on estimation (optimistic)": 0.14851220061194315,
+      "that subset": "L0MLP+L1MLP+L2H1+L2MLP+L3H0+L3H1+L3MLP"
+    }
+  ],
+  "strata_named": [
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "identity effect",
+      "circuit": "effect-size circuit",
+      "F": 0.8970312108634477,
+      "CI low": 0.7781859815608023,
+      "CI high": 1.0213872018470351
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "identity effect",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 0.9937848701404991,
+      "CI low": 0.9613265579818077,
+      "CI high": 1.021526477852174
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "identity effect",
+      "circuit": "all heads, no MLP",
+      "F": 0.007999546098722913,
+      "CI low": -0.0061847101919401334,
+      "CI high": 0.028937546724811924
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "identity effect",
+      "circuit": "all MLPs, no head",
+      "F": 0.8970312108634477,
+      "CI low": 0.7781859815608023,
+      "CI high": 1.0213872018470351
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "context effect",
+      "circuit": "effect-size circuit",
+      "F": 1.0051661298451047,
+      "CI low": 0.9582479331433875,
+      "CI high": 1.050282350513414
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "context effect",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 1.0064347259681077,
+      "CI low": 0.9914756053220918,
+      "CI high": 1.0203557084878474
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "context effect",
+      "circuit": "all heads, no MLP",
+      "F": 0.005977241732449686,
+      "CI low": -0.0028776423275921094,
+      "CI high": 0.014139983731643765
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "context effect",
+      "circuit": "all MLPs, no head",
+      "F": 1.0051661298451047,
+      "CI low": 0.9582479331433875,
+      "CI high": 1.050282350513414
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "arbitration",
+      "circuit": "effect-size circuit",
+      "F": 0.9827153502500394,
+      "CI low": 0.9649223893362309,
+      "CI high": 0.9951206918543467
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "arbitration",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 0.9889348396838826,
+      "CI low": 0.9854758968424545,
+      "CI high": 0.9927724438205762
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "arbitration",
+      "circuit": "all heads, no MLP",
+      "F": 0.012978069066675028,
+      "CI low": 0.011101631691165527,
+      "CI high": 0.016055999935895217
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "arbitration",
+      "circuit": "all MLPs, no head",
+      "F": 0.9827153502500394,
+      "CI low": 0.9649223893362309,
+      "CI high": 0.9951206918543467
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "interaction",
+      "circuit": "effect-size circuit",
+      "F": 0.8241289847689373,
+      "CI low": 0.7120527763943981,
+      "CI high": 0.9109345366953576
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "interaction",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 0.9867456006411156,
+      "CI low": 0.9657468840575467,
+      "CI high": 1.0017722578379655
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "interaction",
+      "circuit": "all heads, no MLP",
+      "F": 0.00017387415511104854,
+      "CI low": -0.007956364692530256,
+      "CI high": 0.010926094316868884
+    },
+    {
+      "stratum": "genuine",
+      "events": 282,
+      "behaviour": "interaction",
+      "circuit": "all MLPs, no head",
+      "F": 0.8241289847689373,
+      "CI low": 0.7120527763943981,
+      "CI high": 0.9109345366953576
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "identity effect",
+      "circuit": "effect-size circuit",
+      "F": 0.9035651947172328,
+      "CI low": 0.8287154981653302,
+      "CI high": 1.043103581223493
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "identity effect",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 1.0242656731475117,
+      "CI low": 0.9999698883917282,
+      "CI high": 1.0497747520890417
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "identity effect",
+      "circuit": "all heads, no MLP",
+      "F": 0.0038817568738382354,
+      "CI low": -0.0024050297535175968,
+      "CI high": 0.012395295087236574
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "identity effect",
+      "circuit": "all MLPs, no head",
+      "F": 0.9035651947172328,
+      "CI low": 0.8287154981653302,
+      "CI high": 1.043103581223493
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "context effect",
+      "circuit": "effect-size circuit",
+      "F": 0.9280051345265855,
+      "CI low": 0.9030825079212544,
+      "CI high": 0.952731163430136
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "context effect",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 0.985853878088463,
+      "CI low": 0.9796410567477956,
+      "CI high": 0.9898168284116244
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "context effect",
+      "circuit": "all heads, no MLP",
+      "F": 0.008208404021288656,
+      "CI low": 0.0035199130598636322,
+      "CI high": 0.012131810229536725
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "context effect",
+      "circuit": "all MLPs, no head",
+      "F": 0.9280051345265855,
+      "CI low": 0.9030825079212544,
+      "CI high": 0.952731163430136
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "arbitration",
+      "circuit": "effect-size circuit",
+      "F": 0.944798522152926,
+      "CI low": 0.9290974899632242,
+      "CI high": 0.9615352346435893
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "arbitration",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 0.9836703056174735,
+      "CI low": 0.9799599456775122,
+      "CI high": 0.9864889622134331
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "arbitration",
+      "circuit": "all heads, no MLP",
+      "F": 0.0066826217853226426,
+      "CI low": 0.004600022541956608,
+      "CI high": 0.008842195286665328
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "arbitration",
+      "circuit": "all MLPs, no head",
+      "F": 0.944798522152926,
+      "CI low": 0.9290974899632242,
+      "CI high": 0.9615352346435893
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "interaction",
+      "circuit": "effect-size circuit",
+      "F": 0.8814285622999968,
+      "CI low": 0.7879566141312411,
+      "CI high": 0.9905651828829659
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "interaction",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 1.0012211440278127,
+      "CI low": 0.9751834066167071,
+      "CI high": 1.0282073592268648
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "interaction",
+      "circuit": "all heads, no MLP",
+      "F": -0.004736889111285401,
+      "CI low": -0.01373638321267716,
+      "CI high": 0.00026518951293463263
+    },
+    {
+      "stratum": "coupled",
+      "events": 247,
+      "behaviour": "interaction",
+      "circuit": "all MLPs, no head",
+      "F": 0.8814285622999968,
+      "CI low": 0.7879566141312411,
+      "CI high": 0.9905651828829659
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "identity effect",
+      "circuit": "effect-size circuit",
+      "F": 0.883011140316643,
+      "CI low": 0.8073205843902076,
+      "CI high": 0.9997922754108632
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "identity effect",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 1.0067063086220724,
+      "CI low": 0.9899478931415243,
+      "CI high": 1.0208469330209418
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "identity effect",
+      "circuit": "all heads, no MLP",
+      "F": 0.007111397434611663,
+      "CI low": -0.0012408883561236127,
+      "CI high": 0.021031168115391043
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "identity effect",
+      "circuit": "all MLPs, no head",
+      "F": 0.883011140316643,
+      "CI low": 0.8073205843902076,
+      "CI high": 0.9997922754108632
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "context effect",
+      "circuit": "effect-size circuit",
+      "F": 0.9583180342422488,
+      "CI low": 0.9347665643945052,
+      "CI high": 0.9829149312172633
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "context effect",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 0.9955173407841319,
+      "CI low": 0.9897760031717234,
+      "CI high": 1.0006702728458359
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "context effect",
+      "circuit": "all heads, no MLP",
+      "F": 0.00710348568294523,
+      "CI low": 0.004687298821880153,
+      "CI high": 0.010234087525604712
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "context effect",
+      "circuit": "all MLPs, no head",
+      "F": 0.9583180342422488,
+      "CI low": 0.9347665643945052,
+      "CI high": 0.9829149312172633
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "arbitration",
+      "circuit": "effect-size circuit",
+      "F": 0.9643421816536625,
+      "CI low": 0.9525941542472753,
+      "CI high": 0.9739297774160058
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "arbitration",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 0.9864246344325684,
+      "CI low": 0.9841986642701699,
+      "CI high": 0.9879817141999241
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "arbitration",
+      "circuit": "all heads, no MLP",
+      "F": 0.009747624043369398,
+      "CI low": 0.008576514932784473,
+      "CI high": 0.011940979046406449
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "arbitration",
+      "circuit": "all MLPs, no head",
+      "F": 0.9643421816536625,
+      "CI low": 0.9525941542472753,
+      "CI high": 0.9739297774160058
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "interaction",
+      "circuit": "effect-size circuit",
+      "F": 0.8429311905952328,
+      "CI low": 0.7249823132010358,
+      "CI high": 0.9385465945578788
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "interaction",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 0.9899847560643132,
+      "CI low": 0.9697918699288718,
+      "CI high": 1.0040060574751282
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "interaction",
+      "circuit": "all heads, no MLP",
+      "F": -0.0008877869614967932,
+      "CI low": -0.007487308752028676,
+      "CI high": 0.004828377696303958
+    },
+    {
+      "stratum": "< 1000 training events",
+      "events": 497,
+      "behaviour": "interaction",
+      "circuit": "all MLPs, no head",
+      "F": 0.8429311905952328,
+      "CI low": 0.7249823132010358,
+      "CI high": 0.9385465945578788
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "identity effect",
+      "circuit": "effect-size circuit",
+      "F": 1.2017908517883409,
+      "CI low": 1.1757918174834996,
+      "CI high": 1.2322866491334514
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "identity effect",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 1.0900257405044693,
+      "CI low": 0.9385611637213175,
+      "CI high": 1.2191560820787268
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "identity effect",
+      "circuit": "all heads, no MLP",
+      "F": -0.019512598092276484,
+      "CI low": -0.05836429935830707,
+      "CI high": 0.01361021888430392
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "identity effect",
+      "circuit": "all MLPs, no head",
+      "F": 1.2017908517883409,
+      "CI low": 1.1757918174834996,
+      "CI high": 1.2322866491334514
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "context effect",
+      "circuit": "effect-size circuit",
+      "F": 0.9894594340390441,
+      "CI low": 0.9681322326132845,
+      "CI high": 1.0160103958598923
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "context effect",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 0.9747618724960113,
+      "CI low": 0.9674896195740567,
+      "CI high": 0.9806033483691683
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "context effect",
+      "circuit": "all heads, no MLP",
+      "F": 0.010408819107785341,
+      "CI low": 0.010354790793288172,
+      "CI high": 0.01045221763902313
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "context effect",
+      "circuit": "all MLPs, no head",
+      "F": 0.9894594340390441,
+      "CI low": 0.9681322326132845,
+      "CI high": 1.0160103958598923
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "arbitration",
+      "circuit": "effect-size circuit",
+      "F": 0.9677239667562699,
+      "CI low": 0.9395944893809318,
+      "CI high": 0.9906668529183937
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "arbitration",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 0.9861396796751722,
+      "CI low": 0.980771138131975,
+      "CI high": 0.9905183546088983
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "arbitration",
+      "circuit": "all heads, no MLP",
+      "F": 0.01363545470661691,
+      "CI low": 0.010785976637238669,
+      "CI high": 0.015959538090566654
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "arbitration",
+      "circuit": "all MLPs, no head",
+      "F": 0.9677239667562699,
+      "CI low": 0.9395944893809318,
+      "CI high": 0.9906668529183937
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "interaction",
+      "circuit": "effect-size circuit",
+      "F": 1.1542091461724515,
+      "CI low": 1.0813285531401737,
+      "CI high": 1.2295092908629943
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "interaction",
+      "circuit": "pre-registered circuit (MB10)",
+      "F": 1.1050651750635856,
+      "CI low": 0.9967231220141559,
+      "CI high": 1.209925970604243
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "interaction",
+      "circuit": "all heads, no MLP",
+      "F": -0.040825789686124124,
+      "CI low": -0.04858214195788555,
+      "CI high": -0.033318665288736046
+    },
+    {
+      "stratum": ">= 1000 training events",
+      "events": 32,
+      "behaviour": "interaction",
+      "circuit": "all MLPs, no head",
+      "F": 1.1542091461724515,
+      "CI low": 1.0813285531401737,
+      "CI high": 1.2295092908629943
+    }
+  ],
+  "run_mode": "full"
+}

@@ -1,0 +1,100 @@
+MB20 cell 1/19 benchmark-next-20
+MB20 cell 2/19 c000
+MB20 cell 3/19 c001
+Colab: False | RUN_MODE: full
+ROOT: /content/soccer_mi
+Track A (read only): /content/soccer_mi/model_training_evaluation | exists: True
+Track B: /content/soccer_mi/.mi_analysis_rerun
+MB20 cell 4/19 c002
+Device: cuda | outputs: /content/soccer_mi/.mi_analysis_rerun
+Settings: {'reference_epochs': 25, 'batch_windows': 256, 'n_bootstrap': 2000, 'n_draws': 5, 'n_permutations': 1000, 'n_random_circuits': 100, 'probe_train_events': 20000, 'max_events': 100000, 'probe_seeds': 3, 'scrub_draws': 5}
+MB20 cell 5/19 c003
+/content/soccer_mi/model_training_evaluation/src/batching.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  self.tensors[name] = torch.as_tensor(np.asarray(values), device=device)
+verified files: 97 | primary seed 103 | seeds [100, 101, 102, 103, 104]
+P-player rows: 1,744 (discovery 1,215, estimation 529) | index-0: 8,947 | matched controls: 252
+components: ['L0H0', 'L0H1', 'L0MLP', 'L1H0', 'L1H1', 'L1MLP', 'L2H0', 'L2H1', 'L2MLP', 'L3H0', 'L3H1', 'L3MLP']
+identity inputs: ['player', 'team', 'role', 'competition'] | context inputs (15): ['zone', 'period', 'minute_bin', 'score_diff', 'play_pattern', 'poss_len', 'possession_flag', 'prev_action', 'prev_outcome', 'prev_end_zone', 'same_player_as_prev', 'x_norm', 'y_norm', 'dt', 't_poss']
+MB20 cell 6/19 c004
+MB20 cell 7/19 c005
+MB20 cell 8/19 c006
+plan written: MB20_plan.json
+{
+ "status": "follow-up after MB14-MB18; exploratory; not part of the MB12 lock",
+ "factorial": "player A vs B (matched partner; fixed norm-matched random vector) x context X (own) vs Y (MB02 donor with the four identity inputs written back)",
+ "components": [
+  "MLP l whole (l = 0..3)",
+  "MLP l activation part only",
+  "MLP l LayerNorm only",
+  "final LayerNorm",
+  "all four MLPs whole"
+ ],
+ "manipulations": {
+  "own": "B-runs: output = A-run output (same context) + Jacobian at the A-run of the same context x input change",
+  "shared": "B-runs: output = A-run output (same context) + Jacobian at (A, X) x input change"
+ },
+ "measure": "interaction retained = pooled sign-aligned sum(sign(I) * I_manipulated) / sum(|I|), I from the exact network; match-resampled CIs",
+ "attribution": "interaction from a component = retained(own) - retained(shared), paired over events, with CI",
+ "reading_rule": "a component is called a SOURCE of the interaction if retained(own) CI low >= 0.8 (the linearisation itself is harmless) AND retained(own) - retained(shared) CI low > 0.2; the interaction is called ACCOUNTED FOR by the MLPs if all four MLPs with shared gain retain < 0.2",
+ "half": "estimation primary, discovery reported alongside",
+ "player_B": "matched partner primary; random vector reported to check the answer is the same"
+}
+MB20 cell 9/19 c007
+MB20 cell 10/19 c008
+units: 1716 (estimation 529)
+check with B = A: largest interaction under any linearisation 4.77e-06 (must be ~0)
+MB20 cell 11/19 c009
+MB20 cell 12/19 c010
+
+player B = partner, estimation half:
+                 component  own: retained  shared: retained  interaction from this component  CI low  CI high SOURCE (plan rule)
+(all blocks frozen: floor)            NaN             0.011                              NaN     NaN      NaN                NaN
+            L0 MLP (whole)          0.927             0.822                            0.105   0.041    0.164              False
+    L0 MLP activation only          0.993             0.879                            0.114   0.066    0.153              False
+     L0 MLP LayerNorm only          0.937             0.948                           -0.010  -0.062    0.032              False
+            L1 MLP (whole)          0.961             0.736                            0.225   0.160    0.266              False
+    L1 MLP activation only          0.989             0.805                            0.183   0.128    0.218              False
+     L1 MLP LayerNorm only          0.976             0.957                            0.018   0.003    0.040              False
+            L2 MLP (whole)          0.977             0.681                            0.295   0.231    0.365               True
+    L2 MLP activation only          1.006             0.735                            0.271   0.220    0.317               True
+     L2 MLP LayerNorm only          0.982             0.959                            0.022   0.006    0.046              False
+            L3 MLP (whole)          0.967             0.803                            0.164   0.107    0.230              False
+    L3 MLP activation only          1.002             0.928                            0.074   0.041    0.126              False
+     L3 MLP LayerNorm only          0.972             0.927                            0.045   0.027    0.072              False
+           final LayerNorm          1.008             0.798                            0.210   0.127    0.282              False
+     all four MLPs (whole)          0.910             0.022                            0.888   0.707    1.055               True
+
+player B = random vector, estimation half:
+                 component  own: retained  shared: retained  interaction from this component  CI low  CI high SOURCE (plan rule)
+(all blocks frozen: floor)            NaN             0.002                              NaN     NaN      NaN                NaN
+            L0 MLP (whole)          0.928             0.847                            0.081   0.042    0.129              False
+    L0 MLP activation only          1.026             0.924                            0.103   0.072    0.140              False
+     L0 MLP LayerNorm only          0.911             0.925                           -0.014  -0.050    0.029              False
+            L1 MLP (whole)          0.948             0.749                            0.199   0.157    0.257              False
+    L1 MLP activation only          1.006             0.826                            0.181   0.129    0.255              False
+     L1 MLP LayerNorm only          0.951             0.927                            0.023  -0.002    0.047              False
+            L2 MLP (whole)          0.923             0.661                            0.262   0.218    0.327               True
+    L2 MLP activation only          0.975             0.729                            0.246   0.203    0.304               True
+     L2 MLP LayerNorm only          0.960             0.914                            0.046   0.025    0.074              False
+            L3 MLP (whole)          0.907             0.759                            0.148   0.115    0.180              False
+    L3 MLP activation only          0.987             0.898                            0.088   0.033    0.128              False
+     L3 MLP LayerNorm only          0.932             0.899                            0.033   0.012    0.048              False
+           final LayerNorm          0.892             0.759                            0.132   0.077    0.194              False
+     all four MLPs (whole)          0.832             0.039                            0.792   0.719    0.878              False
+
+all four MLPs with shared gain retain 0.022 of the interaction -> accounted for by the MLPs (plan rule: < 0.2): True
+MB20 cell 13/19 c011
+MB20 cell 14/19 c012
+MB20 cell 15/19 c013
+MB20 cell 16/19 c014
+MB20 cell 17/19 c015
+             component  interaction from this component  CI low  CI high
+        L2 MLP (whole)                            0.295   0.231    0.365
+L2 MLP activation only                            0.271   0.220    0.317
+ all four MLPs (whole)                            0.888   0.707    1.055
+MB20 cell 18/19 c016
+manifest entries verified at the end: 99
+earlier entries whose fingerprint changed during this notebook: none
+test accesses recorded so far: 1 (MB12 recorded exactly one; this notebook adds none)
+MB20 cell 19/19 c017
+COMPLETED MB20: 27.6 seconds; promoted to mi_analysis/

@@ -1,0 +1,193 @@
+stratum,behaviour,component,Shapley
+genuine,identity effect,L0H0,0.017166694770395993
+genuine,identity effect,L0H1,0.02132516522584938
+genuine,identity effect,L0MLP,0.26918323155481955
+genuine,identity effect,L1H0,-0.009631935462607698
+genuine,identity effect,L1H1,-0.0036715921060642143
+genuine,identity effect,L1MLP,0.3670359879143835
+genuine,identity effect,L2H0,-0.0037395627702020615
+genuine,identity effect,L2H1,-0.004332910781084435
+genuine,identity effect,L2MLP,0.12977968241864563
+genuine,identity effect,L3H0,0.008454917635937712
+genuine,identity effect,L3H1,-0.003795596471408074
+genuine,identity effect,L3MLP,0.2122259180713344
+genuine,context effect,L0H0,-0.0013756983734285327
+genuine,context effect,L0H1,-0.0020947128750461244
+genuine,context effect,L0MLP,0.28666885458373725
+genuine,context effect,L1H0,-0.0065222580345983515
+genuine,context effect,L1H1,-0.001089790793719916
+genuine,context effect,L1MLP,0.35448281021415884
+genuine,context effect,L2H0,0.008704652800733155
+genuine,context effect,L2H1,-0.005211638144861809
+genuine,context effect,L2MLP,0.18322929670173016
+genuine,context effect,L3H0,-0.0006386070524458554
+genuine,context effect,L3H1,-0.002092032660348773
+genuine,context effect,L3MLP,0.18593912363408976
+genuine,arbitration,L0H0,0.0017471455319380547
+genuine,arbitration,L0H1,0.003209573996527583
+genuine,arbitration,L0MLP,0.25571580616261924
+genuine,arbitration,L1H0,-0.002858952566669423
+genuine,arbitration,L1H1,-0.004495685910855889
+genuine,arbitration,L1MLP,0.31843163111086464
+genuine,arbitration,L2H0,0.0014728528839792316
+genuine,arbitration,L2H1,0.002115471935199938
+genuine,arbitration,L2MLP,0.20465132888138843
+genuine,arbitration,L3H0,0.006104384916954664
+genuine,arbitration,L3H1,0.0028268514884661226
+genuine,arbitration,L3MLP,0.21107959156958733
+genuine,interaction,L0H0,0.021822965405379154
+genuine,interaction,L0H1,0.017560830782736184
+genuine,interaction,L0MLP,0.28969235520313763
+genuine,interaction,L1H0,0.004155283115451682
+genuine,interaction,L1H1,0.00028394320213722063
+genuine,interaction,L1MLP,0.30752762144197193
+genuine,interaction,L2H0,-0.003517601531608186
+genuine,interaction,L2H1,-0.0024611243191507617
+genuine,interaction,L2MLP,0.18114526690706062
+genuine,interaction,L3H0,0.010919310318716487
+genuine,interaction,L3H1,0.0019919033435427127
+genuine,interaction,L3MLP,0.17087924613062563
+coupled,identity effect,L0H0,0.008066770969737153
+coupled,identity effect,L0H1,0.0032979302610609273
+coupled,identity effect,L0MLP,0.46460467507989994
+coupled,identity effect,L1H0,0.01930287407360071
+coupled,identity effect,L1H1,0.012513061526637307
+coupled,identity effect,L1MLP,0.24597826883473775
+coupled,identity effect,L2H0,0.00755760375847845
+coupled,identity effect,L2H1,-0.006091549515613301
+coupled,identity effect,L2MLP,0.12426843621293478
+coupled,identity effect,L3H0,0.005303787880523524
+coupled,identity effect,L3H1,-0.016213915816799564
+coupled,identity effect,L3MLP,0.13141205673480205
+coupled,context effect,L0H0,-0.0026065660444367783
+coupled,context effect,L0H1,0.002797097331293824
+coupled,context effect,L0MLP,0.40536922377160156
+coupled,context effect,L1H0,0.013981219585527739
+coupled,context effect,L1H1,-0.0007796697614886667
+coupled,context effect,L1MLP,0.14309528845390113
+coupled,context effect,L2H0,0.0011854690033573669
+coupled,context effect,L2H1,0.006149649082997881
+coupled,context effect,L2MLP,0.20536761784463248
+coupled,context effect,L3H0,0.005346582782307702
+coupled,context effect,L3H1,0.009228396732844105
+coupled,context effect,L3MLP,0.21086569121746163
+coupled,arbitration,L0H0,-0.0003350173509303542
+coupled,arbitration,L0H1,0.009396538441004458
+coupled,arbitration,L0MLP,0.4015139121692509
+coupled,arbitration,L1H0,0.011271299079922774
+coupled,arbitration,L1H1,-0.0038935653388440057
+coupled,arbitration,L1MLP,0.11400284427933915
+coupled,arbitration,L2H0,-0.0003271132220400138
+coupled,arbitration,L2H1,0.008113087421194477
+coupled,arbitration,L2MLP,0.22574538128784527
+coupled,arbitration,L3H0,0.003525450975023406
+coupled,arbitration,L3H1,0.007958968821987756
+coupled,arbitration,L3MLP,0.22302821343624626
+coupled,interaction,L0H0,0.011795441440233485
+coupled,interaction,L0H1,0.0076644841024871395
+coupled,interaction,L0MLP,0.3908431189912913
+coupled,interaction,L1H0,0.015540574930864857
+coupled,interaction,L1H1,0.008202155205670632
+coupled,interaction,L1MLP,0.25542626311245936
+coupled,interaction,L2H0,0.005862670805004862
+coupled,interaction,L2H1,-0.0028721238544170747
+coupled,interaction,L2MLP,0.17738035717712497
+coupled,interaction,L3H0,-0.00026354368925543786
+coupled,interaction,L3H1,-0.012193098044481692
+coupled,interaction,L3MLP,0.1426136998230174
+< 1000 training events,identity effect,L0H0,0.013118824357305034
+< 1000 training events,identity effect,L0H1,0.012982199985942959
+< 1000 training events,identity effect,L0MLP,0.3718223458610356
+< 1000 training events,identity effect,L1H0,0.008566610286426439
+< 1000 training events,identity effect,L1H1,0.007197858563273065
+< 1000 training events,identity effect,L1MLP,0.30131297184738914
+< 1000 training events,identity effect,L2H0,0.003992271873868013
+< 1000 training events,identity effect,L2H1,-0.00682506728471837
+< 1000 training events,identity effect,L2MLP,0.1283508244964123
+< 1000 training events,identity effect,L3H0,0.007615330300978073
+< 1000 training events,identity effect,L3H1,-0.01172357934887027
+< 1000 training events,identity effect,L3MLP,0.16358940906095737
+< 1000 training events,context effect,L0H0,-0.0016424388007657137
+< 1000 training events,context effect,L0H1,0.0006357272910395353
+< 1000 training events,context effect,L0MLP,0.35469789783641315
+< 1000 training events,context effect,L1H0,0.004680839540467853
+< 1000 training events,context effect,L1H1,-0.0010607250728461568
+< 1000 training events,context effect,L1MLP,0.2346778806163425
+< 1000 training events,context effect,L2H0,0.003943989859454071
+< 1000 training events,context effect,L2H1,0.0018434944758478635
+< 1000 training events,context effect,L2MLP,0.19365441128886493
+< 1000 training events,context effect,L3H0,0.002355937422429978
+< 1000 training events,context effect,L3H1,0.005099349669825868
+< 1000 training events,context effect,L3MLP,0.2011136358729259
+< 1000 training events,arbitration,L0H0,0.0010178244495921834
+< 1000 training events,arbitration,L0H1,0.006452164160406011
+< 1000 training events,arbitration,L0MLP,0.33005580455278893
+< 1000 training events,arbitration,L1H0,0.003625714126484424
+< 1000 training events,arbitration,L1H1,-0.004581053889163334
+< 1000 training events,arbitration,L1MLP,0.21545211943103032
+< 1000 training events,arbitration,L2H0,0.0005180896353685385
+< 1000 training events,arbitration,L2H1,0.005052438269441779
+< 1000 training events,arbitration,L2MLP,0.21530937180514986
+< 1000 training events,arbitration,L3H0,0.004649939393587503
+< 1000 training events,arbitration,L3H1,0.005245216661418791
+< 1000 training events,arbitration,L3MLP,0.21720237140389526
+< 1000 training events,interaction,L0H0,0.016434972327883157
+< 1000 training events,interaction,L0H1,0.014455513358963525
+< 1000 training events,interaction,L0MLP,0.3374545709471873
+< 1000 training events,interaction,L1H0,0.010817105007259315
+< 1000 training events,interaction,L1H1,0.006226291439022995
+< 1000 training events,interaction,L1MLP,0.2815486054845845
+< 1000 training events,interaction,L2H0,0.0021382718683156084
+< 1000 training events,interaction,L2H1,-0.0027796958722620855
+< 1000 training events,interaction,L2MLP,0.18146379704999713
+< 1000 training events,interaction,L3H0,0.0057527535998182265
+< 1000 training events,interaction,L3H1,-0.005451573447756967
+< 1000 training events,interaction,L3MLP,0.15193938823698674
+>= 1000 training events,identity effect,L0H0,-0.00834653137309524
+>= 1000 training events,identity effect,L0H1,-0.023734314191140863
+>= 1000 training events,identity effect,L0MLP,0.5512138083839717
+>= 1000 training events,identity effect,L1H0,-0.01866525430400416
+>= 1000 training events,identity effect,L1H1,-0.020402867617320037
+>= 1000 training events,identity effect,L1MLP,0.22856050245392676
+>= 1000 training events,identity effect,L2H0,-0.01786817935648725
+>= 1000 training events,identity effect,L2H1,0.019671822630759516
+>= 1000 training events,identity effect,L2MLP,0.09702157570595836
+>= 1000 training events,identity effect,L3H0,-0.009892212230588712
+>= 1000 training events,identity effect,L3H1,0.002069444980957422
+>= 1000 training events,identity effect,L3MLP,0.2003722049170622
+>= 1000 training events,context effect,L0H0,-0.009995121488639624
+>= 1000 training events,context effect,L0H1,0.003073657981036322
+>= 1000 training events,context effect,L0MLP,0.38117711328963927
+>= 1000 training events,context effect,L1H0,0.019341361822922266
+>= 1000 training events,context effect,L1H1,0.0017460841810523432
+>= 1000 training events,context effect,L1MLP,0.1627631255862989
+>= 1000 training events,context effect,L2H0,0.010576978300619155
+>= 1000 training events,context effect,L2H1,-0.005635724148062116
+>= 1000 training events,context effect,L2MLP,0.24025881356668355
+>= 1000 training events,context effect,L3H0,0.011713447720787678
+>= 1000 training events,context effect,L3H1,-0.005329103097836621
+>= 1000 training events,context effect,L3MLP,0.19030936628549866
+>= 1000 training events,arbitration,L0H0,-0.0039669148452742276
+>= 1000 training events,arbitration,L0H1,0.0013774281609491776
+>= 1000 training events,arbitration,L0MLP,0.24879627303389315
+>= 1000 training events,arbitration,L1H0,0.009065761178942682
+>= 1000 training events,arbitration,L1H1,0.0023387734463701853
+>= 1000 training events,arbitration,L1MLP,0.3061778138524476
+>= 1000 training events,arbitration,L2H0,0.0022052793375602333
+>= 1000 training events,arbitration,L2H1,0.003949259721093099
+>= 1000 training events,arbitration,L2MLP,0.20535485179151036
+>= 1000 training events,arbitration,L3H0,0.008666585552681216
+>= 1000 training events,arbitration,L3H1,0.006053725668252938
+>= 1000 training events,arbitration,L3MLP,0.20998116310157344
+>= 1000 training events,interaction,L0H0,0.012556138356754676
+>= 1000 training events,interaction,L0H1,-0.04273256873974719
+>= 1000 training events,interaction,L0MLP,0.5354935621623199
+>= 1000 training events,interaction,L1H0,0.0020928216105803405
+>= 1000 training events,interaction,L1H1,-0.03142035389756914
+>= 1000 training events,interaction,L1MLP,0.21276458258464462
+>= 1000 training events,interaction,L2H0,-0.00908356419521636
+>= 1000 training events,interaction,L2H1,-0.0005812698700331828
+>= 1000 training events,interaction,L2MLP,0.12352860487745652
+>= 1000 training events,interaction,L3H0,-0.01888803568008646
+>= 1000 training events,interaction,L3H1,-0.015242091164483459
+>= 1000 training events,interaction,L3MLP,0.23151217395537926

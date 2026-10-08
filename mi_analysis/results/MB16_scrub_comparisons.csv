@@ -1,0 +1,13 @@
+events,behaviour,comparison,mean aligned difference,CI low,CI high,as a share of |full - floor|
+fully scrubbed under H1,identity effect,H1 shared chain minus H1 with permuted labels,0.03154018060991112,-0.1894713623428442,0.22604522176316164,0.015945759164247956
+fully scrubbed under H1,identity effect,H1 shared chain minus H2 player-blind chain,0.23699196127626648,0.046446483408727576,0.3879359807788063,0.11981595112320353
+fully scrubbed under H1,identity effect,H2 player-blind chain minus H1 with permuted labels,-0.20545178066635536,-0.48160900859255984,0.11814960827814865,-0.10387019195895557
+fully scrubbed under H1,identity effect,H1 shared chain minus H3 heads matter,0.1522460523149608,-0.20263900892387007,0.49059338028935584,0.07697098865562586
+fully scrubbed under H1,arbitration,H1 shared chain minus H1 with permuted labels,6.181626880820036,5.5608426888856695,6.855908565410459,0.947392440265908
+fully scrubbed under H1,arbitration,H1 shared chain minus H2 player-blind chain,-0.016466586791814404,-0.2244254673758164,0.1879519798446405,-0.0025236592476894893
+fully scrubbed under H1,arbitration,H2 player-blind chain minus H1 with permuted labels,6.19809346761185,5.647196529768821,6.852862788812262,0.9499160995135973
+fully scrubbed under H1,arbitration,H1 shared chain minus H3 heads matter,5.85875400841482,5.467343419300924,6.357762281705683,0.8979091368603387
+all,identity effect,"H1c shared chain, coarse minus H1c with permuted labels",-0.24539966074594982,-0.6604577605104178,0.17031415736530348,-0.12377590164556944
+all,identity effect,"H1c shared chain, coarse minus H2c player-blind chain, coarse",-0.27063302501682557,-0.5911261488123968,0.04884730115001191,-0.1365032314417264
+all,arbitration,"H1c shared chain, coarse minus H1c with permuted labels",4.209406163065148,3.6522180286258714,4.806432954970729,0.6573063465392368
+all,arbitration,"H1c shared chain, coarse minus H2c player-blind chain, coarse",0.335451059313897,-0.1386549344688367,0.7467162323648424,0.05238128650426503

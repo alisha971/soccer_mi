@@ -1,0 +1,47 @@
+{
+  "status": "follow-up after the deep MI audit; exploratory; not part of the MB12 lock",
+  "points": "resid_pre_0, resid_post_0..3 and mlp_hidden_0..3, at the scored position",
+  "edits": [
+    "player removal",
+    "player swap (matched partner)",
+    "role swap (a role value of another role, seed 0)",
+    "previous action, possession change and time gap: each set to the MB02 donor's value",
+    "whole context with all four identity inputs written back",
+    "norm-matched random player vector",
+    "distribution-matched player vector"
+  ],
+  "identity_subspace": "top-r uncentred SVD of the stacked player-removal and player-swap difference vectors (discovery)",
+  "context_subspace": "top-r uncentred SVD of the whole-context difference vectors (discovery)",
+  "overlap_baselines": [
+    "norm-matched random-vector subspace vs the context subspace",
+    "random r-dimensional subspaces (200 draws)"
+  ],
+  "overlap_reading": "(rank 4, the only rank with match-resampled intervals) identity and context overlap beyond chance at a point if the identity-context overlap CI low exceeds the 95th percentile of random subspaces AND the random-vector-context overlap",
+  "projection_ranks": [
+    1,
+    2,
+    4,
+    8,
+    "r90: for each subspace, the smallest rank holding 90 per cent of its edit's squared change (capped at half the width); random controls get the larger of the two ranks"
+  ],
+  "projection_subspaces": [
+    "identity",
+    "context",
+    "random-vector perturbation",
+    "random (seed 0)"
+  ],
+  "projection_reading": "at a point and rank: SEPARABLE if removing the identity subspace retains <= 0.5 of the identity effect and >= 0.8 of the context effect, removing the context subspace retains <= 0.5 of the context effect and >= 0.8 of the identity effect, and the random subspace retains >= 0.8 of both; SHARED if either subspace retains <= 0.5 of both effects; otherwise MIXED",
+  "units": "eta-squared of every MLP hidden unit for identity variables (player within role, role, team) and context variables (previous action, previous outcome, possession change, time gap quintile, x third, coupled flag, score difference, minute bin); threshold per variable = 99th percentile of eta-squared with labels shuffled (20 shuffles); all P-player validation events",
+  "unit_classes": {
+    "A": "identity only",
+    "B": "context only",
+    "C": "identity and context",
+    "D": "neither beyond the shuffled threshold",
+    "E": "identity and at least 3 context variables (broadly mixed)"
+  },
+  "top_units": "20 per layer with the largest |mean attribution| of the identity effect: (h - h_removed) x dDelta/dh, discovery half",
+  "identity_conditioned_context": "cosine and norm ratio of the context-induced difference vector with player A vs with partner B, and vs a fixed norm-matched random vector",
+  "mlp_split": "each MLP's output at the scored position split into its part in the rank-4 identity subspace of that layer and the rest; direct logit attribution of each part to Delta (final LayerNorm scale frozen); random rank-4 split as baseline",
+  "sae_rule": "an SAE is justified only if ALL hold: (i) more than half of the top identity-effect units are class C or E; (ii) identity and context overlap beyond chance (overlap_reading) at one or more resid_post points; (iii) projection is not SEPARABLE at any resid_post point and rank",
+  "written_at": "2026-10-07T18:26:35.522904+00:00"
+}

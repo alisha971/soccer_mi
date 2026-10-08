@@ -1,0 +1,174 @@
+MB18 cell 1/22 benchmark-next-18
+MB18 cell 2/22 c000
+MB18 cell 3/22 c001
+Colab: False | RUN_MODE: full
+ROOT: /content/soccer_mi
+Track A (read only): /content/soccer_mi/model_training_evaluation | exists: True
+Track B: /content/soccer_mi/.mi_analysis_rerun
+MB18 cell 4/22 c002
+Device: cuda | outputs: /content/soccer_mi/.mi_analysis_rerun
+Settings: {'reference_epochs': 25, 'batch_windows': 256, 'n_bootstrap': 2000, 'n_draws': 5, 'n_permutations': 1000, 'n_random_circuits': 100, 'probe_train_events': 20000, 'max_events': 100000, 'probe_seeds': 3, 'scrub_draws': 5}
+MB18 cell 5/22 c003
+/content/soccer_mi/model_training_evaluation/src/batching.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  self.tensors[name] = torch.as_tensor(np.asarray(values), device=device)
+verified files: 93 | primary seed 103 | seeds [100, 101, 102, 103, 104]
+P-player rows: 1,744 (discovery 1,215, estimation 529) | index-0: 8,947 | matched controls: 252
+components: ['L0H0', 'L0H1', 'L0MLP', 'L1H0', 'L1H1', 'L1MLP', 'L2H0', 'L2H1', 'L2MLP', 'L3H0', 'L3H1', 'L3MLP']
+identity inputs: ['player', 'team', 'role', 'competition'] | context inputs (15): ['zone', 'period', 'minute_bin', 'score_diff', 'play_pattern', 'poss_len', 'possession_flag', 'prev_action', 'prev_outcome', 'prev_end_zone', 'same_player_as_prev', 'x_norm', 'y_norm', 'dt', 't_poss']
+MB18 cell 6/22 c004
+MB18 cell 7/22 c005
+plan written: MB18_plan.json
+{
+ "status": "follow-up after the deep MI audit; exploratory; not part of the MB12 lock",
+ "decision": "the model's top-1 action at the scored position (over all 15 actions); a flip is a change of top-1 between the intact and the edited run",
+ "edits": [
+  "player removal",
+  "partner swap",
+  "whole-context swap with all four identity inputs written back"
+ ],
+ "flip_patching": "on flip events: denoising (copy one site's intact activation into the edited run; restored if top-1 returns) and noising (copy one site's edited activation into the intact run; produced if top-1 changes); sites: each head, each MLP, each residual point, at the scored position; rates with match-resampled CIs; estimation half and all validation",
+ "decision_layer": "logit lens (final LayerNorm and unembedding applied to resid_pre_0 and each resid_post): first layer from which the sign of Delta equals the final sign and stays; causal: on flip events, restore all attention and MLP outputs of layers 0..l at the scored position (embedding left edited); first l at which the intact top-1 returns",
+ "concentration_reading": "the decision is called concentrated in one layer if one layer holds >= 60 per cent of events' decision layers",
+ "self_repair": "mean-ablate one MLP at the scored position; total effect = change with everything downstream recomputed; direct effect = change with every later attention and MLP output frozen at the run's own unablated values; for Delta and the identity effect",
+ "redundancy": "all 6 pairs of MLPs mean-ablated together at the scored position; interaction = joint change - sum of single changes (identity effect and Delta)",
+ "cross_model": "SEL-4L seeds 100-104 and REF-2L, REF-4L (paths from config/reference_models.json): identity-removal and context-swap denoising profile at the scored position; C1 mean Delta and share > 0; C2 |partner change| - |random vector change|; C3 correlation with the player-only reference's habit change; C4 |I| - |I_floor| with the partner; estimation half"
+}
+MB18 cell 8/22 c006
+units with a donor and a partner: 1716 (estimation 529)
+MB18 cell 9/22 c007
+MB18 cell 10/22 c008
+               run  top-1 = a_ctx  top-1 = a_id  top-1 other  changed vs intact  changed vs intact (count)
+            intact         0.9289        0.0052       0.0659             0.0000                          0
+    player removal         0.9382        0.0012       0.0606             0.0239                         41
+      partner swap         0.9336        0.0047       0.0618             0.0332                         57
+whole-context swap         0.1737        0.0367       0.7896             0.8205                       1408
+MB18 cell 11/22 c009
+MB18 cell 12/22 c010
+edit                      partner swap                              player removal                              whole-context swap                             
+events                  all validation          estimation          all validation          estimation              all validation          estimation         
+measure                       produces restores   produces restores       produces restores   produces restores           produces restores   produces restores
+site                                                                                                                                                           
+embedding (resid_pre_0)          1.000    1.000      1.000    1.000          1.000    1.000      1.000    1.000              0.989    0.942      0.984    0.944
+L0H0                             0.088    0.070      0.087    0.087          0.073    0.098      0.091    0.091              0.048    0.006      0.049    0.007
+L0H1                             0.053    0.070      0.043    0.087          0.122    0.073      0.182    0.091              0.027    0.005      0.033    0.012
+L0MLP                            0.579    0.667      0.522    0.696          0.537    0.634      0.455    0.545              0.870    0.593      0.871    0.575
+resid_post_0                     1.000    1.000      1.000    1.000          1.000    1.000      1.000    1.000              0.995    0.970      0.995    0.970
+L1H0                             0.035    0.035      0.043    0.087          0.049    0.073      0.182    0.091              0.019    0.004      0.021    0.002
+L1H1                             0.053    0.105      0.087    0.130          0.049    0.049      0.182    0.091              0.015    0.004      0.007    0.005
+L1MLP                            0.544    0.544      0.391    0.565          0.537    0.512      0.455    0.455              0.587    0.290      0.636    0.276
+resid_post_1                     1.000    1.000      1.000    1.000          1.000    1.000      1.000    1.000              0.998    0.972      0.998    0.960
+L2H0                             0.018    0.000      0.000    0.000          0.024    0.000      0.091    0.000              0.015    0.001      0.016    0.005
+L2H1                             0.000    0.035      0.000    0.087          0.000    0.000      0.000    0.000              0.021    0.006      0.019    0.007
+L2MLP                            0.386    0.474      0.217    0.609          0.439    0.488      0.273    0.545              0.539    0.310      0.563    0.318
+resid_post_2                     1.000    1.000      1.000    1.000          1.000    1.000      1.000    1.000              0.999    0.979      1.000    0.970
+L3H0                             0.035    0.053      0.000    0.043          0.024    0.073      0.000    0.000              0.021    0.002      0.023    0.002
+L3H1                             0.053    0.018      0.130    0.043          0.049    0.000      0.182    0.000              0.015    0.005      0.014    0.005
+L3MLP                            0.544    0.596      0.478    0.652          0.610    0.634      0.636    0.636              0.869    0.756      0.867    0.757
+resid_post_3                     1.000    1.000      1.000    1.000          1.000    1.000      1.000    1.000              1.000    1.000      1.000    1.000
+              edit         events  flips
+    player removal     estimation     11
+    player removal all validation     41
+      partner swap     estimation     23
+      partner swap all validation     57
+whole-context swap     estimation    428
+whole-context swap all validation   1408
+MB18 cell 13/22 c011
+MB18 cell 14/22 c012
+       point  mean lens Delta  share of events whose sign is fixed from here  mean increase from the previous point
+ resid_pre_0          -0.3418                                         0.3478                                -0.3418
+resid_post_0           1.3585                                         0.4102                                 1.7003
+resid_post_1           3.2598                                         0.1966                                 1.9013
+resid_post_2           3.9709                                         0.0284                                 0.7111
+resid_post_3           5.8937                                         0.0170                                 1.9229
+lens: largest share at one point 0.410 -> concentrated in one layer (plan rule): False
+              edit  flips           components restored  share of flips restored  CI low  CI high  share first restored at this layer
+    player removal     11                   layers 0..0                    0.545   0.091    0.875                               0.545
+    player removal     11                   layers 0..1                    0.727   0.300    1.000                               0.182
+    player removal     11                   layers 0..2                    0.818   0.500    1.000                               0.091
+    player removal     11                   layers 0..3                    0.909   0.700    1.000                               0.091
+    player removal     11 never (embedding path needed)                      NaN     NaN      NaN                               0.091
+      partner swap     23                   layers 0..0                    0.739   0.583    0.913                               0.739
+      partner swap     23                   layers 0..1                    0.826   0.643    0.968                               0.087
+      partner swap     23                   layers 0..2                    0.870   0.704    1.000                               0.087
+      partner swap     23                   layers 0..3                    1.000   1.000    1.000                               0.087
+      partner swap     23 never (embedding path needed)                      NaN     NaN      NaN                               0.000
+whole-context swap    428                   layers 0..0                    0.596   0.565    0.636                               0.596
+whole-context swap    428                   layers 0..1                    0.881   0.853    0.910                               0.292
+whole-context swap    428                   layers 0..2                    0.923   0.881    0.957                               0.049
+whole-context swap    428                   layers 0..3                    0.970   0.950    0.985                               0.040
+whole-context swap    428 never (embedding path needed)                      NaN     NaN      NaN                               0.023
+MB18 cell 15/22 c013
+MB18 cell 16/22 c014
+  MLP         measure  total change  total CI low  total CI high  direct change  direct CI low  direct CI high  direct - total (compensation)  comp CI low  comp CI high  total / direct
+L0MLP           Delta       -7.5110       -8.2291        -6.4731        -0.5484        -0.6056         -0.4644                         6.9625       5.9892        7.6601         13.6955
+L0MLP identity effect        0.0954       -0.0109         0.2136        -0.0047        -0.0168          0.0068                        -0.1001      -0.2282        0.0114        -20.3100
+L1MLP           Delta       -5.4195       -5.8143        -5.0309        -1.1213        -1.2239         -1.0043                         4.2982       3.8760        4.7276          4.8332
+L1MLP identity effect       -0.0669       -0.2116         0.0551        -0.0122        -0.0333          0.0107                         0.0547      -0.0726        0.2012          5.4803
+L2MLP           Delta       -4.7115       -5.0250        -4.3361        -1.5290        -1.5750         -1.4851                         3.1825       2.8146        3.4729          3.0814
+L2MLP identity effect       -0.1021       -0.2168         0.0003        -0.0525        -0.0762         -0.0357                         0.0496      -0.0405        0.1492          1.9451
+L3MLP           Delta       -5.8393       -5.9946        -5.6131        -5.8393        -5.9946         -5.6131                         0.0000       0.0000        0.0000          1.0000
+L3MLP identity effect       -0.0146       -0.0480         0.0252        -0.0146        -0.0480          0.0252                         0.0000       0.0000        0.0000          1.0000
+       pair         measure  joint change  sum of single changes  joint - sum  CI low  CI high
+L0MLP+L1MLP           Delta      -11.4217               -12.9304       1.5087  0.6918   2.2663
+L0MLP+L1MLP identity effect        0.1671                 0.0286       0.1385 -0.0116   0.3078
+L0MLP+L2MLP           Delta      -11.5440               -12.2224       0.6784  0.0358   1.2593
+L0MLP+L2MLP identity effect        0.1285                -0.0067       0.1352 -0.0128   0.2822
+L0MLP+L3MLP           Delta      -11.1048               -13.3503       2.2455  1.7440   2.6424
+L0MLP+L3MLP identity effect        0.1180                 0.0808       0.0373 -0.0516   0.1075
+L1MLP+L2MLP           Delta       -9.9746               -10.1309       0.1564 -0.2845   0.6075
+L1MLP+L2MLP identity effect        0.0402                -0.1689       0.2092  0.0665   0.3869
+L1MLP+L3MLP           Delta       -9.5405               -11.2588       1.7184  1.4025   2.0174
+L1MLP+L3MLP identity effect        0.0565                -0.0815       0.1380  0.0475   0.2477
+L2MLP+L3MLP           Delta       -9.6014               -10.5508       0.9495  0.6188   1.2522
+L2MLP+L3MLP identity effect        0.0470                -0.1167       0.1638  0.0370   0.2951
+MB18 cell 17/22 c015
+MB18 cell 18/22 c016
+model                           REF-2L  REF-4L  SEL-4L seed 100  SEL-4L seed 101  SEL-4L seed 102  SEL-4L seed 103  SEL-4L seed 104
+measure                                                                                                                            
+C1 mean Delta                   5.9831  6.1982           6.0161           5.9573           6.2468           5.8937           6.4042
+C1 share Delta > 0              0.9830  0.9849           0.9830           0.9849           0.9754           0.9811           0.9754
+C2 |partner| - |random vector| -0.2009 -0.1207          -0.0847           0.0041          -0.0694          -0.0841          -0.0612
+C3 mean r                       0.0806  0.0578           0.0595           0.0890           0.0851           0.0758           0.0918
+C4 |I| - |I_floor|              0.8435  0.8382           0.7204           0.7595           0.9344           0.7869           0.7986
+identity removal effect        -0.0597 -0.1227          -0.1668          -0.0812          -0.1518          -0.1672          -0.1757
+
+denoising profile, removal (recovery at the scored position):
+model         REF-2L  REF-4L  SEL-4L seed 100  SEL-4L seed 101  SEL-4L seed 102  SEL-4L seed 103  SEL-4L seed 104
+site                                                                                                             
+attn_out_0     0.075   0.041            0.049            0.044            0.032            0.052            0.053
+attn_out_1     0.059   0.005            0.006           -0.003            0.001            0.003           -0.014
+attn_out_2       NaN   0.004           -0.021           -0.010           -0.029           -0.014            0.018
+attn_out_3       NaN   0.028           -0.009            0.009            0.017            0.009           -0.009
+mlp_out_0      0.799   0.610            0.661            0.657            0.610            0.598            0.627
+mlp_out_1      0.728   0.430            0.507            0.383            0.447            0.479            0.321
+mlp_out_2        NaN   0.428            0.403            0.394            0.469            0.413            0.416
+mlp_out_3        NaN   0.517            0.466            0.493            0.568            0.572            0.567
+resid_post_0   1.000   1.000            1.000            1.000            1.000            1.000            1.000
+resid_post_1   1.000   1.000            1.000            1.000            1.000            1.000            1.000
+resid_post_2     NaN   1.000            1.000            1.000            1.000            1.000            1.000
+resid_post_3     NaN   1.000            1.000            1.000            1.000            1.000            1.000
+resid_pre_0    1.000   1.000            1.000            1.000            1.000            1.000            1.000
+denoising profile, context (recovery at the scored position):
+model         REF-2L  REF-4L  SEL-4L seed 100  SEL-4L seed 101  SEL-4L seed 102  SEL-4L seed 103  SEL-4L seed 104
+site                                                                                                             
+attn_out_0     0.006   0.020           -0.007           -0.008            0.006           -0.000            0.005
+attn_out_1     0.044   0.000            0.001            0.001            0.018            0.012            0.000
+attn_out_2       NaN   0.007            0.010            0.013            0.011            0.004            0.013
+attn_out_3       NaN   0.013            0.016           -0.008            0.000            0.007           -0.021
+mlp_out_0      0.713   0.622            0.575            0.668            0.609            0.620            0.560
+mlp_out_1      0.787   0.409            0.459            0.435            0.236            0.429            0.272
+mlp_out_2        NaN   0.429            0.430            0.446            0.557            0.423            0.371
+mlp_out_3        NaN   0.641            0.664            0.672            0.700            0.707            0.708
+resid_post_0   0.997   0.993            0.983            0.989            0.989            0.988            0.992
+resid_post_1   1.000   0.998            0.992            0.997            0.995            0.993            0.997
+resid_post_2     NaN   0.998            0.994            0.995            0.997            0.993            0.996
+resid_post_3     NaN   1.000            1.000            1.000            1.000            1.000            1.000
+resid_pre_0    0.978   0.975            0.982            0.982            0.978            0.977            0.982
+MB18 cell 19/22 c017
+MB18 cell 20/22 c018
+MB18 cell 21/22 c019
+manifest entries verified at the end: 95
+earlier entries whose fingerprint changed during this notebook: none
+test accesses recorded so far: 1 (MB12 recorded exactly one; this notebook adds none)
+MB18 cell 22/22 c020
+COMPLETED MB18: 32.63 seconds; promoted to mi_analysis/

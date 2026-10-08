@@ -1,0 +1,20 @@
+{
+  "status": "follow-up after the deep MI audit; exploratory; not part of the MB12 lock",
+  "behaviours": [
+    "identity effect",
+    "arbitration",
+    "context effect",
+    "interaction = (clean - removed) - (context - context with the player removed)"
+  ],
+  "extra_run": "Delta in the donor window with the event's player written in and then removed, under every subset (needed for the interaction)",
+  "shapley": "exact Shapley value of each of the 12 components, with value function v(S) = F(S) on the estimation half; F(full) = 1 and F(empty) = 0, so the 12 values add up to 1; 95% intervals from 2,000 match resamples (the same resamples for every behaviour, so differences between behaviours have valid intervals)",
+  "component_reading_rule": "a component is called identity-dominant if Shapley(identity) - Shapley(context) has a CI above 0.05, context-dominant if below -0.05, shared otherwise",
+  "separability": "S_id = the subset with the largest discovery-half F(identity) - F(context); S_ctx the reverse. Both scored on the estimation half",
+  "separability_reading_rule": "component-level separation is FOUND for a signal if its subset has estimation-half F(own) - F(other) with CI low > 0.25 AND F(own) with CI low > 0.5. If neither signal passes, separation is TESTED AND FOUND ABSENT at component level (all 4,096 subsets searched)",
+  "strata": [
+    "genuine vs coupled",
+    "acting player's training events < 1,000 vs >= 1,000"
+  ],
+  "strata_reading": "named-circuit F and Shapley values per stratum, estimation half; descriptive",
+  "written_at": "2026-10-07T18:14:52.153978+00:00"
+}

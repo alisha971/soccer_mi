@@ -1,0 +1,90 @@
+[
+  {
+    "notebook": "MB14_effect_size_circuit_and_all_subsets.ipynb",
+    "source": "mi_analysis_old/notebooks/MB14_effect_size_circuit_and_all_subsets.ipynb",
+    "source_sha256": "387319df06b05bba468e4c5118640941863cd8029715a4bb1e6e2556ced75212",
+    "prepared_sha256": "96581ab49aeb85cfe01255fde0b09cd4b2d83807b37d482478a6019a4cca30d9",
+    "changes": [
+      "honor MI_ANALYSIS_DIR",
+      "clear historical execution outputs/metadata",
+      "label benchmark and interpretation limits"
+    ]
+  },
+  {
+    "notebook": "MB15_history_interaction_and_strata.ipynb",
+    "source": "mi_analysis_old/notebooks/MB15_history_interaction_and_strata.ipynb",
+    "source_sha256": "391d6ab0bfbf6a0866352aa47d4c2022ec971c98d741e665dcb490c54570b22d",
+    "prepared_sha256": "8e2f512bbbed7670dc93be11744fcf247e25ca3da15049463d2a71a94004c30c",
+    "changes": [
+      "honor MI_ANALYSIS_DIR",
+      "clear historical execution outputs/metadata",
+      "label benchmark and interpretation limits"
+    ]
+  },
+  {
+    "notebook": "MB16_corrected_scrub_and_steering_geometry.ipynb",
+    "source": "mi_analysis_old/notebooks_repaired/MB16_corrected_scrub_and_steering_geometry.ipynb",
+    "source_sha256": "253348cc503764e9dc1cc11a66b4e46a89b2239c5b6b3d77c7f527ea9d78380e",
+    "prepared_sha256": "53761b38de30efbd3a7bf94c00db686fa1e6fd40beed871c5fbedd05fa378e9e",
+    "changes": [
+      "honor MI_ANALYSIS_DIR",
+      "clear historical execution outputs/metadata",
+      "label benchmark and interpretation limits"
+    ]
+  },
+  {
+    "notebook": "MB17_superposition_and_geometry.ipynb",
+    "source": "mi_analysis_old/notebooks/MB17_superposition_and_geometry.ipynb",
+    "source_sha256": "4a9f4a84b760fbd8d49411dda2b9cd46026fffcc885049f2c3da8bf20462fc86",
+    "prepared_sha256": "28518df78280e02919f486ae3e6216f26e9d1e3ad654825dce7f2d6808cabb66",
+    "changes": [
+      "honor MI_ANALYSIS_DIR",
+      "clear historical execution outputs/metadata",
+      "label benchmark and interpretation limits"
+    ]
+  },
+  {
+    "notebook": "MB18_decision_redundancy_and_cross_model.ipynb",
+    "source": "mi_analysis_old/notebooks/MB18_decision_redundancy_and_cross_model.ipynb",
+    "source_sha256": "e969039871c95da88776a3b82b34a6ee7e01911a47c87932929e499bb2ebb9a6",
+    "prepared_sha256": "0b2fc2c7966fb2a20735b8a57a4a3a0d1e0bb9844208a212b01999bca4188e22",
+    "changes": [
+      "honor MI_ANALYSIS_DIR",
+      "clear historical execution outputs/metadata",
+      "label benchmark and interpretation limits"
+    ]
+  },
+  {
+    "notebook": "MB19_circuit_atlas.ipynb",
+    "source": "mi_analysis_old/notebooks/MB19_circuit_atlas.ipynb",
+    "source_sha256": "8082439489ae32868cac8f41bc477b602b8c9809d1fea7069a414de8597b8c78",
+    "prepared_sha256": "a88cfce68e830182c02bd632d17096ef0b7e32bd31e30de6738412c3863a46c0",
+    "changes": [
+      "honor MI_ANALYSIS_DIR",
+      "clear historical execution outputs/metadata",
+      "label benchmark and interpretation limits"
+    ]
+  },
+  {
+    "notebook": "MB20_where_identity_and_context_combine.ipynb",
+    "source": "mi_analysis_old/notebooks/MB20_where_identity_and_context_combine.ipynb",
+    "source_sha256": "f9fc9e0401168b7360d24e994bb3ac064f2aa026a6df217bbede6208a747ce62",
+    "prepared_sha256": "ef6f0b8450c25756c9554272335ca0fa499e2a8d96c1e7014a8622ef1e3002f2",
+    "changes": [
+      "honor MI_ANALYSIS_DIR",
+      "clear historical execution outputs/metadata",
+      "label benchmark and interpretation limits"
+    ]
+  },
+  {
+    "notebook": "MB21_player_knowledge_stored_vs_used.ipynb",
+    "source": "mi_analysis_old/notebooks/MB21_player_knowledge_stored_vs_used.ipynb",
+    "source_sha256": "bc7934b76da73b833f639d73461a7464d0ce454991763796275db464d25d3f93",
+    "prepared_sha256": "53ec818642980940a416826aa9ad1ea117046af167af1edde89f16c23db37888",
+    "changes": [
+      "honor MI_ANALYSIS_DIR",
+      "clear historical execution outputs/metadata",
+      "label benchmark and interpretation limits"
+    ]
+  }
+]

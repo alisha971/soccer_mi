@@ -1,0 +1,150 @@
+{
+  "status": "follow-up after MB14-MB18; exploratory; not part of the MB12 lock",
+  "stored": [
+    {
+      "seed": 100,
+      "RSA all pairs": 0.030270823955272076,
+      "RSA p": 0.0004997501249375312,
+      "RSA within role (role-adjusted habits)": 0.015079415674103607,
+      "RSA within role p": 0.21889055472263869,
+      "decoding R2": 0.05514260398843307,
+      "R2 shuffled 95th pct": -0.003972240065673195,
+      "decoding R2 beyond role": 0.10780025440542873,
+      "beyond-role shuffled 95th pct": -0.0036342790933821334,
+      "stored beyond role": true
+    },
+    {
+      "seed": 101,
+      "RSA all pairs": 0.028004729927319585,
+      "RSA p": 0.0004997501249375312,
+      "RSA within role (role-adjusted habits)": 0.01461453838417079,
+      "RSA within role p": 0.22038980509745126,
+      "decoding R2": 0.042146093650444416,
+      "R2 shuffled 95th pct": -0.0035379424294149217,
+      "decoding R2 beyond role": 0.06100792726847748,
+      "beyond-role shuffled 95th pct": -0.004282155728154802,
+      "stored beyond role": true
+    },
+    {
+      "seed": 102,
+      "RSA all pairs": 0.03295372051862353,
+      "RSA p": 0.0004997501249375312,
+      "RSA within role (role-adjusted habits)": 0.010506643391588409,
+      "RSA within role p": 0.2703648175912044,
+      "decoding R2": 0.03026858592303039,
+      "R2 shuffled 95th pct": -0.003217357866718787,
+      "decoding R2 beyond role": 0.10435016377841244,
+      "beyond-role shuffled 95th pct": -0.003524698903795177,
+      "stored beyond role": true
+    },
+    {
+      "seed": 103,
+      "RSA all pairs": 0.026791750516383297,
+      "RSA p": 0.0004997501249375312,
+      "RSA within role (role-adjusted habits)": 0.01663549226850389,
+      "RSA within role p": 0.19090454772613694,
+      "decoding R2": 0.025046697671640472,
+      "R2 shuffled 95th pct": -0.003661545300824643,
+      "decoding R2 beyond role": 0.0763578278869621,
+      "beyond-role shuffled 95th pct": -0.003498180438512599,
+      "stored beyond role": true
+    },
+    {
+      "seed": 104,
+      "RSA all pairs": 0.03306685889117521,
+      "RSA p": 0.0004997501249375312,
+      "RSA within role (role-adjusted habits)": 0.020905449493139328,
+      "RSA within role p": 0.11494252873563218,
+      "decoding R2": 0.049752984118501264,
+      "R2 shuffled 95th pct": -0.0036436360215558517,
+      "decoding R2 beyond role": 0.11076255741844154,
+      "beyond-role shuffled 95th pct": -0.004000643448357234,
+      "stored beyond role": true
+    }
+  ],
+  "used": [
+    {
+      "half": "estimation",
+      "swap": "whole vector",
+      "n": 529,
+      "mean |change in Delta|": 0.7699825477509958,
+      "share of the whole swap": 1.0,
+      "C3 r": 0.033240975410504824,
+      "C3 CI low": -0.0286762768362206,
+      "C3 CI high": 0.09542643169890352
+    },
+    {
+      "half": "estimation",
+      "swap": "habit part only",
+      "n": 529,
+      "mean |change in Delta|": 0.3423662964529261,
+      "share of the whole swap": 0.4446416199207306,
+      "C3 r": 0.10875850453952951,
+      "C3 CI low": 0.04740740959932865,
+      "C3 CI high": 0.16476094962576152
+    },
+    {
+      "half": "estimation",
+      "swap": "rest only",
+      "n": 529,
+      "mean |change in Delta|": 0.6689662496173765,
+      "share of the whole swap": 0.8688069581985474,
+      "C3 r": -0.040473533031536425,
+      "C3 CI low": -0.093639467274642,
+      "C3 CI high": 0.010225240907651074
+    },
+    {
+      "half": "estimation",
+      "swap": "C3 habit part minus rest (paired)",
+      "n": 529,
+      "mean |change in Delta|": NaN,
+      "share of the whole swap": NaN,
+      "C3 r": 0.14923203757106593,
+      "C3 CI low": 0.08402962008368253,
+      "C3 CI high": 0.20867370500028534
+    },
+    {
+      "half": "discovery",
+      "swap": "whole vector",
+      "n": 1188,
+      "mean |change in Delta|": 0.6246411090447044,
+      "share of the whole swap": 1.0000001192092896,
+      "C3 r": 0.09205151470921152,
+      "C3 CI low": 0.03554567629310172,
+      "C3 CI high": 0.14478227776698455
+    },
+    {
+      "half": "discovery",
+      "swap": "habit part only",
+      "n": 1188,
+      "mean |change in Delta|": 0.41944477077485737,
+      "share of the whole swap": 0.6714972853660583,
+      "C3 r": 0.11030823558894247,
+      "C3 CI low": 0.03387375056938869,
+      "C3 CI high": 0.18456806514090401
+    },
+    {
+      "half": "discovery",
+      "swap": "rest only",
+      "n": 1188,
+      "mean |change in Delta|": 0.5641097610797545,
+      "share of the whole swap": 0.9030942320823669,
+      "C3 r": 0.02838305967856476,
+      "C3 CI low": 0.0005107249225921931,
+      "C3 CI high": 0.05566730972020135
+    },
+    {
+      "half": "discovery",
+      "swap": "C3 habit part minus rest (paired)",
+      "n": 1188,
+      "mean |change in Delta|": NaN,
+      "share of the whole swap": NaN,
+      "C3 r": 0.08192517591037772,
+      "C3 CI low": 0.014755945726075772,
+      "C3 CI high": 0.14460516471519666
+    }
+  ],
+  "habit_subspace_dims": 15,
+  "verdict": "USED",
+  "run_mode": "full"
+}

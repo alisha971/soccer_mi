@@ -16,3 +16,12 @@
 {"notebook": "MB11c", "experiment": "R: batch-invariant steering + pre-specified calibration (F05, F06)", "seed": 103, "run_mode": "full", "time": "2026-10-06T12:19:13.131455+00:00"}
 {"notebook": "MB12", "event": "test evaluated", "seconds": 9, "time": "2026-10-06T12:20:02.808510+00:00"}
 {"notebook": "MB13", "experiment": "R: corrected context survey (F14-F21)", "seed": 103, "run_mode": "full", "time": "2026-10-06T12:20:57.628445+00:00"}
+{"notebook": "MB14", "experiment": "effect-size circuit and exhaustive subset faithfulness", "seed": 103, "subsets": 4096, "run_mode": "full", "time": "2026-10-07T18:20:16.980444+00:00"}
+{"notebook": "MB15", "experiment": "calibration, history, interaction controls, strata, inference removal", "seed": 103, "run_mode": "full", "time": "2026-10-07T18:23:58.801523+00:00"}
+{"notebook": "MB16", "experiment": "corrected causal scrub, steering geometry, calibration", "seed": 103, "run_mode": "full", "time": "2026-10-07T18:25:37.326456+00:00"}
+{"notebook": "MB16", "experiment": "R: F25 noise check, paired scrub of coarse hypotheses, F06 steering", "seed": 103, "run_mode": "full", "time": "2026-10-07T18:25:51.575821+00:00"}
+{"notebook": "MB17", "experiment": "superposition and geometry of identity and context", "seed": 103, "run_mode": "full", "time": "2026-10-07T18:40:00.364752+00:00"}
+{"notebook": "MB18", "experiment": "decision flips, decision layer, self-repair, redundancy, cross-model replication", "seed": 103, "run_mode": "full", "time": "2026-10-07T18:45:49.284290+00:00"}
+{"notebook": "MB19", "experiment": "circuit atlas: one validated circuit per sub-question", "seed": 103, "run_mode": "full", "time": "2026-10-07T18:50:42.225116+00:00"}
+{"notebook": "MB20", "experiment": "source of the identity x context interaction (shared-gain linearisation)", "seed": 103, "run_mode": "full", "time": "2026-10-07T18:58:09.452840+00:00"}
+{"notebook": "MB21", "experiment": "player knowledge: stored vs used", "seed": 103, "run_mode": "full", "time": "2026-10-07T19:05:38.922757+00:00"}

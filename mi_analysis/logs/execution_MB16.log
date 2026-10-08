@@ -1,0 +1,390 @@
+MB16 cell 1/44 benchmark-next-16
+MB16 cell 2/44 c000
+MB16 cell 3/44 rd197a5aa0
+MB16 cell 4/44 c001
+Colab: False | RUN_MODE: full
+ROOT: /content/soccer_mi
+Track A (read only): /content/soccer_mi/model_training_evaluation | exists: True
+Track B: /content/soccer_mi/.mi_analysis_rerun
+MB16 cell 5/44 c002
+Device: cuda | outputs: /content/soccer_mi/.mi_analysis_rerun
+Settings: {'reference_epochs': 25, 'batch_windows': 256, 'n_bootstrap': 2000, 'n_draws': 5, 'n_permutations': 1000, 'n_random_circuits': 100, 'probe_train_events': 20000, 'max_events': 100000, 'probe_seeds': 3, 'scrub_draws': 5}
+MB16 cell 6/44 c003
+/content/soccer_mi/model_training_evaluation/src/batching.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  self.tensors[name] = torch.as_tensor(np.asarray(values), device=device)
+verified files: 86 | primary seed 103 | seeds [100, 101, 102, 103, 104]
+P-player rows: 1,744 (discovery 1,215, estimation 529) | index-0: 8,947 | matched controls: 252
+components: ['L0H0', 'L0H1', 'L0MLP', 'L1H0', 'L1H1', 'L1MLP', 'L2H0', 'L2H1', 'L2MLP', 'L3H0', 'L3H1', 'L3MLP']
+identity inputs: ['player', 'team', 'role', 'competition'] | context inputs (15): ['zone', 'period', 'minute_bin', 'score_diff', 'play_pattern', 'poss_len', 'possession_flag', 'prev_action', 'prev_outcome', 'prev_end_zone', 'same_player_as_prev', 'x_norm', 'y_norm', 'dt', 't_poss']
+MB16 cell 7/44 c004
+MB16 cell 8/44 c005
+plan written: MB16_plan.json
+{
+ "status": "follow-up after MB12; exploratory; not part of the MB12 lock",
+ "scrub_design": "per-run donors from a dataset of every P-player validation event, as recorded and with the player removed; at the scored position",
+ "hypotheses": {
+  "H1 shared chain": {
+   "MLP class keys": [
+    "player",
+    "role",
+    "prev_action_id",
+    "team_change",
+    "coupled_with_prev"
+   ],
+   "heads": "free"
+  },
+  "H2 player-blind chain": {
+   "MLP class keys": [
+    "role",
+    "prev_action_id",
+    "team_change",
+    "coupled_with_prev"
+   ],
+   "heads": "free"
+  },
+  "H3 heads matter": {
+   "MLP class keys": "free",
+   "head class keys": [
+    "player",
+    "role",
+    "prev_action_id",
+    "team_change",
+    "coupled_with_prev"
+   ]
+  },
+  "H1c shared chain, coarse": {
+   "MLP class keys": [
+    "player",
+    "team_change",
+    "coupled_with_prev"
+   ],
+   "heads": "free"
+  },
+  "H2c player-blind chain, coarse": {
+   "MLP class keys": [
+    "role",
+    "team_change",
+    "coupled_with_prev"
+   ],
+   "heads": "free"
+  }
+ },
+ "why_coarse": "the fine classes may leave many events without a donor; the coarse pair drops the previous action and is read on all events",
+ "controls": [
+  "floor: every component free",
+  "H1 with class labels permuted across the dataset"
+ ],
+ "measure": "recovered share = pooled sign-aligned (scrub - floor) / (full - floor), for the identity effect and for Delta; estimation half; scrub_draws draws",
+ "reading_rule": "an abstraction is supported for a behaviour if its recovered share CI lies above that of its permuted-label control, on the events where H1 found a donor for every component (primary) and on all events (secondary)",
+ "steering": "v1 = leading direction of player-swap contributions at the final residual (discovery half, as MB11c); compare v1, v1 with its component along the mean output-gradient direction removed, the mean output-gradient direction, and the leading direction of random-vector contributions; beta grid -2..2",
+ "calibration": "fit a straight line and a monotone piecewise-linear interpolation to the discovery-half response; predict the estimation-half response at beta -1, 0.5, 1"
+}
+MB16 cell 9/44 c006
+MB16 cell 10/44 c007
+H1 / H3 keys: 1428 classes in the donor dataset | median class size 1 | entries with no other event in their class: 0.237
+H2 keys: 410 classes in the donor dataset | median class size 4 | entries with no other event in their class: 0.101
+H1c keys: 396 classes in the donor dataset | median class size 4 | entries with no other event in their class: 0.024
+H2c keys: 86 classes in the donor dataset | median class size 31 | entries with no other event in their class: 0.006
+MB16 cell 11/44 c008
+MB16 cell 12/44 r53dcbded0
+MB16 cell 13/44 c009
+scrubs done in 13 s
+events on which H1 found a donor for every component in every draw: 311 of 529
+                        events       behaviour                          scrub   n  recovered share  CI low  CI high  mean value  mean full  mean floor  share of component draws without a class donor
+         all estimation events identity effect                H1 shared chain 529           0.9943  0.8643   1.0953     -0.0584    -0.1672     -0.0095                                          0.1374
+         all estimation events identity effect          H2 player-blind chain 529           0.9248  0.8857   0.9545      0.0043    -0.1672     -0.0095                                          0.0271
+         all estimation events identity effect                H3 heads matter 529           0.9750  0.8994   1.0633     -0.1123    -0.1672     -0.0095                                          0.2747
+         all estimation events identity effect       H1c shared chain, coarse 529           0.8520  0.7160   1.0264      0.7809    -0.1672     -0.0095                                          0.0158
+         all estimation events identity effect H2c player-blind chain, coarse 529           0.9885  0.9164   1.0818      0.0626    -0.1672     -0.0095                                          0.0000
+         all estimation events identity effect        floor (everything free) 529           0.0000  0.0000   0.0000     -0.0095    -0.1672     -0.0095                                          0.0000
+         all estimation events identity effect        H1 with permuted labels 529           0.9819  0.7886   1.1222     -0.3889    -0.1672     -0.0095                                          0.0000
+         all estimation events identity effect       H1c with permuted labels 529           0.9758  0.8888   1.1047     -0.2477    -0.1672     -0.0095                                          0.0000
+         all estimation events     arbitration                H1 shared chain 529           0.8928  0.8660   0.9225      5.2288     5.8937     -0.4575                                          0.1374
+         all estimation events     arbitration          H2 player-blind chain 529           0.8863  0.8582   0.9156      5.1843     5.8937     -0.4575                                          0.0271
+         all estimation events     arbitration                H3 heads matter 529          -0.0009 -0.0405   0.0338     -0.5234     5.8937     -0.4575                                          0.2747
+         all estimation events     arbitration       H1c shared chain, coarse 529           0.6338  0.5550   0.6951      3.5230     5.8937     -0.4575                                          0.0158
+         all estimation events     arbitration H2c player-blind chain, coarse 529           0.5814  0.5395   0.6184      3.1821     5.8937     -0.4575                                          0.0000
+         all estimation events     arbitration        floor (everything free) 529           0.0000  0.0000   0.0000     -0.4575     5.8937     -0.4575                                          0.0000
+         all estimation events     arbitration        H1 with permuted labels 529          -0.0351 -0.0867   0.0315     -0.7917     5.8937     -0.4575                                          0.0000
+         all estimation events     arbitration       H1c with permuted labels 529          -0.0235 -0.0797   0.0170     -0.7164     5.8937     -0.4575                                          0.0000
+events fully scrubbed under H1 identity effect                H1 shared chain 311           1.0212  0.9325   1.0870     -0.1460    -0.1523     -0.0390                                          0.1374
+events fully scrubbed under H1 identity effect          H2 player-blind chain 311           0.9014  0.8408   0.9597      0.0084    -0.1523     -0.0390                                          0.0271
+events fully scrubbed under H1 identity effect                H3 heads matter 311           0.9442  0.8087   1.0766     -0.1653    -0.1523     -0.0390                                          0.2747
+events fully scrubbed under H1 identity effect       H1c shared chain, coarse 311           0.8371  0.6397   1.0770      1.2833    -0.1523     -0.0390                                          0.0158
+events fully scrubbed under H1 identity effect H2c player-blind chain, coarse 311           1.0363  0.9504   1.1641      0.0445    -0.1523     -0.0390                                          0.0000
+events fully scrubbed under H1 identity effect        floor (everything free) 311           0.0000  0.0000   0.0000     -0.0390    -0.1523     -0.0390                                          0.0000
+events fully scrubbed under H1 identity effect        H1 with permuted labels 311           1.0052  0.8448   1.1173     -0.4555    -0.1523     -0.0390                                          0.0000
+events fully scrubbed under H1 identity effect       H1c with permuted labels 311           0.8829  0.7379   1.0385     -0.2948    -0.1523     -0.0390                                          0.0000
+events fully scrubbed under H1     arbitration                H1 shared chain 311           0.9120  0.8822   0.9441      5.4949     6.0468     -0.4519                                          0.1374
+events fully scrubbed under H1     arbitration          H2 player-blind chain 311           0.9145  0.8868   0.9427      5.4966     6.0468     -0.4519                                          0.0271
+events fully scrubbed under H1     arbitration                H3 heads matter 311           0.0141 -0.0287   0.0547     -0.4082     6.0468     -0.4519                                          0.2747
+events fully scrubbed under H1     arbitration       H1c shared chain, coarse 311           0.7524  0.7031   0.8097      4.4565     6.0468     -0.4519                                          0.0158
+events fully scrubbed under H1     arbitration H2c player-blind chain, coarse 311           0.6489  0.5887   0.7071      3.7538     6.0468     -0.4519                                          0.0000
+events fully scrubbed under H1     arbitration        floor (everything free) 311           0.0000  0.0000   0.0000     -0.4519     6.0468     -0.4519                                          0.0000
+events fully scrubbed under H1     arbitration        H1 with permuted labels 311          -0.0354 -0.1012   0.0467     -0.7787     6.0468     -0.4519                                          0.0000
+events fully scrubbed under H1     arbitration       H1c with permuted labels 311          -0.0312 -0.0956   0.0253     -0.7116     6.0468     -0.4519                                          0.0000
+MB16 cell 14/44 c010
+MB16 cell 15/44 c011
+self-scrub: largest change in Delta 1.91e-06 (must be ~0)
+                 events       behaviour                                                    comparison  mean aligned difference  CI low  CI high  as a share of |full - floor|
+fully scrubbed under H1 identity effect                 H1 shared chain minus H1 with permuted labels                   0.0315 -0.1895   0.2260                        0.0159
+fully scrubbed under H1 identity effect                   H1 shared chain minus H2 player-blind chain                   0.2370  0.0464   0.3879                        0.1198
+fully scrubbed under H1 identity effect           H2 player-blind chain minus H1 with permuted labels                  -0.2055 -0.4816   0.1181                       -0.1039
+fully scrubbed under H1 identity effect                         H1 shared chain minus H3 heads matter                   0.1522 -0.2026   0.4906                        0.0770
+fully scrubbed under H1     arbitration                 H1 shared chain minus H1 with permuted labels                   6.1816  5.5608   6.8559                        0.9474
+fully scrubbed under H1     arbitration                   H1 shared chain minus H2 player-blind chain                  -0.0165 -0.2244   0.1880                       -0.0025
+fully scrubbed under H1     arbitration           H2 player-blind chain minus H1 with permuted labels                   6.1981  5.6472   6.8529                        0.9499
+fully scrubbed under H1     arbitration                         H1 shared chain minus H3 heads matter                   5.8588  5.4673   6.3578                        0.8979
+                    all identity effect       H1c shared chain, coarse minus H1c with permuted labels                  -0.2454 -0.6605   0.1703                       -0.1238
+                    all identity effect H1c shared chain, coarse minus H2c player-blind chain, coarse                  -0.2706 -0.5911   0.0488                       -0.1365
+                    all     arbitration       H1c shared chain, coarse minus H1c with permuted labels                   4.2094  3.6522   4.8064                        0.6573
+                    all     arbitration H1c shared chain, coarse minus H2c player-blind chain, coarse                   0.3355 -0.1387   0.7467                        0.0524
+MB16 cell 16/44 c012
+MB16 cell 17/44 c013
+MB11c's steering_prediction.json not found: using the recomputed v1 (its sign is arbitrary)
+{
+ "|cos(v1, g_hat)|": 0.5389311615075324,
+ "mean |cos(v1, g_i)| over events": 0.4475236474749575,
+ "|cos(random-vector v1, g_hat)|": 0.4710901014994556,
+ "|cos(random unit direction, g_hat)|: 95th percentile": 0.16582484181701865,
+ "principal-angle cosines, top-4 identity vs top-4 random-vector subspace": [
+  0.9941677795900508,
+  0.9891683831974128,
+  0.959566689766076,
+  0.8410203903930915
+ ],
+ "principal-angle cosines, top-4 identity vs a random 4-d subspace": [
+  0.23231943981160638,
+  0.15282085969585157,
+  0.135681354716483,
+  0.07877496345029221
+ ]
+}
+MB16 cell 18/44 r8fe6a4550
+MB16 cell 19/44 c014
+direction  identity v1  identity v1 without its read-out component  random-vector v1  read-out direction g_hat
+beta                                                                                                          
+-2.00           -8.490                                      -4.374            -7.890                   -10.924
+-1.50           -7.381                                      -3.491            -6.848                    -9.687
+-1.00           -5.512                                      -2.149            -5.094                    -7.655
+-0.50           -2.737                                      -0.617            -2.466                    -4.351
+-0.25           -1.257                                      -0.121            -1.102                    -2.214
+ 0.25            0.879                                      -0.254             0.713                     1.923
+ 0.50            1.355                                      -0.762             1.040                     3.264
+ 1.00            1.428                                      -1.952             0.931                     4.342
+ 1.50            1.060                                      -2.845             0.507                     4.400
+ 2.00            0.701                                      -3.423             0.127                     4.200
+MB16 cell 20/44 c015
+MB16 cell 21/44 c016
+ beta                             calibration model  predicted  observed (estimation half)  CI low  CI high  absolute error  interval contains the prediction
+ -1.0 straight line (as MB11c, plus the point at 0)    -4.5159                     -5.5120 -6.0641  -4.5569          0.9961                             False
+ -1.0  piecewise-linear through the measured points    -5.5470                     -5.5120 -6.0641  -4.5569          0.0351                              True
+  0.5 straight line (as MB11c, plus the point at 0)    -0.4274                      1.3551  0.7294   1.6738          1.7824                             False
+  0.5  piecewise-linear through the measured points     1.4416                      1.3551  0.7294   1.6738          0.0865                              True
+  1.0 straight line (as MB11c, plus the point at 0)     0.9354                      1.4277  0.3766   1.9735          0.4923                              True
+  1.0  piecewise-linear through the measured points     1.5360                      1.4277  0.3766   1.9735          0.1083                              True
+MB16 cell 22/44 c017
+MB16 cell 23/44 c018
+plan written: MB16_ext_plan.json
+{
+ "status": "follow-up after the deep MI audit; exploratory; not part of the MB12 lock",
+ "wrong_class": "for H1, H2, H1c and H2c: each scrubbed component's donor is drawn from entries whose class label DIFFERS from the run's own label (another event); free components as before",
+ "action_labels": "H1 with a_ctx and a_id added to its MLP class keys (as MB11b's classes effectively were)",
+ "wrong_class_reading": "an abstraction is informative for a behaviour only if its recovered share CI lies above its wrong-class share CI",
+ "steering_unit": "beta = multiples of the mean norm of the player-swap change at the final residual (discovery half)",
+ "steering_grid": [
+  -3,
+  -2,
+  -1.5,
+  -1,
+  -0.75,
+  -0.5,
+  -0.25,
+  0.25,
+  0.5,
+  0.75,
+  1,
+  1.5,
+  2,
+  3
+ ],
+ "steering_directions": [
+  "identity v1 (stored)",
+  "v1 without its read-out component",
+  "random-vector v1",
+  "a random unit direction (seed 0)"
+ ],
+ "steering_strata": [
+  "genuine / coupled",
+  "possession change at the scored event (team_change 0 / 1)",
+  "the three most frequent (a_ctx, a_id) pairs in the estimation half, if each has >= 30 events"
+ ],
+ "steering_summaries": "slope at 0 = (y(0.25) - y(-0.25)) / 0.5; saturation y(-3), y(+3); asymmetry |y(+3)| / |y(-3)|",
+ "calibration_models": [
+  "straight line through 0 fitted on |beta| <= 0.5",
+  "isotonic (monotone) fit",
+  "4-parameter logistic"
+ ],
+ "calibration_procedure": "fit on the discovery-half mean curve along v1; predict the estimation-half mean at every beta; report error and interval coverage"
+}
+MB16 cell 24/44 c019
+MB16 cell 25/44 r494306c50
+MB16 cell 26/44 c020
+behaviour                                                                   arbitration  identity effect
+events                         scrub                                                                    
+all estimation events          H1 + a_ctx, a_id keys                              0.926            1.008
+                               H1 + a_ctx, a_id keys: WRONG class                -0.001            0.987
+                               H1 shared chain                                    0.893            0.994
+                               H1 shared chain: WRONG class                      -0.008            0.949
+                               H1c shared chain, coarse                           0.634            0.852
+                               H1c shared chain, coarse: WRONG class              0.009            0.896
+                               H2 player-blind chain                              0.886            0.925
+                               H2 player-blind chain: WRONG class                 0.006            0.963
+                               H2c player-blind chain, coarse                     0.581            0.989
+                               H2c player-blind chain, coarse: WRONG class        0.014            0.929
+events fully scrubbed under H1 H1 + a_ctx, a_id keys                              0.969            0.998
+                               H1 + a_ctx, a_id keys: WRONG class                -0.000            0.973
+                               H1 shared chain                                    0.912            1.021
+                               H1 shared chain: WRONG class                      -0.010            0.914
+                               H1c shared chain, coarse                           0.752            0.837
+                               H1c shared chain, coarse: WRONG class              0.017            0.908
+                               H2 player-blind chain                              0.915            0.901
+                               H2 player-blind chain: WRONG class                 0.004            0.945
+                               H2c player-blind chain, coarse                     0.649            1.036
+                               H2c player-blind chain, coarse: WRONG class        0.019            0.892
+
+all estimation events            identity effect  H1 shared chain                  right 0.994 [0.864, 1.095] vs wrong 0.949 [0.862, 1.040] -> informative: False
+all estimation events            identity effect  H2 player-blind chain            right 0.925 [0.886, 0.954] vs wrong 0.963 [0.872, 1.065] -> informative: False
+all estimation events            identity effect  H1c shared chain, coarse         right 0.852 [0.716, 1.026] vs wrong 0.896 [0.830, 0.966] -> informative: False
+all estimation events            identity effect  H2c player-blind chain, coarse   right 0.989 [0.916, 1.082] vs wrong 0.929 [0.830, 1.021] -> informative: False
+all estimation events            identity effect  H1 + a_ctx, a_id keys            right 1.008 [0.926, 1.061] vs wrong 0.987 [0.894, 1.094] -> informative: False
+all estimation events            arbitration      H1 shared chain                  right 0.893 [0.866, 0.922] vs wrong -0.008 [-0.033, 0.019] -> informative: True
+all estimation events            arbitration      H2 player-blind chain            right 0.886 [0.858, 0.916] vs wrong 0.006 [-0.019, 0.036] -> informative: True
+all estimation events            arbitration      H1c shared chain, coarse         right 0.634 [0.555, 0.695] vs wrong 0.009 [-0.014, 0.032] -> informative: True
+all estimation events            arbitration      H2c player-blind chain, coarse   right 0.581 [0.540, 0.618] vs wrong 0.014 [-0.011, 0.038] -> informative: True
+all estimation events            arbitration      H1 + a_ctx, a_id keys            right 0.926 [0.899, 0.948] vs wrong -0.001 [-0.025, 0.020] -> informative: True
+events fully scrubbed under H1   identity effect  H1 shared chain                  right 1.021 [0.933, 1.087] vs wrong 0.914 [0.816, 1.034] -> informative: False
+events fully scrubbed under H1   identity effect  H2 player-blind chain            right 0.901 [0.841, 0.960] vs wrong 0.945 [0.823, 1.063] -> informative: False
+events fully scrubbed under H1   identity effect  H1c shared chain, coarse         right 0.837 [0.640, 1.077] vs wrong 0.908 [0.761, 1.006] -> informative: False
+events fully scrubbed under H1   identity effect  H2c player-blind chain, coarse   right 1.036 [0.950, 1.164] vs wrong 0.892 [0.774, 1.011] -> informative: False
+events fully scrubbed under H1   identity effect  H1 + a_ctx, a_id keys            right 0.998 [0.930, 1.048] vs wrong 0.973 [0.820, 1.183] -> informative: False
+events fully scrubbed under H1   arbitration      H1 shared chain                  right 0.912 [0.882, 0.944] vs wrong -0.010 [-0.047, 0.031] -> informative: True
+events fully scrubbed under H1   arbitration      H2 player-blind chain            right 0.915 [0.887, 0.943] vs wrong 0.004 [-0.039, 0.059] -> informative: True
+events fully scrubbed under H1   arbitration      H1c shared chain, coarse         right 0.752 [0.703, 0.810] vs wrong 0.017 [-0.011, 0.047] -> informative: True
+events fully scrubbed under H1   arbitration      H2c player-blind chain, coarse   right 0.649 [0.589, 0.707] vs wrong 0.019 [-0.007, 0.050] -> informative: True
+events fully scrubbed under H1   arbitration      H1 + a_ctx, a_id keys            right 0.969 [0.944, 0.984] vs wrong -0.000 [-0.032, 0.037] -> informative: True
+MB16 cell 27/44 c021
+MB16 cell 28/44 c022
+MB16 cell 29/44 c023
+mean norm of the player-swap change at resid_post_3: 1.0023
+mean norm of the whole residual there: 5.0195  -> MB11c's beta = 1 equals 5.0 identity units
+real player swaps along v1, in identity units: median 0.229, 90th percentile 0.820, max 2.884
+direction              identity v1  random unit direction  random-vector v1  v1 without its read-out component
+beta (identity units)                                                                                         
+-3.00                       -3.316                 -0.808            -3.011                             -0.881
+-2.00                       -2.117                 -0.392            -1.887                             -0.374
+-1.50                       -1.531                 -0.222            -1.349                             -0.189
+-1.00                       -0.974                 -0.093            -0.848                             -0.062
+-0.75                       -0.711                 -0.047            -0.615                             -0.023
+-0.50                       -0.460                 -0.016            -0.395                              0.001
+-0.25                       -0.223                  0.000            -0.190                              0.008
+ 0.00                        0.000                  0.000             0.000                              0.000
+ 0.25                        0.207                 -0.016             0.174                             -0.023
+ 0.50                        0.398                 -0.048             0.332                             -0.061
+ 0.75                        0.573                 -0.096             0.474                             -0.113
+ 1.00                        0.732                 -0.158             0.599                             -0.177
+ 1.50                        0.999                 -0.321             0.802                             -0.338
+ 2.00                        1.204                 -0.526             0.946                             -0.534
+ 3.00                        1.442                 -1.011             1.077                             -0.995
+MB16 cell 30/44 c024
+      half                         direction              stratum  slope at 0  y(-3)  y(+3)  asymmetry |y(+3)| / |y(-3)|  monotone
+estimation                       identity v1                  all       0.860 -3.316  1.442                        0.435      True
+estimation                       identity v1              coupled       0.953 -4.151  1.459                        0.352      True
+estimation                       identity v1              genuine       0.778 -2.586  1.426                        0.552      True
+estimation                       identity v1 no possession change       0.929 -3.720  1.477                        0.397      True
+estimation                       identity v1 pair a_ctx=3, a_id=0       1.049 -4.405  1.621                        0.368      True
+estimation                       identity v1 pair a_ctx=8, a_id=0       0.837 -2.330  1.821                        0.782      True
+estimation                       identity v1 pair a_ctx=9, a_id=0       1.337 -5.323  2.615                        0.491      True
+estimation                       identity v1    possession change       0.815 -3.057  1.419                        0.464      True
+estimation             random unit direction                  all      -0.032 -0.808 -1.011                        1.252     False
+estimation             random unit direction              coupled      -0.008 -1.050 -1.034                        0.985     False
+estimation             random unit direction              genuine      -0.053 -0.596 -0.992                        1.664     False
+estimation             random unit direction no possession change      -0.004 -0.978 -0.899                        0.919     False
+estimation             random unit direction pair a_ctx=3, a_id=0       0.000 -1.172 -0.951                        0.811     False
+estimation             random unit direction pair a_ctx=8, a_id=0      -0.197 -0.144 -1.425                        9.917     False
+estimation             random unit direction pair a_ctx=9, a_id=0      -0.018 -0.738 -0.935                        1.266     False
+estimation             random unit direction    possession change      -0.051 -0.698 -1.084                        1.552     False
+estimation                  random-vector v1                  all       0.728 -3.011  1.077                        0.358      True
+estimation                  random-vector v1              coupled       0.868 -4.055  1.283                        0.316      True
+estimation                  random-vector v1              genuine       0.605 -2.097  0.897                        0.428      True
+estimation                  random-vector v1 no possession change       0.876 -3.859  1.355                        0.351      True
+estimation                  random-vector v1 pair a_ctx=3, a_id=0       1.130 -5.220  1.844                        0.353      True
+estimation                  random-vector v1 pair a_ctx=8, a_id=0       0.737 -2.148  1.425                        0.663      True
+estimation                  random-vector v1 pair a_ctx=9, a_id=0       1.079 -4.144  2.011                        0.485      True
+estimation                  random-vector v1    possession change       0.632 -2.466  0.898                        0.364      True
+estimation v1 without its read-out component                  all      -0.063 -0.881 -0.995                        1.129     False
+estimation v1 without its read-out component              coupled       0.111 -1.654 -0.447                        0.270     False
+estimation v1 without its read-out component              genuine      -0.217 -0.204 -1.474                        7.219     False
+estimation v1 without its read-out component no possession change       0.039 -1.362 -0.626                        0.459     False
+estimation v1 without its read-out component pair a_ctx=3, a_id=0       0.209 -2.067 -0.178                        0.086     False
+estimation v1 without its read-out component pair a_ctx=8, a_id=0      -0.265  0.148 -1.792                       12.074     False
+estimation v1 without its read-out component pair a_ctx=9, a_id=0       0.363 -2.180  0.411                        0.188      True
+estimation v1 without its read-out component    possession change      -0.129 -0.572 -1.232                        2.153     False
+MB16 cell 31/44 c025
+MB16 cell 32/44 c026
+                      calibration model  RMSE over the grid  largest error  share of grid points inside the estimation interval
+straight line through 0 (|beta| <= 0.5)              0.4223         1.2836                                               0.6667
+                               isotonic              0.0532         0.0931                                               1.0000
+                               logistic              0.0547         0.1223                                               0.9333
+logistic parameters (a, k, b, c): [8.0236, 0.6085, -1.8704, -6.0658]
+MB16 cell 33/44 c027
+MB16 cell 34/44 c028
+MB16 cell 35/44 c029
+identity effect: H1 1.021 [0.933, 1.087] vs permuted 1.005 [0.845, 1.117] -> supported: False
+arbitration: H1 0.912 [0.882, 0.944] vs permuted -0.035 [-0.101, 0.047] -> supported: True
+identity effect (coarse, all events): H1c 0.852 [0.716, 1.026] | H2c 0.989 | permuted 0.976 [0.889, 1.105] -> supported: False
+arbitration (coarse, all events): H1c 0.634 [0.555, 0.695] | H2c 0.581 | permuted -0.024 [-0.080, 0.017] -> supported: True
+events fully scrubbed under H1: 311 (read the fine pair as underpowered below about 200)
+MB16 cell 36/44 c030
+manifest entries verified at the end: 90
+earlier entries whose fingerprint changed during this notebook: none
+test accesses recorded so far: 1 (MB12 recorded exactly one; this notebook adds none)
+MB16 cell 37/44 c031
+MB16 cell 38/44 rfddc857a0
+MB16 cell 39/44 r258362ae0
+repaired modules loaded: ['mi_src.circuits', 'mi_src.mi_metrics', 'mi_src.scrub', 'mi_src.steering', 'mi_src.context_edits', 'mi_src.graph']
+MB16 design (independent per-run donors): {'recovered share of floor draw 2 vs floor draw 1': 0.8588, 'CI low': 0.7981, 'CI high': 0.9426, 'SD of floor draw difference': 3.1616, 'mean |full - floor|': 1.9826}
+MB16 cell 40/44 rf4ccb0a00
+MB16 cell 41/44 r31ae69b50
+paired design noise check: {'recovered share of floor draw 2 vs floor draw 1': -0.0002, 'CI low': -0.0046, 'CI high': 0.0041, 'SD of floor draw difference': 0.0154, 'mean |full - floor|': 0.4572}
+                    hypothesis          donors       behaviour  recovered share  CI low  CI high  mean value
+      H1c shared chain, coarse     right class identity effect           0.6250  0.4869   0.7271     -0.1335
+      H1c shared chain, coarse     right class     arbitration           0.6141  0.5246   0.6832      3.4984
+      H1c shared chain, coarse permuted labels identity effect           0.0516 -0.0092   0.1046     -0.0711
+      H1c shared chain, coarse permuted labels     arbitration           0.0432  0.0106   0.0715     -0.1695
+H2c player-blind chain, coarse     right class identity effect          -0.0006 -0.0099   0.0092     -0.0133
+H2c player-blind chain, coarse     right class     arbitration           0.6068  0.5548   0.6501      3.4421
+H2c player-blind chain, coarse permuted labels identity effect           0.0001 -0.0049   0.0052     -0.0091
+H2c player-blind chain, coarse permuted labels     arbitration           0.0064 -0.0188   0.0399     -0.3838
+         H1 + a_ctx, a_id keys     right class identity effect           0.9148  0.8828   0.9490     -0.1708
+         H1 + a_ctx, a_id keys     right class     arbitration           0.9858  0.9807   0.9908      5.8126
+         H1 + a_ctx, a_id keys permuted labels identity effect           0.5370  0.4892   0.5974     -0.1118
+         H1 + a_ctx, a_id keys permuted labels     arbitration           0.5049  0.4833   0.5317      2.7211
+MB16 cell 42/44 r0f03c3f40
+MB16 cell 43/44 r219922660
+frozen scale (discovery mean final-residual norm): 5.0195
+direction  identity v1  identity v1 without its read-out component  random-vector v1  read-out direction g_hat
+beta                                                                                                          
+-2.00           -8.475                                      -4.363            -7.876                   -10.907
+-1.50           -7.362                                      -3.477            -6.830                    -9.666
+-1.00           -5.491                                      -2.136            -5.073                    -7.631
+-0.50           -2.722                                      -0.610            -2.451                    -4.332
+-0.25           -1.250                                      -0.118            -1.095                    -2.204
+ 0.00            0.000                                       0.000             0.000                     0.000
+ 0.25            0.875                                      -0.253             0.709                     1.915
+ 0.50            1.350                                      -0.759             1.036                     3.253
+ 1.00            1.428                                      -1.944             0.931                     4.336
+ 1.50            1.063                                      -2.836             0.510                     4.400
+ 2.00            0.705                                      -3.415             0.131                     4.203
+MB16 cell 44/44 rb49aef090
+COMPLETED MB16: 56.63 seconds; promoted to mi_analysis/

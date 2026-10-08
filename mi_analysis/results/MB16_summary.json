@@ -1,0 +1,1336 @@
+{
+  "status": "follow-up after the deep MI audit; exploratory; not part of the MB12 lock",
+  "scrub": [
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H1 shared chain",
+      "n": 529,
+      "recovered share": 0.9943095186461419,
+      "CI low": 0.8642777751684924,
+      "CI high": 1.0952992653303875,
+      "mean value": -0.058438403822837263,
+      "mean full": -0.16719821765878023,
+      "mean floor": -0.009487940746755153,
+      "share of component draws without a class donor": 0.1373660995589162
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H2 player-blind chain",
+      "n": 529,
+      "recovered share": 0.9247748744143253,
+      "CI low": 0.8856599242290444,
+      "CI high": 0.9544980042709477,
+      "mean value": 0.00429676739977178,
+      "mean full": -0.16719821765878023,
+      "mean floor": -0.009487940746755153,
+      "share of component draws without a class donor": 0.027095148078134845
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H3 heads matter",
+      "n": 529,
+      "recovered share": 0.9750123915509701,
+      "CI low": 0.8994175274188065,
+      "CI high": 1.0633025639259357,
+      "mean value": -0.11231686362732288,
+      "mean full": -0.16719821765878023,
+      "mean floor": -0.009487940746755153,
+      "share of component draws without a class donor": 0.2747321991178325
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H1c shared chain, coarse",
+      "n": 529,
+      "recovered share": 0.852012916763745,
+      "CI low": 0.7159880078863824,
+      "CI high": 1.0264167768789794,
+      "mean value": 0.7809446322212756,
+      "mean full": -0.16719821765878023,
+      "mean floor": -0.009487940746755153,
+      "share of component draws without a class donor": 0.01575299306868305
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H2c player-blind chain, coarse",
+      "n": 529,
+      "recovered share": 0.9885161482054714,
+      "CI low": 0.9163950666323373,
+      "CI high": 1.0818102989584413,
+      "mean value": 0.06258011257745451,
+      "mean full": -0.16719821765878023,
+      "mean floor": -0.009487940746755153,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "floor (everything free)",
+      "n": 529,
+      "recovered share": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "mean value": -0.009487940746755153,
+      "mean full": -0.16719821765878023,
+      "mean floor": -0.009487940746755153,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H1 with permuted labels",
+      "n": 529,
+      "recovered share": 0.9818904924275735,
+      "CI low": 0.7886460465155876,
+      "CI high": 1.1221811384818714,
+      "mean value": -0.38889156350394355,
+      "mean full": -0.16719821765878023,
+      "mean floor": -0.009487940746755153,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "identity effect",
+      "scrub": "H1c with permuted labels",
+      "n": 529,
+      "recovered share": 0.9757888184093144,
+      "CI low": 0.8888442092400207,
+      "CI high": 1.1047464747084934,
+      "mean value": -0.2476547508734984,
+      "mean full": -0.16719821765878023,
+      "mean floor": -0.009487940746755153,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H1 shared chain",
+      "n": 529,
+      "recovered share": 0.8928268468776616,
+      "CI low": 0.86601603805911,
+      "CI high": 0.9224964136155651,
+      "mean value": 5.228835506533274,
+      "mean full": 5.8937205555082945,
+      "mean floor": -0.4574828214492698,
+      "share of component draws without a class donor": 0.1373660995589162
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H2 player-blind chain",
+      "n": 529,
+      "recovered share": 0.8863308804395416,
+      "CI low": 0.8581708996677083,
+      "CI high": 0.9156166085941114,
+      "mean value": 5.184337936278383,
+      "mean full": 5.8937205555082945,
+      "mean floor": -0.4574828214492698,
+      "share of component draws without a class donor": 0.027095148078134845
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H3 heads matter",
+      "n": 529,
+      "recovered share": -0.0009364263491908862,
+      "CI low": -0.040532985121274706,
+      "CI high": 0.03379295033475599,
+      "mean value": -0.5233527255704603,
+      "mean full": 5.8937205555082945,
+      "mean floor": -0.4574828214492698,
+      "share of component draws without a class donor": 0.2747321991178325
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H1c shared chain, coarse",
+      "n": 529,
+      "recovered share": 0.633769052303834,
+      "CI low": 0.5550393345523871,
+      "CI high": 0.6950817472883664,
+      "mean value": 3.5229784481217274,
+      "mean full": 5.8937205555082945,
+      "mean floor": -0.4574828214492698,
+      "share of component draws without a class donor": 0.01575299306868305
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H2c player-blind chain, coarse",
+      "n": 529,
+      "recovered share": 0.581387765799569,
+      "CI low": 0.5395143760493648,
+      "CI high": 0.6184331160625337,
+      "mean value": 3.1821374116299683,
+      "mean full": 5.8937205555082945,
+      "mean floor": -0.4574828214492698,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "floor (everything free)",
+      "n": 529,
+      "recovered share": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "mean value": -0.4574828214492698,
+      "mean full": 5.8937205555082945,
+      "mean floor": -0.4574828214492698,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H1 with permuted labels",
+      "n": 529,
+      "recovered share": -0.035119076312226064,
+      "CI low": -0.08672141684051855,
+      "CI high": 0.03147395452784008,
+      "mean value": -0.7917029882019446,
+      "mean full": 5.8937205555082945,
+      "mean floor": -0.4574828214492698,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "all estimation events",
+      "behaviour": "arbitration",
+      "scrub": "H1c with permuted labels",
+      "n": 529,
+      "recovered share": -0.023537294235402777,
+      "CI low": -0.07971710307378414,
+      "CI high": 0.01699611016872219,
+      "mean value": -0.7163823684091004,
+      "mean full": 5.8937205555082945,
+      "mean floor": -0.4574828214492698,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H1 shared chain",
+      "n": 311,
+      "recovered share": 1.0211730378906634,
+      "CI low": 0.9325389461153664,
+      "CI high": 1.0870402203774052,
+      "mean value": -0.14603025040632694,
+      "mean full": -0.15232355245823262,
+      "mean floor": -0.0389782986216601,
+      "share of component draws without a class donor": 0.1373660995589162
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H2 player-blind chain",
+      "n": 311,
+      "recovered share": 0.9013570867674597,
+      "CI low": 0.8408389566059203,
+      "CI high": 0.9597272575015444,
+      "mean value": 0.00837430962581499,
+      "mean full": -0.15232355245823262,
+      "mean floor": -0.0389782986216601,
+      "share of component draws without a class donor": 0.027095148078134845
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H3 heads matter",
+      "n": 311,
+      "recovered share": 0.9442020492350375,
+      "CI low": 0.8086514103722069,
+      "CI high": 1.0765945903896372,
+      "mean value": -0.16533754256165023,
+      "mean full": -0.15232355245823262,
+      "mean floor": -0.0389782986216601,
+      "share of component draws without a class donor": 0.2747321991178325
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H1c shared chain, coarse",
+      "n": 311,
+      "recovered share": 0.8370546758477009,
+      "CI low": 0.639749462360581,
+      "CI high": 1.0769753018900952,
+      "mean value": 1.2832599287318107,
+      "mean full": -0.15232355245823262,
+      "mean floor": -0.0389782986216601,
+      "share of component draws without a class donor": 0.01575299306868305
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H2c player-blind chain, coarse",
+      "n": 311,
+      "recovered share": 1.036346028402394,
+      "CI low": 0.9503523209765953,
+      "CI high": 1.1640845244858504,
+      "mean value": 0.04446012585126672,
+      "mean full": -0.15232355245823262,
+      "mean floor": -0.0389782986216601,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "floor (everything free)",
+      "n": 311,
+      "recovered share": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "mean value": -0.0389782986216601,
+      "mean full": -0.15232355245823262,
+      "mean floor": -0.0389782986216601,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H1 with permuted labels",
+      "n": 311,
+      "recovered share": 1.0052272787264154,
+      "CI low": 0.8448081991340942,
+      "CI high": 1.1173262570869336,
+      "mean value": -0.4555148484520921,
+      "mean full": -0.15232355245823262,
+      "mean floor": -0.0389782986216601,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "scrub": "H1c with permuted labels",
+      "n": 311,
+      "recovered share": 0.8829372924533481,
+      "CI low": 0.737944979571108,
+      "CI high": 1.038522067546034,
+      "mean value": -0.2947504177551964,
+      "mean full": -0.15232355245823262,
+      "mean floor": -0.0389782986216601,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H1 shared chain",
+      "n": 311,
+      "recovered share": 0.9120146730067505,
+      "CI low": 0.882163804015169,
+      "CI high": 0.9441207565552556,
+      "mean value": 5.494887119279635,
+      "mean full": 6.046793771039251,
+      "mean floor": -0.45187115163932895,
+      "share of component draws without a class donor": 0.1373660995589162
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H2 player-blind chain",
+      "n": 311,
+      "recovered share": 0.91453833225444,
+      "CI low": 0.8867846398594735,
+      "CI high": 0.9426622531362965,
+      "mean value": 5.4966086522691775,
+      "mean full": 6.046793771039251,
+      "mean floor": -0.45187115163932895,
+      "share of component draws without a class donor": 0.027095148078134845
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H3 heads matter",
+      "n": 311,
+      "recovered share": 0.014105536146411808,
+      "CI low": -0.028664137330603964,
+      "CI high": 0.05470216010658459,
+      "mean value": -0.40824099696607036,
+      "mean full": 6.046793771039251,
+      "mean floor": -0.45187115163932895,
+      "share of component draws without a class donor": 0.2747321991178325
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H1c shared chain, coarse",
+      "n": 311,
+      "recovered share": 0.7524278225061628,
+      "CI low": 0.7030641237988032,
+      "CI high": 0.8096700319325854,
+      "mean value": 4.456468279143328,
+      "mean full": 6.046793771039251,
+      "mean floor": -0.45187115163932895,
+      "share of component draws without a class donor": 0.01575299306868305
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H2c player-blind chain, coarse",
+      "n": 311,
+      "recovered share": 0.6489484674555285,
+      "CI low": 0.5886893830044178,
+      "CI high": 0.7070501087690458,
+      "mean value": 3.75380153427858,
+      "mean full": 6.046793771039251,
+      "mean floor": -0.45187115163932895,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "floor (everything free)",
+      "n": 311,
+      "recovered share": 0.0,
+      "CI low": 0.0,
+      "CI high": 0.0,
+      "mean value": -0.45187115163932895,
+      "mean full": 6.046793771039251,
+      "mean floor": -0.45187115163932895,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H1 with permuted labels",
+      "n": 311,
+      "recovered share": -0.035377767259157374,
+      "CI low": -0.10123774640099067,
+      "CI high": 0.04671760005994166,
+      "mean value": -0.7787014508697203,
+      "mean full": 6.046793771039251,
+      "mean floor": -0.45187115163932895,
+      "share of component draws without a class donor": 0.0
+    },
+    {
+      "events": "events fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "scrub": "H1c with permuted labels",
+      "n": 311,
+      "recovered share": -0.031192146843826516,
+      "CI low": -0.09556752804354762,
+      "CI high": 0.02531268968745354,
+      "mean value": -0.7116118097940604,
+      "mean full": 6.046793771039251,
+      "mean floor": -0.45187115163932895,
+      "share of component draws without a class donor": 0.0
+    }
+  ],
+  "scrub_comparisons": [
+    {
+      "events": "fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "comparison": "H1 shared chain minus H1 with permuted labels",
+      "mean aligned difference": 0.03154018060991112,
+      "CI low": -0.1894713623428442,
+      "CI high": 0.22604522176316164,
+      "as a share of |full - floor|": 0.015945759164247956
+    },
+    {
+      "events": "fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "comparison": "H1 shared chain minus H2 player-blind chain",
+      "mean aligned difference": 0.23699196127626648,
+      "CI low": 0.046446483408727576,
+      "CI high": 0.3879359807788063,
+      "as a share of |full - floor|": 0.11981595112320353
+    },
+    {
+      "events": "fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "comparison": "H2 player-blind chain minus H1 with permuted labels",
+      "mean aligned difference": -0.20545178066635536,
+      "CI low": -0.48160900859255984,
+      "CI high": 0.11814960827814865,
+      "as a share of |full - floor|": -0.10387019195895557
+    },
+    {
+      "events": "fully scrubbed under H1",
+      "behaviour": "identity effect",
+      "comparison": "H1 shared chain minus H3 heads matter",
+      "mean aligned difference": 0.1522460523149608,
+      "CI low": -0.20263900892387007,
+      "CI high": 0.49059338028935584,
+      "as a share of |full - floor|": 0.07697098865562586
+    },
+    {
+      "events": "fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "comparison": "H1 shared chain minus H1 with permuted labels",
+      "mean aligned difference": 6.181626880820036,
+      "CI low": 5.5608426888856695,
+      "CI high": 6.855908565410459,
+      "as a share of |full - floor|": 0.947392440265908
+    },
+    {
+      "events": "fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "comparison": "H1 shared chain minus H2 player-blind chain",
+      "mean aligned difference": -0.016466586791814404,
+      "CI low": -0.2244254673758164,
+      "CI high": 0.1879519798446405,
+      "as a share of |full - floor|": -0.0025236592476894893
+    },
+    {
+      "events": "fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "comparison": "H2 player-blind chain minus H1 with permuted labels",
+      "mean aligned difference": 6.19809346761185,
+      "CI low": 5.647196529768821,
+      "CI high": 6.852862788812262,
+      "as a share of |full - floor|": 0.9499160995135973
+    },
+    {
+      "events": "fully scrubbed under H1",
+      "behaviour": "arbitration",
+      "comparison": "H1 shared chain minus H3 heads matter",
+      "mean aligned difference": 5.85875400841482,
+      "CI low": 5.467343419300924,
+      "CI high": 6.357762281705683,
+      "as a share of |full - floor|": 0.8979091368603387
+    },
+    {
+      "events": "all",
+      "behaviour": "identity effect",
+      "comparison": "H1c shared chain, coarse minus H1c with permuted labels",
+      "mean aligned difference": -0.24539966074594982,
+      "CI low": -0.6604577605104178,
+      "CI high": 0.17031415736530348,
+      "as a share of |full - floor|": -0.12377590164556944
+    },
+    {
+      "events": "all",
+      "behaviour": "identity effect",
+      "comparison": "H1c shared chain, coarse minus H2c player-blind chain, coarse",
+      "mean aligned difference": -0.27063302501682557,
+      "CI low": -0.5911261488123968,
+      "CI high": 0.04884730115001191,
+      "as a share of |full - floor|": -0.1365032314417264
+    },
+    {
+      "events": "all",
+      "behaviour": "arbitration",
+      "comparison": "H1c shared chain, coarse minus H1c with permuted labels",
+      "mean aligned difference": 4.209406163065148,
+      "CI low": 3.6522180286258714,
+      "CI high": 4.806432954970729,
+      "as a share of |full - floor|": 0.6573063465392368
+    },
+    {
+      "events": "all",
+      "behaviour": "arbitration",
+      "comparison": "H1c shared chain, coarse minus H2c player-blind chain, coarse",
+      "mean aligned difference": 0.335451059313897,
+      "CI low": -0.1386549344688367,
+      "CI high": 0.7467162323648424,
+      "as a share of |full - floor|": 0.05238128650426503
+    }
+  ],
+  "geometry": {
+    "|cos(v1, g_hat)|": 0.5389311615075324,
+    "mean |cos(v1, g_i)| over events": 0.4475236474749575,
+    "|cos(random-vector v1, g_hat)|": 0.4710901014994556,
+    "|cos(random unit direction, g_hat)|: 95th percentile": 0.16582484181701865,
+    "principal-angle cosines, top-4 identity vs top-4 random-vector subspace": [
+      0.9941677795900508,
+      0.9891683831974128,
+      0.959566689766076,
+      0.8410203903930915
+    ],
+    "principal-angle cosines, top-4 identity vs a random 4-d subspace": [
+      0.23231943981160638,
+      0.15282085969585157,
+      0.135681354716483,
+      0.07877496345029221
+    ]
+  },
+  "identity_variance_top4": 0.5597540788095957,
+  "random_vector_variance_top4": 0.6330806507106137,
+  "steering": [
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "beta": -2.0,
+      "mean change in delta": -8.513856009286618,
+      "CI low": -9.1279972016151,
+      "CI high": -7.848341948376815,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "beta": -1.5,
+      "mean change in delta": -7.399991884337041,
+      "CI low": -7.940001547196358,
+      "CI high": -6.797540233275652,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "beta": -1.0,
+      "mean change in delta": -5.547018879382208,
+      "CI low": -5.962446699356459,
+      "CI high": -5.0591746083471305,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "beta": -0.5,
+      "mean change in delta": -2.7980591253856573,
+      "CI low": -3.024169139784443,
+      "CI high": -2.5205996003642266,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "beta": -0.25,
+      "mean change in delta": -1.3042896434480762,
+      "CI low": -1.4189681238687588,
+      "CI high": -1.1619799710404048,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "beta": 0.25,
+      "mean change in delta": 0.9337390766406255,
+      "CI low": 0.772582425435696,
+      "CI high": 1.057651871190576,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "beta": 0.5,
+      "mean change in delta": 1.4415574906171595,
+      "CI low": 1.1041842425374924,
+      "CI high": 1.6930470402852962,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "beta": 1.0,
+      "mean change in delta": 1.535951859261764,
+      "CI low": 0.9531809031326273,
+      "CI high": 1.9732633942125672,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "beta": 1.5,
+      "mean change in delta": 1.1666445662087375,
+      "CI low": 0.47739332154689557,
+      "CI high": 1.6992430079197627,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1",
+      "beta": 2.0,
+      "mean change in delta": 0.7929019975441474,
+      "CI low": 0.05515530666235108,
+      "CI high": 1.373795074680341,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1 without its read-out component",
+      "beta": -2.0,
+      "mean change in delta": -4.467737482580138,
+      "CI low": -4.853012042162741,
+      "CI high": -4.045757696237651,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1 without its read-out component",
+      "beta": -1.5,
+      "mean change in delta": -3.599327363601192,
+      "CI low": -3.928362537033261,
+      "CI high": -3.229883901182681,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1 without its read-out component",
+      "beta": -1.0,
+      "mean change in delta": -2.2917305781272215,
+      "CI low": -2.5417626917047342,
+      "CI high": -2.016546699646292,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1 without its read-out component",
+      "beta": -0.5,
+      "mean change in delta": -0.7506719632035911,
+      "CI low": -0.8896472988858778,
+      "CI high": -0.6028213945886491,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1 without its read-out component",
+      "beta": -0.25,
+      "mean change in delta": -0.1989788247234046,
+      "CI low": -0.26817771541302154,
+      "CI high": -0.12781369440766627,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1 without its read-out component",
+      "beta": 0.25,
+      "mean change in delta": -0.18737194059807577,
+      "CI low": -0.2501854635140647,
+      "CI high": -0.12174470318713275,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1 without its read-out component",
+      "beta": 0.5,
+      "mean change in delta": -0.6570543601311774,
+      "CI low": -0.7794510111359414,
+      "CI high": -0.5273827791309947,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1 without its read-out component",
+      "beta": 1.0,
+      "mean change in delta": -1.8213861348820322,
+      "CI low": -2.0477455701563945,
+      "CI high": -1.5856084265204533,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1 without its read-out component",
+      "beta": 1.5,
+      "mean change in delta": -2.725758681020128,
+      "CI low": -3.008776791077779,
+      "CI high": -2.4267423124543654,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "identity v1 without its read-out component",
+      "beta": 2.0,
+      "mean change in delta": -3.3246604035727283,
+      "CI low": -3.642813294859821,
+      "CI high": -2.986832384792177,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "read-out direction g_hat",
+      "beta": -2.0,
+      "mean change in delta": -11.03404809750402,
+      "CI low": -11.861978487729123,
+      "CI high": -9.788032632620908,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "read-out direction g_hat",
+      "beta": -1.5,
+      "mean change in delta": -9.778146227470641,
+      "CI low": -10.520038139758574,
+      "CI high": -8.64868141292887,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "read-out direction g_hat",
+      "beta": -1.0,
+      "mean change in delta": -7.702697748203336,
+      "CI low": -8.288163280288341,
+      "CI high": -6.79275941554736,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "read-out direction g_hat",
+      "beta": -0.5,
+      "mean change in delta": -4.345526502002414,
+      "CI low": -4.677822130024102,
+      "CI high": -3.8054426900502283,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "read-out direction g_hat",
+      "beta": -0.25,
+      "mean change in delta": -2.2030156244343693,
+      "CI low": -2.37612422076973,
+      "CI high": -1.9139507555121178,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "read-out direction g_hat",
+      "beta": 0.25,
+      "mean change in delta": 1.90958009934965,
+      "CI low": 1.5939768732423065,
+      "CI high": 2.097843997563734,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "read-out direction g_hat",
+      "beta": 0.5,
+      "mean change in delta": 3.2245027735522744,
+      "CI low": 2.5608320369485393,
+      "CI high": 3.6143470545273457,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "read-out direction g_hat",
+      "beta": 1.0,
+      "mean change in delta": 4.218421157998312,
+      "CI low": 2.9709610233552413,
+      "CI high": 4.93008125136032,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "read-out direction g_hat",
+      "beta": 1.5,
+      "mean change in delta": 4.253175127861922,
+      "CI low": 2.762168777117606,
+      "CI high": 5.097119245108794,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "read-out direction g_hat",
+      "beta": 2.0,
+      "mean change in delta": 4.054631763537234,
+      "CI low": 2.468735788151923,
+      "CI high": 4.951558370158516,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "beta": -2.0,
+      "mean change in delta": -8.023439889324546,
+      "CI low": -8.579074117640365,
+      "CI high": -7.42095962690067,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "beta": -1.5,
+      "mean change in delta": -6.961920510974441,
+      "CI low": -7.448985590861323,
+      "CI high": -6.420015792756666,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "beta": -1.0,
+      "mean change in delta": -5.19469076712681,
+      "CI low": -5.558589663997673,
+      "CI high": -4.775038168209691,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "beta": -0.5,
+      "mean change in delta": -2.557790828425698,
+      "CI low": -2.7606797105370067,
+      "CI high": -2.323901031278672,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "beta": -0.25,
+      "mean change in delta": -1.1667391468345383,
+      "CI low": -1.272236278920829,
+      "CI high": -1.04059058299579,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "beta": 0.25,
+      "mean change in delta": 0.7943604888248836,
+      "CI low": 0.6415276443650626,
+      "CI high": 0.9126098446098128,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "beta": 0.5,
+      "mean change in delta": 1.1825160382829085,
+      "CI low": 0.8668268561777587,
+      "CI high": 1.421214855270105,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "beta": 1.0,
+      "mean change in delta": 1.1265030127616575,
+      "CI low": 0.5789983635436418,
+      "CI high": 1.545570891647266,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "beta": 1.5,
+      "mean change in delta": 0.7068916313810113,
+      "CI low": 0.06132684117398228,
+      "CI high": 1.2085998698044602,
+      "n": 1215
+    },
+    {
+      "half": "discovery",
+      "direction": "random-vector v1",
+      "beta": 2.0,
+      "mean change in delta": 0.3156270487073027,
+      "CI low": -0.36539983611616494,
+      "CI high": 0.8618909921578041,
+      "n": 1215
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "beta": -2.0,
+      "mean change in delta": -8.489576730363085,
+      "CI low": -9.25113011491099,
+      "CI high": -7.2594194999482715,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "beta": -1.5,
+      "mean change in delta": -7.3806832111625456,
+      "CI low": -8.072858994771012,
+      "CI high": -6.248830526817901,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "beta": -1.0,
+      "mean change in delta": -5.511961832276364,
+      "CI low": -6.064144224721924,
+      "CI high": -4.5568924959653145,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "beta": -0.5,
+      "mean change in delta": -2.7365100770231003,
+      "CI low": -3.0505810111624934,
+      "CI high": -2.174725752338354,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "beta": -0.25,
+      "mean change in delta": -1.25717588205644,
+      "CI low": -1.4154866895738476,
+      "CI high": -0.9562822375844586,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "beta": 0.25,
+      "mean change in delta": 0.8788905215849272,
+      "CI low": 0.5542336287829754,
+      "CI high": 1.0397269486700318,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "beta": 0.5,
+      "mean change in delta": 1.3550562212958452,
+      "CI low": 0.7294211227055045,
+      "CI high": 1.6737761352062193,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "beta": 1.0,
+      "mean change in delta": 1.4277007690505856,
+      "CI low": 0.37661374151683846,
+      "CI high": 1.9735157832931292,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "beta": 1.5,
+      "mean change in delta": 1.0598238814755965,
+      "CI low": -0.21590056724729986,
+      "CI high": 1.7133559118230173,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1",
+      "beta": 2.0,
+      "mean change in delta": 0.7005628644856704,
+      "CI low": -0.6766032722314979,
+      "CI high": 1.4155987340319847,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1 without its read-out component",
+      "beta": -2.0,
+      "mean change in delta": -4.374318368366738,
+      "CI low": -4.976056977569635,
+      "CI high": -3.5286277222352296,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1 without its read-out component",
+      "beta": -1.5,
+      "mean change in delta": -3.491056030647854,
+      "CI low": -4.033098527213197,
+      "CI high": -2.719153244588683,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1 without its read-out component",
+      "beta": -1.0,
+      "mean change in delta": -2.149418224459109,
+      "CI low": -2.5915125000677346,
+      "CI high": -1.504648008607538,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1 without its read-out component",
+      "beta": -0.5,
+      "mean change in delta": -0.6168260564200143,
+      "CI low": -0.8632424638592427,
+      "CI high": -0.2303804526850655,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1 without its read-out component",
+      "beta": -0.25,
+      "mean change in delta": -0.12061092629324512,
+      "CI low": -0.24653235595757514,
+      "CI high": 0.09001917484711176,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1 without its read-out component",
+      "beta": 0.25,
+      "mean change in delta": -0.2536147217669424,
+      "CI low": -0.4871655222092356,
+      "CI high": -0.13011119623116682,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1 without its read-out component",
+      "beta": 0.5,
+      "mean change in delta": -0.7622962870084045,
+      "CI low": -1.2127993028350175,
+      "CI high": -0.5231184565397163,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1 without its read-out component",
+      "beta": 1.0,
+      "mean change in delta": -1.9521891589017695,
+      "CI low": -2.680429354637692,
+      "CI high": -1.543464491761588,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1 without its read-out component",
+      "beta": 1.5,
+      "mean change in delta": -2.844748516670923,
+      "CI low": -3.717603049752749,
+      "CI high": -2.3423635955872446,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "identity v1 without its read-out component",
+      "beta": 2.0,
+      "mean change in delta": -3.4225567898559888,
+      "CI low": -4.3786142918429904,
+      "CI high": -2.8728607244671607,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "read-out direction g_hat",
+      "beta": -2.0,
+      "mean change in delta": -10.92402838060671,
+      "CI low": -11.409109906280621,
+      "CI high": -10.06403165559094,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "read-out direction g_hat",
+      "beta": -1.5,
+      "mean change in delta": -9.687078057029522,
+      "CI low": -10.122249493355582,
+      "CI high": -8.894788064501205,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "read-out direction g_hat",
+      "beta": -1.0,
+      "mean change in delta": -7.654857063000504,
+      "CI low": -8.00877370972752,
+      "CI high": -6.992149410689078,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "read-out direction g_hat",
+      "beta": -0.5,
+      "mean change in delta": -4.351349523815631,
+      "CI low": -4.5663513861569855,
+      "CI high": -3.9414791891635916,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "read-out direction g_hat",
+      "beta": -0.25,
+      "mean change in delta": -2.214348186955335,
+      "CI low": -2.333606488320071,
+      "CI high": -1.994795681365605,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "read-out direction g_hat",
+      "beta": 0.25,
+      "mean change in delta": 1.9232901298143463,
+      "CI low": 1.67669796123665,
+      "CI high": 2.071618281073655,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "read-out direction g_hat",
+      "beta": 0.5,
+      "mean change in delta": 3.263747319748136,
+      "CI low": 2.7540988875589334,
+      "CI high": 3.576009633178948,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "read-out direction g_hat",
+      "beta": 1.0,
+      "mean change in delta": 4.341920314416543,
+      "CI low": 3.4159309489199994,
+      "CI high": 4.887478907499865,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "read-out direction g_hat",
+      "beta": 1.5,
+      "mean change in delta": 4.400217310354705,
+      "CI low": 3.2639787347499825,
+      "CI high": 5.048157590331528,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "read-out direction g_hat",
+      "beta": 2.0,
+      "mean change in delta": 4.200183346388696,
+      "CI low": 2.9614200899558565,
+      "CI high": 4.899747170393218,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "beta": -2.0,
+      "mean change in delta": -7.890151633206748,
+      "CI low": -8.83333621879627,
+      "CI high": -6.392828599980462,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "beta": -1.5,
+      "mean change in delta": -6.848141635072705,
+      "CI low": -7.719011193701943,
+      "CI high": -5.454159670134974,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "beta": -1.0,
+      "mean change in delta": -5.094339935675912,
+      "CI low": -5.805015336572852,
+      "CI high": -3.9289329550937984,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "beta": -0.5,
+      "mean change in delta": -2.4657832596782026,
+      "CI low": -2.8581889404662912,
+      "CI high": -1.7680397125842844,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "beta": -0.25,
+      "mean change in delta": -1.102243827117188,
+      "CI low": -1.2997974247729438,
+      "CI high": -0.7315424748314133,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "beta": 0.25,
+      "mean change in delta": 0.7134213261376707,
+      "CI low": 0.3170045421881049,
+      "CI high": 0.919866376234766,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "beta": 0.5,
+      "mean change in delta": 1.0402177443801794,
+      "CI low": 0.2674596656112233,
+      "CI high": 1.4433350097682427,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "beta": 1.0,
+      "mean change in delta": 0.9312156718822868,
+      "CI low": -0.3742101554190563,
+      "CI high": 1.616527012541614,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "beta": 1.5,
+      "mean change in delta": 0.506911923957457,
+      "CI low": -1.050674585380293,
+      "CI high": 1.3281972861068139,
+      "n": 529
+    },
+    {
+      "half": "estimation",
+      "direction": "random-vector v1",
+      "beta": 2.0,
+      "mean change in delta": 0.1266655288707106,
+      "CI low": -1.5477145013856397,
+      "CI high": 1.0171255381854298,
+      "n": 529
+    }
+  ],
+  "steering_calibration": [
+    {
+      "beta": -1.0,
+      "calibration model": "straight line (as MB11c, plus the point at 0)",
+      "predicted": -4.515889928896041,
+      "observed (estimation half)": -5.511961832276364,
+      "CI low": -6.064144224721924,
+      "CI high": -4.5568924959653145,
+      "absolute error": 0.9960719033803231,
+      "interval contains the prediction": false
+    },
+    {
+      "beta": -1.0,
+      "calibration model": "piecewise-linear through the measured points",
+      "predicted": -5.547018879382208,
+      "observed (estimation half)": -5.511961832276364,
+      "CI low": -6.064144224721924,
+      "CI high": -4.5568924959653145,
+      "absolute error": 0.035057047105844674,
+      "interval contains the prediction": true
+    },
+    {
+      "beta": 0.5,
+      "calibration model": "straight line (as MB11c, plus the point at 0)",
+      "predicted": -0.4273851107656843,
+      "observed (estimation half)": 1.3550562212958452,
+      "CI low": 0.7294211227055045,
+      "CI high": 1.6737761352062193,
+      "absolute error": 1.7824413320615295,
+      "interval contains the prediction": false
+    },
+    {
+      "beta": 0.5,
+      "calibration model": "piecewise-linear through the measured points",
+      "predicted": 1.4415574906171595,
+      "observed (estimation half)": 1.3550562212958452,
+      "CI low": 0.7294211227055045,
+      "CI high": 1.6737761352062193,
+      "absolute error": 0.0865012693213143,
+      "interval contains the prediction": true
+    },
+    {
+      "beta": 1.0,
+      "calibration model": "straight line (as MB11c, plus the point at 0)",
+      "predicted": 0.9354498286111013,
+      "observed (estimation half)": 1.4277007690505856,
+      "CI low": 0.37661374151683846,
+      "CI high": 1.9735157832931292,
+      "absolute error": 0.49225094043948436,
+      "interval contains the prediction": true
+    },
+    {
+      "beta": 1.0,
+      "calibration model": "piecewise-linear through the measured points",
+      "predicted": 1.535951859261764,
+      "observed (estimation half)": 1.4277007690505856,
+      "CI low": 0.37661374151683846,
+      "CI high": 1.9735157832931292,
+      "absolute error": 0.1082510902111784,
+      "interval contains the prediction": true
+    }
+  ],
+  "run_mode": "full"
+}

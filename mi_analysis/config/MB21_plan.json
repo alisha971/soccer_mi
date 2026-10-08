@@ -1,0 +1,14 @@
+{
+  "status": "follow-up after MB14-MB18; exploratory; not part of the MB12 lock",
+  "habits": "log-lift of 15 actions per dedicated player from the training split, smoothed with 20 pseudo-events of the base rate; role-adjusted = minus the role mean",
+  "stored_tests": [
+    "RSA embedding cosine distance vs habit distance (all players; role-adjusted within role); Mantel p from 2,000 permutations",
+    "ridge decoding embedding -> habit, 5-fold over players, R2 vs 200 shuffled-habit baselines; role-adjusted version",
+    "every seed 100-104"
+  ],
+  "stored_reading": "habits are STORED beyond role if the role-adjusted decoding R2 exceeds the 95th percentile of its shuffled baseline on at least 4 of 5 seeds",
+  "used_tests": "on P-player conflicts: swap only the habit-subspace part, or only the remaining part, of the player vector with the partner's; |change in Delta|, its share of the full swap, and C3 (correlation of the model's change with the habit reference change) for each",
+  "used_reading": "habits are USED if the habit-part swap has C3 CI above 0 and C3 above the rest-part swap's (paired CI above 0); STORED BUT NOT USED if habits are stored and the habit-part swap's C3 CI includes 0",
+  "half": "estimation primary, discovery alongside",
+  "written_at": "2026-10-07T18:58:29.569120+00:00"
+}

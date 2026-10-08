@@ -1,0 +1,12 @@
+{
+  "status": "follow-up after MB12; exploratory; not part of the MB12 lock",
+  "Q1_calibration": "mean p(a_id), p(a_ctx) vs realised shares on conflicts; model-implied pooled log-odds log(sum p_ctx / sum p_id) vs empirical log-odds; from MB03_event_scores (seed 103), no new model run",
+  "Q2_history": "three edits per P-all conflict, donor = another validation conflict from a different match scored at the same position (seed 0): (a) donor's 15 earlier events, own scored event; (b) own earlier events, donor's context inputs at the scored event; (c) donor window with own identity inputs at the scored event. Measures |change in Delta|, KL, and the identity effect under each",
+  "Q2_reading": "if (a) moves Delta by less than 10 per cent of (c), the window outside the scored event is read as negligible for arbitration",
+  "Q3_interaction": "2x2 factorial as MB04 E8 with player B = matched partner, B = norm-matched random vector (same direction in both contexts), B = removed (index 0); |I| - |I_floor| for each; paired difference partner minus random vector",
+  "Q3_reading": "the interaction is called player-specific only if partner minus random-vector difference has CI above 0",
+  "Q4_single_factor": "2x2: player A vs partner B x one context input at the scored event, own value vs the MB02 donor's value; inputs: every categorical and continuous context input; |I_f| - |I_f floor| with BH over inputs",
+  "Q5_strata": "I1 effect, C2, C3, C4 separately on genuine and coupled P-player events (estimation half; all validation as secondary)",
+  "Q6_inference_removal": "NLL change on every scored validation event whose acting player has an embedding, player -> 0 at the target; also team -> 0, and player and team -> 0",
+  "written_at": "2026-10-07T18:22:36.326926+00:00"
+}

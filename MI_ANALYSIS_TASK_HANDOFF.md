@@ -1,6 +1,14 @@
 # MI notebook review, surgical repairs and benchmark rerun
 
-Last updated: 2026-10-06. Project root: `/home/aayush/code/soccer_mi`.
+Last updated: 2026-10-08. Project root: `/home/aayush/code/soccer_mi`.
+
+## Latest continuation: MB14–MB21 completed; MB22–MB23 pending
+
+Verified and integrated `soccer_mi_MB14_MB21_FINAL.zip`: archive integrity, all 24 completed notebook states and executed code cells, no error outputs, completion/dependency/manifest hashes, external model-input hashes, unchanged MB01–MB13 baseline and unchanged test-access log. The delivered auditor incorrectly expected MB1–MB9 rather than MB01–MB09; after correcting that naming bug in scratch, it passed. This is execution/provenance verification, not independent scientific certification.
+
+Actual follow-up interpreter: Python 3.12.15, Torch 2.10.0/CUDA 12.8, Tesla T4; full versions preserved in `mi_analysis/config/followup_execution_environment.json`. Earlier MB07–MB13 Torch 2.11 notes came from the controller and do not establish the analysis venv version; the historical environment statements below should be read with that uncertainty.
+
+MB16 legacy scrub remains invalidated; use Section R corrected evidence. MB12 remains retrospective and category-adjacency edits remain disabled. Follow-ups are exploratory. MB22–MB23 are a separate new-model training/analysis phase; prepared copies will stay in the Colab bundle until successfully executed and verified. Original scripts, staging, backups and ZIPs remain outside the commit.
 
 **Current state: completed. All 16 notebooks in the execution sequence completed and were promoted to `mi_analysis/`; `finalize_mi_rerun.py` passed and wrote `mi_analysis/RERUN_REPORT.md`.** MB01–MB06 ran locally on CPU; MB07–MB13 ran on a Colab Tesla T4 (see §6 and the environment variant note in §3). This document records the work and the information needed to continue. The earlier stop-state text below is retained as history.
 

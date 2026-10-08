@@ -1,0 +1,21 @@
+{
+  "status": "follow-up after MB14-MB18; exploratory; not part of the MB12 lock",
+  "factorial": "player A vs B (matched partner; fixed norm-matched random vector) x context X (own) vs Y (MB02 donor with the four identity inputs written back)",
+  "components": [
+    "MLP l whole (l = 0..3)",
+    "MLP l activation part only",
+    "MLP l LayerNorm only",
+    "final LayerNorm",
+    "all four MLPs whole"
+  ],
+  "manipulations": {
+    "own": "B-runs: output = A-run output (same context) + Jacobian at the A-run of the same context x input change",
+    "shared": "B-runs: output = A-run output (same context) + Jacobian at (A, X) x input change"
+  },
+  "measure": "interaction retained = pooled sign-aligned sum(sign(I) * I_manipulated) / sum(|I|), I from the exact network; match-resampled CIs",
+  "attribution": "interaction from a component = retained(own) - retained(shared), paired over events, with CI",
+  "reading_rule": "a component is called a SOURCE of the interaction if retained(own) CI low >= 0.8 (the linearisation itself is harmless) AND retained(own) - retained(shared) CI low > 0.2; the interaction is called ACCOUNTED FOR by the MLPs if all four MLPs with shared gain retain < 0.2",
+  "half": "estimation primary, discovery reported alongside",
+  "player_B": "matched partner primary; random vector reported to check the answer is the same",
+  "written_at": "2026-10-07T18:57:53.386929+00:00"
+}

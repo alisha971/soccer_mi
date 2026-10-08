@@ -1,0 +1,42 @@
+{
+  "status": "follow-up after the deep MI audit; exploratory; not part of the MB12 lock",
+  "wrong_class": "for H1, H2, H1c and H2c: each scrubbed component's donor is drawn from entries whose class label DIFFERS from the run's own label (another event); free components as before",
+  "action_labels": "H1 with a_ctx and a_id added to its MLP class keys (as MB11b's classes effectively were)",
+  "wrong_class_reading": "an abstraction is informative for a behaviour only if its recovered share CI lies above its wrong-class share CI",
+  "steering_unit": "beta = multiples of the mean norm of the player-swap change at the final residual (discovery half)",
+  "steering_grid": [
+    -3,
+    -2,
+    -1.5,
+    -1,
+    -0.75,
+    -0.5,
+    -0.25,
+    0.25,
+    0.5,
+    0.75,
+    1,
+    1.5,
+    2,
+    3
+  ],
+  "steering_directions": [
+    "identity v1 (stored)",
+    "v1 without its read-out component",
+    "random-vector v1",
+    "a random unit direction (seed 0)"
+  ],
+  "steering_strata": [
+    "genuine / coupled",
+    "possession change at the scored event (team_change 0 / 1)",
+    "the three most frequent (a_ctx, a_id) pairs in the estimation half, if each has >= 30 events"
+  ],
+  "steering_summaries": "slope at 0 = (y(0.25) - y(-0.25)) / 0.5; saturation y(-3), y(+3); asymmetry |y(+3)| / |y(-3)|",
+  "calibration_models": [
+    "straight line through 0 fitted on |beta| <= 0.5",
+    "isotonic (monotone) fit",
+    "4-parameter logistic"
+  ],
+  "calibration_procedure": "fit on the discovery-half mean curve along v1; predict the estimation-half mean at every beta; report error and interval coverage",
+  "written_at": "2026-10-07T18:25:25.111394+00:00"
+}

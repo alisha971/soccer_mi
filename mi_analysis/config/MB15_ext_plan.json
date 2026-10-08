@@ -1,0 +1,19 @@
+{
+  "status": "follow-up after the deep MI audit; exploratory; not part of the MB12 lock",
+  "N1_role_centroid": "player vector at the scored position -> mean player vector of the player's modal training role. player-specific share = pooled sign-aligned (Delta own - Delta centroid) / (Delta own - Delta removed)",
+  "N1_reading": "the identity effect is called mostly role if the player-specific share CI lies below 0.5; mostly player-specific if above 0.5",
+  "N4_controls": [
+    "distribution-matched deviation (centroid + another same-role player's deviation rescaled to this player's deviation norm)",
+    "shuffled coordinates of the player's own vector",
+    "same role AND same modal team swap (nearest log training count)",
+    "norm-matched random vector (as MB04 I4)"
+  ],
+  "N4_reading": "C2 is re-read as player-specific only if |partner change| - |distribution-matched change| has CI above 0",
+  "N2_cross_seed": "per-event removal effect, partner-swap change and Delta under each of the 5 seeds on all P-player validation events; mean pairwise Pearson correlation with match-resampled CI; player-level means for players with >= 5 events",
+  "N2_reading": "reproducible per event if the mean pairwise correlation CI lies above 0.5; not reproducible if it lies below 0.3",
+  "N3_lift": "a_lift = argmax over actions other than a_ctx of p_IdFull(action) / training base rate(action); Delta' = logit(a_ctx) - logit(a_lift); C1, identity effect, C2 and C4 (partner and random vector) on Delta'; identity-removal patching profile at the scored position on Delta and Delta' (estimation half)",
+  "N3_reading": "the profile is called the same if the per-site recoveries for Delta and Delta' correlate above 0.9 and no site differs by more than 0.2",
+  "N6_bands": "acting player's training events < 1,000 vs >= 1,000: identity effect, C2 (random and distribution-matched), C4, patching profile",
+  "N11_cells": "training count of the (player, previous action) pair: 0, 1-9, 10-49, >= 50; Delta, identity effect, |partner change| per bin; rare (0-9) minus common (>= 50) with match-resampled CI",
+  "written_at": "2026-10-07T18:23:28.558804+00:00"
+}

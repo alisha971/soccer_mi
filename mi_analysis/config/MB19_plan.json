@@ -1,0 +1,26 @@
+{
+  "status": "follow-up after the deep MI audit; exploratory; not part of the MB12 lock",
+  "behaviours": [
+    "B0 arbitration (whole window)",
+    "B1 identity: player removed",
+    "B2 identity: player swap",
+    "B3 player-specific part (role centroid)",
+    "B4 role",
+    "B5 context (identity kept)",
+    "B6 previous action",
+    "B7 possession change",
+    "B8 time gap",
+    "B9 identity x context interaction",
+    "B10 identity on the characteristic action (Delta')"
+  ],
+  "senders": "every input factor group at the scored event, earlier events (per receiving layer), every head, every MLP",
+  "receivers": "every head's q, k and v input, every MLP input, the logits; earlier events only into k and v",
+  "discovery": "every edge path-patched on the discovery half; two-sided match-bootstrap p-value of the aligned change; Benjamini-Hochberg within each behaviour",
+  "selection_rule": "an edge is kept if q < 0.05 AND |R| >= 0.05 on the discovery half; then pruned to edges on a path from an input to the logits",
+  "estimation": "every kept edge re-measured on the estimation half; an edge REPLICATES if its R has the same sign and its CI excludes 0",
+  "faithfulness": "F of the circuit's heads and MLPs on the estimation half (complement mean-ablated at every position, in every run); necessity = share retained when only the circuit's components are ablated",
+  "random_baseline": "F of 100 random sets with the same numbers of heads and MLPs (seed 0); percentile of the circuit",
+  "meaningful_rule": "a circuit is called MEANINGFUL if (a) its F CI low >= 0.5, (b) its F is above the 95th percentile of the random sets, (c) >= 70 per cent of its edges replicate, and (d) it does not contain every head and MLP. PARTIAL if (a) and (c) hold but (b) or (d) fails; DIRECT PATH ONLY if every kept edge runs from an input straight to the logits; otherwise NOT ESTABLISHED",
+  "comparison": "edge-set Jaccard overlap between every pair of behaviours; identity (B1) vs context (B5) overlay drawing; interaction (B9) drawn on top",
+  "written_at": "2026-10-07T18:46:16.165385+00:00"
+}
