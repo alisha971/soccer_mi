@@ -1,0 +1,13 @@
+comparison,events,difference (nats),CI low,CI high
+single s0 minus SEL-4L (Track A) s103,all validation events,0.04418010423699933,0.03683551491945472,0.05189338582744538
+two_token_id s0 minus single s0,all validation events,0.0279432418985331,0.00869344487225304,0.053283982054177746
+two_token_anon s0 minus two_token_id s0,all validation events,-0.018869800089359692,-0.0311255123094062,-0.008997732698118467
+single s0 minus SEL-4L (Track A) s103,player appears earlier in the window,0.03572977437626986,0.02618149589558757,0.043468521116608816
+two_token_id s0 minus single s0,player appears earlier in the window,0.03451755864355891,0.007164049181017591,0.07486783674880136
+two_token_anon s0 minus two_token_id s0,player appears earlier in the window,-0.019648349791889733,-0.028179941168178683,-0.012304058835771573
+single s0 minus SEL-4L (Track A) s103,player does not appear earlier,0.04567349788412911,0.037479073398584264,0.054523318389831515
+two_token_id s0 minus single s0,player does not appear earlier,0.02678138869007232,0.007529839701328531,0.05144415051234274
+two_token_anon s0 minus two_token_id s0,player does not appear earlier,-0.01873221005454503,-0.03239753487578958,-0.007514406507533162
+single s0 minus SEL-4L (Track A) s103,P-player conflicts,0.04343149174710227,0.021213399427049678,0.06668584654595777
+two_token_id s0 minus single s0,P-player conflicts,0.0740492661046561,-0.006817055388314784,0.20635003178614336
+two_token_anon s0 minus two_token_id s0,P-player conflicts,-0.04103295025844933,-0.06279218083445105,-0.021957800671669313

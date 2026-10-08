@@ -1,11 +1,21 @@
-# Notebook rerun handoff — through MB21 completed 2026-10-08
+# Notebook rerun handoff — through MB23 completed 2026-10-08
+
+All 26 notebooks through MB23 are now completed, verified and integrated.
+MB22/MB23 hashes and executed cells pass; five new checkpoints load and
+produce finite validation predictions. The MB01–MB21 baseline, prior reports
+and test-access log are unchanged. See `FINAL_TWO_RERUN_REPORT.md` and
+`config/final_two_execution_environment.json` for final-phase evidence.
+The namespace fix preserves historical `src/twotoken.py`; new training and
+analysis use `src/twotoken_followup.py`. No further notebooks are pending.
+
+## Earlier completion record (MB14–MB21)
 
 MB14–MB21 delivered, verified and integrated: all 24 notebooks completed;
 no error outputs; notebook/dependency/manifest hashes match; prior scientific
 baseline and test-access log unchanged. See `FOLLOWUP_RERUN_REPORT.md`.
 Actual follow-up venv versions are in `config/followup_execution_environment.json`
 (Python 3.12.15, Torch 2.10.0/CUDA 12.8, Tesla T4).
-MB22–MB23 remain pending, a separate training phase. MB16 legacy scrub is
+MB22–MB23 were pending at that checkpoint and have since completed. MB16 legacy scrub is
 invalidated; use Section R. No fresh held-out claim or adjacency edits.
 Earlier Torch 2.11 provenance below came from the Colab controller, not a
 verified analysis interpreter; it is retained as historical context only.

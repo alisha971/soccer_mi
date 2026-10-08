@@ -1,0 +1,5 @@
+behaviour,components,heads in circuit,"F (estimation, component level)",percentile vs random same-size,edges,edges replicating,verdict (plan rule)
+identity,L3H0+L3MLP,1,-0.1099944050010776,22.0,5,1.0,NOT ESTABLISHED
+previous event,L2H0+L2H1+L3H0+L3H1+L3MLP,4,0.24785590101279265,98.0,14,1.0,NOT ESTABLISHED
+current situation,L1MLP+L2MLP+L3H0+L3MLP,1,0.5534742921801016,92.0,11,1.0,PARTIAL
+interaction,L2H0+L2H1+L2MLP+L3H0+L3H1+L3MLP,4,0.10790977097706102,77.0,20,0.85,NOT ESTABLISHED

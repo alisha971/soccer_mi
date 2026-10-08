@@ -1,0 +1,14 @@
+[
+  {
+    "notebook": "MB22_two_token_training.ipynb",
+    "before_sha256": "d06e2ec2c42a4fd0cb14d082fefb93c7ef1275a10661c2599522903058d5ab08",
+    "after_sha256": "7649ec9966a57db1ac05c31fff0a4a1af441ed0bf0567f86dfdce6124dd5e066",
+    "change": "Separate MB22-generated module from protected historical twotoken.py; no computation change"
+  },
+  {
+    "notebook": "MB23_two_token_circuits.ipynb",
+    "before_sha256": "54423e3ae8b777381d6d5f8b64d288f510109853f3720c152c29d898fd497d7b",
+    "after_sha256": "74e9922edb429494ce6324e73473c1f2b62807c42082d4945890e4f0ac618f0b",
+    "change": "Separate MB22-generated module from protected historical twotoken.py; no computation change"
+  }
+]

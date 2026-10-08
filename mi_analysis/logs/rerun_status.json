@@ -292,6 +292,29 @@
       "total_cells": 21,
       "previous_attempts": [],
       "elapsed_seconds": 441.33
+    },
+    "MB22": {
+      "state": "completed",
+      "started_at": "2026-10-08T05:49:12Z",
+      "cell": 23,
+      "total_cells": 23,
+      "previous_attempts": [
+        {
+          "state": "running",
+          "started_at": "2026-10-08T05:30:04Z",
+          "elapsed_seconds": null,
+          "reason": "See earlier execution log for interrupted/failed attempt or superseded run."
+        }
+      ],
+      "elapsed_seconds": 34.53
+    },
+    "MB23": {
+      "state": "completed",
+      "started_at": "2026-10-08T05:50:31Z",
+      "cell": 37,
+      "total_cells": 37,
+      "previous_attempts": [],
+      "elapsed_seconds": 3470.27
     }
   }
 }

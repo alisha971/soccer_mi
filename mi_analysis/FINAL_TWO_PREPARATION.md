@@ -1,4 +1,10 @@
-# MB22–MB23 preparation (pending execution)
+# MB22–MB23 preparation (historical record; now completed)
+
+Both notebooks completed and were verified/integrated on 2026-10-08.
+See `FINAL_TWO_RERUN_REPORT.md`. A subsequent namespace fix separated the
+generated `twotoken_followup.py` from the protected historical `twotoken.py`;
+completed training checkpoints were reused. Preparation details below
+describe the initial bundle, not the current execution state.
 
 Prepared 2026-10-08 from historical notebooks; unexecuted notebook copies and
 runner live only in `/tmp/opencode/soccer_mi_MB22_MB23.zip`, not published here.

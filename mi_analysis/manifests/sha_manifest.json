@@ -611,5 +611,65 @@
     "bytes": 5004,
     "sha256": "f9809e684f946e65a72bd57fa3c41c116226f19c47e764983e30a5e77db65ed8",
     "recorded_at": "2026-10-07T19:05:38.921845+00:00"
+  },
+  "config/MB22_plan.json": {
+    "path": "config/MB22_plan.json",
+    "bytes": 1786,
+    "sha256": "1e5a795a626efdc2059a540ecf238602d878948226c5e53afd902c7bc4e94216",
+    "recorded_at": "2026-10-08T05:49:20.169737+00:00"
+  },
+  "artifacts/twotoken/two_token_anon_s0/best.pt": {
+    "path": "artifacts/twotoken/two_token_anon_s0/best.pt",
+    "bytes": 3535291,
+    "sha256": "43315a61f11603de10a3d0d17664f4f68da44b5d2f3ce64df18b42c423fec812",
+    "recorded_at": "2026-10-08T05:49:39.236852+00:00"
+  },
+  "artifacts/twotoken/two_token_anon_s1/best.pt": {
+    "path": "artifacts/twotoken/two_token_anon_s1/best.pt",
+    "bytes": 3535291,
+    "sha256": "b2bf16cb439477105bb832e08e8a742e989e20dcb64986f72c80c83dc52d13c4",
+    "recorded_at": "2026-10-08T05:49:39.285272+00:00"
+  },
+  "artifacts/twotoken/two_token_anon_s2/best.pt": {
+    "path": "artifacts/twotoken/two_token_anon_s2/best.pt",
+    "bytes": 3535291,
+    "sha256": "5ea551e765b54e819df0d59b70da7423c1079c58e7680d5dd03d393810363e22",
+    "recorded_at": "2026-10-08T05:49:39.333172+00:00"
+  },
+  "artifacts/twotoken/two_token_id_s0/best.pt": {
+    "path": "artifacts/twotoken/two_token_id_s0/best.pt",
+    "bytes": 3694523,
+    "sha256": "5524646f56535f32ad54321068761dd8f2a1fe59a62dd64c643e3d3284eb7c27",
+    "recorded_at": "2026-10-08T05:49:39.382969+00:00"
+  },
+  "artifacts/twotoken/single_s0/best.pt": {
+    "path": "artifacts/twotoken/single_s0/best.pt",
+    "bytes": 3682171,
+    "sha256": "6f18280fcbf6ff2ab078d5bbf2c38aa1d2607a4be450fa8cfcdcb8af43471156",
+    "recorded_at": "2026-10-08T05:49:39.432633+00:00"
+  },
+  "results/MB22_summary.json": {
+    "path": "results/MB22_summary.json",
+    "bytes": 8842,
+    "sha256": "34d24d900b0fff330d8cb049bfceaa3108bfc6ec308c4e5d4f0e918b7e464273",
+    "recorded_at": "2026-10-08T05:49:43.923525+00:00"
+  },
+  "src/twotoken_followup.py": {
+    "path": "src/twotoken_followup.py",
+    "bytes": 14479,
+    "sha256": "135d423155ca2f72fe97c9674e56078b11a5a46ada3a2d0665b9561f28ecbc0e",
+    "recorded_at": "2026-10-08T05:49:20.225070+00:00"
+  },
+  "config/MB23_plan.json": {
+    "path": "config/MB23_plan.json",
+    "bytes": 1616,
+    "sha256": "44c85784a9fc86bc7865ead2372e20a95cd606dac9d16f6a02a75ba23cf5d300",
+    "recorded_at": "2026-10-08T05:50:43.114151+00:00"
+  },
+  "results/MB23_summary.json": {
+    "path": "results/MB23_summary.json",
+    "bytes": 15988,
+    "sha256": "9dddb9cee76e04b40c68c7073f5ed1102231e46747f84b5e48461ef8718fb6fd",
+    "recorded_at": "2026-10-08T06:48:18.729957+00:00"
   }
 }

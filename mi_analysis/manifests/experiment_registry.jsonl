@@ -25,3 +25,6 @@
 {"notebook": "MB19", "experiment": "circuit atlas: one validated circuit per sub-question", "seed": 103, "run_mode": "full", "time": "2026-10-07T18:50:42.225116+00:00"}
 {"notebook": "MB20", "experiment": "source of the identity x context interaction (shared-gain linearisation)", "seed": 103, "run_mode": "full", "time": "2026-10-07T18:58:09.452840+00:00"}
 {"notebook": "MB21", "experiment": "player knowledge: stored vs used", "seed": 103, "run_mode": "full", "time": "2026-10-07T19:05:38.922757+00:00"}
+{"notebook": "MB22", "experiment": "two-token and anonymous-identity variants trained", "run_mode": "full", "time": "2026-10-08T05:45:59.938995+00:00"}
+{"notebook": "MB22", "experiment": "two-token and anonymous-identity variants trained", "run_mode": "full", "time": "2026-10-08T05:49:43.924617+00:00"}
+{"notebook": "MB23", "experiment": "two-token model: behaviour, attention, subsets, circuits", "run_mode": "full", "time": "2026-10-08T06:48:18.731562+00:00"}

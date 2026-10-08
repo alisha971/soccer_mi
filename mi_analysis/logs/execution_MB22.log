@@ -1,0 +1,427 @@
+MB22 cell 1/23 benchmark-final-22
+MB22 cell 2/23 c000
+MB22 cell 3/23 c001
+Colab: False | RUN_MODE: full
+ROOT: /content/soccer_mi
+Track A (read only): /content/soccer_mi/model_training_evaluation | exists: True
+Track B: /content/soccer_mi/.mi_analysis_rerun
+MB22 cell 4/23 c002
+Device: cuda | outputs: /content/soccer_mi/.mi_analysis_rerun
+Settings: {'reference_epochs': 25, 'batch_windows': 256, 'n_bootstrap': 2000, 'n_draws': 5, 'n_permutations': 1000, 'n_random_circuits': 100, 'probe_train_events': 20000, 'max_events': 100000, 'probe_seeds': 3, 'scrub_draws': 5}
+MB22 cell 5/23 c003
+/content/soccer_mi/model_training_evaluation/src/batching.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  self.tensors[name] = torch.as_tensor(np.asarray(values), device=device)
+verified files: 101 | primary seed 103 | seeds [100, 101, 102, 103, 104]
+P-player rows: 1,744 (discovery 1,215, estimation 529) | index-0: 8,947 | matched controls: 252
+components: ['L0H0', 'L0H1', 'L0MLP', 'L1H0', 'L1H1', 'L1MLP', 'L2H0', 'L2H1', 'L2MLP', 'L3H0', 'L3H1', 'L3MLP']
+identity inputs: ['player', 'team', 'role', 'competition'] | context inputs (15): ['zone', 'period', 'minute_bin', 'score_diff', 'play_pattern', 'poss_len', 'possession_flag', 'prev_action', 'prev_outcome', 'prev_end_zone', 'same_player_as_prev', 'x_norm', 'y_norm', 'dt', 't_poss']
+MB22 cell 6/23 c004
+MB22 cell 7/23 c005
+MB22 cell 8/23 c006
+MB22 cell 9/23 c007
+plan written: MB22_plan.json
+{
+ "status": "follow-up after MB14-MB21; exploratory; new models next to SEL-4L, which is not changed",
+ "variants": {
+  "single": "SEL-4L inputs, one token per event (control for the training code)",
+  "two_token_id": "two tokens per event; history fields only in the previous action token; global player embedding",
+  "two_token_anon": "two tokens per event; history fields only in the previous action token; anonymous per-window player labels (main)"
+ },
+ "seeds": {
+  "two_token_anon": [
+   0,
+   1,
+   2
+  ],
+  "two_token_id": [
+   0
+  ],
+  "single": [
+   0
+  ]
+ },
+ "architecture": {
+  "n_layers": 4,
+  "n_heads": 2,
+  "d_model": 128,
+  "d_ff": 512,
+  "pre_layernorm": true,
+  "dropout": 0,
+  "n_events": 32
+ },
+ "training": {
+  "optimiser": "AdamW",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.1,
+  "batch_windows": 256,
+  "warmup_fraction": 0.05,
+  "schedule": "linear warm-up then cosine decay",
+  "max_epochs": 30,
+  "patience": 5,
+  "selection": "epoch with the lowest validation NLL on scored validation events"
+ },
+ "evaluation": "validation only; each validation event scored once, in the window where it has the most preceding events",
+ "reading_rules": {
+  "same_information": "two_token_id is called equivalent to single if its validation NLL is within 0.01 nats of single's",
+  "anonymous_cost": "the cost of anonymous identity = NLL(two_token_anon) - NLL(two_token_id), reported overall and where in-context identity is available or not",
+  "training_code": "single is compared with SEL-4L on the same events; a gap > 0.02 nats means this training code is weaker than Track A's and every comparison is made within this book"
+ }
+}
+MB22 cell 10/23 c008
+MB22 cell 11/23 c009
+written and imported /content/soccer_mi/.mi_analysis_rerun/src/twotoken.py
+MB22 cell 12/23 c010
+train: 32,721 windows of 32 events | scored events 525,893
+val: 4,229 windows of 32 events | scored events 68,003
+K = 16: scored validation events whose player appears earlier in the window: 0.121 (P-player conflicts: 0.513)
+K = 32: scored validation events whose player appears earlier in the window: 0.150 (P-player conflicts: 0.657)
+MB22 cell 13/23 c011
+MB22 cell 14/23 c012
+checks passed: action tokens = next event's history fields; no leak; a_t reaches c_(t+1)
+MB22 cell 15/23 c013
+MB22 cell 16/23 c014
+two_token_anon s0 epoch  0: train 2.2924 | val 1.7599 | best 1.7599 @ 0 | 8 s
+two_token_anon s0 epoch  1: train 1.6219 | val 1.4974 | best 1.4974 @ 1 | 15 s
+two_token_anon s0 epoch  2: train 1.4247 | val 1.3473 | best 1.3473 @ 2 | 23 s
+two_token_anon s0 epoch  3: train 1.2550 | val 1.1865 | best 1.1865 @ 3 | 30 s
+two_token_anon s0 epoch  4: train 1.1303 | val 1.0881 | best 1.0881 @ 4 | 38 s
+two_token_anon s0 epoch  5: train 1.0572 | val 1.0385 | best 1.0385 @ 5 | 46 s
+two_token_anon s0 epoch  6: train 1.0204 | val 1.0184 | best 1.0184 @ 6 | 54 s
+two_token_anon s0 epoch  7: train 0.9975 | val 1.0029 | best 1.0029 @ 7 | 61 s
+two_token_anon s0 epoch  8: train 0.9811 | val 0.9877 | best 0.9877 @ 8 | 69 s
+two_token_anon s0 epoch  9: train 0.9697 | val 0.9840 | best 0.9840 @ 9 | 77 s
+two_token_anon s0 epoch 10: train 0.9602 | val 0.9770 | best 0.9770 @ 10 | 85 s
+two_token_anon s0 epoch 11: train 0.9524 | val 0.9730 | best 0.9730 @ 11 | 93 s
+two_token_anon s0 epoch 12: train 0.9452 | val 0.9696 | best 0.9696 @ 12 | 102 s
+two_token_anon s0 epoch 13: train 0.9399 | val 0.9690 | best 0.9690 @ 13 | 110 s
+two_token_anon s0 epoch 14: train 0.9350 | val 0.9647 | best 0.9647 @ 14 | 118 s
+two_token_anon s0 epoch 15: train 0.9304 | val 0.9620 | best 0.9620 @ 15 | 127 s
+two_token_anon s0 epoch 16: train 0.9265 | val 0.9605 | best 0.9605 @ 16 | 135 s
+two_token_anon s0 epoch 17: train 0.9229 | val 0.9602 | best 0.9602 @ 17 | 143 s
+two_token_anon s0 epoch 18: train 0.9199 | val 0.9590 | best 0.9590 @ 18 | 152 s
+two_token_anon s0 epoch 19: train 0.9174 | val 0.9602 | best 0.9590 @ 18 | 160 s
+two_token_anon s0 epoch 20: train 0.9149 | val 0.9592 | best 0.9590 @ 18 | 168 s
+two_token_anon s0 epoch 21: train 0.9128 | val 0.9594 | best 0.9590 @ 18 | 176 s
+two_token_anon s0 epoch 22: train 0.9112 | val 0.9580 | best 0.9580 @ 22 | 185 s
+two_token_anon s0 epoch 23: train 0.9101 | val 0.9570 | best 0.9570 @ 23 | 193 s
+two_token_anon s0 epoch 24: train 0.9089 | val 0.9576 | best 0.9570 @ 23 | 201 s
+two_token_anon s0 epoch 25: train 0.9079 | val 0.9576 | best 0.9570 @ 23 | 210 s
+two_token_anon s0 epoch 26: train 0.9074 | val 0.9575 | best 0.9570 @ 23 | 218 s
+two_token_anon s0 epoch 27: train 0.9070 | val 0.9573 | best 0.9570 @ 23 | 226 s
+two_token_anon s0 epoch 28: train 0.9068 | val 0.9573 | best 0.9570 @ 23 | 235 s
+two_token_anon s1 epoch  0: train 2.1633 | val 1.6993 | best 1.6993 @ 0 | 8 s
+two_token_anon s1 epoch  1: train 1.5926 | val 1.4823 | best 1.4823 @ 1 | 17 s
+two_token_anon s1 epoch  2: train 1.4132 | val 1.3479 | best 1.3479 @ 2 | 25 s
+two_token_anon s1 epoch  3: train 1.2378 | val 1.1637 | best 1.1637 @ 3 | 33 s
+two_token_anon s1 epoch  4: train 1.0975 | val 1.0630 | best 1.0630 @ 4 | 42 s
+two_token_anon s1 epoch  5: train 1.0360 | val 1.0319 | best 1.0319 @ 5 | 50 s
+two_token_anon s1 epoch  6: train 1.0070 | val 1.0062 | best 1.0062 @ 6 | 58 s
+two_token_anon s1 epoch  7: train 0.9883 | val 0.9967 | best 0.9967 @ 7 | 67 s
+two_token_anon s1 epoch  8: train 0.9741 | val 0.9876 | best 0.9876 @ 8 | 75 s
+two_token_anon s1 epoch  9: train 0.9631 | val 0.9863 | best 0.9863 @ 9 | 83 s
+two_token_anon s1 epoch 10: train 0.9537 | val 0.9863 | best 0.9863 @ 10 | 92 s
+two_token_anon s1 epoch 11: train 0.9465 | val 0.9723 | best 0.9723 @ 11 | 100 s
+two_token_anon s1 epoch 12: train 0.9398 | val 0.9695 | best 0.9695 @ 12 | 108 s
+two_token_anon s1 epoch 13: train 0.9339 | val 0.9699 | best 0.9695 @ 12 | 117 s
+two_token_anon s1 epoch 14: train 0.9296 | val 0.9680 | best 0.9680 @ 14 | 125 s
+two_token_anon s1 epoch 15: train 0.9243 | val 0.9649 | best 0.9649 @ 15 | 133 s
+two_token_anon s1 epoch 16: train 0.9207 | val 0.9691 | best 0.9649 @ 15 | 142 s
+two_token_anon s1 epoch 17: train 0.9173 | val 0.9692 | best 0.9649 @ 15 | 150 s
+two_token_anon s1 epoch 18: train 0.9143 | val 0.9641 | best 0.9641 @ 18 | 158 s
+two_token_anon s1 epoch 19: train 0.9119 | val 0.9652 | best 0.9641 @ 18 | 167 s
+two_token_anon s1 epoch 20: train 0.9090 | val 0.9658 | best 0.9641 @ 18 | 175 s
+two_token_anon s1 epoch 21: train 0.9072 | val 0.9680 | best 0.9641 @ 18 | 183 s
+two_token_anon s1 epoch 22: train 0.9054 | val 0.9675 | best 0.9641 @ 18 | 192 s
+two_token_anon s1 epoch 23: train 0.9043 | val 0.9671 | best 0.9641 @ 18 | 200 s
+two_token_anon s2 epoch  0: train 2.1598 | val 1.7190 | best 1.7190 @ 0 | 8 s
+two_token_anon s2 epoch  1: train 1.5941 | val 1.4868 | best 1.4868 @ 1 | 17 s
+two_token_anon s2 epoch  2: train 1.3912 | val 1.3198 | best 1.3198 @ 2 | 25 s
+two_token_anon s2 epoch  3: train 1.2026 | val 1.1488 | best 1.1488 @ 3 | 33 s
+two_token_anon s2 epoch  4: train 1.0922 | val 1.0818 | best 1.0818 @ 4 | 42 s
+two_token_anon s2 epoch  5: train 1.0398 | val 1.0488 | best 1.0488 @ 5 | 50 s
+two_token_anon s2 epoch  6: train 1.0106 | val 1.0286 | best 1.0286 @ 6 | 58 s
+two_token_anon s2 epoch  7: train 0.9929 | val 1.0177 | best 1.0177 @ 7 | 67 s
+two_token_anon s2 epoch  8: train 0.9791 | val 1.0171 | best 1.0171 @ 8 | 75 s
+two_token_anon s2 epoch  9: train 0.9679 | val 1.0080 | best 1.0080 @ 9 | 84 s
+two_token_anon s2 epoch 10: train 0.9593 | val 1.0053 | best 1.0053 @ 10 | 92 s
+two_token_anon s2 epoch 11: train 0.9515 | val 1.0027 | best 1.0027 @ 11 | 100 s
+two_token_anon s2 epoch 12: train 0.9456 | val 0.9981 | best 0.9981 @ 12 | 109 s
+two_token_anon s2 epoch 13: train 0.9395 | val 0.9981 | best 0.9981 @ 12 | 117 s
+two_token_anon s2 epoch 14: train 0.9349 | val 1.0031 | best 0.9981 @ 12 | 125 s
+two_token_anon s2 epoch 15: train 0.9302 | val 0.9976 | best 0.9976 @ 15 | 134 s
+two_token_anon s2 epoch 16: train 0.9265 | val 0.9996 | best 0.9976 @ 15 | 142 s
+two_token_anon s2 epoch 17: train 0.9229 | val 0.9999 | best 0.9976 @ 15 | 150 s
+two_token_anon s2 epoch 18: train 0.9201 | val 0.9994 | best 0.9976 @ 15 | 159 s
+two_token_anon s2 epoch 19: train 0.9172 | val 0.9999 | best 0.9976 @ 15 | 167 s
+two_token_anon s2 epoch 20: train 0.9150 | val 1.0008 | best 0.9976 @ 15 | 175 s
+two_token_id s0 epoch  0: train 2.1753 | val 1.7123 | best 1.7123 @ 0 | 8 s
+two_token_id s0 epoch  1: train 1.5900 | val 1.4804 | best 1.4804 @ 1 | 17 s
+two_token_id s0 epoch  2: train 1.3858 | val 1.2970 | best 1.2970 @ 2 | 25 s
+two_token_id s0 epoch  3: train 1.1937 | val 1.1297 | best 1.1297 @ 3 | 33 s
+two_token_id s0 epoch  4: train 1.0886 | val 1.0617 | best 1.0617 @ 4 | 42 s
+two_token_id s0 epoch  5: train 1.0346 | val 1.0252 | best 1.0252 @ 5 | 50 s
+two_token_id s0 epoch  6: train 1.0050 | val 1.0087 | best 1.0087 @ 6 | 58 s
+two_token_id s0 epoch  7: train 0.9855 | val 1.0009 | best 1.0009 @ 7 | 67 s
+two_token_id s0 epoch  8: train 0.9711 | val 0.9898 | best 0.9898 @ 8 | 75 s
+two_token_id s0 epoch  9: train 0.9591 | val 0.9848 | best 0.9848 @ 9 | 83 s
+two_token_id s0 epoch 10: train 0.9505 | val 0.9810 | best 0.9810 @ 10 | 92 s
+two_token_id s0 epoch 11: train 0.9418 | val 0.9791 | best 0.9791 @ 11 | 100 s
+two_token_id s0 epoch 12: train 0.9345 | val 0.9802 | best 0.9791 @ 11 | 108 s
+two_token_id s0 epoch 13: train 0.9287 | val 0.9763 | best 0.9763 @ 13 | 117 s
+two_token_id s0 epoch 14: train 0.9231 | val 0.9777 | best 0.9763 @ 13 | 125 s
+two_token_id s0 epoch 15: train 0.9180 | val 0.9759 | best 0.9759 @ 15 | 133 s
+two_token_id s0 epoch 16: train 0.9138 | val 0.9765 | best 0.9759 @ 15 | 142 s
+two_token_id s0 epoch 17: train 0.9098 | val 0.9792 | best 0.9759 @ 15 | 150 s
+two_token_id s0 epoch 18: train 0.9061 | val 0.9765 | best 0.9759 @ 15 | 158 s
+two_token_id s0 epoch 19: train 0.9032 | val 0.9764 | best 0.9759 @ 15 | 166 s
+two_token_id s0 epoch 20: train 0.9004 | val 0.9774 | best 0.9759 @ 15 | 175 s
+single s0 epoch  0: train 2.1969 | val 1.6054 | best 1.6054 @ 0 | 5 s
+single s0 epoch  1: train 1.4092 | val 1.2305 | best 1.2305 @ 1 | 11 s
+single s0 epoch  2: train 1.1684 | val 1.1040 | best 1.1040 @ 2 | 15 s
+single s0 epoch  3: train 1.0737 | val 1.0449 | best 1.0449 @ 3 | 20 s
+single s0 epoch  4: train 1.0259 | val 1.0137 | best 1.0137 @ 4 | 26 s
+single s0 epoch  5: train 0.9961 | val 0.9964 | best 0.9964 @ 5 | 31 s
+single s0 epoch  6: train 0.9763 | val 0.9868 | best 0.9868 @ 6 | 35 s
+single s0 epoch  7: train 0.9616 | val 0.9761 | best 0.9761 @ 7 | 42 s
+single s0 epoch  8: train 0.9504 | val 0.9676 | best 0.9676 @ 8 | 46 s
+single s0 epoch  9: train 0.9411 | val 0.9629 | best 0.9629 @ 9 | 51 s
+single s0 epoch 10: train 0.9335 | val 0.9564 | best 0.9564 @ 10 | 57 s
+single s0 epoch 11: train 0.9265 | val 0.9552 | best 0.9552 @ 11 | 61 s
+single s0 epoch 12: train 0.9206 | val 0.9543 | best 0.9543 @ 12 | 66 s
+single s0 epoch 13: train 0.9159 | val 0.9536 | best 0.9536 @ 13 | 72 s
+single s0 epoch 14: train 0.9106 | val 0.9498 | best 0.9498 @ 14 | 77 s
+single s0 epoch 15: train 0.9063 | val 0.9503 | best 0.9498 @ 14 | 82 s
+single s0 epoch 16: train 0.9028 | val 0.9489 | best 0.9489 @ 16 | 88 s
+single s0 epoch 17: train 0.8991 | val 0.9507 | best 0.9489 @ 16 | 92 s
+single s0 epoch 18: train 0.8956 | val 0.9481 | best 0.9481 @ 18 | 98 s
+single s0 epoch 19: train 0.8931 | val 0.9480 | best 0.9480 @ 19 | 103 s
+single s0 epoch 20: train 0.8906 | val 0.9504 | best 0.9480 @ 19 | 107 s
+single s0 epoch 21: train 0.8885 | val 0.9502 | best 0.9480 @ 19 | 114 s
+single s0 epoch 22: train 0.8867 | val 0.9499 | best 0.9480 @ 19 | 118 s
+single s0 epoch 23: train 0.8853 | val 0.9489 | best 0.9480 @ 19 | 123 s
+single s0 epoch 24: train 0.8843 | val 0.9504 | best 0.9480 @ 19 | 129 s
+MB22 cell 17/23 c015
+MB22 cell 18/23 c016
+events                 P-player conflicts  all validation events  player appears earlier in the window  player does not appear earlier
+model            seed                                                                                                                 
+SEL-4L (Track A) 103               0.4310                 0.9038                                0.8888                          0.9064
+single           0                 0.4745                 0.9480                                0.9245                          0.9521
+two_token_anon   0                 0.5075                 0.9570                                0.9393                          0.9602
+                 1                 0.5015                 0.9641                                0.9463                          0.9672
+                 2                 0.5035                 0.9976                                0.9431                          1.0072
+two_token_id     0                 0.5485                 0.9759                                0.9590                          0.9789
+MB22 cell 19/23 c017
+                             comparison                               events  difference (nats)  CI low  CI high
+  single s0 minus SEL-4L (Track A) s103                all validation events             0.0442  0.0368   0.0519
+        two_token_id s0 minus single s0                all validation events             0.0279  0.0087   0.0533
+two_token_anon s0 minus two_token_id s0                all validation events            -0.0189 -0.0311  -0.0090
+  single s0 minus SEL-4L (Track A) s103 player appears earlier in the window             0.0357  0.0262   0.0435
+        two_token_id s0 minus single s0 player appears earlier in the window             0.0345  0.0072   0.0749
+two_token_anon s0 minus two_token_id s0 player appears earlier in the window            -0.0196 -0.0282  -0.0123
+  single s0 minus SEL-4L (Track A) s103       player does not appear earlier             0.0457  0.0375   0.0545
+        two_token_id s0 minus single s0       player does not appear earlier             0.0268  0.0075   0.0514
+two_token_anon s0 minus two_token_id s0       player does not appear earlier            -0.0187 -0.0324  -0.0075
+  single s0 minus SEL-4L (Track A) s103                   P-player conflicts             0.0434  0.0212   0.0667
+        two_token_id s0 minus single s0                   P-player conflicts             0.0740 -0.0068   0.2064
+two_token_anon s0 minus two_token_id s0                   P-player conflicts            -0.0410 -0.0628  -0.0220
+
+same information, different place (two_token_id vs single): +0.0279 nats -> equivalent by the plan rule (|diff| <= 0.01): False
+training code check (single vs SEL-4L): +0.0442 nats -> code weaker than Track A's (> 0.02): True
+
+two_token_anon across seeds:
+events  P-player conflicts  all validation events  player appears earlier in the window  player does not appear earlier
+seed                                                                                                                   
+0                   0.5075                 0.9570                                0.9393                          0.9602
+1                   0.5015                 0.9641                                0.9463                          0.9672
+2                   0.5035                 0.9976                                0.9431                          1.0072
+seed SD (all events): 0.0216
+MB22 cell 20/23 c018
+MB22 cell 21/23 c019
+MB22 cell 22/23 c020
+manifest entries verified at the end: 108
+earlier entries whose fingerprint changed during this notebook: ['src/twotoken.py']
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_final_two.py", line 57, in <module>
+    client.execute()
+  File "/content/mi-venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/content/mi-venv/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+verified_at_end = fingerprint.verify_files(MANIFEST)
+manifest_after = {name: entry["sha256"] for name, entry in fingerprint.load_manifest(MANIFEST).items()}
+changed = sorted(name for name in manifest_before if manifest_after.get(name) != manifest_before[name])
+print(f"manifest entries verified at the end: {len(verified_at_end)}")
+print("earlier entries whose fingerprint changed during this notebook:", changed if changed else "none")
+assert not changed, "BLOCKED: an earlier Track B file changed while this notebook ran."
+test_log = OUT / "logs" / "test_access_log.jsonl"
+test_lines = len(test_log.read_text().strip().splitlines()) if test_log.exists() and test_log.read_text().strip() else 0
+print(f"test accesses recorded so far: {test_lines} (MB12 recorded exactly one; this notebook adds none)")
+------------------
+
+----- stdout -----
+manifest entries verified at the end: 108
+earlier entries whose fingerprint changed during this notebook: ['src/twotoken.py']
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31mAssertionError[39m                            Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[13][39m[32m, line 6[39m
+[32m      2[39m manifest_after = {name: entry[[33m"sha256"[39m] [38;5;28;01mfor[39;00m name, entry [38;5;28;01min[39;00m fingerprint.load_manifest(MANIFEST).items()}
+[32m      3[39m changed = sorted(name [38;5;28;01mfor[39;00m name [38;5;28;01min[39;00m manifest_before [38;5;28;01mif[39;00m manifest_after.get(name) != manifest_before[name])
+[32m      4[39m print(f"manifest entries verified at the end: {len(verified_at_end)}")
+[32m      5[39m print([33m"earlier entries whose fingerprint changed during this notebook:"[39m, changed [38;5;28;01mif[39;00m changed [38;5;28;01melse[39;00m [33m"none"[39m)
+[32m----> [39m[32m6[39m [38;5;28;01massert[39;00m [38;5;28;01mnot[39;00m changed, [33m"BLOCKED: an earlier Track B file changed while this notebook ran."[39m
+[32m      7[39m test_log = OUT / [33m"logs"[39m / [33m"test_access_log.jsonl"[39m
+[32m      8[39m test_lines = len(test_log.read_text().strip().splitlines()) [38;5;28;01mif[39;00m test_log.exists() [38;5;28;01mand[39;00m test_log.read_text().strip() [38;5;28;01melse[39;00m [32m0[39m
+[32m      9[39m print(f"test accesses recorded so far: {test_lines} (MB12 recorded exactly one; this notebook adds none)")
+
+[31mAssertionError[39m: BLOCKED: an earlier Track B file changed while this notebook ran.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/soccer_mi/scripts/run_final_two.py", line 70, in <module>
+    assert hashlib.sha256((STAGE/relative).read_bytes()).hexdigest()==digest, f'BLOCKED: baseline changed: {relative}'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: BLOCKED: baseline changed: src/twotoken.py
+MB22 cell 1/23 benchmark-final-22
+MB22 cell 2/23 c000
+MB22 cell 3/23 c001
+Colab: False | RUN_MODE: full
+ROOT: /content/soccer_mi
+Track A (read only): /content/soccer_mi/model_training_evaluation | exists: True
+Track B: /content/soccer_mi/.mi_analysis_rerun
+MB22 cell 4/23 c002
+Device: cuda | outputs: /content/soccer_mi/.mi_analysis_rerun
+Settings: {'reference_epochs': 25, 'batch_windows': 256, 'n_bootstrap': 2000, 'n_draws': 5, 'n_permutations': 1000, 'n_random_circuits': 100, 'probe_train_events': 20000, 'max_events': 100000, 'probe_seeds': 3, 'scrub_draws': 5}
+MB22 cell 5/23 c003
+/content/soccer_mi/model_training_evaluation/src/batching.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  self.tensors[name] = torch.as_tensor(np.asarray(values), device=device)
+verified files: 108 | primary seed 103 | seeds [100, 101, 102, 103, 104]
+P-player rows: 1,744 (discovery 1,215, estimation 529) | index-0: 8,947 | matched controls: 252
+components: ['L0H0', 'L0H1', 'L0MLP', 'L1H0', 'L1H1', 'L1MLP', 'L2H0', 'L2H1', 'L2MLP', 'L3H0', 'L3H1', 'L3MLP']
+identity inputs: ['player', 'team', 'role', 'competition'] | context inputs (15): ['zone', 'period', 'minute_bin', 'score_diff', 'play_pattern', 'poss_len', 'possession_flag', 'prev_action', 'prev_outcome', 'prev_end_zone', 'same_player_as_prev', 'x_norm', 'y_norm', 'dt', 't_poss']
+MB22 cell 6/23 c004
+MB22 cell 7/23 c005
+MB22 cell 8/23 c006
+MB22 cell 9/23 c007
+plan already written at 2026-10-08T05:30:25.145193+00:00 - unchanged
+{
+ "status": "follow-up after MB14-MB21; exploratory; new models next to SEL-4L, which is not changed",
+ "variants": {
+  "single": "SEL-4L inputs, one token per event (control for the training code)",
+  "two_token_id": "two tokens per event; history fields only in the previous action token; global player embedding",
+  "two_token_anon": "two tokens per event; history fields only in the previous action token; anonymous per-window player labels (main)"
+ },
+ "seeds": {
+  "two_token_anon": [
+   0,
+   1,
+   2
+  ],
+  "two_token_id": [
+   0
+  ],
+  "single": [
+   0
+  ]
+ },
+ "architecture": {
+  "n_layers": 4,
+  "n_heads": 2,
+  "d_model": 128,
+  "d_ff": 512,
+  "pre_layernorm": true,
+  "dropout": 0,
+  "n_events": 32
+ },
+ "training": {
+  "optimiser": "AdamW",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.1,
+  "batch_windows": 256,
+  "warmup_fraction": 0.05,
+  "schedule": "linear warm-up then cosine decay",
+  "max_epochs": 30,
+  "patience": 5,
+  "selection": "epoch with the lowest validation NLL on scored validation events"
+ },
+ "evaluation": "validation only; each validation event scored once, in the window where it has the most preceding events",
+ "reading_rules": {
+  "same_information": "two_token_id is called equivalent to single if its validation NLL is within 0.01 nats of single's",
+  "anonymous_cost": "the cost of anonymous identity = NLL(two_token_anon) - NLL(two_token_id), reported overall and where in-context identity is available or not",
+  "training_code": "single is compared with SEL-4L on the same events; a gap > 0.02 nats means this training code is weaker than Track A's and every comparison is made within this book"
+ }
+}
+MB22 cell 10/23 c008
+MB22 cell 11/23 c009
+written and imported /content/soccer_mi/.mi_analysis_rerun/src/twotoken_followup.py
+MB22 cell 12/23 c010
+train: 32,721 windows of 32 events | scored events 525,893
+val: 4,229 windows of 32 events | scored events 68,003
+K = 16: scored validation events whose player appears earlier in the window: 0.121 (P-player conflicts: 0.513)
+K = 32: scored validation events whose player appears earlier in the window: 0.150 (P-player conflicts: 0.657)
+MB22 cell 13/23 c011
+MB22 cell 14/23 c012
+checks passed: action tokens = next event's history fields; no leak; a_t reaches c_(t+1)
+MB22 cell 15/23 c013
+MB22 cell 16/23 c014
+two_token_anon seed 0: reloaded completed run
+two_token_anon seed 1: reloaded completed run
+two_token_anon seed 2: reloaded completed run
+two_token_id seed 0: reloaded completed run
+single seed 0: reloaded completed run
+MB22 cell 17/23 c015
+MB22 cell 18/23 c016
+events                 P-player conflicts  all validation events  player appears earlier in the window  player does not appear earlier
+model            seed                                                                                                                 
+SEL-4L (Track A) 103               0.4310                 0.9038                                0.8888                          0.9064
+single           0                 0.4745                 0.9480                                0.9245                          0.9521
+two_token_anon   0                 0.5075                 0.9570                                0.9393                          0.9602
+                 1                 0.5015                 0.9641                                0.9463                          0.9672
+                 2                 0.5035                 0.9976                                0.9431                          1.0072
+two_token_id     0                 0.5485                 0.9759                                0.9590                          0.9789
+MB22 cell 19/23 c017
+                             comparison                               events  difference (nats)  CI low  CI high
+  single s0 minus SEL-4L (Track A) s103                all validation events             0.0442  0.0368   0.0519
+        two_token_id s0 minus single s0                all validation events             0.0279  0.0087   0.0533
+two_token_anon s0 minus two_token_id s0                all validation events            -0.0189 -0.0311  -0.0090
+  single s0 minus SEL-4L (Track A) s103 player appears earlier in the window             0.0357  0.0262   0.0435
+        two_token_id s0 minus single s0 player appears earlier in the window             0.0345  0.0072   0.0749
+two_token_anon s0 minus two_token_id s0 player appears earlier in the window            -0.0196 -0.0282  -0.0123
+  single s0 minus SEL-4L (Track A) s103       player does not appear earlier             0.0457  0.0375   0.0545
+        two_token_id s0 minus single s0       player does not appear earlier             0.0268  0.0075   0.0514
+two_token_anon s0 minus two_token_id s0       player does not appear earlier            -0.0187 -0.0324  -0.0075
+  single s0 minus SEL-4L (Track A) s103                   P-player conflicts             0.0434  0.0212   0.0667
+        two_token_id s0 minus single s0                   P-player conflicts             0.0740 -0.0068   0.2064
+two_token_anon s0 minus two_token_id s0                   P-player conflicts            -0.0410 -0.0628  -0.0220
+
+same information, different place (two_token_id vs single): +0.0279 nats -> equivalent by the plan rule (|diff| <= 0.01): False
+training code check (single vs SEL-4L): +0.0442 nats -> code weaker than Track A's (> 0.02): True
+
+two_token_anon across seeds:
+events  P-player conflicts  all validation events  player appears earlier in the window  player does not appear earlier
+seed                                                                                                                   
+0                   0.5075                 0.9570                                0.9393                          0.9602
+1                   0.5015                 0.9641                                0.9463                          0.9672
+2                   0.5035                 0.9976                                0.9431                          1.0072
+seed SD (all events): 0.0216
+MB22 cell 20/23 c018
+MB22 cell 21/23 c019
+MB22 cell 22/23 c020
+manifest entries verified at the end: 109
+earlier entries whose fingerprint changed during this notebook: none
+test accesses recorded so far: 1 (MB12 recorded exactly one; this notebook adds none)
+MB22 cell 23/23 c021
+COMPLETED MB22: 34.53 seconds; promoted to mi_analysis/

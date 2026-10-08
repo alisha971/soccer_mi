@@ -1,0 +1,48 @@
+{
+  "status": "follow-up after MB14-MB21; exploratory; new models next to SEL-4L, which is not changed",
+  "variants": {
+    "single": "SEL-4L inputs, one token per event (control for the training code)",
+    "two_token_id": "two tokens per event; history fields only in the previous action token; global player embedding",
+    "two_token_anon": "two tokens per event; history fields only in the previous action token; anonymous per-window player labels (main)"
+  },
+  "seeds": {
+    "two_token_anon": [
+      0,
+      1,
+      2
+    ],
+    "two_token_id": [
+      0
+    ],
+    "single": [
+      0
+    ]
+  },
+  "architecture": {
+    "n_layers": 4,
+    "n_heads": 2,
+    "d_model": 128,
+    "d_ff": 512,
+    "pre_layernorm": true,
+    "dropout": 0,
+    "n_events": 32
+  },
+  "training": {
+    "optimiser": "AdamW",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.1,
+    "batch_windows": 256,
+    "warmup_fraction": 0.05,
+    "schedule": "linear warm-up then cosine decay",
+    "max_epochs": 30,
+    "patience": 5,
+    "selection": "epoch with the lowest validation NLL on scored validation events"
+  },
+  "evaluation": "validation only; each validation event scored once, in the window where it has the most preceding events",
+  "reading_rules": {
+    "same_information": "two_token_id is called equivalent to single if its validation NLL is within 0.01 nats of single's",
+    "anonymous_cost": "the cost of anonymous identity = NLL(two_token_anon) - NLL(two_token_id), reported overall and where in-context identity is available or not",
+    "training_code": "single is compared with SEL-4L on the same events; a gap > 0.02 nats means this training code is weaker than Track A's and every comparison is made within this book"
+  },
+  "written_at": "2026-10-08T05:30:25.145193+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "follow-up after MB22; exploratory",
+  "models": {
+    "main": "two_token_anon seed 0",
+    "comparisons": [
+      "two_token_id seed 0",
+      "single seed 0",
+      "SEL-4L (results of MB14-MB19)"
+    ]
+  },
+  "behaviours": [
+    "identity (link broken)",
+    "previous event (donor's)",
+    "current situation (donor's)",
+    "interaction"
+  ],
+  "linked_rule": "identity analyses use events whose player has at least one earlier event in the window",
+  "attention_reading": "share of attention from c_p to each token group, minus the share a uniform causal pattern would give",
+  "subsets": "all subsets of the heads and MLPs (2**12 for the 4-layer, 2-head model) (complement mean-ablated at every position); chosen on discovery, scored on estimation",
+  "attention_used_rule": "attention is called USED for a behaviour if all heads with no MLP keep F >= 0.3 OR the 4 MLPs with no head keep F <= 0.7 (estimation half), i.e. the heads carry a substantial share that SEL-4L's heads did not (compare against regenerated MB14 outputs; historical values are not this benchmark)",
+  "edges": "path patching of every sender -> receiver edge at c_p on discovery; keep q < 0.05 and |R| >= 0.05; prune to input-to-logit paths; re-measure on estimation",
+  "circuit_verdict": "MEANINGFUL if F >= 0.5, F above the 95th percentile of 100 random sets with the same numbers of heads and MLPs (not testable when only one such set exists), >= 70 per cent of edges replicate, and not the whole model; PARTIAL if F and replication pass; otherwise NOT ESTABLISHED",
+  "written_at": "2026-10-08T05:50:43.112755+00:00"
+}
