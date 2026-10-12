@@ -1,4 +1,4 @@
-"""Reference predictors + conflict set. Sports Mitra stage 1+2. Run: python train_refs.py"""
+"""Reference predictors + conflict set. [project] stage 1+2. Run: python train_refs.py"""
 import json, math
 from pathlib import Path
 import numpy as np, pandas as pd, torch, torch.nn as nn

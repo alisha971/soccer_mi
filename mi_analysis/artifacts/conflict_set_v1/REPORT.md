@@ -1,6 +1,6 @@
 # Implementation report — reference predictors + conflict set
 
-Sports Mitra, M.Tech dissertation (Shivani Karmadkar, PICT Pune; guide Dr. Geetanjali Kale). Stage 1+2 of the three-stage pipeline: reference predictors, then conflict set. The combined transformer trains in parallel elsewhere and is untouched here.
+Stage 1+2 of the three-stage pipeline: reference predictors, then conflict set. The combined transformer trains in parallel elsewhere and is untouched here.
 
 ## 1. Objective
 

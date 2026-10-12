@@ -1,176 +1,139 @@
-# Soccer MI — Player Prediction from Match Events
+# Tracing Identity–Context Arbitration in a Soccer Event Transformer
 
-Predicts the on-ball player from soccer event sequences. The project compares
-statistical baselines (class prior, zone prior, Markov, logistic regression)
-against a transformer sequence model, across two context lengths (`T100`,
-`T300`) and two architecture depths (2-layer main track, 4-layer "Track A"
-benchmark).
+Code and saved results for the anonymous ARR submission of the same title.
 
-## Repo layout
+The repository has two parts:
 
-All project content lives under `model_training_evaluation/`:
+- **Track A (predictive models):** data preparation, baselines, Transformer training, model
+  selection, input ablations and test evaluation.
+- **Track B (mechanistic analysis):** conflict-set construction, input interventions, activation
+  and path patching, MLP and attention analyses, circuit sufficiency and causal scrubbing on
+  the analysed model (REF-4L, seeds 100–104, primary seed 103).
 
-| Path | Contents |
-|---|---|
-| `src/` | Core library: data prep (`data.py`), baselines (`baselines.py`, `mlp_baseline.py`), metrics (`metrics.py`), transformer model (`model.py`), batching (`batching.py`), training loop (`training.py`), evaluation (`evaluation.py`), analysis (`analysis.py`) |
-| `notebooks/` | Staged pipeline notebooks, run in order (see below) |
-| `tests/` | Unit tests for `src/` |
-| `artifacts/`, `artifacts_b3/` | Prepared dataset, feature spec, player encodings, dataset audit report, baseline model checkpoints |
-| `config/` | `frozen_config.json` — the final locked-in run configuration |
-| `manifests/` | `experiment_manifest.jsonl` — log of every experiment run |
-| `logs/` | Access/audit logs |
-| `results/` | Metrics, tables, and `test_predictions/` per pipeline stage |
-| `figures/` | Plots per pipeline stage |
-| `runs/` | Main-track hyperparameter sweep: one folder per run, with `run_config.json`, `best.pt`/`last.pt` checkpoints, `history.csv`, predictions |
-| `benchmarks/track_a_4layer/` | Parallel 4-layer architecture benchmark — mirrors the top-level `artifacts_b3/config/figures/logs/manifests/results/runs` layout |
+## Repository structure
 
-`runs/` and `benchmarks/` hold the actual trained checkpoints and are the
-bulk of the repo's size (several GB). See **Cloning** below for ways to avoid
-pulling all of it if you don't need it.
+```
+model_training_evaluation/         Track A source, configs, notebooks
+mi_analysis/                       Track B notebooks, source, configs, results
+mi_analysis/targetted_analysis/    final player, history and interaction analyses (run.py)
+```
 
 ## Setup
 
-Requires Python. The original runs were produced with **Python 3.13**,
-**PyTorch 2.11 (CUDA 12.8)**, **numpy 2.1.3**, **pandas 2.2.3** on a GPU
-(Tesla T4) — CPU works too, just slower for training.
+- Python 3.12, PyTorch 2.10 (CUDA 12.8 used for GPU runs; CPU also works, more slowly)
+- `pip install -r mi_analysis/requirements-rerun.txt`
+- Notebooks resolve paths relative to the repository root. `SOCCER_MI_ROOT` overrides the root
+  when it cannot be inferred; `MI_ANALYSIS_DIR` overrides the Track B output folder.
+
+The recorded environments are in `mi_analysis/config/execution_environment.json` and
+`mi_analysis/config/followup_execution_environment.json`.
+
+## Data
+
+We use StatsBomb Open Data (events, lineups and match metadata; 360 freeze frames are not used).
+The raw data is not redistributed here. The repository references the public mirror at
+https://github.com/statsbomb/open-data; clone or download it and point the data-loading code at
+your local copy. Track A notebook `00_statsbomb_subset_construction_and_cleaning.ipynb` builds
+the event table from that source, and `01_dataset_audit.ipynb` reports the dataset statistics
+and class distribution.
+
+StatsBomb Open Data is provided under its own licence and terms of use:
+https://github.com/statsbomb/open-data. Please read them before use.
+
+## Reproducing the paper
+
+Notebooks are provided **with saved outputs**, so results can be inspected without re-running.
+Re-running everything is a multi-GPU-hour job and needs the trained checkpoints, which are not
+redistributed here.
+
+Run order:
+
+1. Track A: `00`, `01`, `02`, `03`, then the hyper-parameter and architecture-selection
+   notebooks (`04`, `05`, `08`–`11`), model selection (`12`), final training and test
+   (`13`, `14`), benchmark and ablations (`15`, `16`, `17`), correctness tests (`15_Correctness`).
+2. Track B: MB01, MB02, MB07R, MB03, MB04, MB05, MB06, MB07, MB08, MB09, MB10, MB11, MB11b,
+   then the follow-up notebooks MB14, MB15, MB16, MB17, MB18, MB19, MB21, then
+   `mi_analysis/targetted_analysis/run.py`.
+
+Use full mode (`MI_RUN_MODE=full`). Smoke mode uses smaller samples and does not reproduce the
+paper's numbers.
+
+The Track B runner accepts individual phases:
 
 ```bash
-cd model_training_evaluation
-python -m venv .venv
-.venv\Scripts\activate          # Windows
-pip install -r requirements.txt
+python -B mi_analysis/targetted_analysis/run.py --check-only     # small regression check
+python -B mi_analysis/targetted_analysis/run.py                  # all phases, rebuild the report
+python -B mi_analysis/targetted_analysis/run.py --section identity
 ```
 
-If you have an NVIDIA GPU and want CUDA acceleration, install the
-CUDA-enabled `torch` build for your driver version from
-https://pytorch.org/get-started/locally/ instead of the plain PyPI wheel.
+`--section` accepts `identity`, `history`, `interaction`, `slots`, `probe`, `report` or `all`.
+It reuses named functions from the notebooks without executing notebook write cells, and it
+writes `mi_analysis/targetted_analysis/results/<section>.json`. Intervals are 2,000 whole-match
+bootstrap draws at seed 0; seed-to-seed variation is reported separately and is not folded
+into those intervals.
 
-## Cloning
+## Where each result comes from
 
-**Default — full clone** (recommended if you'll be training, tuning
-hyperparameters, or adding new code/experiments — you'll want the existing
-run history to compare against and will be writing into `runs/`/`benchmarks/`
-yourself anyway):
+Every row below was checked against the repository: the notebook exists and writes the named
+result file.
 
-```bash
-git clone <ANONYMOUS_REPO_URL>
-```
+| Paper item | Source (verified) |
+|---|---|
+| Dataset statistics, action vocabulary, class distribution | `model_training_evaluation/notebooks/00_statsbomb_subset_construction_and_cleaning.ipynb`, `01_dataset_audit.ipynb` |
+| Benchmark and input-ablation table | `model_training_evaluation/notebooks/15_final_benchmark.ipynb`, `16_ablations.ipynb` |
+| Model selection (REF-2L, REF-4L, SEL-4L) | `12_final_model_selection.ipynb`, `17_selected_model_release.ipynb`, `04_4layer_training_and_hyperparameter_selection.ipynb` |
+| REF-4L vs REF-2L validation NLL gap (0.0049 nats, 95% CI [0.0025, 0.0073]) | `05_4layer_architecture_validation_and_seed_analysis.ipynb`, `06_4layer_final_training_and_test_evaluation.ipynb` |
+| Conflict set and populations | MB01 (frozen conflict files), MB02, MB03 → `results/MB03_behaviour.csv` |
+| Player interventions and tendency subspace | `targetted_analysis/run.py` → `identity.json` |
+| Earlier-window vs scored-event context | `targetted_analysis/run.py` → `history.json` |
+| Identity–context interaction sources | `targetted_analysis/run.py` → `interaction.json` |
+| Anonymous-slot controls | `targetted_analysis/run.py` → `slots.json` |
+| Action decoding vs shuffled labels | `targetted_analysis/run.py` → `probe.json` |
+| Linear probes and logit lens | MB05 → `results/MB05_probes.csv` |
+| Input counterfactuals | MB04 → `results/MB04_factorial.parquet` |
+| Activation patching | MB06 → `results/MB06_site_summary.csv` |
+| Attention heads | MB07 → `results/MB07_attention_relations.csv` |
+| MLP and hidden-unit analysis | MB08 → `results/MB08_neurons.csv`; MB17 → `results/MB17_units.csv` |
+| Logit decomposition and direct/indirect routes | MB09 → `results/MB09_decomposition.parquet` |
+| Path patching and candidate circuit | MB10 → `results/MB10_paths.parquet` |
+| Circuit atlas and pruned circuit figure | MB19 → `results/MB19_edges_estimation.csv` |
+| Circuit sufficiency and replication | MB11 → `results/MB11_faithfulness.csv`; MB14 → `results/MB14_shapley.csv` |
+| History comparison and interaction strata | MB15 → `results/MB15_history.csv` |
+| Decision redundancy and cross-model comparison | MB18 → `results/MB18_redundancy.csv` |
+| Player knowledge stored vs used | MB21 → `results/MB21_stored.csv` |
 
-This pulls everything, including all existing checkpoints — expect a large,
-slow clone.
+**Unconfirmed:** the causal-scrubbing table is produced by both `MB11b_causal_scrubbing`
+(`results/MB11b_summary_corrected.json`) and `MB16_corrected_scrub_and_steering_geometry`
+(`results/MB16_summary_corrected.json`). Which one is the source of the reported table could not
+be determined from the repository and must be confirmed by the author before submission. Both
+notebooks are retained, each with a note describing its unreported sections.
 
-**Lightweight — code only** (for reading code or running the test suite
-without pulling the checkpoint history):
+## Notes
 
-```bash
-git clone --filter=blob:none --no-checkout <ANONYMOUS_REPO_URL>
-cd soccer_mi
-git sparse-checkout init --cone
-git sparse-checkout set model_training_evaluation/src model_training_evaluation/tests model_training_evaluation/notebooks
-git checkout main
-```
+- Some notebooks contain sections that are not reported in the paper. These notebooks start
+  with a note naming those sections: MB04, MB06, MB07, MB08, MB09, MB15, MB16, MB17, MB18,
+  MB19, MB21.
+- Notebook MB01 checks the frozen conflict files against an archive that is not included, so
+  that hash-comparison cell will not run as is. The frozen files themselves are included.
+- Hash manifests under `mi_analysis/manifests/` were recorded before notebook metadata and
+  local path strings were anonymized, and before unreported analyses were removed. Manifests
+  that listed a now-removed unreported result therefore reference a file that is no longer
+  present; this is expected. No code, output or reported result was changed.
+- `mi_analysis/src/twotoken.py`, `mi_analysis/src/twotoken_followup.py` and the
+  `artifacts/twotoken/two_token_anon_s*` checkpoints are retained although the notebooks that
+  originally produced them are not part of this release: `targetted_analysis/run.py` imports
+  them at runtime to compute `slots.json`. Notebook outputs are archived as they were run, so
+  a saved output may still mention a file that is no longer present.
+- Several large inputs are not included: model checkpoints, prepared event tables and the
+  intermediate `.parquet`/`.npz` arrays. The saved CSV/JSON result files are included for every
+  reported table. Regenerating the checkpoints requires re-running the Track A training
+  notebooks named in the run order above.
+- The analysis in `targetted_analysis/` is exploratory validation on existing checkpoints. It
+  reuses the same validation events across seeds, so agreement across seeds is not independent
+  replication. Correlation measures directional alignment, not the fraction of a player effect
+  explained by a subspace.
 
-With this method, `model_training_evaluation/runs/` and `benchmarks/` (and
-anything else not listed in `sparse-checkout set`) **will not exist at all**
-in your working directory — not present as empty folders, just absent —
-until you pull them in. If you start hyperparameter tuning or need to look
-at an existing run, add the paths you need:
+## License
 
-```bash
-git sparse-checkout add model_training_evaluation/artifacts model_training_evaluation/config model_training_evaluation/runs
-```
-
-You can keep narrowing/widening this at any time; it only affects what's
-materialized on disk, not what's in the remote history.
-
-## Running the pipeline
-
-Notebooks are numbered and meant to be run in order; each stage reads the
-previous stage's outputs from `artifacts/`/`results/`:
-
-1. `01_dataset_audit.ipynb` — data audit, feature prep, player encodings → `artifacts/`, `figures/01_*`
-2. `02_baselines_and_encoding_analysis.ipynb` — baseline models, threshold tuning → `results/02_*`, `artifacts/b3_checkpoints/`
-3. `03_transformer_implementation_and_tests.ipynb` — model/batching implementation, sanity tests → `results/03_*`
-4. `04_training_and_hyperparameter_selection.ipynb` — hyperparameter sweep, pilot training → `runs/`, `results/04_*`
-5. `05_architecture_validation_and_seed_analysis.ipynb` — depth/head/context ablations, seed sensitivity → `results/05_*`
-6. `06_final_training_and_test_evaluation.ipynb` — final training run and held-out test evaluation → `results/06_*`, `results/test_predictions/`
-
-The `04_4layer_*` / `05_4layer_*` / `06_4layer_*` notebooks are the parallel
-"Track A" 4-layer benchmark and write into `benchmarks/track_a_4layer/`
-instead of the top-level `runs/`/`results/`.
-
-Run notebooks from `model_training_evaluation/` (so the `src.*` imports
-resolve), e.g.:
-
-```bash
-cd model_training_evaluation
-jupyter lab
-```
-
-**Note:** rerunning a notebook overwrites the checkpoint/result files it
-produces in place. If you commit after a rerun, you're adding a new full
-copy of every changed binary to git history (git doesn't diff binaries
-efficiently) — be deliberate about when you commit regenerated runs rather
-than doing it after every experimental rerun.
-
-## Training in Google Colab (via a Google Drive copy)
-
-For teammates without a local GPU, training/tuning notebooks can be run in
-Colab against a copy of this repo kept in Google Drive:
-
-1. Get the repo into Drive once, e.g. `MyDrive/soccer_mi`. Easiest is to
-   clone it from a Colab cell after mounting Drive (this is a private repo,
-   so use a
-   [personal access token](https://github.com/settings/tokens) in the URL):
-
-   ```python
-   from google.colab import drive
-   drive.mount('/content/drive')
-   %cd /content/drive/MyDrive
-   !git clone https://<your-github-username>:<your-PAT>@<ANONYMOUS_REPO_URL>
-   ```
-
-2. Runtime → Change runtime type → set Hardware accelerator to **GPU**.
-
-3. `cd` into the project and install dependencies. Colab ships with a
-   CUDA-matched `torch` preinstalled — check its version first and only
-   force-install `torch==2.11.0` if you specifically need parity with the
-   original runs; otherwise skip it and install the rest:
-
-   ```python
-   %cd /content/drive/MyDrive/soccer_mi/model_training_evaluation
-   !python -c "import torch; print(torch.__version__)"
-   !pip install numpy pandas pyarrow scikit-learn scipy joblib matplotlib
-   ```
-
-4. Open notebooks straight from Drive: colab.research.google.com → File →
-   Open notebook → Google Drive → navigate to
-   `soccer_mi/model_training_evaluation/notebooks/`.
-
-Notes:
-- Drive-mounted I/O is noticeably slower than local disk for reading/writing
-  many small files — fine for a single training run, but a full multi-run
-  hyperparameter sweep will be slower than running it locally/on a
-  dedicated machine.
-- The Drive copy is **not** the git repo — edits and new runs made in Colab
-  don't reach GitHub automatically. To keep results, either `!git add`,
-  `!git commit`, and `!git push` from a Colab cell (using the same PAT), or
-  periodically sync the Drive folder back into a real local clone.
-
-## Tests
-
-```bash
-cd model_training_evaluation
-pytest tests
-```
-
-## Adding new experiments / code
-
-- New source code goes in `src/`, with tests added under `tests/`.
-- New hyperparameter sweeps/training runs should write into their own
-  subfolder under `runs/` (or `benchmarks/<track_name>/runs/` for a new
-  benchmark track), following the existing `transformer_<encoding>_<config>_s<seed>/`
-  naming convention so they stay comparable to existing runs.
-- Commit new runs separately from code changes (as their own commit) so the
-  history stays easy to bisect — mirroring how the initial pipeline stages
-  were committed.
+Code: see the licence declared by the repository owner. Data: see the StatsBomb Open Data
+licence and terms at https://github.com/statsbomb/open-data.

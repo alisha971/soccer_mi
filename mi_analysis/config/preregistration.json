@@ -8,11 +8,11 @@
       104
     ],
     "run_dirs": {
-      "100": "/home/aayush/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s100",
-      "101": "/home/aayush/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s101",
-      "102": "/home/aayush/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s102",
-      "103": "/home/aayush/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s103",
-      "104": "/home/aayush/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s104"
+      "100": "/home/user/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s100",
+      "101": "/home/user/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s101",
+      "102": "/home/user/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s102",
+      "103": "/home/user/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s103",
+      "104": "/home/user/code/soccer_mi/model_training_evaluation/benchmarks/track_a_4layer/runs/transformer_T300_pre_action_L4_H2_D128_F512_K16_g-all_lr0.0003_wd0.1_s104"
     }
   },
   "conflict_set_sha256": "00baf9354b513a4f7d894fe7516e5b70ec2e288d9ab59b2fc516865ff25b2699",
