@@ -53,7 +53,7 @@ run history to compare against and will be writing into `runs/`/`benchmarks/`
 yourself anyway):
 
 ```bash
-git clone https://github.com/alisha971/soccer_mi.git
+git clone <ANONYMOUS_REPO_URL>
 ```
 
 This pulls everything, including all existing checkpoints — expect a large,
@@ -63,7 +63,7 @@ slow clone.
 without pulling the checkpoint history):
 
 ```bash
-git clone --filter=blob:none --no-checkout https://github.com/alisha971/soccer_mi.git
+git clone --filter=blob:none --no-checkout <ANONYMOUS_REPO_URL>
 cd soccer_mi
 git sparse-checkout init --cone
 git sparse-checkout set model_training_evaluation/src model_training_evaluation/tests model_training_evaluation/notebooks
@@ -127,7 +127,7 @@ Colab against a copy of this repo kept in Google Drive:
    from google.colab import drive
    drive.mount('/content/drive')
    %cd /content/drive/MyDrive
-   !git clone https://<your-github-username>:<your-PAT>@github.com/alisha971/soccer_mi.git
+   !git clone https://<your-github-username>:<your-PAT>@<ANONYMOUS_REPO_URL>
    ```
 
 2. Runtime → Change runtime type → set Hardware accelerator to **GPU**.
